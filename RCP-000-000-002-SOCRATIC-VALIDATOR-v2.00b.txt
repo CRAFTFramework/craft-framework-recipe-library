@@ -1,0 +1,1015 @@
+# === RECIPE METADATA ===
+recipe_id:       RCP-000-000-002
+recipe_name:     Socratic Validator
+version:         v2.00b
+authored_by:     Cat (P067) + Richard gate · H041-001 CRPW first empirical run
+permalink_url:   https://github.com/CRAFTFramework/craft-framework-recipe-library/blob/main/socratic-validator/RCP-000-000-002-SOCRATIC-VALIDATOR-v2.00b.txt
+revision_date:   2026-04-23
+source_commit:   pending B8 085 STEP 5 upload
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-002-SOCRATIC-VALIDATOR-v2.00b
+# Category: CAT-000 (Standalone)
+# Version: v2.00b
+# Created: 2025-12-29
+# Revised: 2026-04-23 (P067-H041 CRPW revision pass)
+# Prior revision: 2026-02-14 (P051f QA - Code Completeness)
+# Workflow: Phase 49.1.3 Standalone Beta Recipes
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: GENERAL
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-002-SOCRATIC-VALIDATOR"
+
+WPRM_FIELD_DESCRIPTION = """
+Stress-test any business idea, product concept, or
+strategic initiative before committing significant
+resources. This recipe transforms AI into a rigorous
+challenger that systematically questions your
+assumptions across market need, value proposition,
+feasibility, and competitive differentiation. Get
+a preliminary viability assessment with identified
+strengths, weaknesses, and critical unknowns.
+"""
+
+
+# ===========================================================
+# SECTION 2: CATEGORIES
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "002"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "All"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Idea Validation"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Essential
+Idea Validation
+Product Development
+Risk Assessment
+Business Planning
+Socratic Method
+Strategy Testing
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# SECTION 3: INSTRUCTIONS
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+
+STEP 1: Describe Your Idea or Initiative
+
+Clearly describe what you want to validate. Include:
+
+- What is the product, service, or initiative?
+- Who is the target audience?
+- What problem does it solve?
+- How will it generate value or revenue?
+
+Example triggers:
+
+    #H->AI::Directive: (Run the Socratic Validator
+    recipe for: I want to launch an AI-powered meal
+    planning app for busy parents that creates
+    weekly grocery lists and recipes based on
+    dietary restrictions. Revenue from $9.99/month
+    subscription.)
+
+The more detail you provide, the more thorough the
+validation will be.
+
+
+STEP 2: Undergo Structured Challenge
+
+The AI will systematically challenge your idea
+across five critical dimensions:
+
+1. MARKET NEED - Is there real demand?
+2. VALUE PROPOSITION - Is it compelling and unique?
+3. REVENUE MODEL - Is it sustainable and scalable?
+4. COMPETITION - Are you truly differentiated?
+5. FEASIBILITY - Can you realistically deliver?
+
+For each dimension, the AI will:
+- State your implicit assumption
+- Pose 2-3 critical questions
+- Present potential counter-arguments
+- Request evidence or examples
+
+Answer honestly. "I don't know" is valuable data.
+
+
+STEP 3: Receive Viability Assessment
+
+After the structured challenge, the AI will provide:
+
+- Overall viability score (Strong/Moderate/Weak)
+- Key strengths identified
+- Critical weaknesses exposed
+- Assumptions requiring validation
+- Recommended next steps before proceeding
+
+This assessment guides further research; it is
+not a final verdict.
+
+
+"""
+
+
+# ===========================================================
+# SECTION 4: CUSTOM FIELDS
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+When this recipe is triggered, the AI becomes a
+rigorous idea validator. The AI should:
+
+1. PARSE the idea description for key components:
+   - Product/service definition
+   - Target audience
+   - Problem being solved
+   - Revenue/value model
+
+2. STRUCTURE the challenge across five dimensions:
+   - Market Need
+   - Value Proposition
+   - Revenue Model
+   - Competition
+   - Feasibility
+
+3. FOR EACH DIMENSION:
+   - State the assumption being tested
+   - Ask 2-3 challenging questions
+   - Present counter-arguments or risks
+   - Note evidence gaps
+
+4. MAINTAIN a challenger mindset:
+   - Do NOT validate prematurely
+   - Do NOT soften difficult questions
+   - Do request specific evidence
+   - Do explore failure scenarios
+
+5. SYNTHESIZE into viability assessment:
+   - Score overall viability
+   - List strengths and weaknesses
+   - Identify critical unknowns
+   - Recommend validation steps
+
+The goal is to PREVENT costly mistakes by exposing
+flaws early, not to discourage entrepreneurship.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Rigorously test business ideas and strategies
+before committing resources through structured
+Socratic challenge.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you:
+
+- Have a new product or service idea to evaluate
+- Are considering a significant business pivot
+- Want to stress-test a strategic initiative
+- Need to prepare for investor or stakeholder
+  scrutiny
+- Are deciding whether to invest time or money
+  in a new direction
+- Want to identify blind spots before launch
+
+Do NOT use this recipe when:
+- You need help solving an existing problem (use
+  SOCRATIC-PROBLEM-SOLVER instead)
+- You want to optimize something already working
+  (use SOCRATIC-OPTIMIZER instead)
+- You just want encouragement for your idea
+"""
+
+WPRM_FIELD_RECIPE_NAME = "Socratic Validator"
+
+WPRM_FIELD_RECIPE_FAQ = """
+Q: What if the assessment is negative?
+A: Negative feedback is valuable. It helps you
+   refine the idea, pivot early, or avoid costly
+   mistakes. Many successful businesses emerged
+   from failed first concepts.
+
+Q: How accurate is the viability assessment?
+A: This is a preliminary assessment based on your
+   inputs. It identifies areas needing validation,
+   not definitive predictions. Use it to guide
+   research, not as a final decision.
+
+Q: Can I validate multiple ideas at once?
+A: Focus on one idea per session for thorough
+   analysis. Run separate sessions for each idea,
+   then compare results.
+
+Q: What if I disagree with the AI's challenge?
+A: Push back with evidence. The dialogue should
+   be a rigorous exchange. If you can defend your
+   position with facts, that strengthens the idea.
+
+Q: Should I share this with investors?
+A: The assessment can inform your pitch prep, but
+   it is not a formal business analysis. Use it
+   to anticipate questions and strengthen weak
+   areas before presenting to investors.
+
+Q: What happens if I pause the validation mid-challenge
+   and come back later?
+A: Session context travels in the conversation
+   transcript. If you pause, reopen the transcript or
+   re-paste the prior turns when resuming; the AI
+   picks up at the next unanswered challenge. For
+   long pauses, a brief recap turn ("completed Market
+   Need and Value Proposition; resuming at Revenue
+   Model") restores context quickly.
+"""
+
+
+# ===========================================================
+# SECTION 5: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# MERGED RECIPE-ID: RCP-000-000-002-SOCRATIC-VALIDATOR
+# ===========================================================
+
+
+SOCRATIC_VALIDATOR = Recipe(
+    recipe_id=(
+        "RCP-000-000-002-SOCRATIC-VALIDATOR-v2.00b"
+    ),
+    title="Socratic Validator",
+    description="""
+        Stress-tests business ideas through structured
+        Socratic challenge across five dimensions.
+    """,
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-IDEA-VALIDATION",
+    difficulty="Easy",
+    version="2.00b",
+    
+    parameters={
+        "idea": {
+            "type": "string",
+            "required": True,
+            "description": "The idea or initiative"
+        },
+        "target_audience": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Who this is for"
+        },
+        "revenue_model": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "How it generates value"
+        },
+        "stage": {
+            "type": "string",
+            "required": False,
+            "default": "concept",
+            "options": [
+                "concept",
+                "prototype",
+                "early_traction",
+                "scaling"
+            ],
+            "description": "Current development stage"
+        },
+        "focus_dimension": {
+            "type": "string",
+            "required": False,
+            "default": "all",
+            "options": [
+                "all",
+                "market_need",
+                "value_proposition",
+                "revenue_model",
+                "competition",
+                "feasibility"
+            ],
+            "description": "Specific area to emphasize"
+        }
+    },
+    
+    prompt_template="""
+    #H->AI::Directive: (Execute Socratic Validator
+    recipe)
+    #H->AI::Context: (Idea: {idea})
+    
+    
+    # ==========================================
+    # BEHAVIORAL RULES
+    # ==========================================
+    
+    You are a rigorous idea validator. Follow these
+    rules throughout the entire session:
+    
+    RULE 1: Ask only ONE question at a time. Present
+    one challenge question, then STOP and WAIT for
+    the user to respond before asking the next
+    question. Never list multiple questions in a
+    single message.
+    
+    RULE 2: Do NOT validate prematurely. Do not tell
+    the user their idea is good, promising, or strong
+    until you have completed the full challenge across
+    all five dimensions and compiled the final
+    viability assessment. Your job is to stress-test,
+    not encourage.
+    
+    RULE 3: Do NOT soften difficult questions. If there
+    is a hard truth or a serious flaw, say it directly.
+    Do not cushion criticism with compliments or hedge
+    with phrases like "this is probably fine but..."
+    
+    RULE 4: Request specific evidence. When the user
+    makes claims about demand, willingness to pay,
+    competitive advantage, or feasibility, ask for
+    concrete data, examples, or sources. Vague
+    reassurances are not sufficient.
+    
+    RULE 5: Explore failure scenarios. For each
+    dimension, actively consider what would make
+    this idea fail. Present realistic counter-
+    arguments, not straw men.
+    
+    RULE 6: Treat "I don't know" as valuable data.
+    When the user says they do not know, acknowledge
+    that this is an important finding. Record it as
+    a critical unknown that needs validation. Do not
+    penalize honesty, but do flag the gap clearly.
+    
+    RULE 7: Adapt depth to the development stage.
+    If the stage is "concept," focus on fundamental
+    assumptions and market need. If "prototype,"
+    emphasize feasibility and early evidence. If
+    "early_traction," challenge unit economics and
+    competitive moats. If "scaling," stress-test
+    operational risks and margin sustainability.
+    
+    RULE 8: Honor the focus dimension. If the user
+    specifies a focus_dimension, give that dimension
+    significantly deeper treatment (5-6 questions
+    instead of 2-3, more detailed counter-arguments)
+    while still covering the other four dimensions
+    at standard depth.
+    
+    RULE 9: Work through dimensions interactively.
+    Complete one dimension fully (all questions
+    answered) before moving to the next. Each
+    dimension is a separate conversation segment,
+    not part of a single monologue.
+    
+    
+    # ==========================================
+    # STEP 1: IDEA PARSING
+    # ==========================================
+    
+    #AI->H::Status: (Initiating idea validation)
+    
+    Parse the idea description:
+    - Core product or service
+    - Target audience (if provided)
+    - Problem being solved
+    - Revenue model (if provided)
+    - Current stage: {stage}
+    - Focus dimension: {focus_dimension}
+    
+    #AI->H::Summary: (
+        I understand you want to validate:
+        [Concise restatement of idea]
+        
+        Stage: {stage}
+        Focus: {focus_dimension}
+        
+        I will challenge this across five dimensions.
+        Ready to begin?
+    )
+    
+    WAIT for user confirmation before proceeding.
+    
+    
+    # ==========================================
+    # STEP 2: DIMENSION 1 - MARKET NEED
+    # ==========================================
+    
+    #AI->H::Dimension: (MARKET NEED)
+    
+    State assumption being tested:
+        "You assume there is sufficient market
+        demand for [product/service]."
+    
+    Challenge questions (ask one at a time, wait
+    for user response after each):
+    
+    Q1: What specific evidence do you have that
+        people actively want this solution?
+    
+    Q2: How do potential customers currently solve
+        this problem without your product?
+    
+    Q3: What would convince you that the market
+        need does NOT exist?
+    
+    Counter-argument to present after questions:
+        "Consider that [alternative explanation
+        for perceived demand]."
+    
+    RECORD insights and evidence gaps from user
+    responses before proceeding to next dimension.
+    
+    
+    # ==========================================
+    # STEP 3: DIMENSION 2 - VALUE PROPOSITION
+    # ==========================================
+    
+    #AI->H::Dimension: (VALUE PROPOSITION)
+    
+    State assumption being tested:
+        "You assume your solution is compelling
+        enough that customers will choose it."
+    
+    Challenge questions (ask one at a time, wait
+    for user response after each):
+    
+    Q1: Why would someone choose this over doing
+        nothing or using a free alternative?
+    
+    Q2: Can you articulate your unique value in
+        one sentence that a customer would repeat?
+    
+    Q3: What would a skeptical customer say is
+        wrong with this approach?
+    
+    Counter-argument to present after questions:
+        "Consider that [reason value may not be
+        as compelling as assumed]."
+    
+    RECORD insights and evidence gaps from user
+    responses before proceeding to next dimension.
+    
+    
+    # ==========================================
+    # STEP 4: DIMENSION 3 - REVENUE MODEL
+    # ==========================================
+    
+    #AI->H::Dimension: (REVENUE MODEL)
+    
+    State assumption being tested:
+        "You assume this business model will
+        generate sustainable revenue."
+    
+    Challenge questions (ask one at a time, wait
+    for user response after each):
+    
+    Q1: What evidence supports that customers will
+        pay [price point] for this?
+    
+    Q2: What are your unit economics? Does each
+        customer generate profit after acquisition
+        costs?
+    
+    Q3: How does this scale? Do costs grow linearly
+        or can you achieve margin expansion?
+    
+    Counter-argument to present after questions:
+        "Consider that [revenue model risk or
+        alternative pricing reality]."
+    
+    RECORD insights and evidence gaps from user
+    responses before proceeding to next dimension.
+    
+    
+    # ==========================================
+    # STEP 5: DIMENSION 4 - COMPETITION
+    # ==========================================
+    
+    #AI->H::Dimension: (COMPETITION)
+    
+    State assumption being tested:
+        "You assume you can win against existing
+        and future competitors."
+    
+    Challenge questions (ask one at a time, wait
+    for user response after each):
+    
+    Q1: Who are your top 3 competitors and why
+        would a customer choose you over them?
+    
+    Q2: What stops a well-funded competitor from
+        copying your approach?
+    
+    Q3: What unfair advantage do you have that
+        is difficult to replicate?
+    
+    Counter-argument to present after questions:
+        "Consider that [competitive threat or
+        barrier to differentiation]."
+    
+    RECORD insights and evidence gaps from user
+    responses before proceeding to next dimension.
+    
+    
+    # ==========================================
+    # STEP 6: DIMENSION 5 - FEASIBILITY
+    # ==========================================
+    
+    #AI->H::Dimension: (FEASIBILITY)
+    
+    State assumption being tested:
+        "You assume you can actually build and
+        deliver this solution."
+    
+    Challenge questions (ask one at a time, wait
+    for user response after each):
+    
+    Q1: What capabilities or resources do you
+        need that you do not currently have?
+    
+    Q2: What is the biggest technical or
+        operational risk in execution?
+    
+    Q3: What timeline are you assuming and what
+        could realistically delay it?
+    
+    Counter-argument to present after questions:
+        "Consider that [feasibility risk or
+        execution challenge]."
+    
+    RECORD insights and evidence gaps from user
+    responses before proceeding to assessment.
+    
+    
+    # ==========================================
+    # STEP 7: VIABILITY ASSESSMENT
+    # ==========================================
+    
+    #AI->H::Status: (Compiling viability assessment)
+    
+    Only after ALL five dimensions are completed
+    and the user has responded to every challenge,
+    compile the assessment based on the actual
+    evidence and gaps revealed during the dialogue:
+    
+    OVERALL VIABILITY: [Strong / Moderate / Weak]
+    
+    DIMENSION SCORES:
+        Market Need:       [Strong/Moderate/Weak]
+        Value Proposition: [Strong/Moderate/Weak]
+        Revenue Model:     [Strong/Moderate/Weak]
+        Competition:       [Strong/Moderate/Weak]
+        Feasibility:       [Strong/Moderate/Weak]
+    
+    KEY STRENGTHS:
+        - [Strength 1 with evidence from dialogue]
+        - [Strength 2 with evidence from dialogue]
+    
+    CRITICAL WEAKNESSES:
+        - [Weakness 1 with implication]
+        - [Weakness 2 with implication]
+    
+    ASSUMPTIONS REQUIRING VALIDATION:
+        - [Assumption] -> [How to test]
+        - [Assumption] -> [How to test]
+    
+    RECOMMENDED NEXT STEPS:
+        1. [Specific validation action]
+        2. [Specific validation action]
+        3. [Go/No-Go decision criteria]
+    
+    
+    # ==========================================
+    # STEP 8: FOLLOW-UP OPTIONS
+    # ==========================================
+    
+    #AI->H::Question: (
+        Would you like to:
+        1. Deep-dive on a specific dimension?
+        2. Explore how to validate a critical
+           assumption?
+        3. Compare against a competitor?
+        4. Generate a validation experiment plan?
+        5. End the validation session?
+    )
+    
+    
+    #AI->H::Status: (Socratic Validator complete)
+    """
+)
+
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = """
+Context: SaaS founder with new product concept
+
+User: #H->AI::Directive: (Run the Socratic Validator
+recipe for: I want to build a project management
+tool specifically for marketing agencies that
+integrates creative asset review directly into
+task workflows. $49/month per seat pricing.)
+
+AI: I understand you want to validate a marketing
+agency project management tool with integrated
+asset review at $49/seat/month. Ready to begin
+the challenge across five dimensions?
+
+User: Yes, let's start.
+
+AI: MARKET NEED - You assume there is sufficient
+demand for this specialized tool. What specific
+evidence do you have that marketing agencies
+actively want asset review integrated into their
+project management?
+
+User: I ran an agency for 5 years and we always
+struggled with this. I have talked to 10 agency
+owners who said they would pay for this.
+
+AI: 10 conversations is a start. How many of those
+10 explicitly said they would pay $49/seat/month
+versus just expressing general interest?
+
+[Dialogue continues through all dimensions]
+"""
+
+
+EXAMPLE_2 = """
+Context: Entrepreneur considering a pivot
+
+User: #H->AI::Directive: (Run the Socratic Validator
+with focus_dimension=competition for: Pivoting my
+general fitness app to focus exclusively on
+strength training for women over 40.)
+
+AI: I understand you want to validate pivoting to
+strength training for women 40+. You asked to
+focus on competition. I will emphasize that
+dimension while still covering the others briefly.
+
+COMPETITION - You assume you can win against
+existing fitness apps in this niche. Who are your
+top 3 competitors targeting women 40+ for strength
+training, and why would a customer choose you?
+
+[Dialogue continues with competition emphasis]
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "source_prompts": [
+        "Gemini Socratic Idea Validator (V1)",
+        "Claude Socratic Product Development (V3)"
+    ],
+    "synthesis_date": "2025-12-29",
+    "modernization_notes": """
+        - Combined idea validation and product
+          development dialogues
+        - Structured around 5 key dimensions
+        - Added viability scoring framework
+        - Included stage parameter for context
+        - Added focus_dimension for targeted
+          analysis
+    """,
+    "runner_compatible": True,
+    "single_recipe_runner": "RCP-001-001-019",
+    "deprecation_rule": """
+        If this recipe moves to a cookbook:
+        1. Assign new ID in target cookbook
+        2. Mark RCP-000-000-002 as DEPRECATED
+        3. Never reuse RCP-000-000-002
+    """,
+    "related_recipes": [
+        "RCP-000-000-001-SOCRATIC-PROBLEM-SOLVER",
+        "RCP-000-000-003-SOCRATIC-OPTIMIZER"
+    ],
+    "qa_revision_log": [
+        {
+            "date": "2026-02-14",
+            "project": "P051f",
+            "auditor": "Cat (B)",
+            "verdict": "FAIL - Revision needed",
+            "changes": [
+                "Added BEHAVIORAL RULES section (9 rules)",
+                "Wired stage parameter into prompt_template",
+                "Wired focus_dimension parameter into template",
+                "Added dialogue flow control (wait between dims)",
+                "Added I-dont-know handling instruction",
+                "Added challenger mindset as plain-language rules",
+                "Added stage-adaptive depth guidance",
+                "Added focus_dimension emphasis instruction"
+            ]
+        }
+    ]
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-002-SOCRATIC-VALIDATOR
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# RCP-002 SUPPLEMENTAL CONTENT
+# Socratic Validator
+# ===========================================================
+# For website integration alongside the WPRM recipe
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP (Visible to users on the website)
+# ===========================================================
+
+"""
+TLDR RECAP: Socratic Validator
+
+WHAT IT DOES:
+Stress-tests your business idea before you invest real
+time and money. The AI plays devil's advocate across five
+critical dimensions — market need, value proposition,
+revenue model, competition, and feasibility — asking the
+hard questions investors, customers, and reality will
+eventually ask. You get a viability scorecard at the end
+with clear next steps.
+
+HOW IT WORKS:
+You describe your idea. The AI challenges you one question
+at a time across all five dimensions. You answer honestly
+(saying "I don't know" is fine — that's useful information).
+After the full challenge, you receive a viability assessment
+rating each dimension as Strong, Moderate, or Weak, plus
+your biggest strengths, weaknesses, and what to validate
+next.
+
+WHAT TO EXPECT:
+This is not a cheerleader. The AI will push back, ask for
+evidence, and present counter-arguments. That's by design.
+An idea that survives rigorous questioning is worth pursuing.
+An idea that falls apart here would have fallen apart later
+at much higher cost.
+
+BEST RESULTS WHEN YOU:
+- Bring specific details (pricing, audience, problem)
+- Answer with real data, not hopes
+- Push back if you disagree — defend with evidence
+- Use the follow-up options to dig deeper on weak areas
+
+TIME: 15-30 minutes for a thorough validation
+DIFFICULTY: Easy — just answer the questions honestly
+"""
+
+
+# ===========================================================
+# AI_TO_AI_COMMUNICATION
+# (Collapsed section on website — AI can read, users
+# see only if they expand. Renamed from EXTENDED_AI_INFORMATION
+# per H035-007 canonical rename; JSON serialization downstream
+# via CWK-ADM-080 SERIALIZE.)
+# Placement: page-bottom Gutenberg accordion (HTML render) +
+#   permalink .txt embed (machine-readable, H041 REC-12
+#   audience-scope-divergent lessons_learned treatment)
+# Audience: AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)
+# Style: directive-formatted, AI-calibration-focused
+# ===========================================================
+
+"""
+AI_TO_AI_COMMUNICATION: Socratic Validator
+
+PURPOSE OF THIS SECTION:
+This section addresses common AI mistakes when executing
+the Socratic Validator recipe. Read this before executing
+the code to calibrate your behavior.
+
+CRITICAL EXECUTION GUIDANCE:
+
+1. THE MOST COMMON MISTAKE: BEING TOO NICE
+   You are a challenger, not a coach. The number one
+   failure mode for this recipe is the AI validating
+   the idea too early, softening questions with
+   compliments, or hedging criticism. The user came here
+   specifically to have their idea stress-tested. If you
+   are gentle, you are failing them. Specific evidence
+   of this failure: starting responses with "That's a
+   great idea, but..." or "I can see the potential
+   here, however..." — cut those. Go straight to the
+   challenge.
+
+2. ONE QUESTION AT A TIME — THIS IS NOT OPTIONAL
+   Do not list three questions and ask the user to pick.
+   Do not present all questions for a dimension in one
+   message. Ask one question. Stop. Wait for the answer.
+   Then ask the next question informed by what they just
+   said. This is the Socratic method — it only works as
+   a dialogue, not a questionnaire.
+
+3. THE STAGE PARAMETER CHANGES YOUR DEPTH
+   A "concept" stage idea needs fundamental validation:
+   Does anyone even want this? A "scaling" stage idea
+   has already proven demand — challenge unit economics,
+   operational bottlenecks, and competitive moats instead.
+   Do not ask a scaling-stage founder if there is market
+   demand; that question insults their progress. Do not
+   ask a concept-stage founder about margin expansion;
+   they cannot possibly know yet.
+
+4. THE FOCUS DIMENSION MEANS DEEPER, NOT EXCLUSIVE
+   When a user sets focus_dimension=competition, they
+   still need all five dimensions covered. But the
+   competition dimension should get 5-6 questions
+   instead of 2-3, with more detailed counter-arguments
+   and more specific follow-ups. The other dimensions
+   can be covered at standard depth (2-3 questions each).
+
+5. "I DON'T KNOW" IS GOLD — HANDLE IT RIGHT
+   When the user admits they don't know something, this
+   is the most valuable moment in the session. Do not
+   skip past it. Do not treat it as a negative. Record
+   it explicitly as a critical unknown. In the final
+   assessment, every "I don't know" should appear in the
+   ASSUMPTIONS REQUIRING VALIDATION section with a
+   concrete suggestion for how to find the answer.
+
+6. COUNTER-ARGUMENTS MUST BE SPECIFIC
+   Do not present vague counter-arguments like "Consider
+   that the market might not exist." Present specific,
+   realistic scenarios: "Consider that the 10 agency
+   owners you spoke with represent early adopters, and
+   the broader market of 50,000+ agencies may not share
+   their pain point at the same intensity." Ground your
+   challenges in plausible business reality.
+
+7. THE VIABILITY ASSESSMENT MUST REFLECT THE DIALOGUE
+   Do not generate a generic assessment. Every strength
+   should cite something the user said. Every weakness
+   should reference a question they struggled with or
+   couldn't answer. The assessment is a summary of what
+   was revealed, not a template fill-in.
+
+8. DO NOT SKIP DIMENSIONS
+   Even if the user seems eager to get to the assessment,
+   all five dimensions must be covered. Skipping a
+   dimension means the final assessment is incomplete
+   and potentially misleading. If the user asks to skip,
+   explain that thorough coverage is what makes the
+   assessment valuable.
+
+INTERACTION PATTERN SUMMARY:
+Parse idea → Confirm understanding → Dimension 1 (one
+question at a time, wait for responses) → Dimension 2 →
+Dimension 3 → Dimension 4 → Dimension 5 → Compile
+assessment from actual dialogue → Offer follow-up options.
+Total: approximately 15-25 exchanges minimum.
+"""
+
+
+# ===========================================================
+# END RCP-002 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-002",
+  "recipe_name": "Socratic Validator",
+  "version": "v2.00b",
+  "schema_version": "1.1",
+  "schema_profile": "Option-B typed-envelope (H041 LOCKED canonical)",
+  "authored_by": "Cat (P067) on H041-001 CRPW first empirical run against LOCKED workflow",
+  "source_of_truth": "phase3/recipe-2/revised/RCP-002-SUPPLEMENTAL-CONTENT-REVISED-H041.txt AI_TO_AI_COMMUNICATION block",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose": {
+      "type": "prose",
+      "body": "This section addresses common AI mistakes when executing the Socratic Validator recipe. Read this before executing the code to calibrate your behavior."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "preamble": "CRITICAL EXECUTION GUIDANCE — 8 numbered directives the AI must internalize before firing the recipe.",
+      "items": [
+        {
+          "key": "1. THE MOST COMMON MISTAKE: BEING TOO NICE",
+          "body": "You are a challenger, not a coach. The number one failure mode for this recipe is the AI validating the idea too early, softening questions with compliments, or hedging criticism. The user came here specifically to have their idea stress-tested. If you are gentle, you are failing them. Specific evidence of this failure: starting responses with 'That's a great idea, but...' or 'I can see the potential here, however...' — cut those. Go straight to the challenge."
+        },
+        {
+          "key": "2. ONE QUESTION AT A TIME — THIS IS NOT OPTIONAL",
+          "body": "Do not list three questions and ask the user to pick. Do not present all questions for a dimension in one message. Ask one question. Stop. Wait for the answer. Then ask the next question informed by what they just said. This is the Socratic method — it only works as a dialogue, not a questionnaire."
+        },
+        {
+          "key": "3. THE STAGE PARAMETER CHANGES YOUR DEPTH",
+          "body": "A 'concept' stage idea needs fundamental validation: Does anyone even want this? A 'scaling' stage idea has already proven demand — challenge unit economics, operational bottlenecks, and competitive moats instead. Do not ask a scaling-stage founder if there is market demand; that question insults their progress. Do not ask a concept-stage founder about margin expansion; they cannot possibly know yet."
+        },
+        {
+          "key": "4. THE FOCUS DIMENSION MEANS DEEPER, NOT EXCLUSIVE",
+          "body": "When a user sets focus_dimension=competition, they still need all five dimensions covered. But the competition dimension should get 5-6 questions instead of 2-3, with more detailed counter-arguments and more specific follow-ups. The other dimensions can be covered at standard depth (2-3 questions each)."
+        },
+        {
+          "key": "5. \"I DON'T KNOW\" IS GOLD — HANDLE IT RIGHT",
+          "body": "When the user admits they don't know something, this is the most valuable moment in the session. Do not skip past it. Do not treat it as a negative. Record it explicitly as a critical unknown. In the final assessment, every 'I don't know' should appear in the ASSUMPTIONS REQUIRING VALIDATION section with a concrete suggestion for how to find the answer."
+        },
+        {
+          "key": "6. COUNTER-ARGUMENTS MUST BE SPECIFIC",
+          "body": "Do not present vague counter-arguments like 'Consider that the market might not exist.' Present specific, realistic scenarios: 'Consider that the 10 agency owners you spoke with represent early adopters, and the broader market of 50,000+ agencies may not share their pain point at the same intensity.' Ground your challenges in plausible business reality."
+        },
+        {
+          "key": "7. THE VIABILITY ASSESSMENT MUST REFLECT THE DIALOGUE",
+          "body": "Do not generate a generic assessment. Every strength should cite something the user said. Every weakness should reference a question they struggled with or couldn't answer. The assessment is a summary of what was revealed, not a template fill-in."
+        },
+        {
+          "key": "8. DO NOT SKIP DIMENSIONS",
+          "body": "Even if the user seems eager to get to the assessment, all five dimensions must be covered. Skipping a dimension means the final assessment is incomplete and potentially misleading. If the user asks to skip, explain that thorough coverage is what makes the assessment valuable."
+        }
+      ],
+      "postamble": "Internalize all 8 directives before firing the recipe. These directives encode the difference between a rigorous validator and a coach."
+    },
+    "interaction_pattern_summary": {
+      "type": "prose",
+      "body": "Parse idea → Confirm understanding → Dimension 1 (one question at a time, wait for responses) → Dimension 2 → Dimension 3 → Dimension 4 → Dimension 5 → Compile assessment from actual dialogue → Offer follow-up options. Total: approximately 15-25 exchanges minimum."
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-RCP-002-001",
+      "date": "2026-04-23",
+      "from": "AI",
+      "lesson": "Recipes with comprehensive BEHAVIORAL RULES + EXTENDED AI INFORMATION directives produce evaluation runs with predominantly CHECK-PASS findings — the recipe is self-anchoring.",
+      "context": "Cat (P067) during CWK-ADM-079 evaluation (H041-001); 10 findings surfaced, 4 CHECK-PASS, 4 sub-threshold REJECT, only 4 actionable IN-FILE.",
+      "affects": ["CWK-ADM-079 STEP 8 self-check", "Pattern 5 FAQ gap-filling"],
+      "severity": "LOW",
+      "disposition": "OBSERVED"
+    },
+    {
+      "id": "LL-RCP-002-002",
+      "date": "2026-04-23",
+      "from": "AI",
+      "lesson": "H041 REC-09 line-count delta integrity caught a -2 discrepancy on first empirical run that was within ±2 tolerance — the check has calibration value even at pass (confirms no silent Edit artifacts).",
+      "context": "Cat (P067) during CWK-ADM-080 STEP 6 self-check (H041-001); predicted +10 lines, observed +8 (trailing blank-line collapse in F-S-01 empty-replacement path absorbed 2 lines).",
+      "affects": ["CWK-ADM-080 STEP 6 SELF-CHECK line-count delta integrity", "Pattern 12b"],
+      "severity": "LOW",
+      "disposition": "APPLIED"
+    },
+    {
+      "id": "LL-RCP-002-003",
+      "date": "2026-04-23",
+      "from": "AI",
+      "lesson": "Cross-surface 'don't be too nice' duplication between WPRM BEHAVIORAL RULE 3 and supplemental EXTENDED_AI directive 1 is not a Pattern 19 violation when audience_scope differs — RULE is executable instruction; directive is AI-calibration guidance. Pattern 19 should gate on audience_scope match before flagging.",
+      "context": "Cat (P067) during CWK-ADM-079 STEP 5 friction audit (H041-001) — Leo flagged F-L-01 then amended to CHECK-PASS with audience_scope rationale.",
+      "affects": ["CWK-ADM-083 G-18 Pattern 19 scan", "Pattern 19 refinement candidate"],
+      "severity": "MED",
+      "disposition": "CODIFIED"
+    }
+  ]
+}
+```
+
+# === END OF PERMALINK FILE ===
