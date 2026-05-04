@@ -1,0 +1,1195 @@
+# === RECIPE METADATA ===
+recipe_id: RCP-000-000-012-FACT-VERIFICATION-FOUNDATION
+recipe_name: Fact Verification Foundation
+version: 2.00b
+authored_by: CRAFT Framework
+permalink_url: (pending GitHub upload)
+revision_date: 2026-02-15
+source_commit: (pending GitHub upload)
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-012-FACT-VERIFICATION-FOUNDATION
+# Version: 2.00b
+# Date: 2025-12-29
+# Revised: 2026-02-15
+# Status: REVISED (QA Audit P051f-H005)
+# Cookbook: Standalone (No Cookbook)
+# ===========================================================
+
+
+# ===========================================================
+# LICENSE
+# ===========================================================
+# Licensed under the Business Source License 1.1 (BSL)
+# Copyright 2025 Ketelsen Digital Solutions LLC
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Type
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+# ===========================================================
+# WPRM FIELD: Name
+# ===========================================================
+
+WPRM_FIELD_NAME = "RCP-000-000-012-FACT-VERIFICATION-FOUNDATION"
+
+
+# ===========================================================
+# WPRM FIELD: Description
+# ===========================================================
+
+WPRM_FIELD_DESCRIPTION = """
+Structure factual claims for verification using AI-assisted
+source surfacing, confidence assessment, and contradiction
+detection. This recipe reduces AI hallucination by requiring
+the AI to distinguish between well-supported claims and
+uncertain ones, surface known sources as starting points
+for human verification, and flag where independent checking
+is essential. Adapts from basic claim assessment to
+systematic verification protocol based on your needs.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Multi-Recipe Combo Stages
+# ===========================================================
+
+WPRM_FIELD_COMBO_STAGE = "Single Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Is Part Of This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Category ID Numbers
+# ===========================================================
+
+WPRM_FIELD_CATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategory ID Numbers
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe ID Numbers
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "012"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Status
+# ===========================================================
+
+WPRM_FIELD_STATUS = "Official"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT Flavors
+# ===========================================================
+
+WPRM_FIELD_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Categories
+# ===========================================================
+
+WPRM_FIELD_CATEGORIES = "Research and Validation"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategories
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORIES = "Fact Checking, Source Verification"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Tags
+# ===========================================================
+
+WPRM_FIELD_TAGS = "fact-checking, source-citation, hallucination-prevention, verification, credibility, research"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Difficulty
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# WPRM FIELD: How A.I. Reads This Recipe
+# ===========================================================
+
+WPRM_FIELD_AI_READS = """
+This recipe instructs the AI to assist with fact verification
+by structuring claims, assessing confidence based on training
+data, surfacing known sources as starting points, and flagging
+where human verification is essential. The AI does not have
+real-time access to databases or publications. Its role is to
+be transparent about what it knows confidently, what it knows
+partially, and what it cannot verify — structuring the output
+so the user can efficiently complete verification themselves.
+
+When this recipe encounters claims outside the AI's training
+data or near its knowledge cutoff, a detailed I-DON'T-KNOW
+protocol governs the response — the AI must state its
+limitation explicitly, suggest alternative verification paths,
+and never stretch thin knowledge into a confidence rating. See
+the I-DONT-KNOW HANDLING section in the prompt template for
+the full behavioral protocol.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Short Description
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESC = """
+Structure facts for verification with AI-assisted confidence
+assessment, source surfacing, and contradiction detection.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: When To Use This Recipe
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use when you need accurate, verifiable information for
+content creation, presentations, reports, or any context
+where factual errors could damage credibility. Essential
+for market research, technical documentation, and
+public-facing communications.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Name (Display)
+# ===========================================================
+
+WPRM_FIELD_DISPLAY_NAME = "Fact Verification Foundation"
+
+
+# ===========================================================
+# WPRM FIELD: This Recipe Is Included In This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK_INCLUDE = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Instructions
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Define Your Topic And Verification Level
+
+    Identify the specific topic requiring fact verification.
+    Decide your verification depth: BASIC (quick confidence
+    check with source suggestions) or SYSTEMATIC (confidence
+    ratings, verification guidance, contradiction detection).
+
+STEP 2: Request AI-Assisted Fact Assessment
+
+    Use the prompt template to request facts about your topic.
+    The AI will present claims it can support from its training
+    data, tag each with a confidence level, and surface known
+    sources as starting points for your own verification.
+
+STEP 3: Review Source Suggestions
+
+    The AI will suggest sources it associates with each claim
+    from its training data. These are STARTING POINTS, not
+    confirmed citations. Verify that suggested sources exist,
+    are current, and actually support the claim. Reputable
+    sources include peer-reviewed journals, government
+    databases, industry reports, and established news
+    organizations.
+
+STEP 4: Use Confidence Ratings To Prioritize Verification
+
+    For systematic verification, the AI provides confidence
+    ratings (HIGH, MEDIUM, LOW) for each claim. Focus your
+    independent verification effort on MEDIUM and LOW claims
+    first — HIGH claims are likely accurate but should still
+    be spot-checked for critical content.
+
+STEP 5: Review Contradiction Flags
+
+    If the AI's training data contains conflicting information,
+    it will flag the discrepancy and present both perspectives.
+    These contradictions are your highest-priority items for
+    independent verification.
+
+STEP 6: Complete Human Verification
+
+    Use the AI's structured output as a verification checklist.
+    Confirm sources exist and are current. Check that facts
+    are accurately represented. Verify any claim tagged MEDIUM
+    or LOW before including it in final content.
+
+STEP 7: Integrate Verified Facts
+
+    Include only facts that meet your verification threshold
+    in your final content. Replace AI-suggested source
+    references with your own confirmed citations.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Actual Recipe Code
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-012-FACT-VERIFICATION-FOUNDATION
+# ===========================================================
+
+FACT_VERIFICATION_FOUNDATION = Recipe(
+    recipe_id="RCP-000-000-012-FACT-VERIFICATION-FOUNDATION",
+    title="Fact Verification Foundation",
+    description="AI-assisted fact verification through
+        confidence assessment, source surfacing, and
+        structured output for human verification.",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="easy",
+    version="2.00b",
+
+    parameters={
+        "topic": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Subject requiring verification"
+        },
+        "verification_level": {
+            "type": "string",
+            "required": False,
+            "default": "basic",
+            "options": ["basic", "systematic"],
+            "description": "Basic = confidence check with sources. Systematic = full ratings, verification guidance, contradiction detection."
+        },
+        "include_confidence_ratings": {
+            "type": "boolean",
+            "required": False,
+            "default": False,
+            "description": "Add HIGH/MEDIUM/LOW rating per claim"
+        },
+        "document_verification_guidance": {
+            "type": "boolean",
+            "required": False,
+            "default": False,
+            "description": "Include guidance on how to verify each claim independently"
+        },
+        "flag_contradictions": {
+            "type": "boolean",
+            "required": False,
+            "default": True,
+            "description": "Note conflicting information in training data"
+        },
+        "output_format": {
+            "type": "string",
+            "required": False,
+            "default": "list",
+            "options": ["list", "table", "narrative"],
+            "description": "How to present assessed claims"
+        },
+        "use_context": {
+            "type": "string",
+            "required": False,
+            "default": None,
+            "description": "What the facts will be used for (business plan, academic paper, presentation, etc.)"
+        }
+    },
+
+    prompt_template=\"\"\"
+    # ===========================================================
+    # FACT VERIFICATION FOUNDATION
+    # ===========================================================
+
+    # -----------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -----------------------------------------------------------
+
+    R1: NEVER present AI-generated source names as confirmed
+        citations. You are recalling source associations from
+        training data, not performing live lookups. Every
+        source you name is a SUGGESTION for the user to
+        verify, not a confirmed reference. Frame all source
+        mentions as: "This claim is commonly associated with
+        [source name] — verify this source exists and
+        supports this specific claim."
+
+    R2: NEVER fabricate source names, publication dates,
+        journal names, author names, or DOI numbers. If you
+        are not confident a specific source exists, say
+        "this type of claim is typically found in [source
+        category, e.g., FDA databases, peer-reviewed
+        nutrition journals]" rather than inventing a
+        specific reference.
+
+    R3: ALWAYS be transparent about what you are actually
+        doing. You are assessing claims based on patterns
+        in your training data. You are NOT accessing live
+        databases, searching the internet, checking
+        publication archives, or cross-referencing sources
+        in real-time. State this clearly at the start of
+        every verification output so the user understands
+        the nature of your assistance.
+
+    R4: ALWAYS confirm the topic, verification level, output
+        format, and intended use with the user before
+        producing the verification output. If the user
+        provides a use context (e.g., academic paper),
+        adjust your rigor threshold accordingly — academic
+        use requires more conservative confidence ratings
+        than casual content.
+
+    R5: NEVER rate a claim as HIGH confidence simply because
+        it sounds plausible or because you have seen similar
+        claims frequently. HIGH means you have strong,
+        specific basis in your training data from multiple
+        authoritative source types. If a claim is widely
+        repeated but you cannot associate it with specific
+        authoritative sources, it is MEDIUM at best.
+
+    R6: ALWAYS separate the claim from the source. Present
+        the factual claim first, then your confidence
+        assessment, then your source suggestions. This
+        structure makes it easy for the user to verify
+        each component independently.
+
+    R7: NEVER skip contradiction flagging even if
+        flag_contradictions is set to False. If you
+        encounter genuinely conflicting information in
+        your training data, flag it regardless of the
+        parameter setting. Contradictions are safety-
+        critical information that the user needs.
+
+    R8: IF a claim is outside your training data or you
+        have no basis for assessing it, say so explicitly.
+        "I have no basis for assessing this claim" is a
+        valid and valuable output. Do not stretch thin
+        knowledge into a confidence rating.
+
+    # -----------------------------------------------------------
+    # I-DONT-KNOW HANDLING
+    # -----------------------------------------------------------
+
+    This recipe is specifically about honesty and accuracy.
+    The AI must model the behavior it is helping the user
+    achieve: rigorous truthfulness.
+
+    KNOWLEDGE LIMIT PROTOCOL:
+
+    IF you cannot assess a claim at all:
+        STATE: "I have no basis for assessing this claim
+        from my training data."
+        SUGGEST: specific source types or databases where
+        the user could verify independently
+        DO NOT assign a confidence rating to claims you
+        cannot assess
+
+    IF you can partially assess a claim:
+        STATE what part you can assess and what part you
+        cannot
+        RATE only the part you can assess
+        FLAG the unassessed portion for human verification
+
+    IF a claim involves recent events near or after your
+    training cutoff:
+        STATE that your training data may not include
+        the most current information
+        SUGGEST the user check current sources directly
+        DO NOT present potentially outdated information
+        as current fact
+
+    IF the entire topic is outside your knowledge:
+        STATE this honestly at parameter confirmation
+        SUGGEST the user try specialized databases or
+        domain experts instead
+        DO NOT produce a verification output filled with
+        LOW-confidence claims and generic source categories
+
+    # -----------------------------------------------------------
+    # PARAMETER CONFIRMATION
+    # -----------------------------------------------------------
+
+    Before producing the verification output, confirm:
+
+    VERIFICATION PARAMETERS:
+        Topic: {topic}
+        Verification Level: {verification_level}
+        Confidence Ratings: {include_confidence_ratings}
+        Verification Guidance: {document_verification_guidance}
+        Contradiction Flagging: {flag_contradictions}
+        Output Format: {output_format}
+        Intended Use: {use_context}
+
+    IMPORTANT DISCLOSURE (include every time):
+    "I will assess these claims based on my training data.
+    I am not accessing live databases, searching the
+    internet, or cross-referencing publications in real-
+    time. My source suggestions are starting points for
+    your own verification, not confirmed citations.
+    Claims rated HIGH confidence are well-supported in
+    my training data but should still be independently
+    verified for [use_context]-level content."
+
+    SCOPE CHECK:
+    - Do I have sufficient training data on this topic?
+    - Is this topic likely to have changed since my
+      training cutoff?
+    - Does the intended use require rigor beyond what
+      AI-assisted verification can provide?
+
+    If any concern arises, raise it before proceeding.
+
+    Ask: "Does this scope look right? Any adjustments
+    before I proceed?"
+
+    WAIT for user confirmation.
+
+    # -----------------------------------------------------------
+    # VERIFICATION OUTPUT
+    # -----------------------------------------------------------
+
+    After user confirms, produce the verification output.
+
+    OUTPUT FORMAT GUIDANCE:
+
+    If output_format is "list":
+        Present each claim as a numbered item with
+        confidence rating (if enabled), source suggestions,
+        and verification guidance (if enabled) as sub-items
+        beneath each claim.
+
+    If output_format is "table":
+        Present claims in a structured table with columns:
+        CLAIM | CONFIDENCE | SUGGESTED SOURCES |
+        VERIFICATION STATUS | NOTES
+        Each row is one claim. Keep claims concise in the
+        table; expand in notes if needed.
+
+    If output_format is "narrative":
+        Present claims in flowing prose organized by
+        subtopic, with confidence ratings and source
+        suggestions woven into the text naturally.
+        Flag transitions between high-confidence and
+        lower-confidence material clearly.
+
+    FOR EACH CLAIM, PROVIDE:
+
+    1. THE CLAIM
+        State the factual claim clearly and specifically.
+        Avoid vague or compound claims — break complex
+        facts into individually verifiable components.
+
+    2. CONFIDENCE RATING (if include_confidence_ratings
+       is True, or if verification_level is "systematic"):
+        HIGH — Strong, specific basis in training data
+        from multiple authoritative source types. You can
+        associate this claim with specific named sources.
+        MEDIUM — Reasonable basis but with some uncertainty.
+        Commonly stated but you cannot pinpoint specific
+        authoritative sources, OR specific sources exist
+        but with variation in details.
+        LOW — Limited basis. You have seen this claim but
+        cannot associate it with authoritative sources, OR
+        it involves data that changes frequently, OR your
+        training data is thin on this subtopic.
+
+    3. SOURCE SUGGESTIONS
+        Name specific sources you associate with this
+        claim, framed as starting points:
+        "This claim is commonly associated with [source].
+        Verify this source exists and supports this
+        specific claim."
+
+        If you cannot name specific sources, suggest
+        source categories:
+        "This type of claim is typically found in
+        [source category]. Search [specific database or
+        publication type] for current data."
+
+    4. VERIFICATION GUIDANCE (if document_verification_
+       guidance is True, or if verification_level is
+       "systematic"):
+        - What to search for to verify this claim
+        - Which source type would be most authoritative
+        - What specific detail to check (date, figure,
+          attribution)
+        - How to determine if the claim is still current
+
+    5. CONTRADICTION FLAG (always, per R7):
+        If conflicting information exists in your training
+        data, present both positions with their respective
+        source associations. Indicate which position
+        appears to have stronger support and why.
+
+    # -----------------------------------------------------------
+    # VERIFICATION SUMMARY
+    # -----------------------------------------------------------
+
+    After presenting all claims, provide:
+
+    VERIFICATION SUMMARY:
+
+    CLAIM DISTRIBUTION:
+        Total claims assessed: [count]
+        HIGH confidence: [count]
+        MEDIUM confidence: [count]
+        LOW confidence: [count]
+        Unable to assess: [count]
+
+    CONTRADICTIONS FOUND: [count]
+        [Brief list of contradicted claims]
+
+    PRIORITY VERIFICATION LIST:
+        List the claims most urgently needing human
+        verification, starting with:
+        1. Any contradicted claims
+        2. LOW confidence claims included in the output
+        3. MEDIUM claims involving specific figures or dates
+        4. HIGH claims that are critical to the user's
+           intended use
+
+    LIMITATIONS OF THIS ASSESSMENT:
+        - Based on training data, not live verification
+        - Source suggestions require independent confirmation
+        - Claims involving recent data may be outdated
+        - [Any topic-specific limitations identified]
+
+    # -----------------------------------------------------------
+    # FOLLOW-UP OPTIONS
+    # -----------------------------------------------------------
+
+    Based on THIS specific assessment, suggest 2-3
+    follow-up actions:
+    - Specific claims that would benefit from deeper
+      investigation
+    - Source categories the user should check for the
+      LOW-confidence items
+    - Whether related recipes (RCP-013 Contextual Cross-
+      Validator, RCP-014 Stakeholder Fact Analysis) would
+      add value for their use case
+
+    \"\"\"
+)
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+#
+# EXAMPLE 1: Basic Verification
+# A restaurant owner needs market statistics for a
+# business plan.
+#   topic = "farm-to-table dining trends in the US"
+#   verification_level = "basic"
+#   use_context = "business plan"
+# The AI returns claims with source suggestions,
+# flagging which need independent verification.
+#
+# EXAMPLE 2: Systematic Verification
+# A B2B consultant preparing a client presentation
+# needs thoroughly vetted industry data.
+#   topic = "environmental consulting market growth"
+#   verification_level = "systematic"
+#   use_context = "client presentation"
+# The AI returns claims with confidence ratings,
+# verification guidance, and contradiction flags.
+#
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-012-FACT-VERIFICATION-FOUNDATION
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Notes
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+SOURCE: Consolidated from four source prompts:
+    ChatGPT V1: Double-Check and Cite
+    ChatGPT V2: Verified Data Compilation
+    Claude V1: Comprehensive Fact Verification
+    Gemini V1: Fact-Checking with Multiple Sources
+
+Parameters enable Easy (basic claim assessment) or
+Systematic (full protocol with ratings and guidance)
+usage modes.
+
+CRITICAL DESIGN NOTE:
+This recipe was fundamentally reframed during QA audit.
+The original version implied the AI could perform real-time
+fact verification by cross-referencing live databases and
+publications. The AI cannot do this. The revised version
+honestly positions the AI as an assistant to the verification
+process: it surfaces what it knows, rates its confidence,
+suggests sources as starting points, and structures the
+output so the human can efficiently complete actual
+verification. The value is in the structure and the honesty,
+not in pretending the AI is a fact-checking database.
+
+BEST PRACTICES:
+- Always independently verify source suggestions
+- Focus human verification effort on MEDIUM and LOW claims
+- Use the verification summary as a checklist
+- Replace AI source suggestions with confirmed citations
+- For academic or legal use, treat ALL claims as requiring
+  independent verification regardless of confidence rating
+
+QA REVISION NOTES (P051f-H005):
+- Normalized 15 non-standard WPRM field names to spec
+- Added BEHAVIORAL RULES section (R1-R8)
+- Added I-DONT-KNOW HANDLING with knowledge limit protocol
+- Reframed recipe: AI assists verification, does not perform it
+- Made prompt interactive (parameter confirmation with
+  mandatory disclosure about AI limitations)
+- Replaced source_count with verification_level (basic/
+  systematic) — source_count created false precision
+- Added use_context parameter for rigor calibration
+- Renamed document_verification_steps to
+  document_verification_guidance (accuracy of framing)
+- Converted CRAFT comment syntax to plain-language rules
+- Converted Python-style conditionals to AI-interpretable
+  plain-language instructions
+- Added output format guidance (list/table/narrative)
+- Added VERIFICATION SUMMARY with claim distribution,
+  priority verification list, and limitations disclosure
+- Made follow-up options dynamic and recipe-aware
+- R7 overrides flag_contradictions=False for safety
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-012-FACT-VERIFICATION-FOUNDATION",
+    "version": "2.00b",
+    "created_date": "2025-12-29",
+    "last_updated": "2026-02-15",
+    "author": "CRAFT Framework",
+    "status": "revised_qa",
+    "character_count": "TBD",
+    "line_count": "TBD",
+    "validation_status": "revised_p051f_h005",
+    "qa_audit_verdict": "FAIL — 10 fixes applied",
+    "qa_fixes_applied": [
+        "FIX-1: Normalized 15 non-standard WPRM field names to spec",
+        "FIX-2: Added BEHAVIORAL RULES section (R1-R8)",
+        "FIX-3: Added I-DONT-KNOW HANDLING with knowledge limit protocol",
+        "FIX-4: Reframed recipe — AI assists verification, does not perform it",
+        "FIX-5: Made prompt interactive with mandatory AI limitations disclosure",
+        "FIX-6: Converted CRAFT comments to plain-language behavioral instructions",
+        "FIX-7: Converted Python-style conditionals to plain-language instructions",
+        "FIX-8: Replaced source_count with verification_level; added use_context",
+        "FIX-9: Added output format guidance for list/table/narrative",
+        "FIX-10: Integrated usage examples as comments within code block"
+    ],
+    "source_prompts": [
+        "ChatGPT V1: Double-Check and Cite",
+        "ChatGPT V2: Verified Data Compilation",
+        "Claude V1: Comprehensive Fact Verification",
+        "Gemini V1: Fact-Checking with Multiple Sources"
+    ],
+    "lessons_learned_applied": [
+        "LL-004", "LL-005", "LL-007", "LL-009",
+        "LL-013"
+    ],
+    "related_recipes": [
+        "RCP-000-000-013-CONTEXTUAL-CROSS-VALIDATOR",
+        "RCP-000-000-014-STAKEHOLDER-FACT-ANALYSIS"
+    ]
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-012 SUPPLEMENTAL CONTENT
+# Fact Verification Foundation
+# ===========================================================
+# Recipe: RCP-000-000-012-FACT-VERIFICATION-FOUNDATION
+# Version: 2.00b
+# QA Session: P051f-H005
+# Contents:
+#   SECTION A — TLDR Recap (website, human-facing)
+#   SECTION B — Extended Information for the AI (collapsed)
+# ===========================================================
+
+
+# ===========================================================
+# SECTION A: TLDR RECAP
+# ===========================================================
+# Audience: Website visitors (plain language)
+# Display: Visible on recipe page
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+
+    It helps you check whether facts are reliable before
+    you use them. You give the AI a topic, and it produces
+    a structured list of claims with confidence ratings,
+    source suggestions, and flags for anything that looks
+    contradictory or uncertain. The output is designed as
+    a verification checklist — the AI does the organizing
+    and the initial confidence assessment, and you do the
+    final confirmation.
+
+
+WHY IT EXISTS:
+
+    AI is good at surfacing information, but it can also
+    present made-up facts with total confidence. This
+    recipe flips that problem on its head. Instead of
+    just giving you facts and hoping they are right, it
+    forces the AI to tell you how confident it actually
+    is about each claim, where it thinks the information
+    came from, and where you should double-check. The
+    result is not a list of verified facts — it is a
+    structured starting point that makes your own
+    verification faster and more targeted.
+
+
+AN IMPORTANT THING TO UNDERSTAND:
+
+    The AI does not actually look things up in real-time.
+    It is not searching databases or checking journal
+    archives while you wait. It is assessing claims based
+    on what it learned during training. That means its
+    source suggestions are starting points, not confirmed
+    citations. Its confidence ratings reflect how well-
+    supported a claim is in its training data, not whether
+    it checked today. This recipe is honest about that
+    limitation — and that honesty is what makes it useful.
+
+
+WHAT YOU GIVE IT:
+
+    - A topic you need facts about
+    - A verification level: "basic" (quick confidence
+      check with source suggestions) or "systematic"
+      (full ratings, verification guidance, contradiction
+      detection)
+    - Optional: what the facts are for (business plan,
+      academic paper, presentation) so the AI can
+      calibrate its rigor
+    - Optional: your preferred output format (list,
+      table, or narrative)
+
+
+WHAT YOU GET BACK:
+
+    For each factual claim:
+
+    - The claim itself, stated clearly and specifically
+    - A confidence rating (HIGH, MEDIUM, or LOW) based
+      on how well-supported the claim is in the AI's
+      training data
+    - Source suggestions — names of publications,
+      databases, or organizations the AI associates
+      with this claim, framed as starting points for
+      you to verify
+    - Verification guidance (in systematic mode) —
+      what to search for, which source type would be
+      most authoritative, what specific detail to check
+    - Contradiction flags — if the AI's training data
+      contains conflicting information, both sides are
+      presented
+
+    At the end, a verification summary tells you how
+    many claims fell into each confidence tier and
+    gives you a prioritized list of what to verify first.
+
+
+WHAT MAKES THIS RECIPE DIFFERENT:
+
+    - It is honest about what AI can and cannot do. Every
+      session starts with a clear disclosure that the AI
+      is not performing live fact-checking.
+
+    - It separates the claim from the source. You can
+      evaluate each independently — the claim might be
+      right even if the suggested source is wrong, or
+      vice versa.
+
+    - It prioritizes your effort. The verification summary
+      tells you exactly which claims need your attention
+      most, so you are not wasting time re-checking things
+      the AI is already confident about.
+
+    - It flags contradictions even if you did not ask for
+      them. Conflicting information is too important to
+      let a parameter setting suppress it.
+
+    - It adjusts rigor to your use case. Facts for a
+      casual blog post need a different confidence
+      threshold than facts for a legal filing.
+
+
+BEST USED FOR:
+
+    - Business plans and pitch decks (need solid market
+      stats but short on research time)
+    - Content creation (want to catch errors before
+      publishing)
+    - Presentations (need a quick confidence check on
+      key data points)
+    - Market research (structuring a large number of
+      claims for systematic verification)
+    - Technical documentation (flagging which specs
+      and figures need independent confirmation)
+
+
+TIPS FOR BEST RESULTS:
+
+    - Be specific about your topic. "Renewable energy"
+      is broad. "US residential solar panel installation
+      costs 2020-2024" gives the AI a focused target
+      with verifiable claims.
+
+    - Tell it what the facts are for. The AI calibrates
+      its rigor based on your intended use. Academic
+      use gets more conservative ratings than casual
+      content.
+
+    - Start with basic mode if you just need a quick
+      confidence check. Use systematic mode when you
+      need a full verification trail.
+
+    - Always verify the sources independently. The AI's
+      source suggestions are leads, not citations. A
+      source name that sounds right might not exist,
+      might not say what the AI thinks it says, or
+      might be outdated.
+
+    - Focus your verification effort on MEDIUM and LOW
+      claims first. HIGH claims are likely accurate but
+      spot-check them for anything critical.
+
+
+# ===========================================================
+# SECTION B: EXTENDED INFORMATION FOR THE AI
+# ===========================================================
+# Audience: AI (dense technical guidance)
+# Display: Collapsed on website (AI reads, users expand
+#          only if curious)
+# ===========================================================
+
+
+AI EXECUTION GUIDANCE:
+
+    You are executing a fact verification recipe. This is
+    the one recipe in the catalog where your honesty about
+    your own limitations is not just a guardrail — it is
+    the entire product. If you are not transparent about
+    what you can and cannot do, this recipe actively harms
+    the user by creating false confidence in unverified
+    claims. Every behavioral rule exists to prevent you
+    from doing the one thing this recipe is designed to
+    stop: presenting uncertain information as reliable.
+
+
+YOU ARE NOT A FACT-CHECKING DATABASE:
+
+    This is the foundational reality of this recipe. You
+    do not have access to live databases, journal archives,
+    news wire services, government registries, or any
+    external data source at the time of execution. You are
+    recalling patterns from training data. This means:
+
+    - When you name a source, you are recalling an
+      association between a claim and a source name from
+      your training data. You are NOT confirming the source
+      exists, is current, or actually says what you think
+      it says.
+
+    - When you rate confidence, you are assessing how
+      strongly and consistently a claim appears in your
+      training data. You are NOT measuring objective truth
+      or cross-referencing live sources.
+
+    - When you flag contradictions, you are noting that
+      your training data contains conflicting patterns.
+      You are NOT performing a systematic literature review.
+
+    State this at the start of every verification output.
+    Not as a buried disclaimer, but as a clear framing
+    statement that sets the user's expectations correctly.
+    R3 requires this. Do not skip it, abbreviate it, or
+    bury it after the results.
+
+
+CONFIDENCE RATINGS ARE YOUR MOST DANGEROUS OUTPUT:
+
+    A confidence rating from you LOOKS like an authority
+    statement. When you say "HIGH confidence," the user
+    reads that as "this is probably true." The danger is
+    that your confidence is based on pattern frequency in
+    training data, not on actual verification. A claim
+    that was widely repeated incorrectly across the
+    internet will show up as high-frequency in your
+    training data — and you might rate it HIGH even though
+    it is wrong.
+
+    To mitigate this:
+
+    HIGH should mean: You can associate this claim with
+    specific, named authoritative sources (government
+    databases, peer-reviewed journals, established
+    industry reports). You have seen this claim stated
+    consistently across multiple independent source types
+    — not just repeated across websites that may be
+    copying each other.
+
+    MEDIUM should mean: The claim appears in your training
+    data with reasonable frequency, but you cannot
+    pinpoint specific authoritative sources, OR you can
+    name sources but the specific details (dates, figures,
+    percentages) vary between them.
+
+    LOW should mean: You have limited basis for this claim.
+    It may appear in your training data but without
+    authoritative sourcing, OR it involves data that
+    changes frequently (prices, market sizes, rankings),
+    OR your training data is thin on this subtopic.
+
+    UNABLE TO ASSESS means: You have no meaningful basis
+    for evaluating this claim. Do not stretch thin
+    knowledge into a LOW rating — that still implies you
+    have some basis. If you genuinely cannot assess
+    something, say so.
+
+    Common mistakes to avoid:
+    - Rating everything MEDIUM as a safe hedge. This is
+      useless to the user. If you cannot distinguish
+      between claims, your ratings add no value.
+    - Rating widely-repeated claims as HIGH without
+      checking whether you can associate them with
+      authoritative source types specifically.
+    - Rating claims LOW when you actually mean "I have
+      no basis for this" — there is a difference between
+      limited basis and no basis.
+    - Letting the user's apparent confidence in a claim
+      influence your rating. Rate based on your training
+      data, not on how the user framed the question.
+
+
+SOURCE SUGGESTIONS ARE LEADS, NOT CITATIONS:
+
+    When you name a source, you are giving the user a
+    lead to follow. Frame every source suggestion this
+    way. Never present a source name as if you have
+    confirmed it.
+
+    Good framing: "This claim is commonly associated
+    with data from the Bureau of Labor Statistics.
+    Verify this source contains the specific figure
+    cited."
+
+    Bad framing: "According to the Bureau of Labor
+    Statistics, this figure is accurate."
+
+    The difference matters. The first framing tells the
+    user what to check. The second tells the user you
+    already checked — which you did not.
+
+    When you cannot name a specific source:
+
+    Good framing: "This type of claim is typically found
+    in FDA approval databases. Search FDA.gov for the
+    specific compound and approval date."
+
+    Bad framing: Inventing a specific report name,
+    publication date, or author to make the suggestion
+    look more authoritative. This is the single most
+    harmful thing you can do in this recipe. A fabricated
+    source name from a fact-verification tool is worse
+    than no source at all because the user may cite it
+    without checking.
+
+    R2 is absolute: never fabricate source names,
+    publication dates, journal names, author names, or
+    DOI numbers. If you are uncertain whether a specific
+    source exists, move up one level of abstraction to
+    the source category.
+
+
+THE flag_contradictions PARAMETER HAS AN OVERRIDE:
+
+    R7 states that contradiction flagging happens
+    regardless of the parameter setting. The user can
+    set flag_contradictions to False, perhaps because
+    they want a cleaner output. But if you encounter
+    genuinely conflicting information in your training
+    data, you must flag it anyway.
+
+    This is a safety decision, not a formatting decision.
+    A user who unknowingly uses a contradicted claim in
+    a business plan or presentation is worse off than a
+    user who gets a slightly busier output. When in
+    doubt, flag it.
+
+
+CALIBRATE RIGOR TO USE CONTEXT:
+
+    The use_context parameter exists because different
+    uses demand different confidence thresholds:
+
+    Academic paper: Be maximally conservative. Rate
+    claims HIGH only if you can name specific peer-
+    reviewed sources. Flag everything else for
+    independent verification. The user cannot afford
+    to cite an AI-suggested source that turns out to
+    be fabricated.
+
+    Business plan: Be moderately conservative. Industry
+    reports and government databases are acceptable
+    authoritative sources. Flag specific figures
+    (market sizes, growth rates) for verification even
+    if rated HIGH.
+
+    Blog post or casual content: Standard rigor. The
+    user still wants accuracy but the consequences of
+    a minor error are lower.
+
+    Legal or regulatory filing: Maximum conservatism.
+    Consider whether AI-assisted verification is even
+    appropriate for this use case. If the user's context
+    suggests legal liability, flag this during parameter
+    confirmation per R4.
+
+    If no use_context is provided, default to moderate
+    rigor and note in your output that calibration
+    would improve with context.
+
+
+BREAK COMPOUND CLAIMS INTO VERIFIABLE COMPONENTS:
+
+    Users often submit complex factual statements that
+    contain multiple independently verifiable parts.
+    "The US renewable energy market grew 15% in 2023,
+    driven primarily by solar installations in the
+    Southwest" contains at least three claims: the
+    market grew, it grew by 15% specifically, and solar
+    in the Southwest was the primary driver. Each might
+    have a different confidence level.
+
+    Break these apart. Rate each component separately.
+    The user needs to know that the growth direction
+    is HIGH confidence but the specific percentage is
+    MEDIUM and the regional driver attribution is LOW.
+    A single rating for the compound claim would hide
+    this important distinction.
+
+
+THE VERIFICATION SUMMARY IS THE USER'S ACTION PLAN:
+
+    The verification summary at the end is not a recap
+    of what you did. It is the user's to-do list. The
+    priority verification list should be ordered by
+    urgency and risk:
+
+    1. Contradicted claims — these need resolution
+       before any use
+    2. LOW confidence claims the user wants to include —
+       these need independent sourcing
+    3. MEDIUM claims with specific figures — numbers are
+       the most commonly fabricated detail
+    4. HIGH claims critical to the user's argument —
+       spot-check these because the consequences of
+       error are high even if the probability is low
+
+    If you produced 20 claims and 18 are HIGH confidence,
+    do not bury the 2 problematic ones in a summary
+    paragraph. Lead with them. The user's time is best
+    spent on the weakest links, not re-reading the
+    strongest ones.
+
+
+# ===========================================================
+# END SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+```json
+{
+  "recipe_id": "RCP-000-000-012-FACT-VERIFICATION-FOUNDATION",
+  "recipe_name": "Fact Verification Foundation",
+  "version": "2.00b",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "WPRM-RCP-000-000-012-FACT-VERIFICATION-FOUNDATION-v2_00b-REVISED.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "You are executing a fact verification recipe. This is the one recipe in the catalog where your honesty about your own limitations is not just a guardrail — it is the entire product. If you are not transparent about what you can and cannot do, this recipe actively harms the user by creating false confidence in unverified claims. Every behavioral rule exists to prevent you from doing the one thing this recipe is designed to stop: presenting uncertain information as reliable."
+    },
+    "foundational_reality": {
+      "type": "prose",
+      "body": "You do not have access to live databases, journal archives, news wire services, government registries, or any external data source at the time of execution. You are recalling patterns from training data. When you name a source, you are recalling an association — not confirming the source exists or is current. When you rate confidence, you are assessing training-data pattern strength — not measuring objective truth. When you flag contradictions, you are noting conflicting training-data patterns — not performing a systematic literature review. State this at the start of every verification output as a clear framing statement, not a buried disclaimer. R3 requires this."
+    },
+    "confidence_ratings": {
+      "type": "prose",
+      "body": "Confidence ratings are your most dangerous output. A rating from you looks like an authority statement. HIGH should mean you can associate the claim with specific named authoritative sources seen consistently across multiple independent source types. MEDIUM should mean reasonable frequency but no pinpointable authoritative sources, or sources with varying details. LOW should mean limited basis, no authoritative sourcing, frequently changing data, or thin training coverage. UNABLE TO ASSESS means no meaningful basis — do not stretch thin knowledge into a LOW rating. Avoid rating everything MEDIUM as a safe hedge, rating widely-repeated claims HIGH without authoritative-source association, and letting the user's apparent confidence influence your rating."
+    },
+    "source_suggestions": {
+      "type": "prose",
+      "body": "Source suggestions are leads, not citations. Frame every source suggestion as a starting point for the user to verify. Good framing: 'This claim is commonly associated with data from [source]. Verify this source contains the specific figure cited.' Bad framing: 'According to [source], this figure is accurate.' Never fabricate source names, publication dates, journal names, author names, or DOI numbers (R2 is absolute). If uncertain whether a specific source exists, move up one level of abstraction to the source category."
+    },
+    "contradiction_override": {
+      "type": "prose",
+      "body": "R7 states that contradiction flagging happens regardless of the flag_contradictions parameter setting. If you encounter genuinely conflicting information in your training data, flag it anyway. This is a safety decision, not a formatting decision."
+    },
+    "rigor_calibration": {
+      "type": "prose",
+      "body": "Calibrate rigor to use_context. Academic paper: maximally conservative, HIGH only with specific peer-reviewed sources. Business plan: moderately conservative, flag specific figures even if HIGH. Blog post: standard rigor. Legal or regulatory filing: maximum conservatism, consider whether AI-assisted verification is even appropriate. If no use_context provided, default to moderate rigor and note that calibration would improve with context."
+    },
+    "compound_claims": {
+      "type": "prose",
+      "body": "Break compound claims into individually verifiable components. Rate each component separately. The user needs to know that one part of a complex claim may be HIGH confidence while another part is LOW. A single rating for a compound claim hides important distinctions."
+    },
+    "verification_summary": {
+      "type": "prose",
+      "body": "The verification summary is the user's action plan, not a recap. Priority order: contradicted claims first, then LOW confidence claims the user wants to include, then MEDIUM claims with specific figures, then HIGH claims critical to the user's argument. Lead with the weakest links — the user's time is best spent there."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

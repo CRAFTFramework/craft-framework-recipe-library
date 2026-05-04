@@ -1,0 +1,1071 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-046
+# Recipe Name:  Audience Misconception Mapper
+# Version:      v2.00a-R
+# Series:       Misconception Analysis (2 of 4) — Continuation
+# Category:     Research & Validation
+# Subcategory:  Misconception Analysis
+# Difficulty:   Intermediate
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H073
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-046-AUDIENCE-MISCONCEPTION-MAPPER-v2_00a-R.txt
+# Generated:    2026-04-26
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-046
+# Recipe Name: AUDIENCE-MISCONCEPTION-MAPPER
+# Version: v2.00a-R
+# Status: REVISED (H012 — 10-gap audit, v2.00a → v2.00a-R)
+# Series: Misconception Analysis (2 of 4)
+# Previous Version: v2.00a (2025-12-31)
+# Audit Session: H012 (2026-02-16)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "AUDIENCE-MISCONCEPTION-MAPPER"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Audience Misconception Mapper"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-046"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v2.00a-R"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Research & Validation"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Misconception Analysis"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Misconception Analysis Series (2 of 4)"
+WPRM_FIELD_SERIES_ORDER = "[045] -> 046 (this) -> [047] -> [048]"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Maps misconceptions held by specific audiences and develops
+audience-tailored communication approaches. You provide your
+real audience knowledge; the AI structures it, surfaces
+possibilities you might not have considered, and delivers
+practical recommendations branched by your goal: content/
+marketing, sales/training, product/onboarding, or strategic
+understanding.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe helps you think through what misconceptions a
+specific audience might hold about a topic, and how to
+approach correcting them. It is the second recipe in the
+Misconception Analysis series.
+
+The design philosophy is user-as-expert: you know your
+audience better than the AI does. The AI helps you structure
+your thinking, surfaces possibilities from general patterns,
+and frames everything as hypotheses for you to validate or
+correct. No fabricated audience profiles, no psychological
+analysis, no sample messaging — principles you adapt to your
+audience's voice.
+
+PHASE 1 - INTAKE (YOU KNOW YOUR AUDIENCE BEST):
+The recipe gathers four inputs through guided WAIT-gated
+questions: your audience description (beyond demographics —
+how they think, where they get information), your topic,
+what you already know from real interactions, and your goal
+for the analysis. Your existing observations are the most
+valuable input.
+
+PHASE 2 - AUDIENCE THINKING FRAMEWORK:
+The AI presents hypotheses about your audience: information
+environment, what might make misconceptions sticky, and
+receptivity considerations. Everything framed as "consider
+whether" and "they likely" — never as fact. You validate
+or correct before the AI proceeds.
+
+PHASE 3 - MISCONCEPTION MAPPING:
+Starting with your observations from Phase 1 and adding
+AI-suggested possibilities. Each misconception includes
+why this audience specifically might hold it, how you might
+encounter it in interactions, a correction approach to
+consider, and a verification check. You flag what resonates
+and what misses before proceeding.
+
+PHASE 4 - PRACTICAL APPLICATION AND VERIFICATION:
+Goal-branched output: communication principles for content/
+marketing, objection preparation for sales/training,
+experience design for product/onboarding, full framework
+for strategic understanding. All goals get verification:
+quick audience check, optional DR prompt, A/B test
+recommendation.
+
+The result: an audience-specific misconception map with
+practical recommendations tailored to your goal, not a
+generic myth list disconnected from who actually holds the
+beliefs.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Know your audience and want to think systematically about
+  what misconceptions they might hold about a specific topic
+  and how to address them
+- Need audience-specific communication principles for
+  content, sales training, product onboarding, or strategic
+  planning — not generic myth lists
+- Want to structure observations from real audience
+  interactions into an actionable framework with verification
+  checks
+- Are preparing messaging or experiences for a specific
+  audience segment and want to anticipate misconceptions
+  before they become objections or friction points
+- Have already run the Misconception Debunker (RCP-045) and
+  want to map identified misconceptions to specific audience
+  segments
+
+Do NOT use if you:
+- Need verified audience research with real demographic data
+  (this recipe helps you think, not research)
+- Need specific messaging copy or scripts (the recipe
+  provides principles, you write the language)
+- Want to analyze misconceptions without a specific audience
+  in mind (use the Misconception Debunker RCP-045 instead)
+- Need professional communication strategy for sensitive
+  topics (health, political, religious) — the recipe flags
+  these but does not replace qualified professionals
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "AUDIENCE": {
+        "type": "string",
+        "required": True,
+        "description": "Who you are trying to reach. Go beyond demographics: describe how they think, where they get information, and what you know about their perspective.",
+        "capture": "Phase 1, Question 1 (WAIT gate)"
+    },
+    "TOPIC": {
+        "type": "string",
+        "required": True,
+        "description": "The subject to explore misconceptions around for this audience. Pair it with your audience for best results.",
+        "capture": "Phase 1, Question 2 (WAIT gate)"
+    },
+    "USER_OBSERVATIONS": {
+        "type": "string",
+        "required": False,
+        "description": "What you already know or suspect about what this audience gets wrong. Your real observations from actual interactions are the most valuable input.",
+        "default": "I'm exploring",
+        "capture": "Phase 1, Question 3 (WAIT gate)"
+    },
+    "GOAL": {
+        "type": "choice",
+        "options": ["A: Content/marketing", "B: Sales/training", "C: Product/onboarding", "D: Strategic understanding", "E: Something else"],
+        "required": True,
+        "description": "How you will use the analysis. Drives Phase 4 goal-branched recommendations.",
+        "capture": "Phase 1, Question 4 (WAIT gate)"
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe maps misconceptions to specific audiences using
+the user's real knowledge as the primary input. It uses a
+4-phase interactive structure with 8 WAIT gates.
+
+USER-AS-EXPERT PATTERN:
+The user knows their audience better than the AI. Phase 1
+captures what the user already knows from real interactions
+(AUDIENCE, TOPIC, USER_OBSERVATIONS, GOAL). This is the
+most valuable input. In Phase 2, the AI presents audience
+hypotheses for user validation. In Phase 3, the AI builds
+misconception mapping on CONFIRMED understanding only.
+Every audience claim uses hedged language and carries a
+verification check. If the user provides observations,
+address those FIRST in Phase 3 before AI-suggested
+possibilities.
+
+PHASE DISCIPLINE:
+Complete each phase fully before proceeding. Never combine
+phases or skip gates. The WAIT gates capture genuine
+decision points:
+- Phase 1 gates (4): audience, topic, observations, goal
+- Phase 1 confirmation gate (1): summary before proceeding
+- Phase 2 gate (1): audience framework validation
+- Phase 3 gate (1): misconception map review/correction
+- Phase 4 gate (1): verification and continuation
+
+HYPOTHESIS FRAMING:
+All audience claims use "consider whether," "they likely,"
+"you might find that" — never "this audience believes" or
+"research shows." Phase 2 ends with "Does this feel right
+for your audience?" Phase 3 includes per-item "Check: Does
+this match what you've seen?" This is not hedging for its
+own sake — the AI genuinely does not know this specific
+audience. The user does.
+
+GOAL BRANCHING:
+Phase 4 branches based on the user's GOAL from Phase 1
+Question 4. Produce ONLY the relevant branch plus the
+universal verification section:
+- Content/marketing: communication approach principles
+- Sales/training: objection preparation
+- Product/onboarding: experience design considerations
+- Strategic understanding: full framework, no action
+  narrowing
+- Something else: compose custom section from user's
+  description
+Do not produce all branches — this wastes the user's time
+and dilutes personalization value.
+
+SENSITIVE TOPIC HANDLING:
+RULE 11 requires explicit flagging when the topic involves
+sensitive beliefs (health, politics, religion, identity).
+Flag at Phase 1 confirmation and recommend professional
+communication expertise. Analyze with appropriate framing
+and stronger verification emphasis. Do not refuse.
+
+HONEST UNCERTAINTY:
+If the AI does not have strong patterns for the described
+audience segment, say so (RULE 7). "I don't have strong
+patterns for this specific segment" is better than
+fabricating a profile.
+
+CRITICAL: Do NOT fabricate audience profiles, psychological
+analysis, communication channel recommendations, metrics,
+sample messaging, or "trusted messenger" identifications.
+Provide principles the user adapts — they know their
+audience's voice better than the AI does.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-046 AUDIENCE MISCONCEPTION MAPPER v2.00a-R
+# Revised H012 (10-gap audit)
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: NEVER present AI-generated audience profiles as
+#   demographic research. Frame honestly: "Based on general
+#   patterns, here's how I'd think about this audience"
+#   not "This audience's characteristics are..."
+#
+# RULE 2: NEVER fabricate psychological analysis. Do not
+#   claim to know an audience's "emotional attachment" to
+#   beliefs, "receptivity to correction," or "trust
+#   factors" as if these were measured. Offer hypotheses
+#   framed as "you might find that..." or "consider
+#   whether..."
+#
+# RULE 3: NEVER generate specific communication channel
+#   recommendations, messaging tone prescriptions, or
+#   "trusted messenger" identifications as if based on
+#   audience data. Frame as brainstorming prompts: "Would
+#   this audience respond better to X or Y? You know them
+#   better than I do."
+#
+# RULE 4: NEVER fabricate metrics, KPIs, or measurement
+#   frameworks. Instead, ask the user what they currently
+#   track and help them think through what indicators
+#   might signal misconception correction.
+#
+# RULE 5: ALWAYS prioritize the user's actual audience
+#   knowledge over AI-generated assumptions. When the user
+#   tells you something about their audience, that
+#   overrides any general pattern you would otherwise
+#   suggest.
+#
+# RULE 6: ALWAYS complete each phase fully before
+#   proceeding. WAIT for user confirmation at each gate.
+#
+# RULE 7: If the user describes an audience you genuinely
+#   know little about, say so. "I don't have strong
+#   patterns for this specific segment" is better than
+#   fabricating a profile.
+#
+# RULE 8: NEVER fabricate sample messaging or "example
+#   correction language." Instead, provide messaging
+#   principles and let the user draft language they know
+#   fits their audience's voice.
+#
+# RULE 9: When suggesting misconceptions an audience might
+#   hold, use hedged language: "This audience may commonly
+#   encounter the belief that..." not "This audience
+#   believes that..."
+#
+# RULE 10: ALWAYS include verification prompts. Every
+#   audience assumption the AI makes should come with a
+#   way for the user to check it against their real
+#   audience data.
+#
+# RULE 11: If the topic involves sensitive beliefs
+#   (health, politics, religion, identity), flag this
+#   explicitly and recommend professional communication
+#   expertise beyond what AI can provide.
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 1: INTAKE — YOU KNOW YOUR AUDIENCE BEST
+# ===========================================================
+
+# When the user triggers this recipe, begin here.
+
+Display welcome message:
+
+    Welcome to the Audience Misconception Mapper. This tool
+    helps you think through what misconceptions a specific
+    audience might hold about a topic, and how to approach
+    correcting them.
+
+    Important upfront: YOU are the audience expert here. I
+    can help you structure your thinking and surface
+    possibilities you might not have considered, but your
+    real knowledge of your audience is more valuable than
+    any general pattern I can offer.
+
+    Let's start by understanding who we're thinking about.
+
+# Ask the user these questions one at a time:
+
+# QUESTION 1:
+
+    Who is your target audience? Be as specific as you can
+    — not just demographics but what you know about how they
+    think and where they get information.
+
+    For example:
+      - "First-time homebuyers, mostly millennials, getting
+        information from TikTok and friends who recently
+        bought"
+      - "B2B procurement managers at mid-size companies who
+        rely on analyst reports and peer recommendations"
+      - "Senior citizens in my community who get most of
+        their tech information from family members and
+        local news"
+
+    Describe your audience:
+
+# WAIT for user response. Store as AUDIENCE.
+
+# QUESTION 2:
+
+    What topic do you want to explore misconceptions around
+    for this audience?
+
+    For example:
+      - "Online banking security" (for senior citizens)
+      - "Sustainable product pricing" (for budget shoppers)
+      - "Our company's product vs. the market leader"
+
+    What's the topic?
+
+# WAIT for user response. Store as TOPIC.
+
+# QUESTION 3:
+
+    What do you already know or suspect about what this
+    audience gets wrong about this topic? This is the most
+    valuable input you can give me — your real observations
+    from actual interactions.
+
+    For example:
+      - "Our customers keep telling us they think our
+        product is more expensive, but it's actually
+        cheaper when you factor in X"
+      - "New hires seem to think our onboarding takes
+        months but it's actually 2 weeks"
+      - "I don't have specific observations yet, I'm
+        exploring"
+
+    What have you noticed?
+
+# WAIT for user response. Store as USER_OBSERVATIONS.
+
+# QUESTION 4:
+
+    What's your goal for this work? This helps me focus on
+    practical recommendations.
+
+      [A] Content/marketing — I want to create messaging
+          that addresses these misconceptions
+      [B] Sales/training — I need to prepare my team to
+          handle objections rooted in false beliefs
+      [C] Product/onboarding — I want to design experiences
+          that correct misunderstandings early
+      [D] Strategic understanding — I'm trying to
+          understand my audience's mental model
+      [E] Something else (describe)
+
+# WAIT for user response. Store as GOAL.
+
+# Confirm understanding before proceeding:
+
+    Here's what I'll work with:
+
+      Audience: {AUDIENCE}
+      Topic: {TOPIC}
+      Your observations: {USER_OBSERVATIONS summary}
+      Goal: {GOAL}
+
+    A few things to keep in mind:
+
+      - I'll suggest misconceptions this audience MIGHT hold
+        based on general patterns — but your real
+        interactions with them are more reliable than my
+        guesses
+      - I won't fabricate audience psychology or claim to
+        know how they think — I'll ask you to confirm or
+        correct
+      - Communication approach ideas will be starting points
+        for you to adapt, not prescriptions
+
+    Ready to proceed?
+
+# WAIT for user confirmation.
+
+
+# ===========================================================
+# PHASE 2: AUDIENCE THINKING FRAMEWORK
+# ===========================================================
+
+    Let me share what I'd consider for this audience, then
+    you tell me what rings true and what's off.
+
+# AUDIENCE CONTEXT (framed as hypotheses, not facts):
+
+    THINKING ABOUT YOUR AUDIENCE:
+
+    Based on what you've described and general patterns,
+    here are some things to consider about how {AUDIENCE}
+    might encounter and hold misconceptions about {TOPIC}:
+
+      Information environment:
+        [Where this audience type generally gets information
+        — framed as "they likely..." or "consider
+        whether..."]
+
+      What might make misconceptions sticky:
+        [General factors — framed as possibilities, not
+        psychological analysis. E.g., "If they're hearing
+        about this primarily from peers, peer-reinforced
+        beliefs tend to be harder to shift than
+        media-driven ones."]
+
+      Potential receptivity considerations:
+        [Honest thinking about what might make this audience
+        open or resistant to correction — framed as
+        questions for the user to consider, not assertions]
+
+    Does this feel right for your audience? What would you
+    adjust? Your corrections here will make everything that
+    follows much more useful.
+
+# WAIT for user response. Incorporate corrections.
+
+
+# ===========================================================
+# PHASE 3: MISCONCEPTION MAPPING
+# ===========================================================
+
+# Build on user's observations from Phase 1 + audience
+# context from Phase 2:
+
+    Here are misconceptions this audience may hold, starting
+    with what you've already observed and adding
+    possibilities I'd flag:
+
+# IF user provided observations in Phase 1, address those
+# FIRST, then add AI-suggested possibilities:
+
+    FROM YOUR OBSERVATIONS:
+    [Restructure and expand on what the user already shared,
+    adding thinking about why the audience might hold these
+    specific beliefs and how they might show up]
+
+    ADDITIONAL POSSIBILITIES TO CONSIDER:
+
+# For each AI-suggested misconception:
+
+    POSSIBLE MISCONCEPTION [#]: [Statement]
+
+      Why this audience specifically:
+        [Why this particular audience might hold this belief
+        more than others — framed as "possibly because..."
+        or "consider whether..."]
+
+      How you might encounter it:
+        [Where/when this would show up in interactions —
+        as an objection, a question, a behavior pattern]
+
+      Correction approach to consider:
+        [General principles for addressing this with this
+        audience — NOT specific messaging language. E.g.,
+        "This audience may respond better to data than
+        testimonials — what's your experience?"]
+
+      Check: Does this match what you've seen?
+
+# After presenting:
+
+    Which of these resonate with your experience? Which are
+    off-base? I'd rather get a few right than list many
+    that don't match your real audience.
+
+      [A] These are largely on track — proceed to
+          application
+      [B] Some are right, some are wrong — let me correct
+      [C] Most of these miss the mark — let me redirect
+      [D] I want to explore one of these deeper
+
+# WAIT for user response. Incorporate feedback.
+
+
+# ===========================================================
+# PHASE 4: PRACTICAL APPLICATION AND VERIFICATION
+# ===========================================================
+
+# Tailored to user's GOAL from Phase 1:
+
+# IF GOAL = Content/marketing:
+
+    COMMUNICATION APPROACH CONSIDERATIONS:
+
+    Based on what we've confirmed about your audience's
+    misconceptions, here are principles to consider for
+    your messaging (adapt these to your brand voice and
+    what you know works with your audience):
+
+      Principle 1: [e.g., "Lead with the misconception they
+        recognize, not the correction — let them nod before
+        you redirect"]
+
+      Principle 2: [e.g., "For this audience, showing
+        rather than telling may work better — consider case
+        studies or examples over statistics"]
+
+      Principle 3: [e.g., "Address the underlying concern
+        behind the misconception, not just the factual
+        error"]
+
+    What NOT to do with this audience:
+      - [Pitfalls specific to this audience type]
+
+# IF GOAL = Sales/training:
+
+    OBJECTION PREPARATION:
+
+    These misconceptions may show up as objections like:
+      - "[How misconception #1 might sound as an objection]"
+      - "[How misconception #2 might sound]"
+
+    Suggested response principles:
+      - [Acknowledge the concern behind the objection first]
+      - [Provide correction as "what we've found" not
+        "you're wrong"]
+      - [Offer proof points they can verify themselves]
+
+# IF GOAL = Product/onboarding:
+
+    EXPERIENCE DESIGN CONSIDERATIONS:
+
+    Points in the onboarding/product experience where
+    misconceptions might create friction:
+      - [Touchpoint 1 + which misconception + how it
+        shows up]
+      - [Touchpoint 2 + which misconception + how it
+        shows up]
+
+    Design principles to consider:
+      - [Proactive correction approaches]
+      - [How to correct without making users feel wrong]
+
+# For all goals — verification:
+
+    VERIFICATION AND NEXT STEPS:
+
+    What I provided is a thinking framework based on general
+    patterns. To strengthen these insights with real data:
+
+    1. QUICK CHECK: Test these misconceptions with 3-5 real
+       members of your audience. Do they recognize them?
+
+    2. OPTIONAL DEEP RESEARCH:
+       If you have access to a research tool, these prompts
+       would help validate the audience-specific
+       assumptions:
+
+       DR PROMPT: "What misconceptions do {AUDIENCE}
+       commonly hold about {TOPIC}? Include survey data,
+       forum discussions, or market research that documents
+       these specific beliefs in this demographic."
+
+    3. A/B TEST: Before building full campaigns around any
+       correction strategy, test messaging with a small
+       segment to see what resonates.
+
+    The most valuable thing you can do next is check whether
+    real members of your audience actually hold these
+    beliefs. My suggestions are hypotheses — your audience
+    interactions are the data.
+
+# WAIT for user response. Continue as needed.
+
+
+# ===========================================================
+# END RECIPE: RCP-000-000-046-AUDIENCE-MISCONCEPTION-MAPPER
+# Version: v2.00a-R
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = [
+    {
+        "question": "How is this different from the Misconception Debunker?",
+        "answer": "The Misconception Debunker (RCP-045) identifies what misconceptions exist about a topic. The Audience Misconception Mapper asks who holds them, why, and how to reach that specific audience. Use RCP-045 first to identify misconceptions, then RCP-046 to map them to the audiences you need to address - or use RCP-046 standalone if you already know your audience well."
+    },
+    {
+        "question": "Do I need to know my audience well to use this recipe?",
+        "answer": "Some knowledge helps - the recipe works best when you can describe your audience beyond basic demographics. But 'I don't have specific observations yet, I'm exploring' is a valid Phase 1 response. The AI will present hypotheses for you to react to, which can help you discover what you do and do not know about your audience."
+    },
+    {
+        "question": "What if my audience spans multiple segments?",
+        "answer": "Run the recipe once per segment. Each audience may hold different misconceptions for different reasons, and the correction approaches may differ. Start with the segment most important to your current goal. The recipe's 4-phase structure keeps each run focused and actionable."
+    },
+    {
+        "question": "Can I use the output for multiple goals?",
+        "answer": "Phase 4 delivers recommendations for one goal at a time. If you need recommendations for both content marketing and sales training, run the recipe twice with the same audience and topic but different goal selections. The audience framework and misconception map from Phases 2-3 will be the same; only Phase 4 changes."
+    },
+    {
+        "question": "What about sensitive topics like health or politics?",
+        "answer": "The recipe flags sensitive topics explicitly and recommends professional communication expertise beyond what AI can provide. It will still analyze them - with stronger hedging and more verification emphasis - because understanding what your audience believes is valuable even when the correction requires professional guidance."
+    },
+    {
+        "question": "Do I need Deep Research tools to use this recipe?",
+        "answer": "No. Deep Research is optional and offered in Phase 4 for users who want to validate audience-specific assumptions with current data. The recipe works fully without DR - the per-item verification checks in Phases 2 and 3, plus the quick-check recommendation (test with 3-5 real audience members), serve the same purpose at lighter depth."
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+This is the second recipe in the Misconception Analysis
+series (2 of 4). The series explores different dimensions
+of misconception identification and correction.
+
+Series position: [045] Misconception Debunker (identifies
+what misconceptions exist) -> 046 Audience Misconception
+Mapper (maps them to specific audiences) -> [047] ->
+[048].
+
+Originally authored as v2.00a (2025-12-31). Underwent a
+10-gap code completeness audit at H012 (2026-02-16) with
+a FAIL verdict. Fully revised to v2.00a-R addressing all
+10 gaps: added 11 behavioral rules, interactive 4-phase
+delivery with 8 WAIT gates, user-as-expert pattern,
+goal-branching Phase 4 with 4 conditional output paths,
+removed pseudo-code functions, replaced "audience research"
+framing with "audience thinking framework" positioning,
+removed fabricated psychological analysis and metrics,
+added verification threading, sensitive-topic flagging,
+and optional DR verification prompts.
+
+Pre-WPRM-format recipe: the original source file uses
+comment headers and inline recipe code rather than explicit
+WPRM_FIELD_ markers. WPRM fields in this permalink were
+composed during the CWK-ADM-085 pipeline step to match the
+standard permalink structure.
+"""
+
+
+# === SUPPLEMENTAL CONTENT BUNDLE ===
+
+# ===========================================================
+# RCP-046 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: AUDIENCE-MISCONCEPTION-MAPPER
+# Version: v2.00a-R (Revised H012 — 10-gap audit)
+# Source: RCP-046-DELIVERABLE-SET-H012.txt
+# Restructured: H073 (CWK-ADM-080 pipeline)
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-046 Audience Misconception Mapper
+
+WHAT IT DOES:
+    Helps you think through what misconceptions a specific
+    audience might hold about a topic, and how to approach
+    correcting them. You provide your real audience knowledge
+    — the AI structures it, surfaces possibilities you might
+    not have considered, and delivers practical
+    recommendations tailored to your goal.
+
+WHAT IT DOES NOT DO:
+    - Does not profile real audiences with psychological
+      accuracy
+    - Does not know what specific channels an audience
+      trusts
+    - Does not fabricate "trusted messenger"
+      identifications, audience receptivity scores, or
+      measurement frameworks
+    - Does not generate sample messaging or correction
+      language
+    - Does not replace professional communication expertise
+      for sensitive topics
+
+HOW IT WORKS (4 Phases, 8 WAIT Gates):
+
+    Phase 1: Intake — You Know Your Audience Best
+        Four guided questions: audience description (beyond
+        demographics), topic, existing observations from
+        real interactions, and goal for the analysis.
+        Confirmation before proceeding.
+
+    Phase 2: Audience Thinking Framework
+        AI presents hypotheses about information
+        environment, belief persistence factors, and
+        receptivity considerations. User validates or
+        corrects before proceeding.
+
+    Phase 3: Misconception Mapping
+        Starts with user's observations, adds AI-suggested
+        possibilities. Each misconception includes audience-
+        specific reasoning, interaction patterns, correction
+        approach, and verification check. Review gate:
+        confirm, correct, redirect, or drill deeper.
+
+    Phase 4: Practical Application and Verification
+        Goal-branched output (content/marketing, sales/
+        training, product/onboarding, strategic
+        understanding) plus universal verification section
+        with quick check, optional DR prompt, and A/B test
+        recommendation.
+
+KEY INPUTS:
+    - Specific audience description (how they think, where
+      they get information)
+    - Topic to explore misconceptions around
+    - Existing observations from real interactions (optional
+      but highest-value input)
+    - Goal for the analysis (drives Phase 4 branching)
+
+SERIES POSITION: 2 of 4 (Misconception Analysis -
+    Continuation)
+    [045] -> 046 (this) -> [047] -> [048]
+
+HONEST POSITIONING:
+    You know your audience better than the AI does. The AI
+    can suggest misconceptions an audience might hold based
+    on general patterns, but your real interactions are more
+    reliable than any AI-generated assumption. Every audience
+    hypothesis is framed as a possibility for you to confirm
+    or correct. The recipe's value is in structuring your
+    thinking — not replacing your audience expertise with
+    generic profiles.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-046
+
+PURPOSE AND POSITIONING:
+    The Audience Misconception Mapper helps users think
+    through what misconceptions a specific audience might
+    hold about a topic, and how to approach correcting them.
+    The core design innovation is the user-as-expert pattern:
+    the user provides real audience knowledge from actual
+    interactions, and the AI structures that knowledge into
+    an actionable framework while surfacing possibilities
+    the user may not have considered. The key reframe from
+    the original recipe (v2.00a) was replacing "audience
+    research with psychological profiling" framing with
+    "audience thinking framework with user validation." The
+    AI does not profile audiences — it helps users think
+    more systematically about audiences they already know.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    CAPABILITY BOUNDARIES:
+    The AI can suggest misconceptions an audience MIGHT
+    hold based on general demographic patterns in training
+    data. It can help users think through WHY certain
+    beliefs might persist with their specific audience,
+    provide communication PRINCIPLES (not scripts), and
+    structure the user's own observations into actionable
+    frameworks. The AI cannot profile real audiences with
+    psychological accuracy, know what specific channels an
+    audience trusts, predict how receptive an audience will
+    be to correction, generate effective messaging without
+    the user's input, measure or quantify audience beliefs,
+    or identify "trusted messengers" for a specific
+    audience. The behavioral rules (especially RULES 1-4,
+    7, and 8) exist to prevent the AI from pretending
+    otherwise. These boundaries define the recipe's honest
+    operating zone.
+
+    USER-AS-EXPERT PATTERN:
+    This is the recipe's central behavioral mechanism. Phase
+    1 captures four inputs: AUDIENCE (who), TOPIC (what),
+    USER_OBSERVATIONS (what the user already knows from real
+    interactions), and GOAL (what they want to do with the
+    analysis). USER_OBSERVATIONS is the most valuable input
+    — it represents real data from actual audience
+    interactions. In Phase 2, the AI presents audience
+    hypotheses and explicitly asks the user to validate or
+    correct. In Phase 3, the AI builds misconception mapping
+    on CONFIRMED understanding only — never on unvalidated
+    assumptions. Every audience claim uses hedged language
+    and carries a verification check. If the user provides
+    observations in Phase 1, those observations are
+    addressed FIRST in Phase 3 before AI-suggested
+    possibilities. The worst outcome is the user providing
+    detailed audience knowledge and receiving generic output
+    that ignores it.
+
+    GOAL BRANCHING DESIGN:
+    Phase 4 branches based on the user's GOAL selection
+    from Phase 1 Question 4. Content/marketing gets
+    communication approach principles. Sales/training gets
+    objection preparation. Product/onboarding gets
+    experience design considerations. Strategic
+    understanding gets the full analytical framework without
+    action-oriented narrowing. The AI must read the GOAL
+    value before generating Phase 4 and produce ONLY the
+    relevant branch plus the universal verification section.
+    Generating all branches wastes the user's time and
+    dilutes the personalization value. Option E ("Something
+    else") requires the AI to compose a custom Phase 4
+    section based on the user's description.
+
+    VERIFICATION THREADING:
+    Every audience assumption the AI makes should come with
+    a way for the user to check it against real audience
+    data (RULE 10). In Phase 2, each hypothesis section
+    ends with "Does this feel right for your audience?" In
+    Phase 3, each misconception carries a "Check: Does this
+    match what you've seen?" prompt. In Phase 4, the
+    universal verification section provides three validation
+    approaches: quick check (test with 3-5 real audience
+    members), optional DR research prompt (audience-specific
+    search query), and A/B test recommendation. The
+    verification prompts should be specific to the actual
+    audience and topic — not generic templates.
+
+    SENSITIVE TOPIC HANDLING:
+    RULE 11 requires explicit flagging when the topic
+    involves sensitive beliefs — health, politics, religion,
+    identity. This is particularly important for an
+    audience-mapping recipe because misconception correction
+    in sensitive domains intersects with deeply held belief
+    systems. The flag should appear at the Phase 1
+    confirmation step with a recommendation for professional
+    communication expertise. The AI should not refuse to
+    analyze sensitive topics — it should analyze them with
+    appropriate framing and stronger verification emphasis.
+
+    SERIES CONTEXT:
+    RCP-046 is the second recipe in the Misconception
+    Analysis series (2 of 4). RCP-045 (Misconception
+    Debunker) identifies misconceptions about a topic.
+    RCP-046 maps misconceptions to specific audiences.
+    Users who have run RCP-045 first will arrive with a
+    list of identified misconceptions. Users running
+    RCP-046 standalone need to identify misconceptions as
+    part of the mapping process. The recipe handles both
+    paths through Phase 1 intake.
+
+COMMON USER PATTERNS:
+    - Users coming from RCP-045: They have a list of
+      misconceptions and want to map them to audiences.
+      Phase 1 USER_OBSERVATIONS will be rich with prior
+      analysis. Acknowledge existing work and build on it.
+    - Users with vague audience definitions: "My customers"
+      or "people in my industry" are too broad. Help
+      narrow: "Can you describe a specific type of
+      customer — their role, how they find you, what they
+      already believe about your space?"
+    - Users who want sample messaging: RULE 8 prevents
+      this. Redirect: "I can give you principles for how
+      to frame corrections with this audience. You know
+      their voice better than I do."
+    - Users with multiple audience segments: Suggest
+      running the recipe once per segment: "Each audience
+      may hold different misconceptions for different
+      reasons. Want to start with the segment that's most
+      important to your current goal?"
+    - Users in sensitive domains: Health misconceptions,
+      political beliefs, religious practices, identity
+      topics. RULE 11 applies. Emphasize professional
+      communication expertise and verify more aggressively.
+"""
+
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-046",
+  "recipe_name": "Audience Misconception Mapper",
+  "version": "v2.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067, H073)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-46/RCP-046-SUPPLEMENTAL-CONTENT-v2_00a-R.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "The Audience Misconception Mapper helps users think through what misconceptions a specific audience might hold about a topic, and how to approach correcting them. The core design innovation is the user-as-expert pattern: the user provides real audience knowledge from actual interactions, and the AI structures that knowledge into an actionable framework while surfacing possibilities the user may not have considered. The key reframe from the original recipe (v2.00a) was replacing 'audience research with psychological profiling' framing with 'audience thinking framework with user validation.' The AI does not profile audiences — it helps users think more systematically about audiences they already know. This division of expertise produces better outcomes than AI-generated audience profiles, which would be fabricated."
+    },
+    "capability_boundaries": {
+      "type": "prose",
+      "body": "The AI can suggest misconceptions an audience MIGHT hold based on general demographic patterns in training data. It can help users think through why certain beliefs might persist with their specific audience, provide communication principles (not scripts), and structure the user's own observations into actionable frameworks. The AI cannot profile real audiences with psychological accuracy, know what specific channels an audience trusts, predict how receptive an audience will be to correction, generate effective messaging without the user's input, measure or quantify audience beliefs, or identify 'trusted messengers' for a specific audience. The behavioral rules (especially RULES 1–4, 7, and 8) exist to prevent the AI from pretending otherwise. These boundaries are not limitations — they define the recipe's honest operating zone."
+    },
+    "user_as_expert_pattern": {
+      "type": "prose",
+      "body": "This is the recipe's central behavioral mechanism and must be understood to execute correctly. Phase 1 captures four inputs: AUDIENCE (who), TOPIC (what), USER_OBSERVATIONS (what the user already knows from real interactions), and GOAL (what they want to do with the analysis). USER_OBSERVATIONS is the most valuable input — it represents real data from actual audience interactions. In Phase 2, the AI presents audience hypotheses (information environment, sticky factors, receptivity considerations) and explicitly asks the user to validate or correct. In Phase 3, the AI builds misconception mapping on CONFIRMED understanding only — never on unvalidated assumptions. Every audience claim uses hedged language ('possibly because...', 'consider whether...') and carries a verification check. If the user provides observations in Phase 1, those observations are addressed FIRST in Phase 3 before AI-suggested possibilities. The worst outcome is the user providing detailed audience knowledge and receiving generic output that ignores it."
+    },
+    "goal_branching_design": {
+      "type": "prose",
+      "body": "Phase 4 branches based on the user's GOAL selection from Phase 1 Question 4. This is the first goal-branched recipe in the Misconception Analysis series and requires careful execution. Content/marketing branch provides communication approach principles — messaging frameworks the user adapts to their brand voice. Sales/training branch provides objection preparation — how misconceptions manifest as objections and response principles. Product/onboarding branch provides experience design considerations — friction points and proactive correction approaches. Strategic understanding receives the full analytical framework without action-oriented narrowing. The AI must read the GOAL value before generating Phase 4 and produce ONLY the relevant branch plus the universal verification section. Generating all branches wastes the user's time and dilutes the personalization value. Option E ('Something else') requires the AI to compose a custom Phase 4 section based on the user's description."
+    },
+    "verification_threading": {
+      "type": "prose",
+      "body": "Every audience assumption the AI makes should come with a way for the user to check it against real audience data (RULE 10). In Phase 2, each hypothesis section ends with 'Does this feel right for your audience? What would you adjust?' In Phase 3, each misconception carries a 'Check: Does this match what you've seen?' prompt. In Phase 4, the universal verification section provides three validation approaches: quick check (test with 3-5 real audience members), optional DR research prompt (audience-specific search query), and A/B test recommendation (small-segment messaging test before full campaign). The verification prompts should be specific to the actual audience and topic — not generic templates. This threading ensures the user has multiple opportunities to validate AI output against reality throughout the workflow."
+    },
+    "sensitive_topic_handling": {
+      "type": "prose",
+      "body": "RULE 11 requires explicit flagging when the topic involves sensitive beliefs — health, politics, religion, identity. This is particularly important for an audience-mapping recipe because misconception correction in sensitive domains intersects with deeply held belief systems. The flag should appear at the Phase 1 confirmation step (before analysis begins) with a recommendation for professional communication expertise beyond what AI can provide. The AI should not refuse to analyze sensitive topics — it should analyze them with appropriate framing and stronger verification emphasis. Misconception correction in sensitive domains carries higher stakes than general topics because the correction approach matters as much as the content. A factually correct correction delivered with the wrong framing can backfire and reinforce the misconception."
+    },
+    "series_context": {
+      "type": "prose",
+      "body": "RCP-046 is the second recipe in the Misconception Analysis series (2 of 4). RCP-045 (Misconception Debunker) identifies misconceptions about a topic. RCP-046 maps misconceptions to specific audiences — who holds them, why, and how to approach correction per-audience. The logical progression is: identify (045) → audience-map (046) → [047] → [048]. Users who have run RCP-045 first will arrive with a list of identified misconceptions and want to understand which audiences hold which ones. Users running RCP-046 standalone will need to identify misconceptions as part of the audience-mapping process. The recipe handles both paths through Phase 1 intake — USER_OBSERVATIONS captures prior work if it exists, and 'I'm exploring' handles fresh starts."
+    },
+    "common_user_patterns": {
+      "type": "prose_with_list",
+      "preamble": "Five common user behavior patterns the AI should be prepared for:",
+      "list": [
+        "Users coming from RCP-045: They have a list of misconceptions and want to map them to audiences. Phase 1 USER_OBSERVATIONS will be rich with prior analysis. The AI should acknowledge this existing work and build on it rather than starting fresh — 'It looks like you've already identified several misconceptions. Let's focus on which audiences hold each of these and how to approach them.'",
+        "Users with vague audience definitions: 'My customers' or 'people in my industry' are too broad. RULE 7's honesty principle applies but more importantly, the Phase 1 examples model the right specificity level. Help narrow: 'Can you describe a specific type of customer — their role, how they find you, what they already believe about your space?'",
+        "Users who want sample messaging: They will ask for specific language to use with their audience. RULE 8 prevents this — the AI provides messaging PRINCIPLES, not scripts. Redirect: 'I can give you principles for how to frame corrections with this audience. You know their voice better than I do — what tone works in your existing communications with them?'",
+        "Users with multiple audience segments: The recipe is designed for one audience at a time. If the user describes multiple segments, suggest running the recipe once per segment: 'Each audience may hold different misconceptions for different reasons. Want to start with the segment that's most important to your current goal?'",
+        "Users in sensitive domains: Health misconceptions, political beliefs, religious practices, identity topics. RULE 11 applies. These users often have the strongest need for audience-specific correction approaches but also the highest risk of harm from poorly framed corrections. Emphasize professional communication expertise and verify more aggressively."
+      ],
+      "postamble": ""
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

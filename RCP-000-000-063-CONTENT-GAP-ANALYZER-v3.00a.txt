@@ -1,0 +1,1310 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-063-CONTENT-GAP-ANALYZER
+# Version: v3.00a
+# Generated: 2026-04-26 (P067-H083)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-063
+# Recipe Name: CONTENT-GAP-ANALYZER
+# Version: 3.00a
+# Status: EXPERIMENTAL — Revised Beta Recipe (QA P051f H018)
+# Revision: Full DR integration + user knowledge capture
+# Original Version: 2.00a (P049 phase 49.1.3, H020)
+# ===========================================================
+# *** EXPERIMENTAL RECIPE ***
+# This recipe integrates Deep Research for live competitor
+# content analysis. It requires testing and refinement as
+# real-world usage reveals DR's strengths and limitations
+# for content gap analysis. Expect this recipe to evolve
+# significantly through use. Report findings to inform
+# future revisions.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-063-CONTENT-GAP-ANALYZER"
+
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe identifies content gaps in your competitive
+landscape by combining your firsthand competitor knowledge
+with AI-powered Deep Research. It structures what you
+already know, uses Deep Research to investigate what you
+don't, then synthesizes both into a prioritized gap analysis.
+
+EXPERIMENTAL STATUS: This recipe uses Deep Research to
+examine competitor content in real time. DR capabilities and
+limitations for content analysis are still being understood.
+Treat all DR-sourced findings as starting points requiring
+validation, and expect this recipe to be refined through use.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "063"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Experimental"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Competitive Analysis"
+
+
+WPRM_FIELD_RECIPE_TAGS = "content gaps, competitor analysis, deep research, content strategy, experimental, competitive content, editorial planning"
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Identify Competitors and Share What You Know",
+        "content": """
+Name 2-3 competitors and answer a structured questionnaire
+about their content. You don't need to know everything —
+partial knowledge is valuable. The AI will use Deep Research
+to fill in what you don't know and verify what you do.
+"""
+    },
+    {
+        "step": 2,
+        "title": "Deep Research Investigation",
+        "content": """
+The AI will design and execute targeted Deep Research
+queries to examine your competitors' actual published
+content. This may include blog posts, resource pages,
+social content, and public-facing materials. The AI
+determines how many DR prompts are needed based on the
+scope of your analysis.
+"""
+    },
+    {
+        "step": 3,
+        "title": "Review Merged Intelligence",
+        "content": """
+The AI will synthesize your firsthand knowledge with DR
+findings into a unified competitor content landscape. Review
+this for accuracy — your market knowledge is the best
+filter for DR's output. Flag anything that doesn't match
+your experience.
+"""
+    },
+    {
+        "step": 4,
+        "title": "Gap Identification and Prioritization",
+        "content": """
+Based on the merged intelligence, the AI will identify
+content gaps and help you prioritize them by strategic
+fit, feasibility, and potential impact. Your input during
+prioritization is essential — the AI can identify gaps but
+you know which ones matter most for your business.
+"""
+    },
+    {
+        "step": 5,
+        "title": "Action Planning",
+        "content": """
+For your top priority gaps, the AI will help you develop
+an action plan including content angles, format
+recommendations, and differentiation strategies. All plans
+should be validated against your actual resources and
+capabilities.
+"""
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a two-source intelligence
+framework: (1) the user's firsthand competitor knowledge,
+captured through a structured questionnaire, and (2) Deep
+Research findings from live investigation of competitor
+content. The AI synthesizes both sources, flags
+discrepancies, and uses the combined intelligence to
+identify content gaps. The AI does NOT fabricate competitor
+information. When DR cannot access or find specific content,
+the AI reports what it could and could not find rather than
+inventing findings.
+
+EXPERIMENTAL NOTE: DR's effectiveness for content gap
+analysis depends on what content is publicly accessible,
+how well search results surface competitor materials, and
+the specificity of the industry. The AI should document
+what DR could and could not discover to help calibrate
+expectations for future runs.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Identify content gaps in your competitive landscape using
+Deep Research and your own competitor knowledge.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when planning a major content initiative,
+entering a new market, or seeking to differentiate from
+competitors. Best used after RCP-062 (Content Idea
+Generator) to validate brainstormed ideas against the
+competitive landscape. Requires Deep Research capability.
+Most valuable when you bring existing knowledge of your
+competitors — the combination of your experience plus
+DR findings produces stronger analysis than either alone.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Content Gap Analyzer"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-063-CONTENT-GAP-ANALYZER
+# VERSION: 3.00a
+# STATUS: EXPERIMENTAL
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+# Plain-language rules for any AI executing this recipe.
+# These rules override default AI behavior when conflicts
+# arise. Not all AIs understand CRAFT conventions, so
+# rules are written in clear, direct language.
+# ===========================================================
+
+BEHAVIORAL_RULES = {
+
+    "RULE_01": {
+        "name": "TWO-SOURCE INTELLIGENCE MODEL",
+        "rule": "This recipe has two information sources: "
+                "(1) user-provided competitor knowledge from "
+                "the questionnaire, and (2) Deep Research "
+                "findings. ALWAYS clearly label which source "
+                "each insight comes from. Use tags like "
+                "'[YOUR INPUT]' and '[DR FINDING]' throughout "
+                "the analysis. When both sources agree, note "
+                "the confirmation. When they conflict, "
+                "surface the discrepancy and ask the user "
+                "to resolve it. Never blend sources silently."
+    },
+
+    "RULE_02": {
+        "name": "DR TRANSPARENCY — REPORT WHAT YOU FOUND AND DIDN'T",
+        "rule": "After each Deep Research investigation, "
+                "report: (a) what you were able to find, "
+                "(b) what you searched for but could not "
+                "find, and (c) any access limitations you "
+                "encountered (paywalls, gated content, thin "
+                "search results). This transparency helps "
+                "the user understand the completeness of "
+                "the analysis and calibrate trust. Do NOT "
+                "fill gaps in DR coverage with fabricated "
+                "information."
+    },
+
+    "RULE_03": {
+        "name": "NO FABRICATED COMPETITOR DATA",
+        "rule": "Never invent competitor content titles, "
+                "publishing frequencies, engagement metrics, "
+                "traffic estimates, or performance data. If "
+                "DR finds specific content, cite it. If the "
+                "user reports specific knowledge, attribute "
+                "it. If neither source covers an area, say "
+                "'I was unable to determine [X] from either "
+                "your input or my research.' Fabricated "
+                "competitor intelligence is worse than no "
+                "intelligence — it leads to flawed strategy."
+    },
+
+    "RULE_04": {
+        "name": "HYPOTHESIS FRAMING FOR GAP CLAIMS",
+        "rule": "Frame all identified gaps as hypotheses, "
+                "not certainties. A gap identified via DR "
+                "means 'I did not find competitor content "
+                "covering this topic' — which could mean "
+                "they genuinely haven't covered it, OR that "
+                "DR didn't surface it, OR that it exists "
+                "behind a paywall or in a format DR cannot "
+                "access. Use language like: 'Based on what "
+                "I found, this appears to be a gap' rather "
+                "than 'This is a gap your competitors have "
+                "overlooked.'"
+    },
+
+    "RULE_05": {
+        "name": "NO ENGAGEMENT OR PERFORMANCE CLAIMS",
+        "rule": "Do not claim to know which competitor "
+                "content 'performs well,' 'gets high "
+                "engagement,' or 'drives traffic.' DR can "
+                "find published content but cannot access "
+                "analytics, engagement metrics, or traffic "
+                "data. You can observe: content that appears "
+                "prominently in search results, content with "
+                "visible social signals (shares, comments if "
+                "publicly visible), and content that appears "
+                "frequently updated or maintained. Frame "
+                "these as observational signals, not "
+                "performance data."
+    },
+
+    "RULE_06": {
+        "name": "USER KNOWLEDGE IS PRIMARY, DR IS SUPPLEMENTARY",
+        "rule": "The user's firsthand market knowledge is "
+                "more reliable than DR findings for areas "
+                "they know well. When the user provides "
+                "detailed competitor knowledge in the "
+                "questionnaire, DR should VERIFY and EXTEND "
+                "that knowledge, not contradict it without "
+                "strong evidence. If DR finds something that "
+                "contradicts user input, present both and "
+                "let the user judge. They know their market."
+    },
+
+    "RULE_07": {
+        "name": "AI DETERMINES DR PROMPT COUNT",
+        "rule": "Based on the number of competitors, scope "
+                "of analysis, and depth of user-provided "
+                "knowledge, the AI determines how many DR "
+                "prompts are needed. Typical range: 2-5 "
+                "prompts. Factors: more competitors = more "
+                "prompts; less user knowledge = more prompts "
+                "needed; broader channel scope = more prompts. "
+                "State the plan before executing: 'I will use "
+                "N Deep Research queries to investigate [scope]. "
+                "Here is my research plan...'"
+    },
+
+    "RULE_08": {
+        "name": "STRUCTURED DR RESEARCH PLAN",
+        "rule": "Before executing any DR queries, present "
+                "the research plan to the user. Each planned "
+                "query should specify: what it will "
+                "investigate, which competitor(s) it targets, "
+                "and what specific questions it aims to "
+                "answer. The user can adjust the plan before "
+                "execution. This prevents wasted DR prompts "
+                "and ensures the research addresses what the "
+                "user actually needs."
+    },
+
+    "RULE_09": {
+        "name": "EXPERIMENTAL STATUS ACKNOWLEDGMENT",
+        "rule": "At the start of the session and again when "
+                "presenting final results, briefly acknowledge "
+                "the experimental nature of this recipe. DR's "
+                "effectiveness for content gap analysis varies "
+                "by industry, competitor size, and content "
+                "accessibility. The user's feedback on what "
+                "worked and what didn't is valuable for "
+                "refining this recipe. One sentence at opening "
+                "and one at closing — do not over-disclaim."
+    },
+
+    "RULE_10": {
+        "name": "GAP PRIORITIZATION REQUIRES USER INPUT",
+        "rule": "The AI can identify potential gaps and "
+                "suggest prioritization criteria, but the "
+                "user must drive final prioritization. Only "
+                "the user knows their actual resources, "
+                "strategic priorities, competitive dynamics, "
+                "and team capabilities. Present gaps with "
+                "reasoning and ask the user to rank them — "
+                "do not present a pre-ranked list as if the "
+                "AI knows which gaps matter most."
+    },
+
+    "RULE_11": {
+        "name": "DIFFERENTIATION MUST BE SPECIFIC",
+        "rule": "When suggesting how the user can fill a "
+                "gap, go beyond generic advice like 'create "
+                "better content' or 'offer more depth.' Tie "
+                "differentiation strategies to specific "
+                "observations: 'Competitor A covers [topic] "
+                "but only at a beginner level — you could "
+                "differentiate by addressing [specific "
+                "advanced subtopic] based on your expertise "
+                "in [user's strength].' Generic "
+                "differentiation advice is worthless."
+    },
+
+    "RULE_12": {
+        "name": "SCOPE HONESTY AT OPENING",
+        "rule": "At the start, clearly explain what this "
+                "tool does and does not do. It IS a "
+                "structured gap analysis that combines your "
+                "knowledge with AI-powered research. It is "
+                "NOT a comprehensive competitive intelligence "
+                "platform, SEO tool, or analytics substitute. "
+                "It can identify content that exists publicly "
+                "but cannot determine its performance, "
+                "traffic, or business impact."
+    },
+
+    "RULE_13": {
+        "name": "DOCUMENT DR METHODOLOGY FOR REFINEMENT",
+        "rule": "Because this recipe is experimental, "
+                "document what DR search strategies you used, "
+                "what worked well, and what produced thin "
+                "results. Include a brief 'Research Notes' "
+                "section at the end of the analysis so the "
+                "user can provide feedback on the methodology "
+                "itself. This helps refine future runs."
+    }
+}
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+CONTENT_GAP_ANALYZER = Recipe(
+    recipe_id="RCP-000-000-063",
+    title="Content Gap Analyzer",
+    description="Identify content gaps using Deep Research "
+                "and user competitor knowledge",
+    category="CAT-000",
+    subcategory="SUBCAT-Content-Strategy",
+    difficulty="Advanced",
+    version="3.00a",
+
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Your business industry or niche. "
+                           "Be specific: 'B2B HR compliance "
+                           "software for mid-market companies' "
+                           "not just 'HR tech.'"
+        },
+        "competitors": {
+            "type": "list",
+            "required": True,
+            "default": None,
+            "description": "2-3 competitors to analyze. Provide "
+                           "company names and website URLs. The "
+                           "AI will use URLs for Deep Research "
+                           "investigation."
+        },
+        "analysis_scope": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "What content channels and types to "
+                           "focus on. Examples: 'blog content "
+                           "and resource library,' 'social media "
+                           "and thought leadership,' 'full "
+                           "content ecosystem.'"
+        },
+        "your_content_strengths": {
+            "type": "string",
+            "required": False,
+            "default": "not provided",
+            "description": "What content you already produce well "
+                           "and where your expertise lies. Helps "
+                           "identify gaps you are best positioned "
+                           "to fill."
+        },
+        "strategic_goal": {
+            "type": "string",
+            "required": False,
+            "default": "identify differentiation opportunities",
+            "description": "What you hope to achieve: market "
+                           "entry, repositioning, thought "
+                           "leadership, audience growth, etc."
+        }
+    }
+)
+
+
+# ===========================================================
+# PHASE 1: CONTEXT + COMPETITOR KNOWLEDGE QUESTIONNAIRE
+# ===========================================================
+
+"""
+#AI->H::Note: (
+Welcome to the Content Gap Analyzer. This is an experimental
+recipe that combines your firsthand competitor knowledge with
+Deep Research to identify content opportunities.
+
+A quick note on what to expect: DR will investigate your
+competitors' published content, but its coverage depends on
+what's publicly accessible and how well search surfaces their
+materials. Your own market knowledge fills the gaps DR
+misses. The combination of both sources produces the
+strongest analysis.
+
+Let's start by capturing what you already know.
+)
+
+--- CONTEXT COLLECTION ---
+
+#AI->H::Question: (
+First, the basics:
+
+1. INDUSTRY / NICHE
+   What specific industry are you in?
+
+2. COMPETITORS (2-3)
+   For each competitor, provide:
+   - Company name
+   - Website URL
+   - Any specific content channels you want to focus on
+     (blog, YouTube, podcast, newsletter, social, etc.)
+
+3. ANALYSIS SCOPE
+   What types of content should I investigate?
+   (e.g., 'mainly blog and resource library content'
+   or 'full content ecosystem including social')
+
+4. YOUR CONTENT STRENGTHS (optional)
+   What content do you already produce well?
+   Where does your expertise lie?
+
+5. STRATEGIC GOAL (optional)
+   What are you hoping to achieve with this analysis?
+)
+"""
+
+# >>> WAIT GATE 1 — Collect context before questionnaire <<<
+
+
+# ===========================================================
+# PHASE 1B: COMPETITOR KNOWLEDGE QUESTIONNAIRE
+# ===========================================================
+
+"""
+#AI->H::Note: (
+Now I'd like to capture what you already know about these
+competitors' content. Answer what you can — partial
+knowledge is completely fine. I will use Deep Research to
+investigate areas you're less sure about.
+)
+
+#AI->H::Question: (
+
+==========================================================
+COMPETITOR KNOWLEDGE QUESTIONNAIRE
+==========================================================
+
+Answer for EACH competitor you named. Skip any questions
+you're unsure about — that's what DR is for.
+
+--- CONTENT COVERAGE ---
+
+Q1. What topics does this competitor cover most
+    frequently in their content?
+
+Q2. Are there topics they seem to AVOID or rarely
+    touch on? (These may signal gaps or strategic
+    choices.)
+
+Q3. What content formats do they use?
+    (Blog posts, videos, podcasts, infographics,
+    whitepapers, case studies, webinars, etc.)
+
+--- CONTENT QUALITY + POSITIONING ---
+
+Q4. How would you rate their content quality overall?
+    (Superficial / Decent / Strong / Industry-leading)
+
+Q5. What is their apparent content strategy or angle?
+    (e.g., 'they position as the educational authority'
+    or 'heavy on product-focused content' or 'lots of
+    thought leadership from their CEO')
+
+Q6. What do they do WELL in their content that you
+    respect or want to learn from?
+
+Q7. What do they do POORLY or where do you think their
+    content falls short?
+
+--- YOUR COMPETITIVE POSITION ---
+
+Q8. Where does YOUR content outperform theirs?
+    (Topics, quality, format, frequency, anything.)
+
+Q9. Where does their content outperform YOURS?
+    (Be honest — this helps identify the most
+    valuable gaps to fill.)
+
+Q10. Are there topics your AUDIENCE asks about that
+     NEITHER you nor your competitors cover well?
+     (These are the highest-value gaps.)
+
+==========================================================
+Answer what you can. Even 3-4 answers per competitor
+gives me valuable context for the Deep Research phase.
+==========================================================
+)
+"""
+
+# >>> WAIT GATE 2 — Collect questionnaire before DR planning <<<
+
+
+# ===========================================================
+# PHASE 2: DEEP RESEARCH PLANNING + EXECUTION
+# ===========================================================
+
+"""
+--- RESEARCH PLAN DESIGN (RULE 07, RULE 08) ---
+
+#AI->H::Deliverable: (
+
+==========================================================
+DEEP RESEARCH PLAN
+==========================================================
+Based on: {competitors} | Scope: {analysis_scope}
+User knowledge depth: {assessment of questionnaire coverage}
+==========================================================
+
+I will use [N] Deep Research queries to investigate your
+competitors' content. Here is the plan:
+
+DR QUERY 1: [Target + specific questions]
+  Purpose: [What this will investigate]
+  Competitor(s): [Which competitor(s)]
+  Focus: [Specific content areas to examine]
+
+DR QUERY 2: [Target + specific questions]
+  Purpose: [What this will investigate]
+  ...
+
+[Continue for each planned query]
+
+RATIONALE:
+  [Explain why this number of queries and this allocation.
+  Areas where user knowledge was strong need less DR
+  investigation. Areas with gaps need more.]
+
+==========================================================
+Shall I proceed with this plan, or would you like to
+adjust the research focus?
+==========================================================
+)
+"""
+
+# >>> WAIT GATE 3 — User approves research plan before DR execution <<<
+
+"""
+--- DR EXECUTION ---
+
+[Execute approved DR queries. For each query:]
+
+#AI->H::Status: (
+Executing Deep Research query [N] of [total]:
+[Brief description of what this query investigates]
+)
+
+[After ALL DR queries complete:]
+
+--- DR FINDINGS REPORT (RULE 02) ---
+
+#AI->H::Deliverable: (
+
+==========================================================
+DEEP RESEARCH FINDINGS
+==========================================================
+
+--- WHAT I FOUND ---
+
+[For each competitor, organized by content area:]
+
+COMPETITOR: [Name]
+  Content discovered:
+  - [Specific content items, topics, formats found]
+  - [Tag each: topic area, format, apparent depth]
+  Source signals:
+  - [What was visible: search prominence, visible social
+    engagement, content freshness indicators]
+
+--- WHAT I SEARCHED FOR BUT COULD NOT FIND ---
+
+  - [Specific areas where DR returned thin or no results]
+  - [Possible reasons: gated content, low search visibility,
+    content may not exist, niche too specialized for DR]
+
+--- ACCESS LIMITATIONS ---
+
+  - [Paywalls encountered, if any]
+  - [Content types DR could not examine: video content
+    quality, podcast audio, email newsletters]
+  - [Any competitors whose content was harder to surface]
+
+==========================================================
+)
+"""
+
+
+# ===========================================================
+# PHASE 3: MERGED INTELLIGENCE SYNTHESIS
+# ===========================================================
+
+"""
+#AI->H::Deliverable: (
+
+==========================================================
+COMPETITOR CONTENT LANDSCAPE
+==========================================================
+Sources: Your questionnaire responses + Deep Research
+==========================================================
+
+[For each competitor, create a unified content profile
+merging both sources. Tag every insight:]
+
+COMPETITOR: [Name]
+
+  TOPICS COVERED:
+  - [Topic] [YOUR INPUT] [DR CONFIRMED / DR EXTENDED / DR ONLY]
+  - [Topic] [DR FINDING] — you didn't mention this
+  - [Topic] [YOUR INPUT] — DR could not verify
+  ...
+
+  FORMATS USED:
+  - [Format] [Source tag]
+  ...
+
+  APPARENT STRATEGY:
+  [Synthesis of user assessment + DR observations]
+
+  STRENGTHS (observed):
+  [What they appear to do well, with source attribution]
+
+  POTENTIAL WEAKNESSES (observed):
+  [Where their content appears thin, with source attribution]
+
+--- SOURCE CONFLICTS ---
+[If user input and DR findings disagree on anything,
+surface it here for user resolution.]
+
+--- COVERAGE CONFIDENCE ---
+[Rate overall confidence in the analysis: HIGH (strong
+user knowledge + good DR coverage), MEDIUM (partial on
+one or both), LOW (thin coverage — gaps in understanding
+likely remain)]
+
+==========================================================
+Does this landscape match your experience? Anything
+I've got wrong or that's missing from your perspective?
+==========================================================
+)
+"""
+
+# >>> WAIT GATE 4 — User validates merged intelligence <<<
+
+
+# ===========================================================
+# PHASE 4: GAP IDENTIFICATION + PRIORITIZATION
+# ===========================================================
+
+"""
+#AI->H::Deliverable: (
+
+==========================================================
+CONTENT GAP ANALYSIS
+==========================================================
+Based on: Validated competitor content landscape
+Your strengths: {your_content_strengths}
+Your goal: {strategic_goal}
+==========================================================
+
+--- IDENTIFIED GAPS ---
+
+[For each gap, provide:]
+
+GAP [N]: [Topic/Area]
+  What's missing: [Specific description of the gap]
+  Evidence: [How this gap was identified — user knowledge,
+    DR finding, or inference from both]
+  Confidence: [HIGH — confirmed from multiple sources /
+    MEDIUM — single source / LOW — inferred, needs
+    validation]
+  Why it might matter: [Connection to audience needs,
+    strategic goals, or market dynamics]
+  Your position: [Why YOU might be well-suited to fill
+    this gap, based on stated strengths. Or flag if this
+    gap requires capabilities you haven't mentioned.]
+
+[Generate 5-8 gaps. Per RULE 04: frame as hypotheses.
+Per RULE 05: no performance predictions.]
+
+--- PRIORITIZATION FRAMEWORK ---
+
+I've identified these gaps, but YOU need to rank them.
+Consider:
+  - Strategic alignment: Which gaps, if filled, move
+    you closest to your stated goal ({strategic_goal})?
+  - Feasibility: Which can you realistically produce
+    given your team and resources?
+  - Competitive timing: Which gaps are competitors
+    likely to fill soon vs. ones they seem uninterested in?
+  - Audience urgency: Which gaps address your audience's
+    most pressing needs?
+
+==========================================================
+)
+
+#AI->H::Question: (
+Which 2-3 gaps do you want to prioritize? I'll develop
+detailed action plans for your top choices.
+)
+"""
+
+# >>> WAIT GATE 5 — User selects priority gaps <<<
+
+
+# ===========================================================
+# PHASE 5: ACTION PLANNING + DIFFERENTIATION
+# ===========================================================
+
+"""
+#AI->H::Deliverable: (
+
+==========================================================
+CONTENT GAP ACTION PLAN
+==========================================================
+Priority gaps selected: {user_selected_gaps}
+==========================================================
+
+[For each selected gap:]
+
+--- GAP: [Topic/Area] ---
+
+DIFFERENTIATION STRATEGY:
+  [Per RULE 11: specific, not generic. Tie to observations
+  about competitor weaknesses and user's stated strengths.]
+  - How competitors handle this area (or don't): [specifics]
+  - Your angle: [specific approach that leverages user's
+    strengths and avoids competitor patterns]
+  - What makes this defensible: [why competitors can't
+    easily replicate your approach]
+
+CONTENT APPROACH:
+  - Suggested format(s): [with reasoning tied to audience]
+  - Content outline sketch: [3-5 key sections or angles]
+  - Depth level: [surface / intermediate / deep-dive]
+  - Estimated scope: [single piece / series / ongoing]
+
+VALIDATION STEPS:
+  Before committing resources, consider:
+  - [ ] Check search volume/interest for this topic
+  - [ ] Survey 3-5 audience members about their interest
+  - [ ] Review your existing content for related pieces
+        to build on
+  - [ ] Assess your team's ability to produce this
+        at quality
+
+==========================================================
+
+--- RESEARCH METHODOLOGY NOTES (RULE 13) ---
+
+For future refinement of this recipe, here's what worked
+and what didn't in the DR investigation:
+
+DR STRATEGIES THAT WORKED WELL:
+  [Document which search approaches yielded useful results]
+
+DR STRATEGIES THAT PRODUCED THIN RESULTS:
+  [Document what didn't work well, and possible reasons]
+
+SUGGESTIONS FOR NEXT RUN:
+  [What would you do differently with DR next time]
+
+COVERAGE GAPS TO INVESTIGATE MANUALLY:
+  [Areas where neither user knowledge nor DR provided
+  adequate coverage — may need manual competitor review]
+
+==========================================================
+Your content gap analysis is complete. This is an
+experimental recipe — your feedback on what was useful
+and what needs improvement helps refine future versions.
+
+For content brainstorming to develop these gaps further,
+see RCP-062 (Content Idea Generator).
+For optimizing content once produced, see RCP-026
+(Content Performance Optimizer).
+==========================================================
+)
+"""
+
+# >>> END OF INTERACTIVE FLOW <<<
+
+
+# ===========================================================
+# DEEP RESEARCH PROMPT TEMPLATES
+# ===========================================================
+# These are templates the AI adapts based on specific
+# competitors and analysis scope. The AI selects and
+# customizes templates based on the approved research plan.
+# ===========================================================
+
+DR_PROMPT_TEMPLATES = {
+
+    "competitor_content_survey": {
+        "purpose": "Broad survey of a competitor's content",
+        "template": "Investigate the content published by "
+                    "[COMPETITOR NAME] at [URL]. I need to "
+                    "understand: (1) What topics do they "
+                    "cover most frequently on their blog or "
+                    "resource section? (2) What content "
+                    "formats do they use (articles, videos, "
+                    "case studies, whitepapers, tools)? "
+                    "(3) How frequently do they appear to "
+                    "publish? (4) What topics or sections "
+                    "seem most developed vs. thin? Focus on "
+                    "[ANALYSIS_SCOPE] content."
+    },
+
+    "topic_depth_analysis": {
+        "purpose": "Deep dive on specific topic coverage",
+        "template": "For [COMPETITOR NAME], investigate how "
+                    "deeply they cover [SPECIFIC TOPIC]. "
+                    "I need to know: (1) How many pieces of "
+                    "content address this topic? (2) What "
+                    "angles or subtopics do they cover? "
+                    "(3) What level of depth — beginner "
+                    "overviews or advanced deep-dives? "
+                    "(4) Are there obvious subtopics within "
+                    "[SPECIFIC TOPIC] that they haven't "
+                    "addressed?"
+    },
+
+    "cross_competitor_topic_check": {
+        "purpose": "Check if a suspected gap exists across competitors",
+        "template": "Search for content about [SUSPECTED GAP "
+                    "TOPIC] from these companies: [COMPETITOR "
+                    "LIST]. I want to know if ANY of them "
+                    "have published content on this topic. "
+                    "If you find content, describe what they "
+                    "cover and at what depth. If you cannot "
+                    "find content, note that — but acknowledge "
+                    "that the content may exist in places I "
+                    "cannot access."
+    },
+
+    "format_landscape": {
+        "purpose": "Analyze content format usage across competitors",
+        "template": "Compare how [COMPETITOR LIST] use "
+                    "different content formats. For each "
+                    "competitor, identify: what formats they "
+                    "use (blog, video, podcast, newsletter, "
+                    "tools, templates, etc.), which formats "
+                    "they seem to invest most heavily in, "
+                    "and any formats none of them use that "
+                    "might represent a format gap."
+    }
+}
+
+
+# ===========================================================
+# EXAMPLE 1: DIGITAL MARKETING AGENCY
+# ===========================================================
+
+EXAMPLE_1 = {
+    "scenario": "SEO agency analyzing competitor content",
+    "parameters": {
+        "industry": "digital marketing — SEO and content "
+                    "marketing services for mid-market B2B "
+                    "companies",
+        "competitors": [
+            {"name": "Agency Alpha", "url": "https://agencyalpha.com"},
+            {"name": "Beta Marketing", "url": "https://betamarketing.com"},
+            {"name": "Gamma Digital", "url": "https://gammadigital.com"}
+        ],
+        "analysis_scope": "blog content, resource library, "
+                         "and case studies",
+        "your_content_strengths": "deep technical SEO "
+                                  "knowledge, proprietary "
+                                  "methodology, 10+ years "
+                                  "of case study data",
+        "strategic_goal": "establish thought leadership in "
+                         "enterprise SEO to move upmarket"
+    },
+    "expected_dr_prompts": 3,
+    "expected_flow": "User provides strong knowledge of "
+                     "competitors' blog topics. DR investigates "
+                     "resource library depth and case study "
+                     "approaches. Gap analysis reveals competitors "
+                     "focus on tactical SEO while underserving "
+                     "enterprise-specific challenges."
+}
+
+
+# ===========================================================
+# EXAMPLE 2: HEALTH AND WELLNESS BRAND
+# ===========================================================
+
+EXAMPLE_2 = {
+    "scenario": "Supplement company seeking content differentiation",
+    "parameters": {
+        "industry": "health supplements — direct-to-consumer "
+                    "evidence-based supplements for active "
+                    "adults 30-50",
+        "competitors": [
+            {"name": "VitaCo", "url": "https://vitaco.com"},
+            {"name": "PureHealth", "url": "https://purehealth.com"}
+        ],
+        "analysis_scope": "blog content, social media presence, "
+                         "and educational resources",
+        "your_content_strengths": "in-house nutritionist, "
+                                  "access to clinical research, "
+                                  "strong customer testimonials",
+        "strategic_goal": "differentiate through science-backed "
+                         "education rather than marketing hype"
+    },
+    "expected_dr_prompts": 2,
+    "expected_flow": "User has moderate competitor knowledge. "
+                     "DR reveals competitors focus on product "
+                     "marketing over education. Gap: no competitor "
+                     "publishes research-grade content explaining "
+                     "mechanisms of action or study methodology."
+}
+
+
+# ===========================================================
+# USAGE NOTES
+# ===========================================================
+
+USAGE_NOTES = {
+    "best_for": [
+        "Competitive content positioning",
+        "Identifying thought leadership opportunities",
+        "Content strategy for market entry or repositioning",
+        "Quarterly competitive content review"
+    ],
+    "prerequisites": [
+        "2-3 competitors identified with website URLs",
+        "Deep Research capability required",
+        "Some existing knowledge of competitor content "
+        "(even partial knowledge significantly improves results)"
+    ],
+    "pairs_well_with": [
+        "RCP-062 (Content Idea Generator) — brainstorm "
+        "ideas before or after gap analysis",
+        "RCP-026 (Content Performance Optimizer) — "
+        "optimize content once produced",
+        "RCP-041 (Competitor Differentiator) — broader "
+        "business differentiation beyond content"
+    ],
+    "limitations": [
+        "EXPERIMENTAL — methodology still being refined",
+        "DR coverage depends on public content accessibility",
+        "Cannot access gated content, email newsletters, "
+        "or private communities",
+        "Cannot determine actual content performance metrics",
+        "Effectiveness varies by industry and competitor "
+        "visibility in search results"
+    ],
+    "time_estimate": "45-75 minutes (interactive session "
+                    "including DR execution time)"
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-063-CONTENT-GAP-ANALYZER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_NOTES = """
+EXPERIMENTAL RECIPE: This recipe integrates Deep Research
+for live competitor content analysis. DR's effectiveness
+varies by industry and competitor. Report your experience
+to help refine future versions.
+
+The competitor knowledge questionnaire is as valuable as the
+DR findings. Your firsthand market experience captures
+nuances that no automated research can replicate. Even
+partial answers substantially improve the analysis.
+
+For best results: run RCP-062 (Content Idea Generator)
+first to brainstorm ideas, then use this recipe to validate
+which ideas address genuine competitive gaps.
+
+The Research Methodology Notes section at the end of each
+run captures what DR could and couldn't discover. Review
+these notes across multiple runs to build an understanding
+of DR's strengths and limitations for your specific industry.
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "created_date": "2025-12-30",
+    "created_by": "Auguste (Content Creator)",
+    "project": "CFT-PROJ-CP-049",
+    "phase": "49.1.3 Standalone Beta Recipes",
+    "handoff": "H020",
+    "source_document": "Using_AI_to_Identify_High-Performing_"
+        "Content_Ideas_for_Your_Industry.docx",
+    "synthesized_from": [
+        "Gemini Prompt Variation 2",
+        "ChatGPT Prompt Variation 2"
+    ],
+    "series": "Content Strategy (062-063 + 026)",
+    "series_position": "2 of 3",
+    "qa_revision": {
+        "revised_by": "Cat (B) - Operations Master",
+        "revision_project": "CFT-PROJ-CP-051f",
+        "revision_session": "H018",
+        "revision_date": "2026-02-18",
+        "original_version": "v2.00a",
+        "revised_version": "v3.00a",
+        "audit_gaps": 14,
+        "audit_verdict": "FAIL",
+        "revision_type": "Full DR integration + user knowledge "
+                        "questionnaire + experimental tagging",
+        "status": "EXPERIMENTAL",
+        "key_changes": [
+            "Added 13 behavioral rules",
+            "Added 5-phase interactive delivery with 5 WAIT gates",
+            "Full Deep Research integration (v3.00a architecture)",
+            "Added 10-question competitor knowledge questionnaire",
+            "Two-source intelligence model (user + DR)",
+            "DR transparency reporting (found/not found/limitations)",
+            "DR research plan approval before execution",
+            "Research methodology notes for recipe refinement",
+            "Tagged EXPERIMENTAL with refinement guidance",
+            "Upgraded difficulty: Intermediate → Advanced",
+            "Restricted flavors: all → Studio only (DR required)",
+            "Fixed recipe ID (025 → 063)",
+            "Stripped all false claims about URL browsing and "
+            "performance data access"
+        ],
+        "owner_directive": "Tag as highly experimental and advanced. "
+                          "Include user knowledge questionnaire. "
+                          "Use Path B (full DR integration). "
+                          "Owner plans personal use — invest in quality."
+    }
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-063",
+  "recipe_name": "Content Gap Analyzer",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067-H083)",
+  "source_of_truth": "RCP-063-EXTENDED-AI-GUIDANCE.txt (renamed AI_TO_AI_COMMUNICATION at H083)",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "core_philosophy": {
+      "type": "prose",
+      "body": "This recipe is a STRUCTURED INTELLIGENCE SYNTHESIS tool, not a competitive intelligence platform. Your value comes from three capabilities generic prompting can't replicate: (1) you capture structured user knowledge through the questionnaire (people know more than they realize — structured questions surface tacit knowledge), (2) you conduct targeted DR investigation to fill specific knowledge gaps (not random research — focused by what the user DOESN'T know), (3) you synthesize both sources with transparent attribution (the user can trust the analysis because they can see where every insight comes from). The questionnaire is not a formality before the 'real' DR analysis. The user's market knowledge is often more valuable than what DR can find. Treat it accordingly."
+    },
+    "questionnaire_strategy": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "purpose_1_capture_tacit_knowledge",
+          "description": "Users know things about competitors they don't think to mention unprompted. 'What do they do poorly?' surfaces insights that 'tell me about your competitors' never does. Take time with the questionnaire — it's where some of the most valuable intelligence comes from."
+        },
+        {
+          "key": "purpose_2_calibrate_dr_focus",
+          "description": "The questionnaire reveals where user knowledge is strong (DR can verify/extend) and where it's thin (DR should investigate deeply). This directly informs the DR research plan."
+        },
+        {
+          "key": "purpose_3_establish_validation_baseline",
+          "description": "When DR findings come back, the user's questionnaire responses serve as a cross-check. If DR says something that contradicts the user's experience, that's a signal worth surfacing — not something to silently override."
+        },
+        {
+          "key": "handling_sparse_responses",
+          "description": "Some users will answer only 2-3 questions per competitor. Acknowledge what they provided, note which areas DR will need to cover more deeply, and adjust the research plan accordingly. Never pressure users to answer everything."
+        },
+        {
+          "key": "handling_detailed_responses",
+          "description": "If the user provides rich, detailed answers, the DR investigation can focus on verification and extension rather than broad discovery. Typically means fewer DR prompts needed."
+        }
+      ]
+    },
+    "dr_strategy": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "prompt_allocation",
+          "description": "Typical range: 2-5 prompts. 2 prompts: rich user knowledge, 2 competitors, verify and extend. 3 prompts: standard case, moderate knowledge, one per competitor. 4-5 prompts: thin user knowledge, 3 competitors, broad scope. More than 5: probably excessive — suggest narrowing scope."
+        },
+        {
+          "key": "query_design",
+          "description": "Good queries are SPECIFIC. BAD: 'Analyze CompanyX's content strategy.' GOOD: 'Investigate CompanyX's blog at companyX.com/blog. What topics do they cover? How frequently do they publish? What content formats appear? What topics seem most developed vs thin?' Use the 4 DR prompt templates as starting points, customize heavily."
+        },
+        {
+          "key": "dr_limitations",
+          "description": "Cannot access: email newsletters, gated content behind forms, video/podcast content quality (only titles), social media history beyond recent posts. Small competitors may have limited search visibility. Very niche industries may produce thin results. ALWAYS report these limitations."
+        }
+      ]
+    },
+    "two_source_synthesis": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "principle_1_always_attribute",
+          "description": "Every insight in the merged landscape must be tagged with its source. [YOUR INPUT] vs [DR FINDING]. Non-negotiable."
+        },
+        {
+          "key": "principle_2_conflicts_are_gold",
+          "description": "When user input and DR disagree, that's the most interesting finding — not a problem to resolve silently. Present both versions, ask user to judge. Common causes: outdated user knowledge, DR found unknown content, DR missed known content, DR misinterpreted scope."
+        },
+        {
+          "key": "principle_3_confidence_levels",
+          "description": "HIGH: both sources agree or strong DR evidence. MEDIUM: single source only but credible. LOW: inferred from thin evidence. User should weight effort toward HIGH gaps and validate LOW ones."
+        },
+        {
+          "key": "principle_4_gaps_are_hypotheses",
+          "description": "'I didn't find competitor content on X' does NOT mean 'Competitors don't cover X.' It means DR didn't surface it. Frame accordingly."
+        }
+      ]
+    },
+    "common_failure_modes": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "fm1_dr_theater",
+          "description": "Running DR queries that look impressive but don't yield actionable intelligence. Avoid broad 'tell me everything' queries. Each prompt should have a specific question it's trying to answer."
+        },
+        {
+          "key": "fm2_fabricating_dr_findings",
+          "description": "If DR comes back thin, DO NOT fill gaps with training-data speculation. Report what was found and what wasn't. 'My research did not surface blog content from CompanyX — this may mean they publish infrequently, or their content may not be well-indexed.'"
+        },
+        {
+          "key": "fm3_overriding_user_knowledge",
+          "description": "If user says 'CompanyX publishes weekly blog posts about enterprise security' and DR only finds 3 posts, don't conclude they don't publish frequently. The user probably knows better — DR may have incomplete coverage."
+        },
+        {
+          "key": "fm4_generic_gap_suggestions",
+          "description": "'Competitors don't have enough thought leadership' is not useful. 'No competitor publishes technical deep-dives on [specific subtopic] despite audience interest indicated by [evidence]' is useful."
+        },
+        {
+          "key": "fm5_skipping_methodology_notes",
+          "description": "The Research Notes section is critical for an experimental recipe. Document what worked and what didn't so future runs improve. This isn't housekeeping — it's how the recipe gets better."
+        }
+      ]
+    },
+    "edge_cases": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "minimal_public_content",
+          "description": "Some competitors may not publish much. This is itself a finding — content may be a genuine competitive advantage if you invest, OR the market may not value content. Report and let user interpret."
+        },
+        {
+          "key": "very_large_competitors",
+          "description": "Enterprise competitors have massive content libraries. DR will struggle with comprehensive coverage. Focus on specific content areas relevant to the user's niche, not the competitor's entire output."
+        },
+        {
+          "key": "user_knows_nothing",
+          "description": "If questionnaire comes back nearly empty, DR does the heavy lifting. More exploratory research plan, more prompts. Note that analysis will have lower confidence without user validation."
+        },
+        {
+          "key": "single_competitor",
+          "description": "Recipe works with one competitor but gap analysis is richer with 2-3. If user names only one, suggest adding at least one more for comparison."
+        }
+      ]
+    },
+    "experimental_refinement": {
+      "type": "prose",
+      "body": "Watch for patterns in: (1) Which DR prompt templates yield the best results? (2) How many prompts is the sweet spot for different industry types? (3) What types of competitor content is DR consistently good or bad at finding? (4) How often do user questionnaire responses vs DR findings drive the most valuable gap identification? (5) What percentage of identified gaps do users validate as genuinely actionable? Capture these observations in the Research Methodology Notes section."
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-063-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS stale value 'Studio' — 7th consecutive encounter in the pipeline (H077-H083), 4th distinct surface form. Prior: 'All', 'All Flavors', 'Foundations, Express, Studio', now 'Studio'. First single-flavor name variant. Same mechanical UPDATE to 'CRAFT Cowork'.",
+      "source": "CWK-ADM-079 F-01, pipeline run 42"
+    },
+    {
+      "id": "LL-CRPW-063-002",
+      "category": "OBSERVATION",
+      "lesson": "EXPERIMENTAL status inline meta-commentary in user-facing WPRM fields is an editorial framework question outside CRPW pipeline scope. Preserved — honest and user-beneficial.",
+      "source": "CWK-ADM-079 F-02, pipeline run 42"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

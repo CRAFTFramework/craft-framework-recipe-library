@@ -1,0 +1,1254 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS
+# Version: v2.00b-R
+# Generated: 2026-04-26 (P067-H079)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe: RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS
+# Version: v2.00b-R
+# Created: 2025-12-31
+# Revised: 2026-02-17
+# Creator: Auguste (Content Creator)
+# Revised By: Cat (B) QA Audit
+# Validator: Pending Fernand Review
+# Status: REVISED
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Recipe Type
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Name
+# ===========================================================
+
+WPRM_FIELD_NAME = (
+    "RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS"
+)
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Description
+# ===========================================================
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you create hypothetical customer
+personas as starting points for marketing, product,
+and sales strategy. The AI generates distinct persona
+profiles based on your business context and common
+industry patterns. These are informed hypotheses to
+test against real customer data, not validated
+research. Use them to structure your thinking about
+who your customers might be and what they might need.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Multi-Recipe Combo Stages
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Is Part Of This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Category ID Numbers
+# ===========================================================
+
+WPRM_FIELD_CATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Subcategory ID Numbers
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe ID Numbers
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "055"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Status
+# ===========================================================
+
+WPRM_FIELD_STATUS = "Official"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > CRAFT Flavors
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Categories
+# ===========================================================
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone Beta Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Subcategories
+# ===========================================================
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Marketing Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Tags
+# ===========================================================
+
+WPRM_FIELD_TAGS = """
+Introduced in Beta, Customer Persona, Buyer Persona,
+Target Audience, Market Research, Demographics,
+Psychographics, Pain Points, Customer Goals,
+Marketing Strategy, Persona Development
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Difficulty
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Launch the Persona Builder
+
+Tell the AI about your business so it can generate
+relevant personas. You can say something like:
+
+    "I need customer personas for my business.
+    Please use the Customer Persona Fundamentals
+    recipe."
+
+Or invoke directly:
+
+    #H->AI::Directive: (Execute Customer Persona
+        Fundamentals)
+
+The AI will ask about your business, your market,
+and how many personas you want.
+
+
+STEP 2: Describe Your Business Context
+
+The AI will ask you to provide:
+
+    Your product or service: What you sell or offer.
+    Your industry or market: The sector you operate
+    in.
+    Your current audience: Who you think your
+    customers are (if you know).
+    Your business model: Whether you sell to consumers
+    (B2C), businesses (B2B), or both.
+    Your geographic focus: Local, regional, national,
+    or global.
+
+The more detail you provide, the more relevant the
+personas will be. But even a brief description gives
+the AI enough to work with.
+
+
+STEP 3: Review Persona Outlines
+
+Before building full profiles, the AI will present
+brief outlines for each persona: a name, a one-line
+description, and what makes this persona distinct from
+the others.
+
+Review these outlines. This is your chance to adjust
+before the AI invests in full profiles. You can ask
+to change a persona, merge two that seem too similar,
+add one you think is missing, or adjust how many
+personas to create.
+
+
+STEP 4: Review Full Persona Profiles
+
+Once you approve the outlines, the AI builds out each
+persona with demographics, psychographics, pain points,
+goals, and buying behavior. Each persona will feel
+meaningfully different from the others in what they
+care about, how they make decisions, and where to
+reach them.
+
+Review the full profiles. Tell the AI if anything
+feels off, stereotypical, or unrealistic for your
+market. The AI will revise based on your feedback.
+
+
+STEP 5: Get Summary Cards
+
+After you approve the full profiles, the AI creates
+a compact summary card for each persona. These cards
+are designed for quick reference by marketing, sales,
+product, and support teams.
+
+The cards distill each persona into the essentials:
+who they are, what they struggle with, what they want,
+how to reach them, and what might stop them from
+buying.
+
+
+STEP 6: Explore Application Ideas
+
+The AI will suggest how to use each persona across
+marketing, product development, and customer
+engagement. These are starting hypotheses based on
+the persona profiles, not proven strategies.
+
+Test these ideas against real customer behavior.
+Personas are most valuable when treated as living
+documents that evolve with actual data.
+
+IMPORTANT: AI-generated personas are informed
+hypotheses based on common patterns in the AI's
+training data. They are useful starting points for
+structuring your thinking, but they are not a
+substitute for real customer research. Validate
+personas with actual customer interviews, surveys,
+or behavioral data before making major business
+decisions based on them.
+
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > How A.I. Reads This Recipe
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe generates hypothetical customer personas
+through an interactive, phased process. When invoked:
+
+1. COLLECT business context interactively. Ask about
+   the product/service, industry, audience, business
+   model, and geography. WAIT for answers.
+
+2. GENERATE brief persona outlines (name, one-line
+   description, distinctiveness note) and PRESENT
+   them for user review BEFORE building full profiles.
+   WAIT for approval or adjustments.
+
+3. BUILD full profiles for approved personas. Each
+   persona must be genuinely distinct per the
+   behavioral rules in the code section.
+
+4. PRESENT full profiles for feedback. WAIT for
+   user to approve or request changes.
+
+5. CREATE summary cards only after profiles are
+   approved.
+
+6. SUGGEST application ideas framed as testable
+   hypotheses, not proven strategies.
+
+IMPORTANT: These are hypothetical constructs. Do not
+present them as validated customer research. Use
+language like "this persona might," "a common pattern
+is," and "this is a hypothesis to test." The user
+needs to validate these against real data.
+
+For B2B contexts, use the B2B persona structure
+defined in the behavioral rules (buying committee,
+organizational pain points, procurement process)
+rather than the consumer-oriented default.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Recipe Short Description
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Create hypothetical customer personas as starting
+points for marketing, product, and sales strategy.
+The AI generates distinct profiles based on your
+business context and industry patterns, designed to
+be validated against real customer data.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > When To Use This Recipe
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you need structured thinking
+about who your customers are and what they care
+about. It is especially valuable for:
+
+NEW VENTURES: Starting a business or launching a
+product and need to define your initial target
+audience segments.
+
+STRATEGY REFINEMENT: Rethinking your marketing
+approach and need a structured framework for
+understanding different customer types.
+
+TEAM ALIGNMENT: Getting marketing, sales, product,
+and support teams on the same page about who they
+are serving and what those customers need.
+
+CONTENT PLANNING: Creating targeted content and
+need distinct audience profiles to write for.
+
+PRODUCT PRIORITIZATION: Deciding which features
+to build first and need to understand which
+customer segments to serve.
+
+Do NOT use this recipe when you already have
+validated personas from real customer research.
+In that case, start from your real data rather
+than generating hypothetical profiles.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Recipe Name
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "Customer Persona Fundamentals"
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > This Recipe Is Included In
+# ===========================================================
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Actual Recipe Code
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# START: RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS
+# VERSION: v2.00b-R
+# ===========================================================
+
+
+CUSTOMER_PERSONA_FUNDAMENTALS = Recipe(
+    recipe_id=(
+        "RCP-000-000-055"
+        "-CUSTOMER-PERSONA-FUNDAMENTALS"
+    ),
+    version="2.00b-R",
+    title="Customer Persona Fundamentals",
+
+    description=(
+        "Generates hypothetical customer persona "
+        "profiles as structured starting points for "
+        "marketing, product, and sales strategy. "
+        "Designed to be validated against real "
+        "customer data."
+    ),
+
+    category="CAT-000-STANDALONE",
+    subcategory="Marketing Strategy",
+    difficulty="easy",
+
+    parameters={
+        "business_description": {
+            "type": "string",
+            "required": True,
+            "description": (
+                "Product/service and market context"
+            )
+        },
+        "business_model": {
+            "type": "string",
+            "required": False,
+            "default": "B2C",
+            "options": ["B2B", "B2C", "Both"],
+            "description": (
+                "Business model type"
+            )
+        },
+        "persona_count": {
+            "type": "integer",
+            "required": False,
+            "default": 3,
+            "options": [2, 3, 4],
+            "description": (
+                "Number of personas to create"
+            )
+        }
+    },
+
+    prompt_template="""
+    # =====================================================
+    # CUSTOMER PERSONA FUNDAMENTALS
+    # =====================================================
+    # IMPORTANT: AI-generated personas are hypothetical
+    # constructs based on training-data patterns. They
+    # are useful starting points, not validated customer
+    # research. Always frame them as hypotheses to test,
+    # not facts to act on. The user needs to validate
+    # these against real customer data before making
+    # major business decisions.
+    # =====================================================
+
+
+    # =====================================================
+    # BEHAVIORAL RULES (apply throughout this recipe)
+    # =====================================================
+    #
+    # RULE 1 — HYPOTHESIS FRAMING:
+    #   Frame all persona content as hypothetical.
+    #   Use language like "this persona might,"
+    #   "a common pattern in this market is," and
+    #   "this is worth testing." Never present
+    #   AI-generated personas as validated research
+    #   or data-driven profiles. They are informed
+    #   hypotheses based on common patterns.
+    #
+    # RULE 2 — GENUINE DISTINCTIVENESS:
+    #   Each persona must be genuinely distinct in
+    #   at least three of these dimensions: primary
+    #   pain point, decision-making style, budget
+    #   orientation, preferred channels, key
+    #   objection, and core motivation. Surface
+    #   demographic differences (different age,
+    #   different city) do not count as distinct if
+    #   the personas want the same things, buy the
+    #   same way, and respond to the same messaging.
+    #   Before presenting personas, verify each pair
+    #   differs meaningfully. If two personas would
+    #   receive identical marketing, they are not
+    #   distinct enough.
+    #
+    # RULE 3 — AVOID STEREOTYPES:
+    #   Do not generate personas that rely on
+    #   demographic stereotypes. A 25-year-old does
+    #   not automatically prefer Instagram and value
+    #   experiences over products. A 55-year-old
+    #   does not automatically prefer email and
+    #   resist technology. Build personas from
+    #   behavioral and motivational patterns, not
+    #   from age/gender/location assumptions. If
+    #   you catch yourself writing a trait because
+    #   "people like this usually," reconsider.
+    #
+    # RULE 4 — SPECIFICITY CALIBRATION:
+    #   Match specificity to confidence. Use precise
+    #   numbers only for well-established patterns
+    #   (e.g., "B2B enterprise sales cycles
+    #   typically run 3-9 months"). Use qualitative
+    #   descriptors for things you are estimating
+    #   (e.g., "moderate income" rather than
+    #   "$85,000-$110,000" unless you have a basis
+    #   for that range). False precision makes
+    #   hypotheses look like data.
+    #
+    # RULE 5 — B2B DIFFERENTIATION:
+    #   When the business model is B2B, use a
+    #   fundamentally different persona structure:
+    #
+    #   Instead of individual demographics, describe
+    #   the ORGANIZATION type (size, industry,
+    #   growth stage, budget range) and the BUYER
+    #   ROLE (job title, decision authority, what
+    #   they report on).
+    #
+    #   Instead of personal psychographics, describe
+    #   ORGANIZATIONAL priorities (efficiency, risk
+    #   reduction, growth, compliance) and the
+    #   buyer's PROFESSIONAL motivations (career
+    #   advancement, team performance, reducing
+    #   workload).
+    #
+    #   Instead of individual buying behavior,
+    #   describe the PROCUREMENT PROCESS (who is
+    #   involved, what approvals are needed, what
+    #   the evaluation criteria are, how long the
+    #   cycle takes).
+    #
+    #   Instead of personal channels, describe
+    #   PROFESSIONAL channels (industry events,
+    #   trade publications, peer referrals,
+    #   LinkedIn, vendor comparison sites).
+    #
+    # RULE 6 — OUTLINES BEFORE PROFILES:
+    #   Always present brief persona outlines
+    #   (name, one-line description, what makes
+    #   this persona distinct) and get user
+    #   approval BEFORE building full profiles.
+    #   This prevents wasted effort on personas
+    #   the user would reject. Never skip this
+    #   step.
+    #
+    # RULE 7 — PRODUCT-FIT IS HYPOTHETICAL:
+    #   When connecting personas to the user's
+    #   product or service, frame the connection
+    #   as a hypothesis: "If your product does X,
+    #   this persona would likely value that
+    #   because Y." Do not assert that the product
+    #   solves the persona's problems. You are
+    #   working from a brief business description,
+    #   not product testing data.
+    #
+    # RULE 8 — APPLICATIONS ARE TESTABLE IDEAS:
+    #   Marketing, product, and sales recommendations
+    #   in Step 6 are starting hypotheses, not proven
+    #   strategies. Frame them as: "Consider testing
+    #   [approach] with [persona]" rather than "Do
+    #   [approach] for [persona]." The user needs to
+    #   validate through real campaigns and customer
+    #   feedback.
+    #
+    # RULE 9 — HONEST ABOUT LIMITATIONS:
+    #   If the user's business context is too vague
+    #   to generate useful personas, say so and ask
+    #   for more detail. A one-word industry
+    #   description produces generic personas. It is
+    #   better to ask a follow-up question than to
+    #   generate low-quality output.
+    #
+    # RULE 10 — SUMMARY CARDS AFTER APPROVAL:
+    #   Only create polished summary cards after the
+    #   user approves the full profiles. Polished
+    #   formatting signals "done" and discourages
+    #   the user from requesting changes. Present
+    #   draft-quality profiles first, get feedback,
+    #   then polish.
+    #
+    # RULE 11 — KEEP PERSONAS HUMAN:
+    #   Personas should feel like real people (or
+    #   real organizations for B2B), not marketing
+    #   abstractions. Give them realistic
+    #   contradictions and tradeoffs. A price-
+    #   sensitive persona might splurge on specific
+    #   categories. A tech-savvy persona might
+    #   prefer phone calls for high-stakes
+    #   purchases. Real people are inconsistent;
+    #   good personas reflect that.
+    #
+    # RULE 12 — INTERACTIVE THROUGHOUT:
+    #   This recipe runs as a conversation, not a
+    #   document dump. Each phase presents output,
+    #   asks for feedback, and waits for approval
+    #   before proceeding. Never deliver all six
+    #   phases in a single response.
+    # =====================================================
+
+
+    # =====================================================
+    # STEP 1: COLLECT BUSINESS CONTEXT
+    # =====================================================
+
+    #AI->H::Status: (
+        Customer Persona Fundamentals active
+    )
+
+    Ask the user about their business. Collect:
+
+    1. What they sell or offer (product/service)
+    2. Their industry or market sector
+    3. Who they think their customers are (if known)
+    4. Business model: B2C, B2B, or both
+    5. Geographic focus: local, regional, national,
+       or global
+    6. How many personas they want (suggest 3 as a
+       good starting point for most businesses)
+
+    Keep this conversational. If the user provided
+    some of this in their invocation, confirm what
+    you have and ask for what is missing. Do not
+    ask for all six items as a numbered list --
+    weave the questions naturally.
+
+    Per RULE 9, if the description is too vague
+    to produce useful personas, ask for more
+    detail rather than generating generic output.
+
+    # WAIT for user to provide business context.
+
+
+    # =====================================================
+    # STEP 2: PRESENT PERSONA OUTLINES
+    # =====================================================
+
+    Based on the business context, generate brief
+    outlines for each persona. Per RULE 6, present
+    these BEFORE building full profiles.
+
+    For each persona, present:
+
+    [PERSONA NAME]
+    One-sentence description of who this person
+    (or organization for B2B) is.
+    DISTINCT BECAUSE: One sentence explaining what
+    makes this persona meaningfully different from
+    the others (per RULE 2).
+
+    After presenting all outlines:
+
+    "Do these persona outlines make sense for your
+    business? I can adjust, merge, add, or replace
+    any of them before I build the full profiles."
+
+    # WAIT for user to approve or adjust outlines.
+
+
+    # =====================================================
+    # STEP 3: BUILD FULL PERSONA PROFILES
+    # =====================================================
+
+    For each approved persona, build the full
+    profile. The structure depends on the business
+    model:
+
+    # -------------------------------------------------
+    # B2C PERSONA STRUCTURE:
+    # -------------------------------------------------
+    #
+    # PERSONA NAME
+    # One-line tagline capturing their essence.
+    #
+    # WHO THEY ARE:
+    # Age range (not a single number unless
+    # warranted), location type, occupation
+    # category, income level (qualitative per
+    # RULE 4 unless a specific range is well-
+    # established for this segment), life stage.
+    #
+    # WHAT DRIVES THEM:
+    # Core values, primary motivations, what they
+    # prioritize when making decisions in this
+    # category. Include at least one realistic
+    # contradiction (per RULE 11).
+    #
+    # THEIR PAIN POINTS (Top 3):
+    # Specific challenges related to the user's
+    # market. Each pain point should be distinct
+    # and concrete, not abstract.
+    #
+    # THEIR GOALS (Top 3):
+    # What they want to achieve related to the
+    # user's market. Concrete and actionable.
+    #
+    # HOW THEY BUY:
+    # Where they research, who influences them,
+    # how long they take to decide, what triggers
+    # a purchase, what stops them (key objection).
+    # Per RULE 4, use qualitative descriptions
+    # unless specific data points are well-
+    # established.
+    #
+    # WHERE TO REACH THEM:
+    # Channels, content formats, and messaging
+    # themes that would likely resonate. Per
+    # RULE 3, base this on behavioral patterns
+    # not demographic stereotypes.
+    #
+    # HYPOTHETICAL PRODUCT FIT (per RULE 7):
+    # "If your product does [X], this persona
+    # would likely value that because [Y]."
+    # Frame as hypothesis, not assertion.
+
+    # -------------------------------------------------
+    # B2B PERSONA STRUCTURE (per RULE 5):
+    # -------------------------------------------------
+    #
+    # PERSONA NAME (role-based, e.g., "The
+    # Operations Director at a Mid-Size Firm")
+    # One-line tagline.
+    #
+    # THE ORGANIZATION:
+    # Company size range, industry, growth stage,
+    # typical budget range for this category,
+    # organizational priorities.
+    #
+    # THE BUYER:
+    # Job title/role, decision authority level,
+    # what they report on, professional
+    # motivations (career, team, workload).
+    #
+    # ORGANIZATIONAL PAIN POINTS (Top 3):
+    # Challenges the organization faces that
+    # relate to the user's offering.
+    #
+    # DESIRED OUTCOMES (Top 3):
+    # Business results the buyer is trying to
+    # achieve. Tie to metrics they care about.
+    #
+    # PROCUREMENT PROCESS:
+    # Who else is involved in the decision, what
+    # approvals are needed, evaluation criteria,
+    # typical timeline, budget cycle timing.
+    #
+    # PROFESSIONAL CHANNELS:
+    # Industry events, trade publications, peer
+    # networks, LinkedIn behavior, vendor
+    # comparison sites, analyst reports.
+    #
+    # HYPOTHETICAL PRODUCT FIT (per RULE 7):
+    # Framed as hypothesis.
+
+    # -------------------------------------------------
+    # FOR "BOTH" BUSINESS MODEL:
+    # -------------------------------------------------
+    # Generate at least one B2C and one B2B
+    # persona. Use the appropriate structure for
+    # each. Note in the presentation that the two
+    # types require different marketing approaches.
+
+    # Apply RULE 2: Before presenting, verify
+    # each persona pair is genuinely distinct in
+    # at least 3 behavioral dimensions.
+
+    # Apply RULE 3: Check for stereotype reliance.
+
+    # Apply RULE 11: Include at least one
+    # realistic contradiction per persona.
+
+    # Present the full profiles and ask:
+    # "How do these profiles look? I can adjust
+    # any persona -- change their characteristics,
+    # sharpen their pain points, or rework
+    # anything that does not match your experience
+    # with real customers."
+
+    # WAIT for user to approve or request changes.
+
+    # If changes requested: revise the specific
+    # persona(s) and re-present. Repeat until
+    # approved.
+
+
+    # =====================================================
+    # STEP 4: CREATE SUMMARY CARDS
+    # =====================================================
+
+    # Per RULE 10, only after profiles are approved.
+
+    Create a compact summary card for each persona.
+
+    # B2C CARD FORMAT:
+    # ===================================
+    # [PERSONA NAME]
+    # "[Quote they might say about their
+    #  challenge or goal]"
+    # ===================================
+    # Who: [2-3 key descriptors]
+    # Pain: [Top pain point, one line]
+    # Goal: [Top goal, one line]
+    # Reach via: [Top 2 channels]
+    # Message: [What resonates, one line]
+    # Objection: [What stops them, one line]
+    # ===================================
+
+    # B2B CARD FORMAT:
+    # ===================================
+    # [PERSONA NAME]
+    # "[Quote about their business challenge]"
+    # ===================================
+    # Org: [Size, industry, stage]
+    # Buyer: [Role, authority level]
+    # Pain: [Top organizational pain point]
+    # Outcome: [Top desired business result]
+    # Process: [Decision cycle summary]
+    # Reach via: [Top 2 professional channels]
+    # Objection: [What blocks the deal]
+    # ===================================
+
+    Present the cards and ask:
+    "Here are the summary cards. These are
+    designed for quick reference across your
+    teams. Want me to adjust anything before we
+    move to application ideas?"
+
+    # WAIT for user approval.
+
+
+    # =====================================================
+    # STEP 5: APPLICATION HYPOTHESES
+    # =====================================================
+
+    # Per RULE 8, frame all recommendations as
+    # testable hypotheses.
+
+    For each persona, suggest 2-3 application
+    ideas across these areas:
+
+    MARKETING HYPOTHESIS:
+    "Consider testing [specific approach] with
+    [persona name] because [reasoning based on
+    their profile]."
+
+    PRODUCT/SERVICE HYPOTHESIS:
+    "This persona would likely respond to
+    [feature or experience] because [connection
+    to their pain point or goal]."
+
+    ENGAGEMENT HYPOTHESIS:
+    "For [persona name], try [channel or approach]
+    because [reasoning based on their buying
+    behavior]."
+
+    Keep these concise. Each hypothesis should be
+    specific enough to actually test.
+
+    Close with:
+    "These are starting hypotheses based on the
+    persona profiles. The most valuable next step
+    is to test them against real customer behavior
+    through conversations, surveys, campaign data,
+    or A/B testing. Personas improve dramatically
+    when you update them with real feedback."
+
+
+    # =====================================================
+    # STEP 6: OPTIONAL NEXT STEPS
+    # =====================================================
+
+    Offer once:
+    "Would you like to:
+    - Deep dive on any specific persona
+    - Explore a specific application area
+      (marketing, product, sales) in more detail
+    - Discuss how to validate these personas
+      with real customer data"
+
+    # WAIT for user response.
+
+    # If yes: provide the requested deep dive,
+    # maintaining hypothesis framing throughout.
+
+    # If no: close cleanly.
+
+    #AI->H::Note: (
+        Customer Persona Fundamentals complete.
+        Remember: these personas are hypothetical
+        starting points. Update them as you gather
+        real customer data. The best personas are
+        living documents that evolve with your
+        business.
+    )
+    """
+)
+
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_B2C = {
+    "scenario": "Online fitness coaching business",
+    "input": '''
+        #H->AI::Directive: (Execute Customer
+            Persona Fundamentals)
+
+        "I run an online fitness coaching business
+        targeting busy professionals who want to
+        improve their health without spending hours
+        at the gym. I serve clients across the US
+        and Canada through virtual sessions."
+    ''',
+    "expected_behavior": '''
+        AI collects context, then presents 3
+        distinct persona outlines. Example:
+
+        "Burned-Out Manager" - mid-career
+        professional whose health has declined
+        due to work demands. DISTINCT BECAUSE:
+        motivated by health scare, not aesthetics.
+
+        "Efficient Optimizer" - high-performer
+        who treats fitness like a business problem.
+        DISTINCT BECAUSE: wants data and structure,
+        not motivation or accountability.
+
+        "New Parent Returner" - returning to
+        fitness after a life change. DISTINCT
+        BECAUSE: needs flexibility and low entry
+        barrier, not an ambitious program.
+
+        Each persona has different pain points,
+        buying triggers, objections, and preferred
+        channels. User reviews outlines before
+        full profiles are built.
+    '''
+}
+
+
+EXAMPLE_B2B = {
+    "scenario": "Enterprise cybersecurity SaaS",
+    "input": '''
+        #H->AI::Directive: (Execute Customer
+            Persona Fundamentals)
+
+        "We sell a cloud security monitoring
+        platform to mid-size enterprises.
+        B2B model. US market."
+    ''',
+    "expected_behavior": '''
+        AI uses B2B persona structure per RULE 5.
+        Outlines describe organizational types
+        and buyer roles, not individual consumers.
+
+        "The Compliance-Driven CISO" at a
+        regulated-industry firm. DISTINCT BECAUSE:
+        buying is driven by audit requirements,
+        not by breach prevention.
+
+        "The Resource-Strapped IT Director" at
+        a growing company. DISTINCT BECAUSE:
+        needs to consolidate tools, not add
+        another vendor.
+
+        "The Risk-Aware CFO" at a firm that has
+        experienced an incident. DISTINCT BECAUSE:
+        buying authority is financial, evaluation
+        criteria are ROI and insurance impact.
+
+        Full profiles include organizational
+        context, procurement process, buying
+        committee dynamics, and professional
+        channels.
+    '''
+}
+
+
+# ===========================================================
+# RELATIONSHIP TO OTHER RECIPES
+# ===========================================================
+
+
+RECIPE_RELATIONSHIPS = {
+    "complements": [
+        "RCP-000-000-041-NICHE-MARKET-DISCOVERY",
+        "RCP-000-000-027-CUSTOMER-FEEDBACK-ANALYZER"
+    ],
+    "relationship_type": "Complementary strategy tools",
+    "usage_pattern": '''
+        This recipe generates PERSONAS (who your
+        customers are and what they need).
+
+        RCP-041 discovers NICHES (market segments
+        and opportunities through Deep Research).
+
+        RCP-027 analyzes FEEDBACK (understanding
+        actual customer sentiment).
+
+        COMBINED WORKFLOW:
+        1. Use RCP-041 to identify promising
+           market segments (with real data via DR)
+        2. Use RCP-055 to develop hypothetical
+           personas for those segments
+        3. Validate personas against real customer
+           feedback (RCP-027 or direct research)
+        4. Update personas based on validation
+
+        Each recipe addresses a different phase
+        of customer understanding: discovery,
+        hypothesis, and validation.
+    '''
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-055
+# CUSTOMER-PERSONA-FUNDAMENTALS
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES > Recipe Notes
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+Q: Are these personas based on real customer data?
+
+A: No. AI-generated personas are hypothetical
+constructs based on common patterns in the AI's
+training data. They are informed starting points,
+not validated research. Always test them against
+real customer behavior through interviews, surveys,
+campaign data, or A/B testing. The best personas
+combine AI-generated structure with real-world
+validation.
+
+
+Q: How many personas should I create?
+
+A: Three is a good starting point for most
+businesses. Fewer than two misses important
+segment differences. More than four often creates
+overlap or personas so narrow they are hard to
+act on. The AI will help you find the right
+number during setup.
+
+
+Q: Does this work for B2B businesses?
+
+A: Yes. The recipe uses a fundamentally different
+persona structure for B2B: organizational profiles
+instead of individual demographics, professional
+motivations instead of personal psychographics,
+and procurement processes instead of consumer
+buying behavior. Specify B2B during setup and the
+AI will adapt.
+
+
+Q: How often should I update personas?
+
+A: Review every 6-12 months, or whenever you
+notice a significant shift in customer behavior,
+market conditions, or your product offering.
+Personas are living documents. The initial
+AI-generated version is a starting point that
+should evolve as you gather real data.
+
+
+Q: Can I use these personas for ad targeting?
+
+A: Use them as a starting framework for targeting
+hypotheses, but do not treat them as validated
+audience segments. Test any targeting based on
+these personas with small campaigns before
+scaling. Real campaign data will quickly show
+which persona assumptions hold up and which need
+revision.
+
+
+Q: What if I already have some customer data?
+
+A: Share what you have during setup. The AI can
+incorporate real data points (customer survey
+results, demographic data, sales patterns) into
+the persona generation, making the hypotheses
+more grounded. Mention specific patterns you
+have observed and the AI will build on them
+rather than guessing from scratch.
+"""
+
+
+# ===========================================================
+# VALIDATION CHECKLIST
+# ===========================================================
+
+VALIDATION_CHECKLIST = {
+    "general_section": [
+        "[x] Recipe Type is How-to Instructions",
+        "[x] Name follows RCP-XXX-XXX-XXX-NAME format",
+        "[x] Description is 2-4 sentences, plaintext"
+    ],
+    "categories_section": [
+        "[x] Multi-Recipe Combo Stages is set",
+        "[x] Recipe Is Part Of This Cookbook is selected",
+        "[x] All three ID numbers set (000-000-055)",
+        "[x] Recipe Status is Official",
+        "[x] CRAFT Flavors is set to CRAFT Cowork",
+        "[x] Recipe Categories set",
+        "[x] Recipe Subcategories set",
+        "[x] Recipe Tags assigned (comma-separated)",
+        "[x] Recipe Difficulty is Easy"
+    ],
+    "instructions_section": [
+        "[x] 6 steps defined",
+        "[x] Each step has action-oriented title",
+        "[x] Step content is plaintext (no Markdown)",
+        "[x] Steps are logically sequenced",
+        "[x] Limitation disclaimer included"
+    ],
+    "custom_fields_section": [
+        "[x] How A.I. Reads This Recipe is populated",
+        "[x] Recipe Short Description is 2-3 sentences",
+        "[x] When To Use This Recipe is populated",
+        "[x] Recipe Name (display) is set",
+        "[x] This Recipe Is Included In Cookbook is set",
+        "[x] Actual Recipe Code is complete"
+    ],
+    "code_format": [
+        "[x] Uses Python-like CRAFT syntax",
+        "[x] Plaintext only (no Markdown)",
+        "[x] Line dividers use exact format (59 = chars)",
+        "[x] Recipe has START and END markers",
+        "[x] Version number follows X.YYz format",
+        "[x] Lines under 61 characters (LL-008)",
+        "[x] Indentation uses 4 spaces (LL-005)"
+    ],
+    "behavioral_rules": [
+        "[x] Plain-language behavioral rules present",
+        "[x] Hypothesis framing rule (RULE 1)",
+        "[x] Genuine distinctiveness rule (RULE 2)",
+        "[x] Stereotype avoidance rule (RULE 3)",
+        "[x] Specificity calibration rule (RULE 4)",
+        "[x] B2B differentiation rule (RULE 5)",
+        "[x] Outlines before profiles rule (RULE 6)",
+        "[x] Hypothetical product fit rule (RULE 7)",
+        "[x] Testable applications rule (RULE 8)",
+        "[x] Interactive delivery with WAIT gates"
+    ],
+    "depersonalization": [
+        "[x] No personal names or identifiers",
+        "[x] Variables use {placeholder} format",
+        "[x] Instructions work for any user",
+        "[x] Examples use generic scenarios"
+    ]
+}
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS",
+  "recipe_name": "Customer Persona Fundamentals",
+  "version": "v2.00b-R",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "WPRM-RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS-v2_00b-R.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "Customer Persona Fundamentals generates hypothetical customer persona profiles as structured starting points for marketing, product, and sales strategy. Designed to be validated against real customer data. Supports both B2C (consumer) and B2B (business) persona structures with fundamentally different frameworks for each."
+    },
+    "the_hypothesis_mindset": {
+      "type": "prose",
+      "body": "Every persona generated is a hypothesis, not a finding. The AI is pattern-matching from training data to construct plausible customer archetypes. This is genuinely useful but is NOT the same as validated customer research. Validated personas come from real customer interviews and data; AI-generated personas are informed starting points to test. Practical framing language: use 'this persona might,' 'a common pattern is,' 'this is worth testing,' 'based on typical patterns in this market,' 'consider whether.' Avoid: 'this persona will,' 'research shows,' 'data indicates,' 'these customers need,' 'the target audience wants.'"
+    },
+    "making_personas_genuinely_distinct": {
+      "type": "prose_with_list",
+      "preamble": "The distinctiveness requirement (RULE 2) is the quality gate that separates useful personas from decorative ones. The test: for each pair of personas, ask 'would I market to these two people differently?' If the answer is no, they are not distinct enough. Each persona pair must differ in at least 3 of these dimensions:",
+      "list": [
+        "Primary pain point (what problem they feel most)",
+        "Decision-making style (impulse vs research vs committee)",
+        "Budget orientation (price-first vs value-first vs premium-seeking)",
+        "Preferred channels (where they actually spend attention)",
+        "Key objection (what would stop them from buying)",
+        "Core motivation (what ultimately drives the purchase)"
+      ],
+      "postamble": "Surface demographic differences (age, location) do not count because they do not drive marketing decisions on their own. Build each persona from behavior and motivation FIRST, then add demographics consistent with the behavioral profile."
+    },
+    "avoiding_stereotype_traps": {
+      "type": "prose_with_list",
+      "preamble": "AI training data contains extensive demographic stereotypes. When generating personas, the path of least resistance is to assign traits based on demographic categories. This produces generic, unusable personas. Common traps:",
+      "list": [
+        "Age stereotypes: a 25-year-old does not automatically prefer Instagram; a 55-year-old does not automatically resist technology",
+        "Gender stereotypes: do not default to work-life-balance framing based on gender",
+        "Income stereotypes: high-income customers are sometimes the most price-sensitive in specific categories"
+      ],
+      "postamble": "The antidote: build each persona from behavior and motivation FIRST, then add demographics that are consistent with the behavioral profile. If you start with demographics, you end up reverse-engineering stereotypical behavior."
+    },
+    "b2b_persona_structure": {
+      "type": "prose_with_list",
+      "preamble": "B2B personas are not B2C personas with job titles. The entire structure changes. Instead of individual demographics, describe the ORGANIZATION type and BUYER ROLE. Structural shifts:",
+      "list": [
+        "Instead of 'who is this person' ask 'what kind of organization do they work in' and 'what is their role in the buying decision'",
+        "Instead of 'what do they value personally' ask 'what does their organization prioritize' and 'what professional pressures drive their behavior'",
+        "Instead of 'how do they buy' ask 'what does the procurement process look like' and 'who else is involved'",
+        "Instead of 'where do they hang out online' ask 'where do they seek professional information'"
+      ],
+      "postamble": "B2B persona profiles include: organization type (size, industry, growth stage, budget), buyer role (title, authority, reporting metrics), organizational pain points, desired outcomes, procurement process, and professional channels. No age, no hobbies, no personal values — these are irrelevant to a B2B purchase decision."
+    },
+    "specificity_calibration": {
+      "type": "prose_with_list",
+      "preamble": "False precision is the most common way AI-generated personas lose credibility. An income range of '$85,000-$110,000' looks like real data but is fabricated. The user might base actual marketing spend on that number. Calibration rules:",
+      "list": [
+        "USE PRECISE NUMBERS when well-established (e.g., 'B2B enterprise sales cycles typically run 3-9 months')",
+        "USE QUALITATIVE DESCRIPTORS when estimating (e.g., 'moderate income, budget-conscious' not '$75,000-$95,000')",
+        "USE RANGES HONESTLY when you have some basis (e.g., 'mid-career, roughly 30s to mid-40s' not 'age 34')"
+      ],
+      "postamble": "The user should trust that anything specific has a basis, and anything qualitative is an honest estimate. If everything looks equally precise, the user cannot distinguish solid patterns from guesses."
+    },
+    "outline_first_workflow": {
+      "type": "prose",
+      "body": "Presenting outlines before full profiles is a quality measure, not just an efficiency measure. When you deliver a beautifully formatted persona with all sections, it signals 'done' and discourages feedback. A brief outline (name, one sentence, distinctiveness note) is clearly a draft and invites adjustment. Present outlines as a simple list, not a formatted document. Keep them to 2-3 lines each. Explicitly ask 'should I adjust any of these before building the full profiles?' The question normalizes revision."
+    },
+    "capabilities": {
+      "type": "list",
+      "items": [
+        "Generate 2-4 hypothetical customer personas from business context description",
+        "Support both B2C and B2B persona structures with fundamentally different frameworks",
+        "Enforce genuine distinctiveness across 6 behavioral dimensions (3+ required per pair)",
+        "Calibrate specificity to confidence level (precise only when well-established)",
+        "Propose testable application hypotheses for marketing, product, and engagement",
+        "Interactive phased delivery with 5 WAIT gates preventing document-dump behavior"
+      ]
+    },
+    "limitations": {
+      "type": "list",
+      "items": [
+        "All personas are hypothetical constructs from training data patterns, not validated research",
+        "Cannot replace real customer interviews, surveys, or behavioral data",
+        "Specificity is bounded by training data patterns for the user's market",
+        "B2B organizational dynamics are generalized; actual procurement processes vary significantly",
+        "Application hypotheses are starting points that require real-world testing"
+      ]
+    },
+    "common_failure_modes": {
+      "type": "list",
+      "items": [
+        "Presenting personas as validated research instead of hypotheses to test",
+        "Creating personas that differ only in demographics but share identical behavioral profiles",
+        "Relying on age/gender/income stereotypes instead of behavioral patterns",
+        "Using false precision (specific dollar ranges, exact ages) without basis",
+        "Applying B2C template to B2B contexts instead of using organizational structure",
+        "Delivering all phases in a single response instead of interactive conversation",
+        "Skipping the outline-approval step and going directly to full profiles",
+        "Generating polished summary cards before the user has approved the profiles"
+      ]
+    },
+    "lessons_learned": {
+      "type": "list",
+      "items": []
+    }
+  },
+  "lessons_learned": []
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

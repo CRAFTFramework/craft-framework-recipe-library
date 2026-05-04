@@ -1,0 +1,1192 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-038
+# Recipe Name:  Niche Market Identifier
+# Version:      v2.00a
+# Series:       Niche Discovery (2 of 5)
+# Category:     Business Strategy
+# Subcategory:  Niche Discovery
+# Difficulty:   Intermediate
+# Time:         45-90 min (across two sessions)
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H068
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-038-NICHE-MARKET-IDENTIFIER-v2_00a.txt
+# Generated:    2026-04-25
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-038
+# Recipe Name: NICHE-MARKET-IDENTIFIER
+# Version: v3.00a
+# Status: REVISED (H011 - Deep Research Integration)
+# Series: Niche Discovery (2 of 5)
+# Previous Version: v2.00a-R (H010)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "NICHE-MARKET-IDENTIFIER"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Niche Market Identifier"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-038"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v3.00a"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Business Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Niche Discovery"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Niche Discovery Series (2 of 5)"
+WPRM_FIELD_SERIES_ORDER = "037 -> 038 (this) -> 039 -> 040 -> related"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Guides you through niche market exploration powered by
+Deep Research reports. First helps you build targeted
+research prompts, then uses your attached research files
+to provide data-informed niche evaluation and a focused
+validation plan. Works with any Deep Research tool
+(Claude, Gemini, ChatGPT, or a combination).
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe transforms niche market identification from
+guesswork into a data-informed process by integrating
+Deep Research reports as a foundation. The experience
+unfolds in two stages:
+
+STAGE 1 - RESEARCH PREPARATION:
+The recipe asks you focused intake questions (quick or
+detailed mode), then generates tailored Deep Research
+prompts designed for your specific situation. You run
+these prompts through any Deep Research tool (Claude,
+Gemini, ChatGPT) and return with the reports attached.
+We recommend 2-5 separate research reports for best
+results.
+
+STAGE 2 - DATA-INFORMED EXPLORATION:
+With real research attached, the recipe reads your
+reports and guides you through structured niche
+evaluation: brainstorming candidate niches grounded
+in research findings, evaluating each through proven
+frameworks using actual market data, comparing options
+with real evidence, and building a targeted validation
+plan focused on what the research could not answer.
+
+The result: niche decisions informed by real market
+intelligence, not AI-generated estimates.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Want to identify and evaluate niche market opportunities
+  with real data backing
+- Have completed RCP-037 (Passion-Skills Aligner) or
+  already know your skills, passions, and general direction
+- Are willing to invest time in Deep Research before
+  making niche decisions
+- Want to move beyond gut instinct into evidence-based
+  niche selection
+
+Do NOT use if you:
+- Need a quick brainstorm without research (use the
+  evaluation frameworks directly)
+- Already have extensive market research and just need
+  to organize it
+- Are looking for the AI to tell you which niche to pick
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "intake_mode": {
+        "type": "string",
+        "required": True,
+        "options": ["quick", "detailed"],
+        "description": "Quick: 4 essential questions. Detailed: 10 questions for comprehensive DR prompts.",
+        "default": "quick"
+    },
+    "passions_skills": {
+        "type": "string",
+        "required": False,
+        "description": "Output from RCP-037 or your own summary of skills, passions, and intersection areas.",
+        "default": "None provided - will be gathered during intake"
+    },
+    "industry_direction": {
+        "type": "string",
+        "required": True,
+        "description": "The general industry or area you want to explore (e.g., health and wellness, B2B SaaS, creative services)."
+    },
+    "constraints": {
+        "type": "string",
+        "required": False,
+        "description": "Any constraints: geography, budget, timeline, regulatory, technical skills, etc.",
+        "default": "None specified"
+    },
+    "deep_research_files": {
+        "type": "file_list",
+        "required": True,
+        "description": "2-5 Deep Research report files (PDF, TXT, or DOC). Accepted from Claude, Gemini, ChatGPT, or any combination.",
+        "min_recommended": 2,
+        "max_recommended": 5
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe operates in two distinct stages separated
+by a user action (running Deep Research externally).
+
+STAGE 1 (Phases 0A-0B): Intake and DR prompt generation.
+The AI gathers context through quick or detailed intake
+questions, then generates 2-5 tailored Deep Research
+prompts. The AI decides the number and focus angles
+based on what it learned during intake. The session
+pauses here - the user leaves to run DR.
+
+STAGE 2 (Phases 1-4): Data-informed niche exploration.
+The user returns with DR files attached. The AI reads
+ALL attached reports, extracts key findings, and uses
+this real data as the foundation for niche brainstorming,
+framework evaluation, comparison, and validation planning.
+
+CRITICAL: The AI must clearly distinguish between claims
+supported by the DR reports (cite the source) and its
+own general knowledge or frameworks. When the DR reports
+contain specific data, USE IT. When they do not cover
+something, say so and flag it for the validation plan.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-038 NICHE MARKET IDENTIFIER v3.00a
+# Deep Research Integrated Edition
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: Ask only ONE question at a time. Wait for the
+#         user's response before asking the next question.
+#
+# RULE 2: Do NOT evaluate niches or provide market
+#         assessments until Deep Research files have been
+#         read in Phase 1.
+#
+# RULE 3: When citing information from Deep Research
+#         reports, indicate which report the information
+#         comes from (e.g., "Your Gemini research on
+#         competitive landscape found...").
+#
+# RULE 4: When the DR reports do not cover a topic,
+#         say so plainly: "Your research reports did not
+#         address [topic] - I will add this to your
+#         validation plan."
+#
+# RULE 5: Do NOT fabricate market sizes, growth rates,
+#         competition scores, or viability rankings. Use
+#         only what the DR reports provide. If DR reports
+#         contain estimates, present them as "per your
+#         research" not as established facts.
+#
+# RULE 6: Do NOT generate Deep Research prompts until
+#         intake questions are answered. The prompts must
+#         be tailored to the user's specific situation.
+#
+# RULE 7: The number and focus of recommended DR prompts
+#         (2-5) is YOUR decision based on what you learn
+#         during intake. More complex situations or less
+#         user knowledge = more prompts recommended.
+#
+# RULE 8: DR prompts must be platform-agnostic - written
+#         to work with Claude Deep Research, Gemini Deep
+#         Research, ChatGPT Deep Research, or any other
+#         deep research tool.
+#
+# RULE 9: When the user returns with DR files, read ALL
+#         attached files before proceeding. Acknowledge
+#         what you received and summarize key themes
+#         before starting Phase 1.
+#
+# RULE 10: Maintain the WAIT gate pattern - do not skip
+#          ahead or combine phases without user permission.
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 0A: INTAKE - GATHER CONTEXT FOR DR PROMPTS
+# ===========================================================
+
+# STEP 1: WELCOME AND MODE SELECTION
+# -----------------------------------------------------------
+
+Display welcome message:
+
+    NICHE MARKET IDENTIFIER - Deep Research Edition
+    ================================================
+
+    This recipe helps you identify and evaluate niche
+    market opportunities using real research data.
+
+    Here is how it works:
+    1. I will ask you some questions about your situation
+    2. I will generate tailored Deep Research prompts
+    3. You run those prompts through any Deep Research
+       tool (Claude, Gemini, ChatGPT, or a mix)
+    4. You return here with the research files attached
+    5. We evaluate niches together using real data
+
+    For best results, we recommend generating 2-5
+    separate Deep Research reports so that the data
+    coverage is thorough enough to support good
+    decisions.
+
+    First, which intake mode would you prefer?
+
+    [1] QUICK - 4 essential questions (faster, good if
+        you already have clarity on your direction)
+
+    [2] DETAILED - 10 questions (more thorough, produces
+        more targeted research prompts, best if you are
+        early in your exploration)
+
+WAIT for user to select mode.
+
+
+# STEP 2A: QUICK INTAKE (if user selected [1])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What industry or area are you interested in
+        exploring? (e.g., health and wellness, B2B
+        software, creative services, education)
+
+    Q2: What skills, experience, or passions do you
+        bring to this? (If you completed RCP-037
+        Passion-Skills Aligner, share your results.)
+
+    Q3: Do you have any constraints I should know
+        about? (geography, budget, timeline, technical
+        limitations, regulatory considerations - or
+        "none" is fine)
+
+    Q4: What do you already know about this market?
+        (anything from "nothing, I am brand new" to
+        "I have worked in this space for 10 years")
+
+After all 4 answers collected, proceed to Phase 0B.
+
+
+# STEP 2B: DETAILED INTAKE (if user selected [2])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What industry or area are you interested in
+        exploring?
+
+    Q2: What skills, experience, or passions do you
+        bring to this? (Share RCP-037 results if you
+        have them.)
+
+    Q3: Are you currently in this market or adjacent
+        to it? If yes, describe your current position
+        (role, business, offerings, customers).
+
+    Q4: What specific aspects of this market intrigue
+        you most? (a particular audience, a problem
+        you have noticed, a gap you suspect exists)
+
+    Q5: Who do you see as the major players or
+        competitors in this space? (name specific
+        companies, creators, or service providers
+        if you can - or say "I do not know yet")
+
+    Q6: Do you have a sense of who your ideal
+        customer might be? Describe them if so -
+        demographics, psychographics, behaviors,
+        pain points.
+
+    Q7: What business model are you leaning toward?
+        (products, services, content, coaching,
+        SaaS, marketplace, other - or "not sure yet")
+
+    Q8: What geographic scope are you considering?
+        (local, regional, national, international,
+        online-only)
+
+    Q9: What constraints should I factor in? (budget,
+        timeline, technical skills, regulatory,
+        certifications needed, etc.)
+
+    Q10: What are your biggest unknowns - the things
+         you most need the research to answer?
+
+After all 10 answers collected, proceed to Phase 0B.
+
+
+# ===========================================================
+# PHASE 0B: GENERATE DEEP RESEARCH PROMPTS
+# ===========================================================
+
+# STEP 3: ANALYZE INTAKE AND DESIGN RESEARCH STRATEGY
+# -----------------------------------------------------------
+
+Based on the user's intake answers, determine:
+
+    a) How many DR prompts to recommend (2-5):
+       - User has strong existing knowledge and clear
+         direction = 2-3 prompts
+       - User has moderate knowledge, some unknowns
+         = 3-4 prompts
+       - User is early-stage with many unknowns
+         = 4-5 prompts
+
+    b) Which research angles to cover. Choose from
+       these categories based on what the user needs
+       most (not all will apply to every user):
+
+       - AUDIENCE RESEARCH: Who are the potential
+         customers? Demographics, psychographics,
+         behaviors, pain points, spending patterns.
+
+       - COMPETITIVE LANDSCAPE: Who serves this market
+         now? What do they offer, charge, and where
+         are their gaps? Customer sentiment about
+         existing options.
+
+       - MARKET SIZE AND TRENDS: How large is this
+         market? Growth trajectory, emerging segments,
+         seasonal patterns, geographic variations.
+
+       - DEMAND SIGNALS: What are people searching
+         for, asking about, complaining about? Forum
+         activity, search trends, social media
+         conversations, review patterns.
+
+       - BUSINESS MODEL VIABILITY: How do businesses
+         in this space make money? Pricing models,
+         customer acquisition channels, margins,
+         common failure modes.
+
+       - REGULATORY AND BARRIER LANDSCAPE: What
+         certifications, regulations, or entry barriers
+         exist? Licensing, compliance, capital
+         requirements.
+
+# STEP 4: PRESENT DR PROMPTS
+# -----------------------------------------------------------
+
+Present the prompts to the user:
+
+    DEEP RESEARCH PROMPTS - TAILORED TO YOUR SITUATION
+    ====================================================
+
+    Based on what you have shared, I recommend running
+    [N] Deep Research reports to build a solid foundation.
+    Here is why I chose these angles:
+
+    [Brief explanation of research strategy - 2-3
+    sentences explaining what each prompt targets and
+    why it matters for this user's specific situation.]
+
+    You can run these through ANY Deep Research tool:
+    - Claude Deep Research
+    - Gemini Deep Research
+    - ChatGPT Deep Research
+    - Or a combination (different tools sometimes
+      surface different sources)
+
+    TIP: Using 2-3 different platforms for different
+    prompts often gives you broader coverage than
+    running all prompts through one tool.
+
+    ------------------------------------------------
+
+    PROMPT [1] OF [N]: [RESEARCH ANGLE TITLE]
+    Purpose: [One sentence on what this prompt targets]
+
+    [Full Deep Research prompt text - written as a
+    complete, ready-to-paste prompt. Should be specific
+    to the user's industry, direction, and situation.
+    Should request structured output with sources.]
+
+    ------------------------------------------------
+
+    [Repeat for each prompt]
+
+    ------------------------------------------------
+
+    WHAT TO DO NEXT:
+    1. Copy each prompt and run it in your chosen
+       Deep Research tool(s)
+    2. Save each report as a file (PDF, TXT, or DOC)
+    3. Return to this chat and attach all files
+    4. Say "I am back with my research" or similar
+    5. We will pick up from here with real data
+
+    Take your time - good research is worth the wait.
+
+WAIT for user to return with DR files.
+
+
+# ===========================================================
+# PHASE 1: RESEARCH INTAKE AND FOUNDATION
+# ===========================================================
+# (User has returned with Deep Research files attached)
+
+# STEP 5: READ AND ACKNOWLEDGE DR FILES
+# -----------------------------------------------------------
+
+When the user returns with files:
+
+    Read ALL attached Deep Research files completely.
+
+    Then present a research intake summary:
+
+    RESEARCH RECEIVED - HERE IS WHAT I FOUND
+    ================================================
+
+    Files received: [list each file with a short label]
+
+    KEY THEMES ACROSS YOUR RESEARCH:
+    - [Theme 1]: [Brief summary with source reference]
+    - [Theme 2]: [Brief summary with source reference]
+    - [Theme 3]: [Brief summary with source reference]
+    [Continue as needed]
+
+    NOTABLE DATA POINTS:
+    - [Specific finding 1 - cite which report]
+    - [Specific finding 2 - cite which report]
+    - [Specific finding 3 - cite which report]
+    [Continue as needed]
+
+    GAPS I NOTICED:
+    - [Topic the research did not cover well]
+    - [Area with conflicting information]
+    [If any - these feed into the validation plan later]
+
+    Does this summary look right? Anything I missed
+    or misread?
+
+WAIT for user confirmation before proceeding.
+
+
+# STEP 6: GENERATE NICHE DIRECTIONS
+# -----------------------------------------------------------
+
+Using BOTH the user's intake answers AND the DR findings:
+
+    Based on your research and what you shared about
+    your skills and interests, here are [3-5] niche
+    directions worth exploring:
+
+    For each niche direction, provide:
+    - NICHE: [Clear, specific niche description]
+    - WHY THIS FITS YOU: [Connection to user's skills
+      and passions - from intake]
+    - WHAT THE RESEARCH SAYS: [Specific evidence from
+      DR reports supporting this direction - cite
+      the source report]
+    - OPEN QUESTIONS: [What the research did not
+      fully answer about this niche]
+
+    [Present all 3-5 directions]
+
+    Which 2-3 of these would you like to evaluate
+    more deeply?
+
+WAIT for user to select niches.
+
+
+# ===========================================================
+# PHASE 2: FRAMEWORK-GUIDED EVALUATION
+# ===========================================================
+
+# STEP 7: EVALUATE SELECTED NICHES (ONE AT A TIME)
+# -----------------------------------------------------------
+
+For EACH niche the user selected, walk through this
+framework. Complete one niche fully before starting
+the next.
+
+    EVALUATING: [Niche Name]
+    ================================================
+
+    AUDIENCE CLARITY:
+    - Who specifically would you serve?
+      [If DR reports contain audience data, present
+      it: "Your research identified [audience
+      segments]..." Then ask: "Does this match your
+      vision? Who specifically within this would you
+      target?"]
+    - How reachable are they?
+      [If DR reports contain channel or community
+      data, present it. If not, flag for validation
+      plan.]
+
+WAIT for user response on audience.
+
+    PROBLEM SIGNIFICANCE:
+    - What core problem does this niche face?
+      [Reference DR findings on pain points, complaints,
+      unmet needs. "Your competitive landscape research
+      found that customers frequently mention..."]
+    - How urgently do they need a solution?
+      [If DR reports contain demand signals, present
+      them. If not, say so.]
+
+WAIT for user response on problem.
+
+    YOUR FIT:
+    - What unique advantage do you bring?
+      [Connect user's stated skills/experience to
+      niche needs. Reference any relevant DR findings
+      about what the market currently lacks.]
+    - What would you need to learn or build?
+      [Be honest about gaps between user's current
+      position and market requirements. If DR reports
+      identify entry barriers or skill requirements,
+      reference them.]
+
+WAIT for user response on fit.
+
+    KNOWLEDGE GAPS:
+    - What do you still not know about this niche?
+    - What assumptions are you making that need
+      testing?
+      [Reference gaps from DR intake summary.
+      Reference conflicting or incomplete information
+      from reports.]
+
+WAIT for user response on gaps.
+
+    [Niche Name] - EVALUATION SNAPSHOT
+    ================================================
+    Audience clarity: [Summary from discussion]
+    Problem significance: [Summary from discussion]
+    Your fit: [Summary from discussion]
+    Key unknowns: [Summary from discussion]
+    Research support level: [Strong/Moderate/Limited
+    - based on how much DR data was available for
+    this specific niche]
+    ================================================
+
+Repeat for each selected niche.
+
+
+# ===========================================================
+# PHASE 3: COMPARISON AND SELECTION
+# ===========================================================
+
+# STEP 8: SIDE-BY-SIDE COMPARISON
+# -----------------------------------------------------------
+
+After all selected niches are evaluated:
+
+    NICHE COMPARISON - RESEARCH-INFORMED
+    ================================================
+
+    Present a side-by-side comparison covering:
+
+    For each niche:
+    - STRONGEST EVIDENCE: The most compelling data
+      point from DR reports supporting this niche
+    - BIGGEST CONCERN: The most significant risk or
+      unknown
+    - YOUR FIT: How well your skills and passions
+      align (from evaluation discussion)
+    - RESEARCH DEPTH: How well-covered this niche
+      was in the DR reports (Strong/Moderate/Limited)
+    - VALIDATION EFFORT: How much additional research
+      would be needed before committing
+
+    NO SCORES. NO RANKINGS.
+
+    Instead, present trade-offs honestly:
+    - "[Niche A] has stronger demand evidence but your
+      fit is less clear..."
+    - "[Niche B] aligns better with your skills but
+      the research found a more competitive landscape..."
+
+    Then ask:
+
+    Based on this comparison, which niche feels right
+    to you? Trust your judgment - you know things about
+    your energy, motivation, and life situation that no
+    research report can capture.
+
+    [1] [Niche A]
+    [2] [Niche B]
+    [3] [Niche C] (if applicable)
+    [4] I want to explore a different direction
+    [5] I need more research before deciding
+
+WAIT for user selection.
+
+
+# ===========================================================
+# PHASE 4: VALIDATION RESEARCH PLAN
+# ===========================================================
+
+# STEP 9: BUILD TARGETED VALIDATION PLAN
+# -----------------------------------------------------------
+
+For the selected niche, generate a validation plan that
+focuses on what the Deep Research COULD NOT answer:
+
+    VALIDATION PLAN: [Selected Niche]
+    ================================================
+
+    Your Deep Research gave you a strong foundation.
+    Here is what you still need to validate through
+    direct investigation.
+
+    WHAT THE RESEARCH CONFIRMED:
+    - [Key finding 1 - cite report]
+    - [Key finding 2 - cite report]
+    - [Key finding 3 - cite report]
+    (These are your strongest footing - build on them.)
+
+    WHAT STILL NEEDS VALIDATION:
+    ------------------------------------------------
+
+    1. CUSTOMER CONVERSATIONS
+       Who to talk to: [Specific audience segments
+       identified in evaluation]
+       Where to find them: [Communities, platforms,
+       events - use DR report data if available,
+       otherwise provide general guidance]
+       What to ask: [3-5 specific questions tailored
+       to this niche's key unknowns]
+       What confirms the opportunity: [Specific
+       signals]
+       What suggests caution: [Specific signals]
+
+    2. DEMAND SIGNAL VERIFICATION
+       What to search: [Specific keywords, forums,
+       platforms relevant to this niche]
+       What to look for: [Patterns that would
+       confirm or challenge DR findings]
+       Tools to use: [Google Trends, Reddit,
+       industry forums, social listening - specific
+       to this niche]
+
+    3. COMPETITIVE REALITY CHECK
+       [If DR covered competitors well]: Your
+       research identified [competitors]. Verify
+       by: [specific actions - check their reviews,
+       pricing, offerings, gaps]
+       [If DR did not cover well]: You need to
+       map the competitive landscape. Start with:
+       [specific research actions]
+
+    4. QUICK VALIDATION TEST
+       A low-cost way to test demand before
+       committing: [Specific test tailored to user's
+       niche and business model - e.g., landing page
+       test, pre-sale offer, community post, survey]
+
+    WHAT TO DO WITH YOUR FINDINGS:
+    - If validation confirms the research: you have
+      a strong basis for commitment. Consider RCP-039
+      (Market Gap Detective) to identify specific
+      opportunities within the niche.
+    - If validation contradicts the research:
+      revisit your other evaluated niches or run
+      additional DR with refined questions.
+    - If validation is mixed: the validation plan
+      narrows your uncertainty. Focus additional
+      investigation on the unresolved questions.
+
+    ================================================
+
+    SERIES NEXT STEPS:
+    - RCP-039 (Market Gap Detective): Find specific
+      gaps within your chosen niche
+    - RCP-040 (Niche Persona Generator): Build
+      detailed profiles of your target audience
+
+    But the MOST IMPORTANT next step is always the
+    validation itself. Research informs direction.
+    Customer conversations confirm it.
+
+# ===========================================================
+# END OF RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = """
+Q: What Deep Research tools work with this recipe?
+A: Any tool that produces a comprehensive research report:
+   Claude Deep Research, Gemini Deep Research, ChatGPT
+   Deep Research, or others. You can mix tools - different
+   platforms sometimes surface different sources.
+
+Q: How many Deep Research reports should I generate?
+A: The recipe recommends 2-5 reports. The AI will tell you
+   exactly how many and what angles to cover based on your
+   intake answers. More complex or unfamiliar markets
+   benefit from more reports.
+
+Q: Can I skip the Deep Research step?
+A: The recipe is designed around having DR files as input.
+   Without them, the evaluation would fall back to general
+   AI knowledge, which is what v2.00a already provided.
+   The DR integration is what makes v3.00a substantively
+   better. If you want a quick brainstorm without research,
+   use the evaluation frameworks directly.
+
+Q: What if my Deep Research reports do not cover everything?
+A: The recipe identifies gaps in your research coverage and
+   folds them into the validation plan. No research is
+   perfect - the recipe works with whatever data you bring.
+
+Q: Do I need to complete RCP-037 first?
+A: Recommended but not required. If you already know your
+   skills, passions, and general direction, you can start
+   here. RCP-037 output makes the intake faster and the
+   DR prompts more targeted.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+v3.00a (H011): Major revision - integrated Deep Research
+as required input. Added Phase 0A/0B for intake and DR
+prompt generation. All evaluation phases now reference DR
+findings. Validation plan focuses on gaps DR could not
+answer. Platform-agnostic DR support.
+
+v2.00a-R (H010): Fundamental reframe - removed fabricated
+market data (sizes, scores, rankings). Repositioned as
+structured exploration tool with research plan output.
+
+v2.00a: Original pre-beta version with fabricated market
+analysis.
+"""
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+# NOTE: Image Generation Prompts (Section 3) excluded per H039-006 ruling.
+
+# ===========================================================
+# RCP-038 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: NICHE-MARKET-IDENTIFIER
+# Version: v3.00a (Revised H011 - Deep Research Integration)
+# Generated: 2026-02-16
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-038 Niche Market Identifier
+
+WHAT IT DOES:
+    Guides you through niche market exploration powered
+    by Deep Research reports. First helps you build
+    targeted research prompts based on your situation,
+    then uses your attached research files to provide
+    data-informed niche evaluation, comparison, and a
+    focused validation plan.
+
+WHAT IT DOES NOT DO:
+    - Does not provide market data from its own knowledge
+    - Does not score or rank niches numerically
+    - Does not fabricate market sizes or competition levels
+    - Does not replace customer conversations
+    - Does not run Deep Research for you (you run it
+      externally and bring the reports back)
+
+HOW IT WORKS (Two Stages, 6 Phases):
+
+    STAGE 1 - Research Preparation:
+    Phase 0A: Intake Questions
+        Choose quick (4 questions) or detailed (10
+        questions). Share your industry direction, skills,
+        constraints, and existing knowledge.
+    Phase 0B: DR Prompt Generation
+        AI analyzes your answers and generates 2-5
+        tailored Deep Research prompts. You choose which
+        angles need coverage. AI decides count based on
+        your situation complexity. Prompts work with any
+        DR tool (Claude, Gemini, ChatGPT). Session pauses.
+
+    STAGE 2 - Data-Informed Exploration:
+    Phase 1: Research Intake
+        Attach your DR reports. AI reads all files,
+        summarizes key themes and data points, flags
+        gaps in coverage. You confirm the summary.
+    Phase 2: Framework Evaluation
+        AI generates 3-5 niche directions grounded in
+        your research. You pick 2-3 to evaluate. Each
+        niche walks through: audience clarity, problem
+        significance, your fit, and knowledge gaps. DR
+        data cited throughout. WAIT gates between each
+        dimension.
+    Phase 3: Comparison
+        Side-by-side with trade-offs (no scores). Each
+        niche rated by research depth (Strong/Moderate/
+        Limited). You select based on evidence and
+        judgment.
+    Phase 4: Validation Plan
+        Focused on what DR could NOT answer. Customer
+        conversations, demand signal checks, competitive
+        reality checks, and a quick validation test.
+
+KEY INPUTS REQUIRED:
+    - Industry direction and skills/passions
+    - 2-5 Deep Research report files (any platform)
+
+PRIMARY DELIVERABLE:
+    A validation plan focused on the gaps in your
+    research, not a repetition of what the research
+    already told you.
+
+SERIES POSITION: 2 of 5 (Niche Discovery)
+    037 (Passion-Skills) -> 038 (this) -> 039 (Market
+    Gap Detective) -> 040 (Niche Persona Generator) ->
+    related
+
+HONEST POSITIONING:
+    The AI's value is in structuring your thinking and
+    surfacing patterns in your research. The Deep Research
+    provides the data. Your judgment and customer
+    conversations provide the final validation.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-038
+
+PURPOSE AND POSITIONING:
+    This recipe is a v3.00a upgrade that integrates Deep
+    Research reports as a required input, solving the
+    fundamental problem identified in v2.00a-R: the AI
+    does not have access to market data. Instead of
+    removing all market analysis (v2.00a-R approach), this
+    version provides a mechanism for users to BRING real
+    market data into the conversation via Deep Research
+    tools.
+
+    The two-stage architecture is deliberate. Stage 1
+    (intake + DR prompt generation) ensures the research
+    is targeted to the user's specific situation, not
+    generic. Stage 2 (data-informed evaluation) ensures
+    the AI uses real evidence rather than fabricating
+    assessments.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    THE TWO-STAGE ARCHITECTURE:
+    This recipe has a natural break point between Stage 1
+    and Stage 2 where the user leaves to run Deep Research
+    externally. The AI must handle this gracefully:
+    - End Stage 1 with clear instructions for what to do
+      next (copy prompts, run DR, save files, return)
+    - When the user returns, recognize the continuation
+      and immediately process the attached files
+    - Do not re-ask intake questions or restart from
+      scratch
+
+    If the user returns to a NEW chat with DR files but
+    without the intake context, the AI should ask brief
+    re-orientation questions to reconstruct the context
+    before proceeding to Phase 1.
+
+    DEEP RESEARCH PROMPT DESIGN:
+    The DR prompts the AI generates must be:
+    - SPECIFIC to the user's situation (not generic)
+    - PLATFORM-AGNOSTIC (work with any DR tool)
+    - STRUCTURED in their output requests (ask for
+      organized findings, not stream-of-consciousness)
+    - SOURCED (ask the DR tool to cite its sources)
+    - ACTIONABLE (focused on data the user can use for
+      decisions, not encyclopedic overviews)
+
+    Bad DR prompt: "Research the health and wellness
+    market"
+    Good DR prompt: "Research the competitive landscape
+    for meal planning services targeting women over 40
+    with hormonal health concerns. Specifically identify:
+    (1) the top 10 existing services and their core
+    offerings, pricing, and target audiences, (2) common
+    customer complaints and praise from reviews on G2,
+    Trustpilot, and app stores, (3) gaps that reviewers
+    mention - features or audiences not being served,
+    (4) pricing tiers and what each tier includes. Cite
+    sources for all data points."
+
+    The AI should generate prompts at this level of
+    specificity, tailored to each research angle.
+
+    DR PROMPT COUNT DECISION:
+    The AI must decide how many prompts (2-5) based on
+    intake answers. This is a judgment call:
+    - A user who says "I have 10 years in this space,
+      I know the competitors, I just need to validate
+      a few assumptions" needs 2 targeted prompts
+    - A user who says "I am interested in education
+      technology but have not looked into it much"
+      needs 4-5 prompts covering audience, competition,
+      demand, business models, and barriers
+    - The AI should explain its reasoning when presenting
+      the prompt count
+
+    CROSS-PLATFORM DR BENEFITS:
+    Different DR tools have different source strengths.
+    Claude DR tends to synthesize well from academic and
+    professional sources. Gemini DR often surfaces Google
+    ecosystem data effectively. ChatGPT DR may find
+    different web sources. The AI should mention this
+    benefit without overselling any platform.
+
+    HANDLING DR FILE QUALITY:
+    DR reports vary in quality. Some will be data-rich
+    with specific figures and sources. Others may be
+    more general. The AI must:
+    - Work with whatever quality of research arrives
+    - Cite specific data points when available
+    - Note when findings are general vs specific
+    - Flag contradictions between reports
+    - Identify topics that no report covered adequately
+    - Never pad thin research with its own fabricated
+      data to make the analysis look more complete
+
+    CALIBRATING EVALUATION TO RESEARCH DEPTH:
+    The "Research support level" rating (Strong/Moderate/
+    Limited) for each niche is important feedback. It
+    tells the user how much their evaluation is grounded
+    in evidence vs frameworks:
+    - Strong: DR reports contained specific data about
+      this niche's audience, competition, and demand
+    - Moderate: DR reports contained some relevant data
+      but not niche-specific
+    - Limited: DR reports did not meaningfully cover this
+      niche - evaluation is mostly framework-guided
+
+    If a niche rates "Limited," the AI should be more
+    cautious in its framing and emphasize validation more
+    heavily.
+
+    NO FABRICATION, EVEN TO FILL GAPS:
+    The temptation when DR reports are thin will be to
+    supplement with general AI knowledge presented as if
+    it were data. Do not do this. "Your research did not
+    cover pricing in this niche - I would recommend adding
+    this to your validation plan" is always better than
+    generating a pricing range from general knowledge.
+
+SERIES CONTEXT:
+    This recipe's DR prompts should be designed to also
+    produce useful input for RCP-039 (Market Gap Detective)
+    when possible. If the competitive landscape prompt
+    surfaces gap signals, these transfer naturally. But
+    the primary purpose of 038's DR prompts is niche
+    evaluation, not gap detection - 039 generates its own
+    gap-focused prompts.
+
+COMMON USER PATTERNS:
+    - Users who want to skip DR and get straight to
+      evaluation: Redirect firmly. The DR integration IS
+      the upgrade. Without it, they should use the v2.00a-R
+      framework approach directly.
+    - Users who bring only 1 report: Accept it, but note
+      that coverage is limited and recommend additional
+      research in the validation plan.
+    - Users who bring 6+ reports: Accept all. More data is
+      better. The AI should still synthesize efficiently.
+    - Users who want the AI to decide for them: The AI
+      presents evidence and trade-offs. The decision is
+      always the user's. "Based on your research, Niche B
+      has stronger demand evidence - but you know your own
+      energy and constraints better than any report."
+    - Users returning from DR with questions about the
+      research itself: Help them understand what they
+      found, but redirect to the recipe's evaluation
+      framework rather than becoming a research discussion
+      tool.
+"""
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-038",
+  "recipe_name": "Niche Market Identifier",
+  "version": "v2.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-38/RCP-038-SUPPLEMENTAL-CONTENT-v2_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "This recipe is a v3.00a upgrade that integrates Deep Research reports as a required input, solving the fundamental problem identified in v2.00a-R: the AI does not have access to market data. Instead of removing all market analysis (v2.00a-R approach), this version provides a mechanism for users to BRING real market data into the conversation via Deep Research tools. The two-stage architecture is deliberate. Stage 1 (intake + DR prompt generation) ensures the research is targeted to the user's specific situation, not generic. Stage 2 (data-informed evaluation) ensures the AI uses real evidence rather than fabricating assessments."
+    },
+    "critical_behavioral_guidance": {
+      "type": "prose_with_list",
+      "preamble": "This recipe has specific behavioral constraints across seven areas that the AI must observe throughout execution.",
+      "list": [
+        "THE TWO-STAGE ARCHITECTURE: Natural break point between Stage 1 and Stage 2 where the user leaves to run Deep Research externally. End Stage 1 with clear next-step instructions. When user returns, recognize continuation and immediately process attached files. Do not re-ask intake questions. If user returns to a NEW chat without intake context, ask brief re-orientation questions.",
+        "DEEP RESEARCH PROMPT DESIGN: DR prompts must be SPECIFIC (not generic), PLATFORM-AGNOSTIC (work with any DR tool), STRUCTURED (organized findings), SOURCED (cite sources), and ACTIONABLE (decision-focused, not encyclopedic). Generate prompts at high specificity tailored to each research angle.",
+        "DR PROMPT COUNT DECISION: AI decides 2-5 prompts based on intake. Strong existing knowledge and clear direction = 2-3. Moderate knowledge with unknowns = 3-4. Early-stage with many unknowns = 4-5. Explain reasoning when presenting count.",
+        "CROSS-PLATFORM DR BENEFITS: Different DR tools have different source strengths. Claude DR synthesizes well from academic/professional sources. Gemini DR surfaces Google ecosystem data. ChatGPT DR finds different web sources. Mention benefit without overselling any platform.",
+        "HANDLING DR FILE QUALITY: Work with whatever quality arrives. Cite specific data when available. Note general vs specific findings. Flag contradictions. Identify uncovered topics. Never pad thin research with fabricated data.",
+        "CALIBRATING EVALUATION TO RESEARCH DEPTH: Research support level (Strong/Moderate/Limited) tells user how grounded evaluation is. Strong = specific niche data. Moderate = some relevant but not niche-specific. Limited = mostly framework-guided. Limited niche = more cautious framing, emphasize validation.",
+        "NO FABRICATION EVEN TO FILL GAPS: Do not supplement thin DR with general AI knowledge presented as data. 'Your research did not cover X - adding to validation plan' is always better than generating data from general knowledge."
+      ],
+      "postamble": "These constraints are non-negotiable and apply across all phases of execution."
+    },
+    "series_context": {
+      "type": "prose",
+      "body": "This recipe's DR prompts should be designed to also produce useful input for RCP-039 (Market Gap Detective) when possible. If the competitive landscape prompt surfaces gap signals, these transfer naturally. But the primary purpose of 038's DR prompts is niche evaluation, not gap detection — 039 generates its own gap-focused prompts. Series position: 2 of 5 in Niche Discovery (037 → 038 → 039 → 040 → related)."
+    },
+    "common_user_patterns": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "skip_dr", "description": "Users who want to skip DR and get straight to evaluation: Redirect firmly. The DR integration IS the upgrade. Without it, use v2.00a-R framework approach directly."},
+        {"key": "one_report", "description": "Users who bring only 1 report: Accept it, note limited coverage, recommend additional research in validation plan."},
+        {"key": "many_reports", "description": "Users who bring 6+ reports: Accept all. More data is better. Synthesize efficiently."},
+        {"key": "decide_for_me", "description": "Users who want AI to decide: Present evidence and trade-offs. Decision is always the user's."},
+        {"key": "research_questions", "description": "Users returning with questions about research itself: Help understand findings, redirect to evaluation framework rather than becoming research discussion tool."}
+      ]
+    },
+    "parameters": [
+      {"name": "intake_mode", "type": "string", "options": ["quick", "detailed"], "required": true, "default": "quick", "description": "Quick: 4 essential questions. Detailed: 10 questions for comprehensive DR prompts."},
+      {"name": "passions_skills", "type": "string", "required": false, "default": "None provided - will be gathered during intake", "description": "Output from RCP-037 or own summary of skills, passions, and intersection areas."},
+      {"name": "industry_direction", "type": "string", "required": true, "description": "The general industry or area to explore."},
+      {"name": "constraints", "type": "string", "required": false, "default": "None specified", "description": "Any constraints: geography, budget, timeline, regulatory, technical skills, etc."},
+      {"name": "deep_research_files", "type": "file_list", "required": true, "min_recommended": 2, "max_recommended": 5, "description": "2-5 Deep Research report files (PDF, TXT, or DOC) from any platform."}
+    ],
+    "recipe_structure": {
+      "type": "prose_with_list",
+      "preamble": "Two-stage recipe with 5 phases, 10 behavioral rules, and 10+ WAIT gates.",
+      "list": [
+        "STAGE 1 — RESEARCH PREPARATION: Phase 0A (Intake — quick 4Q or detailed 10Q) + Phase 0B (DR Prompt Generation — 2-5 tailored prompts). Session pauses for external DR execution.",
+        "STAGE 2 — DATA-INFORMED EXPLORATION: Phase 1 (Research Intake — read all DR files, summarize themes, flag gaps) + Phase 2 (Framework Evaluation — 3-5 niche directions, evaluate 2-3 through audience/problem/fit/gaps framework) + Phase 3 (Comparison — side-by-side trade-offs, no scores) + Phase 4 (Validation Plan — focused on what DR could NOT answer)."
+      ],
+      "postamble": "10 behavioral rules enforce one-question-at-a-time, no pre-DR evaluation, DR citation discipline, no fabrication, platform-agnostic prompts, and WAIT gate discipline."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

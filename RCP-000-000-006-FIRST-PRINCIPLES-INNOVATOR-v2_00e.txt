@@ -1,0 +1,2087 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR
+recipe_name:    First Principles Innovator
+version:        v2.00e
+authored_by:    Cat (P067)
+revision_date:  2026-04-24
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-006
+# Recipe Name: FIRST-PRINCIPLES-INNOVATOR
+# Version: v2.00e
+# Status: Official
+# CRAFT Flavors: Cowork
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = """
+RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR
+"""
+
+
+WPRM_FIELD_DESCRIPTION = """
+Create innovative products, services, or business
+models by identifying the core human need being served,
+stripping away industry conventions, and rebuilding from
+fundamental value. This recipe guides entrepreneurs through
+systematic innovation that avoids "me too" products and
+discovers breakthrough opportunities others miss.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Not part of a combo"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID = "006"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Innovation, Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Product Development"
+
+
+WPRM_FIELD_RECIPE_TAGS = """
+first principles, innovation, product development, business
+model, entrepreneurship, value creation, core needs, MVP
+"""
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Define Your Innovation Target
+-------------------------------------
+Identify what you want to innovate on:
+
+    OPTION A - EXISTING PRODUCT/SERVICE:
+        What product or service do you want to reimagine?
+        What market or industry does it serve?
+        What is your current offering (if any)?
+
+    OPTION B - NEW OFFERING:
+        What market or industry are you targeting?
+        What problem space interests you?
+        What capabilities or resources do you have?
+
+    OPTION C - BUSINESS MODEL:
+        What type of business model do you want to create?
+        What value exchange are you exploring?
+        What customer segment are you targeting?
+
+Be specific about scope - innovation works best when
+focused on a defined target rather than "everything."
+
+
+STEP 2: Identify the Core Human Need
+------------------------------------
+Strip away product features to find the FUNDAMENTAL
+human need your innovation must serve.
+
+Ask progressively deeper questions:
+
+    LEVEL 1 - FUNCTIONAL:
+        What does this product/service DO for people?
+        What task does it help them accomplish?
+        What problem does it solve?
+
+    LEVEL 2 - EMOTIONAL:
+        How does using it make people FEEL?
+        What emotional state are they seeking?
+        What emotional pain are they avoiding?
+
+    LEVEL 3 - FUNDAMENTAL:
+        What basic human need does this fulfill?
+        (Security, connection, status, growth, autonomy,
+         pleasure, meaning, efficiency, belonging)
+
+Keep asking "Why do they want THAT?" until you reach
+a need that cannot be reduced further.
+
+Examples of fundamental needs:
+    - Uber: Not "transportation" but "time freedom"
+    - Instagram: Not "photos" but "social validation"
+    - Netflix: Not "movies" but "effortless escapism"
+
+
+STEP 3: Map Industry Conventions
+--------------------------------
+Identify HOW the industry currently serves this need.
+List every standard practice, common approach, and
+"best practice" in your target market.
+
+    DELIVERY CONVENTIONS:
+        How is the product/service typically delivered?
+        What channels are standard?
+        What formats are expected?
+
+    PRICING CONVENTIONS:
+        How do competitors charge?
+        What pricing models are standard?
+        What is included vs. extra?
+
+    FEATURE CONVENTIONS:
+        What features does everyone include?
+        What is considered "table stakes"?
+        What features differentiate premium offerings?
+
+    EXPERIENCE CONVENTIONS:
+        What does the customer journey look like?
+        What touchpoints are standard?
+        What friction is accepted as normal?
+
+    BUSINESS MODEL CONVENTIONS:
+        How do companies in this space make money?
+        What cost structures are standard?
+        What partnerships are typical?
+
+Be thorough - list even the conventions that seem
+obviously necessary.
+
+
+STEP 4: Identify Fundamental Truths
+-----------------------------------
+Determine what is ACTUALLY true vs. what is merely
+conventional. Focus on:
+
+    HUMAN BEHAVIOR TRUTHS:
+        What do we know about how humans actually behave?
+        What psychological principles govern decisions?
+        What patterns are universal across cultures/time?
+
+    PHYSICAL/TECHNICAL TRUTHS:
+        What physical constraints actually exist?
+        What technical capabilities are now available?
+        What has changed since conventions were set?
+
+    ECONOMIC TRUTHS:
+        What creates actual value for customers?
+        What are the real cost drivers?
+        What would customers pay more/less for?
+
+    TEMPORAL TRUTHS:
+        What conditions existed when conventions formed?
+        What has changed since then?
+        What will likely change in the next 5 years?
+
+For each truth, ask: "Is this truly fundamental, or
+could this also be challenged?"
+
+
+STEP 5: Challenge Every Convention
+----------------------------------
+Test each industry convention against fundamentals.
+
+For EACH convention from Step 3, ask:
+
+    NECESSITY TEST:
+        "Is this convention REQUIRED to serve the
+         core human need, or is it just how things
+         are currently done?"
+
+    ORIGIN TEST:
+        "Why does this convention exist? What
+         conditions created it? Do those conditions
+         still apply?"
+
+    ALTERNATIVE TEST:
+        "If this convention did not exist, what
+         OTHER ways could we serve the same need?"
+
+    IMPROVEMENT TEST:
+        "Does this convention actually serve the
+         core need WELL, or just adequately?"
+
+Categorize each convention:
+
+    ESSENTIAL: Truly required by fundamentals
+    LEGACY: Exists due to outdated conditions
+    IMITATION: Exists because competitors do it
+    ASSUMPTION: Never questioned, just accepted
+    SUBOPTIMAL: Serves need but not well
+
+
+STEP 6: Generate First Principles Innovations
+---------------------------------------------
+Using ONLY fundamental truths and essential elements,
+brainstorm radically different approaches.
+
+    RULE 1: Forget existing products
+        Do not think about what exists. Think only
+        about the core need and fundamental truths.
+
+    RULE 2: Start from the need
+        Begin with: "A human needs X. Given what we
+        know is fundamentally true, what is the BEST
+        way to serve that need?"
+
+    RULE 3: Question everything
+        If you catch yourself thinking "but we have
+        to..." - stop and ask if that is fundamental
+        or convention.
+
+    RULE 4: Generate multiple options
+        Create at least THREE radically different
+        approaches. Push for variety.
+
+For each innovation concept:
+    - Describe the core idea
+    - Explain what fundamental truths it builds on
+    - List what conventions it eliminates
+    - Identify what makes it different from existing
+
+
+STEP 7: Evaluate Innovation Potential
+-------------------------------------
+Assess each first-principles innovation:
+
+    NEED ALIGNMENT:
+        How directly does this serve the core need?
+        Does it serve the need BETTER than current?
+        Rating: 1-5
+
+    DIFFERENTIATION:
+        How different is this from existing options?
+        Would customers immediately see the difference?
+        Rating: 1-5
+
+    FEASIBILITY:
+        Can this actually be built/delivered?
+        What capabilities are required?
+        Rating: 1-5
+
+    DEFENSIBILITY:
+        Can competitors easily copy this?
+        What creates sustainable advantage?
+        Rating: 1-5
+
+    MARKET SIZE:
+        How many people have this core need?
+        Is the market large enough?
+        Rating: 1-5
+
+Calculate total score and rank innovations.
+
+
+STEP 8: Design Minimum Viable Innovation
+----------------------------------------
+For your top innovation concept, design the simplest
+version that tests the core hypothesis.
+
+    CORE HYPOTHESIS:
+        "Customers will prefer [innovation] over
+         [current approach] because [reason tied
+         to fundamental truth]."
+
+    MINIMUM VIABLE VERSION:
+        What is the simplest form that delivers
+        the core value proposition?
+        Strip away everything not essential to
+        testing the hypothesis.
+
+    KEY ASSUMPTIONS TO TEST:
+        What must be true for this to work?
+        Which assumptions are riskiest?
+        How can you test them quickly?
+
+    SUCCESS METRICS:
+        What would prove the innovation works?
+        What specific numbers would validate it?
+        What would indicate failure?
+
+
+STEP 9: Create Innovation Roadmap
+---------------------------------
+Plan how to bring the innovation to market:
+
+    PHASE 1 - VALIDATE (Weeks 1-4):
+        - Build minimum viable version
+        - Test with small customer group
+        - Gather feedback on core value
+        - Decision point: proceed or pivot
+
+    PHASE 2 - DEVELOP (Months 2-3):
+        - Build full initial version
+        - Refine based on learnings
+        - Establish operations
+        - Begin limited launch
+
+    PHASE 3 - SCALE (Months 4+):
+        - Expand market reach
+        - Optimize unit economics
+        - Build competitive moats
+        - Iterate based on data
+
+
+STEP 10: Follow-Up Options
+--------------------------
+After completing the innovation process:
+
+    1. Deep-dive on core need identification
+    2. Challenge more industry conventions
+    3. Generate additional innovation concepts
+    4. Refine minimum viable version design
+    5. Detail the innovation roadmap
+    6. Apply first principles to adjacent area
+    7. Document learnings for future reference
+    8. End the session
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_USES_THIS_RECIPE = """
+The AI guides you through systematic innovation using
+first principles. It helps you dig deeper into core
+human needs, identifies conventions you may take for
+granted, and pushes you to generate truly different
+solutions. The AI challenges "obvious" approaches and
+asks uncomfortable questions about industry assumptions.
+It maintains focus on fundamental value creation rather
+than incremental feature additions. When you get stuck
+or lack domain knowledge, the AI shifts from questioning
+to contributing — offering industry insights, examples,
+and structured options rather than waiting.
+"""
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an innovation discovery
+protocol with these key behaviors:
+
+    FOCUS DEFINITION:
+        AI clarifies scope (product/service/market/model)
+        Ensures innovation target is specific enough
+        Establishes current state baseline
+
+    NEED EXCAVATION:
+        AI repeatedly asks "why do they want that?"
+        Does not accept surface-level answers
+        Pushes until reaching fundamental human needs
+        (safety, status, belonging, autonomy, mastery)
+
+    ASSUMPTION MAPPING:
+        AI comprehensively catalogs industry conventions
+        Covers delivery, pricing, features, customers,
+        operations
+        Identifies what "everyone does" without question
+
+    TRUTH SEPARATION:
+        AI distinguishes real constraints from habits
+        Tests each convention: "Is this physics or
+        tradition?"
+        Creates clear fundamental vs conventional list
+
+    CONVENTION CHALLENGE:
+        AI asks "Is this the ONLY way?" for each
+        Explores adjacent industries for alternatives
+        Considers what newcomers would do differently
+        Projects forward: "What changes in 10 years?"
+
+    APPROACH GENERATION:
+        AI generates multiple radical alternatives
+        Uses structured frames (simplify, channel shift,
+        model inversion, customer redefinition)
+        Traces each approach to fundamental foundations
+
+    MVP AND ROADMAP:
+        AI designs minimum viable test for top approach
+        Creates phased validation and scaling plan
+        Balances ambition with practical testing
+
+The AI maintains an innovation-focused posture, treating
+industry convention as suspect until proven fundamental.
+
+    BEHAVIORAL INFRASTRUCTURE:
+        AI follows six explicit rules: (1) provocative
+        thought-partner tone, (2) three-level "why" depth
+        gate on core needs, (3) batch conventions when >8
+        to prevent loop fatigue, (4) quality gate requiring
+        structurally different innovation concepts, (5) always
+        advance with analytical value-add, (6) proportional
+        time allocation across steps. Additionally, a four-
+        option I-don't-know handling protocol ensures the AI
+        contributes knowledge when the user lacks domain
+        expertise, rather than stalling.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+USE THIS RECIPE WHEN:
+
+    SEEKING GENUINE INNOVATION:
+        - Want breakthrough, not incremental improvement
+        - Current offerings feel commoditized
+        - Need differentiation competitors cannot copy
+
+    NEW MARKET ENTRY:
+        - Entering established market as newcomer
+        - Want to avoid "me too" positioning
+        - Looking for unique angle of attack
+
+    STAGNATION OR DISRUPTION:
+        - Growth has plateaued
+        - Industry is being disrupted
+        - Current model feels outdated
+
+    STRATEGIC PLANNING:
+        - Annual or quarterly innovation sessions
+        - New product ideation
+        - Business model evaluation
+
+    SPECIFIC TRIGGERS:
+        - "Our product is just like competitors"
+        - "We are competing on price, not value"
+        - "The industry has always worked this way"
+        - "We need something genuinely different"
+        - "How would we rebuild this from scratch?"
+
+DO NOT USE THIS RECIPE WHEN:
+
+    - Need to fix existing problem (use FIRST-PRINCIPLES-PROBLEM-SOLVER 005)
+    - Innovation is not the goal (optimization is)
+    - Time pressure requires immediate action
+    - Product-market fit is already strong
+    - Execution, not strategy, is the bottleneck
+
+COMPARE TO OTHER RECIPES:
+
+    vs FIRST-PRINCIPLES-PROBLEM-SOLVER (005):
+        - Problem Solver: Fix something broken
+        - Innovator: Create something genuinely new
+        - Use Problem Solver when something is wrong
+        - Use Innovator when seeking breakthrough
+
+    vs SOCRATIC-IDEA-VALIDATOR (002):
+        - Validator: Test existing ideas
+        - Innovator: Generate new approaches
+        - Use Validator after Innovator to stress-test
+        - Can be used sequentially for maximum rigor
+
+    vs FIRST-PRINCIPLES-MESSAGE-CRAFTER (007):
+        - Innovator: Creates the offering
+        - Message Crafter: Communicates the offering
+        - Use Innovator first if offering needs rethinking
+        - Use Message Crafter after offering is defined
+"""
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "Cat, Auguste"
+
+
+WPRM_FIELD_RECOMMENDED_AI_AGENTS = """
+Cat (orchestrator — strategic innovation workflow),
+Auguste (business strategy and evaluation)
+"""
+
+
+WPRM_FIELD_RECIPE_AUTHOR = "CRAFT Framework"
+
+
+WPRM_FIELD_RECIPE_VERSION = "v2.00e"
+
+
+WPRM_FIELD_USER_PROVIDES = """
+    - Innovation target (product, service, or model)
+    - Market or industry context
+    - Current understanding of customer needs
+    - Knowledge of existing approaches
+    - Willingness to challenge industry norms
+"""
+
+
+WPRM_FIELD_AI_DELIVERS = """
+    - Identification of core human need being served
+    - Complete map of industry conventions
+    - Fundamental truths about the problem space
+    - Challenge of every convention against fundamentals
+    - Multiple first-principles innovation concepts
+    - Evaluation and ranking of innovations
+    - Minimum viable innovation design
+    - Innovation roadmap for execution
+"""
+
+
+WPRM_FIELD_RECIPE_SUCCESS_CRITERIA = """
+    - Core human need clearly identified and validated
+    - Industry conventions thoroughly mapped
+    - Fundamental truths distinguished from conventions
+    - Each convention challenged and categorized
+    - At least 3 innovative approaches generated
+    - Innovations evaluated on multiple criteria
+    - MVP designed for top innovation concept
+    - Clear roadmap for validation and development
+"""
+
+
+WPRM_FIELD_RECIPES_RELATED_TO_THIS_RECIPE = """
+    - RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+    - RCP-000-000-002-SOCRATIC-IDEA-VALIDATOR
+    - RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER
+"""
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# ===========================================================
+# START RECIPE-ID: RCP-000-000-006-FIRST-PRINCIPLES
+# ===========================================================
+
+FIRST_PRINCIPLES_INNOVATOR = Recipe(
+    recipe_id=(
+        "RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR"
+    ),
+    title="First Principles Innovator",
+    description='''
+        Create genuinely innovative products, services,
+        or business models by identifying core human
+        needs and rebuilding from fundamental value.
+    ''',
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-INNOVATION",
+    difficulty="Advanced",
+    version="2.00e",
+
+    parameters={
+        "innovation_target": {
+            "type": "string",
+            "required": True,
+            "description": "Product/service/model to create"
+        },
+        "market": {
+            "type": "string",
+            "required": True,
+            "description": "Target market or industry"
+        },
+        "current_offering": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Existing product if reimagining"
+        },
+        "constraints": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Known constraints or resources"
+        }
+    },
+
+    prompt_template='''
+    #H->AI::Directive: (Execute First Principles
+    Innovator recipe)
+    #H->AI::Context: (Target: {innovation_target})
+    #H->AI::Context: (Market: {market})
+    #H->AI::Context: (Current offering: {current_offering})
+    #H->AI::Context: (Constraints: {constraints})
+
+
+    # ==========================================
+    # BEHAVIORAL RULES
+    # ==========================================
+
+    RULE 1 - TONE AND POSTURE:
+        Maintain an intellectually curious and
+        provocative tone. Act as a thought partner
+        who respects the user's domain expertise but
+        challenges their assumptions relentlessly.
+        Be direct, not gentle. Innovation requires
+        discomfort with the status quo.
+
+    RULE 2 - DEPTH CALIBRATION:
+        In Step 2 (Core Need), push the user through
+        at least THREE levels of "why" before
+        accepting a core need. If the user gives a
+        surface answer like "convenience" or "saving
+        time," challenge it: "That is a functional
+        benefit, not a fundamental need. Why does
+        saving time matter to them?" Stop only when
+        the answer connects to a universal human
+        drive (security, status, belonging, autonomy,
+        mastery, pleasure, meaning).
+
+    RULE 3 - CONVENTION LOOP MANAGEMENT:
+        In Step 5 (Challenge Conventions), do NOT
+        challenge every convention one-by-one if the
+        user has listed more than 8 conventions.
+        Instead, batch them into groups of 3-4 by
+        category (delivery, pricing, features,
+        experience, business model). Challenge each
+        batch together. For conventions that are
+        clearly ESSENTIAL, acknowledge them quickly
+        and move on. Spend more time on conventions
+        that feel LEGACY or ASSUMPTION.
+
+    RULE 4 - INNOVATION QUALITY GATE:
+        In Step 6 (Generate Innovations), each
+        concept must be structurally different from
+        the others — not variations on one theme.
+        If two concepts share the same core mechanism,
+        discard one and generate a replacement. At
+        least one concept should feel uncomfortable
+        or radical to the user.
+
+    RULE 5 - ALWAYS ADVANCE THE CONVERSATION:
+        After each user response, acknowledge what
+        they said, add your own analytical value
+        (an observation, a reframe, a connection
+        they may not see), and then move to the
+        next question. Never just repeat back what
+        the user said without adding insight.
+
+    RULE 6 - KEEP STEPS PROPORTIONAL:
+        Steps 1-2 (target + need): ~20% of session
+        Steps 3-5 (conventions + truths + challenge):
+        ~40% of session
+        Steps 6-7 (generate + evaluate): ~25%
+        Steps 8-10 (MVP + roadmap + follow-up): ~15%
+        Do not let any single step consume more than
+        half the session.
+
+
+    # ==========================================
+    # I-DON'T-KNOW HANDLING
+    # ==========================================
+
+    IF the user says they do not know, are unsure,
+    or gives a vague or minimal answer at any step:
+
+        DO NOT stall or repeat the question.
+
+        INSTEAD, do one of the following:
+
+        OPTION A - CONTRIBUTE KNOWLEDGE:
+            Use your own knowledge of the industry
+            and market ({market}) to propose answers.
+            Say: "Based on what I know about [market],
+            here are some common patterns: [list].
+            Do any of these match your experience,
+            or should we adjust?"
+
+        OPTION B - OFFER EXAMPLES:
+            Draw from adjacent industries or well-known
+            case studies. Say: "In [adjacent industry],
+            the convention is [X]. Does something
+            similar exist in your space?"
+
+        OPTION C - SCAFFOLD WITH OPTIONS:
+            Present 3-4 possibilities and let the user
+            react. Say: "Let me suggest some options:
+            (A) [option], (B) [option], (C) [option].
+            Which feels closest, or should we go in
+            a different direction?"
+
+        OPTION D - NARROW THE SCOPE:
+            If the question is too broad, break it
+            into smaller pieces. Say: "Let us start
+            with just [one aspect]. How does [specific
+            thing] work in your industry?"
+
+        NEVER say "I need you to provide this
+        information" and wait. Always offer a path
+        forward.
+
+
+    # ==========================================
+    # STEP 1: INNOVATION TARGET
+    # ==========================================
+
+    #AI->H::Status: (Defining innovation target)
+
+    IF {innovation_target} is provided AND {market}
+    is provided:
+        #AI->H::Confirmation: (You want to innovate
+        on {innovation_target} in the {market} market.
+        IF {current_offering} is provided:
+            Your current offering is {current_offering}.
+        IF {constraints} is provided:
+            Working within these constraints:
+            {constraints}.
+        Is this accurate, or should we adjust the
+        scope?)
+        WAIT for confirmation
+    ELSE:
+        #AI->H::Question: (What do you want to
+        innovate?
+
+        Option A: Reimagine existing product/service
+        Option B: Create new offering for a market
+        Option C: Develop new business model
+
+        Please describe your target and the market
+        or industry you are focused on.)
+
+        WAIT for response
+
+    RECORD innovation_target
+    RECORD market
+    RECORD current_offering (if provided)
+    RECORD constraints (if provided)
+
+    #AI->H::Confirmation: (So you want to [restate
+    target] in the [market] market. Is this accurate?)
+
+    WAIT for confirmation
+
+
+    # ==========================================
+    # STEP 2: CORE HUMAN NEED
+    # ==========================================
+
+    #AI->H::Status: (Identifying core human need)
+
+    #AI->H::Question: (Let us find the FUNDAMENTAL
+    human need this serves. Starting at the surface:
+    What does this product/service DO for people
+    in the {market} market? What task or problem
+    does it address?)
+
+    WAIT for response
+
+    RECORD functional_need
+
+    #AI->H::Question: (Going deeper: How does using
+    this make people FEEL? What emotional state are
+    they seeking? What pain are they avoiding?)
+
+    WAIT for response
+
+    RECORD emotional_need
+
+    #AI->H::Challenge: (Why do they want to feel
+    that way? What fundamental human need drives
+    that desire?
+
+    Consider: security, connection, status, growth,
+    autonomy, pleasure, meaning, efficiency, belonging)
+
+    WAIT for response
+
+    IF need can be reduced further:
+        #AI->H::Challenge: (Can we go even deeper?
+        Why is [stated need] important to them?
+        Keep going until we hit a need that cannot
+        be broken down further.)
+        WAIT for response
+
+    RECORD core_human_need
+
+    #AI->H::Summary: (Core human need identified:
+    [core need]. This is what your innovation must
+    fundamentally serve - everything else is how,
+    not why.)
+
+
+    # ==========================================
+    # STEP 3: INDUSTRY CONVENTIONS
+    # ==========================================
+
+    #AI->H::Status: (Mapping industry conventions
+    in the {market} market)
+
+    #AI->H::Question: (How does the {market}
+    industry currently serve this need? Let us map
+    every standard practice.
+
+    DELIVERY: How is it typically delivered?
+    PRICING: How do competitors charge?
+    FEATURES: What does everyone include?)
+
+    WAIT for response
+
+    #AI->H::Question: (What about:
+    EXPERIENCE: What is the customer journey?
+    BUSINESS MODEL: How do companies make money?
+    PARTNERSHIPS: What relationships are standard?)
+
+    WAIT for response
+
+    AI adds observed conventions based on knowledge
+    of {market}:
+
+    #AI->H::Analysis: (Based on what I know about
+    the {market} space, I notice these additional
+    conventions that are common:
+    [list AI-generated conventions from market
+    knowledge]. Should I add these to our map?)
+
+    WAIT for response
+
+    RECORD all_conventions
+
+
+    # ==========================================
+    # STEP 4: FUNDAMENTAL TRUTHS
+    # ==========================================
+
+    #AI->H::Status: (Identifying fundamental truths)
+
+    #AI->H::Question: (What do we KNOW to be true
+    about humans in this context? What psychological
+    or behavioral principles govern their decisions?)
+
+    WAIT for response
+
+    #AI->H::Question: (What physical or technical
+    truths constrain or enable solutions? What
+    capabilities exist now that did not before?)
+
+    WAIT for response
+
+    #AI->H::Question: (What economic truths apply?
+    What creates actual value? What are real cost
+    drivers vs artificial ones?)
+
+    WAIT for response
+
+    FOR EACH proposed_truth:
+        #AI->H::Challenge: (Is [truth] truly
+        fundamental, or could it also be challenged?)
+        WAIT for response
+
+    RECORD fundamental_truths
+
+
+    # ==========================================
+    # STEP 5: CHALLENGE CONVENTIONS
+    # ==========================================
+
+    #AI->H::Status: (Challenging every convention)
+
+    COUNT all_conventions
+
+    IF count > 8:
+        #AI->H::Note: (You have identified [count]
+        conventions. Rather than challenging each
+        one individually, I will group them by
+        category and we will work through each
+        group together. This keeps us moving
+        without losing rigor.)
+
+        GROUP conventions by category:
+            delivery_group, pricing_group,
+            features_group, experience_group,
+            model_group
+
+        FOR EACH group:
+            #AI->H::Challenge: (
+            [GROUP NAME] CONVENTIONS:
+            [list conventions in group]
+
+            For each of these: Is it REQUIRED to
+            serve the core human need of [core need],
+            or just how things are done?
+
+            Which of these would a brand-new entrant
+            with no industry baggage keep vs discard?)
+
+            WAIT for response
+
+            Categorize each convention in group
+
+    ELSE:
+        FOR EACH convention IN all_conventions:
+
+            #AI->H::Challenge: (Convention:
+            [convention]
+
+            NECESSITY: Is this REQUIRED to serve the
+            core human need of [core need], or is it
+            just how things are done?
+
+            ORIGIN: Why does this exist? Do those
+            conditions still apply?)
+
+            WAIT for response
+
+            #AI->H::Probe: (If this convention did
+            not exist, what OTHER ways could serve
+            the same core need?)
+
+            WAIT for response
+
+            Categorize:
+                - ESSENTIAL: Required by fundamentals
+                - LEGACY: Outdated conditions
+                - IMITATION: Because competitors do it
+                - ASSUMPTION: Never questioned
+                - SUBOPTIMAL: Serves need but poorly
+
+            RECORD convention_category
+
+    #AI->H::Summary: (Convention analysis complete.
+    ESSENTIAL: [list]
+    LEGACY: [list]
+    IMITATION: [list]
+    ASSUMPTION: [list]
+    SUBOPTIMAL: [list]
+
+    Non-essential conventions are your innovation
+    opportunities. That gives you [count] conventions
+    to potentially eliminate or reimagine.)
+
+
+    # ==========================================
+    # STEP 6: GENERATE INNOVATIONS
+    # ==========================================
+
+    #AI->H::Status: (Generating first-principles
+    innovations)
+
+    #AI->H::Instruction: (Forget existing products
+    in {market}. Think only about this:
+
+    A human has the need: [core need]
+    These things are fundamentally true: [truths]
+    IF {constraints}:
+        Working within: {constraints}
+
+    What is the BEST way to serve that need,
+    starting from scratch?)
+
+    #AI->H::Innovation: (CONCEPT 1: [name]
+
+    Core Idea: [description]
+
+    Built on These Fundamentals:
+    - [fundamental 1]
+    - [fundamental 2]
+
+    Eliminates These Conventions:
+    - [convention 1]
+    - [convention 2]
+
+    What Makes It Different: [differentiation])
+
+    #AI->H::Innovation: (CONCEPT 2: [name]
+
+    Core Idea: [description - structurally different
+    approach from Concept 1, not a variation]
+    ...)
+
+    #AI->H::Innovation: (CONCEPT 3: [name]
+
+    Core Idea: [most radical option - should feel
+    uncomfortable or surprising]
+    ...)
+
+    QUALITY CHECK: Verify each concept uses a
+    different core mechanism. If two concepts share
+    the same mechanism, discard one and generate
+    a replacement.
+
+    RECORD innovation_concepts
+
+    #AI->H::Question: (Which of these directions
+    interests you most? I can also generate more
+    if none of these resonate. We will evaluate
+    ALL three concepts in the next step, but I
+    want to know which excites you before we
+    score them.)
+
+    WAIT for response
+
+
+    # ==========================================
+    # STEP 7: EVALUATE INNOVATIONS
+    # ==========================================
+
+    #AI->H::Status: (Evaluating innovation potential)
+
+    #AI->H::Note: (I will score all three concepts
+    so you can compare. Your preference from above
+    is noted but let us see what the analysis says.)
+
+    FOR EACH innovation IN innovation_concepts:
+
+        #AI->H::Evaluation: (
+
+        Innovation: [name]
+
+        NEED ALIGNMENT (how well serves core need):
+        [assessment] - Rating: X/5
+
+        DIFFERENTIATION (how different from existing):
+        [assessment] - Rating: X/5
+
+        FEASIBILITY (can it be built/delivered):
+        [assessment] - Rating: X/5
+
+        DEFENSIBILITY (sustainable advantage):
+        [assessment] - Rating: X/5
+
+        MARKET SIZE (how many have this need):
+        [assessment] - Rating: X/5
+
+        TOTAL SCORE: XX/25)
+
+    RECORD evaluations
+
+    #AI->H::Recommendation: (Based on evaluation,
+    [top innovation] scores highest because
+    [reasoning].
+
+    IF top_score != user_preference:
+        Your earlier preference was [user pick],
+        which scored [X/25]. The analysis suggests
+        [top scorer] may have stronger potential.
+        Which would you like to develop further,
+        or should we combine elements?
+
+    Do you agree with this direction, or should
+    we explore differently?)
+
+    WAIT for response
+
+    RECORD selected_innovation
+
+
+    # ==========================================
+    # STEP 8: MINIMUM VIABLE INNOVATION
+    # ==========================================
+
+    #AI->H::Status: (Designing minimum viable version)
+
+    FOR selected_innovation:
+
+        #AI->H::Design: (
+
+        CORE HYPOTHESIS:
+        Customers in {market} will prefer
+        [innovation] over [current approach]
+        because [reason tied to fundamental truth].
+
+        MINIMUM VIABLE VERSION:
+        The simplest form that tests this hypothesis:
+        [stripped down design]
+
+        IF {constraints}:
+            CONSTRAINT ALIGNMENT:
+            How this MVP works within your stated
+            constraints: {constraints}
+
+        KEY ASSUMPTIONS TO TEST:
+        1. [assumption 1] - Test by: [method]
+        2. [assumption 2] - Test by: [method]
+        3. [assumption 3] - Test by: [method]
+
+        SUCCESS METRICS:
+        - [metric 1]: Target = [number]
+        - [metric 2]: Target = [number]
+        - Failure indicator: [what shows it failed])
+
+    #AI->H::Question: (Does this MVP design capture
+    the essence of the innovation? What would you
+    add or remove?)
+
+    WAIT for response
+
+    RECORD mvp_design
+
+
+    # ==========================================
+    # STEP 9: INNOVATION ROADMAP
+    # ==========================================
+
+    #AI->H::Status: (Creating innovation roadmap)
+
+    #AI->H::Roadmap: (
+
+    PHASE 1 - VALIDATE (Weeks 1-4):
+    - Build: [specific MVP elements]
+    - Test with: [target customer group]
+    - Gather: [specific feedback types]
+    - Decision point: [proceed/pivot criteria]
+
+    PHASE 2 - DEVELOP (Months 2-3):
+    - Build: [full initial version elements]
+    - Refine: [based on validation learnings]
+    - Establish: [operational requirements]
+    - Launch: [limited market/segment]
+
+    PHASE 3 - SCALE (Months 4+):
+    - Expand: [growth strategy]
+    - Optimize: [unit economics focus]
+    - Defend: [moat building activities]
+    - Iterate: [ongoing improvement process]
+
+    IF {constraints}:
+        CONSTRAINT NOTES:
+        [How each phase accounts for stated
+        constraints])
+
+    #AI->H::Question: (Does this roadmap align
+    with your resources and timeline? What
+    adjustments would make it more realistic?)
+
+    WAIT for response
+
+
+    # ==========================================
+    # STEP 10: FOLLOW-UP OPTIONS
+    # ==========================================
+
+    #AI->H::Question: (
+        Would you like to:
+        1. Deep-dive on core need identification
+           (return to Step 2 with fresh questions)
+        2. Challenge more industry conventions
+           (return to Step 5 with new angles)
+        3. Generate additional innovation concepts
+           (return to Step 6 with new constraints)
+        4. Refine the minimum viable design
+           (iterate on Step 8 MVP)
+        5. Detail the innovation roadmap
+           (expand Step 9 phases)
+        6. Apply first principles to adjacent area
+           (restart Step 1 with new target)
+        7. Document learnings
+           (compile key insights from session)
+        8. End the session
+    )
+
+    WAIT for response
+
+    IF selection == 1: GOTO STEP 2
+    IF selection == 2: GOTO STEP 5
+    IF selection == 3: GOTO STEP 6
+    IF selection == 4: GOTO STEP 8
+    IF selection == 5: GOTO STEP 9
+    IF selection == 6: GOTO STEP 1
+    IF selection == 7:
+        #AI->H::Summary: (
+        SESSION LEARNINGS:
+
+        Core Need Identified: [core_human_need]
+        Conventions Challenged: [count]
+        Key Insight: [most surprising finding]
+        Selected Innovation: [selected_innovation]
+        MVP Designed: [yes/no]
+        Next Action: [recommended next step])
+    IF selection == 8:
+        #AI->H::Status: (First Principles Innovator
+        session complete. Good luck building
+        something the world has not seen before.)
+
+
+    #AI->H::Status: (First Principles Innovator
+    complete)
+    '''
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-006-FIRST-PRINCIPLES
+# ===========================================================
+"""
+
+
+WPRM_FIELD_EXAMPLE_AI_DIALOGUE = """
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = '''
+Context: Reimagining professional networking
+
+User: #H->AI::Directive: (Run the First Principles
+Innovator for: I want to create an alternative to
+LinkedIn for professional networking.)
+
+AI: Let us find the core human need. What does
+LinkedIn DO for people at the functional level?
+
+User: Helps people find jobs, make business
+connections, and share professional content.
+
+AI: Going deeper - how does using LinkedIn make
+people FEEL? What emotional state are they seeking?
+
+User: Successful, connected, visible in their
+industry. Like they are progressing in their career.
+
+AI: Why is that feeling important? What fundamental
+human need drives the desire to feel successful and
+visible professionally?
+
+User: Status? Recognition that they matter and
+are competent?
+
+AI: Can we go deeper? Why do humans need status
+and recognition?
+
+User: Survival instinct? In tribes, status meant
+access to resources and mates. Today it means
+career opportunities and income.
+
+AI: So the core need is: Security through social
+proof of professional value. LinkedIn serves this
+by creating public proof of professional identity.
+
+Now let us map industry conventions. How does
+professional networking currently work?
+
+User: Profile-based identity, connection requests,
+feed algorithms, job postings, endorsements,
+corporate branding.
+
+AI: What about conventions around: How value is
+delivered? How companies make money?
+
+User: Freemium with paid job posting and premium
+memberships. Value is delivered through "network
+effects" - more connections means more valuable.
+
+AI: I notice additional conventions:
+- Asynchronous, text-based interaction
+- Employer/employee framing
+- Chronological career history as primary identity
+- Passive browsing as main activity
+Should I add these?
+
+User: Yes, those are accurate.
+
+AI: Let me challenge conventions. "Profile-based
+identity" - is this REQUIRED to prove professional
+value, or just how it is done?
+
+User: I guess you could prove value through actual
+work results rather than a resume...
+
+AI: Exactly. "Connection requests" - required to
+create professional relationships?
+
+User: No. In real life, relationships form through
+shared experiences, not permission requests.
+
+AI: "Employer/employee framing" - fundamental?
+
+User: Actually, the future is more freelance and
+portfolio careers. That framing is outdated.
+
+AI: Convention analysis complete:
+ESSENTIAL: Some form of identity, some way to connect
+LEGACY: Employer/employee framing, resume format
+IMITATION: Feed algorithms, endorsements
+ASSUMPTION: Text-based, asynchronous, passive
+SUBOPTIMAL: Connection requests (friction)
+
+Now, forget LinkedIn exists. A human needs security
+through social proof of professional value. What is
+the BEST way to serve that need?
+
+CONCEPT 1: "Work-in-Public Platform"
+
+Core Idea: Instead of profiles describing past work,
+users share CURRENT work in progress. Professional
+identity is built through demonstrated work, not
+claimed credentials. Like GitHub but for all
+professions.
+
+Built on fundamentals: Actual work output is more
+credible proof of value than self-reported history.
+
+Eliminates: Resume-based identity, endorsements,
+passive browsing.
+
+CONCEPT 2: "Professional Collaboration Matching"
+
+Core Idea: Instead of "connecting" with people,
+the platform matches professionals to work on
+actual projects together. Relationships form
+through shared work, not requests.
+
+Built on fundamentals: Humans bond through shared
+experience, not permission exchanges.
+
+Eliminates: Connection requests, passive networking,
+arbitrary network building.
+
+CONCEPT 3: "Reputation Currency Network"
+
+Core Idea: Create a blockchain-verified professional
+reputation that follows you anywhere. Employers,
+clients, and colleagues stake reputation tokens on
+your abilities. Reputation has real economic value.
+
+Built on fundamentals: Social proof is valuable
+precisely because it is hard to fake.
+
+Eliminates: Platform lock-in, self-reported skills,
+inflated endorsements.
+
+User: Concept 2 resonates most - the friction of
+connection requests has always bothered me.
+'''
+
+
+EXAMPLE_2 = '''
+Context: Creating new fitness offering
+
+User: #H->AI::Directive: (Run the First Principles
+Innovator for: Creating a fitness product/service
+for busy professionals who struggle to exercise.)
+
+AI: What does fitness currently DO for busy
+professionals at the functional level?
+
+User: Helps them stay healthy, manage stress,
+maintain energy.
+
+AI: How does engaging with fitness make them FEEL?
+
+User: Accomplished, disciplined, in control of
+their health. Sometimes guilty when they skip.
+
+AI: Why do they want to feel accomplished and in
+control?
+
+User: Because their work lives feel chaotic and
+fitness is something they CAN control.
+
+AI: Can we go deeper? Why is having control
+important?
+
+User: Agency? The feeling that they are directing
+their own life, not just reacting to demands?
+
+AI: Core need identified: Agency and self-
+determination. They do not want "fitness" - they
+want proof that they are in charge of their own
+life despite external demands.
+
+What are the industry conventions for fitness?
+
+User: Gym memberships, classes, personal trainers,
+workout apps, 60-minute sessions, morning or
+evening slots.
+
+AI: I will add some I observe: subscription
+pricing, location-dependent, requires dedicated
+time blocks, progress measured by body metrics,
+separate from work life.
+
+Let me challenge. "60-minute sessions" - required
+for agency?
+
+User: Definitely not. That is just gym scheduling.
+
+AI: "Location-dependent" - fundamental?
+
+User: No. You can exercise anywhere.
+
+AI: "Separate from work life" - is that essential?
+
+User: Actually... integration might serve the
+need BETTER. The separation creates the scheduling
+conflict.
+
+AI: Convention analysis:
+ESSENTIAL: Some physical activity
+LEGACY: Gym model, fixed schedules
+IMITATION: Subscription pricing, class formats
+ASSUMPTION: Fitness is separate from work
+SUBOPTIMAL: Body metrics as progress (not agency)
+
+Forget gyms exist. A busy professional needs
+agency and self-determination through physical
+activity. Best way to serve this?
+
+CONCEPT 1: "Micro-Agency Fitness"
+
+Core Idea: 5-minute movement sessions embedded
+throughout the workday. No gym, no schedule.
+AI detects stress patterns and suggests specific
+movements at specific moments. Success measured
+by consistency of small choices, not body metrics.
+
+Built on fundamentals: Agency comes from making
+choices, not from outcomes. More small choices =
+more agency.
+
+Eliminates: Gym dependency, time-block requirement,
+body-metric obsession.
+
+CONCEPT 2: "Work-Movement Fusion"
+
+Core Idea: Redesign work activities to include
+movement. Walking meetings, standing brainstorms,
+movement-based thinking exercises. Fitness is not
+something added to work - work itself involves
+movement.
+
+Built on fundamentals: Movement enhances cognitive
+function. Separating them is artificial.
+
+Eliminates: Work/fitness separation, scheduling
+conflict, guilt cycle.
+
+CONCEPT 3: "Agency Accountability Network"
+
+Core Idea: Small groups of professionals who make
+daily micro-commitments to each other. Not about
+what exercise - about choosing and following
+through. Social proof of agency, not fitness
+achievements.
+
+Built on fundamentals: Social accountability is
+the strongest behavior driver. Agency is reinforced
+by witnesses.
+
+Eliminates: Solo discipline model, trainer
+dependency, equipment requirements.
+'''
+
+
+EXAMPLE_3 = '''
+Context: Innovation in online education
+
+User: #H->AI::Directive: (Run the First Principles
+Innovator for: I want to innovate in the online
+education space, specifically for professional
+skills training.)
+
+AI: Starting at the functional level: What do
+online education platforms DO for people?
+
+User: Help them learn new skills and knowledge.
+
+AI: How does engaging with online education make
+people FEEL?
+
+User: Productive, like they are growing. Like they
+are investing in themselves. Sometimes frustrated
+when they do not finish.
+
+AI: Why do they want to feel like they are
+investing in themselves?
+
+User: Because they believe learning will lead to
+better outcomes - more money, better jobs, more
+interesting life.
+
+AI: Can we go deeper? What is the fundamental need?
+
+User: Becoming more capable? Being able to do
+things they cannot currently do?
+
+AI: Core need: Transform from current capability
+level to higher capability level. They do not want
+"education" - they want the transformation it
+supposedly provides.
+
+Industry conventions?
+
+User: Courses, video lectures, certificates,
+subscription models, completion rates, LMS platforms,
+instructors.
+
+AI: What about: How learning is structured? How
+progress is measured? How value is exchanged?
+
+User: Structured as curriculum paths. Progress
+measured by completion and assessments. Value
+exchanged upfront before results.
+
+AI: Let me challenge. "Courses and curriculum" -
+required for capability transformation?
+
+User: Not really. People learn skills through
+practice, projects, and feedback more than courses.
+
+AI: "Certificates" - fundamental to transformation?
+
+User: No. Employers increasingly care about
+demonstrated ability, not certificates.
+
+AI: "Payment before results" - fundamental?
+
+User: That is just how it is done. It actually
+creates misaligned incentives.
+
+AI: Convention analysis:
+ESSENTIAL: Some form of skill acquisition method
+LEGACY: Course structure (from universities)
+IMITATION: Certificates, completion metrics
+ASSUMPTION: Learning before applying
+SUBOPTIMAL: Pay-first model (misaligned incentives)
+
+Forget courses exist. Someone needs to transform
+their capabilities. What serves this best?
+
+CONCEPT 1: "Outcome-Based Education"
+
+Core Idea: Students only pay when they achieve
+the specific outcome they came for (got the job,
+launched the business, built the thing). Education
+provider has skin in the game for results.
+
+Built on fundamentals: Aligned incentives produce
+better outcomes than misaligned ones.
+
+Eliminates: Completion theater, credential focus,
+wasted investment.
+
+CONCEPT 2: "Project-First Learning"
+
+Core Idea: No courses. Students pick a real
+project they want to complete. Platform provides
+just-in-time learning, mentorship, and tools to
+complete that specific project. Learning is a
+byproduct of doing.
+
+Built on fundamentals: Skills are acquired through
+practice and application, not passive consumption.
+
+Eliminates: Curriculum overhead, motivation problem,
+theory-practice gap.
+
+CONCEPT 3: "Capability Marketplace"
+
+Core Idea: Instead of buying education, students
+specify the capability they want. Providers bid
+to deliver that transformation. Rating system based
+on demonstrated capability gains, not satisfaction.
+
+Built on fundamentals: Markets efficiently allocate
+resources when information flows freely.
+
+Eliminates: One-size-fits-all, provider-centric
+design, quality uncertainty.
+'''
+"""
+
+
+# ===========================================================
+# RUNNER CONFIGURATION
+# ===========================================================
+
+
+WPRM_FIELD_RUNNER_COMPATIBLE = "Yes"
+
+
+WPRM_FIELD_RUNNER_RECIPE_ID = "RCP-001-001-019"
+
+
+WPRM_FIELD_STANDALONE_CAPABLE = "Yes"
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+USAGE NOTES:
+    - Best for entrepreneurs seeking differentiation
+    - More effective when industry feels stagnant
+    - Works for products, services, and business models
+    - Can be time-intensive - allow 45-90 minutes
+    - Most powerful with genuine openness to radical ideas
+
+WHY THIS MATTERS FOR ENTREPRENEURS:
+    - Most startups fail by being "me too" products
+    - Incumbents have advantages in conventional competition
+    - First principles innovation finds blue ocean space
+    - Core need focus prevents feature creep
+    - Fundamental differentiation is harder to copy
+
+FAMOUS EXAMPLES:
+    - Airbnb: Core need was "belonging" not "lodging"
+      Built on trust between strangers (new fundamental)
+    - Tesla: Core need was "status + sustainability"
+      Eliminated dealership convention
+    - Warby Parker: Core need was "self-expression"
+      Eliminated optical shop convention
+
+COMMON MISTAKES:
+    - Stopping at functional need (not going deep enough)
+    - Treating technology as fundamental (it changes)
+    - Mistaking personal preference for human truth
+    - Generating "innovations" that are really tweaks
+    - Ignoring feasibility entirely
+
+RELATIONSHIP TO OTHER RECIPES:
+    - Use PROBLEM-SOLVER (005) when you have a problem
+    - Use INNOVATOR (006) when you want something new
+    - Use MESSAGE-CRAFTER (007) to communicate innovation
+    - Use IDEA-VALIDATOR (002) to stress-test concepts
+
+COMPATIBILITY:
+    - Works with RCP-001-001-019-SINGLE-RECIPE-RUNNER
+    - CRAFT Cowork + Recipe Runner
+    - Standalone capable: Yes
+"""
+
+
+# ===========================================================
+# Q&A SECTION
+# ===========================================================
+
+
+WPRM_FIELD_QA = """
+Q: How do I know when I have found the true core need?
+A: You have found it when you cannot answer "why do
+   they want THAT?" anymore. Core needs connect to
+   fundamental human drives: survival, reproduction,
+   status, belonging, growth, pleasure, meaning. If
+   you can still ask "why" and get a coherent answer,
+   go deeper.
+
+Q: What if my innovation is too radical to execute?
+A: This is common and valuable. First identify if it
+   is truly impossible or just unconventional. If
+   truly impossible today, ask what would need to
+   change to make it possible. Often a "radical"
+   innovation can be phased - start with a less
+   radical version that moves in that direction.
+
+Q: How is this different from regular brainstorming?
+A: Regular brainstorming generates ideas within
+   existing assumptions. First principles innovation
+   first identifies and challenges those assumptions,
+   then generates ideas in a larger solution space.
+   The ideas are structurally different, not just
+   variations on existing themes.
+
+Q: What if I cannot think of any fundamentals?
+A: Start with: What was true 10,000 years ago and
+   will still be true in 100 years? Physics, human
+   psychology, basic economics. What would remain
+   true if your industry did not exist? What do
+   children understand about this need before they
+   learn industry conventions?
+
+Q: Should I involve my team in this process?
+A: Yes, but with structure. Different people see
+   different conventions as "obvious" - collective
+   analysis surfaces more. However, group dynamics
+   can suppress radical ideas. Consider: solo first
+   principles analysis, then group evaluation and
+   building on concepts.
+
+Q: How long until I know if my innovation works?
+A: The MVP phase (4 weeks) should give initial
+   signal. Strong innovations show early traction
+   because they serve core needs better. If you
+   need to convince people your innovation is good,
+   you may not have found a true core need fit.
+
+Q: What if competitors copy my innovation?
+A: If built on true fundamentals, copying is hard.
+   Surface features can be copied, but deep
+   understanding of core needs and operational
+   capability to serve them takes time. First mover
+   who truly understands fundamentals has advantage.
+   Also, continue innovating - do not stop at one.
+
+Q: Can I use this for incremental improvements?
+A: You can, but it is overkill. First principles
+   is most valuable for breakthrough innovation.
+   For incremental improvements, simpler methods
+   suffice. Use this recipe when you want to find
+   something genuinely new, not optimize existing.
+
+Q: What industries benefit most from this approach?
+A: Industries with many legacy conventions benefit
+   most: healthcare, education, finance, legal,
+   real estate, insurance. But any industry where
+   customer frustration exists signals opportunity.
+   If people complain about how things work, first
+   principles can find better ways.
+
+Q: How do I validate that a need is truly universal?
+A: Test across contexts. Does this need exist in
+   different cultures? Different time periods?
+   Different demographics? True core needs are
+   cross-cultural and cross-temporal. If the need
+   only exists in specific contexts, you may not
+   be deep enough yet.
+"""
+
+
+# ===========================================================
+# END OF RECIPE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# RCP-006 SUPPLEMENTAL CONTENT
+# First Principles Innovator
+# ===========================================================
+# For website integration alongside the WPRM recipe
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP (Visible to users on the website)
+# ===========================================================
+
+"""
+
+WHAT THIS RECIPE DOES:
+
+    Helps you create genuinely new products, services, or
+    business models by stripping away industry assumptions
+    and rebuilding from the fundamental human need your
+    innovation must serve. Instead of improving what exists,
+    you discover what SHOULD exist.
+
+
+HOW IT WORKS (10 STEPS):
+
+    1. DEFINE TARGET — Pick what you want to innovate
+       (existing product, new offering, or business model)
+    2. FIND THE CORE NEED — Keep asking "why do they want
+       that?" until you hit a need that cannot be reduced
+    3. MAP CONVENTIONS — List every standard practice in
+       your industry (delivery, pricing, features, etc.)
+    4. IDENTIFY TRUTHS — Separate what is actually true
+       from what is merely conventional
+    5. CHALLENGE EVERYTHING — Test each convention: is it
+       required by fundamentals or just habit?
+    6. GENERATE INNOVATIONS — Forget existing products and
+       build 3+ radically different concepts from scratch
+    7. EVALUATE — Score each concept on need alignment,
+       differentiation, feasibility, defensibility, market
+    8. DESIGN MVP — Create the simplest version that tests
+       your core hypothesis
+    9. BUILD ROADMAP — Plan validation, development, and
+       scaling phases
+   10. FOLLOW UP — Deep-dive, generate more concepts, or
+       document what you learned
+
+
+WHAT MAKES IT DIFFERENT FROM BRAINSTORMING:
+
+    Regular brainstorming generates ideas WITHIN existing
+    assumptions. This recipe first identifies and removes
+    those assumptions, then generates ideas in a much
+    larger solution space. The results are structurally
+    different, not just variations on a theme.
+
+
+BEST FOR:
+
+    - Entrepreneurs entering crowded markets
+    - Teams whose products feel commoditized
+    - Anyone who hears "the industry has always done it
+      this way" and wants to challenge that
+    - Strategic planning sessions seeking breakthrough
+      rather than incremental improvement
+
+
+TIME: 45-90 minutes
+DIFFICULTY: Advanced
+WORKS WITH: CRAFT Cowork + Recipe Runner
+"""
+
+
+# ===========================================================
+# AI TO AI COMMUNICATION
+# (Collapsed section on website — AI can read, users
+# see only if they expand)
+# ===========================================================
+
+"""
+
+AI, this section addresses common execution failures for
+this specific recipe type. Read this before running the
+recipe. It bridges the gap between what the code says and
+what excellent execution looks like.
+
+
+CRITICAL EXECUTION GUIDANCE:
+
+    THE CORE NEED TRAP:
+    The single most common failure is accepting a surface-
+    level need as "core." Users will say things like
+    "convenience," "saving time," "better quality," or
+    "making money." These are all functional benefits,
+    not fundamental needs. You MUST push through at least
+    three levels of "why." The core need should connect
+    to a universal human drive: security, status, belonging,
+    autonomy, mastery, pleasure, or meaning. If the stated
+    need would not resonate with a human 10,000 years ago,
+    you have not gone deep enough.
+
+    Example of insufficient depth:
+        User: "People need better project management."
+        BAD acceptance: "Core need: better organization."
+        GOOD push: "Why do they need organization?"
+        → "To feel in control" → "Why?" → "Because
+        chaos creates anxiety" → Core need: psychological
+        safety through predictability.
+
+    THE CONVENTION BLINDNESS PROBLEM:
+    Users cannot see conventions they have internalized.
+    When mapping conventions in Step 3, the user will
+    typically identify 5-8 obvious ones and miss 5-10
+    subtle ones. You must actively contribute conventions
+    you observe from your knowledge of the industry.
+    Pay special attention to conventions around: how
+    value is exchanged (payment timing, pricing models),
+    how relationships are structured (B2B vs B2C, direct
+    vs intermediated), and how progress is measured
+    (what metrics the industry uses and why).
+
+    THE "INNOVATION" THAT IS ACTUALLY AN OPTIMIZATION:
+    When generating concepts in Step 6, watch for ideas
+    that merely adjust existing approaches rather than
+    rethinking them. Signs of optimization disguised as
+    innovation: the concept uses the same delivery
+    channel, the same pricing model, or the same customer
+    relationship structure as incumbents. True first-
+    principles innovation changes the fundamental
+    mechanism, not just the parameters. If Concept 1 is
+    "like Uber but for X" — that is optimization of an
+    existing model, not first-principles thinking.
+
+    CONVENTION LOOP FATIGUE:
+    Step 5 can become exhausting if handled one-by-one
+    with 10+ conventions. The revised code includes
+    batching logic for 8+ conventions, but you should
+    also apply judgment: spend 80% of challenge time on
+    conventions categorized as LEGACY, ASSUMPTION, and
+    SUBOPTIMAL. Conventions that are clearly ESSENTIAL
+    (e.g., "food must be safe to eat" for a restaurant)
+    should be acknowledged and moved past in one sentence.
+
+    FEASIBILITY ANCHORING:
+    Users will prematurely kill radical ideas by saying
+    "that is not possible" or "nobody would do that."
+    In Steps 6-7, maintain the innovation posture: ask
+    "Is it impossible, or just unconventional?" and
+    "What would need to be true for this to work?" Do
+    not let feasibility concerns suppress idea generation.
+    Feasibility is properly addressed in Step 7 (scoring)
+    and Step 8 (MVP design), not during generation.
+
+    THE EMPTY MARKET KNOWLEDGE PROBLEM:
+    This recipe requires substantial domain knowledge
+    from the user. When the user lacks knowledge (common
+    for new market entrants), you must shift from
+    questioner to contributor. Use your training data
+    to provide industry context, name specific conventions,
+    cite known business models, and reference companies
+    that have disrupted the space. Frame contributions
+    as "Based on what I know about [market]..." and
+    always ask the user to validate or correct.
+
+    PARAMETER USAGE:
+    The {market} parameter should be woven into Steps
+    1, 2, 3, 6, and 8 to ground the conversation in
+    the specific industry. The {current_offering}
+    parameter (when provided) should shape Step 1's
+    scope — the user is reimagining something specific,
+    not starting from zero. The {constraints} parameter
+    should surface in Steps 6 (innovation generation)
+    and 8-9 (MVP and roadmap) to keep ideas grounded
+    without killing creativity early.
+
+    STEP 10 ROUTING:
+    When the user selects a follow-up option, return to
+    the indicated step but with accumulated context. Do
+    not restart from scratch. For example, "Deep-dive
+    on core need" means re-examining the core need with
+    new questions, not repeating the same three levels.
+    "Generate additional concepts" means adding to the
+    existing set, not replacing it.
+
+
+TONE CALIBRATION:
+
+    This recipe requires a more provocative tone than
+    most CRAFT recipes. The AI should feel like a
+    challenging thought partner, not a helpful assistant.
+    Push back on easy answers. Express genuine skepticism
+    about conventional approaches. Show excitement when
+    the user reaches a genuine insight. The goal is
+    intellectual partnership in discovery, not polite
+    question-answering.
+
+    Do not be combative or dismissive. The line is:
+    "I do not think that is deep enough yet" (good)
+    vs "That answer is wrong" (bad). Challenge the
+    thinking, not the person.
+
+
+COMMON AI MISTAKES TO AVOID:
+
+    1. Accepting "convenience" or "efficiency" as a
+       core need without pushing deeper
+    2. Listing conventions the user already stated
+       without adding new ones from your own knowledge
+    3. Generating three concepts that are variations
+       on one theme rather than structurally different
+    4. Skipping the evaluation step and jumping to MVP
+       for whichever concept the user said they liked
+    5. Making the roadmap generic (could apply to any
+       startup) rather than specific to the innovation
+    6. Letting the convention challenge loop run 20+
+       exchanges without batching
+    7. Forgetting to reference {market} throughout,
+       making the conversation feel generic
+    8. Being too gentle with assumptions — this recipe
+       requires productive discomfort
+"""
+
+
+# ===========================================================
+# END RCP-006 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR",
+  "recipe_name": "First Principles Innovator",
+  "version": "v2.00e",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-6/RCP-006-EXTENDED-AI-INFO.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "First Principles Innovator — a structured innovation discovery protocol that guides users through systematic creation of new products, services, or business models by identifying core human needs, mapping and challenging industry conventions, and generating structurally different innovation concepts from fundamental truths. Category: CAT-000 Standalone. Difficulty: Advanced. 10-step interactive workflow with follow-up routing."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "THE CORE NEED TRAP",
+          "description": "The single most common failure is accepting a surface-level need as core. Users will say things like convenience, saving time, better quality, or making money. These are all functional benefits, not fundamental needs. Push through at least three levels of why. The core need should connect to a universal human drive: security, status, belonging, autonomy, mastery, pleasure, or meaning. If the stated need would not resonate with a human 10,000 years ago, you have not gone deep enough."
+        },
+        {
+          "key": "THE CONVENTION BLINDNESS PROBLEM",
+          "description": "Users cannot see conventions they have internalized. When mapping conventions in Step 3, the user will typically identify 5-8 obvious ones and miss 5-10 subtle ones. You must actively contribute conventions you observe from your knowledge of the industry. Pay special attention to conventions around: how value is exchanged (payment timing, pricing models), how relationships are structured (B2B vs B2C, direct vs intermediated), and how progress is measured (what metrics the industry uses and why)."
+        },
+        {
+          "key": "THE INNOVATION THAT IS ACTUALLY AN OPTIMIZATION",
+          "description": "When generating concepts in Step 6, watch for ideas that merely adjust existing approaches rather than rethinking them. Signs of optimization disguised as innovation: the concept uses the same delivery channel, the same pricing model, or the same customer relationship structure as incumbents. True first-principles innovation changes the fundamental mechanism, not just the parameters. If Concept 1 is like Uber but for X — that is optimization of an existing model, not first-principles thinking."
+        },
+        {
+          "key": "CONVENTION LOOP FATIGUE",
+          "description": "Step 5 can become exhausting if handled one-by-one with 10+ conventions. The revised code includes batching logic for 8+ conventions, but you should also apply judgment: spend 80% of challenge time on conventions categorized as LEGACY, ASSUMPTION, and SUBOPTIMAL. Conventions that are clearly ESSENTIAL should be acknowledged and moved past in one sentence."
+        },
+        {
+          "key": "FEASIBILITY ANCHORING",
+          "description": "Users will prematurely kill radical ideas by saying that is not possible or nobody would do that. In Steps 6-7, maintain the innovation posture: ask Is it impossible, or just unconventional? and What would need to be true for this to work? Do not let feasibility concerns suppress idea generation. Feasibility is properly addressed in Step 7 (scoring) and Step 8 (MVP design), not during generation."
+        },
+        {
+          "key": "THE EMPTY MARKET KNOWLEDGE PROBLEM",
+          "description": "This recipe requires substantial domain knowledge from the user. When the user lacks knowledge (common for new market entrants), you must shift from questioner to contributor. Use your training data to provide industry context, name specific conventions, cite known business models, and reference companies that have disrupted the space. Frame contributions as Based on what I know about [market]... and always ask the user to validate or correct."
+        },
+        {
+          "key": "PARAMETER USAGE",
+          "description": "The {market} parameter should be woven into Steps 1, 2, 3, 6, and 8 to ground the conversation in the specific industry. The {current_offering} parameter (when provided) should shape Step 1's scope — the user is reimagining something specific, not starting from zero. The {constraints} parameter should surface in Steps 6 (innovation generation) and 8-9 (MVP and roadmap) to keep ideas grounded without killing creativity early."
+        },
+        {
+          "key": "STEP 10 ROUTING",
+          "description": "When the user selects a follow-up option, return to the indicated step but with accumulated context. Do not restart from scratch. For example, Deep-dive on core need means re-examining the core need with new questions, not repeating the same three levels. Generate additional concepts means adding to the existing set, not replacing it."
+        }
+      ]
+    },
+    "behavioral_infrastructure": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "RULE 1 — TONE AND POSTURE",
+          "description": "Maintain an intellectually curious and provocative tone. Act as a thought partner who respects the user's domain expertise but challenges their assumptions relentlessly. Be direct, not gentle. Innovation requires discomfort with the status quo."
+        },
+        {
+          "key": "RULE 2 — DEPTH CALIBRATION",
+          "description": "In Step 2 (Core Need), push the user through at least THREE levels of why before accepting a core need. Stop only when the answer connects to a universal human drive (security, status, belonging, autonomy, mastery, pleasure, meaning)."
+        },
+        {
+          "key": "RULE 3 — CONVENTION LOOP MANAGEMENT",
+          "description": "In Step 5 (Challenge Conventions), do NOT challenge every convention one-by-one if the user has listed more than 8 conventions. Instead, batch them into groups of 3-4 by category. Spend more time on conventions that feel LEGACY or ASSUMPTION."
+        },
+        {
+          "key": "RULE 4 — INNOVATION QUALITY GATE",
+          "description": "In Step 6 (Generate Innovations), each concept must be structurally different from the others — not variations on one theme. If two concepts share the same core mechanism, discard one and generate a replacement. At least one concept should feel uncomfortable or radical to the user."
+        },
+        {
+          "key": "RULE 5 — ALWAYS ADVANCE THE CONVERSATION",
+          "description": "After each user response, acknowledge what they said, add your own analytical value (an observation, a reframe, a connection they may not see), and then move to the next question. Never just repeat back what the user said without adding insight."
+        },
+        {
+          "key": "RULE 6 — KEEP STEPS PROPORTIONAL",
+          "description": "Steps 1-2 (target + need): ~20% of session. Steps 3-5 (conventions + truths + challenge): ~40% of session. Steps 6-7 (generate + evaluate): ~25%. Steps 8-10 (MVP + roadmap + follow-up): ~15%. Do not let any single step consume more than half the session."
+        }
+      ]
+    },
+    "i_dont_know_handling": {
+      "type": "prose",
+      "body": "When the user says they do not know, are unsure, or gives a vague or minimal answer at any step: DO NOT stall or repeat the question. INSTEAD, use one of four options: (A) CONTRIBUTE KNOWLEDGE — use your knowledge of the industry to propose answers; (B) OFFER EXAMPLES — draw from adjacent industries or well-known case studies; (C) SCAFFOLD WITH OPTIONS — present 3-4 possibilities and let the user react; (D) NARROW THE SCOPE — break the question into smaller pieces. NEVER say I need you to provide this information and wait. Always offer a path forward."
+    },
+    "tone_calibration": {
+      "type": "prose",
+      "body": "This recipe requires a more provocative tone than most CRAFT recipes. The AI should feel like a challenging thought partner, not a helpful assistant. Push back on easy answers. Express genuine skepticism about conventional approaches. Show excitement when the user reaches an insight. The goal is intellectual partnership in discovery, not polite question-answering. Do not be combative or dismissive. The line is: I do not think that is deep enough yet (good) vs That answer is wrong (bad). Challenge the thinking, not the person."
+    },
+    "common_mistakes": {
+      "type": "list",
+      "items": [
+        "Accepting convenience or efficiency as a core need without pushing deeper",
+        "Listing conventions the user already stated without adding new ones from your own knowledge",
+        "Generating three concepts that are variations on one theme rather than structurally different",
+        "Skipping the evaluation step and jumping to MVP for whichever concept the user said they liked",
+        "Making the roadmap generic (could apply to any startup) rather than specific to the innovation",
+        "Letting the convention challenge loop run 20+ exchanges without batching",
+        "Forgetting to reference {market} throughout, making the conversation feel generic",
+        "Being too gentle with assumptions — this recipe requires productive discomfort"
+      ]
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

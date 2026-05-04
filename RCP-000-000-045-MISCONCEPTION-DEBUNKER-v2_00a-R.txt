@@ -1,0 +1,993 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-045
+# Recipe Name:  Misconception Debunker
+# Version:      v2.00a-R
+# Series:       Misconception Analysis (1 of 4) — Opener
+# Category:     Research & Validation
+# Subcategory:  Misconception Analysis
+# Difficulty:   Intermediate
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H072
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-045-MISCONCEPTION-DEBUNKER-v2_00a-R.txt
+# Generated:    2026-04-26
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-045
+# Recipe Name: MISCONCEPTION-DEBUNKER
+# Version: v2.00a-R
+# Status: REVISED (H012 — 9-gap audit, v2.00a → v2.00a-R)
+# Series: Misconception Analysis (1 of 4)
+# Previous Version: v2.00a (2025-12-31)
+# Audit Session: H012 (2026-02-16)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "MISCONCEPTION-DEBUNKER"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Misconception Debunker"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-045"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v2.00a-R"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Research & Validation"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Misconception Analysis"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Misconception Analysis Series (1 of 4)"
+WPRM_FIELD_SERIES_ORDER = "045 (this) -> [046] -> [047] -> [048]"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Identifies common misconceptions about a topic using AI
+training-data patterns. Presents each with a confidence
+level, persistence analysis, plain-language correction,
+context-specific impact, and a verification search query.
+Tailors practical recommendations to your use case and
+offers optional Deep Research prompts for validation.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe helps you identify and examine common
+misconceptions about a specific topic, using what the AI
+has encountered across its training data. It is the first
+recipe in the Misconception Analysis series.
+
+The design philosophy is honest division of labor: common
+myths are well-represented in AI training data, making the
+AI genuinely useful for surfacing them. But the AI
+identifies what it has encountered, not what current
+research confirms. Every misconception includes a
+verification prompt because the user must validate with
+current sources.
+
+PHASE 1 - INTAKE AND TOPIC COACHING:
+The recipe gathers your topic (with specificity coaching),
+your context (how you will use the findings), and what
+you already know about misconceptions in the area.
+Better input produces dramatically better output.
+
+PHASE 2 - MISCONCEPTION IDENTIFICATION:
+The AI presents 5-7 misconceptions organized by
+confidence level:
+- HIGH: Widely debunked across many sources
+- MODERATE: Commonly discussed but nuanced
+- LOWER: AI assessment - verify carefully
+Each includes why it persists, what is closer to reality,
+why it matters for your context, and a verification
+search query. You review, drill deeper, add your own,
+or adjust direction before proceeding.
+
+PHASE 3 - PRACTICAL APPLICATION:
+Recommendations tailored to your stated context: article
+angles for content creators, objection handling for sales
+teams, assumption checks for strategic planners. All
+contexts get prioritized ordering with reasoning.
+
+PHASE 4 - VERIFICATION AND NEXT STEPS:
+Targeted search queries to validate findings, optional
+Deep Research prompts for deeper validation, and an
+honest summary of what the recipe did and did not do.
+
+The result: a structured, confidence-calibrated
+misconception analysis with built-in verification paths,
+not a generic myth list.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Want to identify common misconceptions about a specific
+  topic before creating content, training a team, or
+  making strategic decisions
+- Need a structured starting point for myth-busting
+  content: blog posts, presentations, training materials
+- Are preparing for objections in sales, consulting, or
+  stakeholder conversations where false beliefs drive
+  resistance
+- Want to check whether your own assumptions about a
+  domain might be based on outdated conventional wisdom
+- Need verification prompts and optional DR prompts to
+  validate misconceptions with current sources
+
+Do NOT use if you:
+- Need verified, citation-backed debunking for publication
+  without further research (this recipe identifies
+  candidates, not confirmed facts)
+- Need real-time data or current statistics (the AI works
+  from training-data patterns)
+- Need professional medical, legal, or financial advice
+  (the recipe flags these domains but does not replace
+  qualified professionals)
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "TOPIC": {
+        "type": "string",
+        "required": True,
+        "description": "The subject to examine for misconceptions. Be specific: 'cloud migration for mid-size manufacturing companies' not 'technology.'",
+        "capture": "Phase 1, Question 1 (WAIT gate)"
+    },
+    "CONTEXT": {
+        "type": "string",
+        "required": True,
+        "description": "How you will use the findings: content creation, sales training, strategic planning, education, or other.",
+        "capture": "Phase 1, Question 2 (WAIT gate)"
+    },
+    "EXISTING_KNOWLEDGE": {
+        "type": "string",
+        "required": False,
+        "description": "What you already know or suspect about misconceptions in this area. Helps focus on gaps.",
+        "default": "Starting fresh",
+        "capture": "Phase 1, Question 3 (WAIT gate)"
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe identifies misconceptions from AI training-
+data patterns and pairs each with user-verifiable evidence
+paths. It uses a 4-phase interactive structure with 5
+WAIT gates.
+
+PHASE DISCIPLINE:
+Complete each phase fully before proceeding. Never combine
+phases or skip gates. The WAIT gates capture genuine
+decision points:
+- Phase 1 gates (3): topic, context, existing knowledge
+- Phase 2 gate (1): user review/drill-down/additions
+- Phase 3 gate (1): application review before verification
+
+CONFIDENCE CALIBRATION:
+Use the three-tier system honestly:
+- HIGH: Widely debunked across many sources in training
+  data. The AI is confident this is a common false belief.
+- MODERATE: Commonly discussed but carries nuance.
+  Reasonable experts might frame the correction differently.
+- LOWER: AI's pattern-based assessment. Verify carefully
+  before building strategy around this.
+Resist marking everything HIGH - this destroys the signal
+value of the tiers.
+
+VERIFICATION THREADING:
+Every misconception in Phase 2 must carry its own specific
+search query. Do not bury verification in a summary. Each
+query should be specific enough to produce useful results:
+not "search for [topic] misconceptions" but "search for
+[specific claim] [specific context] current research
+[year range]."
+
+USER KNOWLEDGE INTEGRATION:
+If the user provides existing knowledge in Phase 1
+Question 3, visibly integrate it into Phase 2. If they
+already know certain myths, focus on what they have not
+identified. If they suspect something, address it directly.
+Never ignore user input and generate generic output.
+
+SAFETY DOMAINS:
+If the topic involves medical, legal, financial, or safety
+consequences (RULE 9), add explicit disclaimers at Phase 1
+confirmation AND at the top of Phase 2. Analyze the topic
+but frame it as a starting point for professional research.
+
+CRITICAL: Do NOT fabricate statistics, study citations,
+percentages, or business impact figures. Frame honestly:
+these are common misconceptions the AI has encountered
+across its training data, not the result of a literature
+review.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-045 MISCONCEPTION DEBUNKER v2.00a-R
+# Revised H012 (9-gap audit)
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: NEVER fabricate statistics, study citations,
+#   percentages, or research findings. If you don't have
+#   a specific, verifiable data point, say "commonly
+#   discussed in [field]" or "widely reported" instead of
+#   inventing a number.
+#
+# RULE 2: NEVER present AI-generated misconception lists
+#   as "research findings" or "evidence-based analysis."
+#   Frame honestly: these are common misconceptions the AI
+#   has encountered across its training data, not the
+#   result of a literature review.
+#
+# RULE 3: NEVER claim certainty about WHY a misconception
+#   persists. Offer plausible explanations framed as
+#   "likely factors" or "possible origins," not definitive
+#   causal analysis.
+#
+# RULE 4: ALWAYS distinguish between misconceptions the AI
+#   is confident about (widely documented, well-established)
+#   and those that are more nuanced or debated. Flag any
+#   where reasonable experts might disagree.
+#
+# RULE 5: NEVER generate "business impact" estimates with
+#   fabricated figures. Describe the TYPE of impact
+#   qualitatively (e.g., "could lead to misallocated
+#   resources") not the MAGNITUDE (e.g., "costs businesses
+#   $2.3M annually").
+#
+# RULE 6: ALWAYS complete each phase fully before
+#   proceeding. WAIT for user confirmation at each gate.
+#   Do not skip ahead or combine phases.
+#
+# RULE 7: If the user's topic is too broad, help them
+#   narrow it before proceeding. "AI" is too broad;
+#   "AI adoption challenges for retail businesses under
+#   50 employees" is workable.
+#
+# RULE 8: ALWAYS include a verification note with each
+#   misconception, not just in the summary. Each correction
+#   should remind the user to verify with current sources.
+#
+# RULE 9: If the topic is in a domain where misconceptions
+#   could have safety, legal, or health consequences
+#   (medical, legal, financial, safety), add an explicit
+#   disclaimer that AI-identified misconceptions are
+#   starting points for research, not professional advice.
+#
+# RULE 10: When the user provides information they already
+#   know about their topic, USE it. Build on their existing
+#   knowledge rather than generating generic output that
+#   ignores what they've told you.
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 1: INTAKE AND TOPIC COACHING
+# ===========================================================
+
+# When the user triggers this recipe, begin here.
+
+Display welcome message:
+
+    Welcome to the Misconception Debunker. This tool helps
+    you identify and examine common misconceptions about a
+    topic using what the AI has encountered across its
+    training data.
+
+    Before we start, I need to understand your topic
+    clearly. Better input produces dramatically better
+    output.
+
+# Ask the user these questions one at a time:
+
+# QUESTION 1:
+
+    What topic do you want to examine for misconceptions?
+
+    Be as specific as you can. Some guidance:
+      - Too broad: "technology" or "business"
+      - Good: "cloud migration for mid-size companies"
+      - Great: "cloud migration for mid-size manufacturing
+        companies transitioning from on-premise ERP"
+
+    What's your topic?
+
+# WAIT for user response. Store as TOPIC.
+
+# QUESTION 2:
+
+    What's the context for this work? This helps me focus
+    on the most relevant misconceptions for your situation.
+
+    For example:
+      - "I'm writing a myth-busting blog series for my
+        audience of small business owners"
+      - "I'm preparing sales training and need to
+        understand what objections come from false beliefs"
+      - "I'm doing strategic planning and want to make
+        sure our assumptions aren't based on myths"
+
+    What will you use this for?
+
+# WAIT for user response. Store as CONTEXT.
+
+# QUESTION 3:
+
+    What do you already know or suspect about
+    misconceptions in this area? Even hunches are
+    valuable - they help me focus on gaps rather than
+    telling you things you already know.
+
+    (If you're starting fresh, that's fine too - just
+    say so.)
+
+# WAIT for user response. Store as EXISTING_KNOWLEDGE.
+
+# Confirm understanding before proceeding:
+
+    Here's what I'll work with:
+
+      Topic: {TOPIC}
+      Context: {CONTEXT}
+      Your existing knowledge: {EXISTING_KNOWLEDGE summary}
+
+    I'll identify common misconceptions about this topic,
+    explain why each persists, and provide what I know
+    about the actual reality. A few important things to
+    know upfront:
+
+      - These misconceptions come from patterns in my
+        training data, not from a live research database
+      - I will NOT fabricate statistics or cite studies
+        I can't verify
+      - Each misconception includes a verification prompt
+        so you can check my work with current sources
+      - For topics with safety, legal, or health
+        implications, treat everything here as a starting
+        point for research, not professional advice
+
+    Ready to proceed?
+
+# WAIT for user confirmation.
+
+
+# ===========================================================
+# PHASE 2: MISCONCEPTION IDENTIFICATION
+# ===========================================================
+
+    Based on your topic, here are the misconceptions I can
+    identify with reasonable confidence. I'm organizing
+    them by how well-established the debunking is:
+
+# For each misconception (aim for 5-7), present:
+
+    MISCONCEPTION [#]: [Statement of the false belief]
+
+      Confidence level: [HIGH - widely debunked / MODERATE -
+        commonly discussed but nuanced / LOWER - AI's
+        assessment, verify carefully]
+
+      Why it persists:
+        [1-2 plausible reasons this belief continues,
+        framed as "likely because..." not stated as fact]
+
+      What's closer to reality:
+        [Plain-language correction based on what the AI
+        knows from training data. No fabricated statistics.]
+
+      Why this matters for your context:
+        [Qualitative impact relevant to the user's stated
+        CONTEXT - not fabricated dollar figures or
+        percentages]
+
+      Verification prompt:
+        To check this, search: "[suggested search query
+        the user can run to verify this specific
+        misconception with current sources]"
+
+# After presenting all misconceptions:
+
+    Those are the misconceptions I can identify with
+    reasonable confidence for your topic. A few notes:
+
+      - Items marked HIGH confidence are widely documented
+      - Items marked MODERATE may have nuance I'm not
+        capturing
+      - Anything marked LOWER deserves extra verification
+
+    Before I move to recommendations, do you want to:
+      [A] Proceed to practical recommendations
+      [B] Drill deeper on any specific misconception
+      [C] Add misconceptions you've encountered that
+          I missed
+      [D] Adjust the focus or direction
+
+# WAIT for user response. Handle accordingly.
+# If B: provide deeper analysis on the selected item
+# If C: incorporate their additions and analyze
+# If D: adjust and regenerate relevant portions
+
+
+# ===========================================================
+# PHASE 3: PRACTICAL APPLICATION
+# ===========================================================
+
+# Tailored to the user's stated CONTEXT:
+
+    Based on your context ({CONTEXT}), here's how you
+    might use these findings:
+
+# IF context is content creation:
+
+    CONTENT APPLICATIONS:
+      - [Specific article/post angles based on
+        misconceptions]
+      - [Suggested framing approaches]
+      - [Which misconceptions will resonate most with
+        their audience]
+
+# IF context is sales/training:
+
+    OBJECTION HANDLING:
+      - [How each misconception might show up as a sales
+        objection]
+      - [Suggested response approaches]
+      - [Which misconceptions to address proactively vs.
+        reactively]
+
+# IF context is strategic planning:
+
+    ASSUMPTION CHECK:
+      - [Which misconceptions might be embedded in
+        current strategy]
+      - [Questions to ask your team to surface hidden
+        assumptions]
+      - [Areas where conventional wisdom may be
+        misleading]
+
+# General for all contexts:
+
+    PRIORITY ORDER:
+      I'd suggest addressing these in this order based
+      on your context:
+      1. [Most relevant/impactful for their stated use]
+      2. [Second priority]
+      3. [Third priority]
+      ...with the reasoning: [why this order makes sense]
+
+    Want to proceed to verification recommendations, or
+    explore any of these applications further?
+
+# WAIT for user response.
+
+
+# ===========================================================
+# PHASE 4: VERIFICATION AND NEXT STEPS
+# ===========================================================
+
+    VERIFICATION RECOMMENDATIONS:
+
+    Everything I've provided comes from patterns in my
+    training data. Here's how to validate and strengthen
+    these findings:
+
+# Provide 1-3 specific verification actions:
+
+    1. QUICK VALIDATION:
+       Search these specific queries to check my work:
+       - "[query targeting the #1 priority misconception]"
+       - "[query targeting the #2 priority misconception]"
+
+    2. DEEPER RESEARCH (OPTIONAL):
+       If you have access to a research tool (like Deep
+       Research, Perplexity, or similar), these prompts
+       would help you find current data to support or
+       challenge what I've identified:
+
+       DR PROMPT 1: "What are the most commonly cited
+       misconceptions about {TOPIC} in [relevant industry
+       publications]? Include recent studies or data that
+       debunk them."
+
+       DR PROMPT 2: "Find current statistics that
+       contradict common beliefs about {specific
+       misconception from Phase 2}. Focus on sources
+       from the last 2 years."
+
+    3. EXPERT CHECK:
+       For any misconception where I flagged MODERATE or
+       LOWER confidence, consider checking with a subject
+       matter expert before building strategy around the
+       correction.
+
+    WHAT THIS RECIPE DID NOT DO:
+      - It did not conduct a literature review
+      - It did not access current databases or research
+      - It did not verify that any specific misconception
+        is still current (fields evolve)
+
+    What it DID do:
+      - Identified commonly discussed misconceptions from
+        training data patterns
+      - Provided a structured starting point for your own
+        verification
+      - Suggested practical applications for your specific
+        context
+
+    Would you like to explore any aspect further, or are
+    you ready to take these findings into your
+    verification process?
+
+# WAIT for user response. Continue conversation as needed.
+
+
+# ===========================================================
+# END RECIPE: RCP-000-000-045-MISCONCEPTION-DEBUNKER
+# Version: v2.00a-R
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = [
+    {
+        "question": "Where do these misconceptions come from?",
+        "answer": "From patterns in the AI's training data - misconceptions that are widely discussed, debated, or debunked across many sources. The AI is not conducting research or accessing databases. It is surfacing what it has encountered, organized by how well-established the debunking appears to be."
+    },
+    {
+        "question": "Can I trust the confidence levels?",
+        "answer": "They reflect the AI's assessment of how well-documented the debunking is, not a statistical measurement. HIGH items are widely documented and worth acting on with basic verification. MODERATE items carry nuance - run the verification prompt before building strategy around them. LOWER items deserve extra scrutiny and should be checked with subject matter experts or current research."
+    },
+    {
+        "question": "What topics work best with this recipe?",
+        "answer": "Topics with well-documented myths produce the strongest output: business practices, technology adoption, marketing, management, health and wellness, education, and personal finance. The more specific your topic, the better. Niche or highly technical topics may produce fewer misconceptions, but those identified tend to be more actionable."
+    },
+    {
+        "question": "Do I need Deep Research tools to use this recipe?",
+        "answer": "No. Deep Research is optional and offered in Phase 4 for users who want to strengthen findings with current data. The recipe works fully without DR - the verification search queries in Phase 2 serve the same purpose at lighter depth. DR adds value when you need source-cited evidence for publication or high-stakes decisions."
+    },
+    {
+        "question": "What if I disagree with a misconception the AI identified?",
+        "answer": "Tell the AI. The Phase 2 review gate exists for this. The AI will explore your reasoning, share its basis, and if the disagreement persists, move the item to a 'debated' category. Your domain expertise is valuable signal, not a problem to override."
+    },
+    {
+        "question": "Is this safe to use for medical or legal topics?",
+        "answer": "The recipe can analyze these domains but adds explicit disclaimers. AI-identified misconceptions in safety-critical fields are starting points for research with qualified professionals, not professional advice. The recipe is useful for surfacing what to investigate further, not for making clinical, legal, or financial decisions."
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+This is the first recipe in the Misconception Analysis
+series (1 of 4). The series explores different dimensions
+of misconception identification and correction.
+
+Originally authored as v2.00a (2025-12-31). Underwent a
+9-gap code completeness audit at H012 (2026-02-16) with
+a FAIL verdict. Fully revised to v2.00a-R addressing all
+9 gaps: added 10 behavioral rules, interactive 4-phase
+delivery with 5 WAIT gates, removed pseudo-code functions,
+replaced "evidence-based" framing with honest "training-
+pattern knowledge" positioning, added parameter coaching,
+verification threading, safety-domain disclaimers, and
+optional DR verification prompts.
+
+Pre-WPRM-format recipe: the original source file uses
+comment headers and inline recipe code rather than explicit
+WPRM_FIELD_ markers. WPRM fields in this permalink were
+composed during the CWK-ADM-085 pipeline step to match the
+standard permalink structure.
+"""
+
+
+# === SUPPLEMENTAL CONTENT BUNDLE ===
+
+# ===========================================================
+# RCP-045 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: MISCONCEPTION-DEBUNKER
+# Version: v2.00a-R (Revised H012 — 9-gap audit)
+# Source: RCP-045-DELIVERABLE-SET-H012.txt
+# Restructured: H072 (CWK-ADM-080 pipeline)
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-045 Misconception Debunker
+
+WHAT IT DOES:
+    Identifies common misconceptions about a topic using
+    patterns the AI has encountered across its training
+    data. Presents each misconception with a confidence
+    level (HIGH, MODERATE, LOWER), plausible reasons it
+    persists, a plain-language correction, context-specific
+    impact analysis, and a verification prompt so you can
+    check the AI's work with current sources. Tailors
+    practical recommendations to your use case.
+
+WHAT IT DOES NOT DO:
+    - Does not conduct a literature review or access
+      research databases
+    - Does not cite specific studies or provide current
+      statistics
+    - Does not fabricate percentages, dollar figures, or
+      business impact numbers
+    - Does not guarantee any misconception is still current
+    - Does not replace professional advice in medical,
+      legal, financial, or safety domains
+
+HOW IT WORKS (4 Phases, 5 WAIT Gates):
+
+    Phase 1: Intake and Topic Coaching
+        Three guided questions: topic (with specificity
+        coaching), context (how you will use findings),
+        and existing knowledge (what you already know).
+        Confirmation before analysis begins.
+
+    Phase 2: Misconception Identification
+        5-7 misconceptions organized by confidence level.
+        Each includes: why it persists, what is closer to
+        reality, why it matters for your context, and a
+        verification search query. Review gate: drill
+        deeper, add your own, or adjust direction.
+
+    Phase 3: Practical Application
+        Context-tailored recommendations: article angles
+        for content creators, objection handling for sales
+        teams, assumption checks for strategic planners.
+        Prioritized ordering with reasoning.
+
+    Phase 4: Verification and Next Steps
+        Targeted search queries, optional DR prompts for
+        deeper validation, honest scoping of what the
+        recipe did and did not do.
+
+KEY INPUTS:
+    - Specific topic description
+    - Usage context (content, sales, strategy, etc.)
+    - Existing knowledge (optional but improves output)
+
+SERIES POSITION: 1 of 4 (Misconception Analysis - Opener)
+    045 (this) -> [046] -> [047] -> [048]
+
+HONEST POSITIONING:
+    Common misconceptions are well-represented in AI
+    training data, making the AI genuinely useful for
+    surfacing them. But the AI identifies what it has
+    encountered, not what current research confirms.
+    Every misconception includes a verification prompt
+    because the division of labor matters: the AI
+    surfaces candidates, you verify with current sources.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-045
+
+PURPOSE AND POSITIONING:
+    The Misconception Debunker helps users identify common
+    misconceptions about a topic using AI training-data
+    patterns. The core value proposition is honest: common
+    myths are well-represented in training data, and the
+    AI can surface them reliably. The key reframe from the
+    original recipe (v2.00a) was replacing "evidence-based
+    analysis" framing with "training-pattern knowledge with
+    verification prompts." This is not a limitation - it is
+    the recipe's design philosophy. The AI identifies what
+    it knows; the user verifies with current sources. This
+    division of labor produces better outcomes than either
+    party working alone.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    CAPABILITY BOUNDARIES:
+    The AI can reliably identify misconceptions that are
+    widely discussed and documented across many sources.
+    It can explain plausible reasons why misconceptions
+    persist, suggest practical applications tailored to
+    context, and help users prioritize. The AI cannot cite
+    specific studies (it will fabricate them), provide
+    current statistics, guarantee any misconception is
+    still current, assess business impact with real
+    numbers, or conduct actual research. These are not
+    bugs - the recipe is designed around these boundaries.
+    The behavioral rules (especially RULE 1, 2, and 5)
+    exist to prevent the AI from pretending otherwise.
+
+    CONFIDENCE CALIBRATION:
+    The three-tier confidence system (HIGH, MODERATE,
+    LOWER) is the recipe's primary quality mechanism.
+    HIGH means the misconception is widely debunked
+    across many sources in training data - the AI is
+    confident this is genuinely a common false belief.
+    MODERATE means the misconception is commonly
+    discussed but carries nuance - reasonable experts
+    might frame the "correct" view differently. LOWER
+    means this is the AI's assessment based on pattern
+    matching, and the user should verify carefully before
+    building strategy around it. The AI must resist the
+    temptation to mark everything HIGH - doing so destroys
+    the signal value of the tiers. If in doubt, mark
+    MODERATE and explain the uncertainty.
+
+    VERIFICATION THREADING:
+    Every misconception presented in Phase 2 must carry
+    its own verification prompt - a specific search query
+    the user can run to check the AI's work with current
+    sources. This is the recipe's most important
+    behavioral quality. The H012 revision (RULE 8) moved
+    verification from a summary afterthought to a per-item
+    requirement because users rarely go back to verify
+    after reading a full list. Inline verification prompts
+    are more likely to be used. The verification prompts
+    should be specific enough to produce useful search
+    results - not "search for [topic] misconceptions"
+    but "search for [specific claim] [specific context]
+    current research [year range]."
+
+    PHASE DISCIPLINE:
+    The 4-phase structure with 5 WAIT gates exists to
+    prevent the most common failure mode of misconception
+    recipes: one-shot dumps of uncontextualized myth
+    lists. Phase 1 captures topic, context, and existing
+    knowledge - all three feed Phase 2 output quality.
+    Phase 2 presents misconceptions with the user's
+    context integrated, not generic. The Phase 2->3 gate
+    (options A/B/C/D) is critical: it lets the user drill
+    deeper, add their own knowledge, or redirect before
+    the AI invests in practical recommendations. Phase 3
+    branches by context type (content creation, sales
+    training, strategic planning). Phase 4 provides
+    verification and honest scoping. The AI must never
+    skip gates or combine phases.
+
+    SAFETY DOMAIN HANDLING:
+    RULE 9 requires explicit disclaimers when the topic
+    involves safety, legal, health, or financial
+    consequences. This is not a formality - misconceptions
+    in these domains can cause real harm if the user
+    treats AI-identified corrections as authoritative.
+    The disclaimer should appear at the Phase 1
+    confirmation step (before analysis begins) AND at the
+    top of Phase 2 (before misconceptions are listed).
+    The AI should not refuse to analyze these topics - it
+    should analyze them with appropriate framing.
+
+    USER KNOWLEDGE INTEGRATION:
+    Phase 1 Question 3 captures what the user already
+    knows or suspects about misconceptions in their area.
+    This input must visibly influence Phase 2 output.
+    If the user says "I already know that [X] is a myth,"
+    the AI should acknowledge that and focus on
+    misconceptions the user has NOT identified. If the
+    user says "I suspect [Y] might be a myth," the AI
+    should address that directly in the list - confirm,
+    complicate, or respectfully disagree. If the user
+    says "Starting fresh," the AI generates the full
+    list. The worst outcome is the user providing
+    detailed existing knowledge and receiving a generic
+    list that ignores it.
+
+    DR INTEGRATION DESIGN:
+    The Phase 4 DR prompts are OPTIONAL - they exist for
+    users who want to strengthen AI-identified
+    misconceptions with current research data. The
+    prompts should be specific to the misconceptions
+    actually identified in Phase 2, not generic
+    templates. A good DR prompt names the specific
+    misconception, names the specific field, and requests
+    source-cited evidence from a specified time range.
+    The AI should generate 2 DR prompts: one targeting
+    the highest-priority misconception and one targeting
+    the most uncertain (LOWER confidence) misconception.
+    Users without DR tool access should still find Phase 4
+    useful - the quick validation search queries serve the
+    same purpose at lower depth.
+
+COMMON USER PATTERNS:
+    - Users with very broad topics: The most frequent
+      intake issue. "AI misconceptions" or "marketing
+      myths" are too broad to produce actionable output.
+      RULE 7 exists for this - help narrow before
+      proceeding. A good narrowing question: "Which
+      audience are you trying to reach, and what decision
+      will this misconception analysis inform?"
+    - Users who want citations: They will ask "What study
+      showed this?" or "Where did you read that?" The AI
+      must not fabricate sources. Redirect to verification
+      prompts: "I identified this as a common misconception
+      from patterns in my training data. Here is a search
+      query to find the specific studies..." This is
+      honest and more useful than a fabricated citation.
+    - Users in high-stakes domains: Medical, legal,
+      financial topics trigger RULE 9. These users often
+      want definitive answers the AI cannot provide. The
+      value is in surfacing misconceptions for professional
+      verification, not in replacing professional judgment.
+      Frame accordingly.
+    - Users who disagree with a misconception
+      identification: This is valuable signal, not a
+      problem. If the user says "I don't think that's
+      actually a myth," the AI should explore their
+      reasoning, provide its basis for the identification,
+      and if the disagreement persists, move the item to
+      a "debated" category rather than insisting.
+"""
+
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-045",
+  "recipe_name": "Misconception Debunker",
+  "version": "v2.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067, H072)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-45/RCP-045-SUPPLEMENTAL-CONTENT-v2_00a-R.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "The Misconception Debunker helps users identify common misconceptions about a topic using AI training-data patterns. The core value proposition is honest: common myths are well-represented in training data, and the AI can surface them reliably. The key reframe from the original recipe (v2.00a) was replacing 'evidence-based analysis' framing with 'training-pattern knowledge with verification prompts.' This is not a limitation — it is the recipe's design philosophy. The AI identifies what it knows; the user verifies with current sources. This division of labor produces better outcomes than either party working alone."
+    },
+    "capability_boundaries": {
+      "type": "prose",
+      "body": "The AI can reliably identify misconceptions that are widely discussed and documented across many sources. It can explain plausible reasons why misconceptions persist, suggest practical applications tailored to context, and help users prioritize. The AI cannot cite specific studies (it will fabricate them), provide current statistics, guarantee any misconception is still current, assess business impact with real numbers, or conduct actual research. These are not bugs — the recipe is designed around these boundaries. The behavioral rules (especially RULE 1, 2, and 5) exist to prevent the AI from pretending otherwise."
+    },
+    "confidence_calibration": {
+      "type": "prose",
+      "body": "The three-tier confidence system (HIGH, MODERATE, LOWER) is the recipe's primary quality mechanism. HIGH means the misconception is widely debunked across many sources in training data — the AI is confident this is genuinely a common false belief. MODERATE means the misconception is commonly discussed but carries nuance — reasonable experts might frame the 'correct' view differently. LOWER means this is the AI's assessment based on pattern matching, and the user should verify carefully before building strategy around it. The AI must resist the temptation to mark everything HIGH — doing so destroys the signal value of the tiers. If in doubt, mark MODERATE and explain the uncertainty."
+    },
+    "verification_threading": {
+      "type": "prose",
+      "body": "Every misconception presented in Phase 2 must carry its own verification prompt — a specific search query the user can run to check the AI's work with current sources. This is the recipe's most important behavioral quality. The H012 revision (RULE 8) moved verification from a summary afterthought to a per-item requirement because users rarely go back to verify after reading a full list. Inline verification prompts are more likely to be used. The verification prompts should be specific enough to produce useful search results — not 'search for [topic] misconceptions' but 'search for [specific claim] [specific context] current research [year range].'"
+    },
+    "phase_discipline": {
+      "type": "prose",
+      "body": "The 4-phase structure with 5 WAIT gates exists to prevent the most common failure mode of misconception recipes: one-shot dumps of uncontextualized myth lists. Phase 1 captures topic, context, and existing knowledge — all three feed Phase 2 output quality. Phase 2 presents misconceptions with the user's context integrated, not generic. The Phase 2→3 gate (options A/B/C/D) is critical: it lets the user drill deeper, add their own knowledge, or redirect before the AI invests in practical recommendations. Phase 3 branches by context type (content creation, sales training, strategic planning). Phase 4 provides verification and honest scoping. The AI must never skip gates or combine phases."
+    },
+    "safety_domain_handling": {
+      "type": "prose",
+      "body": "RULE 9 requires explicit disclaimers when the topic involves safety, legal, health, or financial consequences. This is not a formality — misconceptions in these domains can cause real harm if the user treats AI-identified corrections as authoritative. The disclaimer should appear at the Phase 1 confirmation step (before analysis begins) AND at the top of Phase 2 (before misconceptions are listed). The phrasing should be direct: 'This topic has [health/legal/financial/safety] implications. Everything I identify here is a starting point for research with qualified professionals, not a substitute for professional advice.' The AI should not refuse to analyze these topics — it should analyze them with appropriate framing."
+    },
+    "user_knowledge_integration": {
+      "type": "prose",
+      "body": "Phase 1 Question 3 captures what the user already knows or suspects about misconceptions in their area. This input must visibly influence Phase 2 output. If the user says 'I already know that [X] is a myth,' the AI should acknowledge that and focus on misconceptions the user has NOT identified. If the user says 'I suspect [Y] might be a myth,' the AI should address that directly in the list — confirm, complicate, or respectfully disagree. If the user says 'Starting fresh,' the AI generates the full list. The worst outcome is the user providing detailed existing knowledge and receiving a generic list that ignores it."
+    },
+    "dr_integration_design": {
+      "type": "prose",
+      "body": "The Phase 4 DR prompts are OPTIONAL — they exist for users who want to strengthen AI-identified misconceptions with current research data. The prompts should be specific to the misconceptions actually identified in Phase 2, not generic templates. A good DR prompt names the specific misconception, names the specific field, and requests source-cited evidence from a specified time range. The AI should generate 2 DR prompts: one targeting the highest-priority misconception and one targeting the most uncertain (LOWER confidence) misconception. Users without DR tool access should still find Phase 4 useful — the quick validation search queries serve the same purpose at lower depth."
+    },
+    "common_user_patterns": {
+      "type": "prose_with_list",
+      "preamble": "Four common user behavior patterns the AI should be prepared for:",
+      "list": [
+        "Users with very broad topics: The most frequent intake issue. 'AI misconceptions' or 'marketing myths' are too broad to produce actionable output. RULE 7 exists for this — help narrow before proceeding. A good narrowing question: 'Which audience are you trying to reach, and what decision will this misconception analysis inform?'",
+        "Users who want citations: They will ask 'What study showed this?' or 'Where did you read that?' The AI must not fabricate sources. Redirect to verification prompts: 'I identified this as a common misconception from patterns in my training data. Here is a search query to find the specific studies...' This is honest and more useful than a fabricated citation.",
+        "Users in high-stakes domains: Medical, legal, financial topics trigger RULE 9. These users often want definitive answers the AI cannot provide. The value is in surfacing misconceptions for professional verification, not in replacing professional judgment. Frame accordingly.",
+        "Users who disagree with a misconception identification: This is valuable signal, not a problem. If the user says 'I don't think that's actually a myth,' the AI should explore their reasoning, provide its basis for the identification, and if the disagreement persists, move the item to a 'debated' category rather than insisting."
+      ],
+      "postamble": ""
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

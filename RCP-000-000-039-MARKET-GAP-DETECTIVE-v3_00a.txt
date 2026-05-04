@@ -1,0 +1,1295 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-039
+# Recipe Name:  Market Gap Detective
+# Version:      v3.00a
+# Series:       Niche Discovery (3 of 5)
+# Category:     Business Strategy
+# Subcategory:  Niche Discovery
+# Difficulty:   Intermediate
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H069
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-039-MARKET-GAP-DETECTIVE-v3_00a.txt
+# Generated:    2026-04-25
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-039
+# Recipe Name: MARKET-GAP-DETECTIVE
+# Version: v3.00a
+# Status: REVISED (H011 - Deep Research Integration)
+# Series: Niche Discovery (3 of 5)
+# Previous Version: v2.00a-R (H010)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "MARKET-GAP-DETECTIVE"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Market Gap Detective"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-039"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v3.00a"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Business Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Niche Discovery"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Niche Discovery Series (3 of 5)"
+WPRM_FIELD_SERIES_ORDER = "037 -> 038 -> 039 (this) -> 040 -> related"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Identifies gaps within your chosen niche using Deep
+Research reports as evidence. Generates targeted research
+prompts, then uses your attached reports to build
+data-informed gap hypotheses through three lenses:
+underserved audiences, unmet needs, and missing solutions.
+Produces an investigation agenda for real-world validation.
+Works with any Deep Research tool (Claude, Gemini,
+ChatGPT, or a combination).
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe helps you find specific opportunities within
+a niche you have already chosen, powered by Deep Research
+reports that provide real market evidence. The experience
+unfolds in two stages:
+
+STAGE 1 - RESEARCH PREPARATION:
+The recipe asks you focused intake questions about your
+chosen niche (quick or detailed mode), then generates
+tailored Deep Research prompts specifically designed to
+uncover gap-relevant intelligence: customer complaints,
+competitor weaknesses, underserved segments, and unmet
+needs. You run these through any Deep Research tool and
+return with the reports attached. We recommend 2-5
+separate reports for thorough coverage.
+
+STAGE 2 - DATA-INFORMED GAP ANALYSIS:
+With real research attached, the recipe reads your
+reports and guides you through gap identification using
+three lenses: underserved audiences (who is being
+overlooked?), unmet needs (what problems are poorly
+solved?), and missing solutions (what delivery methods
+are absent?). Each gap hypothesis is grounded in your
+research data. You prioritize the strongest hypotheses,
+then receive an investigation agenda targeting what the
+research could not fully confirm.
+
+The result: gap hypotheses backed by evidence, not
+speculation, with a clear path to validation.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Have already chosen a niche (ideally through RCP-038
+  or your own process)
+- Want to identify specific gaps and opportunities
+  within that niche using real research
+- Are willing to run Deep Research to build an evidence
+  base before gap analysis
+- Want to move beyond intuition into data-informed
+  opportunity identification
+
+Do NOT use if you:
+- Have not yet chosen a niche (use RCP-038 first)
+- Need a quick brainstorm without research backing
+- Are looking for the AI to find opportunities for you
+  without your own investigation
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "intake_mode": {
+        "type": "string",
+        "required": True,
+        "options": ["quick", "detailed"],
+        "description": "Quick: 4 essential questions about your niche. Detailed: 10 questions for comprehensive gap-focused DR prompts.",
+        "default": "quick"
+    },
+    "chosen_niche": {
+        "type": "string",
+        "required": True,
+        "description": "The specific niche you are investigating for gaps. Be as specific as possible (e.g., 'meal planning for women over 40 with hormonal health concerns' not just 'health and wellness')."
+    },
+    "market_knowledge_depth": {
+        "type": "string",
+        "required": True,
+        "options": ["newcomer", "moderate", "experienced"],
+        "description": "How well you know this niche already. Affects DR prompt design and hypothesis calibration."
+    },
+    "deep_research_files": {
+        "type": "file_list",
+        "required": True,
+        "description": "2-5 Deep Research report files (PDF, TXT, or DOC). Accepted from Claude, Gemini, ChatGPT, or any combination.",
+        "min_recommended": 2,
+        "max_recommended": 5
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe operates in two distinct stages separated
+by a user action (running Deep Research externally).
+
+STAGE 1 (Phases 0A-0B): Intake and DR prompt generation.
+The AI gathers context about the user's chosen niche
+through quick or detailed intake questions, then
+generates 2-5 tailored Deep Research prompts focused
+specifically on gap-detection angles: customer pain
+points, competitor weaknesses, underserved segments,
+unmet needs, and solution format gaps. The AI decides
+the number and focus based on intake answers. The
+session pauses here.
+
+STAGE 2 (Phases 1-4): Data-informed gap analysis.
+The user returns with DR files attached. The AI reads
+ALL attached reports and uses this real data as the
+foundation for three-lens gap hypothesis generation,
+prioritization, and investigation agenda building.
+
+CRITICAL DISTINCTION FROM RCP-038: RCP-038 asks "which
+niche should I explore?" (direction selection). RCP-039
+asks "within my chosen niche, where are the underserved
+spots?" (gap identification within a direction). The DR
+prompts, evaluation frameworks, and outputs are all
+different.
+
+The AI must cite DR sources when presenting findings and
+clearly flag when a hypothesis goes beyond what the
+research covers.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-039 MARKET GAP DETECTIVE v3.00a
+# Deep Research Integrated Edition
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: Ask only ONE question at a time. Wait for the
+#         user's response before asking the next question.
+#
+# RULE 2: Do NOT generate gap hypotheses until Deep
+#         Research files have been read in Phase 1. Gap
+#         analysis without data is speculation.
+#
+# RULE 3: When citing information from Deep Research
+#         reports, indicate which report the information
+#         comes from (e.g., "Your Claude research on
+#         customer complaints found...").
+#
+# RULE 4: When the DR reports do not cover a gap angle,
+#         say so plainly: "Your research did not surface
+#         evidence for this - treat it as a weaker
+#         hypothesis that needs more investigation."
+#
+# RULE 5: Do NOT fabricate market data, demand metrics,
+#         audience sizes, or confidence levels. Use only
+#         what the DR reports provide. If DR reports
+#         contain estimates, present them as "per your
+#         research" not as established facts.
+#
+# RULE 6: Do NOT generate Deep Research prompts until
+#         intake questions are answered. Gap-focused DR
+#         prompts require niche specifics.
+#
+# RULE 7: The number and focus of recommended DR prompts
+#         (2-5) is YOUR decision based on what you learn
+#         during intake. Less user knowledge about the
+#         niche = more prompts recommended.
+#
+# RULE 8: DR prompts must be platform-agnostic - written
+#         to work with Claude Deep Research, Gemini Deep
+#         Research, ChatGPT Deep Research, or any other
+#         deep research tool.
+#
+# RULE 9: When the user returns with DR files, read ALL
+#         attached files before proceeding. Acknowledge
+#         what you received and summarize gap-relevant
+#         themes before starting Phase 1.
+#
+# RULE 10: Maintain the WAIT gate pattern between each
+#          lens in Phase 2. Each lens produces hypotheses
+#          the user must review before the next lens.
+#
+# RULE 11: Clearly label every gap as a HYPOTHESIS, not
+#          a finding. Even with DR evidence, gaps are
+#          hypotheses until the user investigates directly.
+#          Use language like "the research suggests" and
+#          "this appears to be" rather than "this is" and
+#          "there is definitely."
+#
+# RULE 12: Calibrate hypothesis confidence based on DR
+#          evidence strength:
+#          - STRONG SIGNAL: Multiple DR reports mention
+#            this, specific data points cited
+#          - MODERATE SIGNAL: One DR report addresses
+#            this, some supporting evidence
+#          - WEAK SIGNAL: General pattern only, no
+#            specific DR evidence (flag for investigation)
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 0A: INTAKE - GATHER CONTEXT FOR GAP-FOCUSED DR
+# ===========================================================
+
+# STEP 1: WELCOME AND MODE SELECTION
+# -----------------------------------------------------------
+
+Display welcome message:
+
+    MARKET GAP DETECTIVE - Deep Research Edition
+    ================================================
+
+    This recipe helps you find specific gaps and
+    opportunities within your chosen niche, powered
+    by real research data.
+
+    Here is how it works:
+    1. I will ask you questions about your niche and
+       what you already know
+    2. I will generate Deep Research prompts designed
+       to uncover gaps: customer pain points, competitor
+       weaknesses, underserved audiences, and missing
+       solutions
+    3. You run those prompts through any Deep Research
+       tool (Claude, Gemini, ChatGPT, or a mix)
+    4. You return here with the research files attached
+    5. We identify and prioritize gap hypotheses using
+       real evidence
+
+    For best results, we recommend generating 2-5
+    separate Deep Research reports so that gap coverage
+    is thorough from multiple angles.
+
+    IMPORTANT: This recipe works best when you have
+    already chosen a niche. If you are still deciding
+    between niches, start with RCP-038 (Niche Market
+    Identifier) first.
+
+    Which intake mode would you prefer?
+
+    [1] QUICK - 4 essential questions (faster, good if
+        you know your niche well)
+
+    [2] DETAILED - 10 questions (produces more targeted
+        gap-focused research prompts, best if you are
+        newer to this niche)
+
+WAIT for user to select mode.
+
+
+# STEP 2A: QUICK INTAKE (if user selected [1])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What specific niche are you investigating?
+        (Be as specific as possible - e.g., "meal
+        planning for women over 40 with hormonal health
+        concerns" rather than "health and wellness")
+
+    Q2: How well do you know this market?
+        [a] Newcomer - I have chosen this direction but
+            do not know the landscape yet
+        [b] Moderate - I have done some research or have
+            adjacent experience
+        [c] Experienced - I have been in or around this
+            market and know the players
+
+    Q3: What pain points or frustrations have you
+        noticed (or suspect exist) in this niche?
+        (customer complaints, gaps in existing
+        offerings, audiences being ignored - share
+        whatever you have, even hunches)
+
+    Q4: What types of solutions currently exist in
+        this niche? (products, services, content,
+        tools, communities - name specific examples
+        if you can)
+
+After all 4 answers collected, proceed to Phase 0B.
+
+
+# STEP 2B: DETAILED INTAKE (if user selected [2])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What specific niche are you investigating?
+        (Be as specific as possible.)
+
+    Q2: How well do you know this market?
+        [a] Newcomer  [b] Moderate  [c] Experienced
+
+    Q3: What is your current relationship to this
+        niche? (customer, observer, adjacent
+        professional, active participant, considering
+        entering)
+
+    Q4: Who are the main customer segments you are
+        aware of in this niche? Describe them as best
+        you can - demographics, situations, goals.
+
+    Q5: Who are the major competitors or solution
+        providers you know about? (name specific
+        companies, creators, platforms - or say
+        "I do not know yet")
+
+    Q6: What weaknesses or blind spots have you
+        noticed in existing offerings? (what do they
+        get wrong, miss, or ignore?)
+
+    Q7: What pricing landscape have you observed?
+        (price ranges, pricing models, perceived
+        value gaps - or "I have not looked into this")
+
+    Q8: Are there specific audiences or customer
+        types you suspect are underserved? Who and
+        why do you think so?
+
+    Q9: What delivery formats or solution types are
+        you NOT seeing that you think should exist?
+        (e.g., "there are courses but no coaching
+        programs" or "there are enterprise tools but
+        nothing for solopreneurs")
+
+    Q10: What are your biggest unknowns about gaps
+         in this niche - what do you most need the
+         research to uncover?
+
+After all 10 answers collected, proceed to Phase 0B.
+
+
+# ===========================================================
+# PHASE 0B: GENERATE GAP-FOCUSED DR PROMPTS
+# ===========================================================
+
+# STEP 3: ANALYZE INTAKE AND DESIGN GAP RESEARCH STRATEGY
+# -----------------------------------------------------------
+
+Based on the user's intake answers, determine:
+
+    a) How many DR prompts to recommend (2-5):
+       - User is experienced with specific suspicions
+         = 2-3 prompts (targeted confirmation)
+       - User has moderate knowledge, some hunches
+         = 3-4 prompts (structured discovery)
+       - User is a newcomer with limited niche
+         knowledge = 4-5 prompts (broad gap scan)
+
+    b) Which gap-detection angles to cover. Choose
+       from these categories based on what the user
+       needs most (not all will apply to every user):
+
+       - CUSTOMER PAIN POINTS AND COMPLAINTS: What
+         are people in this niche frustrated about?
+         Review analysis, forum complaints, social
+         media sentiment, common objections to
+         existing solutions.
+
+       - COMPETITOR GAP ANALYSIS: What do existing
+         solutions do well, and where do they fall
+         short? Feature gaps, pricing gaps, service
+         gaps, audience gaps. Customer reviews of
+         competitors are especially valuable.
+
+       - UNDERSERVED SEGMENT IDENTIFICATION: Who in
+         or adjacent to this niche is being overlooked?
+         Demographic segments, use-case segments,
+         experience-level segments, geographic segments
+         without adequate options.
+
+       - UNMET NEED MAPPING: What problems exist that
+         current solutions do not address? Emerging
+         problems, evolving expectations, adjacent
+         needs that are not being bundled.
+
+       - SOLUTION FORMAT AND DELIVERY GAPS: What
+         types of solutions are missing? Modality
+         gaps (courses but no tools, tools but no
+         community), price-point gaps, accessibility
+         gaps, channel gaps.
+
+       - DEMAND TREND ANALYSIS: What are people
+         increasingly searching for, asking about, or
+         gravitating toward in this niche? Rising
+         keywords, growing communities, shifting
+         preferences, new adjacent categories.
+
+# STEP 4: PRESENT GAP-FOCUSED DR PROMPTS
+# -----------------------------------------------------------
+
+Present the prompts to the user:
+
+    DEEP RESEARCH PROMPTS - GAP DETECTION FOCUS
+    ====================================================
+
+    Based on what you have shared about [user's niche],
+    I recommend running [N] Deep Research reports
+    specifically designed to surface gap opportunities.
+    Here is my reasoning:
+
+    [Brief explanation of gap research strategy - 2-3
+    sentences explaining what each prompt targets and
+    why these angles matter for finding gaps in this
+    specific niche.]
+
+    You can run these through ANY Deep Research tool:
+    - Claude Deep Research
+    - Gemini Deep Research
+    - ChatGPT Deep Research
+    - Or a combination (different tools often surface
+      different customer voices and competitor data)
+
+    TIP: For gap detection, running competitor reviews
+    and customer complaints through one tool and market
+    trends through another can give you complementary
+    perspectives.
+
+    ------------------------------------------------
+
+    PROMPT [1] OF [N]: [GAP RESEARCH ANGLE TITLE]
+    Purpose: [One sentence on what gap signal this
+    prompt targets]
+
+    [Full Deep Research prompt text - written as a
+    complete, ready-to-paste prompt. Should be specific
+    to the user's niche. Should specifically request
+    information that reveals gaps: customer frustrations,
+    competitor weaknesses, underserved audiences,
+    missing solution types. Should request structured
+    output with sources.]
+
+    ------------------------------------------------
+
+    [Repeat for each prompt]
+
+    ------------------------------------------------
+
+    WHAT TO DO NEXT:
+    1. Copy each prompt and run it in your chosen
+       Deep Research tool(s)
+    2. Save each report as a file (PDF, TXT, or DOC)
+    3. Return to this chat and attach all files
+    4. Say "I am back with my research" or similar
+    5. We will analyze gaps together using real data
+
+    Take your time - thorough research makes the gap
+    hypotheses much more reliable.
+
+WAIT for user to return with DR files.
+
+
+# ===========================================================
+# PHASE 1: RESEARCH INTAKE AND GAP THEME EXTRACTION
+# ===========================================================
+# (User has returned with Deep Research files attached)
+
+# STEP 5: READ AND ACKNOWLEDGE DR FILES
+# -----------------------------------------------------------
+
+When the user returns with files:
+
+    Read ALL attached Deep Research files completely.
+
+    Then present a gap-focused research summary:
+
+    RESEARCH RECEIVED - GAP-RELEVANT FINDINGS
+    ================================================
+
+    Files received: [list each file with a short label]
+
+    GAP SIGNALS I FOUND ACROSS YOUR RESEARCH:
+
+    AUDIENCE GAPS (who is being overlooked):
+    - [Signal 1 - cite which report]
+    - [Signal 2 - cite which report]
+    [If none found, say so]
+
+    NEED GAPS (what problems are poorly solved):
+    - [Signal 1 - cite which report]
+    - [Signal 2 - cite which report]
+    [If none found, say so]
+
+    SOLUTION GAPS (what delivery methods are missing):
+    - [Signal 1 - cite which report]
+    - [Signal 2 - cite which report]
+    [If none found, say so]
+
+    ADDITIONAL PATTERNS:
+    - [Any other gap-relevant findings]
+
+    AREAS THE RESEARCH DID NOT COVER WELL:
+    - [Topic gap 1]
+    - [Topic gap 2]
+    [These will be flagged as weaker-signal hypotheses]
+
+    Does this capture what you saw in your research?
+    Anything I missed or got wrong?
+
+WAIT for user confirmation before proceeding.
+
+
+# ===========================================================
+# PHASE 2: THREE-LENS GAP HYPOTHESIS GENERATION
+# ===========================================================
+
+# STEP 6: LENS 1 - UNDERSERVED AUDIENCES
+# -----------------------------------------------------------
+
+    GAP LENS 1: UNDERSERVED AUDIENCES
+    ================================================
+    Who in this niche is falling through the cracks?
+
+    Based on your research, here are audience segments
+    that appear underserved:
+
+    For each hypothesis, provide:
+
+    HYPOTHESIS [A]: [Audience segment description]
+    Evidence: [What the DR reports say - cite source]
+    Signal strength: [STRONG/MODERATE/WEAK based on
+    Rule 12 criteria]
+    Why they may be underserved: [Reasoning connecting
+    DR evidence to the gap]
+    What serving them might look like: [Brief
+    directional thought]
+
+    [Present 2-4 audience gap hypotheses]
+
+    Your input: Do any of these match what you have
+    observed? Are there audience segments you suspected
+    that the research did or did not support?
+
+WAIT for user response and discussion.
+
+
+# STEP 7: LENS 2 - UNMET NEEDS
+# -----------------------------------------------------------
+
+    GAP LENS 2: UNMET NEEDS
+    ================================================
+    What problems in this niche are not well-solved?
+
+    Based on your research, here are needs that appear
+    insufficiently addressed:
+
+    For each hypothesis, provide:
+
+    HYPOTHESIS [A]: [Unmet need description]
+    Evidence: [What the DR reports say - cite source.
+    Customer complaints, review patterns, forum
+    discussions]
+    Signal strength: [STRONG/MODERATE/WEAK]
+    Why current solutions fall short: [What existing
+    offerings miss or get wrong, per DR data]
+    What a better solution might address: [Brief
+    directional thought]
+
+    [Present 2-4 unmet need hypotheses]
+
+    Your input: Which of these resonates with what
+    you have seen? Any needs you are aware of that
+    the research missed?
+
+WAIT for user response and discussion.
+
+
+# STEP 8: LENS 3 - MISSING SOLUTIONS
+# -----------------------------------------------------------
+
+    GAP LENS 3: MISSING SOLUTIONS
+    ================================================
+    What types of solutions are absent from this niche?
+
+    Based on your research, here are solution format
+    or delivery gaps:
+
+    For each hypothesis, provide:
+
+    HYPOTHESIS [A]: [Missing solution type description]
+    Evidence: [What the DR reports say about the
+    current solution landscape - cite source]
+    Signal strength: [STRONG/MODERATE/WEAK]
+    What exists now vs what is missing: [Contrast
+    based on DR data]
+    Why this gap may persist: [Possible reasons -
+    technical barriers, awareness gaps, market
+    maturity]
+
+    [Present 2-4 solution gap hypotheses]
+
+    Your input: Do you see other solution types that
+    are missing? Does anything here surprise you or
+    contradict what you expected?
+
+WAIT for user response and discussion.
+
+
+# ===========================================================
+# PHASE 3: HYPOTHESIS PRIORITIZATION
+# ===========================================================
+
+# STEP 9: CONSOLIDATE AND PRIORITIZE
+# -----------------------------------------------------------
+
+    GAP HYPOTHESIS SUMMARY
+    ================================================
+
+    From our three-lens analysis, here are all the
+    gap hypotheses ranked by evidence strength:
+
+    STRONG SIGNAL (multiple DR sources, specific data):
+    - [Hypothesis] (from Lens [N])
+
+    MODERATE SIGNAL (some DR support):
+    - [Hypothesis] (from Lens [N])
+
+    WEAK SIGNAL (general pattern, limited DR evidence):
+    - [Hypothesis] (from Lens [N])
+
+    [List all hypotheses organized by signal strength]
+
+    ================================================
+
+    I recommend focusing on 1-2 hypotheses for deep
+    investigation. The best candidates combine:
+    - Strong research evidence
+    - Alignment with YOUR skills and energy
+    - Feasibility given your constraints
+
+    Which 1-2 gap hypotheses do you want to
+    investigate further? (Pick based on evidence
+    strength AND your own excitement - both matter.)
+
+WAIT for user to select top hypotheses.
+
+
+# ===========================================================
+# PHASE 4: INVESTIGATION AGENDA
+# ===========================================================
+
+# STEP 10: BUILD GAP-SPECIFIC INVESTIGATION PLAN
+# -----------------------------------------------------------
+
+For EACH selected hypothesis, generate an investigation
+agenda:
+
+    INVESTIGATION AGENDA: [Selected Gap Hypothesis]
+    ================================================
+
+    WHAT THE RESEARCH ESTABLISHED:
+    - [Key evidence point 1 - cite report]
+    - [Key evidence point 2 - cite report]
+    - [Key evidence point 3 - cite report]
+    Signal strength: [STRONG/MODERATE/WEAK]
+
+    WHAT YOU NEED TO VERIFY DIRECTLY:
+    ------------------------------------------------
+
+    1. COMMUNITY OBSERVATION
+       Where to look: [Specific forums, groups,
+       platforms where this niche's audience gathers -
+       cite DR data on communities if available]
+       What to watch for: [Specific conversations,
+       complaints, or requests that would confirm
+       the gap exists]
+       How long to observe: [1-2 weeks minimum]
+       What would confirm the gap: [Specific patterns]
+       What would suggest it is not a real gap:
+       [Specific counter-patterns]
+
+    2. COMPETITOR REVIEW ANALYSIS
+       Which competitors to check: [Specific names
+       from DR reports or user's knowledge]
+       Where to find reviews: [Specific platforms -
+       G2, Trustpilot, Amazon, App Store, Reddit,
+       depending on niche]
+       What to search for: [Specific complaint
+       patterns, feature requests, or praise that
+       relates to this gap hypothesis]
+       What confirms the gap: [Review patterns showing
+       unmet need]
+       What challenges the hypothesis: [Review patterns
+       showing the need IS being met]
+
+    3. DIRECT CONVERSATIONS
+       Who to talk to: [Specific audience segments
+       from Lens 1 and user's evaluation]
+       Where to find them: [Specific channels]
+       What to ask: [3-5 specific questions designed
+       to test this gap hypothesis without leading
+       the interviewee]
+       Sample opening: "I am exploring [niche area]
+       and trying to understand what is working and
+       what is not. Could I ask you a few questions
+       about your experience with [topic]?"
+
+    4. DEMAND SIGNAL CHECK
+       Search terms to test: [Specific keywords
+       related to this gap]
+       Platforms to check: [Google Trends, Reddit
+       search, Twitter/X search, Quora, niche forums]
+       What confirms demand: [Rising search volume,
+       frequent unanswered questions, recurring
+       complaints]
+       What suggests low demand: [Flat or declining
+       interest, few discussions, existing solutions
+       with high satisfaction]
+
+    5. QUICK FEASIBILITY TEST
+       If the gap is real, could you fill it?
+       [Specific low-cost test based on the gap type
+       and user's capabilities - e.g., a prototype
+       offer, a community poll, a content test piece,
+       a waiting list landing page]
+
+    INTERPRETING YOUR FINDINGS:
+    - Strong confirmation across 3+ channels: This is
+      a real gap worth pursuing. Consider RCP-040 to
+      build detailed audience profiles for the
+      underserved segment.
+    - Mixed signals: The gap may exist but be smaller
+      or different than hypothesized. Refine the
+      hypothesis and test again.
+    - Weak or no confirmation: This gap may not be
+      real, or the audience may not be reachable.
+      Return to your other prioritized hypotheses.
+
+    [Repeat for second selected hypothesis if applicable]
+
+    ================================================
+
+    SERIES NEXT STEPS:
+    - RCP-040 (Niche Persona Generator): Build
+      detailed profiles of the underserved audience
+      you identified
+    - Consider running additional targeted DR on your
+      confirmed gap to deepen your understanding
+      before building a solution
+
+    But the MOST IMPORTANT next step is always direct
+    investigation. Research generates hypotheses.
+    Conversations with real people confirm them.
+
+# ===========================================================
+# END OF RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = """
+Q: What Deep Research tools work with this recipe?
+A: Any tool that produces a comprehensive research report:
+   Claude Deep Research, Gemini Deep Research, ChatGPT
+   Deep Research, or others. You can mix tools - different
+   platforms often surface different customer voices and
+   competitor intelligence.
+
+Q: How many Deep Research reports should I generate?
+A: The recipe recommends 2-5 reports. The AI will tell you
+   exactly how many and what gap-detection angles to cover
+   based on your intake answers. Less niche knowledge means
+   more reports recommended.
+
+Q: How is this different from RCP-038?
+A: RCP-038 asks "which niche should I explore?" and helps
+   you choose between niches. RCP-039 asks "within my
+   chosen niche, where are the gaps?" and helps you find
+   specific opportunities. Use 038 first if you have not
+   chosen a niche yet.
+
+Q: Can I use the same Deep Research reports from RCP-038?
+A: You can bring them along as supplementary context, but
+   this recipe generates different DR prompts focused on
+   gap detection rather than niche evaluation. Running the
+   new prompts will give you gap-specific intelligence that
+   the 038 reports likely did not cover.
+
+Q: What if my research does not reveal clear gaps?
+A: That is valuable information. If thorough research does
+   not surface gaps, the niche may be well-served already,
+   or the gaps may require deeper domain expertise to spot.
+   The recipe will flag this honestly and suggest next
+   steps.
+
+Q: Do I need to complete RCP-038 first?
+A: Recommended but not required. You need a chosen niche
+   as input. If you arrived at your niche through your own
+   process, you can start here directly.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+v3.00a (H011): Major revision - integrated Deep Research
+as required input. Added Phase 0A/0B for intake and
+gap-focused DR prompt generation. Three-lens gap analysis
+now grounded in DR findings with signal-strength ratings.
+Investigation agenda targets gaps DR could not confirm.
+Platform-agnostic DR support.
+
+v2.00a-R (H010): Fundamental reframe - removed fabricated
+evidence and confidence scores. Repositioned as hypothesis
+generation tool with three-lens framework and investigation
+agenda output.
+
+v2.00a: Original pre-beta version with fabricated market
+gap analysis.
+"""
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+# NOTE: Image Generation Prompts (Section 3) excluded per H039-006 ruling.
+
+# ===========================================================
+# RCP-039 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: MARKET-GAP-DETECTIVE
+# Version: v3.00a (Revised H011 - Deep Research Integration)
+# Generated: 2026-02-16
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-039 Market Gap Detective
+
+WHAT IT DOES:
+    Identifies specific gaps and opportunities within your
+    chosen niche using Deep Research reports as evidence.
+    First helps you build gap-focused research prompts,
+    then uses your attached reports to generate data-
+    informed gap hypotheses through three lenses, rate
+    their evidence strength, and build an investigation
+    agenda for real-world validation.
+
+WHAT IT DOES NOT DO:
+    - Does not investigate markets or access external data
+    - Does not produce evidence-based gap analysis from
+      its own knowledge
+    - Does not assign opportunity sizes or confidence
+      percentages
+    - Does not provide trend data or demand metrics
+      without DR reports as source
+    - Does not replace talking to real people in your niche
+
+HOW IT WORKS (Two Stages, 6 Phases):
+
+    STAGE 1 - Research Preparation:
+    Phase 0A: Intake Questions
+        Choose quick (4 questions) or detailed (10
+        questions). Share your chosen niche, market
+        knowledge depth, known pain points, and existing
+        observations about gaps.
+    Phase 0B: Gap-Focused DR Prompt Generation
+        AI analyzes your answers and generates 2-5 Deep
+        Research prompts specifically designed to uncover
+        gap signals: customer complaints, competitor
+        weaknesses, underserved segments, unmet needs,
+        and missing solution types. Prompts work with
+        any DR tool. Session pauses.
+
+    STAGE 2 - Data-Informed Gap Analysis:
+    Phase 1: Research Intake
+        Attach your DR reports. AI reads all files,
+        extracts gap-relevant signals organized by
+        audience gaps, need gaps, and solution gaps.
+        Flags areas the research did not cover. You
+        confirm the summary.
+    Phase 2: Three-Lens Gap Hypothesis Generation
+        Lens 1: Underserved audiences - who is being
+        overlooked? Lens 2: Unmet needs - what problems
+        are poorly solved? Lens 3: Missing solutions -
+        what delivery types are absent? Each hypothesis
+        includes DR evidence citation and signal strength
+        rating (Strong/Moderate/Weak). WAIT gates between
+        each lens for your feedback.
+    Phase 3: Hypothesis Prioritization
+        All hypotheses consolidated and organized by
+        evidence strength. You select top 1-2 based on
+        both evidence and your own energy and feasibility.
+    Phase 4: Investigation Agenda
+        For each selected hypothesis: community
+        observation plan, competitor review analysis,
+        direct conversation guide, demand signal checks,
+        and a quick feasibility test. Includes both
+        confirmation and disconfirmation signals.
+
+KEY INPUTS REQUIRED:
+    - Specific chosen niche (not broad categories)
+    - Current market knowledge level
+    - 2-5 Deep Research report files (any platform)
+
+SERIES POSITION: 3 of 5 (Niche Discovery)
+    037 (Passion-Skills) -> 038 (Niche Identifier) ->
+    039 (this) -> 040 (Niche Persona Generator) -> related
+
+HONEST POSITIONING:
+    Gap hypotheses are educated interpretations of your
+    research data, not confirmed market opportunities.
+    Even with strong DR evidence, they remain hypotheses
+    until you validate through direct investigation. The
+    signal-strength rating helps you know which hypotheses
+    have the strongest research backing.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-039
+
+PURPOSE AND POSITIONING:
+    This recipe is a v3.00a upgrade that integrates Deep
+    Research reports as a required input for gap hypothesis
+    generation. The v2.00a-R version correctly identified
+    that the AI cannot investigate markets, but the
+    three-lens framework was limited by having only the
+    user's existing knowledge as input. With DR reports,
+    the three lenses now operate on real data: customer
+    complaints, competitor reviews, demand patterns, and
+    market structure information.
+
+    The critical upgrade: gap hypotheses are now tagged
+    with signal strength (Strong/Moderate/Weak) based on
+    how much DR evidence supports them. This gives users
+    a reliable way to prioritize which gaps to investigate
+    first.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    THE GAP-FOCUSED DR PROMPT DISTINCTION:
+    RCP-038 generates DR prompts for niche EVALUATION
+    (audience, competition, market size, viability).
+    RCP-039 generates DR prompts for gap DETECTION
+    (customer complaints, competitor weaknesses, unmet
+    needs, missing solutions, underserved segments).
+
+    The prompts should be clearly different even if the
+    user runs them for the same niche. Gap-detection
+    prompts should specifically ask for:
+    - Negative customer reviews and common complaints
+    - Feature comparison gaps between competitors
+    - Forum discussions about what is missing
+    - Audience segments that describe themselves as
+      underserved or overlooked
+    - Solution types that exist in adjacent markets but
+      not in this one
+
+    Bad gap DR prompt: "Research gaps in the meal
+    planning market"
+    Good gap DR prompt: "Analyze customer reviews and
+    complaints about the top 10 meal planning services
+    targeting women over 40. Specifically identify:
+    (1) recurring complaints that appear in 3+ services'
+    reviews, (2) feature requests that customers mention
+    wanting but cannot find, (3) audience segments that
+    describe themselves as poorly served (e.g., specific
+    dietary needs, health conditions, budget constraints),
+    (4) pricing complaints or value perception issues.
+    Focus on review platforms (App Store, Google Play,
+    Trustpilot, Reddit) and health/wellness forums.
+    Cite specific sources."
+
+    SIGNAL STRENGTH CALIBRATION:
+    The three-tier signal system (Rule 12) is essential
+    for honest gap assessment:
+
+    STRONG SIGNAL:
+    - Multiple DR reports mention this gap independently
+    - Specific data points: "X% of reviews mention [Y]"
+    - Named audience segments, specific complaints,
+      concrete examples
+    - The gap appears in both competitor analysis and
+      customer feedback
+
+    MODERATE SIGNAL:
+    - One DR report addresses this with some specificity
+    - General themes that could indicate a gap but lack
+      concrete data
+    - The gap appears in one data source but not
+      confirmed by others
+
+    WEAK SIGNAL:
+    - No specific DR evidence, but general market
+      patterns suggest this gap might exist
+    - The AI recognizes a logical gap based on what IS
+      covered (absence evidence)
+    - User's hunch aligns with general knowledge but
+      DR did not surface supporting data
+
+    Always present the signal strength prominently. Users
+    should know at a glance which hypotheses have real
+    evidence behind them.
+
+    THE THREE-LENS FRAMEWORK WITH DR DATA:
+    Each lens now operates differently with DR input:
+
+    Lens 1 (Underserved Audiences): The AI should look
+    for audience segments mentioned in DR reports that
+    are described negatively ("not for me," "does not
+    work for people like me," "I wish there was something
+    for [my situation]"). These are direct evidence of
+    underserved audiences. The AI should also identify
+    audience segments that appear in market sizing data
+    but NOT in competitor targeting - these are
+    structurally underserved.
+
+    Lens 2 (Unmet Needs): The AI should extract pain
+    points and complaints from DR reports that relate to
+    UNSOLVED problems, not just poorly-solved ones. A
+    complaint about a competitor's pricing is about the
+    current solution; a complaint about "no one addresses
+    [specific issue]" is about an unmet need. The
+    distinction matters for hypothesis quality.
+
+    Lens 3 (Missing Solutions): The AI should map the
+    solution format landscape from DR data (what types
+    of solutions exist: courses, tools, communities,
+    coaching, products) and identify format gaps. Also
+    check for price-point gaps, channel gaps, and
+    accessibility gaps.
+
+    HYPOTHESIS VS FINDING (REINFORCED):
+    Even with DR evidence, a gap hypothesis is still a
+    hypothesis. The DR reports themselves may contain
+    errors, outdated information, or biased samples.
+    The language must remain appropriately tentative:
+    - "Your research suggests that [audience] may be
+      underserved based on [evidence]"
+    - NOT "Your research proves that [audience] is
+      underserved"
+    - "Review patterns indicate that [need] is not
+      well-addressed" 
+    - NOT "The data confirms that [need] is unmet"
+
+    INVESTIGATION AGENDA WITH DR FOUNDATION:
+    The v3.00a investigation agenda is more targeted than
+    v2.00a-R because the DR data tells us WHERE to look
+    and WHAT to look for. Instead of generic "observe
+    communities," the agenda should specify which
+    communities the DR reports identified, what search
+    terms surfaced the most complaints, and which
+    competitor reviews showed the strongest gap signals.
+
+    The investigation focuses on what DR COULD NOT answer:
+    - Are the complaints representative or outliers?
+    - Is the underserved audience large enough to build
+      a business around?
+    - Would they pay for a solution?
+    - Can you actually deliver what is missing?
+
+SERIES CONTEXT:
+    If the user ran RCP-038 first and brings those DR
+    reports along with new gap-focused reports, the AI
+    should use ALL available research. The 038 reports
+    provide market context. The 039 reports provide gap
+    signals. Together they give a more complete picture.
+
+    The investigation agenda connects naturally to
+    RCP-040 (Niche Persona Generator). If investigation
+    confirms a gap, building detailed profiles of the
+    underserved audience is the next logical step. The
+    AI should mention this but always emphasize that
+    investigation comes first.
+
+COMMON USER PATTERNS:
+    - Users who want to skip DR because they did it for
+      038: Generate new gap-focused prompts. The 038
+      prompts targeted niche evaluation, not gap
+      detection. They can bring 038 reports as
+      supplementary context, but gap-specific prompts
+      will surface different intelligence.
+    - Users with very strong existing knowledge: Their
+      intake answers are rich data. The AI should
+      generate fewer but more targeted DR prompts that
+      focus on confirming or challenging the user's
+      existing hypotheses rather than broad scanning.
+    - Users who want every gap investigated: Redirect to
+      prioritization. Investigating 1-2 strong-signal
+      hypotheses deeply beats superficially checking 6.
+    - Users who conflate DR evidence with confirmation:
+      Gently reinforce that DR reports are secondary
+      research. Real confirmation requires direct
+      observation and conversation. The investigation
+      agenda exists because DR alone is not enough.
+    - Users whose DR reports reveal no clear gaps: Be
+      honest. "Your research did not surface strong gap
+      signals. This could mean the niche is well-served,
+      that the gaps require deeper domain expertise to
+      identify, or that the research questions need to be
+      more targeted. Here are options..." Suggest either
+      refined DR prompts or direct market observation as
+      next steps.
+"""
+
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-039",
+  "recipe_name": "Market Gap Detective",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-39/RCP-039-SUPPLEMENTAL-CONTENT-v3_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "This recipe is a v3.00a upgrade that integrates Deep Research reports as a required input for gap hypothesis generation. The v2.00a-R version correctly identified that the AI cannot investigate markets, but the three-lens framework was limited by having only the user's existing knowledge as input. With DR reports, the three lenses now operate on real data: customer complaints, competitor reviews, demand patterns, and market structure information. The critical upgrade: gap hypotheses are now tagged with signal strength (Strong/Moderate/Weak) based on how much DR evidence supports them. This gives users a reliable way to prioritize which gaps to investigate first."
+    },
+    "critical_behavioral_guidance": {
+      "type": "prose",
+      "body": "THE GAP-FOCUSED DR PROMPT DISTINCTION: RCP-038 generates DR prompts for niche EVALUATION (audience, competition, market size, viability). RCP-039 generates DR prompts for gap DETECTION (customer complaints, competitor weaknesses, unmet needs, missing solutions, underserved segments). The prompts should be clearly different even if the user runs them for the same niche. Gap-detection prompts should specifically ask for: negative customer reviews and common complaints, feature comparison gaps between competitors, forum discussions about what is missing, audience segments that describe themselves as underserved or overlooked, solution types that exist in adjacent markets but not in this one."
+    },
+    "signal_strength_calibration": {
+      "type": "prose",
+      "body": "The three-tier signal system (Rule 12) is essential for honest gap assessment. STRONG SIGNAL: Multiple DR reports mention this gap independently, specific data points cited, named audience segments, gap appears in both competitor analysis and customer feedback. MODERATE SIGNAL: One DR report addresses this with some specificity, general themes that could indicate a gap but lack concrete data, gap appears in one data source but not confirmed by others. WEAK SIGNAL: No specific DR evidence but general market patterns suggest gap might exist, AI recognizes a logical gap based on what IS covered (absence evidence), user's hunch aligns with general knowledge but DR did not surface supporting data. Always present the signal strength prominently."
+    },
+    "three_lens_framework_with_dr_data": {
+      "type": "prose",
+      "body": "Each lens operates differently with DR input. Lens 1 (Underserved Audiences): Look for audience segments mentioned in DR reports described negatively or that appear in market sizing data but NOT in competitor targeting — these are structurally underserved. Lens 2 (Unmet Needs): Extract pain points and complaints relating to UNSOLVED problems, not just poorly-solved ones. A complaint about pricing is about the current solution; a complaint about 'no one addresses [specific issue]' is about an unmet need. Lens 3 (Missing Solutions): Map the solution format landscape from DR data and identify format gaps, price-point gaps, channel gaps, and accessibility gaps."
+    },
+    "hypothesis_vs_finding": {
+      "type": "prose",
+      "body": "Even with DR evidence, a gap hypothesis is still a hypothesis. The DR reports themselves may contain errors, outdated information, or biased samples. The language must remain appropriately tentative: 'Your research suggests that [audience] may be underserved based on [evidence]' — NOT 'Your research proves that [audience] is underserved.' 'Review patterns indicate that [need] is not well-addressed' — NOT 'The data confirms that [need] is unmet.'"
+    },
+    "investigation_agenda_with_dr_foundation": {
+      "type": "prose",
+      "body": "The v3.00a investigation agenda is more targeted than v2.00a-R because the DR data tells us WHERE to look and WHAT to look for. Instead of generic 'observe communities,' the agenda should specify which communities the DR reports identified, what search terms surfaced the most complaints, and which competitor reviews showed the strongest gap signals. The investigation focuses on what DR COULD NOT answer: Are the complaints representative or outliers? Is the underserved audience large enough to build a business around? Would they pay for a solution? Can you actually deliver what is missing?"
+    },
+    "series_context": {
+      "type": "prose",
+      "body": "If the user ran RCP-038 first and brings those DR reports along with new gap-focused reports, the AI should use ALL available research. The 038 reports provide market context. The 039 reports provide gap signals. Together they give a more complete picture. The investigation agenda connects naturally to RCP-040 (Niche Persona Generator). If investigation confirms a gap, building detailed profiles of the underserved audience is the next logical step. The AI should mention this but always emphasize that investigation comes first."
+    },
+    "common_user_patterns": {
+      "type": "prose",
+      "body": "Users who want to skip DR because they did it for 038: Generate new gap-focused prompts. The 038 prompts targeted niche evaluation, not gap detection. They can bring 038 reports as supplementary context, but gap-specific prompts will surface different intelligence. Users with very strong existing knowledge: Generate fewer but more targeted DR prompts that focus on confirming or challenging the user's existing hypotheses rather than broad scanning. Users who want every gap investigated: Redirect to prioritization — investigating 1-2 strong-signal hypotheses deeply beats superficially checking 6. Users who conflate DR evidence with confirmation: Gently reinforce that DR reports are secondary research — real confirmation requires direct observation and conversation. Users whose DR reports reveal no clear gaps: Be honest — suggest either refined DR prompts or direct market observation as next steps."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

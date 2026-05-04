@@ -1,0 +1,984 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-036
+# Recipe Name:   Lead Magnet Optimizer
+# Version:       v2.00a-R
+# Category:      Standalone (000)
+# Difficulty:    Advanced
+# Authored by:   Cat (P067, H066)
+# Revision Date: 2026-02-16
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-036-LEAD-MAGNET-OPTIMIZER
+# Version: v2.00a-R
+# Status: Official (Revised — QA Audit H010)
+# Created: 2025-12-30
+# Revised: 2026-02-16
+# Series: Lead Magnet (3 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-036-LEAD-MAGNET-OPTIMIZER"
+
+WPRM_FIELD_DESCRIPTION = """
+Helps you audit and improve an existing lead magnet across
+four dimensions: headline and positioning, content value,
+user experience, and conversion path. The AI works
+interactively through each dimension, asks you to self-
+assess areas it cannot see (like visual design), and
+provides recommendations calibrated to your traffic volume
+and testing capacity. Output is a prioritized improvement
+plan, not a prescriptive timeline.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "036"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Lead Generation"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Lead Magnet,
+Optimization,
+Conversion Rate,
+A/B Testing,
+Lead Generation,
+Call to Action,
+Landing Page,
+Marketing Analytics
+"""
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+Step 1: Document Your Current Lead Magnet
+    Write down exactly what your lead magnet is: title,
+    format, what it covers, how long it is, and how it
+    connects to your business.
+
+Step 2: Gather Performance Data
+    Collect whatever metrics you have: landing page
+    visits, download count, conversion rate, email
+    signup rate, bounce rate, unsubscribe rate after
+    delivery, and any user feedback. If you have
+    limited data, note that — it affects the type of
+    recommendations the AI can give.
+
+Step 3: Estimate Your Traffic Volume
+    How many people see your lead magnet offer per
+    month? This determines whether A/B testing is
+    feasible and how quickly you can validate changes.
+
+Step 4: Document Your Conversion Path
+    What is the current call-to-action? Where does it
+    appear? What happens after someone downloads?
+    What is the next step you want them to take?
+
+Step 5: Run the Recipe
+    Paste the recipe code and fill in all parameters.
+    The AI will assess your data quality first, then
+    work through each optimization dimension
+    interactively.
+
+Step 6: Work Through Each Dimension
+    The AI analyzes one dimension at a time, asking
+    you to confirm observations before moving to the
+    next. For visual design elements, the AI asks you
+    self-assessment questions since it cannot see your
+    lead magnet's design.
+
+Step 7: Review the Improvement Plan
+    The AI provides a prioritized list of improvements
+    ranked by likely impact and implementation effort,
+    calibrated to your situation.
+
+Step 8: Implement and Measure
+    Start with the highest-impact, lowest-effort
+    improvements. Track results before and after.
+    Only run A/B tests if your traffic volume supports
+    them.
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe guides the AI to help users audit and improve
+an existing lead magnet through interactive dimension-by-
+dimension analysis. The AI works from user-provided
+performance data and descriptions, asks self-assessment
+questions for visual elements it cannot evaluate directly,
+and calibrates recommendations to the user's traffic
+volume and testing capacity. The AI does not prescribe
+specific timelines or predict conversion rate improvements.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Audit and optimize an existing lead magnet through
+interactive analysis of headline, content, user
+experience, and conversion path.
+"""
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you have a live lead magnet with
+at least some performance data and want to improve
+results. Best used after your lead magnet has been live
+long enough to generate meaningful traffic. If you do
+not have a lead magnet yet, use RCP-035 (Creator) first.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Lead Magnet Optimizer"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE START
+# ===========================================================
+# Recipe: RCP-000-000-036-LEAD-MAGNET-OPTIMIZER
+# Version: v2.00a-R
+# Difficulty: Advanced
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+# RULE 1 — NO PERFORMANCE PREDICTIONS: Do not predict
+#   specific conversion rate improvements, download
+#   increases, or revenue impact from recommendations.
+#   Recommendations should be framed as "likely to
+#   improve [dimension] because [reasoning]" not "will
+#   increase conversion by X%."
+#
+# RULE 2 — TRAFFIC-CALIBRATED ADVICE: All testing and
+#   measurement recommendations must be calibrated to
+#   the user's stated traffic volume. Do not recommend
+#   A/B testing to someone with 50 monthly visitors.
+#   Do not recommend multivariate testing without
+#   substantial traffic. Be explicit about minimum
+#   traffic for meaningful testing.
+#
+# RULE 3 — CANNOT EVALUATE VISUALS: The AI cannot see
+#   the lead magnet's design, landing page layout, or
+#   visual elements. For design-related dimensions, ask
+#   the user self-assessment questions and provide
+#   principles-based guidance. Never claim to have
+#   evaluated the design directly.
+#
+# RULE 4 — DATA QUALITY HONESTY: If the user has
+#   limited performance data (few visitors, no
+#   conversion tracking, no feedback), acknowledge
+#   that recommendations will be principles-based
+#   rather than data-driven. Do not fabricate a data-
+#   driven analysis from insufficient data.
+#
+# RULE 5 — INTERACTIVE DELIVERY: Work through one
+#   optimization dimension at a time. WAIT for user
+#   confirmation before proceeding to the next. Do not
+#   dump all five dimensions at once.
+#
+# RULE 6 — RELATIVE PRIORITIES NOT FIXED TIMELINES:
+#   Rank improvements by relative impact and effort,
+#   not by specific week-based timelines. The user
+#   knows their schedule and capacity better than the
+#   AI does. Provide ordering guidance, not calendar
+#   prescriptions.
+#
+# RULE 7 — I-DON'T-KNOW HANDLING: When the user
+#   cannot provide information about a dimension (e.g.,
+#   no conversion data, no user feedback), skip that
+#   dimension's data-driven analysis and provide
+#   principles-based suggestions instead, clearly
+#   labeled as general best practices rather than
+#   customized recommendations.
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# I-DON'T-KNOW FLAGS
+# -----------------------------------------------------------
+# FLAG 1: If asked to predict conversion improvements:
+#   "I cannot predict specific conversion rate changes.
+#   I can identify areas likely to improve based on
+#   established optimization principles, but actual
+#   results depend on your audience, traffic, and
+#   execution."
+#
+# FLAG 2: If user has no performance data at all:
+#   "Without performance data, I will provide a
+#   principles-based audit focused on common
+#   optimization opportunities. Once you have traffic
+#   and data, we can revisit with data-driven analysis."
+#
+# FLAG 3: If asked about design quality without being
+#   able to see it: "I cannot see your lead magnet's
+#   design. I will ask you some self-assessment
+#   questions and provide design principles. For
+#   professional design evaluation, consider getting
+#   feedback from a designer or from your target
+#   audience."
+#
+# FLAG 4: If traffic is too low for A/B testing:
+#   "With [X] monthly visitors, formal A/B testing
+#   will not reach statistical significance in a
+#   reasonable timeframe. Instead, I recommend making
+#   your best-judgment improvements and measuring
+#   before-and-after over a longer period."
+# -----------------------------------------------------------
+
+
+#H->AI::Directive: (Help the user audit and optimize
+    their existing lead magnet through interactive
+    dimension-by-dimension analysis, calibrated to
+    their data quality and traffic volume.)
+
+
+#H->AI::Context: (
+    lead_magnet_title = "{lead_magnet_title}"
+    # The current title/headline of your lead magnet.
+
+    lead_magnet_format = "{lead_magnet_format}"
+    # Format: ebook, checklist, template, guide,
+    #   webinar, quiz, etc.
+
+    lead_magnet_content_summary = "{lead_magnet_content_summary}"
+    # PARAMETER COACHING: Briefly describe what the
+    #   lead magnet contains — sections, topics covered,
+    #   length, and what value it provides.
+    # Good: "A 15-page ebook with 5 chapters covering
+    #   email subject line formulas, send timing, list
+    #   segmentation basics, automation sequences, and
+    #   deliverability tips. Includes 10 copy-paste
+    #   subject line templates."
+    # Thin: "It's about email marketing"
+
+    target_audience = "{target_audience}"
+    # Who the lead magnet is designed for.
+
+    current_headline = "{current_headline}"
+    # The exact headline or title used to promote the
+    #   lead magnet on your landing page or signup form.
+
+    call_to_action = "{call_to_action}"
+    # PARAMETER COACHING: Your current CTA — the exact
+    #   copy and where it appears.
+    # Good: "Button says 'Download Free Guide' below a
+    #   3-field form (name, email, company). Form is on
+    #   a dedicated landing page linked from our blog
+    #   sidebar and homepage banner."
+    # Thin: "Sign up button"
+
+    performance_data = "{performance_data}"
+    # PARAMETER COACHING: Share whatever metrics you
+    #   have. More data = more targeted recommendations.
+    # Good: "Landing page gets ~800 visits/month.
+    #   Conversion rate is 12%. Of those who download,
+    #   about 40% open the first follow-up email. 8%
+    #   unsubscribe within a week. Two users emailed
+    #   saying the content was too basic."
+    # Partial: "About 200 visits/month, maybe 20
+    #   downloads. Not sure about the rest."
+    # None: "I don't have tracking set up yet."
+
+    monthly_traffic = "{monthly_traffic}"
+    # PARAMETER COACHING: Approximate monthly visitors
+    #   who see the lead magnet offer. This determines
+    #   whether A/B testing is feasible.
+    # Be honest — a realistic number helps the AI
+    #   calibrate its recommendations.
+
+    promotional_channels = "{promotional_channels}"
+    # Where and how you currently promote the lead
+    #   magnet (website placement, social media, email,
+    #   paid ads, partnerships, etc.)
+
+    known_issues = "{known_issues}"
+    # Any problems you have already identified or
+    #   suspect. What prompted you to optimize?
+
+    business_goal = "{business_goal}"
+    # What you want leads to do after downloading —
+    #   book a call, purchase, join a community, etc.
+    #   This shapes the conversion path analysis.
+)
+
+
+# -----------------------------------------------------------
+# PHASE 1: DATA QUALITY ASSESSMENT
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Before analyzing, assess the quality and depth of
+    data the user has provided:
+
+    TRAFFIC ASSESSMENT
+    - Monthly traffic volume
+    - Whether A/B testing is feasible at this volume
+      (generally need 1,000+ monthly visitors per
+      variation for reasonable test duration)
+    - If traffic is low, note that recommendations
+      will be implement-and-measure rather than
+      test-and-compare
+
+    DATA COMPLETENESS
+    - Which performance metrics are available
+    - Which are missing (and what that limits)
+    - Whether conversion tracking is in place
+
+    ANALYSIS APPROACH
+    Based on data quality, explain what kind of audit
+    is possible:
+    - DATA-RICH: Specific, targeted recommendations
+      based on performance patterns
+    - PARTIAL DATA: Mix of data-driven and principles-
+      based recommendations
+    - DATA-LIGHT: Primarily principles-based audit
+      with suggestions for what to track going forward
+
+    Ask: "Does this assessment of your data situation
+    match your understanding? Anything to add before
+    we begin the dimension-by-dimension audit?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 2: HEADLINE AND POSITIONING AUDIT
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Evaluate the current headline and positioning:
+
+    CURRENT HEADLINE ASSESSMENT
+    - Is it specific about what the reader gets?
+    - Does it communicate a clear benefit or outcome?
+    - Does it speak to the target audience's language?
+    - Is it honest about what the lead magnet delivers?
+
+    Based on the assessment, provide:
+    - 3 alternative headline options, each with a
+      different angle (benefit-focused, outcome-focused,
+      problem-focused)
+    - Rationale for each — what it does differently
+      from the current headline
+    - Which to test first (or simply implement, if
+      traffic does not support testing)
+
+    POSITIONING CHECK
+    - Does the lead magnet's positioning match the
+      business goal? (e.g., if the goal is to sell
+      consulting, does the lead magnet attract people
+      who would buy consulting?)
+    - Is there a mismatch between the promise and the
+      delivery that could cause disappointment?
+
+    Ask: "Any of these headline directions feel closer
+    to what would resonate with your audience? Do you
+    see any positioning mismatches I should know about?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 3: CONTENT VALUE AUDIT
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on the content summary the user provided,
+    evaluate the content dimension:
+
+    VALUE DELIVERY
+    - Does the content deliver on the headline promise?
+    - Is the information actionable or just informational?
+    - Does it solve a specific problem or just describe
+      one?
+    - Is the depth appropriate for the audience level?
+
+    STRUCTURE AND FLOW
+    - Does the content have a logical progression?
+    - Are there clear takeaways at each stage?
+    - Is the length appropriate for the format?
+
+    COMMON CONTENT WEAKNESSES (check against)
+    - Too broad (tries to cover everything, delivers
+      nothing deep)
+    - Too basic (audience already knows this)
+    - Too advanced (loses the target audience)
+    - All theory, no action (no templates, checklists,
+      or exercises)
+    - No connection to the next step (no bridge to
+      the user's paid offering)
+
+    If the user mentioned specific feedback from their
+    audience (complaints, praise, suggestions), weigh
+    that heavily — it is direct signal.
+
+    Provide 3-4 specific content improvement
+    recommendations ranked by likely impact.
+
+    Ask: "Do these content observations match your own
+    sense of where the lead magnet is strong and weak?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 4: USER EXPERIENCE AND CONVERSION PATH
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    This dimension covers design/UX and the conversion
+    path. The AI cannot see visual design, so this
+    uses a self-assessment approach for visual elements.
+
+    DESIGN SELF-ASSESSMENT (ask the user):
+    Guide the user through these self-assessment
+    questions:
+    - "Does your lead magnet look professional compared
+      to competitors in your space?"
+    - "Is the text easy to read — appropriate font
+      size, line spacing, contrast?"
+    - "Does it include visual breaks (images, icons,
+      callout boxes, white space)?"
+    - "Is it branded consistently with your website
+      and other materials?"
+    - "Have you tested it on mobile devices?"
+
+    Based on their answers, provide principles-based
+    design guidance for any areas they flag as weak.
+    Do NOT claim to have evaluated the design yourself.
+
+    CONVERSION PATH ANALYSIS
+    Based on the CTA details the user provided:
+    - Is the CTA clear about what happens next?
+    - Is the form asking for more information than
+      necessary? (Fewer fields generally = higher
+      conversion, but note this is a general principle)
+    - Is the post-download experience aligned with
+      the business goal?
+    - Does the delivery sequence build toward the
+      next step (consultation, purchase, etc.)?
+
+    Provide:
+    - 2-3 CTA copy variations to consider
+    - Friction reduction suggestions (if applicable)
+    - Post-download sequence recommendations tied to
+      the user's business goal
+
+    Ask: "How did the self-assessment go? Any design
+    areas you want to dig into further?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 5: PRIORITIZED IMPROVEMENT PLAN
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Synthesize all confirmed findings into a prioritized
+    improvement plan:
+
+    IMPROVEMENT PRIORITY LIST
+    Rank all recommendations from Phases 2-4 by:
+    - LIKELY IMPACT: High / Medium / Low
+      (based on the dimension's relationship to the
+      user's stated issues and available data signals)
+    - IMPLEMENTATION EFFORT: Easy / Moderate / Hard
+      (based on the type of change required)
+
+    Group into:
+    - QUICK WINS (high impact + easy effort)
+      Implement these first
+    - CORE IMPROVEMENTS (high impact + moderate effort)
+      Implement these next
+    - ADVANCED OPTIMIZATIONS (requires testing or
+      significant effort)
+      Implement when quick wins and core improvements
+      are in place
+
+    Do NOT assign specific week-based timelines. The
+    user knows their schedule. Provide ordering and
+    dependency guidance instead.
+
+    TESTING GUIDANCE (calibrated to traffic)
+    If traffic supports A/B testing:
+    - Which changes are worth testing vs simply
+      implementing
+    - Test one variable at a time
+    - Minimum duration for meaningful results at
+      their traffic level
+    If traffic does NOT support A/B testing:
+    - Implement best-judgment changes
+    - Measure before-and-after over longer periods
+    - Focus on tracking setup if not already in place
+
+    PROMOTIONAL CHANNEL REVIEW
+    Based on current channels and the optimization
+    findings:
+    - Any channel-specific messaging adjustments
+      based on headline/positioning changes
+    - 1-2 underutilized channels to consider (if
+      apparent from the user's situation)
+    - Do not generate a generic list of all possible
+      channels — focus on what fits their specific
+      audience and capacity
+
+    VALIDATION SUMMARY
+    - What was analyzed and what data it was based on
+    - Which recommendations are data-driven vs
+      principles-based (be explicit)
+    - Limitations of this audit (AI cannot see design,
+      cannot verify metrics, analysis is based on
+      a snapshot)
+    - Suggest re-running this audit after implementing
+      changes and gathering new performance data
+
+    This audit is a structured thinking aid. The user
+    should validate recommendations against their
+    audience knowledge and test where possible.
+)
+
+
+# -----------------------------------------------------------
+# EXAMPLES
+# -----------------------------------------------------------
+
+# EXAMPLE 1 — DATA-RICH INPUT
+#
+# lead_magnet_title: "The Ultimate Email Marketing
+#   Playbook for E-Commerce"
+# lead_magnet_format: "PDF ebook, 22 pages"
+# lead_magnet_content_summary: "5 chapters: subject
+#   lines, send timing, segmentation, automation, and
+#   deliverability. Includes 10 copy-paste templates."
+# target_audience: "E-commerce store owners doing
+#   $50K-$500K/yr"
+# current_headline: "Free Email Marketing Guide"
+# call_to_action: "Button: 'Get Free Guide' on a
+#   dedicated landing page with name + email fields"
+# performance_data: "800 visits/month to landing page.
+#   12% conversion rate. 40% first-email open rate.
+#   8% unsubscribe within a week. Two users said
+#   content was too basic."
+# monthly_traffic: "800"
+# known_issues: "Unsubscribe rate feels high. Users
+#   said content is too basic."
+#
+# Result: Phase 1 flags 800/month as borderline for
+#   A/B testing (possible but slow). Phase 2 identifies
+#   headline as generic — suggests specificity like
+#   "10 Email Templates That Sell Products While You
+#   Sleep." Phase 3 identifies content-level mismatch
+#   (audience is mid-level, content is beginner).
+#   Recommends adding advanced sections or repositioning
+#   for beginners. Phase 4 asks design self-assessment.
+#   Phase 5 ranks content-level fix as highest impact.
+
+# EXAMPLE 2 — DATA-LIGHT INPUT
+#
+# lead_magnet_title: "Business Growth Checklist"
+# lead_magnet_format: "PDF, 3 pages"
+# target_audience: "Small business owners"
+# current_headline: "Download Our Free Checklist"
+# call_to_action: "Popup on website"
+# performance_data: "Not sure, maybe 50 visits/month"
+# monthly_traffic: "50"
+# known_issues: "Nobody seems to download it"
+#
+# Result: Phase 1 flags data-light situation.
+#   Recommends principles-based audit. Notes 50/month
+#   traffic rules out A/B testing. Phase 2 flags
+#   headline as entirely generic. Phase 3 notes
+#   "Business Growth Checklist" is extremely broad —
+#   may need narrowing to a specific audience problem.
+#   Phase 5 prioritizes: (1) narrow the topic and
+#   audience, (2) rewrite headline, (3) set up basic
+#   conversion tracking before further optimization.
+
+
+# ===========================================================
+# RECIPE END
+# ===========================================================
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-036",
+    "name": "LEAD-MAGNET-OPTIMIZER",
+    "version": "v2.00a-R",
+    "series": "Lead Magnet",
+    "series_position": "3 of 3",
+    "difficulty": "Advanced",
+    "estimated_time": "60-90 minutes",
+    "prerequisites": [
+        "Existing lead magnet (live or recently launched)",
+        "Performance data (whatever is available)",
+        "Monthly traffic estimate",
+        "Current CTA and conversion path documented"
+    ],
+    "outputs": [
+        "Four-dimension optimization audit",
+        "Traffic-calibrated testing guidance",
+        "Prioritized improvement plan (by impact and effort)",
+        "Alternative headlines and CTA variations",
+        "Design self-assessment with principles-based guidance"
+    ],
+    "previous_recipe": "RCP-000-000-035-LEAD-MAGNET-CREATOR",
+    "qa_audit": {
+        "audit_session": "H010",
+        "original_version": "v2.00a",
+        "revised_version": "v2.00a-R",
+        "audit_verdict": "FAIL",
+        "gaps_found": 11,
+        "gaps_fixed": 11,
+        "key_changes": [
+            "Added 7 behavioral rules",
+            "Added 4 I-don't-know flags",
+            "Added 5-phase interactive delivery with WAIT gates",
+            "Added parameter coaching on all inputs",
+            "Added data quality gate (Phase 1) with traffic assessment",
+            "Reframed Design dimension to self-assessment + principles",
+            "Replaced fixed weekly timeline with relative priority ranking",
+            "Calibrated A/B testing to traffic volume (minimum thresholds)",
+            "Added monthly_traffic parameter",
+            "Added 2 examples (data-rich and data-light)",
+            "Added validation summary with limitations"
+        ]
+    }
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-036 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: LEAD-MAGNET-OPTIMIZER
+# Version: v2.00a-R (Revised H010)
+# Generated: 2026-02-16
+# Contains: TLDR Recap, Extended Information for AI
+# Note: Image Generation Prompts excluded per H039-006.
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP — RCP-036 Lead Magnet Optimizer
+
+WHAT IT DOES:
+    Helps you audit an existing lead magnet across four
+    dimensions and build a prioritized improvement plan.
+    Works interactively, calibrates advice to your traffic
+    volume, and uses self-assessment for design elements
+    the AI cannot see.
+
+WHAT IT DOES NOT DO:
+    - Does not predict conversion rate improvements
+    - Does not evaluate visual design directly (uses
+      self-assessment questions instead)
+    - Does not prescribe specific weekly timelines
+    - Does not recommend A/B testing if traffic is
+      insufficient for meaningful results
+
+HOW IT WORKS (5 Phases):
+    Phase 1: Data Quality Assessment
+        Evaluates what metrics you have, your traffic
+        volume, and whether A/B testing is feasible.
+        Sets the analysis approach (data-driven vs
+        principles-based).
+    Phase 2: Headline and Positioning Audit
+        Evaluates current headline specificity, benefit
+        focus, audience alignment. Provides 3 alternatives.
+    Phase 3: Content Value Audit
+        Assesses value delivery, structure, depth, and
+        actionability based on your content summary and
+        any audience feedback.
+    Phase 4: User Experience and Conversion Path
+        Self-assessment for design elements + CTA
+        analysis + post-download sequence evaluation.
+    Phase 5: Prioritized Improvement Plan
+        All recommendations ranked by impact and effort.
+        Testing guidance calibrated to traffic volume.
+        Validation summary with limitations.
+
+KEY INPUTS REQUIRED:
+    - Lead magnet description and content summary
+    - Current headline and CTA copy
+    - Performance data (whatever you have)
+    - Monthly traffic estimate
+    - Promotional channels
+    - Known issues and business goal
+
+SERIES POSITION: 3 of 3
+    034 (Competitor Analyst) → 035 (Creator) → 036 (this)
+
+HONEST POSITIONING:
+    This is a structured audit framework. Recommendations
+    are based on established optimization principles
+    applied to your specific situation. They are not
+    guarantees. Test where your traffic allows, measure
+    results, and iterate.
+"""
+
+
+# ===========================================================
+# SECTION 2: EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+"""
+EXTENDED INFORMATION FOR AI — RCP-036
+
+PURPOSE AND POSITIONING:
+    This recipe helps users who already have a live lead
+    magnet identify and prioritize improvements. It is the
+    most advanced recipe in the Lead Magnet series and
+    assumes the user has a working asset and at least some
+    performance context.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    TRAFFIC CALIBRATION:
+    This is the most important behavioral addition in the
+    revision. The original recipe recommended A/B testing
+    universally — but most small business lead magnets do
+    not get enough traffic for meaningful split tests.
+    A/B testing at 50 monthly visitors takes months to
+    reach statistical significance and produces unreliable
+    results. The AI must assess traffic volume FIRST and
+    calibrate all testing recommendations accordingly.
+
+    General thresholds (not hard rules):
+    - Under 200/month: A/B testing not practical.
+      Implement best-judgment changes and measure
+      before/after over time.
+    - 200-1000/month: Simple A/B tests possible but slow.
+      Test only the highest-impact single variable.
+    - 1000+/month: Standard A/B testing feasible.
+      Can test multiple variables sequentially.
+    - 5000+/month: More sophisticated testing possible
+      including multivariate.
+
+    DESIGN SELF-ASSESSMENT:
+    The AI cannot see visual design, layouts, formatting,
+    or brand materials. The original recipe asked the AI
+    to evaluate "visual appeal" and "mobile compatibility"
+    — this is impossible. The revised approach asks the
+    user structured self-assessment questions and provides
+    principles-based guidance for any areas they flag.
+    This is more honest AND more useful, because the user
+    can actually evaluate their own design while the AI
+    provides the framework for what to look for.
+
+    DATA QUALITY SENSITIVITY:
+    Users will have wildly different data sophistication.
+    Some will have full analytics dashboards; others will
+    say "I think some people download it." The Phase 1
+    data quality assessment prevents the AI from
+    generating data-driven recommendations from thin air.
+    When data is sparse, the audit shifts to principles-
+    based recommendations and suggests what to track.
+
+    RELATIVE PRIORITIES NOT CALENDARS:
+    The original recipe prescribed "Week 1," "Weeks 2-3,"
+    "Week 4+" timelines. This is false precision — the AI
+    does not know the user's schedule, team size, other
+    priorities, or implementation speed. The revised
+    approach ranks by impact and effort and lets the user
+    determine their own timeline.
+
+INTERACTION PATTERN:
+    Phase-by-phase with WAIT gates ensures the user can
+    course-correct. Particularly important because the
+    content audit (Phase 3) depends on accurate
+    understanding of what the lead magnet contains, and
+    the AI is working from a summary, not the actual
+    content. User confirmation prevents analysis built
+    on misunderstandings.
+
+SERIES CONTEXT:
+    This recipe works standalone or as the final step
+    of the Lead Magnet series. Users who completed
+    RCP-034 and RCP-035 may have stronger competitive
+    context and a more refined value proposition. Users
+    arriving directly with an existing lead magnet can
+    use this recipe independently — it does not require
+    the prior recipes.
+
+COMMON USER PATTERNS:
+    - Data-rich users: They have analytics, feedback,
+      and clear issues to address. The audit can be
+      specific and targeted. Focus on the gap between
+      current performance and potential.
+    - Data-light users: They know something is not
+      working but lack metrics. The audit becomes more
+      principles-based. Phase 5 should include setting
+      up tracking as a priority recommendation.
+    - Users with misdiagnosed problems: They may think
+      the headline is the issue when the real problem
+      is content-audience mismatch or insufficient
+      traffic. The dimension-by-dimension approach
+      helps surface the actual bottleneck.
+"""
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI COMMUNICATION ===
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-036",
+  "title": "Lead Magnet Optimizer",
+  "version": "2.00a-R",
+  "profile": "standalone-recipe",
+
+  "identity_and_role": {
+    "name": "Lead Magnet Optimizer",
+    "purpose": "Help users audit and improve an existing lead magnet through interactive dimension-by-dimension analysis calibrated to data quality and traffic volume",
+    "fundamental_constraint": "This recipe produces a prioritized improvement plan based on structured analysis. It does NOT predict specific conversion rate improvements or prescribe fixed timelines. Recommendations are calibrated to the user's actual data quality and traffic volume.",
+    "category": "Standalone",
+    "subcategory": "Lead Generation",
+    "difficulty": "Advanced",
+    "time_estimate": "60-90 minutes"
+  },
+
+  "core_positioning": {
+    "role": "Structured audit partner and optimization advisor — NOT a performance predictor or design evaluator",
+    "value_add": "Dimension-by-dimension analysis (headline, content, UX, conversion path), traffic-calibrated testing guidance, prioritized improvement plan ranked by impact and effort, honest design self-assessment framework",
+    "honest_framing": "This is a structured audit framework. Recommendations are based on established optimization principles applied to your specific situation. They are not guarantees. Test where traffic allows, measure results, and iterate."
+  },
+
+  "behavioral_rules": [
+    {"id": "R1", "rule": "NO PERFORMANCE PREDICTIONS: Do not predict specific conversion rate improvements, download increases, or revenue impact. Frame recommendations as likely-to-improve with reasoning, not numerical guarantees.", "priority": "CRITICAL"},
+    {"id": "R2", "rule": "TRAFFIC-CALIBRATED ADVICE: All testing recommendations calibrated to stated traffic volume. No A/B testing recommendation for insufficient traffic. Explicit about minimum traffic for meaningful testing.", "priority": "CRITICAL"},
+    {"id": "R3", "rule": "CANNOT EVALUATE VISUALS: AI cannot see design, layout, or visual elements. Use self-assessment questions and principles-based guidance for design dimensions. Never claim to have evaluated design directly.", "priority": "HIGH"},
+    {"id": "R4", "rule": "DATA QUALITY HONESTY: If user has limited performance data, acknowledge recommendations will be principles-based rather than data-driven. Do not fabricate data-driven analysis from insufficient data.", "priority": "HIGH"},
+    {"id": "R5", "rule": "INTERACTIVE DELIVERY: Work through one optimization dimension at a time. WAIT for user confirmation before proceeding to the next. Do not dump all dimensions at once.", "priority": "HIGH"},
+    {"id": "R6", "rule": "RELATIVE PRIORITIES NOT FIXED TIMELINES: Rank improvements by relative impact and effort, not week-based timelines. User knows their schedule better than the AI does.", "priority": "HIGH"},
+    {"id": "R7", "rule": "I-DON'T-KNOW HANDLING: When user cannot provide information about a dimension, skip data-driven analysis and provide principles-based suggestions clearly labeled as general best practices.", "priority": "HIGH"}
+  ],
+
+  "parameters": [
+    {"name": "lead_magnet_title", "type": "string", "required": true, "description": "Current title/headline of the lead magnet"},
+    {"name": "lead_magnet_format", "type": "string", "required": true, "description": "Format: ebook, checklist, template, guide, webinar, quiz, etc."},
+    {"name": "lead_magnet_content_summary", "type": "string", "required": true, "description": "What the lead magnet contains — sections, topics, length, value provided"},
+    {"name": "target_audience", "type": "string", "required": true, "description": "Who the lead magnet is designed for"},
+    {"name": "current_headline", "type": "string", "required": true, "description": "Exact headline or title used to promote the lead magnet on landing page or signup form"},
+    {"name": "call_to_action", "type": "string", "required": true, "description": "Current CTA — exact copy and where it appears"},
+    {"name": "performance_data", "type": "string", "required": true, "description": "Whatever metrics are available: visits, downloads, conversion rate, open rate, unsubscribe rate, user feedback"},
+    {"name": "monthly_traffic", "type": "string", "required": true, "description": "Approximate monthly visitors who see the lead magnet offer — determines A/B testing feasibility"},
+    {"name": "promotional_channels", "type": "string", "required": true, "description": "Where and how the lead magnet is currently promoted"},
+    {"name": "known_issues", "type": "string", "required": true, "description": "Problems already identified or suspected — what prompted the optimization"},
+    {"name": "business_goal", "type": "string", "required": true, "description": "What the user wants leads to do after downloading — shapes conversion path analysis"}
+  ],
+
+  "phase_structure": [
+    {"phase": 1, "title": "Data Quality Assessment", "description": "Assess traffic volume, A/B testing feasibility, data completeness, and set analysis approach (data-rich / partial / data-light). WAIT for confirmation."},
+    {"phase": 2, "title": "Headline and Positioning Audit", "description": "Evaluate headline specificity, benefit focus, audience alignment. Provide 3 alternative headlines with rationale. Check positioning-to-goal alignment. WAIT for confirmation."},
+    {"phase": 3, "title": "Content Value Audit", "description": "Assess value delivery, structure, depth, actionability. Check against common content weaknesses. Weigh audience feedback heavily. Provide 3-4 ranked content improvements. WAIT for confirmation."},
+    {"phase": 4, "title": "User Experience and Conversion Path", "description": "Self-assessment for design (5 questions — AI cannot see visuals). CTA analysis with 2-3 copy variations. Friction reduction suggestions. Post-download sequence recommendations. WAIT for confirmation."},
+    {"phase": 5, "title": "Prioritized Improvement Plan", "description": "Synthesize all confirmed findings into impact × effort matrix. Three tiers: Quick Wins, Core Improvements, Advanced Optimizations. Traffic-calibrated testing guidance. Promotional channel review. Validation summary with limitations."}
+  ],
+
+  "i_dont_know_flags": [
+    {"flag": 1, "trigger": "Asked to predict specific conversion rate improvements or revenue impact"},
+    {"flag": 2, "trigger": "User has no performance data at all — shifts to principles-based audit"},
+    {"flag": 3, "trigger": "Asked about design quality without being able to see it — uses self-assessment questions"},
+    {"flag": 4, "trigger": "Traffic too low for A/B testing — recommends implement-and-measure instead"}
+  ],
+
+  "series_context": {
+    "series_name": "Lead Magnet",
+    "position": "3 of 3 (series closer)",
+    "sequence": ["RCP-034 Competitor Analyst", "RCP-035 Lead Magnet Creator", "RCP-036 Lead Magnet Optimizer (this)"],
+    "handoff_in": "Users who completed RCP-034 and RCP-035 may have stronger competitive context and a more refined value proposition. This recipe works independently — prior recipes are not required.",
+    "handoff_out": "No next recipe in series. Output is a prioritized improvement plan. User implements changes and measures results. Suggest re-running this audit after implementing changes and gathering new performance data."
+  },
+
+  "quality_hierarchy": {
+    "traffic_calibration": "All testing recommendations constrained by actual traffic volume — prevents recommending A/B tests that cannot reach statistical significance",
+    "data_honesty": "Analysis approach explicitly tied to data quality — no fabricated data-driven analysis from thin data",
+    "design_self_assessment": "AI acknowledges it cannot see visual design and provides structured self-assessment framework instead of false evaluation",
+    "interactive_pacing": "Dimension-by-dimension delivery with confirmation gates prevents analysis built on misunderstandings"
+  },
+
+  "lessons_learned": [
+    {
+      "id": "LL-RECIPE-036-001",
+      "lesson": "Optimization recipes that depend on user-provided performance data must establish data quality tiers before analysis begins. A single-track analysis path produces either over-confident recommendations (from thin data) or under-specific recommendations (applied uniformly regardless of data richness). The Phase 1 data quality gate prevents both failure modes."
+    },
+    {
+      "id": "LL-RECIPE-036-002",
+      "lesson": "Series closer recipes should be fully standalone — no hard dependencies on prior recipes. Users arriving at an optimization recipe often have an existing asset built without the series workflow. Treating prior series context as additive enrichment (not prerequisite) maximizes the recipe's addressable audience while preserving series cohesion for users who followed the full path."
+    }
+  ]
+}
+# === END AI-TO-AI COMMUNICATION ===

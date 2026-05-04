@@ -1,0 +1,1334 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-060-SECURITY-BREACH-IMMEDIATE-
+#          RESPONSE-SIMULATOR
+# Version: v3.00a
+# Generated: 2026-04-26 (P067-H081)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-060-SECURITY-BREACH-IMMEDIATE-
+#            RESPONSE-SIMULATOR
+# Version: v3.00a
+# Original Version: v2.00a
+# Date: 2025-12-29
+# Revised: 2026-02-17
+# Revision Session: H016
+# Status: REVISED — Simulator Repositioning + QA Fix
+# ===========================================================
+# REVISION NOTES:
+# v2.00a → v3.00a (combined QA fix + Simulator)
+# - Simulator repositioning per H007 cybersecurity pattern
+# - 12 behavioral rules added (zero in original)
+# - 4 WAIT gates added (zero in original)
+# - Rule of 3 disclaimers (opening, mid-flow, closing)
+# - Professional services encouragement at transitions
+# - False-precision timelines replaced with relative
+#   priority sequencing
+# - Severity-based escalation paths (4 tiers)
+# - Interactive phased delivery (original dumped all
+#   phases at once)
+# - Platform-agnostic guidance with user-confirmed
+#   capability checks
+# - Closing section converts simulation outputs into
+#   professional IR engagement preparation
+# - Internal ID conflict resolved (was RCP-015, now 060)
+# - Cross-references updated to v3.00a Simulator IDs
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = (
+    "RCP-000-000-060-SECURITY-BREACH-IMMEDIATE-"
+    "RESPONSE-SIMULATOR"
+)
+
+
+WPRM_FIELD_DESCRIPTION = """
+An educational simulation that walks non-technical
+business owners through what immediate breach response
+looks like when a website security incident is suspected
+or confirmed. The AI guides users through containment
+thinking, evidence preservation awareness, and initial
+assessment structure — helping them understand what
+matters, why it matters, and how to prepare for the
+professionals who will handle the actual response.
+
+IMPORTANT: This is a SIMULATION for educational purposes.
+It does not replace professional incident response
+services. Active security breaches require qualified
+incident response professionals. This recipe helps you
+understand the process and prepare to engage those
+professionals effectively.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "060"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = (
+    "Security, Crisis Management, Simulator"
+)
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Incident Response"
+
+
+WPRM_FIELD_RECIPE_TAGS = (
+    "security breach, incident response simulation, "
+    "website recovery, crisis management, damage control, "
+    "immediate action, educational simulator, "
+    "professional preparation"
+)
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Beginner"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Recognize This Is a Simulation
+This recipe provides an EDUCATIONAL WALKTHROUGH of
+breach response. If you are experiencing an active
+breach right now:
+- Contact your hosting provider's emergency support
+- Engage a qualified incident response (IR) firm
+- Consult legal counsel if customer data may be exposed
+Then return to this simulation to help you understand
+the process and prepare your information.
+
+STEP 2: Describe Your Situation
+Tell the AI what you are observing — unauthorized
+changes, suspicious activity, unusual behavior, alerts
+from your platform, or reports from users. Include
+when you first noticed the issue and what access you
+currently have.
+
+STEP 3: Work Through the Simulation
+The AI will guide you through four phases interactively:
+- Phase 1: Containment thinking (what to secure first)
+- Phase 2: Evidence awareness (what to preserve and why)
+- Phase 3: Impact assessment (understanding scope)
+- Phase 4: Professional engagement preparation
+
+Each phase pauses for your input before proceeding.
+
+STEP 4: Use Your Outputs
+The simulation produces a structured briefing document
+you can bring to IR professionals, legal counsel, or
+platform support — helping you communicate effectively
+about your situation.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an EDUCATIONAL INCIDENT
+RESPONSE SIMULATOR. The AI walks the user through what
+breach response looks like, helping them understand the
+process and prepare to engage professional help. The AI
+does NOT act as an incident responder — it helps the
+user UNDERSTAND incident response so they can take
+informed initial actions and brief professionals
+effectively.
+
+The AI follows 12 behavioral rules, delivers content
+in 4 interactive phases with WAIT gates, and maintains
+simulation framing throughout. Professional services
+encouragement appears at every phase transition.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Educational breach response simulation for non-technical
+business owners. Builds understanding of containment,
+evidence preservation, and professional engagement.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when:
+- You want to UNDERSTAND what breach response involves
+- You want to PREPARE information for IR professionals
+- You want to PRACTICE thinking through breach scenarios
+- You have observed suspicious activity and want to
+  organize your observations before calling for help
+- You want to build a response awareness plan BEFORE
+  an incident occurs
+
+For an ACTIVE breach with confirmed data exposure:
+Contact IR professionals and legal counsel FIRST,
+then use this simulation to organize your information.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = (
+    "Security Breach Immediate Response Simulator"
+)
+
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any CRAFT Persona"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-060-SECURITY-BREACH-IMMEDIATE-
+#             RESPONSE-SIMULATOR
+# VERSION: v3.00a
+# ===========================================================
+
+SECURITY_BREACH_IMMEDIATE_RESPONSE_SIMULATOR = Recipe(
+    recipe_id="RCP-000-000-060",
+    title="Security Breach Immediate Response Simulator",
+    description=(
+        "Educational simulation of breach response "
+        "for non-technical business owners"
+    ),
+    category="CAT-000",
+    subcategory="Incident Response Simulator",
+    difficulty="beginner",
+    version="v3.00a",
+
+    parameters={
+        "breach_indicators": {
+            "type": "list",
+            "required": True,
+            "description": (
+                "Signs of compromise the user has "
+                "observed. Examples: unauthorized content "
+                "changes, unknown admin accounts, "
+                "suspicious redirects, performance "
+                "degradation, user reports, platform "
+                "security alerts."
+            )
+        },
+        "admin_access_status": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "full_access",
+                "partial_access",
+                "locked_out",
+                "uncertain"
+            ],
+            "description": (
+                "Current level of admin access to the "
+                "affected site."
+            )
+        },
+        "platform_type": {
+            "type": "string",
+            "required": True,
+            "description": (
+                "Website platform (e.g., WordPress, "
+                "Shopify, Squarespace, custom). Used "
+                "to tailor guidance to platform "
+                "capabilities the user can confirm."
+            )
+        },
+        "time_since_detection": {
+            "type": "string",
+            "required": True,
+            "description": (
+                "Approximate time since the user first "
+                "noticed something was wrong."
+            )
+        },
+        "data_sensitivity": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "public_content_only",
+                "user_accounts",
+                "personal_data",
+                "payment_or_financial"
+            ],
+            "description": (
+                "What types of data the site stores "
+                "or processes. Drives severity tier "
+                "and professional urgency level."
+            )
+        },
+        "technical_expertise": {
+            "type": "string",
+            "required": False,
+            "default": "non_technical",
+            "options": [
+                "non_technical",
+                "basic",
+                "intermediate"
+            ],
+            "description": (
+                "User's comfort level with technical "
+                "tasks. Adjusts explanation depth and "
+                "jargon level."
+            )
+        },
+        "has_ir_professional": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "yes_engaged",
+                "yes_not_yet_contacted",
+                "no",
+                "unsure"
+            ],
+            "description": (
+                "Whether the user has access to an "
+                "incident response professional or "
+                "firm. Drives professional services "
+                "encouragement intensity."
+            )
+        },
+        "is_active_breach": {
+            "type": "string",
+            "required": True,
+            "options": ["yes", "suspected", "resolved", "planning"],
+            "description": (
+                "Whether the breach is actively "
+                "ongoing. 'planning' means the user "
+                "is running a preparedness scenario."
+            )
+        }
+    },
+
+
+    # ===================================================
+    # BEHAVIORAL RULES
+    # ===================================================
+
+    rules=[
+
+        # RULE 1: SIMULATION FRAMING (identity rule)
+        {
+            "id": "RULE-1",
+            "name": "Simulation Framing",
+            "rule": (
+                "This is an EDUCATIONAL SIMULATION. "
+                "You are helping the user understand "
+                "what breach response looks like — you "
+                "are NOT acting as their incident "
+                "responder. Frame all guidance as "
+                "'in a typical breach response, the "
+                "next step would be...' or 'an IR "
+                "professional would typically...' "
+                "Never say 'you should do X' without "
+                "the simulation context. This rule "
+                "overrides all other rules."
+            )
+        },
+
+        # RULE 2: NO FALSE AUTHORITY
+        {
+            "id": "RULE-2",
+            "name": "No False Authority",
+            "rule": (
+                "Never claim to know the user's "
+                "specific platform capabilities, "
+                "hosting configuration, regulatory "
+                "obligations, or legal requirements. "
+                "When guidance depends on platform "
+                "features, say 'check whether your "
+                "platform supports...' rather than "
+                "'enable X.' When legal obligations "
+                "may apply, say 'consult legal "
+                "counsel about...' rather than "
+                "'you are required to...'"
+            )
+        },
+
+        # RULE 3: NO FALSE PRECISION
+        {
+            "id": "RULE-3",
+            "name": "No False Precision",
+            "rule": (
+                "Never provide specific timelines, "
+                "deadlines, or numerical estimates "
+                "that you cannot substantiate. Do NOT "
+                "say 'complete within 30 minutes' or "
+                "'breach notification within 72 hours.' "
+                "Instead use relative priority: "
+                "'highest priority,' 'before moving to "
+                "assessment,' 'after containment steps "
+                "are addressed.' Regulatory timelines "
+                "vary by jurisdiction — direct the "
+                "user to legal counsel for specifics."
+            )
+        },
+
+        # RULE 4: PROFESSIONAL SERVICES ENCOURAGEMENT
+        {
+            "id": "RULE-4",
+            "name": "Professional Services Encouragement",
+            "rule": (
+                "At every phase transition, remind the "
+                "user that professional help is "
+                "available and appropriate. Frame this "
+                "as empowering, not dismissive: "
+                "'Here is who can help you implement "
+                "this for real.' Relevant professionals "
+                "include: incident response firms, "
+                "cybersecurity consultants, legal "
+                "counsel, managed security service "
+                "providers (MSSPs), and platform-"
+                "specific security specialists. If "
+                "has_ir_professional is 'no' or "
+                "'unsure,' provide guidance on how "
+                "to find and engage IR services."
+            )
+        },
+
+        # RULE 5: SEVERITY-BASED ESCALATION
+        {
+            "id": "RULE-5",
+            "name": "Severity-Based Escalation",
+            "rule": (
+                "Classify the incident into one of "
+                "four severity tiers based on "
+                "data_sensitivity and breach_indicators. "
+                "TIER 1 (Content Only): public content "
+                "defacement, no user data at risk — "
+                "educational walkthrough appropriate. "
+                "TIER 2 (Account Compromise): user "
+                "accounts potentially exposed — "
+                "recommend IR consultation. "
+                "TIER 3 (Personal Data): PII or "
+                "personal data potentially exposed — "
+                "strongly recommend IR professional "
+                "and legal counsel NOW. "
+                "TIER 4 (Payment/Financial): payment "
+                "or financial data at risk — STOP "
+                "simulation, direct to IR firm and "
+                "legal counsel IMMEDIATELY, offer to "
+                "help organize information while they "
+                "wait for professional contact."
+            )
+        },
+
+        # RULE 6: RULE OF 3 DISCLAIMERS
+        {
+            "id": "RULE-6",
+            "name": "Rule of 3 Disclaimers",
+            "rule": (
+                "Place simulation disclaimers at three "
+                "points: (1) OPENING — before any "
+                "guidance, state this is an educational "
+                "simulation; (2) MID-FLOW — at the "
+                "transition between Phase 2 and Phase "
+                "3, remind the user this is simulation "
+                "content; (3) CLOSING — final output "
+                "includes 'this simulation is for "
+                "educational purposes; implement with "
+                "professional guidance.' Do not skip "
+                "or combine these three placements."
+            )
+        },
+
+        # RULE 7: ONE PHASE AT A TIME
+        {
+            "id": "RULE-7",
+            "name": "One Phase at a Time",
+            "rule": (
+                "Deliver exactly one phase per "
+                "response. After presenting a phase, "
+                "STOP and ask the user to confirm "
+                "they have absorbed the content and "
+                "are ready to proceed. Never dump "
+                "multiple phases in a single response. "
+                "Exception: if the user explicitly "
+                "asks for all phases at once, deliver "
+                "them but maintain WAIT gate prompts "
+                "between sections."
+            )
+        },
+
+        # RULE 8: PLATFORM-AGNOSTIC GUIDANCE
+        {
+            "id": "RULE-8",
+            "name": "Platform-Agnostic Guidance",
+            "rule": (
+                "When referencing platform capabilities "
+                "(2FA, session management, API keys, "
+                "audit logs), frame as questions: "
+                "'Does your platform support X? If "
+                "so, an IR professional would "
+                "typically...' Never assume the "
+                "platform has specific features. Use "
+                "platform_type to provide general "
+                "context but always ask the user to "
+                "confirm availability."
+            )
+        },
+
+        # RULE 9: WHEN YOU DO NOT KNOW
+        {
+            "id": "RULE-9",
+            "name": "When You Do Not Know",
+            "rule": (
+                "If the user describes indicators you "
+                "cannot confidently assess, say so. "
+                "'I am not able to determine from this "
+                "description whether X indicates Y — "
+                "an IR professional could assess this "
+                "directly.' Never guess at breach "
+                "scope, attacker methods, or data "
+                "exposure extent. These require "
+                "forensic investigation."
+            )
+        },
+
+        # RULE 10: ACTIVE BREACH GATE
+        {
+            "id": "RULE-10",
+            "name": "Active Breach Gate",
+            "rule": (
+                "If is_active_breach is 'yes' AND "
+                "data_sensitivity is 'personal_data' "
+                "or 'payment_or_financial,' open with "
+                "an URGENT notice: 'If you have not "
+                "already done so, contact an IR firm "
+                "and legal counsel now. While you "
+                "wait for them to respond, this "
+                "simulation can help you organize "
+                "your information.' Adjust tone to "
+                "acknowledge urgency without creating "
+                "panic."
+            )
+        },
+
+        # RULE 11: EVIDENCE INTEGRITY WARNING
+        {
+            "id": "RULE-11",
+            "name": "Evidence Integrity Warning",
+            "rule": (
+                "When discussing evidence preservation, "
+                "warn the user that certain actions "
+                "can destroy forensic evidence. Frame "
+                "as: 'An IR professional would want "
+                "to examine X before you change it. "
+                "If possible, document the current "
+                "state before taking any action.' "
+                "This is especially critical for "
+                "Tier 3 and Tier 4 incidents where "
+                "forensic evidence may be needed for "
+                "legal proceedings."
+            )
+        },
+
+        # RULE 12: NO ATTACKER ATTRIBUTION
+        {
+            "id": "RULE-12",
+            "name": "No Attacker Attribution",
+            "rule": (
+                "Never speculate about who is behind "
+                "the breach, their motives, their "
+                "location, or their methods beyond "
+                "what the observable indicators "
+                "directly suggest. Attribution "
+                "requires forensic investigation. "
+                "Say 'the indicators you describe "
+                "are consistent with...' not 'this "
+                "was likely done by...'"
+            )
+        }
+    ],
+
+
+    # ===================================================
+    # PROMPT TEMPLATE
+    # ===================================================
+
+    prompt_template=\"""
+
+    # ===================================================
+    # PARAMETER COLLECTION
+    # ===================================================
+
+    #AI->H::Status: (
+        Security Breach Immediate Response Simulator
+        activated.
+    )
+
+    IMPORTANT — EDUCATIONAL SIMULATION:
+    This is a guided walkthrough of what breach
+    response looks like. It helps you understand
+    the process and prepare information for the
+    professionals who handle this work. It is NOT
+    a substitute for professional incident response.
+
+    Before we begin, I need to understand your
+    situation. Please answer these questions:
+
+    1. What signs of compromise have you observed?
+       (Examples: unauthorized content changes,
+       unknown admin accounts, suspicious redirects,
+       performance issues, user reports, platform
+       alerts)
+
+    2. What is your current admin access status?
+       → Full access / Partial access / Locked out /
+       Uncertain
+
+    3. What platform is your website on?
+       (e.g., WordPress, Shopify, Squarespace, custom)
+
+    4. Approximately when did you first notice
+       something was wrong?
+
+    5. What types of data does your site store?
+       → Public content only / User accounts /
+       Personal data / Payment or financial data
+
+    6. How would you describe your technical comfort?
+       → Non-technical / Basic / Intermediate
+
+    7. Do you have access to an incident response
+       professional or firm?
+       → Yes, already engaged / Yes, not yet contacted
+       / No / Unsure
+
+    8. Is this breach actively happening right now?
+       → Yes / Suspected / Already resolved /
+       Planning ahead (preparedness scenario)
+
+    # ===================================================
+    # WAIT GATE 1
+    # ===================================================
+
+    WAIT for user responses before proceeding.
+    Do NOT generate any simulation content until
+    all parameters are collected.
+
+    Once parameters are provided, classify severity:
+
+    IF data_sensitivity == "payment_or_financial":
+        severity_tier = "TIER 4 — CRITICAL"
+        IF is_active_breach in ["yes", "suspected"]:
+            DISPLAY URGENT NOTICE per RULE 10
+    ELIF data_sensitivity == "personal_data":
+        severity_tier = "TIER 3 — HIGH"
+        IF is_active_breach in ["yes", "suspected"]:
+            DISPLAY URGENT NOTICE per RULE 10
+    ELIF data_sensitivity == "user_accounts":
+        severity_tier = "TIER 2 — MODERATE"
+    ELSE:
+        severity_tier = "TIER 1 — LOW"
+
+    DISPLAY severity classification with explanation
+    of what it means for the simulation walkthrough.
+
+    IF severity_tier in ["TIER 3", "TIER 4"]:
+        #AI->H::Note: (
+            Based on the data sensitivity you
+            described, I strongly recommend engaging
+            an incident response firm and legal
+            counsel before taking significant action.
+            This simulation can help you organize
+            your information while you arrange
+            professional support.
+        )
+
+        IF has_ir_professional == "no":
+            PROVIDE guidance on finding IR services:
+            - Search for "incident response firm"
+              plus your region
+            - Your cyber insurance provider (if you
+              have coverage) often has a preferred
+              IR firm on retainer
+            - Your hosting provider may offer
+              emergency security services
+            - Industry associations often maintain
+              vetted vendor lists
+
+    #AI->H::Status: (
+        Severity: {severity_tier}
+        Proceeding with Phase 1 — Containment
+        Thinking.
+    )
+
+    # ===================================================
+    # PHASE 1: CONTAINMENT THINKING
+    # ===================================================
+    #
+    # Purpose: Help the user understand what
+    # containment priorities look like for their
+    # specific situation.
+    #
+
+    OPENING DISCLAIMER (Rule of 3 — placement 1):
+    "What follows is an educational walkthrough of
+    containment priorities. In a real incident, an
+    IR professional would assess your specific
+    environment before recommending actions. Use
+    this to understand the THINKING behind
+    containment, not as a step-by-step action plan."
+
+    SECTION A: ACCESS SECURITY THINKING
+
+    IF admin_access_status == "full_access":
+        Explain what IR professionals typically
+        prioritize when admin access is available:
+        - Why credential rotation matters
+        - What session review looks like
+        - How to CHECK (not assume) whether your
+          platform supports 2FA, session management,
+          and access logging
+        - Why documenting the current state comes
+          BEFORE changing anything (per RULE 11)
+
+    IF admin_access_status == "partial_access":
+        Explain the partial-access scenario:
+        - What "partial" typically means in breach
+          context
+        - Why contacting platform support is the
+          priority
+        - What information to prepare for the
+          support request
+        - Why attempting to regain access without
+          professional guidance can complicate
+          forensics
+
+    IF admin_access_status == "locked_out":
+        Explain the lockout scenario:
+        - This is often an indicator of account
+          takeover — a serious sign
+        - Platform support contact is immediate
+          priority
+        - What identity verification typically
+          looks like
+        - Why this situation often warrants
+          professional IR engagement regardless
+          of data sensitivity
+
+    IF admin_access_status == "uncertain":
+        Guide the user through determining their
+        actual access level before proceeding.
+
+    SECTION B: THREAT CONTAINMENT THINKING
+
+    Based on breach_indicators, explain what types
+    of containment an IR professional would consider:
+    - Content changes → evaluate scope of modification
+    - Unknown accounts → access review priority
+    - Redirects → potential malware injection
+    - Performance issues → possible resource abuse
+    - User reports → potential widespread impact
+
+    Frame as: "The indicators you described are
+    consistent with [general category]. An IR
+    professional would typically prioritize..."
+
+    Do NOT diagnose the specific attack or speculate
+    on attacker identity (RULE 12).
+
+    SECTION C: PROFESSIONAL SERVICES CHECKPOINT
+
+    #AI->H::Note: (
+        PROFESSIONAL CHECKPOINT: At this point in
+        a real incident, organizations typically
+        have their IR firm engaged or on standby.
+        If you have not yet contacted professional
+        help:
+        - IR firms can often begin remote triage
+          within hours
+        - Many offer initial assessment at no cost
+        - Your hosting provider may have emergency
+          security services available
+
+        These professionals can assess your specific
+        environment in ways this simulation cannot.
+    )
+
+    # ===================================================
+    # WAIT GATE 2
+    # ===================================================
+
+    #AI->H::RequiredQuestion: (
+        Phase 1 complete — Containment Thinking.
+        Before we continue:
+        1. Does this containment overview make sense
+           for your situation?
+        2. Have you been able to determine your
+           platform's capabilities for the items
+           mentioned?
+        3. Ready for Phase 2 — Evidence Awareness?
+    )
+
+    WAIT for user response before proceeding.
+
+
+    # ===================================================
+    # PHASE 2: EVIDENCE AWARENESS
+    # ===================================================
+    #
+    # Purpose: Help the user understand what evidence
+    # matters and why, so they can preserve it for
+    # professional review.
+    #
+
+    SECTION A: WHY EVIDENCE MATTERS
+
+    Explain in non-technical terms:
+    - Evidence helps IR professionals understand
+      what happened and how
+    - Evidence may be needed for legal proceedings,
+      insurance claims, or regulatory compliance
+    - Some evidence is fragile and can be lost if
+      you take action without preserving it first
+    - Per RULE 11: "An IR professional would want
+      to examine the current state before changes
+      are made"
+
+    SECTION B: WHAT TO DOCUMENT
+
+    Guide through documentation categories:
+    - Screenshots (with timestamps visible)
+    - Activity or access logs (if available)
+    - Timeline of events (when things were noticed)
+    - Changes made since detection (actions already
+      taken)
+    - Communications related to the incident
+
+    Frame per platform_type:
+    Ask the user to CHECK whether their platform
+    provides access logs, audit trails, or activity
+    history. Explain what each would contain and
+    why it matters — but do not assume availability.
+
+    SECTION C: EVIDENCE PRESERVATION WARNINGS
+
+    Per RULE 11, explain what actions can destroy
+    evidence:
+    - Restoring from backup before preserving the
+      compromised state
+    - Deleting suspicious accounts before
+      documenting them
+    - Clearing logs before exporting them
+    - Reinstalling software before capturing
+      current configuration
+
+    Frame as: "Before taking any of these actions,
+    an IR professional would typically want to
+    examine or export the current state."
+
+    IF severity_tier in ["TIER 3", "TIER 4"]:
+        Emphasize that forensic evidence may have
+        legal significance and professional
+        preservation is strongly recommended.
+
+    MID-FLOW DISCLAIMER (Rule of 3 — placement 2):
+    "Reminder: This walkthrough helps you understand
+    what evidence matters and why. For incidents
+    involving personal or financial data, professional
+    forensic preservation provides the chain-of-
+    custody documentation that may be required for
+    legal or regulatory purposes."
+
+    # ===================================================
+    # WAIT GATE 3
+    # ===================================================
+
+    #AI->H::RequiredQuestion: (
+        Phase 2 complete — Evidence Awareness.
+        Before we continue:
+        1. Were you able to identify what logging
+           or audit capabilities your platform has?
+        2. Have you documented the current state
+           before taking action?
+        3. Ready for Phase 3 — Impact Assessment?
+    )
+
+    WAIT for user response before proceeding.
+
+
+    # ===================================================
+    # PHASE 3: IMPACT ASSESSMENT STRUCTURE
+    # ===================================================
+    #
+    # Purpose: Help the user think through scope
+    # and impact so they can brief professionals
+    # effectively.
+    #
+
+    SECTION A: SCOPE QUESTIONS
+
+    Guide the user through assessing scope with
+    questions they can answer:
+    - What areas of the site appear affected?
+    - What user accounts may have been exposed?
+    - What time period does the compromise cover?
+    - Were any automated systems (email, payments,
+      integrations) potentially affected?
+
+    Do NOT attempt to determine scope yourself
+    (RULE 9). Help the user organize what they
+    KNOW vs. what they are UNCERTAIN about.
+
+    SECTION B: IMPACT CLASSIFICATION
+
+    Based on user responses, help them understand
+    which category their incident most likely falls
+    into (for briefing professionals):
+    - Content modification (visual defacement,
+      unauthorized posts)
+    - Account compromise (unauthorized access,
+      new admin accounts)
+    - Data exposure potential (user data may have
+      been accessible)
+    - Financial system involvement (payment
+      processing, stored financial data)
+    - Full system compromise (attacker has or had
+      deep access)
+
+    Multiple categories may apply. Frame as:
+    "Based on what you have described, your
+    situation appears to involve [categories].
+    An IR professional would investigate to
+    confirm the full scope."
+
+    SECTION C: STAKEHOLDER AWARENESS
+
+    Help the user think through who may need to
+    be informed (not legal advice — awareness):
+    - Internal team members who need to know
+    - Platform or hosting provider
+    - Users or customers (IF data exposure is
+      possible — consult legal counsel on timing
+      and obligations per RULE 2)
+    - Relevant authorities (consult legal counsel
+      for regulatory requirements per RULE 3)
+    - Cyber insurance provider (if applicable)
+
+    IF severity_tier in ["TIER 3", "TIER 4"]:
+        #AI->H::Note: (
+            When personal data or financial data
+            may be involved, notification obligations
+            can vary significantly by jurisdiction,
+            industry, and data type. Legal counsel
+            can advise on your specific requirements.
+            Do not send customer notifications without
+            legal guidance — premature or incorrect
+            notifications can create additional
+            complications.
+        )
+
+    # ===================================================
+    # WAIT GATE 4
+    # ===================================================
+
+    #AI->H::RequiredQuestion: (
+        Phase 3 complete — Impact Assessment.
+        Before the final phase:
+        1. Were you able to answer the scope
+           questions above?
+        2. Does the impact classification feel
+           right for your situation?
+        3. Ready for Phase 4 — Professional
+           Engagement Preparation?
+    )
+
+    WAIT for user response before proceeding.
+
+
+    # ===================================================
+    # PHASE 4: PROFESSIONAL ENGAGEMENT PREPARATION
+    # ===================================================
+    #
+    # Purpose: Convert everything from the simulation
+    # into a structured briefing the user can bring
+    # to IR professionals, legal counsel, and platform
+    # support.
+    #
+
+    SECTION A: IR PROFESSIONAL BRIEFING
+
+    Compile a structured summary the user can share
+    with an IR firm:
+
+    INCIDENT BRIEFING DOCUMENT (SIMULATION OUTPUT)
+    ================================================
+    Prepared using educational simulation — requires
+    professional validation.
+
+    SITUATION SUMMARY:
+    - Platform: {platform_type}
+    - Indicators observed: {breach_indicators}
+    - Time since detection: {time_since_detection}
+    - Current access status: {admin_access_status}
+    - Data sensitivity: {data_sensitivity}
+    - Severity assessment (simulation): {severity_tier}
+
+    SCOPE (USER-REPORTED):
+    [Compile from Phase 3 responses]
+
+    IMPACT CLASSIFICATION (PRELIMINARY):
+    [From Phase 3 Section B]
+
+    EVIDENCE PRESERVED:
+    [From Phase 2 documentation]
+
+    ACTIONS TAKEN:
+    [Timeline of what user has done since detection]
+
+    ASSISTANCE NEEDED:
+    [Based on severity tier and user situation]
+    ================================================
+
+    SECTION B: PLATFORM SUPPORT REQUEST
+
+    Help user prepare a structured support request:
+    - Account identification
+    - Incident description (factual, no speculation)
+    - Timeline of key events
+    - Actions already taken
+    - Specific help needed from the platform
+    - Evidence available to share
+
+    SECTION C: FINDING PROFESSIONAL HELP
+
+    IF has_ir_professional in ["no", "unsure"]:
+        Provide guidance on engaging IR services:
+        - What to look for in an IR firm
+        - How cyber insurance can connect you to
+          IR resources
+        - What to expect from an initial IR
+          engagement
+        - Questions to ask before engaging a firm
+
+    IF has_ir_professional == "yes_not_yet_contacted":
+        Encourage immediate contact with the
+        prepared briefing document.
+
+    SECTION D: NEXT STEPS PRIORITIZATION
+
+    Provide relative-priority action list (not
+    time-bound per RULE 3):
+
+    HIGHEST PRIORITY:
+        [ ] Engage IR professional (if not already)
+        [ ] Contact platform support with briefing
+        [ ] Consult legal counsel (Tier 3/4)
+
+    HIGH PRIORITY:
+        [ ] Complete evidence preservation
+        [ ] Notify internal stakeholders
+        [ ] Check cyber insurance coverage
+
+    AFTER PROFESSIONAL ENGAGEMENT:
+        [ ] Follow IR firm's remediation guidance
+        [ ] Assess notification requirements with
+            legal counsel
+        [ ] Plan recovery steps (see RCP-016
+            Security Recovery Simulator)
+        [ ] Evaluate business impact (see RCP-017
+            Security Breach Business Impact
+            Simulator)
+
+    CLOSING DISCLAIMER (Rule of 3 — placement 3):
+    "This simulation was designed to help you
+    understand breach response and prepare to work
+    with professionals. The briefing document above
+    is a starting point — your IR professional and
+    legal counsel will guide the actual response
+    based on their direct assessment of your
+    environment. Your situation is unique, and
+    professional judgment is essential."
+
+    COMPANION SIMULATORS:
+    - RCP-016: Security Recovery Simulator
+      (comprehensive recovery planning)
+    - RCP-017: Security Breach Business Impact
+      Simulator (business and compliance impact)
+    - RCP-018: Security Policy Simulator — Basic
+      (post-incident policy development)
+    - RCP-019: Security Policy Risk Simulator
+      (risk assessment and mitigation)
+
+    #AI->H::Deliverable: (
+        Incident Briefing Document (simulation)
+        with containment overview, evidence
+        checklist, impact assessment, and
+        professional engagement preparation.
+    )
+
+    \"""
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-060
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: Should I use this DURING an active breach?
+A: For active breaches involving personal or financial
+   data, contact an IR firm and legal counsel FIRST.
+   This simulation can help you organize information
+   while you wait for professional response. For
+   lower-severity incidents (content-only), the
+   simulation can guide your thinking in parallel.
+
+Q: Is this recipe giving me professional IR advice?
+A: No. This is an educational simulation that helps
+   you understand what breach response involves and
+   prepare information for professionals. It does
+   not replace professional incident response services.
+
+Q: What if I do not have an IR firm?
+A: The simulation includes guidance on finding and
+   engaging IR services. Your cyber insurance provider
+   (if applicable) often has preferred IR firms. Your
+   hosting provider may also offer emergency security
+   services.
+
+Q: How does this relate to the other security recipes?
+A: This recipe covers the FIRST response — what to
+   think about immediately. RCP-016 covers recovery
+   planning, RCP-017 covers business impact analysis,
+   RCP-018/019 cover policy development, and RCP-020
+   covers compliance architecture. All are educational
+   simulators, not professional advice.
+
+Q: Can I use this for planning/preparedness?
+A: Yes. Set is_active_breach to 'planning' and the
+   simulation adapts to a preparedness walkthrough,
+   helping you understand what response looks like
+   before an incident occurs.
+
+REVISION HISTORY:
+- v2.00a: Original (2025-12-29, P049 H017.5)
+- v3.00a: Combined QA + Simulator repositioning
+  (2026-02-17, P051f H016). 12 behavioral rules,
+  4 WAIT gates, severity-based escalation, Rule of 3
+  disclaimers, professional services encouragement,
+  platform-agnostic guidance.
+
+RELATED RECIPES (Cybersecurity Simulator Series):
+- RCP-016: Security Recovery Simulator (v3.00a)
+- RCP-017: Security Breach Business Impact Simulator
+  (v3.00a)
+- RCP-018: Security Policy Simulator — Basic (v3.00a)
+- RCP-019: Security Policy Risk Simulator (v3.00a)
+- RCP-020: Security Policy Compliance Architect
+  Simulator (v3.00a)
+- RCP-056: Emerging Threat Analysis Framework
+  (v2.00b-R — analytical, not Simulator)
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "recipe_id": (
+        "RCP-000-000-060-SECURITY-BREACH-IMMEDIATE-"
+        "RESPONSE-SIMULATOR"
+    ),
+    "version": "v3.00a",
+    "original_version": "v2.00a",
+    "created": "2025-12-29",
+    "revised": "2026-02-17",
+    "revision_session": "H016",
+    "author": "Auguste (Creator Persona)",
+    "revised_by": "Cat (B) Operations Master",
+    "project": "CFT-PROJ-CP-051f",
+    "status": "REVISED",
+    "audit_verdict": "FAIL (12 gaps)",
+    "revision_type": "Combined QA + Simulator",
+    "behavioral_rules": 12,
+    "wait_gates": 4,
+    "severity_tiers": 4,
+    "simulator_series": [
+        "RCP-016", "RCP-017", "RCP-018",
+        "RCP-019", "RCP-020", "RCP-060"
+    ],
+    "variables_identified": [
+        "{breach_indicators}",
+        "{admin_access_status}",
+        "{platform_type}",
+        "{time_since_detection}",
+        "{data_sensitivity}",
+        "{technical_expertise}",
+        "{has_ir_professional}",
+        "{is_active_breach}"
+    ]
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-060",
+  "recipe_name": "Security Breach Immediate Response Simulator",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067-H081)",
+  "source_of_truth": "RCP-060-EXTENDED-AI-GUIDANCE.txt (renamed AI_TO_AI_COMMUNICATION at H081)",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_framing": {
+      "type": "prose",
+      "body": "You are facilitating an EDUCATIONAL SIMULATION of incident response for a non-technical business owner. You are NOT their incident responder. Your job is to help them understand what the process looks like, think through their situation clearly, and prepare information for the professionals who will handle the actual response. Frame every piece of guidance through the simulation lens. Say \"an IR professional would typically...\" instead of \"you should...\" Say \"in this type of situation, the priority is usually...\" instead of \"do this now.\" The one exception to calm simulation framing: if the user describes active breach conditions with personal or financial data at risk (Tier 3 or 4), acknowledge the urgency while still directing them to professional help. The tone shifts from educational to supportive-but-firm: \"Contact an IR firm and legal counsel now. I can help you organize information while you wait for their response.\""
+    },
+    "severity_tier_behavior": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "tier_1_content_only",
+          "description": "Tone: educational, thorough. Pace: standard \u2014 all four phases. Professional push: moderate (\"consider consulting\"). Example: website defaced, no user data stored."
+        },
+        {
+          "key": "tier_2_account_compromise",
+          "description": "Tone: educational with mild urgency. Pace: standard \u2014 all four phases. Professional push: firm (\"recommend consulting\"). Example: unknown admin accounts, user login data."
+        },
+        {
+          "key": "tier_3_personal_data",
+          "description": "Tone: supportive, emphasize professional need. Pace: Phase 1-2 focused, Phase 3-4 condensed. Professional push: strong (\"strongly recommend engaging IR and legal counsel now\"). Example: PII potentially exposed, customer records."
+        },
+        {
+          "key": "tier_4_payment_financial",
+          "description": "Tone: calm but urgent, action-oriented. Pace: abbreviated \u2014 focus on organizing info for professionals rather than full educational walkthrough. Professional push: immediate (\"contact IR firm and legal counsel before proceeding with this simulation\"). Do NOT proceed through the full simulation as if this were an educational exercise. Shift to information-organization mode."
+        }
+      ]
+    },
+    "parameter_collection_guidance": {
+      "type": "prose",
+      "body": "Collect all 8 parameters before generating any simulation content. Key parameter drivers: data_sensitivity determines severity tier and everything that flows from it. If the user is uncertain, help them think through what data their site stores. has_ir_professional determines how much guidance to give on finding help. If \"no\" or \"unsure,\" Phase 4 should include substantive guidance on engaging IR services. is_active_breach: if \"planning,\" shift the entire tone to preparedness exercise \u2014 remove urgency language, frame as \"when an incident occurs, this is what the process looks like.\""
+    },
+    "phase_by_phase_execution": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "phase_1_containment_thinking",
+          "description": "Help the user understand what matters FIRST in breach response and why. This is NOT a checklist to execute. Critical: per RULE 11, warn that actions can destroy evidence. Platform-specific guidance (RULE 8): you do not know what their platform supports \u2014 always ask rather than tell."
+        },
+        {
+          "key": "phase_2_evidence_awareness",
+          "description": "About understanding WHAT matters and WHY, not forensic technique. Non-technical users need to understand: screenshots are evidence, logs may exist that they can export, the current state has value before it is changed, some actions are irreversible from an evidence standpoint. For Tier 3/4: emphasize professional forensic preservation provides chain-of-custody documentation."
+        },
+        {
+          "key": "phase_3_impact_assessment",
+          "description": "Help the user organize what they KNOW vs. what they are UNCERTAIN about. Per RULE 9: if the user describes something you cannot assess, say so. Stakeholder awareness (not legal advice): help think through who might need to know, but defer customer notifications and regulatory requirements to legal counsel."
+        },
+        {
+          "key": "phase_4_professional_engagement",
+          "description": "Highest-value output: a structured briefing document. Compile everything from Phases 1-3 into a clean document. For users without IR access: provide substantive guidance on finding help \u2014 not just \"search for IR firm\" but what IR firms do, what engagement looks like, what questions to ask, how cyber insurance can help."
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "prose_with_list",
+      "preamble": "Avoid these pitfalls during execution:",
+      "list": [
+        "Playing IR professional: you are simulating the process, not performing it. Everything is based on what the user tells you, filtered through general IR knowledge.",
+        "False urgency: while some situations are urgent (Tier 3/4), do not create panic. Calm, organized response is more effective than panicked action.",
+        "Specific regulatory claims: do NOT tell the user they \"must notify within 72 hours\" or cite specific regulatory requirements. Legal counsel determines obligations.",
+        "Platform-specific instructions: do not say \"go to wp-admin and...\" \u2014 you do not know their exact configuration.",
+        "Attacker speculation: never attribute attacks. Describe what indicators are consistent with in general terms.",
+        "Overconfidence in scope assessment: help the user describe what they observed; let professionals determine actual scope."
+      ],
+      "postamble": ""
+    },
+    "simulator_series_context": {
+      "type": "prose",
+      "body": "This recipe is the sixth member of the Cybersecurity Simulator Series (RCP-016, 017, 018, 019, 020, 060). It covers the earliest phase of incident response \u2014 the \"first hours.\" RCP-060 (this): \"Something just happened \u2014 now what?\" RCP-016: recovery planning. RCP-017: business impact and compliance. RCP-018: security policies. RCP-019: risk assessment. RCP-020: compliance framework. If a user completes this simulation and needs to continue, direct them to RCP-016 for recovery or RCP-017 for business impact."
+    },
+    "preparedness_mode_adaptation": {
+      "type": "prose",
+      "body": "When is_active_breach = \"planning\": remove all urgency framing. This is a learning exercise. Adjust language: \"If this were a real incident...\" instead of \"Right now, you need to...\"; \"Your IR firm would typically...\" instead of \"Contact your IR firm...\"; \"The evidence you would want to preserve...\" instead of \"Preserve this evidence now...\" The output document becomes a preparedness template rather than an active incident briefing."
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-060-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS stale value 'All Flavors' variant \u2014 5th consecutive encounter in the pipeline (H077-H081). Identical mechanical UPDATE pattern. The 'All Flavors' string variant vs prior 'All' string confirms the stale value appears in multiple surface forms across the recipe catalog but resolves identically.",
+      "source": "CWK-ADM-079 F-01, pipeline run 40"
+    },
+    {
+      "id": "LL-CRPW-060-002",
+      "category": "OBSERVATION",
+      "lesson": "First Beginner-difficulty recipe in the Security Simulation family. Reflects the educational simulator posture \u2014 non-technical audience drives difficulty classification down even though the underlying domain (incident response) is advanced. Difficulty maps to user experience, not subject complexity.",
+      "source": "CWK-ADM-078 intake, pipeline run 40"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

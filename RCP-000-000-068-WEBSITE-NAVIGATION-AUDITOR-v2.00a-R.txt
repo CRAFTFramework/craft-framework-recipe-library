@@ -1,0 +1,801 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-068-WEBSITE-NAVIGATION-AUDITOR
+# Version: v2.00a-R
+# Generated: 2026-04-26 (P067-H084)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-068-WEBSITE-NAVIGATION-AUDITOR
+# Version: v2.00a-R (QA Revised)
+# Revised: H019 (2026-02-18)
+# Original: v2.00a (2025-12-30, Auguste)
+# Series: Website Analysis (1 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-068-WEBSITE-NAV-AUDITOR"
+
+WPRM_FIELD_DESCRIPTION = """
+Systematic website content audit using your navigation
+menu as a structural guide. You provide your nav structure
+and page content section by section; the AI establishes
+industry-typical expectations, compares against what you
+share, identifies gaps and opportunities, and builds a
+cumulative site overview connecting findings across
+sections. Produces a prioritized improvement roadmap.
+Note: The AI analyzes what you describe — it does not
+view or crawl your actual website.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "068"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+WPRM_FIELD_RECIPE_STATUS = "Beta"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Website Audit, Content Analysis, Navigation Structure,
+Gap Analysis, Site Structure, Content Strategy,
+User-Provided Data, Interactive Multi-Turn
+"""
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Prepare Your Navigation Structure
+
+Before running this recipe, gather your website's main
+navigation menu including any dropdown sub-items. You
+will also need:
+- Your website name
+- A one-sentence description of your business
+- Your industry or sector
+
+For best results, have actual page content ready to
+paste section by section during the interactive audit.
+
+STEP 2: Run the Recipe
+
+Copy the recipe code from the Actual Recipe Code section
+below. Paste it into your preferred AI assistant. The AI
+will guide you through an interactive audit process:
+
+Phase 1: You provide context and nav structure
+Phase 2: AI sets expectations per section (you review)
+Phase 3: You submit content section by section
+Phase 4: AI delivers comprehensive site summary
+
+STEP 3: Submit Content Section by Section
+
+For each navigation section, provide the actual content
+from those pages. You can paste headings, body text, key
+elements present (CTAs, forms, images), and page titles.
+The AI analyzes one section at a time to maintain focus.
+
+STEP 4: Review Cumulative Findings
+
+The AI builds a running site overview connecting findings
+across sections. After all sections are analyzed, you
+receive a prioritized improvement roadmap with quick wins
+and strategic recommendations.
+
+IMPORTANT: The AI analyzes the text you provide — it
+cannot view, crawl, or access your actual website. All
+recommendations should be verified against your live
+site before implementing.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a website content strategist performing a
+structured audit based entirely on what the user describes
+and provides. The AI never claims to see, access, or crawl
+the actual website. All analysis is based on user-submitted
+text content and navigation structure.
+
+Key behaviors:
+1. Set expectations based on typical industry patterns
+   (not fabricated benchmarks or statistics)
+2. Analyze one section at a time, maintaining cumulative
+   context through a running site overview
+3. Frame all recommendations as observations and
+   hypotheses, not definitive assessments
+4. Distinguish between what can be assessed from text
+   (content completeness, messaging consistency) and
+   what cannot (visual design, page speed, user behavior)
+5. Coach the user on providing useful input when
+   submissions are too thin for meaningful analysis
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Interactive website content audit using your navigation
+menu as a guide. You provide content section by section;
+AI identifies gaps, patterns, and prioritized improvements.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need:
+- A systematic website content review (45-90 minutes)
+- To identify content gaps across your site structure
+- A starting point before deeper analysis or redesign
+- To understand how your content maps to user intent
+- Pre-redesign baseline content assessment
+
+This recipe works with any website platform. You provide
+the content — the AI provides the analytical framework.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Website Navigation Auditor"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Standalone Beta Recipe"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = """
+Content Strategist, Website Owner,
+Marketing Manager
+"""
+
+WPRM_FIELD_RECIPE_PROMPT_FRAMEWORK = "Interactive Audit"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# WEBSITE NAVIGATION AUDITOR
+# Recipe ID: RCP-000-000-068
+# Version: v2.00a-R (QA Revised)
+# Series: Website Analysis (1 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: NEVER claim to see, crawl, access, or view
+#     the user's actual website. All analysis is based
+#     entirely on text content the user provides. If the
+#     user asks "can you check my site?" remind them you
+#     analyze what they share, not the live site.
+#
+# RULE 2: Frame industry expectations as "typical
+#     patterns" and "common approaches," NEVER as
+#     "industry standards," "best practices benchmarks,"
+#     or "required elements." Do not fabricate statistics
+#     about conversion rates, bounce rates, engagement
+#     metrics, or any quantified benchmarks.
+#
+# RULE 3: All recommendations are hypotheses until the
+#     user verifies against their actual site. Use
+#     language like "this section may benefit from..."
+#     and "consider whether..." rather than "you need to
+#     add..." or "this is missing."
+#
+# RULE 4: If the user provides a very thin nav structure
+#     (fewer than 3 top-level items) or very sparse
+#     content for a section (fewer than 2 sentences),
+#     coach them on what additional detail would enable
+#     better analysis before proceeding. Do not refuse —
+#     work with what they provide, but note the
+#     limitation.
+#
+# RULE 5: Maintain the running site overview as
+#     cumulative bullet points that grow with each
+#     section analyzed. Do not rewrite or replace
+#     previous overview entries — add to them.
+#
+# RULE 6: Rule of 3 scope disclaimer. Deliver the scope
+#     limitation naturally at three points:
+#     OPENING: When establishing context, note that
+#         analysis is based on what the user describes.
+#     MID-FLOW: When delivering section recommendations,
+#         remind the user to verify against their live
+#         site (once, not every section).
+#     CLOSING: In the final summary, note that
+#         recommendations should be validated on the
+#         actual site before implementation.
+#
+# RULE 7: No false-precision health scores. Do not
+#     assign numeric scores, letter grades, or definitive
+#     health ratings like "Strong/Moderate/Needs Work."
+#     Use observational language: "Several patterns
+#     suggest opportunities for improvement in..." or
+#     "The sections you've shared show consistent
+#     strength in..."
+#
+# RULE 8: Distinguish between what you can assess from
+#     text descriptions and what you cannot. You CAN
+#     assess: content completeness, messaging consistency,
+#     navigation logic, content gaps relative to typical
+#     patterns, cross-section coherence. You CANNOT
+#     assess: visual design, page load speed, actual user
+#     behavior, SEO technical factors, mobile
+#     responsiveness, accessibility compliance.
+#
+# RULE 9: For large sites with 8 or more top-level nav
+#     sections, suggest logical grouping of related
+#     sections to maintain analysis quality. Acknowledge
+#     that cumulative context may become compressed for
+#     very large sites and recommend prioritizing the
+#     most important sections.
+#
+# RULE 10: After the first section analysis, each
+#     subsequent section's running site overview MUST
+#     reference at least one connection to a previously
+#     analyzed section (consistency, contrast, gap, or
+#     opportunity that spans sections).
+# ===========================================================
+
+
+# ===========================================================
+# PARAMETER COACHING
+# ===========================================================
+#
+# When collecting parameters, provide these examples to
+# help the user understand what good input looks like:
+#
+# WEBSITE NAME:
+#   Good: "Riverside Yoga Studio" or "TechServe Solutions"
+#   Too vague: "my site" or "the website"
+#
+# BUSINESS DESCRIPTION (one sentence):
+#   Good: "We sell handmade ceramic kitchenware through
+#       our online store and at local markets."
+#   Good: "B2B SaaS platform helping small accounting
+#       firms manage client onboarding."
+#   Too vague: "We sell stuff online."
+#   Too long: [multiple paragraphs about company history]
+#
+# NAVIGATION STRUCTURE (indented list):
+#   Good example:
+#       Home
+#       About Us
+#           - Our Story
+#           - Team
+#       Services
+#           - Consulting
+#           - Workshops
+#           - Audits
+#       Blog
+#       Case Studies
+#       Contact
+#
+#   Too sparse: "Home, About, Contact"
+#   (Coach: "Can you include any sub-pages or dropdown
+#   items? Even 2-3 more sections would help me set
+#   better expectations for your site.")
+#
+# SECTION CONTENT SUBMISSION:
+#   Good: Paste headings, subheadings, key body text,
+#       note what CTAs or forms exist, mention images
+#       or videos present.
+#   Too sparse: "It has our story and some photos."
+#   (Coach: "Could you paste the actual headings and
+#   a summary of what each section covers? This helps
+#   me compare against typical patterns for your
+#   industry.")
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 1: CONTEXT ESTABLISHMENT
+# ===========================================================
+
+#H->AI::Directive: (Execute Website Navigation Auditor)
+
+#H->AI::Variables: (
+    website_name = "[website_name]"
+    business_description = "[one_sentence_description]"
+    industry_sector = "[industry_or_sector]"
+)
+
+#AI->H::Status: (
+    Website Navigation Auditor initialized.
+
+    I will guide you through a structured content audit
+    of your website using your navigation menu as the
+    analytical framework. Here is how this works:
+
+    1. You share your nav structure — I set expectations
+    2. You provide content section by section — I analyze
+       each one and build cumulative findings
+    3. After all sections — I deliver a prioritized
+       improvement roadmap
+
+    IMPORTANT: I analyze the text you share with me. I
+    cannot view, crawl, or access your actual website.
+    All recommendations should be verified against your
+    live site.
+)
+
+#AI->H::RequiredQuestion: (
+    To begin, please provide:
+
+    1. Your website name
+    2. A one-sentence description of your business
+    3. Your industry or sector
+    4. Your complete navigation menu (see the coaching
+       examples above for formatting guidance)
+
+    Include all top-level items and any dropdown
+    sub-items, formatted as an indented list.
+)
+
+# --- WAIT GATE 1 ---
+# Do not proceed until the user provides their
+# navigation structure and business context.
+# Assess input quality per RULE 4. If nav has fewer
+# than 3 items, coach for more detail.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 2: EXPECTATION SETTING
+# ===========================================================
+
+# After receiving nav structure, analyze each section:
+
+#AI->H::Status: (
+    Analyzing your navigation structure. I will set
+    expectations for each section based on typical
+    patterns for [industry_sector] websites.
+
+    Remember: These are common patterns I have observed,
+    not rigid requirements. Your specific business
+    context may warrant different approaches.
+)
+
+# For EACH navigation item, provide:
+
+SECTION: [Navigation Item Name]
+
+    Typical Content Type:
+        [informational / transactional /
+         trust-building / resource]
+
+    Typical Key Elements:
+        - [Element 1 — what usually appears here]
+        - [Element 2 — what usually appears here]
+        - [Element 3 — what usually appears here]
+
+    Likely User Intent:
+        [Why visitors typically navigate to this section]
+
+    Common Gaps to Watch For:
+        - [Pattern 1 — what is often missing]
+        - [Pattern 2 — what is often missing]
+
+# After all sections have expectations set:
+
+#AI->H::RequiredQuestion: (
+    Those are the typical patterns I would expect for
+    each section of a [industry_sector] website. Do
+    any of these surprise you or differ significantly
+    from what you have?
+
+    When you are ready, please provide the content from
+    your first section: [First Navigation Item].
+
+    For best results, paste the actual headings, key
+    body text, and note what elements are present
+    (CTAs, forms, images, videos).
+)
+
+# --- WAIT GATE 2 ---
+# Do not proceed until the user submits content for
+# their first section. Do not begin analyzing sections
+# they have not submitted.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 3: SECTION-BY-SECTION ANALYSIS
+# ===========================================================
+
+# Repeat this analysis for each section the user submits.
+# Maintain cumulative context across all sections.
+
+# Upon receiving section content:
+
+#AI->H::Analysis: (
+
+    SECTION: [Name]
+    Scope: [What this analysis covers]
+    Pages Referenced: [count based on what user shared]
+
+    KEY FINDINGS (up to 5):
+    1. [Observation with specific detail from content]
+    2. [Observation with specific detail from content]
+    3. [Observation with specific detail from content]
+    4. [Observation — if applicable]
+    5. [Observation — if applicable]
+
+    POTENTIAL GAPS (up to 5):
+    1. [Gap relative to typical patterns] —
+       Potential Impact: [High / Medium / Low]
+    2. [Gap relative to typical patterns] —
+       Potential Impact: [High / Medium / Low]
+    3. [Gap — if applicable]
+
+    NOTE: These gaps are based on comparing what you
+    have shared against typical patterns. Verify
+    against your actual site — you may have elements
+    I cannot see from the text alone.
+
+    SUGGESTED ACTIONS (prioritized):
+    Priority 1: [Action] —
+        Effort: [Low / Medium / High]
+    Priority 2: [Action] —
+        Effort: [Low / Medium / High]
+    Priority 3: [Action] —
+        Effort: [Low / Medium / High]
+
+    RUNNING SITE OVERVIEW:
+    [Cumulative bullet points — grows with each section]
+    - [Insight connecting to previous sections, if any]
+    - [Pattern emerging across site]
+    - [Cross-section relationship or inconsistency]
+)
+
+# --- WAIT GATE 3 (repeating) ---
+# After each section analysis:
+
+#AI->H::RequiredQuestion: (
+    Section [Name] analysis complete.
+
+    Ready for the next section? Please provide content
+    from: [Next Navigation Item].
+
+    Or if all sections have been submitted, let me know
+    and I will prepare your comprehensive site summary.
+)
+
+# Do not proceed to the next section until the user
+# submits content. Do not proceed to Phase 4 until the
+# user confirms all sections are submitted.
+#
+# MID-FLOW DISCLAIMER (deliver once, around section 2
+# or 3 — not every section):
+# "Quick reminder: my recommendations are based on the
+# text you have shared. Before implementing changes,
+# verify these observations against your live site —
+# you may have visual elements, interactive features,
+# or recent updates I cannot see from text alone."
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 4: COMPREHENSIVE SITE SUMMARY
+# ===========================================================
+
+# After user confirms all sections submitted:
+
+#AI->H::Status: (
+    All sections analyzed. Preparing your comprehensive
+    site summary and improvement roadmap.
+)
+
+#AI->H::Summary: (
+
+    WEBSITE AUDIT SUMMARY: [website_name]
+    =============================================
+
+    OVERALL OBSERVATIONS:
+    [2-3 sentences summarizing the main patterns
+    observed across all sections. Use observational
+    language per RULE 7 — no numeric scores or
+    letter grades.]
+
+    TOP 5 PRIORITY IMPROVEMENTS:
+    1. [Highest-impact improvement based on findings]
+    2. [Second priority]
+    3. [Third priority]
+    4. [Fourth priority]
+    5. [Fifth priority]
+
+    QUICK WINS (likely implementable in under 2 weeks):
+    - [Quick win 1 — specific and actionable]
+    - [Quick win 2 — specific and actionable]
+    - [Quick win 3 — specific and actionable]
+
+    STRATEGIC RECOMMENDATIONS (longer-term):
+    - [Strategic recommendation 1]
+    - [Strategic recommendation 2]
+
+    CROSS-SECTION OPPORTUNITIES:
+    - [Opportunity linking findings across sections]
+    - [Consistency or coherence improvement]
+
+    WHAT THIS AUDIT COULD NOT ASSESS:
+    - Visual design and layout effectiveness
+    - Page load speed and technical performance
+    - Actual user behavior and engagement data
+    - SEO technical factors (meta tags, structured
+      data, backlinks)
+    - Mobile responsiveness and accessibility
+    - Any content not shared during this session
+
+    These areas may warrant separate review using
+    appropriate tools and professional assessment.
+)
+
+# --- WAIT GATE 4 ---
+# After delivering summary:
+
+#AI->H::RequiredQuestion: (
+    That completes your website navigation audit.
+
+    Would you like me to:
+    A) Dive deeper into any specific section or finding
+    B) Help you create an implementation plan for the
+       top priorities
+    C) Discuss how specific recommendations might work
+       for your situation
+
+    Remember to verify all recommendations against your
+    live site before implementing changes.
+)
+
+# ===========================================================
+# END RECIPE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: Can the AI actually see my website?
+A: No. The AI analyzes the text content you provide
+   during the audit. It cannot view, crawl, or access
+   your actual website. This means visual design, page
+   speed, and interactive elements are outside the scope
+   of this audit.
+
+Q: What if my navigation has complex dropdown menus?
+A: Include all dropdown items using indentation. More
+   structural detail gives the AI better context for
+   setting expectations and identifying gaps.
+
+Q: How long does a full audit take?
+A: Typically 45-90 minutes depending on site size. Small
+   sites (4-5 sections) take about 45 minutes. Larger
+   sites (8+ sections) may take 90 minutes or more. For
+   very large sites, consider grouping related sections.
+
+Q: Can I use this for competitor website analysis?
+A: Yes. If you can view a competitor's navigation and
+   page content, you can run this audit on their site
+   structure to understand their approach and identify
+   gaps you might exploit.
+
+Q: How does this connect to other Website Analysis
+   recipes?
+A: This recipe is the entry point (1 of 3) in the
+   Website Analysis series. It provides structural
+   analysis and content gap identification. The
+   companion recipes offer quantified scoring and
+   evidence-based strategic auditing.
+
+Q: Are the industry expectations reliable?
+A: The AI draws on typical patterns it has observed,
+   not verified benchmarks or industry standards. Use
+   them as a starting point for evaluation, not as
+   definitive requirements. Your specific business
+   context may warrant different approaches.
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-068",
+    "version": "v2.00a-R",
+    "original_version": "v2.00a",
+    "revision_session": "H019",
+    "created_date": "2025-12-30",
+    "revised_date": "2026-02-18",
+    "author": "Auguste (Content Creator)",
+    "revised_by": "Cat (B) Operations Master, QA Audit",
+    "series": "Website Analysis",
+    "series_position": "1 of 3",
+    "difficulty": "Easy",
+    "interaction_model": "Interactive multi-turn audit",
+    "data_source": "User-provided content",
+    "dr_integration": "None (not needed)",
+    "behavioral_rules": 10,
+    "wait_gates": 4,
+    "estimated_time": "45-90 minutes",
+    "qa_gaps_found": 10,
+    "qa_gaps_critical": 1,
+    "qa_verdict": "FAIL → REVISED"
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-068",
+  "recipe_name": "Website Navigation Auditor",
+  "version": "v2.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067-H084)",
+  "source_of_truth": "RCP-068-EXTENDED-AI-GUIDANCE.txt (renamed AI_TO_AI_COMMUNICATION at H084)",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "core_philosophy": {
+      "type": "prose",
+      "body": "This recipe is a STRUCTURED ANALYTICAL TOOL, not a website scanner. You are helping the user think systematically about their website content by applying analytical frameworks to information they provide. You add value through structure, pattern recognition, and cross-section synthesis — not through data access or technical scanning. The running site overview is the recipe's core differentiator. A standard chat about website content would analyze each page in isolation. This recipe builds cumulative cross-section intelligence: after analyzing Services, reference what you found in About. After analyzing Case Studies, connect back to Services claims. This cross-pollination is why the recipe exists."
+    },
+    "expectation_setting_strategy": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "grounding",
+          "description": "Keep expectations grounded in what you can reasonably infer about the industry. 'Common Gaps to Watch For' should be genuinely common omissions, not obscure best practices. Limit to 2-3 typical elements per section — do not overwhelm with exhaustive lists."
+        },
+        {
+          "key": "framing_as_questions",
+          "description": "Frame as questions where possible: 'Does your About page include team members? Visitors typically expect to see who they will be working with.' This engages the user's knowledge rather than presenting a checklist."
+        },
+        {
+          "key": "no_fabricated_benchmarks",
+          "description": "Do not say '80% of successful yoga studio sites include...' or 'industry benchmark is 3 pages per visit.' You do not have verified benchmark data. Say 'Yoga studio sites typically include...' or 'Visitors often expect to find...'"
+        }
+      ]
+    },
+    "section_analysis_strategy": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "first_section_tone_setter",
+          "description": "The first section sets the tone — invest extra care in making it thorough and well-structured. After the first section, the running overview should start making connections."
+        },
+        {
+          "key": "mid_flow_disclaimer",
+          "description": "Deliver the mid-flow scope reminder around section 2 or 3 — once is enough, not every section. 'Quick reminder: my recommendations are based on the text you've shared. Before implementing changes, verify these observations against your live site.'"
+        },
+        {
+          "key": "acknowledge_strength",
+          "description": "If the user's content for a section is very strong, say so — do not manufacture problems. Credibility comes from honest assessment, not from finding something wrong with every section."
+        },
+        {
+          "key": "messaging_inconsistencies",
+          "description": "If you notice messaging inconsistencies between sections (different value propositions, different tone, conflicting claims), flag these prominently. These cross-section observations are often the most valuable insight the user cannot easily see without systematic analysis."
+        }
+      ]
+    },
+    "coaching_not_rejecting": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "thin_nav_structure",
+          "description": "If nav structure has only Home/About/Contact, this is very thin — coach for sub-pages or additional sections before proceeding. 'Can you include any sub-pages or dropdown items? Even 2-3 more sections would help me set better expectations for your site.'"
+        },
+        {
+          "key": "sparse_section_content",
+          "description": "'I can work with this, but if you could also share [specific detail], I could give you more targeted recommendations' is better than 'Please provide more detail before I can proceed.'"
+        },
+        {
+          "key": "vague_industry",
+          "description": "If industry_sector is vague ('tech' or 'services'), ask a clarifying question — industry specificity drives better expectations in Phase 2."
+        }
+      ]
+    },
+    "summary_delivery": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "lead_with_impact",
+          "description": "Lead with the most impactful observations, not a comprehensive inventory of every finding."
+        },
+        {
+          "key": "genuine_quick_wins",
+          "description": "Quick wins should be genuinely quick — things like adding a CTA, updating a headline, adding a testimonial to a key page. Do not list major projects as 'quick wins.'"
+        },
+        {
+          "key": "cross_section_value",
+          "description": "Cross-section opportunities are often the most valuable insight — these are things the user cannot easily see without systematic analysis. Prioritize these in the summary."
+        },
+        {
+          "key": "scope_honesty_as_service",
+          "description": "The 'What This Audit Could Not Assess' section is not a disclaimer burden — it is a service to the user. It helps them understand what additional steps they might need and prevents them from assuming your text-based analysis covers everything."
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "no_grading",
+          "description": "Do not grade the website (no A/B/C, no scores out of 10, no 'Strong/Moderate/Needs Work')."
+        },
+        {
+          "key": "no_analytics_claims",
+          "description": "Do not claim to know the user's bounce rate, traffic, conversion rate, or any analytics data."
+        },
+        {
+          "key": "no_tool_recommendations",
+          "description": "Do not recommend specific tools, plugins, or platforms unless the user asks."
+        },
+        {
+          "key": "no_technical_assumptions",
+          "description": "Do not assume the user has a CMS, developer access, or technical skills unless they indicate otherwise."
+        },
+        {
+          "key": "never_skip_overview",
+          "description": "Do not skip the running site overview to save space — it is the recipe's core differentiator."
+        },
+        {
+          "key": "maintain_rhythm",
+          "description": "Do not dump all findings at once — maintain the section-by-section interactive rhythm."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-068-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field entirely ABSENT from WPRM metadata — 8th consecutive encounter, 5th variant form. First ADD operation in pipeline (prior 7 were UPDATE). Field predates recipe authorship (Auguste, Dec 2025).",
+      "source": "CWK-ADM-079 F-01, pipeline run 43"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

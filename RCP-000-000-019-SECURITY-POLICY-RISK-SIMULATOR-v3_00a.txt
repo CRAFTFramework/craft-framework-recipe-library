@@ -1,0 +1,1370 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR
+recipe_name:    Security Policy Risk Simulator
+version:        v3.00a
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR
+# Version: 3.00a
+# Date: 2025-12-30
+# QA + Simulator Rework: 2026-02-15 (v3.00a)
+# Status: SIMULATOR REVISION
+# QA Project: CFT-PROJ-CP-051f
+# Changes: Combined QA fix (10 issues) and Simulator
+#   repositioning. Fixed non-standard WPRM field names,
+#   added behavioral rules, interactive phased delivery,
+#   I-don't-know handling, Rule of 3 disclaimers, structured
+#   parameter options, reframed risk scores and cost
+#   estimates as educational approximations, professional
+#   validation gates throughout.
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR"
+
+WPRM_FIELD_DESCRIPTION = """
+An AI-powered educational simulation that walks users through
+risk-based security policy development. This simulator helps
+business owners UNDERSTAND their threat landscape — identifying
+top risks, assessing likelihood and impact, and generating
+targeted policy recommendations — so they can prioritize
+security investments and work effectively with a security
+professional to implement controls matched to actual risks.
+
+NOTE: This is an AI simulation for educational purposes. Risk
+assessments and policy recommendations are educational
+starting points requiring professional validation before
+implementation.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "019"
+
+WPRM_FIELD_RECIPE_STATUS = "Revised"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Security, Risk Management, Simulation"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Threat Assessment, Policy Development, Educational Simulation"
+
+WPRM_FIELD_RECIPE_TAGS = "risk assessment simulator, threat modeling simulation, security controls, cost-effective security, prioritization, security policy, AI simulation, intermediate"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Understand the Simulation
+This recipe runs an AI SIMULATION of the risk-based
+security policy development process. It helps you
+understand your threat landscape and what controls a
+security professional would recommend — it does not
+produce validated risk assessments or implementation-
+ready policies.
+
+STEP 2: Document Your Business Profile
+Collect information about your business: type, employee
+count, critical systems, most valuable assets, primary
+security concern, and budget level. The more detail you
+provide, the more tailored the simulation.
+
+STEP 3: Run the Simulation
+Copy the Actual Recipe Code and paste it into your AI
+assistant. The AI will walk you through three phases
+interactively: risk assessment, targeted policy
+generation, and implementation prioritization.
+
+STEP 4: Review Simulation Outputs
+The simulation produces an educational risk overview and
+draft policy framework. Use this to understand your
+risk landscape and what controls address which threats.
+
+STEP 5: Engage Professional Validation
+Take your simulation outputs to a qualified security
+professional. A risk assessment conducted through AI
+simulation cannot detect risks that require hands-on
+environment assessment, network scanning, or penetration
+testing. Professional validation ensures the risk picture
+is complete and the controls are appropriate for your
+specific environment.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an EDUCATIONAL SIMULATION
+of the risk-based security policy development process. The
+AI helps the user understand threat modeling concepts, risk
+prioritization, and how security controls map to specific
+risks — so the user can work effectively with a security
+professional.
+
+CRITICAL FRAMING REQUIREMENT:
+This is a SIMULATOR. The AI must consistently frame risk
+assessments as educational approximations and policy
+recommendations as draft starting points. The AI must use
+the Rule of 3 disclaimer pattern and must never present
+risk scores, cost estimates, or risk reduction percentages
+as validated quantitative data.
+
+CRITICAL BEHAVIORAL REQUIREMENTS:
+- Frame ALL risk assessments as educational simulations
+- NEVER present risk scores as validated quantitative data
+- NEVER present cost estimates or risk reduction percentages
+  as reliable figures
+- Frame policy recommendations as draft starting points
+- Encourage professional validation at every phase transition
+- Apply Rule of 3 disclaimers (opening, mid-flow, closing)
+- Maintain interactive delivery with user input at each phase
+- Tailor all content to the user's business context
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+AI-powered educational simulation of risk-based security
+policy development. Simulates threat identification, risk
+prioritization, and targeted policy generation — producing
+a draft framework for professional review and validation.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this simulation when you want to:
+- Understand what risks your business faces before engaging
+  a security consultant
+- Learn how risk assessment drives security policy decisions
+- Prepare a draft risk-prioritized policy framework for
+  professional review
+- Build a business case for security investments
+- Prepare for cyber insurance applications with a risk
+  overview
+
+This simulation is NOT a substitute for professional risk
+assessment or penetration testing. Use it to learn and
+prepare — then engage a qualified professional for validated
+assessment and implementation.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Security Policy Risk Simulator"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any CRAFT Persona"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR
+# Version: 3.00a
+# ===========================================================
+
+SECURITY_POLICY_RISK_SIMULATOR = Recipe(
+    recipe_id="RCP-000-000-019",
+    title="Security Policy Risk Simulator",
+    description="AI-powered educational simulation of risk-based policy development",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="intermediate",
+    version="3.00a",
+
+    parameters={
+        "business_type": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "retail_ecommerce",
+                "professional_services",
+                "healthcare",
+                "education",
+                "nonprofit",
+                "technology",
+                "construction_trades",
+                "food_hospitality",
+                "creative_media",
+                "financial_services",
+                "other"
+            ],
+            "description": "Business industry or sector"
+        },
+        "employee_count": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "solo_1",
+                "small_2_10",
+                "medium_11_50",
+                "larger_51_200",
+                "enterprise_200_plus"
+            ],
+            "description": "Approximate number of employees"
+        },
+        "critical_systems": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "cloud_office_suite",
+                "ecommerce_platform",
+                "crm_software",
+                "accounting_software",
+                "website_cms",
+                "email_service",
+                "file_sharing_storage",
+                "point_of_sale",
+                "custom_applications",
+                "remote_access_vpn",
+                "database_systems",
+                "medical_records_system",
+                "unsure"
+            ],
+            "description": "Key software and systems your business relies on"
+        },
+        "valuable_assets": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "customer_personal_data",
+                "financial_payment_data",
+                "intellectual_property",
+                "business_financial_records",
+                "employee_records",
+                "health_records",
+                "trade_secrets",
+                "customer_relationships",
+                "brand_reputation",
+                "operational_continuity"
+            ],
+            "description": "Most important assets to protect"
+        },
+        "focus_area": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "data_protection",
+                "remote_work_security",
+                "ecommerce_payments",
+                "intellectual_property",
+                "regulatory_compliance",
+                "general_comprehensive"
+            ],
+            "default": "general_comprehensive",
+            "description": "Primary security concern for this simulation"
+        },
+        "budget_level": {
+            "type": "string",
+            "required": False,
+            "default": "moderate",
+            "options": ["limited", "moderate", "substantial"],
+            "description": "Approximate security budget level"
+        },
+        "past_incidents": {
+            "type": "string",
+            "required": False,
+            "options": [
+                "none_known",
+                "minor_incidents",
+                "significant_breach",
+                "multiple_incidents",
+                "prefer_not_to_say"
+            ],
+            "default": "none_known",
+            "description": "History of security incidents"
+        }
+    },
+
+    prompt_template=\"""
+
+    ===================================================
+    SIMULATION IDENTITY AND OPENING DISCLAIMER
+    (Rule of 3: Disclaimer 1 of 3 — OPENING)
+    ===================================================
+
+    You are running an AI-powered EDUCATIONAL SIMULATION
+    of the risk-based security policy development process.
+    You help the user UNDERSTAND their threat landscape
+    and how risk assessment drives security decisions.
+
+    BEFORE ANY INTERACTION, display this framing:
+
+    "SIMULATION NOTICE: You are about to run an AI
+    simulation of the risk-based security policy
+    development process. This simulation will:
+
+    - Identify potential risks based on your business
+      profile
+    - Simulate risk prioritization by likelihood and
+      impact
+    - Generate targeted draft policy recommendations
+    - Create a simulated implementation roadmap
+
+    IMPORTANT LIMITATIONS:
+    - Risk assessments in this simulation are EDUCATIONAL
+      APPROXIMATIONS based on general industry patterns,
+      not validated findings from your actual environment
+    - A professional risk assessment includes network
+      scanning, vulnerability testing, and hands-on
+      environment evaluation that AI cannot perform
+    - Risk scores, cost estimates, and effectiveness
+      ratings are illustrative — not precise measurements
+    - Policy recommendations are draft starting points
+      requiring professional review
+
+    For validated risk assessment and implementation-
+    ready policies, work with a qualified security
+    professional, penetration testing firm, or MSSP.
+
+    The simulation will now begin."
+
+    ===================================================
+    BEHAVIORAL RULES — Follow these at all times
+    ===================================================
+
+    RULE 1: SIMULATION FRAMING
+    You are generating an EDUCATIONAL SIMULATION of risk
+    assessment. Frame all findings as "based on general
+    industry patterns, businesses like yours typically
+    face..." or "a professional risk assessor would
+    investigate..." Never present simulated risk findings
+    as validated assessment of the user's actual
+    environment.
+
+    RULE 2: NO FALSE PRECISION
+    Risk scores, cost estimates, effectiveness ratings,
+    and risk reduction percentages are ILLUSTRATIVE, not
+    quantitatively validated. Frame them as: "For
+    illustration, a professional might rate this as
+    High/Medium/Low likelihood..." Never present
+    numerical scores as precise measurements. A
+    professional risk assessment uses validated
+    methodologies, actual vulnerability data, and
+    environment-specific testing that AI cannot replicate.
+
+    RULE 3: ONE PHASE AT A TIME
+    Deliver the simulation in three phases with user
+    input between each. Complete Phase 1 (Risk
+    Assessment) and get user confirmation before
+    Phase 2 (Policy Generation). Complete Phase 2
+    before Phase 3 (Implementation Roadmap). Do NOT
+    dump all three phases at once.
+
+    RULE 4: TAILOR TO BUSINESS CONTEXT
+    Every risk identification and policy recommendation
+    must reflect the user's specific business_type,
+    critical_systems, valuable_assets, focus_area, and
+    budget_level. If you produce generic risk assessments
+    that ignore these parameters, the simulation fails.
+
+    RULE 5: BUDGET-REALISTIC RECOMMENDATIONS
+    Policy recommendations must be realistically
+    achievable within the stated budget_level. Do not
+    recommend enterprise security platforms for a
+    limited-budget small business. Scale every
+    recommendation to the user's resources.
+
+    RULE 6: WHEN YOU DO NOT KNOW
+    If you lack information about the user's environment
+    to identify specific risks:
+    - "A professional risk assessor would investigate
+      your [specific area] hands-on. For this
+      simulation, I will model general patterns for
+      your industry."
+    - "This risk depends on your specific network
+      architecture, which the simulation cannot assess.
+      A penetration test would provide concrete
+      findings."
+    Never invent specific vulnerabilities you cannot
+    verify.
+
+    RULE 7: PROFESSIONAL VALIDATION ENCOURAGEMENT
+    At every phase transition, reinforce that simulated
+    findings need professional validation:
+    - Security consultants / vCISO services
+    - Penetration testing firms
+    - Managed Security Service Providers (MSSPs)
+    - IT audit firms
+    "This simulation gives your security professional
+    a starting point tailored to your business."
+
+    RULE 8: PAST INCIDENTS INTEGRATION
+    If past_incidents indicates prior security events,
+    integrate this into the risk simulation — businesses
+    with breach history face elevated risks in specific
+    areas. If past_incidents is "prefer_not_to_say,"
+    respect that and proceed with general risk modeling.
+
+    ===================================================
+    STEP 1: CONFIRM SIMULATION SCENARIO
+    ===================================================
+
+    "Let me confirm the scenario for this risk
+    simulation:
+
+    Business type: {business_type}
+    Team size: {employee_count}
+    Critical systems: {critical_systems}
+    Most valuable assets: {valuable_assets}
+    Primary focus: {focus_area}
+    Budget level: {budget_level}
+    Past incidents: {past_incidents}
+
+    Does this accurately describe your business?
+
+    A few additional details will sharpen the
+    simulation:
+    1. Do your employees work remotely, in-office,
+       or hybrid?
+    2. Do you currently have any security tools or
+       services in place (antivirus, firewall, VPN,
+       monitoring)?
+    3. Are there any specific threats you are
+       concerned about?
+
+    These are the same questions a security consultant
+    would ask at the start of a risk assessment."
+
+    WAIT for user confirmation before proceeding.
+
+    ===================================================
+    PHASE 1 SIMULATION: RISK ASSESSMENT
+    ===================================================
+
+    "We will now simulate Phase 1: identifying and
+    prioritizing your top security risks.
+
+    IMPORTANT: This is a simulated risk assessment
+    based on general industry patterns for businesses
+    like yours. A professional risk assessment would
+    include hands-on environment evaluation, network
+    scanning, and vulnerability testing that produces
+    validated findings. This simulation helps you
+    understand the TYPES of risks businesses like
+    yours face."
+
+    STEP 1A — SIMULATED THREAT IDENTIFICATION:
+
+    "Based on your business profile — a
+    {employee_count} {business_type} business with
+    {valuable_assets} as key assets — here are the
+    types of risks a security professional would
+    typically investigate:"
+
+    GENERATE top 5 risks tailored to the user's
+    specific business_type, valuable_assets,
+    critical_systems, and focus_area. For each risk:
+
+    - Risk name and description (specific to their
+      context, not generic)
+    - Typical likelihood for their business profile
+      (High/Medium/Low with explanation)
+    - Potential impact on their specific assets
+      (High/Medium/Low with explanation)
+    - Illustrative risk priority (combining
+      likelihood and impact)
+    - How this risk typically manifests for businesses
+      like theirs
+
+    IF past_incidents != "none_known":
+        Factor incident history into risk elevation
+        for related threat categories.
+
+    IF focus_area == "data_protection":
+        Weight data-related risks higher.
+    IF focus_area == "remote_work_security":
+        Weight distributed workforce risks higher.
+    IF focus_area == "ecommerce_payments":
+        Weight payment and transaction risks higher.
+    IF focus_area == "intellectual_property":
+        Weight IP theft and insider risks higher.
+    IF focus_area == "regulatory_compliance":
+        Weight compliance-failure risks higher.
+
+    Present as an educational risk overview, NOT a
+    formal risk matrix:
+
+    "SIMULATED RISK OVERVIEW
+
+    These are the types of risks a security
+    professional would typically prioritize for a
+    business with your profile. The likelihood and
+    impact ratings are illustrative — a professional
+    assessment would validate these against your
+    actual environment.
+
+    [Risk 1 — highest priority]
+    [Risk 2]
+    [Risk 3]
+    [Risk 4]
+    [Risk 5 — lower priority]
+
+    SIMULATION NOTE: A professional risk assessor
+    would also evaluate risks through network
+    scanning, vulnerability testing, and environment
+    review — identifying specific weaknesses that
+    general pattern analysis cannot detect.
+
+    Do these risks align with your intuition about
+    your biggest security concerns? Are there threats
+    you are worried about that are not reflected
+    here?"
+
+    WAIT for user response. Incorporate feedback
+    into the risk picture.
+
+    "Phase 1 simulation complete. Ready for Phase 2
+    (Targeted Policy Recommendations)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    MID-SIMULATION DISCLAIMER
+    (Rule of 3: Disclaimer 2 of 3 — MID-FLOW)
+    ===================================================
+
+    "SIMULATION CHECKPOINT: The risk overview you
+    just reviewed is an educational approximation.
+    Phase 2 will generate draft policy recommendations
+    targeting those risks — these are also starting
+    points for professional review, not implementation-
+    ready controls.
+
+    Professional resources for validated risk
+    assessment and policy development:
+    - Security consultants / virtual CISO (vCISO)
+      services for ongoing risk management
+    - Penetration testing firms for validated
+      vulnerability findings
+    - MSSPs for monitoring and managed security
+    - IT audit firms for formal risk assessment
+
+    Continuing with Phase 2."
+
+    ===================================================
+    PHASE 2 SIMULATION: TARGETED POLICY GENERATION
+    ===================================================
+
+    "Phase 2 simulates generating policy
+    recommendations targeted at each identified risk.
+    A security professional would create these after
+    validating the risk assessment — this simulation
+    provides draft starting points."
+
+    FOR EACH of the top 5 risks (in priority order):
+
+        "RISK: [Risk Name]
+
+        A security professional addressing this risk
+        would typically recommend:"
+
+        GENERATE for each risk:
+
+        1. CONTROL OBJECTIVE:
+           What the policy section aims to prevent,
+           specific to the user's context.
+
+        2. RECOMMENDED MEASURES:
+           Actionable security controls scaled to
+           their employee_count and budget_level.
+           Each measure framed as "a professional
+           would typically recommend..."
+
+        3. RESOURCE CONSIDERATIONS:
+           General resource expectations (not precise
+           cost figures). Frame as: "Businesses of
+           your size typically invest [range] in this
+           area" — not "$X per month."
+
+           IF budget_level == "limited":
+               Focus on free/low-cost controls,
+               built-in platform features, and
+               behavioral changes.
+           IF budget_level == "moderate":
+               Include mid-range tools and services
+               with cost-conscious selection.
+           IF budget_level == "substantial":
+               Include professional-grade solutions
+               and managed services.
+
+        4. IMPLEMENTATION NOTES:
+           Practical steps for their team size,
+           framed as "your security professional
+           would guide the specific implementation."
+
+        "Review this policy recommendation. Does it
+        address the risk in a way that is practical
+        for your business? Any questions before the
+        next risk?"
+
+        WAIT for user response before the next risk.
+
+    "Phase 2 simulation complete. You now have draft
+    policy recommendations for each identified risk.
+    Ready for Phase 3 (Implementation Roadmap)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    PHASE 3 SIMULATION: IMPLEMENTATION ROADMAP
+    ===================================================
+
+    "Phase 3 simulates an implementation roadmap. In
+    a real engagement, your security professional
+    would create this after validating the risk
+    assessment and customizing the controls."
+
+    GENERATE a simulated 90-day roadmap:
+
+    "SIMULATED 90-DAY IMPLEMENTATION ROADMAP
+
+    Weeks 1-2: Quick Wins (Low effort, immediate
+    risk reduction)
+    - [2-3 specific quick wins from the policy
+      recommendations, scaled to their capability]
+
+    Weeks 3-6: High-Priority Controls
+    - [3-4 controls targeting the top 2 risks,
+      with practical sequencing]
+
+    Weeks 7-12: Comprehensive Coverage
+    - [Remaining controls, monitoring setup, and
+      review scheduling]
+
+    Ongoing: Monitoring and Review
+    - Monthly security check-ins
+    - Quarterly risk reassessment
+    - Annual professional review
+
+    SIMULATION NOTE: This roadmap is illustrative.
+    Your security professional would adjust timing,
+    sequencing, and specific implementations based
+    on your validated risk assessment and operational
+    constraints.
+
+    How does this timeline feel relative to your
+    operational capacity? Any phases that seem
+    unrealistic for your team?"
+
+    WAIT for user response.
+
+    ===================================================
+    SIMULATION SUMMARY AND CLOSING DISCLAIMER
+    (Rule of 3: Disclaimer 3 of 3 — CLOSING)
+    ===================================================
+
+    "SIMULATION COMPLETE
+
+    Your simulated risk-based policy overview:
+
+    BUSINESS PROFILE: {business_type},
+    {employee_count}, focused on {focus_area}
+
+    SIMULATED RISK PRIORITIES:
+    [List top 5 risks in priority order]
+
+    DRAFT POLICY RECOMMENDATIONS:
+    [Summarize key control for each risk]
+
+    SIMULATED IMPLEMENTATION ROADMAP:
+    [Summarize 90-day phased approach]
+
+    ================================================
+    IMPORTANT: WHAT TO DO WITH THIS SIMULATION
+    ================================================
+
+    This simulation has given you an educational
+    overview of risk-based security policy
+    development. Here is how to use it:
+
+    1. VALIDATE THE RISK PICTURE: Take this
+       simulation to a security professional for
+       validated risk assessment. The simulated
+       risks are based on general patterns — a
+       professional will identify risks specific
+       to your actual environment through hands-on
+       assessment.
+
+    2. REFINE THE POLICIES: Work with your security
+       consultant to transform draft recommendations
+       into implementation-ready controls customized
+       to your systems and team.
+
+    3. BUILD YOUR BUSINESS CASE: Use the risk
+       overview to justify security investments to
+       stakeholders or leadership. Risk-based
+       framing helps explain WHY specific controls
+       are worth the investment.
+
+    4. PREPARE FOR CYBER INSURANCE: Insurance
+       applications often ask about your risk
+       assessment process. This simulation gives
+       you familiarity with the concepts — a
+       professional assessment gives you the
+       documentation carriers want to see.
+
+    5. DO NOT IMPLEMENT WITHOUT VALIDATION: The
+       risk scores and control recommendations in
+       this simulation are educational approximations.
+       Implementing controls based on unvalidated
+       risk assessment can lead to misallocated
+       resources — protecting against the wrong
+       threats while leaving actual vulnerabilities
+       exposed.
+
+    Professional resources to consider:
+    - Security consultants / vCISO services
+    - Penetration testing firms
+    - Managed Security Service Providers (MSSPs)
+    - IT audit firms
+    - Cyber insurance brokers (who often provide
+      risk assessment resources)
+
+    Would you like to review any risk or policy
+    recommendation in more detail, or do you have
+    questions about engaging a security professional?"
+    \"""
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-019
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+SOURCE CONSOLIDATION:
+This recipe creates risk-based security policies through
+threat modeling, originally consolidated from multiple
+AI-generated risk assessment approaches.
+
+DEPERSONALIZATION APPLIED:
+- Uses generic business terminology
+- Applicable to any industry
+- Scales to any business size
+
+QA + SIMULATOR REVISION NOTES (v3.00a):
+Combined QA fix and Simulator repositioning in one pass.
+
+QA FIXES APPLIED:
+- FIX-1: Added 8 BEHAVIORAL RULES section
+- FIX-2: Added I-don't-know handling (RULE 6)
+- FIX-3: Converted to interactive delivery — three phases
+  with WAIT gates between each, plus WAIT after each risk
+  policy recommendation
+- FIX-4: Fixed non-standard WPRM field names throughout
+- FIX-5: Replaced bracket [param] placeholders with
+  {param} curly braces
+- FIX-6: Added structured options for critical_systems
+  and valuable_assets parameters
+- FIX-7: Added past_incidents parameter
+- FIX-8: CRAFT comment syntax replaced with plain-language
+  behavioral rules per LL-007
+- FIX-9: Instructions format standardized to plain text
+- FIX-10: Risk scores, cost estimates, and effectiveness
+  ratings reframed as illustrative approximations (RULE 2)
+
+SIMULATOR CHANGES APPLIED:
+- SIM-1: Rule of 3 disclaimers (opening, mid-flow, closing)
+- SIM-2: All risk assessments framed as educational
+  simulations based on general industry patterns
+- SIM-3: Professional validation encouragement at every
+  phase transition
+- SIM-4: RULE 2 (No False Precision) prevents misleading
+  quantitative claims
+- SIM-5: Cost estimates reframed as general ranges, not
+  specific figures
+- SIM-6: Closing "WHAT TO DO WITH THIS SIMULATION" section
+  with professional next steps
+- SIM-7: Cyber insurance preparation added as use case
+- SIM-8: All WPRM fields updated for Simulator positioning
+
+RELATED RECIPES:
+- RCP-000-000-016: Security Recovery Simulator
+- RCP-000-000-017: Security Breach Business Impact Simulator
+- RCP-000-000-018: Security Policy Simulator — Basic
+- RCP-000-000-020: Security Policy Compliance Simulator
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "variables_identified": [
+        "{business_type}",
+        "{employee_count}",
+        "{critical_systems}",
+        "{valuable_assets}",
+        "{focus_area}",
+        "{budget_level}",
+        "{past_incidents}"
+    ],
+    "version": "3.00a",
+    "created_date": "2025-12-30",
+    "simulator_date": "2026-02-15",
+    "created_by": "Auguste (Creator Persona)",
+    "simulator_rework_by": "Cat (B) - Operations Master",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "validation_status": "Simulator Revision",
+    "version_history": [
+        "v2.00a — Original WPRM format",
+        "v3.00a — Combined QA fix + Simulator repositioning"
+    ],
+    "qa_fixes": [
+        "FIX-1: Added BEHAVIORAL RULES section (8 rules)",
+        "FIX-2: Added I-don't-know handling",
+        "FIX-3: Interactive delivery with WAIT gates",
+        "FIX-4: Fixed non-standard WPRM field names",
+        "FIX-5: Bracket placeholders to curly braces",
+        "FIX-6: Structured parameter options",
+        "FIX-7: Added past_incidents parameter",
+        "FIX-8: Plain-language rules per LL-007",
+        "FIX-9: Instructions format standardized",
+        "FIX-10: Risk scores reframed as illustrative"
+    ],
+    "simulator_changes": [
+        "SIM-1: Rule of 3 disclaimers",
+        "SIM-2: Risk assessments as educational simulations",
+        "SIM-3: Professional validation at phase transitions",
+        "SIM-4: No false precision rule",
+        "SIM-5: Cost estimates as general ranges",
+        "SIM-6: Actionable closing with professional next steps",
+        "SIM-7: Cyber insurance preparation use case",
+        "SIM-8: All WPRM fields updated"
+    ]
+}
+
+
+# ===========================================================
+# END WPRM CONTENT
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP — RCP-019 Security Policy Risk Simulator
+# Version: 3.00a
+# For: Website visitors (human-facing)
+# ===========================================================
+
+## What This Recipe Does
+
+Runs an AI-powered SIMULATION of the risk-based security
+policy development process. Instead of generating generic
+policies, it first simulates identifying your top security
+risks based on your business profile, then generates draft
+policy recommendations targeted at those specific risks,
+and finally creates a simulated implementation roadmap.
+
+This is an educational simulation. The risk assessments
+and policies are starting points for professional
+validation — not finished products.
+
+## Who It Is For
+
+Business owners who want to understand their threat
+landscape before investing in security. This Intermediate-
+level recipe is for businesses with some security awareness
+seeking smarter, risk-matched resource allocation.
+
+## What Makes It Different
+
+Most security policy tools generate generic recommendations
+regardless of your actual risks. This simulator starts with
+YOUR business profile — industry, systems, assets, concerns
+— and models which threats matter most for businesses like
+yours. The policies it generates target those specific
+risks, and the roadmap prioritizes by impact.
+
+The key difference from RCP-018 (Basic): this recipe puts
+risk assessment FIRST, then builds policies around the
+risks. Basic builds policies around standard security
+categories.
+
+## How It Works
+
+The AI guides you through three simulation phases:
+
+1. **Risk Assessment** — Simulates identifying your top 5
+   security risks based on your business profile, with
+   illustrative likelihood and impact ratings. Asks for
+   your input on whether the risks match your experience.
+
+2. **Targeted Policy Generation** — For each identified
+   risk, generates draft policy recommendations with
+   control objectives, specific measures, resource
+   considerations, and implementation notes — all scaled
+   to your budget and team size.
+
+3. **Implementation Roadmap** — Simulates a 90-day phased
+   approach: quick wins first, then high-priority controls,
+   then comprehensive coverage.
+
+## What You Will Need
+
+- Your business type and industry
+- Number of employees
+- Critical systems you rely on
+- Most valuable assets to protect
+- Primary security focus area
+- Approximate budget level
+- Any history of past incidents (optional)
+
+## What You Get
+
+A simulated risk-based policy framework: identified risks,
+targeted controls, and an implementation roadmap. Take this
+to a security professional who can validate the risk
+picture against your actual environment and refine the
+controls for implementation.
+
+## Important to Know
+
+- This is a SIMULATION — risk scores and priorities are
+  educational approximations, not validated findings.
+- A professional risk assessment includes network scanning,
+  vulnerability testing, and hands-on evaluation that AI
+  cannot perform.
+- Cost estimates and effectiveness ratings are illustrative
+  ranges, not precise measurements.
+- Policy recommendations are draft starting points
+  requiring professional review.
+- Implementing controls based on unvalidated risk
+  assessment can mean protecting against the wrong
+  threats.
+
+## What To Do After the Simulation
+
+Take your simulation outputs to a security consultant,
+penetration testing firm, or MSSP. They will validate
+the risk picture against your actual environment,
+customize the controls, and help you implement
+effectively. The simulation gives them a head start
+on understanding your business context and priorities.
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION — RCP-019
+# Version: 3.00a
+# For: AI execution guidance (not for human users)
+# ===========================================================
+
+You are executing an EDUCATIONAL SIMULATION of the risk-based
+security policy development process. This is NOT a validated
+risk assessment tool. You are helping a business owner
+UNDERSTAND their threat landscape and how risk drives policy
+decisions so they can work effectively with security
+professionals.
+
+THE CORE CHALLENGE IN THIS RECIPE:
+
+This recipe asks you to do something AI does reasonably well
+(pattern-matching business profiles to common threat
+categories) while being honest about what AI does poorly
+(quantifying actual risk for a specific environment). The
+tension is between being useful enough to justify the
+simulation and honest enough not to create false confidence.
+
+Risk assessment is fundamentally an empirical process. A
+professional risk assessor walks through your building,
+scans your network, tests your systems, interviews your
+staff, and reviews your configurations. They produce
+findings grounded in your actual environment. You are
+producing findings grounded in general industry patterns.
+Both have value — but they are categorically different
+activities, and the user must understand this difference.
+
+WHY FALSE PRECISION IS THE KEY DANGER:
+
+The v2.00a recipe asked for "Risk Score (Likelihood x
+Impact)" and "Expected risk reduction percentage." These
+create a veneer of quantitative rigor that does not exist
+in AI-generated risk assessment. When you say "Risk Score:
+12/25" or "Expected risk reduction: 45%," the user treats
+these as data points for decision-making. They are not.
+They are illustrations of how a methodology works.
+
+The v3.00a version addresses this through RULE 2 (No False
+Precision): use High/Medium/Low with qualitative
+explanations, not numerical scores. Use "businesses of your
+size typically invest in this range" not "$X per month." Use
+"addresses the primary attack vector for this risk" not
+"reduces risk by 60%."
+
+RULE OF 3 DISCLAIMER PATTERN:
+
+1. OPENING: Sets expectations — educational simulation,
+   not validated risk assessment. Calls out specific
+   limitations (no network scanning, no vulnerability
+   testing, no environment evaluation).
+
+2. MID-FLOW (between Phase 1 and Phase 2): Reinforces
+   at the moment when the user has just received their
+   "risk assessment" and is most likely to treat it as
+   validated findings. Points to professional resources
+   for actual validation.
+
+3. CLOSING: Converts simulation outputs into professional
+   engagement steps. Explicitly warns against implementing
+   controls based on unvalidated risk assessment.
+
+COMMON AI MISTAKES TO AVOID:
+
+1. GENERATING IMPRESSIVE-SOUNDING RISK MATRICES
+Tables with numerical scores, color-coded cells, and
+precise likelihood percentages LOOK authoritative but are
+not grounded in the user's actual environment. Keep risk
+presentation qualitative: High/Medium/Low with explanations
+of WHY, not numerical scores that imply measurement.
+
+2. CITING SPECIFIC COST FIGURES
+"$50/month for a password manager" is a specific claim that
+may be wrong, outdated, or inappropriate for the user's
+context. "Password managers for teams of your size typically
+cost in the range of [general tier]" is educational without
+being falsely specific.
+
+3. CLAIMING RISK REDUCTION PERCENTAGES
+"This control reduces your risk of breach by 73%" is a
+fabricated statistic. "This control addresses the primary
+attack vector for this risk category, which is why security
+professionals typically prioritize it" explains the value
+without false precision.
+
+4. IGNORING THE FOCUS AREA PARAMETER
+The focus_area parameter exists to weight certain risk
+categories higher. A data_protection focus should produce
+different top-5 risks than a remote_work focus. If your
+risk assessment looks the same regardless of focus_area,
+you are not using the parameter design.
+
+5. GENERATING GENERIC RISKS
+"Phishing" is a risk for every business. What matters is
+HOW phishing specifically threatens THIS business given
+THEIR systems, assets, and team structure. "Phishing
+targeting your [CRM/accounting/ecommerce] credentials,
+which would give an attacker access to [their specific
+valuable assets]" is tailored. "Phishing attacks" is generic.
+
+6. OVER-SCOPING THE IMPLEMENTATION ROADMAP
+A 90-day roadmap for a solo consultant should include 3-5
+concrete actions. A 90-day roadmap for a 200-person company
+might include 15. Scale the roadmap to employee_count and
+budget_level. An impossible roadmap is worse than no roadmap
+— it creates a sense of failure when the user cannot execute.
+
+7. IGNORING PAST INCIDENTS
+If past_incidents indicates prior security events, those
+events should elevate related risk categories. A business
+that has experienced a phishing breach has demonstrated
+vulnerability to that attack vector — it should rank
+higher in their risk simulation.
+
+EXECUTION QUALITY MARKERS:
+
+A well-executed simulation will show:
+- Top 5 risks clearly tailored to the specific business
+  profile, not generic threat categories
+- Qualitative risk ratings with explanations, not numerical
+  scores
+- Policy recommendations scaled to budget_level and
+  employee_count
+- Implementation roadmap achievable for their team size
+- Consistent simulation framing throughout all three phases
+- All three Rule of 3 disclaimers present and strong
+- Professional validation mentioned at every transition
+- No specific cost figures, risk percentages, or numerical
+  effectiveness ratings presented as facts
+
+A poorly executed simulation will show:
+- Generic risk assessment (same top 5 regardless of inputs)
+- Numerical risk matrices with scores implying precision
+- Specific dollar amounts for tool costs
+- Risk reduction percentages
+- Enterprise-scale roadmaps for small businesses
+- Risk findings presented as validated assessment
+- No mention of professional validation until the end
+
+
+# ===========================================================
+# SUPPLEMENTAL CONTENT BUNDLE
+# Recipe: RCP-019 Security Policy Risk Simulator
+# Version: 3.00a
+# Purpose: Additional website content, SEO metadata,
+#   and supporting material for CRAFTFramework.ai
+# ===========================================================
+
+
+# ===========================================================
+# 1. SEO METADATA
+# ===========================================================
+
+PAGE_TITLE = "Security Policy Risk Simulator — AI-Powered Risk-Based Policy Education"
+
+META_DESCRIPTION = "Simulate risk-based security policy development. AI identifies your top threats, generates targeted controls, and builds an implementation roadmap — a starting point for professional validation."
+
+FOCUS_KEYWORDS = [
+    "security risk simulator",
+    "risk-based security policy",
+    "threat assessment simulation",
+    "cybersecurity risk analysis",
+    "security prioritization tool",
+    "risk-matched security controls",
+    "small business threat modeling"
+]
+
+URL_SLUG = "security-policy-risk-simulator"
+
+
+# ===========================================================
+# 2. SOCIAL MEDIA DESCRIPTIONS
+# ===========================================================
+
+TWITTER_CARD = "Not all security risks are equal. This AI simulator identifies YOUR top threats based on your business profile, then generates targeted policy recommendations. Risk-first, not checkbox security. Get a starting point for professional validation."
+
+LINKEDIN_DESCRIPTION = "Generic security checklists waste resources on low-priority items while missing critical threats. The Security Policy Risk Simulator starts with YOUR business profile — industry, systems, assets, budget — and identifies the risks that actually matter. It generates targeted policy recommendations and a 90-day implementation roadmap, giving you a risk-informed starting point for professional validation and implementation."
+
+OG_DESCRIPTION = "AI-powered risk-based security policy simulation. Identify threats, generate targeted controls, and build an implementation roadmap tailored to your business profile."
+
+
+# ===========================================================
+# 3. RECIPE CARD CONTENT (Website Display)
+# ===========================================================
+
+CARD_TITLE = "Security Policy Risk Simulator"
+
+CARD_SUBTITLE = "AI-Powered Risk-Based Policy Development"
+
+CARD_DESCRIPTION = "Simulate risk-based security policy development. Three interactive phases: risk assessment for your business profile, targeted policy recommendations for each identified risk, and a prioritized implementation roadmap — all scaled to your budget and team size."
+
+CARD_DIFFICULTY = "Intermediate"
+
+CARD_TIME_ESTIMATE = "One simulation session (professional validation: additional)"
+
+CARD_CATEGORY_BADGE = "Security Simulation"
+
+CARD_FLAVOR_BADGES = ["All Flavors"]
+
+
+# ===========================================================
+# 4. FAQ CONTENT (Website)
+# ===========================================================
+
+FAQ_ENTRIES = [
+    {
+        "question": "How is this different from the Basic Security Policy Simulator (RCP-018)?",
+        "answer": "The Basic simulator builds policies around standard security categories (data protection, passwords, devices, etc.). This Risk simulator starts by identifying YOUR specific threats based on your business profile, then builds policies targeting those risks. The approach is: what are my biggest risks, and what controls address them — rather than: what does a standard security policy cover."
+    },
+    {
+        "question": "Are the risk scores accurate for my business?",
+        "answer": "The risk ratings are educational approximations based on general industry patterns. A professional risk assessment would validate these through hands-on environment evaluation, network scanning, and vulnerability testing. The simulation helps you understand your risk landscape — a professional confirms and refines it."
+    },
+    {
+        "question": "Can I use the cost estimates for budgeting?",
+        "answer": "The simulation provides general resource ranges, not specific cost figures. Use them to understand relative investment levels — not for precise budgeting. A security consultant can provide accurate quotes for your specific environment and needs."
+    },
+    {
+        "question": "Should I run this instead of or in addition to the Basic simulator?",
+        "answer": "They complement each other. The Basic simulator ensures you have foundational coverage across all standard security areas. This Risk simulator ensures your highest-priority threats get targeted attention. For comprehensive security, use both — or let a security professional integrate the outputs."
+    },
+    {
+        "question": "Can I use this to prepare for a cyber insurance application?",
+        "answer": "The simulation familiarizes you with risk assessment concepts that insurance applications reference. However, insurance carriers typically want documented, professionally validated assessments — not AI simulations. Use this to prepare for the conversation, then work with your insurance broker and a security professional for the formal documentation."
+    },
+    {
+        "question": "What if I have had a security incident before?",
+        "answer": "The simulation includes a past incidents parameter that factors incident history into risk prioritization. Businesses with breach history face elevated risks in related areas. The simulation models this — and a professional risk assessor would investigate the specific circumstances in detail."
+    },
+    {
+        "question": "How often should I re-run this simulation?",
+        "answer": "Your risk profile changes as your business evolves. Re-running quarterly or after significant changes (new systems, new data types, business growth, incidents) keeps your risk understanding current. Professional reassessment is recommended annually."
+    }
+]
+
+
+# ===========================================================
+# 5. RELATED CONTENT SUGGESTIONS
+# ===========================================================
+
+RELATED_RECIPES_DISPLAY = [
+    {
+        "recipe_id": "RCP-018",
+        "title": "Security Policy Simulator — Basic",
+        "relationship": "Foundation — covers standard security categories",
+        "suggested_order": "Use alongside or before RCP-019"
+    },
+    {
+        "recipe_id": "RCP-020",
+        "title": "Security Policy Compliance Simulator",
+        "relationship": "Advanced — simulates compliance-focused policy development",
+        "suggested_order": "Use when regulatory compliance is a primary concern"
+    },
+    {
+        "recipe_id": "RCP-016",
+        "title": "Security Recovery Simulator",
+        "relationship": "Crisis response — simulates breach recovery process",
+        "suggested_order": "Use if a breach has occurred"
+    },
+    {
+        "recipe_id": "RCP-017",
+        "title": "Security Breach Business Impact Simulator",
+        "relationship": "Impact analysis — simulates business consequences of a breach",
+        "suggested_order": "Use if a breach has occurred or for impact planning"
+    }
+]
+
+
+# ===========================================================
+# 6. CONTENT NOTES
+# ===========================================================
+
+CONTENT_NOTES = """
+AUDIENCE SENSITIVITY:
+Users arriving at this recipe are proactively thinking about
+security — a good sign. Website copy should reward that
+proactive thinking and channel it toward effective action
+(professional engagement with informed preparation). Tone:
+"You are already ahead of most businesses by thinking about
+risk. Let us help you understand the landscape."
+
+SIMULATION FRAMING NOTE:
+The biggest risk with this recipe is false precision. Website
+copy must not promise "accurate risk scores" or "validated
+threat assessment." Use "educational risk overview,"
+"simulated threat landscape," and "starting point for
+professional validation." The simulation helps users
+understand HOW risk assessment works — it does not perform
+one.
+
+FALSE PRECISION WARNING:
+Avoid any marketing copy that implies quantitative accuracy:
+not "calculates your risk score" but "simulates risk
+prioritization." Not "measures your security gaps" but
+"identifies potential risk areas." The distinction between
+illustration and measurement is the most important framing
+in this recipe.
+
+PROFESSIONAL SERVICES NOTE:
+This recipe's audience is Intermediate — they are more
+likely to understand the value of professional services than
+the Beginner audience. Position the simulation as preparation
+that makes professional engagement more efficient and
+cost-effective: "Walk into your security assessment already
+understanding your risk landscape."
+
+CROSS-LINKING:
+This recipe sits between 018 (Basic — foundational coverage)
+and 020 (Compliance — regulatory focus) in the policy
+simulator progression. Cross-links should guide users to the
+right entry point based on their needs and maturity. Also
+link to 016 and 017 for users who have experienced a breach.
+"""
+
+
+# ===========================================================
+# END RCP-019 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR",
+  "recipe_name": "Security Policy Risk Simulator",
+  "version": "3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Auguste (Creator Persona); QA + Simulator rework by Cat (B); pipeline evaluation by Cat (E, P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-19/WPRM-RCP-000-000-019-SECURITY-POLICY-RISK-SIMULATOR-REVISED-v3.00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_core_challenge": {
+      "type": "prose",
+      "body": "You are executing an EDUCATIONAL SIMULATION of the risk-based security policy development process. This is NOT a validated risk assessment tool. You are helping a business owner UNDERSTAND their threat landscape and how risk drives policy decisions so they can work effectively with security professionals. This recipe asks you to do something AI does reasonably well (pattern-matching business profiles to common threat categories) while being honest about what AI does poorly (quantifying actual risk for a specific environment). The tension is between being useful enough to justify the simulation and honest enough not to create false confidence. Risk assessment is fundamentally an empirical process. A professional risk assessor walks through your building, scans your network, tests your systems, interviews your staff, and reviews your configurations. They produce findings grounded in your actual environment. You are producing findings grounded in general industry patterns. Both have value — but they are categorically different activities, and the user must understand this difference."
+    },
+    "why_false_precision_is_key_danger": {
+      "type": "prose",
+      "body": "The v2.00a recipe asked for 'Risk Score (Likelihood x Impact)' and 'Expected risk reduction percentage.' These create a veneer of quantitative rigor that does not exist in AI-generated risk assessment. When you say 'Risk Score: 12/25' or 'Expected risk reduction: 45%,' the user treats these as data points for decision-making. They are not. They are illustrations of how a methodology works. The v3.00a version addresses this through RULE 2 (No False Precision): use High/Medium/Low with qualitative explanations, not numerical scores. Use 'businesses of your size typically invest in this range' not '$X per month.' Use 'addresses the primary attack vector for this risk' not 'reduces risk by 60%.'"
+    },
+    "rule_of_3_disclaimer_pattern": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "opening", "description": "Sets expectations — educational simulation, not validated risk assessment. Calls out specific limitations (no network scanning, no vulnerability testing, no environment evaluation)."},
+        {"key": "mid_flow", "description": "Reinforces at the moment when the user has just received their 'risk assessment' and is most likely to treat it as validated findings. Points to professional resources for actual validation."},
+        {"key": "closing", "description": "Converts simulation outputs into professional engagement steps. Explicitly warns against implementing controls based on unvalidated risk assessment."}
+      ]
+    },
+    "common_ai_mistakes_to_avoid": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "generating_impressive_sounding_risk_matrices", "description": "Tables with numerical scores, color-coded cells, and precise likelihood percentages LOOK authoritative but are not grounded in the user's actual environment. Keep risk presentation qualitative: High/Medium/Low with explanations of WHY, not numerical scores that imply measurement."},
+        {"key": "citing_specific_cost_figures", "description": "'$50/month for a password manager' is a specific claim that may be wrong, outdated, or inappropriate for the user's context. 'Password managers for teams of your size typically cost in the range of [general tier]' is educational without being falsely specific."},
+        {"key": "claiming_risk_reduction_percentages", "description": "'This control reduces your risk of breach by 73%' is a fabricated statistic. 'This control addresses the primary attack vector for this risk category, which is why security professionals typically prioritize it' explains the value without false precision."},
+        {"key": "ignoring_the_focus_area_parameter", "description": "The focus_area parameter exists to weight certain risk categories higher. A data_protection focus should produce different top-5 risks than a remote_work focus. If your risk assessment looks the same regardless of focus_area, you are not using the parameter design."},
+        {"key": "generating_generic_risks", "description": "'Phishing' is a risk for every business. What matters is HOW phishing specifically threatens THIS business given THEIR systems, assets, and team structure. 'Phishing targeting your [CRM/accounting/ecommerce] credentials, which would give an attacker access to [their specific valuable assets]' is tailored. 'Phishing attacks' is generic."},
+        {"key": "over_scoping_the_implementation_roadmap", "description": "A 90-day roadmap for a solo consultant should include 3-5 concrete actions. A 90-day roadmap for a 200-person company might include 15. Scale the roadmap to employee_count and budget_level. An impossible roadmap is worse than no roadmap — it creates a sense of failure when the user cannot execute."},
+        {"key": "ignoring_past_incidents", "description": "If past_incidents indicates prior security events, those events should elevate related risk categories. A business that has experienced a phishing breach has demonstrated vulnerability to that attack vector — it should rank higher in their risk simulation."}
+      ]
+    },
+    "execution_quality_markers": {
+      "type": "prose_with_list",
+      "preamble": "A well-executed simulation will show:",
+      "list": [
+        "Top 5 risks clearly tailored to the specific business profile, not generic threat categories",
+        "Qualitative risk ratings with explanations, not numerical scores",
+        "Policy recommendations scaled to budget_level and employee_count",
+        "Implementation roadmap achievable for their team size",
+        "Consistent simulation framing throughout all three phases",
+        "All three Rule of 3 disclaimers present and strong",
+        "Professional validation mentioned at every transition",
+        "No specific cost figures, risk percentages, or numerical effectiveness ratings presented as facts"
+      ],
+      "postamble": "A poorly executed simulation will show: generic risk assessment (same top 5 regardless of inputs), numerical risk matrices with scores implying precision, specific dollar amounts for tool costs, risk reduction percentages, enterprise-scale roadmaps for small businesses, risk findings presented as validated assessment, and no mention of professional validation until the end."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

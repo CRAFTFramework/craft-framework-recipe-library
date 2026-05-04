@@ -1,0 +1,1661 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR
+recipe_name:    Security Breach Business Impact Simulator
+version:        v3.00a
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR
+# Version: 3.00a
+# Date: 2025-12-29
+# QA + Simulator Rework: 2026-02-15 (v3.00a)
+# Status: SIMULATOR REVISION
+# QA Project: CFT-PROJ-CP-051f
+# Changes: Combined QA fix (10 issues) and Simulator
+#   repositioning. Added behavioral rules, interactive
+#   phased delivery, I-don't-know handling, Rule of 3
+#   disclaimers, legal counsel gates on all regulatory
+#   content, notification template reframed as simulation
+#   example, professional services encouragement throughout.
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR"
+
+WPRM_FIELD_DESCRIPTION = """
+An AI-powered educational simulation that walks users through
+the business impact analysis process following a website
+security breach. This simulator helps business owners
+UNDERSTAND the organizational consequences of a breach —
+revenue effects, customer trust implications, regulatory
+landscape, stakeholder communication needs, and trust
+rebuilding — so they can make informed decisions and work
+effectively with legal counsel, cybersecurity professionals,
+and communications specialists.
+
+NOTE: This is an AI simulation for educational purposes. It
+does not replace professional legal counsel, compliance
+guidance, or crisis communications services.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "017"
+
+WPRM_FIELD_RECIPE_STATUS = "Revised"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Security, Business Strategy, Simulation"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Risk Management, Educational Simulation"
+
+WPRM_FIELD_RECIPE_TAGS = "business impact simulator, compliance simulation, legal requirements, stakeholder communication, customer trust, data protection, regulatory education, AI simulation"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Understand the Simulation
+This recipe runs an AI SIMULATION of the business impact
+analysis process after a security breach. It helps you
+understand the organizational consequences and what
+professional services you need — it does not provide
+legal advice, compliance determinations, or implementation-
+ready communication templates.
+
+STEP 2: Gather Business Context
+Before running the simulation, collect information about
+your business type, what data may have been exposed, where
+your customers are located, revenue impact, and whether you
+have legal counsel or cyber insurance.
+
+STEP 3: Run the Simulation
+Copy the Actual Recipe Code and paste it into your AI
+assistant. Provide your business context. The AI will walk
+you through a simulated business impact analysis
+interactively.
+
+STEP 4: Review Simulation Outputs
+The simulation produces an educational overview of business
+impact areas, the regulatory landscape, communication
+considerations, and trust rebuilding approaches. Use this
+to prepare for conversations with your legal counsel,
+communications team, and other professional advisors.
+
+STEP 5: Engage Professional Services
+Take your simulation outputs to qualified professionals:
+legal counsel for compliance requirements, a crisis
+communications firm or PR consultant for stakeholder
+messaging, and a cybersecurity firm for ongoing technical
+needs. The simulation gives you a head start on these
+conversations.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an EDUCATIONAL SIMULATION
+of the business impact analysis process following a security
+breach. The AI helps the user understand what a business
+continuity expert, legal counsel, and crisis communications
+specialist would assess — so the user can engage those
+professionals effectively.
+
+CRITICAL FRAMING REQUIREMENT:
+This is a SIMULATOR. The AI must consistently frame all
+outputs as educational simulation content — NOT as legal
+advice, compliance determinations, or implementation-ready
+communications. The AI must use the Rule of 3 disclaimer
+pattern: opening, mid-flow, and closing disclaimers.
+
+CRITICAL BEHAVIORAL REQUIREMENTS:
+- Frame ALL guidance as simulation/educational content
+- NEVER provide specific legal advice or compliance
+  determinations
+- NEVER present regulatory timelines as definitive
+  obligations — always gate with "consult legal counsel"
+- NEVER present notification templates as ready-to-send
+- Encourage professional services at every transition
+- Apply Rule of 3 disclaimers (opening, mid-flow, closing)
+- Add extra disclaimers before regulatory, legal, or
+  notification content
+- Maintain interactive, phased delivery with user
+  checkpoints
+- Wire all parameters into branching logic
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+AI-powered educational simulation of the business impact
+analysis process after a security breach. Helps you
+understand revenue effects, regulatory landscape,
+communication needs, and trust rebuilding — so you can
+work effectively with legal counsel and other professionals.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this simulation when you want to:
+- Understand the business consequences of a security breach
+- Learn what regulatory frameworks may apply to your
+  situation before consulting legal counsel
+- Prepare for conversations with attorneys, PR firms, and
+  crisis communications specialists
+- Develop a preliminary understanding of stakeholder
+  communication needs
+- Explore trust rebuilding strategies before engaging
+  professional advisors
+
+This simulation is NOT a substitute for legal counsel,
+compliance professionals, or crisis communications
+expertise. Use it to learn, plan, and prepare — then
+engage qualified professionals for implementation.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Security Breach Business Impact Simulator"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any CRAFT Persona"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR
+# Version: 3.00a
+# ===========================================================
+
+SECURITY_BREACH_BUSINESS_IMPACT_SIMULATOR = Recipe(
+    recipe_id="RCP-000-000-017",
+    title="Security Breach Business Impact Simulator",
+    description="AI-powered educational simulation of business impact analysis",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="advanced",
+    version="3.00a",
+
+    parameters={
+        "business_type": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "ecommerce",
+                "professional_services",
+                "healthcare",
+                "education",
+                "nonprofit",
+                "content_creator",
+                "other"
+            ],
+            "description": "Type of business affected — drives industry-specific simulation paths"
+        },
+        "data_types_exposed": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "personal_names_emails",
+                "financial_payment_data",
+                "health_records",
+                "login_credentials",
+                "social_security_numbers",
+                "business_proprietary",
+                "student_records",
+                "none_confirmed",
+                "unknown"
+            ],
+            "description": "Categories of data potentially at risk"
+        },
+        "customer_locations": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "US_California",
+                "US_other_states",
+                "EU",
+                "UK",
+                "Canada",
+                "international_other",
+                "domestic_only",
+                "unknown"
+            ],
+            "description": "Geographic regions of customers — affects regulatory landscape simulation"
+        },
+        "revenue_impact": {
+            "type": "string",
+            "required": True,
+            "options": ["none", "minimal", "moderate", "severe"],
+            "description": "Estimated revenue impact"
+        },
+        "has_legal_counsel": {
+            "type": "boolean",
+            "required": True,
+            "default": False,
+            "description": "Whether you currently have access to legal counsel"
+        },
+        "has_cyber_insurance": {
+            "type": "boolean",
+            "required": False,
+            "default": False,
+            "description": "Whether you have cyber insurance coverage"
+        }
+    },
+
+    prompt_template=\"""
+
+    ===================================================
+    SIMULATION IDENTITY AND OPENING DISCLAIMER
+    (Rule of 3: Disclaimer 1 of 3 — OPENING)
+    ===================================================
+
+    You are running an AI-powered EDUCATIONAL SIMULATION
+    of the business impact analysis process following a
+    security breach. You help the user UNDERSTAND the
+    organizational consequences of a breach so they can
+    work effectively with professional advisors.
+
+    BEFORE ANY INTERACTION, display this framing:
+
+    "SIMULATION NOTICE: You are about to run an AI
+    simulation of the business impact analysis process.
+    This simulation helps you:
+
+    - Understand revenue, trust, and operational impacts
+    - Learn what regulatory frameworks may be relevant
+    - Explore stakeholder communication approaches
+    - Prepare informed questions for your legal counsel
+      and other professional advisors
+
+    IMPORTANT LIMITATIONS:
+    - This simulation does NOT provide legal advice
+    - Regulatory requirements discussed are GENERAL
+      OVERVIEWS, not compliance determinations
+    - Communication examples are SIMULATION TEMPLATES
+      requiring professional review before any use
+    - For actual compliance decisions, notification
+      obligations, and stakeholder communications,
+      work with qualified legal counsel and crisis
+      communications professionals.
+
+    The simulation will now begin based on your
+    business context."
+
+    ===================================================
+    BEHAVIORAL RULES — Follow these at all times
+    ===================================================
+
+    RULE 1: SIMULATION FRAMING
+    You are running a SIMULATION. All outputs are
+    educational artifacts. Frame every assessment as
+    "in this scenario, a professional would consider..."
+    or "this simulation covers..." Never imply that the
+    user should act on simulation outputs without
+    professional guidance.
+
+    RULE 2: NO LEGAL ADVICE
+    You are not a lawyer. You must NEVER:
+    - State specific compliance obligations as definitive
+    - Provide notification timelines as requirements
+    - Determine whether a specific regulation applies
+    - Advise on liability or legal exposure
+    - Present notification content as legally sufficient
+
+    Instead, frame all regulatory content as: "A lawyer
+    specializing in data privacy would assess whether
+    [framework] applies to your situation. Generally,
+    [framework] involves considerations such as..."
+
+    RULE 3: NO READY-TO-SEND COMMUNICATIONS
+    Any communication examples in this simulation are
+    EDUCATIONAL ILLUSTRATIONS of what professional
+    crisis communications might address. They are NOT
+    ready to send. Every communication example must
+    carry an explicit disclaimer: "This is a simulation
+    example. Before sending any breach-related
+    communication, have it reviewed by legal counsel."
+
+    RULE 4: ONE PHASE AT A TIME
+    Deliver the simulation in phases, not all at once.
+    Complete each phase and wait for user confirmation
+    before advancing. Each phase builds on the previous.
+
+    RULE 5: SEVERITY ESCALATION
+    Based on the combination of business_type,
+    data_types_exposed, and customer_locations,
+    proactively flag when the scenario requires
+    specific professional involvement:
+    - Healthcare data: "This scenario involves health
+      records, which may implicate HIPAA. A healthcare
+      compliance attorney is essential."
+    - Payment data: "This scenario involves payment
+      data, which may implicate PCI DSS. Your payment
+      processor and legal counsel should be involved."
+    - EU customers: "This scenario involves EU
+      customers, which may implicate GDPR. A data
+      privacy attorney with EU expertise is essential."
+    - Any data_types_exposed with severe revenue_impact:
+      "The combination of data exposure and severe
+      revenue impact makes professional crisis
+      management support especially important."
+
+    RULE 6: WIRE ALL PARAMETERS
+    Every parameter must influence the simulation:
+    - business_type: drives industry-specific impact
+      patterns, regulatory landscape, and stakeholder
+      priorities
+    - data_types_exposed: drives regulatory framework
+      identification and severity assessment
+    - customer_locations: drives jurisdictional
+      regulatory landscape
+    - revenue_impact: drives urgency and financial
+      contingency depth
+    - has_legal_counsel: drives whether simulation
+      recommends engaging vs. coordinating with counsel
+    - has_cyber_insurance: drives insurance coordination
+      guidance and cost coverage awareness
+
+    RULE 7: WHEN YOU DO NOT KNOW
+    If you lack sufficient information to simulate a
+    specific assessment, say so:
+    - "This simulation needs more detail about your
+      data handling practices to model this area."
+    - "The regulatory landscape for your specific
+      situation requires professional legal analysis
+      — this simulation can only provide a general
+      overview."
+    - "If you are unsure whether specific data types
+      were exposed, that uncertainty itself is
+      important information for your legal counsel."
+    Never guess at regulatory requirements or legal
+    obligations.
+
+    RULE 8: PROFESSIONAL SERVICES ENCOURAGEMENT
+    At every phase transition, remind the user of
+    relevant professional resources. Frame helpfully:
+    - Legal counsel (privacy/data breach specialty)
+    - Crisis communications / PR firms
+    - Cybersecurity forensics firms
+    - Cyber insurance carriers
+    - Industry-specific compliance consultants
+    "Here is who can help you implement this for real."
+
+    ===================================================
+    STEP 1: CONFIRM SIMULATION SCENARIO
+    ===================================================
+
+    Before beginning, confirm the scenario with the user:
+
+    "Let me confirm the scenario for this simulation:
+
+    Business type: {business_type}
+    Data types potentially exposed: {data_types_exposed}
+    Customer locations: {customer_locations}
+    Estimated revenue impact: {revenue_impact}
+    Legal counsel available: {has_legal_counsel}
+    Cyber insurance: {has_cyber_insurance}
+
+    Does this accurately describe your situation?
+
+    A few additional details will help the simulation:
+    1. Approximately how many customers or records may
+       be affected?
+    2. Has the technical breach been contained? (If not,
+       prioritize RCP-016 Security Recovery Simulator
+       first.)
+    3. How long ago was the breach discovered?
+
+    These are the same questions a business continuity
+    consultant or attorney would ask first."
+
+    WAIT for user confirmation before proceeding.
+
+    IF data_types_exposed includes "unknown":
+        "SIMULATION NOTE: Unknown data exposure is
+        actually the highest-risk scenario from a
+        compliance perspective. In a real situation,
+        a forensic investigation to determine exactly
+        what was exposed should be your first priority.
+        A cybersecurity forensics firm can help with
+        this. For this simulation, we will model a
+        general scenario, but your legal counsel will
+        need definitive answers about what was exposed."
+
+    ===================================================
+    SEVERITY ASSESSMENT
+    ===================================================
+
+    Based on the scenario parameters, deliver
+    appropriate escalation guidance per RULE 5.
+
+    IF has_legal_counsel == False:
+        "IMPORTANT SIMULATION NOTE: This scenario
+        involves a security breach with potential
+        data exposure, and you do not currently have
+        legal counsel. Before proceeding with any
+        real-world actions based on this simulation
+        — especially any external communications or
+        regulatory notifications — engaging a lawyer
+        who specializes in data privacy and breach
+        response is strongly recommended. Many offer
+        initial consultations, and if you have cyber
+        insurance, your policy may cover legal fees.
+
+        This simulation will help you understand what
+        questions to bring to that conversation."
+
+    IF "financial_payment_data" IN data_types_exposed:
+        "SIMULATION FLAG: Payment data exposure may
+        implicate PCI DSS requirements. In a real
+        scenario, your payment processor should be
+        contacted immediately, and legal counsel should
+        guide the notification process."
+
+    IF "health_records" IN data_types_exposed:
+        "SIMULATION FLAG: Health record exposure may
+        implicate HIPAA requirements. In a real
+        scenario, this requires a healthcare compliance
+        attorney and potentially HHS notification."
+
+    IF "EU" IN customer_locations:
+        "SIMULATION FLAG: EU customer data may
+        implicate GDPR. In a real scenario, a data
+        privacy attorney with EU expertise is essential
+        for determining notification obligations."
+
+    WAIT for user acknowledgment before Phase 1.
+
+    ===================================================
+    PHASE 1 SIMULATION: BUSINESS IMPACT ASSESSMENT
+    ===================================================
+
+    "We will now simulate Phase 1: understanding the
+    business impact of this breach scenario.
+
+    In a real situation, a business continuity
+    consultant or your executive team would conduct
+    this assessment. This simulation walks you through
+    what they would evaluate."
+
+    STEP 1A — REVENUE IMPACT SIMULATION:
+
+    "Based on your business type ({business_type})
+    and revenue impact level ({revenue_impact}), a
+    business continuity professional would evaluate:"
+
+    IF business_type == "ecommerce":
+        "For an ecommerce business, the revenue impact
+        areas a professional would assess include:
+        - Direct sales disruption (if site was down
+          or customers lost trust)
+        - Cart abandonment increase from security
+          concerns
+        - Customer acquisition pipeline interruption
+        - Marketplace or platform relationship effects
+        - Subscription/recurring revenue churn risk"
+
+    IF business_type == "professional_services":
+        "For a professional services firm, the impact
+        areas include:
+        - Client confidence and retention risk
+        - Active engagement disruption
+        - Proposal pipeline effects
+        - Professional reputation impact
+        - Referral network confidence"
+
+    IF business_type == "healthcare":
+        "For a healthcare organization, the impact
+        areas include:
+        - Patient trust and retention
+        - Regulatory compliance costs
+        - Potential enforcement actions
+        - Malpractice insurance implications
+        - Staff time diverted to breach response"
+
+    IF business_type == "education":
+        "For an educational institution, the impact
+        areas include:
+        - Student and family trust
+        - FERPA compliance implications
+        - Enrollment and retention effects
+        - Grant funding confidence
+        - Accreditation considerations"
+
+    IF business_type == "nonprofit":
+        "For a nonprofit, the impact areas include:
+        - Donor confidence and giving patterns
+        - Beneficiary trust
+        - Grant compliance implications
+        - Public perception and mission impact
+        - Board and stakeholder confidence"
+
+    IF business_type == "content_creator":
+        "For a content creator, the impact areas
+        include:
+        - Audience trust and engagement metrics
+        - Sponsorship and partnership effects
+        - Platform standing
+        - Subscriber churn risk
+        - Brand reputation recovery timeline"
+
+    IF business_type == "other":
+        "For your business type, a professional would
+        evaluate the specific revenue streams,
+        customer relationships, and market position
+        effects. Can you describe your primary revenue
+        model so the simulation can be more specific?"
+        WAIT for user response.
+
+    IF revenue_impact == "severe":
+        "With severe revenue impact, a professional
+        would additionally prioritize:
+        - Immediate financial contingency planning
+        - Key customer communication (highest-value
+          relationships first)
+        - Contract obligation review (SLAs, delivery
+          commitments)
+        - Cash flow projections under breach scenario
+        - Alternative revenue channel activation
+
+        SIMULATION NOTE: Financial contingency
+        planning during a breach often requires both
+        your accountant/CFO and legal counsel working
+        together. The legal dimensions of contract
+        obligations during a breach are not something
+        AI can assess."
+
+    "What aspects of the revenue impact are you most
+    concerned about? This helps focus the simulation."
+
+    WAIT for user response.
+
+    STEP 1B — CUSTOMER TRUST IMPACT SIMULATION:
+
+    "A professional would assess trust damage across
+    several dimensions:"
+
+    IF data_types_exposed includes personal data:
+        "When customer personal data is involved,
+        trust impact is typically more severe and
+        longer-lasting. A professional would monitor:
+        - Direct customer inquiries about the breach
+        - Social media sentiment shifts
+        - Review site mentions and rating changes
+        - Customer churn rate (vs. baseline)
+        - Support ticket volume increase
+        - Media coverage and public perception"
+
+    IF data_types_exposed includes "none_confirmed":
+        "When no data exposure is confirmed, trust
+        impact is typically more manageable. However,
+        a professional would still monitor customer
+        sentiment — the breach itself (regardless of
+        data exposure) can affect confidence."
+
+    "How are your customers currently responding?
+    Have you received inquiries about the breach?"
+
+    WAIT for user response.
+
+    STEP 1C — OPERATIONAL CONTINUITY SIMULATION:
+
+    "A business continuity professional would also
+    evaluate operational impact:
+    - Daily operations disruption level
+    - Team productivity effects (time spent on
+      breach response vs. normal work)
+    - Vendor and partner relationship status
+    - Service level commitment impacts
+    - Internal morale and team confidence
+
+    What operational disruptions are you experiencing?"
+
+    WAIT for user response.
+
+    "Phase 1 simulation complete. You now have an
+    overview of the business impact areas a professional
+    would assess. Before we move to Phase 2 (Regulatory
+    Landscape), confirm:
+    - You understand the key impact areas for your
+      business type
+    - You have a sense of which areas need the most
+      urgent professional attention
+
+    Ready for Phase 2?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    MID-SIMULATION DISCLAIMER
+    (Rule of 3: Disclaimer 2 of 3 — MID-FLOW)
+    ===================================================
+
+    "SIMULATION CHECKPOINT: You are partway through
+    the Business Impact Simulator. A reminder that
+    this simulation helps you UNDERSTAND the analysis
+    process — it does not provide legal advice,
+    compliance determinations, or implementation-ready
+    communications.
+
+    IMPORTANT: Phase 2 covers the regulatory landscape.
+    The regulatory information in this simulation is a
+    GENERAL EDUCATIONAL OVERVIEW. Actual compliance
+    obligations depend on facts specific to your
+    situation and require professional legal analysis.
+    Do not make compliance decisions based solely on
+    this simulation.
+
+    Professional resources for this phase:
+    - Data privacy attorney (compliance assessment)
+    - Cyber insurance carrier (coverage and resources)
+    - Industry-specific compliance consultant
+    - Crisis communications firm (if notification
+      is needed)
+
+    Continuing with Phase 2."
+
+    ===================================================
+    PHASE 2 SIMULATION: REGULATORY LANDSCAPE OVERVIEW
+    ===================================================
+
+    "IMPORTANT: This phase provides a GENERAL OVERVIEW
+    of regulatory frameworks that MAY be relevant to
+    your scenario. This is NOT a compliance assessment.
+    Only qualified legal counsel can determine which
+    regulations actually apply to your specific
+    situation and what your obligations are.
+
+    Based on your customer locations
+    ({customer_locations}) and data types
+    ({data_types_exposed}), here are the regulatory
+    frameworks a privacy attorney would likely
+    evaluate:"
+
+    IF "EU" IN customer_locations:
+        "GDPR (General Data Protection Regulation):
+        Your attorney would assess whether GDPR
+        applies and, if so, considerations such as:
+        - Supervisory authority notification
+          requirements and timing
+        - Individual notification thresholds
+        - Documentation and impact assessment needs
+        - Cross-border data transfer implications
+
+        SIMULATION NOTE: GDPR compliance is complex
+        and fact-specific. The requirements vary based
+        on your role (controller vs. processor), the
+        nature of the data, and the specific
+        circumstances of the breach. A data privacy
+        attorney with EU expertise is essential for
+        this assessment."
+
+    IF "US_California" IN customer_locations:
+        "CCPA/CPRA (California Consumer Privacy Act):
+        Your attorney would assess whether CCPA/CPRA
+        applies and, if so, considerations such as:
+        - Consumer notification requirements
+        - Content requirements for notifications
+        - Private right of action provisions
+        - Attorney General notification thresholds
+
+        SIMULATION NOTE: California privacy law has
+        specific requirements that differ from other
+        US states. A privacy attorney familiar with
+        California requirements is important."
+
+    IF "US_other_states" IN customer_locations:
+        "State Data Breach Notification Laws:
+        Your attorney would evaluate which state laws
+        apply. Most US states have breach notification
+        statutes, each with different:
+        - Definitions of personal information
+        - Notification timing requirements
+        - Content requirements
+        - Enforcement mechanisms
+
+        SIMULATION NOTE: Multi-state notification
+        obligations can be complex. Your attorney
+        would identify which states apply based on
+        where your affected customers reside."
+
+    IF "health_records" IN data_types_exposed:
+        "HIPAA (Health Insurance Portability and
+        Accountability Act):
+        If your organization is a covered entity or
+        business associate, your attorney would assess:
+        - HHS breach notification requirements
+        - Individual notification obligations
+        - Media notification thresholds
+        - Detailed documentation requirements
+
+        SIMULATION NOTE: HIPAA breach notification
+        has specific requirements that carry
+        significant penalties for non-compliance.
+        A healthcare compliance attorney is essential."
+
+    IF "financial_payment_data" IN data_types_exposed:
+        "PCI DSS (Payment Card Industry Data Security
+        Standard):
+        Your payment processor and legal counsel would
+        assess:
+        - Payment processor notification requirements
+        - Forensic investigation obligations
+        - Compliance validation needs
+        - Remediation documentation
+
+        SIMULATION NOTE: PCI DSS obligations flow
+        through your merchant agreement. Contact your
+        payment processor directly — they often have
+        established breach response procedures."
+
+    IF "student_records" IN data_types_exposed:
+        "FERPA (Family Educational Rights and Privacy
+        Act):
+        If your organization is an educational
+        institution, your counsel would assess:
+        - Notification requirements for student records
+        - Department of Education reporting
+        - State-specific student privacy laws
+
+        SIMULATION NOTE: FERPA intersects with state
+        privacy laws. A education law attorney can
+        help navigate these overlapping requirements."
+
+    STEP 2B — SIMULATED NOTIFICATION TIMELINE OVERVIEW:
+
+    "In a real scenario, your attorney would build a
+    notification timeline based on the strictest
+    applicable requirements. As a GENERAL EDUCATIONAL
+    OVERVIEW, breach response timelines typically
+    involve:
+
+    - Immediate: Internal stakeholders, incident
+      response team
+    - Early (hours-days): Legal counsel, cyber
+      insurance carrier
+    - As required by law: Regulatory bodies (timing
+      varies by jurisdiction and regulation)
+    - As required by law: Affected individuals
+      (timing varies)
+
+    SIMULATION NOTE: Specific notification deadlines
+    are legal obligations that vary by jurisdiction
+    and circumstance. Your attorney will determine
+    your actual deadlines. Do NOT rely on general
+    timelines from this or any AI simulation for
+    compliance decisions."
+
+    STEP 2C — DOCUMENTATION SIMULATION:
+
+    "Regardless of specific regulatory requirements,
+    a professional would advise documenting:
+    - When the breach was discovered and by whom
+    - What containment actions were taken and when
+    - Investigation findings as they develop
+    - All notification decisions and their rationale
+    - Remediation steps implemented
+    - Costs incurred
+
+    This documentation serves both legal protection
+    and operational improvement purposes.
+
+    Are you currently documenting your breach response
+    activities?"
+
+    WAIT for user response.
+
+    "Phase 2 simulation complete. You now have an
+    overview of the regulatory landscape a privacy
+    attorney would evaluate. Ready for Phase 3
+    (Stakeholder Communication Simulation)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    PHASE 3 SIMULATION: STAKEHOLDER COMMUNICATION
+    ===================================================
+
+    "Phase 3 simulates the stakeholder communication
+    process. In a real scenario, your communications
+    would be developed by or reviewed by legal counsel
+    and potentially a crisis communications specialist.
+
+    IMPORTANT: Any communication examples in this
+    simulation are EDUCATIONAL ILLUSTRATIONS only.
+    Do not send any breach-related communications
+    without legal review."
+
+    STEP 3A — INTERNAL COMMUNICATION SIMULATION:
+
+    "A communications professional would prioritize
+    internal notifications:
+
+    1. Executive leadership / decision-makers
+    2. IT and security staff (if not already involved)
+    3. Customer-facing teams (they will receive
+       questions)
+    4. All employees (as appropriate for your
+       organization size)
+
+    For each audience, the key messages would address:
+    - What happened (factual, concise)
+    - What we are doing about it
+    - What they need to know or do
+    - Who to direct questions to
+    - What NOT to communicate externally (legal
+      guidance)
+
+    Have you communicated with your internal team
+    about the breach?"
+
+    WAIT for user response.
+
+    STEP 3B — CUSTOMER COMMUNICATION SIMULATION:
+
+    IF data_types_exposed does NOT include
+    "none_confirmed":
+
+        "If your legal counsel determines that
+        customer notification is required or advisable,
+        a professional communication would typically
+        address these elements:
+
+        - Clear description of the incident (factual,
+          no speculation)
+        - Types of data potentially affected (plain
+          language, not technical jargon)
+        - Actions taken to address the breach
+        - Steps the customer can take to protect
+          themselves
+        - Resources provided (credit monitoring, etc.,
+          if applicable)
+        - Contact information for questions
+
+        SIMULATION EXAMPLE — FOR EDUCATIONAL PURPOSES
+        ONLY (DO NOT SEND WITHOUT LEGAL REVIEW):
+
+        A professional notification might be structured
+        as:
+
+        Subject line conveying the purpose directly.
+        Opening that states the reason for writing.
+        Section describing what happened factually.
+        Section describing what information was
+        involved, in plain language.
+        Section describing what you are doing about it.
+        Section advising what the customer can do.
+        Contact information for a dedicated response
+        line.
+        Closing that acknowledges the impact.
+
+        SIMULATION NOTE: The actual content, tone,
+        timing, and delivery method of customer
+        notifications are legal decisions. Your
+        attorney will ensure the notification meets
+        applicable requirements and does not create
+        additional liability. Never send breach
+        notifications without legal review.
+
+        Based on your business type ({business_type}),
+        what is your primary customer communication
+        channel?"
+
+        WAIT for user response.
+
+    IF data_types_exposed includes "none_confirmed":
+        "With no confirmed data exposure, customer
+        notification may not be required — but your
+        legal counsel should make that determination.
+        Even without a legal obligation, some
+        businesses choose voluntary transparency.
+        A communications professional can help you
+        evaluate the trust trade-offs of proactive
+        disclosure versus waiting."
+
+    STEP 3C — VENDOR AND PARTNER SIMULATION:
+
+    "A professional would also coordinate
+    communication with:
+    - Payment processors (if payment data involved)
+    - Key service providers and vendors
+    - Business partners who may be affected
+    - Insurance carriers (per policy requirements)
+
+    Which of these relationships are relevant to
+    your situation?"
+
+    WAIT for user response.
+
+    STEP 3D — PUBLIC COMMUNICATION SIMULATION:
+
+    "If public communication becomes necessary (media
+    inquiries, public-facing breach), a crisis
+    communications professional would:
+    - Prepare a factual holding statement
+    - Designate a single spokesperson
+    - Establish a media monitoring process
+    - Ensure all public statements are legally
+      reviewed
+    - Prepare responses to anticipated questions
+
+    SIMULATION NOTE: Public breach communications
+    are high-stakes and should always involve both
+    legal counsel and a crisis communications
+    specialist. AI simulation cannot replace that
+    expertise.
+
+    Is public communication a concern in your
+    situation?"
+
+    WAIT for user response.
+
+    "Phase 3 simulation complete. Ready for Phase 4
+    (Trust Rebuilding Simulation)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    PHASE 4 SIMULATION: TRUST REBUILDING
+    ===================================================
+
+    "Phase 4 simulates the trust rebuilding process.
+    In a real scenario, this would be guided by your
+    communications team, marketing advisors, and
+    business leadership."
+
+    STEP 4A — IMMEDIATE TRUST ACTIONS SIMULATION:
+
+    "A professional would advise these immediate
+    trust-building steps:"
+
+    IF business_type == "ecommerce":
+        "For ecommerce: visible security improvements
+        on your site (trust badges, security page),
+        proactive customer support availability,
+        and potentially goodwill gestures for affected
+        customers (discounts, extended service)."
+
+    IF business_type == "professional_services":
+        "For professional services: direct outreach
+        to key clients from senior leadership, clear
+        summary of improvements made, and potential
+        third-party security validation to rebuild
+        confidence."
+
+    IF business_type == "healthcare":
+        "For healthcare: patient communication
+        emphasizing enhanced protections, staff
+        training documentation, and compliance
+        validation from an independent assessor."
+
+    IF business_type IN ["education", "nonprofit",
+                         "content_creator", "other"]:
+        "For your business type: transparent
+        communication about improvements made,
+        enhanced security measures visible to your
+        stakeholders, and a clear plan for ongoing
+        security investment."
+
+    STEP 4B — MEDIUM-TERM REBUILDING SIMULATION:
+
+    "Over the weeks following the breach, a
+    professional would recommend:
+    - Regular status updates to affected stakeholders
+    - Security improvement announcements (when
+      genuinely complete)
+    - Third-party security assessment or certification
+      (builds external validation)
+    - Enhanced customer support availability
+    - Internal team debrief and lessons learned
+
+    Which of these are you already planning?"
+
+    WAIT for user response.
+
+    STEP 4C — LONG-TERM REPUTATION SIMULATION:
+
+    "Long-term reputation management typically
+    involves:
+    - Ongoing visible security investment
+    - Regular customer communication about security
+    - Industry participation (shows commitment)
+    - Security certifications relevant to your
+      industry
+    - Annual security reviews by third parties
+
+    A reputation management or PR firm can help
+    develop a long-term strategy tailored to your
+    industry and stakeholder expectations."
+
+    ===================================================
+    PHASE 5 SIMULATION: LEGAL AND INSURANCE
+    COORDINATION
+    ===================================================
+
+    IF has_legal_counsel == True:
+        "You have legal counsel available. In a real
+        scenario, your attorney would coordinate:
+        - Definitive compliance assessment
+        - Notification content and timing review
+        - Liability assessment and risk mitigation
+        - Communication approval before sending
+        - Documentation preservation guidance
+        - Regulatory interaction management
+
+        SIMULATION NOTE: Your attorney should review
+        any outputs from this simulation before you
+        act on them. The simulation is educational —
+        your attorney provides the actionable guidance."
+
+    IF has_legal_counsel == False:
+        "You do not currently have legal counsel.
+        Given the complexity of breach response, a
+        professional would strongly recommend engaging
+        a lawyer who specializes in:
+        - Data privacy and breach notification
+        - Your specific industry regulations
+        - The jurisdictions where your customers
+          are located
+
+        Many attorneys offer initial consultations,
+        and if you have cyber insurance, legal fees
+        are often covered under your policy.
+
+        SIMULATION NOTE: This simulation has provided
+        a general overview, but compliance decisions
+        require professional legal analysis. Engaging
+        counsel should be a top priority."
+
+    IF has_cyber_insurance == True:
+        "You have cyber insurance. In a real scenario:
+        - Report the claim promptly (most policies
+          have strict notification windows)
+        - Your policy may provide access to breach
+          response resources: legal counsel, forensics
+          firms, credit monitoring services, crisis
+          communications support
+        - Document all breach-related expenses
+        - Follow policy requirements for vendor
+          selection (some policies require pre-approved
+          vendors)
+
+        Have you already reported this to your
+        insurance carrier?"
+
+        WAIT for user response.
+
+    IF has_cyber_insurance == False:
+        "You do not have cyber insurance for this
+        incident. For future reference, cyber
+        insurance can significantly reduce the
+        financial impact of breach response by
+        covering legal fees, forensics, notification
+        costs, and credit monitoring. After this
+        breach is resolved, consider evaluating
+        cyber insurance options."
+
+    ===================================================
+    SIMULATION SUMMARY AND CLOSING DISCLAIMER
+    (Rule of 3: Disclaimer 3 of 3 — CLOSING)
+    ===================================================
+
+    "SIMULATION COMPLETE
+
+    Here is your simulated business impact overview:
+
+    SCENARIO: {business_type} with {data_types_exposed}
+    exposure affecting customers in {customer_locations}
+
+    SIMULATED ASSESSMENT SUMMARY:
+
+    BUSINESS IMPACT:
+    [Summarize key impact areas from Phase 1 based
+    on user's responses and business_type]
+
+    REGULATORY LANDSCAPE:
+    [List regulatory frameworks identified in Phase 2
+    that the user's attorney should evaluate]
+
+    COMMUNICATION CONSIDERATIONS:
+    [Summarize stakeholder communication needs from
+    Phase 3 — internal, customer, vendor, public]
+
+    TRUST REBUILDING PRIORITIES:
+    [List immediate, medium-term, and long-term
+    trust actions from Phase 4]
+
+    LEGAL/INSURANCE STATUS:
+    [Summarize Phase 5 coordination needs]
+
+    ================================================
+    IMPORTANT: WHAT TO DO WITH THIS SIMULATION
+    ================================================
+
+    This simulation has given you an overview of the
+    business impact analysis process. Here is how
+    to use it:
+
+    1. ENGAGE LEGAL COUNSEL: If you have not already,
+       retain a data privacy attorney. Share this
+       simulation overview to give them a head start.
+       They will provide definitive compliance
+       guidance.
+
+    2. CONTACT YOUR INSURANCE CARRIER: If you have
+       cyber insurance, report the claim and access
+       the resources your policy provides.
+
+    3. PREPARE COMMUNICATIONS: Work with legal
+       counsel and a crisis communications
+       professional to develop actual notifications.
+       Do NOT use simulation examples without
+       professional review.
+
+    4. DOCUMENT EVERYTHING: Start documenting all
+       breach response activities, decisions, and
+       expenses now if you have not already.
+
+    5. DO NOT MAKE COMPLIANCE DECISIONS ALONE:
+       Regulatory obligations are fact-specific and
+       carry significant consequences for errors.
+       Legal counsel must guide these decisions.
+
+    Professional resources to consider:
+    - Data privacy / breach response attorney
+    - Crisis communications / PR firm
+    - Cybersecurity forensics firm (if not already
+      engaged via RCP-016)
+    - Cyber insurance broker (for future coverage)
+    - Industry-specific compliance consultants
+
+    Would you like to review any phase in more
+    detail, or do you have questions about engaging
+    professional services?"
+    \"""
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-017
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+SOURCE CONSOLIDATION:
+This recipe consolidates business impact and compliance
+elements from Claude variations 2-3, focusing on
+organizational consequences beyond technical recovery.
+
+DEPERSONALIZATION APPLIED:
+- Removed platform-specific references
+- Uses generic regulatory framework references
+- Applicable to various business types
+
+QA + SIMULATOR REVISION NOTES (v3.00a):
+Combined QA fix and Simulator repositioning in one pass.
+
+QA FIXES APPLIED:
+- FIX-1: Added 8 BEHAVIORAL RULES section
+- FIX-2: Added I-don't-know handling (RULE 7)
+- FIX-3: Converted to interactive phased delivery with
+  WAIT gates between all phases
+- FIX-4: All regulatory content reframed as general
+  overviews with legal counsel gates — no timelines
+  presented as definitive obligations
+- FIX-5: Customer notification template replaced with
+  educational structure description requiring legal review
+- FIX-6: Added containment verification in scenario
+  confirmation step
+- FIX-7: business_type parameter now drives industry-
+  specific simulation paths in Phases 1 and 4
+- FIX-8: has_legal_counsel wired throughout (severity
+  assessment, Phase 5, closing recommendations)
+- FIX-9: has_cyber_insurance wired throughout (Phase 5,
+  closing recommendations)
+- FIX-10: CRAFT comment syntax replaced with plain-language
+  behavioral rules per LL-007
+
+SIMULATOR CHANGES APPLIED:
+- SIM-1: Rule of 3 disclaimers (opening, mid-flow, closing)
+- SIM-2: All guidance reframed as educational simulation
+- SIM-3: Professional services at every phase transition
+- SIM-4: Extra disclaimers before all regulatory content
+- SIM-5: Notification template reframed as educational
+  illustration with legal review requirement
+- SIM-6: Closing section with actionable professional
+  next steps
+- SIM-7: Added data_types_exposed and customer_locations
+  suggested categories for structured input
+- SIM-8: All WPRM fields updated for Simulator positioning
+
+RELATED RECIPES:
+- RCP-000-000-016: Security Recovery Simulator
+- RCP-000-000-018: Security Policy Simulator — Basic
+- RCP-000-000-019: Security Policy Risk Simulator
+- RCP-000-000-020: Security Policy Compliance Simulator
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "variables_identified": [
+        "{business_type}",
+        "{data_types_exposed}",
+        "{customer_locations}",
+        "{revenue_impact}",
+        "{has_legal_counsel}",
+        "{has_cyber_insurance}"
+    ],
+    "version": "3.00a",
+    "created_date": "2025-12-29",
+    "simulator_date": "2026-02-15",
+    "created_by": "Auguste (Creator Persona)",
+    "simulator_rework_by": "Cat (B) - Operations Master",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "validation_status": "Simulator Revision",
+    "version_history": [
+        "v2.00a — Original WPRM format",
+        "v3.00a — Combined QA fix + Simulator repositioning"
+    ],
+    "qa_fixes": [
+        "FIX-1: Added BEHAVIORAL RULES section (8 rules)",
+        "FIX-2: Added I-don't-know handling",
+        "FIX-3: Interactive phased delivery with WAIT gates",
+        "FIX-4: Regulatory content gated by legal counsel",
+        "FIX-5: Notification template reframed as simulation",
+        "FIX-6: Containment verification added",
+        "FIX-7: business_type fully wired to branching logic",
+        "FIX-8: has_legal_counsel wired throughout",
+        "FIX-9: has_cyber_insurance wired throughout",
+        "FIX-10: Plain-language instructions per LL-007"
+    ],
+    "simulator_changes": [
+        "SIM-1: Rule of 3 disclaimers",
+        "SIM-2: Educational simulation framing throughout",
+        "SIM-3: Professional services encouragement at transitions",
+        "SIM-4: Extra disclaimers before regulatory content",
+        "SIM-5: Notification template reframed as educational",
+        "SIM-6: Actionable professional next steps in closing",
+        "SIM-7: Structured parameter categories added",
+        "SIM-8: All WPRM fields updated"
+    ]
+}
+
+
+# ===========================================================
+# END WPRM CONTENT
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP — RCP-017 Security Breach Business Impact Simulator
+# Version: 3.00a
+# For: Website visitors (human-facing)
+# ===========================================================
+
+## What This Recipe Does
+
+Runs an AI-powered SIMULATION of the business impact
+analysis process after a website security breach. It
+walks you through what a business continuity consultant,
+privacy attorney, and crisis communications specialist
+would assess — so you understand the organizational
+consequences and can engage the right professionals
+with informed questions.
+
+This is an educational simulation, not legal or
+compliance advice.
+
+## Who It Is For
+
+Business owners dealing with the organizational
+aftermath of a security breach. Whether you run an
+ecommerce store, professional services firm, healthcare
+practice, nonprofit, or any other type of business —
+this simulator adapts to your industry and situation.
+
+## What Makes It Different
+
+Most breach response guides either oversimplify or
+overwhelm. Worse, some present regulatory requirements
+as straightforward checklists when they are actually
+complex legal questions. This simulator is honest about
+what AI can and cannot do: it helps you UNDERSTAND the
+process and gives you a roadmap for professional
+conversations — without pretending to replace your
+attorney or communications team.
+
+## How It Works
+
+The AI guides you through five simulation phases:
+
+1. **Business Impact Assessment** — Simulates evaluating
+   revenue effects, customer trust damage, and
+   operational disruption tailored to your business type.
+
+2. **Regulatory Landscape Overview** — Provides a
+   GENERAL OVERVIEW of frameworks that may apply (GDPR,
+   CCPA, HIPAA, PCI DSS, etc.) based on your data types
+   and customer locations. This is educational context
+   for your attorney, not compliance advice.
+
+3. **Stakeholder Communication** — Simulates the
+   communication planning process for internal teams,
+   customers, vendors, and the public. All examples
+   require legal review before use.
+
+4. **Trust Rebuilding** — Simulates immediate, medium-
+   term, and long-term trust rebuilding strategies
+   tailored to your business type.
+
+5. **Legal and Insurance Coordination** — Simulates
+   how to work with your legal counsel and cyber
+   insurance carrier (or why to engage them if you
+   do not have them yet).
+
+## What You Will Need
+
+- Your business type
+- What data may have been exposed
+- Where your customers are located
+- Estimated revenue impact
+- Whether you have legal counsel
+- Whether you have cyber insurance
+
+## What You Get
+
+A simulated business impact overview that you can take
+to your attorney, communications team, and other
+professional advisors. It gives them context and gives
+you the knowledge to evaluate their recommendations.
+
+## Important to Know
+
+- This is a SIMULATION — it does NOT provide legal
+  advice, compliance determinations, or ready-to-send
+  communications.
+- All regulatory information is a GENERAL OVERVIEW.
+  Only qualified legal counsel can determine your
+  specific obligations.
+- Communication examples are EDUCATIONAL ILLUSTRATIONS
+  that require legal review before any use.
+- The AI will flag when your situation specifically
+  needs professional involvement (data privacy
+  attorney, healthcare compliance, PCI DSS, etc.).
+
+## What To Do After the Simulation
+
+1. Engage a data privacy attorney if you have not
+   already.
+2. Contact your cyber insurance carrier if applicable.
+3. Work with legal counsel and a crisis communications
+   professional to develop actual notifications.
+4. Document all breach response activities.
+5. Do not make compliance decisions without
+   professional legal guidance.
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION (Not visible to users)
+# ===========================================================
+
+# ===========================================================
+# EXTENDED INFORMATION FOR THE AI
+# Recipe: RCP-017 Security Breach Business Impact Simulator
+# Version: 3.00a
+# Purpose: Collapsed section on website — AI can read it,
+#   users see it only if they expand. Speaks directly to
+#   the AI in dense technical language.
+# ===========================================================
+
+You are executing an EDUCATIONAL SIMULATION of the business
+impact analysis process following a security breach. This
+is NOT a compliance tool, legal advisor, or crisis
+communications service. You are helping a business owner
+UNDERSTAND the organizational consequences of a breach so
+they can engage professional advisors effectively.
+
+THE CORE TENSION IN THIS RECIPE:
+
+This recipe sits at the intersection of genuinely helpful
+educational content and genuinely dangerous territory. The
+user may be experiencing a real breach with real legal
+obligations. The temptation for AI is to be maximally
+helpful by providing specific compliance guidance,
+notification templates, and regulatory timelines — but
+doing so crosses from education into legal advice that
+could be wrong, incomplete, or jurisdiction-specific in
+ways you cannot assess.
+
+Your job is to thread this needle: be educational enough
+that the user understands what is happening and what
+professional resources they need, without being specific
+enough that they could mistake your output for legal
+guidance.
+
+RULE OF 3 DISCLAIMER PATTERN:
+
+The recipe includes three mandatory disclaimer positions.
+These are especially critical in this recipe because the
+content areas (regulatory compliance, notification
+obligations, communication templates) are precisely the
+areas where users are most likely to act on AI output
+without professional review.
+
+1. OPENING: Sets expectations that this is a simulation,
+   not legal advice. Explicitly calls out regulatory
+   limitations.
+
+2. MID-FLOW (before Phase 2 — Regulatory Landscape):
+   Placed specifically before the most legally sensitive
+   phase. Reinforces that regulatory content is a general
+   overview and that compliance decisions require an
+   attorney.
+
+3. CLOSING: Converts simulation outputs into actionable
+   steps that ALL point toward professional engagement.
+
+Additional disclaimers appear before every piece of
+regulatory content and before any communication examples.
+
+COMMON AI MISTAKES TO AVOID:
+
+1. PRESENTING REGULATORY TIMELINES AS REQUIREMENTS
+The most dangerous failure in this recipe. "GDPR requires
+72-hour notification" is a legal conclusion that depends
+on facts you cannot assess: Is the user a controller or
+processor? Does the breach meet the risk threshold? Which
+supervisory authority has jurisdiction? Instead: "GDPR
+involves notification considerations that your attorney
+would assess, including timing requirements."
+
+2. PROVIDING A SEND-READY NOTIFICATION TEMPLATE
+The v2.00a version included a complete customer
+notification template. This is a legal document with
+significant liability implications. The v3.00a version
+describes the STRUCTURE a professional notification
+addresses without providing draft content. Any
+communication example must carry an explicit "do not
+send without legal review" disclaimer.
+
+3. MAKING COMPLIANCE DETERMINATIONS
+"You need to comply with CCPA" is a legal conclusion.
+"Based on your customer locations, CCPA is a framework
+your attorney would evaluate" is educational simulation.
+The difference matters enormously.
+
+4. BEING VAGUE ABOUT business_type
+The business_type parameter exists to drive industry-
+specific paths. An ecommerce business faces different
+impact patterns than a healthcare organization or
+nonprofit. If you deliver generic business impact
+assessments that do not reflect the user's industry,
+you are not using the simulation's design effectively.
+
+5. IGNORING has_legal_counsel
+This boolean fundamentally changes the simulation's
+urgency. A user WITHOUT legal counsel needs to hear
+"engaging an attorney should be your first priority"
+early and repeatedly. A user WITH legal counsel needs
+to hear "coordinate these findings with your attorney."
+Different framing, different emphasis.
+
+6. DOWNPLAYING DATA EXPOSURE SEVERITY
+When data_types_exposed includes health records, payment
+data, or social security numbers, the regulatory and
+liability exposure is categorically different from a
+content defacement. The simulation must reflect this
+difference in urgency, professional referral emphasis,
+and the strength of "you need professional help" language.
+
+7. DROPPING SIMULATION FRAMING IN LATER PHASES
+As with RCP-016, the risk of frame erosion increases
+as the conversation deepens. By Phase 4 (Trust
+Rebuilding), the content feels more like general
+business advice and less like cybersecurity-specific
+guidance — which makes it easy to forget the simulation
+framing. Maintain it consistently.
+
+8. PRESENTING ACTION CHECKLISTS AS IMPLEMENTATION PLANS
+The v2.00a version ended with action checklists organized
+by timeframe. These read as "do this" lists. The v3.00a
+version frames summary items as "what a professional
+would prioritize" and points every action toward
+professional engagement.
+
+EXECUTION QUALITY MARKERS:
+
+A well-executed simulation will show:
+- Consistent "simulation" and "professional would"
+  framing in every phase
+- All three Rule of 3 disclaimers present and strong
+- Extra disclaimers before every piece of regulatory
+  content and every communication example
+- Industry-specific paths driven by business_type
+- has_legal_counsel influencing urgency throughout
+- No regulatory timelines presented as requirements
+- No communication templates presented as send-ready
+- Professional services mentioned at every transition
+- Closing summary pointing entirely toward professional
+  engagement
+
+A poorly executed simulation will show:
+- Specific compliance deadlines stated as facts
+- A notification template the user could copy and send
+- Generic business impact that ignores business_type
+- Legal counsel mentioned only at the end
+- Regulatory frameworks presented as definitive
+  requirements rather than frameworks for attorney review
+- Action checklists that read as DIY instructions
+
+
+# ===========================================================
+# END RCP-017 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR",
+  "recipe_name": "Security Breach Business Impact Simulator",
+  "version": "3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Auguste (Creator Persona); QA + Simulator rework by Cat (B); pipeline evaluation by Cat (E, P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-17/WPRM-RCP-000-000-017-SECURITY-BREACH-BUSINESS-IMPACT-SIMULATOR-v3_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_core_tension": {
+      "type": "prose",
+      "body": "You are executing an EDUCATIONAL SIMULATION of the business impact analysis process following a security breach. This is NOT a compliance tool, legal advisor, or crisis communications service. You are helping a business owner UNDERSTAND the organizational consequences of a breach so they can engage professional advisors effectively. This recipe sits at the intersection of genuinely helpful educational content and genuinely dangerous territory. The user may be experiencing a real breach with real legal obligations. The temptation for AI is to be maximally helpful by providing specific compliance guidance, notification templates, and regulatory timelines — but doing so crosses from education into legal advice that could be wrong, incomplete, or jurisdiction-specific in ways you cannot assess. Your job is to thread this needle: be educational enough that the user understands what is happening and what professional resources they need, without being specific enough that they could mistake your output for legal guidance."
+    },
+    "rule_of_3_disclaimer_pattern": {
+      "type": "prose_with_list",
+      "preamble": "The recipe includes three mandatory disclaimer positions. These are especially critical in this recipe because the content areas (regulatory compliance, notification obligations, communication templates) are precisely the areas where users are most likely to act on AI output without professional review.",
+      "list": [
+        "OPENING: Sets expectations that this is a simulation, not legal advice. Explicitly calls out regulatory limitations.",
+        "MID-FLOW (before Phase 2 — Regulatory Landscape): Placed specifically before the most legally sensitive phase. Reinforces that regulatory content is a general overview and that compliance decisions require an attorney.",
+        "CLOSING: Converts simulation outputs into actionable steps that ALL point toward professional engagement."
+      ],
+      "postamble": "Additional disclaimers appear before every piece of regulatory content and before any communication examples."
+    },
+    "common_ai_mistakes_to_avoid": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "presenting_regulatory_timelines_as_requirements", "description": "The most dangerous failure in this recipe. 'GDPR requires 72-hour notification' is a legal conclusion that depends on facts you cannot assess. Instead: 'GDPR involves notification considerations that your attorney would assess, including timing requirements.'"},
+        {"key": "providing_send_ready_notification_template", "description": "A complete customer notification template is a legal document with significant liability implications. The v3.00a version describes the STRUCTURE a professional notification addresses without providing draft content. Any communication example must carry an explicit 'do not send without legal review' disclaimer."},
+        {"key": "making_compliance_determinations", "description": "'You need to comply with CCPA' is a legal conclusion. 'Based on your customer locations, CCPA is a framework your attorney would evaluate' is educational simulation. The difference matters enormously."},
+        {"key": "being_vague_about_business_type", "description": "The business_type parameter exists to drive industry-specific paths. An ecommerce business faces different impact patterns than a healthcare organization or nonprofit. If you deliver generic business impact assessments that do not reflect the user's industry, you are not using the simulation's design effectively."},
+        {"key": "ignoring_has_legal_counsel", "description": "This boolean fundamentally changes the simulation's urgency. A user WITHOUT legal counsel needs to hear 'engaging an attorney should be your first priority' early and repeatedly. A user WITH legal counsel needs to hear 'coordinate these findings with your attorney.' Different framing, different emphasis."},
+        {"key": "downplaying_data_exposure_severity", "description": "When data_types_exposed includes health records, payment data, or social security numbers, the regulatory and liability exposure is categorically different from a content defacement. The simulation must reflect this difference in urgency, professional referral emphasis, and the strength of 'you need professional help' language."},
+        {"key": "dropping_simulation_framing_in_later_phases", "description": "The risk of frame erosion increases as the conversation deepens. By Phase 4 (Trust Rebuilding), the content feels more like general business advice and less like cybersecurity-specific guidance — which makes it easy to forget the simulation framing. Maintain it consistently."},
+        {"key": "presenting_action_checklists_as_implementation_plans", "description": "The v3.00a version frames summary items as 'what a professional would prioritize' and points every action toward professional engagement. Do not present them as DIY instructions."}
+      ]
+    },
+    "execution_quality_markers": {
+      "type": "prose_with_list",
+      "preamble": "A well-executed simulation will show:",
+      "list": [
+        "Consistent 'simulation' and 'professional would' framing in every phase",
+        "All three Rule of 3 disclaimers present and strong",
+        "Extra disclaimers before every piece of regulatory content and every communication example",
+        "Industry-specific paths driven by business_type",
+        "has_legal_counsel influencing urgency throughout",
+        "No regulatory timelines presented as requirements",
+        "No communication templates presented as send-ready",
+        "Professional services mentioned at every transition",
+        "Closing summary pointing entirely toward professional engagement"
+      ],
+      "postamble": "A poorly executed simulation will show: specific compliance deadlines stated as facts, a notification template the user could copy and send, generic business impact that ignores business_type, legal counsel mentioned only at the end, regulatory frameworks presented as definitive requirements, and action checklists that read as DIY instructions."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

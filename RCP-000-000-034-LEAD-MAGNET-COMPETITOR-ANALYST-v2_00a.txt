@@ -1,0 +1,883 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-034
+# Recipe Name:   Lead Magnet Competitor Analyst
+# Version:       v2.00a-R
+# Category:      Standalone (000)
+# Difficulty:    Easy
+# Authored by:   Cat (P067, H064)
+# Revision Date: 2026-02-16
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-034-LEAD-MAGNET-COMPETITOR-ANALYST
+# Version: v2.00a-R
+# Status: Official (Revised — QA Audit H010)
+# Created: 2025-12-30
+# Revised: 2026-02-16
+# Series: Lead Magnet (1 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-034-LEAD-MAGNET-COMPETITOR-ANALYST"
+
+WPRM_FIELD_DESCRIPTION = """
+Helps you structure and analyze competitor lead magnet
+intelligence you have gathered. You provide details about
+what competitors offer; the AI organizes your findings into
+a structured comparison, identifies patterns across
+competitors, surfaces gaps, and helps you develop a
+differentiation strategy. The AI does not independently
+research competitors — the quality of the analysis depends
+on the quality of the intelligence you bring.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "034"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Lead Generation"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Lead Magnet,
+Competitive Analysis,
+Market Research,
+Lead Generation,
+Differentiation,
+Marketing Strategy,
+Competitor Research,
+Content Strategy
+"""
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+Step 1: Research Your Competitors First
+    Before running this recipe, you need to do some
+    homework. Visit 2-3 competitor websites. Sign up
+    for their email lists if needed. Document what
+    lead magnets they offer, what format they use,
+    what the content covers, and your impressions of
+    quality. The AI cannot visit websites or access
+    gated content — it can only analyze intelligence
+    you provide.
+
+Step 2: Prepare Your Competitor Notes
+    For each competitor, write down: the lead magnet
+    title, format (ebook, checklist, template, etc.),
+    what it covers, what you liked, what you thought
+    was weak, and anything you noticed that was missing.
+    More detail = better analysis.
+
+Step 3: Define Your Industry Context
+    Prepare a brief description of your industry,
+    target audience, and business focus so the AI
+    can frame the analysis appropriately.
+
+Step 4: Run the Recipe
+    Paste the recipe code into your AI assistant and
+    fill in all parameters with your research notes.
+    The AI will walk you through the analysis
+    interactively, one competitor at a time.
+
+Step 5: Work Through Each Competitor Analysis
+    The AI will analyze one competitor at a time,
+    organizing your notes into strengths, weaknesses,
+    and opportunities. Confirm or correct each
+    analysis before moving to the next.
+
+Step 6: Review the Cross-Competitor Synthesis
+    After all individual analyses, the AI identifies
+    patterns across competitors — common gaps, shared
+    weaknesses, and underserved audience needs.
+
+Step 7: Develop Your Differentiation Strategy
+    The AI helps you turn gap analysis into a
+    positioning strategy for your own lead magnet.
+    Use this to guide creation in the next recipe
+    (RCP-035).
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe guides the AI to help users structure and
+analyze competitor lead magnet intelligence they have
+gathered. The AI organizes user-provided competitor notes
+into a structured comparison across type, strengths,
+weaknesses, and opportunities. The AI does not research
+competitors independently — it works exclusively with
+information the user provides, and flags when it is
+adding general industry knowledge versus working from
+user-supplied details.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Structure and analyze competitor lead magnet intelligence
+you have gathered to find gaps and differentiation
+opportunities.
+"""
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you have already researched 2-3
+competitors and documented their lead magnet offerings.
+Best used before the Lead Magnet Creator recipe
+(RCP-000-000-035). Do not use this recipe expecting
+the AI to research competitors for you — bring your
+own intelligence.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Lead Magnet Competitor Analyst"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE START
+# ===========================================================
+# Recipe: RCP-000-000-034-LEAD-MAGNET-COMPETITOR-ANALYST
+# Version: v2.00a-R
+# Difficulty: Easy
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+# RULE 1 — HONESTY ABOUT SOURCES: Clearly distinguish
+#   between analysis based on user-provided competitor
+#   intelligence versus general industry knowledge the AI
+#   is contributing. When adding general knowledge, flag
+#   it explicitly: "Based on general industry patterns..."
+#   or "From what you have described..." Never present
+#   general knowledge as if it came from researching the
+#   specific competitor.
+#
+# RULE 2 — NO FABRICATED RESEARCH: The AI cannot visit
+#   websites, download lead magnets, sign up for email
+#   lists, or access gated content. Never imply that the
+#   analysis is based on independent research. All
+#   competitor-specific claims must trace back to what the
+#   user provided.
+#
+# RULE 3 — DATA QUALITY HONESTY: If the user provides
+#   thin detail about a competitor (just a name, no
+#   specifics about their lead magnet), say so. "You have
+#   provided the name but limited detail about their
+#   offering. The analysis for this competitor will be
+#   more general. If you can add more detail about what
+#   they offer, I can sharpen this analysis."
+#
+# RULE 4 — NO FALSE PRECISION: Do not generate specific
+#   metrics, market share estimates, conversion rate
+#   predictions, or ROI projections. Strengths and
+#   weaknesses should be qualitative observations based
+#   on the user's intelligence, not fabricated data.
+#
+# RULE 5 — INTERACTIVE DELIVERY: Present analysis one
+#   competitor at a time. WAIT for user confirmation or
+#   correction before proceeding to the next. Do not dump
+#   all analysis at once.
+#
+# RULE 6 — SCOPE HONESTY: This recipe helps organize and
+#   structure thinking about competitors. It does not
+#   replace professional market research, competitive
+#   intelligence services, or direct user testing. Frame
+#   output as a structured starting point, not a
+#   definitive competitive assessment.
+#
+# RULE 7 — I-DON'T-KNOW HANDLING: When the user's notes
+#   do not cover an analysis dimension (e.g., they know
+#   the format but not the content quality), flag it:
+#   "Your notes did not mention [dimension]. I will skip
+#   this for now — you can add detail later if you
+#   gather more intelligence."
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# I-DON'T-KNOW FLAGS
+# -----------------------------------------------------------
+# FLAG 1: If asked about a competitor the user has not
+#   provided intelligence on: "I do not have details about
+#   that competitor. If you can share what you have found
+#   about their lead magnet, I can include them in the
+#   analysis."
+#
+# FLAG 2: If asked to predict competitor strategy or
+#   future moves: "I cannot predict what competitors will
+#   do. I can help you identify current gaps based on
+#   what you have observed."
+#
+# FLAG 3: If asked to rate or rank competitors with
+#   scores: "I do not have enough objective data to
+#   assign numerical scores. I can provide qualitative
+#   comparison based on the intelligence you have shared."
+#
+# FLAG 4: If the user provides no competitor detail at
+#   all and asks for analysis: "I need you to provide
+#   details about your competitors' lead magnets before
+#   I can analyze them. I cannot research competitors
+#   independently. What have you observed about their
+#   offerings?"
+# -----------------------------------------------------------
+
+
+#H->AI::Directive: (Help the user structure and analyze
+    competitor lead magnet intelligence they have gathered
+    to identify gaps and differentiation opportunities.)
+
+
+#H->AI::Context: (
+    industry = "{industry}"
+    # PARAMETER COACHING: Your industry or niche.
+    # Good: "B2B SaaS for HR teams under 200 employees"
+    # Good: "Health coaching for women over 40"
+    # Thin: "Software" — too broad for useful analysis
+
+    target_audience = "{target_audience}"
+    # PARAMETER COACHING: Who you are trying to attract
+    #   with your lead magnet.
+    # Good: "Marketing managers at mid-size e-commerce
+    #   companies who struggle with email list growth"
+    # Thin: "Business owners" — too broad
+
+    competitor_1_name = "{competitor_1_name}"
+    # The name or brand of your first competitor.
+
+    competitor_1_magnet_details = "{competitor_1_magnet_details}"
+    # PARAMETER COACHING: Everything you know about this
+    #   competitor's lead magnet. The more you provide,
+    #   the sharper the analysis.
+    # Good: "They offer a free '30-Day Email Marketing
+    #   Playbook' PDF, about 25 pages. It covers daily
+    #   email templates, subject line formulas, and list
+    #   segmentation basics. Clean design, professional
+    #   layout. Gated behind a landing page with name
+    #   and email. Promoted on their blog sidebar and
+    #   Instagram bio. I thought the templates were
+    #   useful but the segmentation section felt rushed
+    #   and generic."
+    # Thin: "They have an ebook" — will produce generic
+    #   analysis. Add format, topic, quality impressions.
+
+    competitor_2_name = "{competitor_2_name}"
+    # The name or brand of your second competitor.
+
+    competitor_2_magnet_details = "{competitor_2_magnet_details}"
+    # Same guidance as competitor 1. Detail matters.
+
+    competitor_3_name = "{competitor_3_name}"
+    # Optional — leave blank if you only have 2
+    #   competitors to analyze.
+
+    competitor_3_magnet_details = "{competitor_3_magnet_details}"
+    # Optional — same guidance as above.
+
+    your_current_magnet = "{your_current_magnet}"
+    # Optional — if you already have a lead magnet,
+    #   briefly describe it so the AI can position the
+    #   differentiation strategy relative to your
+    #   current offering. Leave blank if starting fresh.
+)
+
+
+# -----------------------------------------------------------
+# PHASE 1: INTELLIGENCE QUALITY ASSESSMENT
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Before analyzing, assess the quality of intelligence
+    the user has provided.
+
+    For each competitor, determine:
+    - Has the user provided the lead magnet format/type?
+    - Has the user described what the content covers?
+    - Has the user shared quality impressions (likes,
+      dislikes, gaps they noticed)?
+    - Has the user noted how it is promoted or accessed?
+
+    Provide a brief intelligence quality summary:
+    - Which competitors have strong detail (ready for
+      deep analysis)
+    - Which have thin detail (will produce general
+      analysis — flag this per RULE 3)
+    - Whether any competitors are name-only with no
+      magnet detail (cannot meaningfully analyze —
+      flag per I-DON'T-KNOW FLAG 4)
+
+    If all competitors have at least moderate detail,
+    proceed. If all are thin or empty, coach the user
+    on what to gather before continuing.
+
+    Confirm the number of competitors to analyze and
+    the order you will work through them.
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 2: INDIVIDUAL COMPETITOR ANALYSIS
+# -----------------------------------------------------------
+# Process ONE competitor at a time. WAIT between each.
+
+#H->AI::Task: (
+    For Competitor 1, analyze the user-provided
+    intelligence across four dimensions:
+
+    1. LEAD MAGNET TYPE AND FORMAT
+       Based on what the user described, identify the
+       format (ebook, checklist, webinar, template,
+       quiz, free trial, discount, etc.) and note any
+       delivery mechanism details the user provided.
+
+    2. STRENGTHS (from user intelligence)
+       What the user's notes suggest works well about
+       this lead magnet. Draw from their quality
+       impressions. If the user noted specific positives,
+       reference them. If they did not comment on
+       strengths, note the gap and offer general
+       observations about the format's typical strengths
+       — clearly flagged as general knowledge per RULE 1.
+
+    3. WEAKNESSES (from user intelligence)
+       What the user's notes suggest is weak or missing.
+       Same approach — draw from user observations first,
+       supplement with general patterns only when flagged.
+
+    4. OPPORTUNITIES (synthesis)
+       Based on identified weaknesses and the user's
+       target audience, what gaps could the user's lead
+       magnet fill? This is where the AI adds the most
+       value — connecting competitor gaps to the user's
+       audience needs.
+
+    Present the analysis for Competitor 1 only.
+    Ask: "Does this capture your observations
+    accurately? Anything to add or correct before I
+    move to [Competitor 2 name]?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+# Repeat for Competitor 2 (and Competitor 3 if provided).
+# WAIT after each competitor analysis.
+
+
+# -----------------------------------------------------------
+# PHASE 3: CROSS-COMPETITOR SYNTHESIS
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    After all individual analyses are confirmed, provide
+    a cross-competitor synthesis:
+
+    PATTERN ANALYSIS
+    - Common strengths across competitors (what the
+      market baseline looks like)
+    - Common weaknesses (systematic gaps the user can
+      exploit)
+    - Format patterns (what types dominate, what is
+      missing)
+
+    MARKET GAPS SUMMARY
+    - Underserved audience needs that no competitor
+      addresses well (based on user intelligence)
+    - Format opportunities — types of lead magnets
+      not represented in the competitive set
+    - Quality gaps — areas where all competitors
+      deliver thin value
+
+    Flag which findings are based on the user's specific
+    competitor intelligence versus general industry
+    observations.
+
+    Ask: "Does this synthesis match your overall
+    impression of the competitive landscape? Anything
+    I am missing?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 4: DIFFERENTIATION STRATEGY
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on confirmed gap analysis, help the user
+    develop a differentiation strategy:
+
+    DIFFERENTIATION RECOMMENDATIONS
+    - 3 specific ways the user's lead magnet can stand
+      out, each tied to a specific gap identified in
+      the synthesis
+    - For each recommendation: what gap it addresses,
+      why it matters to the target audience, and what
+      it would look like in practice
+
+    RECOMMENDED FORMAT DIRECTION
+    - Suggest 1-2 lead magnet formats that best fit
+      the identified opportunities. Explain why each
+      format suits the gaps found.
+    - Do NOT claim one format will outperform another
+      without data. Frame as "based on the gaps we
+      identified, [format] would let you address
+      [specific gap] because..."
+
+    KEY VALUE PROPOSITION DIRECTION
+    - A draft positioning statement the user can refine
+    - The primary audience pain point it addresses
+    - How it differs from what competitors offer
+
+    Frame all recommendations as starting points for
+    the user to test and refine, not as definitive
+    strategic prescriptions.
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 5: VALIDATION SUMMARY AND NEXT STEPS
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Provide a closing validation summary:
+
+    WHAT WE ANALYZED
+    - Number of competitors examined
+    - Key intelligence sources (user-provided, with
+      quality level noted)
+
+    ANALYSIS LIMITATIONS
+    - Any competitors with thin intelligence (and how
+      that limited the analysis)
+    - Areas where general industry knowledge was used
+      instead of specific competitor data
+    - This analysis is based on a snapshot — competitors
+      change their offerings over time
+
+    NEXT STEPS
+    - If using the Lead Magnet series: proceed to
+      RCP-035 (Lead Magnet Creator) with the
+      differentiation strategy as input
+    - Suggested follow-up research to strengthen any
+      weak areas in the competitive intelligence
+    - Consider revisiting this analysis periodically
+      as competitors evolve their offerings
+
+    This is a structured thinking aid, not a
+    professional competitive intelligence report.
+    Use it as a foundation for your lead magnet
+    strategy, validated against your own market
+    knowledge and customer conversations.
+)
+
+
+# -----------------------------------------------------------
+# EXAMPLES
+# -----------------------------------------------------------
+
+# EXAMPLE 1 — STRONG INPUT (DETAILED INTELLIGENCE)
+#
+# industry: "Online fitness coaching for busy
+#   professionals aged 30-50"
+# target_audience: "Corporate workers who want to
+#   exercise but struggle to find time and consistency"
+# competitor_1_name: "FitPro Academy"
+# competitor_1_magnet_details: "They offer a free
+#   '7-Day Desk Workout Challenge' PDF, about 15 pages.
+#   Each day has a 10-minute routine you can do at your
+#   desk. Clean design with exercise photos. Gated
+#   behind email signup on their homepage banner. I
+#   liked the daily structure and photos but the
+#   exercises felt too easy for anyone with basic
+#   fitness, and there was no progression plan after
+#   the 7 days."
+# competitor_2_name: "BurnFit Online"
+# competitor_2_magnet_details: "They have a free
+#   'Calorie Calculator' tool on their website — you
+#   enter your stats and it gives you daily targets.
+#   No email required to use it but they upsell a
+#   meal plan. It is useful but feels impersonal and
+#   the results are generic. No exercise component."
+#
+# Result: Detailed per-competitor analysis with specific
+#   gap identification (no progression plan, no
+#   personalization, no combined fitness+nutrition),
+#   leading to a differentiation strategy around a
+#   progressive, personalized challenge format.
+
+# EXAMPLE 2 — THIN INPUT (LIMITED INTELLIGENCE)
+#
+# industry: "Digital marketing consulting"
+# target_audience: "Small business owners"
+# competitor_1_name: "MarketBoost Agency"
+# competitor_1_magnet_details: "They have some kind
+#   of checklist on their site"
+# competitor_2_name: "GrowthHack Co"
+# competitor_2_magnet_details: "Free webinar"
+#
+# Result: AI flags thin intelligence at Phase 1:
+#   "You have provided names but limited detail about
+#   what these lead magnets actually contain. I can
+#   provide a general-level analysis but it will not
+#   be competitor-specific. Would you like to proceed
+#   with general analysis, or gather more detail first?"
+
+
+# ===========================================================
+# RECIPE END
+# ===========================================================
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-034",
+    "name": "LEAD-MAGNET-COMPETITOR-ANALYST",
+    "version": "v2.00a-R",
+    "series": "Lead Magnet",
+    "series_position": "1 of 3",
+    "difficulty": "Easy",
+    "estimated_time": "30-60 minutes",
+    "prerequisites": [
+        "Already researched 2-3 competitors",
+        "Documented competitor lead magnet details",
+        "Industry context defined"
+    ],
+    "outputs": [
+        "Structured competitor lead magnet analysis",
+        "Cross-competitor gap identification",
+        "Differentiation strategy recommendations"
+    ],
+    "next_recipe": "RCP-000-000-035-LEAD-MAGNET-CREATOR",
+    "qa_audit": {
+        "audit_session": "H010",
+        "original_version": "v2.00a",
+        "revised_version": "v2.00a-R",
+        "audit_verdict": "FAIL",
+        "gaps_found": 12,
+        "gaps_fixed": 12,
+        "key_changes": [
+            "Added 7 behavioral rules",
+            "Added 4 I-don't-know flags",
+            "Added 5-phase interactive delivery with WAIT gates",
+            "Added parameter coaching on all inputs",
+            "Added intelligence quality gate (Phase 1)",
+            "Promoted competitor details from Optional to required with coaching",
+            "Reframed from AI-researches to AI-analyzes-your-research",
+            "Added honesty-about-sources rule (RULE 1)",
+            "Added 2 examples (strong and thin input)",
+            "Added validation summary with limitations",
+            "Fixed dishonest positioning in DESCRIPTION and HOW_AI_READS",
+            "Removed false-precision potential"
+        ]
+    }
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-034 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: LEAD-MAGNET-COMPETITOR-ANALYST
+# Version: v2.00a-R (Revised H010)
+# Generated: 2026-02-16
+# Contains: TLDR Recap, Extended Information for AI
+# Note: Image Generation Prompts excluded per H039-006.
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP — RCP-034 Lead Magnet Competitor Analyst
+
+WHAT IT DOES:
+    Helps you organize and analyze competitor lead magnet
+    intelligence YOU have gathered. You provide notes on
+    what competitors offer; the AI structures your findings
+    into strengths, weaknesses, and opportunities, then
+    synthesizes a differentiation strategy.
+
+WHAT IT DOES NOT DO:
+    - Does not research competitors for you
+    - Does not visit websites, download lead magnets,
+      or access gated content
+    - Does not generate market share data or conversion
+      rate predictions
+    - Does not replace professional competitive
+      intelligence services
+
+HOW IT WORKS (5 Phases):
+    Phase 1: Intelligence Quality Assessment
+        AI evaluates what you provided for each competitor
+        and flags where detail is thin
+    Phase 2: Individual Competitor Analysis (one at a time)
+        Strengths, weaknesses, and opportunities per
+        competitor with WAIT gates between each
+    Phase 3: Cross-Competitor Synthesis
+        Patterns, common gaps, format opportunities
+    Phase 4: Differentiation Strategy
+        3 specific ways to stand out, format direction,
+        value proposition draft
+    Phase 5: Validation Summary
+        What was analyzed, limitations acknowledged,
+        next steps (leads to RCP-035)
+
+KEY INPUTS REQUIRED:
+    - Industry and target audience description
+    - 2-3 competitors with DETAILED notes about their
+      lead magnets (format, content, quality impressions)
+    - Optional: your current lead magnet (if you have one)
+
+SERIES POSITION: 1 of 3
+    034 (this) → 035 (Creator) → 036 (Optimizer)
+
+HONEST POSITIONING:
+    This is a structured thinking aid. The AI organizes
+    YOUR research into a useful comparison framework.
+    Quality of output is directly proportional to quality
+    of intelligence you provide.
+"""
+
+
+# ===========================================================
+# SECTION 2: EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+"""
+EXTENDED INFORMATION FOR AI — RCP-034
+
+PURPOSE AND POSITIONING:
+    This recipe helps users who have already done competitor
+    research organize their findings into a structured
+    competitive analysis. The AI's role is analyst and
+    organizer, NOT researcher. The user brings the raw
+    intelligence; the AI adds structure, pattern
+    recognition, and strategic synthesis.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    SOURCE TRANSPARENCY:
+    Every claim in the analysis should be traceable to
+    either (a) something the user provided, or (b) general
+    industry knowledge that is explicitly flagged as such.
+    Never blend the two without attribution. Users should
+    always know which parts of the analysis came from their
+    research versus the AI's general knowledge.
+
+    DATA QUALITY SENSITIVITY:
+    The user's competitor notes will vary widely in depth.
+    Some users will provide paragraphs of detailed
+    observations; others will provide a competitor name
+    and "they have an ebook." The AI must calibrate its
+    analysis depth to match the input depth. A thin input
+    should produce a thin analysis with a coaching nudge
+    to gather more detail — not an elaborate analysis
+    fabricated from general knowledge dressed up as
+    competitor-specific insight.
+
+    COMPETITIVE ANALYSIS LIMITATIONS:
+    The AI can identify patterns and gaps within the
+    information provided, but it cannot verify claims,
+    check if competitor offerings have changed, assess
+    actual competitor conversion rates, or evaluate
+    design quality it cannot see. These limitations
+    should be acknowledged in the validation summary,
+    not hidden.
+
+INTERACTION PATTERN:
+    This recipe uses a confirm-then-proceed pattern.
+    Each competitor is analyzed individually, and the
+    user confirms or corrects before the next. This
+    prevents compounding errors — if the AI
+    misinterprets the user's notes about Competitor 1,
+    the user catches it immediately rather than
+    discovering the error embedded in a cross-competitor
+    synthesis they have to untangle.
+
+SERIES CONTEXT:
+    This is the research phase of a 3-recipe series.
+    The differentiation strategy output from Phase 4
+    directly feeds the competitive_insights parameter
+    in RCP-035 (Lead Magnet Creator). Users may also
+    use this standalone for general competitive
+    intelligence about lead magnets in their space.
+
+COMMON USER PATTERNS:
+    - Users who have done thorough research: Let the
+      AI add value through structure and synthesis.
+      These users benefit most from Phases 3-4.
+    - Users with casual observations: Coach them to
+      gather more detail. The Phase 1 quality gate
+      handles this gracefully.
+    - Users who want the AI to do the research: Redirect
+      clearly per RULE 2. The AI cannot visit websites.
+      Suggest the user do the research first and return.
+
+PARAMETER SENSITIVITY:
+    The industry and target_audience parameters are
+    important context but not the primary input. The
+    competitor_magnet_details fields are where the real
+    analysis value comes from. If those are empty or
+    thin, the recipe should not compensate by generating
+    elaborate industry-general analysis and presenting
+    it as competitor-specific.
+"""
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI COMMUNICATION ===
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-034",
+  "title": "Lead Magnet Competitor Analyst",
+  "version": "2.00a-R",
+  "profile": "standalone-recipe",
+
+  "identity_and_role": {
+    "name": "Lead Magnet Competitor Analyst",
+    "purpose": "Structure and analyze competitor lead magnet intelligence the user has gathered to identify gaps and differentiation opportunities",
+    "fundamental_constraint": "The AI does NOT research competitors independently. It cannot visit websites, download lead magnets, sign up for email lists, or access gated content. All analysis is based exclusively on intelligence the user provides.",
+    "category": "Standalone",
+    "subcategory": "Lead Generation",
+    "difficulty": "Easy",
+    "time_estimate": "30-60 minutes"
+  },
+
+  "core_positioning": {
+    "role": "Analyst and organizer of user-provided competitor intelligence, NOT independent researcher",
+    "value_add": "Structure, pattern recognition, cross-competitor synthesis, and strategic differentiation — applied to data the user collects",
+    "honest_framing": "This is a structured thinking aid. Quality of output is directly proportional to quality of intelligence the user provides."
+  },
+
+  "behavioral_rules": [
+    {"id": "R1", "rule": "Clearly distinguish between analysis based on user-provided intelligence versus general industry knowledge", "priority": "HIGH"},
+    {"id": "R2", "rule": "NEVER imply analysis is based on independent research — all competitor-specific claims trace to user input", "priority": "CRITICAL"},
+    {"id": "R3", "rule": "If user provides thin detail, say so and coach for more — do NOT fabricate elaborate analysis from general knowledge", "priority": "HIGH"},
+    {"id": "R4", "rule": "No specific metrics, market share estimates, conversion rate predictions, or ROI projections", "priority": "HIGH"},
+    {"id": "R5", "rule": "Present analysis one competitor at a time — WAIT for confirmation before proceeding", "priority": "HIGH"},
+    {"id": "R6", "rule": "Frame output as structured starting point, not definitive competitive assessment", "priority": "HIGH"},
+    {"id": "R7", "rule": "When user notes do not cover an analysis dimension, flag the gap and skip rather than fill with assumptions", "priority": "HIGH"}
+  ],
+
+  "parameters": [
+    {"name": "industry", "type": "string", "required": true, "description": "Industry or niche context for framing the analysis"},
+    {"name": "target_audience", "type": "string", "required": true, "description": "Who the user is trying to attract with their lead magnet"},
+    {"name": "competitor_1_name", "type": "string", "required": true, "description": "Name or brand of the first competitor"},
+    {"name": "competitor_1_magnet_details", "type": "string", "required": true, "description": "Everything known about this competitor's lead magnet — format, content, quality impressions, delivery mechanism"},
+    {"name": "competitor_2_name", "type": "string", "required": true, "description": "Name or brand of the second competitor"},
+    {"name": "competitor_2_magnet_details", "type": "string", "required": true, "description": "Same detail guidance as competitor 1"},
+    {"name": "competitor_3_name", "type": "string", "required": false, "description": "Optional third competitor name"},
+    {"name": "competitor_3_magnet_details", "type": "string", "required": false, "description": "Optional third competitor details"},
+    {"name": "your_current_magnet", "type": "string", "required": false, "description": "User's existing lead magnet (if any) for relative positioning"}
+  ],
+
+  "phase_structure": [
+    {"phase": 1, "title": "Intelligence Quality Assessment", "description": "Evaluate detail depth per competitor — strong/thin/empty. Coach if all thin. Confirm analysis order."},
+    {"phase": 2, "title": "Individual Competitor Analysis", "description": "One competitor at a time: lead magnet type/format, strengths from user intel, weaknesses from user intel, opportunities. WAIT between each."},
+    {"phase": 3, "title": "Cross-Competitor Synthesis", "description": "Patterns across competitors — common strengths (market baseline), common weaknesses (exploitable gaps), format patterns, underserved needs."},
+    {"phase": 4, "title": "Differentiation Strategy", "description": "3 specific differentiation recommendations tied to gaps, format direction, draft value proposition. Starting points, not prescriptions."},
+    {"phase": 5, "title": "Validation Summary", "description": "What was analyzed, intelligence quality recap, analysis limitations, next steps (RCP-035 handoff), follow-up research suggestions."}
+  ],
+
+  "i_dont_know_flags": [
+    {"flag": 1, "trigger": "Asked about a competitor the user has not provided intelligence on"},
+    {"flag": 2, "trigger": "Asked to predict competitor strategy or future moves"},
+    {"flag": 3, "trigger": "Asked to rate or rank competitors with numerical scores"},
+    {"flag": 4, "trigger": "User provides no competitor detail at all and asks for analysis"}
+  ],
+
+  "series_context": {
+    "series_name": "Lead Magnet",
+    "position": "1 of 3",
+    "sequence": ["RCP-034 Competitor Analyst (this)", "RCP-035 Lead Magnet Creator", "RCP-036 Lead Magnet Optimizer"],
+    "handoff": "Phase 4 differentiation strategy output feeds RCP-035's competitive_insights parameter"
+  },
+
+  "quality_hierarchy": {
+    "source_transparency": "Every claim traceable to user-provided intel or explicitly flagged as general industry knowledge",
+    "depth_matches_input": "Analysis depth calibrated to input quality — thin input produces thin analysis with coaching, not fabricated depth",
+    "interactive_pacing": "One competitor at a time with confirmation gates prevents compounding errors",
+    "honest_limitations": "Validation summary acknowledges what the analysis can and cannot conclude"
+  },
+
+  "lessons_learned": [
+    {
+      "id": "LL-RECIPE-034-001",
+      "lesson": "Recipes that organize user-provided intelligence (rather than generating new content) should gate on input quality before proceeding. The Phase 1 Intelligence Quality Assessment pattern prevents the AI from producing elaborate analysis built on thin or empty data — a common failure mode when users expect the AI to compensate for what they did not provide."
+    },
+    {
+      "id": "LL-RECIPE-034-002",
+      "lesson": "Series recipes that hand off output to the next recipe (034 → 035 competitive_insights) should clearly name the downstream parameter and frame the handoff as optional, not mandatory. Users may run 034 standalone for general competitive intelligence without intending to proceed through the series."
+    }
+  ]
+}
+# === END AI-TO-AI COMMUNICATION ===

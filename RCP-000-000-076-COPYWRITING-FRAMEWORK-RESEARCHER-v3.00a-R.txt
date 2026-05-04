@@ -1,0 +1,972 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-076-COPYWRITING-FRAMEWORK-RESEARCHER
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H089)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-076-COPYWRITING-FRAMEWORK-RESEARCHER
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H089 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H015)
+# Series: Copywriting Frameworks (2 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-076-COPYWRITING-FRAMEWORK-RESEARCHER"
+
+WPRM_FIELD_DESCRIPTION = """
+The second step in the Copywriting Frameworks workflow.
+This recipe deep-researches available copywriting frameworks
+and recommends the best fit(s) for your specific content,
+audience, and goals. Using evidence-based research and
+conversion data, it helps you choose from proven frameworks
+(AIDA, PAS, BAB, FAB, and six others) with confidence and
+justification. The output feeds directly into the Framework
+Transformer (077) for immediate implementation.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 2 of 3"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Copywriting Frameworks"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "076"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork (Claude Desktop — Cowork Mode)"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Creation, Marketing, Research"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Copywriting, Persuasion, Evidence-Based"
+
+WPRM_FIELD_RECIPE_TAGS = """
+copywriting research, framework selection, AIDA, PAS, BAB,
+FAB, deep research, evidence-based, A/B testing, conversion
+data, historical performance, copywriting strategy
+"""
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default AI Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Medium"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Provide Your Content Brief or Context
+
+Paste the Content Brief from RCP-075, or provide a quick
+summary of your content type, audience, goals, and any
+constraints. The more context you provide, the better the
+framework recommendation.
+
+STEP 2: Review Generated Research Prompts
+
+The AI generates a series of research prompts it will use to
+investigate each framework's effectiveness for your situation.
+Review these prompts — edit or add if you have specific
+concerns or data sources you want explored.
+
+STEP 3: Run Deep Research
+
+The AI conducts deep research on relevant copywriting
+frameworks, exploring historical performance data, A/B test
+results, case studies, and platform-specific effectiveness
+for your content type and audience.
+
+STEP 4: Feed Research Back to AI
+
+The AI synthesizes research findings and performs a
+confidence-scored analysis of each framework's fit for your
+situation.
+
+STEP 5: Review Research Synthesis
+
+Review the AI's research synthesis before framework
+recommendations. Verify that research accurately addresses
+your brief and confirm you're comfortable proceeding to
+recommendations.
+
+STEP 6: Review Framework Recommendations
+
+The AI presents a ranked recommendation report: top choice
+(fully justified), alternative options (with trade-offs),
+and frameworks to avoid (with explanations).
+
+STEP 7: Choose Your Framework
+
+Select your recommended framework and pass it (with the
+original Content Brief) to RCP-077 (Framework Transformer)
+for implementation.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Research and Analysis"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H015"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """
+v3.00a-R - P067 Phase 3 revision (H089, run 48). F-1:
+    inserted Step 5 "Review Research Synthesis" to align
+    Instructions with Recipe Code Gate 3. Renumbered Steps
+    5→6, 6→7. REC-19: CRAFT Flavors updated from "All" to
+    Cowork-only.
+v3.00a - New recipe created as part of 3-recipe Copywriting
+    Frameworks workflow. Deep Research integration for
+    evidence-based framework selection. Fills gap between
+    content analysis (RCP-075) and framework transformation
+    (RCP-077) with research-backed decision making.
+"""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = """
+Content Brief from RCP-075 (highly recommended) or at
+minimum: content type, target audience, primary goal, and
+any constraints. No technical knowledge required.
+"""
+
+WPRM_FIELD_RELATED_RECIPES = """
+RCP-000-000-075 (Copywriting Context Analyzer)
+RCP-000-000-077 (Copywriting Framework Transformer)
+RCP-000-000-062 (Content Idea Generator)
+"""
+
+WPRM_FIELD_THIS_RECIPE_PAIRS_WELL_WITH = """
+Preceded by RCP-075 (Content Brief input) or used
+standalone for framework research. Followed by RCP-077
+(Framework Transformer) to implement selected framework.
+Framework recommendation + original Content Brief = input
+for RCP-077.
+"""
+
+WPRM_FIELD_THIS_RECIPE_IS_AN_EXTENSION_OF = "RCP-057 Copywriting Frameworks Master (framework selection component, v2.00a)"
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a research analyst and framework advisor —
+gathering evidence, analyzing fit, and recommending with
+confidence scores and justifications.
+
+Key behaviors:
+1. Research thoroughly. Use deep research to investigate
+   each framework's historical effectiveness, conversion
+   data, A/B test results, and platform-specific performance
+   for the user's content type and audience.
+2. Avoid fabrication. If research is unavailable, explicitly
+   label reasoning as "inference" or "theoretical" rather
+   than falsely claiming data support.
+3. Source transparency. Label all sources and data points.
+   If evidence is limited or contradictory, say so.
+4. Confidence scoring. Rate recommendation confidence
+   (high/medium/low) based on data strength and fit clarity.
+5. Stop at each wait gate. Present research synthesis before
+   making framework recommendations.
+6. Provide justification. For each recommendation, explain
+   WHY that framework fits, with specific references to
+   research findings and the user's situation.
+7. Surface trade-offs. Explain what each framework does well
+   and where it falls short for this specific situation.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Evidence-based framework selection for copywriting. Uses
+deep research on historical performance, A/B testing results,
+and case studies to recommend the best copywriting framework
+(from 10 proven options) for your content, audience, and
+goals.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you:
+- Want to choose a copywriting framework based on evidence,
+  not guessing
+- Have high-stakes content (landing pages, sales emails,
+  pitch decks) where framework choice matters
+- Want research-backed justification for framework selection
+- Plan to use RCP-077 (Framework Transformer) and want the
+  best framework input
+- Have a Content Brief (from RCP-075) or clear understanding
+  of your content, audience, and goals
+
+For quick framework selection without research backing, use
+RCP-077 (Framework Transformer) instead — it has built-in
+selection logic that works standalone.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Copywriting Framework Researcher"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Copywriting Frameworks"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# COPYWRITING FRAMEWORK RESEARCHER
+# Recipe ID: RCP-000-000-076
+# Version: v3.00a-R (Phase 3 Revised)
+# Series: Copywriting Frameworks (Recipe 2 of 3)
+# Difficulty: Medium
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: RESEARCH DEPTH OVER SPEED
+#     This recipe prioritizes thorough research over quick
+#     answers. Take time to investigate frameworks across
+#     multiple dimensions: historical effectiveness, A/B
+#     test results, platform-specific performance, audience
+#     type matching, and conversion data.
+#
+# RULE 2: EVIDENCE-BASED RECOMMENDATIONS ONLY
+#     Recommendations must be justified by research. Do not
+#     suggest a framework because it is popular or because
+#     it sounds good. Every recommendation must cite specific
+#     evidence (test results, case studies, conversion data,
+#     or documented effectiveness patterns).
+#
+# RULE 3: SOURCE TRANSPARENCY AND LABELING
+#     Every claim about framework effectiveness must include
+#     a source or data reference. If research is limited or
+#     unavailable, explicitly label reasoning as "inference,"
+#     "theoretical," or "limited evidence" rather than
+#     falsely implying robust data support.
+#
+# RULE 4: NO FABRICATION
+#     Do not invent research, test results, or case studies.
+#     If you cannot find evidence for a framework's
+#     effectiveness in a specific context, say so. The
+#     research is only valuable if it is real.
+#
+# RULE 5: CONFIDENCE SCORING REQUIRED
+#     Rate recommendation confidence (High / Medium / Low)
+#     based on data strength and framework-situation fit
+#     clarity. High confidence = strong data + clear fit.
+#     Low confidence = limited data OR unclear fit. Always
+#     explain the confidence score basis.
+#
+# RULE 6: FRAMEWORK-SITUATION MATCHING
+#     Not all frameworks fit all situations. A framework
+#     proven for B2B SaaS emails may not work for product
+#     descriptions. Analyze fit based on:
+#     - Content type (email, landing page, ad, etc.)
+#     - Industry (B2B, B2C, nonprofit, etc.)
+#     - Audience psychology and pain points
+#     - Platform-specific constraints
+#     - Conversion goal (awareness vs. action vs. retention)
+#
+# RULE 7: TRADE-OFF VISIBILITY
+#     No framework excels at everything. For each
+#     recommendation, explain what the framework does well
+#     AND where it has limitations for this specific
+#     situation. Help the user understand what they are
+#     choosing and what they are not.
+#
+# RULE 8: RESEARCH PROMPT QUALITY
+#     When generating research prompts at Phase 1B, create
+#     highly specific prompts that investigate:
+#     - Historical effectiveness (what does past data show?)
+#     - A/B test results (any controlled tests?)
+#     - Case studies (documented real-world usage?)
+#     - Platform fit (does platform favor this framework?)
+#     - Audience resonance (does this audience respond?)
+#     Do not create vague prompts like "tell me about AIDA."
+#
+# RULE 9: RESEARCH GAPS AND LIMITATIONS
+#     If research on a framework is limited, contradictory,
+#     or domain-specific, note this openly. Some frameworks
+#     have strong data for certain contexts and weak evidence
+#     for others. Help the user understand where confidence
+#     should be high vs. low.
+#
+# RULE 10: HONOR THE CONTENT BRIEF
+#     If provided a Content Brief from RCP-075, use it as
+#     ground truth. Do not second-guess the user's audience,
+#     goals, or constraints. Filter framework recommendations
+#     based on the brief's constraints.
+#
+# RULE 11: RECOMMENDATION RANKING AND JUSTIFICATION
+#     Provide a ranked list (top choice first), not just a
+#     list of equal options. Clearly explain why the top
+#     choice is the top choice for this situation. Offer
+#     alternatives with honest trade-off explanations.
+#
+# RULE 12: CONFIDENCE INFLATION PROTECTION
+#     Do not increase confidence scores because the user
+#     prefers a certain framework or because the framework
+#     is well-known. Base confidence on actual data fit and
+#     situation matching. If confidence is low, say so.
+#
+# ===========================================================
+
+
+# ===========================================================
+# PARAMETERS
+# ===========================================================
+
+params = {
+    "content_brief": {
+        "type": "text",
+        "required": False,
+        "description": "Full Content Brief from RCP-075 or a "
+                       "summary of content type, audience, "
+                       "goals, and constraints."
+    },
+    "content_type": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "email", "landing_page", "ad_copy", "product_description",
+            "blog_post", "sales_letter", "social_post", "pitch_deck",
+            "newsletter", "website_page", "other"
+        ],
+        "default": "from_brief_or_clarify"
+    },
+    "industry": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "B2B_SaaS", "B2B_services", "B2C_ecommerce",
+            "nonprofit", "agency", "healthcare", "financial",
+            "education", "other"
+        ],
+        "default": "from_brief_or_clarify"
+    },
+    "primary_goal": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "awareness", "engagement", "conversion",
+            "action", "retention", "trust", "other"
+        ],
+        "default": "from_brief_or_clarify"
+    },
+    "deep_research_findings": {
+        "type": "text",
+        "required": False,
+        "description": "Any existing research findings about "
+                       "frameworks already conducted by the user."
+    },
+    "frameworks_of_interest": {
+        "type": "text",
+        "required": False,
+        "description": "Specific frameworks the user wants "
+                       "prioritized in research (e.g., 'AIDA "
+                       "and PAS'). If not specified, all 10 "
+                       "frameworks are researched."
+    }
+}
+
+
+# ===========================================================
+# FRAMEWORK REFERENCE (10 FRAMEWORKS)
+# ===========================================================
+
+frameworks_reference = {
+    "AIDA": {
+        "full_name": "Attention, Interest, Desire, Action",
+        "ideal_for": ["email", "ads", "landing_pages"],
+        "strength": "Proven for direct response and short-form copy",
+        "application_complexity": "low"
+    },
+    "PAS": {
+        "full_name": "Problem, Agitate, Solve",
+        "ideal_for": ["sales_letters", "product_pages", "email"],
+        "strength": "Excellent for pain-point-driven audiences",
+        "application_complexity": "medium"
+    },
+    "BAB": {
+        "full_name": "Before, After, Bridge",
+        "ideal_for": ["testimonials", "case_studies", "transformation"],
+        "strength": "Powerful for transformation narratives",
+        "application_complexity": "medium"
+    },
+    "FAB": {
+        "full_name": "Features, Advantages, Benefits",
+        "ideal_for": ["product_descriptions", "technical_content"],
+        "strength": "Clear for feature-rich products",
+        "application_complexity": "low"
+    },
+    "ACC": {
+        "full_name": "Awareness, Comprehension, Conviction",
+        "ideal_for": ["educational_content", "awareness_campaigns", "non_profit", "public_health"],
+        "strength": "Strong for educational content and awareness building",
+        "application_complexity": "medium"
+    },
+    "4Ps": {
+        "full_name": "Promise, Picture, Proof, Push",
+        "ideal_for": ["direct_response", "email_sequences", "product_launches", "landing_pages"],
+        "strength": "Structured persuasion with proof element",
+        "application_complexity": "medium"
+    },
+    "4Cs": {
+        "full_name": "Clear, Concise, Compelling, Credible",
+        "ideal_for": ["quality_optimization", "content_review", "brand_consistency"],
+        "strength": "Quality checklist for any content type",
+        "application_complexity": "low"
+    },
+    "4Us": {
+        "full_name": "Useful, Urgent, Unique, Ultra-specific",
+        "ideal_for": ["headlines", "subject_lines", "hooks", "social_posts", "CTAs"],
+        "strength": "Optimized for attention capture in short form",
+        "application_complexity": "low"
+    },
+    "QUEST": {
+        "full_name": "Qualify, Understand, Educate, Stimulate, Transition",
+        "ideal_for": ["long_form_sales", "webinar_sequences", "high_ticket", "complex_products"],
+        "strength": "Multi-stage persuasion for complex buying decisions",
+        "application_complexity": "high"
+    },
+    "SLAP": {
+        "full_name": "Stop, Look, Act, Purchase",
+        "ideal_for": ["social_media_ads", "quick_scroll_content", "impulse_purchase_triggers"],
+        "strength": "Optimized for fast-scroll environments",
+        "application_complexity": "low"
+    }
+}
+
+
+# ===========================================================
+# PROMPT TEMPLATE
+# ===========================================================
+
+prompt_template = \"\"\"
+# ===========================================================
+# COPYWRITING FRAMEWORK RESEARCHER
+# Recipe 2 of 3: Copywriting Frameworks Workflow
+# ===========================================================
+#
+# YOUR ROLE: You are a research analyst and framework
+# advisor. Your job is to conduct deep research on copywriting
+# frameworks, analyze which fit the user's situation best,
+# and provide evidence-based recommendations with
+# confidence scores and justification.
+#
+# You do NOT transform content. You RESEARCH, ANALYZE,
+# and RECOMMEND.
+#
+# Follow ALL 12 behavioral rules throughout.
+#
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE — FOLLOW THROUGHOUT)
+# -----------------------------------------------------------
+#
+# RULE 1:  Research depth over speed
+# RULE 2:  Evidence-based recommendations only
+# RULE 3:  Source transparency and labeling
+# RULE 4:  No fabrication of research
+# RULE 5:  Confidence scoring required
+# RULE 6:  Framework-situation matching critical
+# RULE 7:  Trade-off visibility
+# RULE 8:  Research prompt quality
+# RULE 9:  Research gaps and limitations acknowledgment
+# RULE 10: Honor the Content Brief as ground truth
+# RULE 11: Recommendation ranking with justification
+# RULE 12: Confidence inflation protection
+#
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+# INPUT
+# -----------------------------------------------------------
+
+CONTENT_BRIEF (or context):
+{content_brief}
+
+CONTENT_TYPE: {content_type}
+
+INDUSTRY: {industry}
+
+PRIMARY_GOAL: {primary_goal}
+
+DEEP_RESEARCH_FINDINGS (if user-provided):
+{deep_research_findings}
+
+FRAMEWORKS_OF_INTEREST (if specified):
+{frameworks_of_interest}
+
+# -----------------------------------------------------------
+# PHASE 1A: CONTEXT EXTRACTION AND RESEARCH PROMPT GENERATION
+# -----------------------------------------------------------
+
+1. EXTRACT KEY CONSTRAINTS FROM BRIEF
+   - Content type (email, landing page, product description, etc.)
+   - Industry/audience type
+   - Primary goal (awareness, conversion, engagement, etc.)
+   - Content length constraints
+   - Platform constraints
+   - Audience pain points or desires
+   - Any constraints that rule out certain frameworks
+
+2. GENERATE TARGETED RESEARCH PROMPTS
+   Create 8-12 highly specific research prompts that
+   investigate:
+   - Historical effectiveness of each framework
+   - A/B test results and controlled studies
+   - Case studies and real-world usage
+   - Platform-specific performance (email vs. landing page)
+   - Audience-type resonance
+   - Industry-specific variations
+   - Framework combinations and hybrids
+   - Common pitfalls when using each framework
+
+   Do NOT create vague prompts. Be specific:
+   GOOD: "What A/B test results exist comparing AIDA vs.
+         PAS for B2B software SaaS landing pages?"
+   BAD:  "Tell me about AIDA"
+
+# =========================================================
+# WAIT GATE 1
+# =========================================================
+# STOP HERE. Present the targeted research prompts.
+# Ask: "Are these research questions capturing what you
+# want to understand about framework fit? Edit, add, or
+# remove as needed."
+#
+# Do NOT proceed until the user confirms or edits prompts.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 1B: DEEP RESEARCH EXECUTION
+# -----------------------------------------------------------
+
+Execute the research prompts. For each framework under
+investigation:
+
+1. HISTORICAL EFFECTIVENESS
+   - What is the framework's track record?
+   - Which contexts/industries does it perform well in?
+   - Which contexts show weaker results?
+   - Data source and confidence level
+
+2. A/B TEST RESULTS
+   - Any controlled tests comparing frameworks?
+   - What was the conversion or engagement lift?
+   - Sample size and statistical significance
+   - Any caveats or context dependencies?
+
+3. CASE STUDIES
+   - Real-world usage examples
+   - What was the outcome?
+   - What made it work (or not)?
+   - How similar is the case to the user's situation?
+
+4. PLATFORM-SPECIFIC PERFORMANCE
+   - Email: what works best and why?
+   - Landing pages: different patterns?
+   - Social ads: specific effectiveness data?
+   - Content type variations
+
+5. AUDIENCE RESONANCE PATTERNS
+   - Which audience types respond best to each framework?
+   - Age, income, buying stage, pain-point type?
+   - Emotional vs. rational audience preference?
+   - Any data on framework matching to audience psychology?
+
+6. RESEARCH QUALITY AND GAPS
+   - How robust is the evidence?
+   - Are there contradictions in research?
+   - Is evidence specific to certain industries/contexts?
+   - Where is research weak or unavailable?
+
+Synthesize research into clear findings per framework.
+For each, explicitly note:
+  - Source(s) and confidence level (High/Medium/Low)
+  - How well the framework fits the user's situation
+  - Key strengths and limitations
+  - Any caveats or context dependencies
+
+# =========================================================
+# WAIT GATE 2
+# =========================================================
+# STOP HERE. Present research findings by framework.
+# Format: Framework name | Confidence | Key findings |
+# Fit for this situation | Limitations
+#
+# Do NOT proceed until user confirms research accuracy.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 2A: RESEARCH SYNTHESIS AND CONFIDENCE ANALYSIS
+# -----------------------------------------------------------
+
+Synthesize research into a structured analysis:
+
+1. FRAMEWORK-SITUATION FIT ANALYSIS
+   For each framework, rate fit on three dimensions:
+   - Content type match (email, landing page, etc.)
+   - Audience resonance match (does audience psychology
+     favor this framework?)
+   - Goal achievement match (does this framework drive
+     the desired action?)
+
+2. CONFIDENCE SCORING
+   Rate confidence (High/Medium/Low) for recommending
+   each framework, based on:
+   - Data strength (robust vs. limited vs. theoretical)
+   - Situation clarity (how similar is research context
+     to user's situation?)
+   - Framework maturity (proven vs. emerging)
+
+3. TRADE-OFF IDENTIFICATION
+   For each viable framework, note:
+   - What it does exceptionally well for this situation
+   - Where it has limitations or gaps
+   - What it is NOT well-suited for
+
+Organize findings into a synthesis document showing
+frameworks ranked by fit, with confidence scores.
+
+# =========================================================
+# WAIT GATE 3
+# =========================================================
+# STOP HERE. Present the research synthesis.
+# Ask: "Does this research accurately represent your
+# situation? Are you comfortable with the confidence
+# scores and fit assessments before I make recommendations?"
+#
+# Do NOT proceed until user confirms.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 2B: FRAMEWORK RECOMMENDATION
+# -----------------------------------------------------------
+
+Based on research synthesis, produce a structured
+recommendation report:
+
+## 1. TOP FRAMEWORK RECOMMENDATION
+   - Framework name
+   - Confidence score (with basis)
+   - Why this is the top choice
+   - Specific research supporting this choice
+   - What this framework does best for your situation
+   - Limitations to be aware of
+
+## 2. ALTERNATIVE FRAMEWORKS (ranked 2-4)
+   - Framework name
+   - Confidence score
+   - Why consider this alternative
+   - Trade-offs vs. top choice
+   - Situations where this might be preferable
+
+## 3. FRAMEWORKS NOT RECOMMENDED
+   - Framework(s) and why
+   - Specific mismatches with your situation
+   - When each WOULD be appropriate (so user understands
+     it is not a weak framework, just wrong for this case)
+
+## 4. HYBRID/COMBINATION OPTIONS
+   - If research supports combining frameworks, describe
+   - When combinations work and why
+   - Implementation notes
+
+## 5. NEXT STEPS
+   - Your selected framework + Content Brief → RCP-077
+   - Expected implementation timeline
+   - Key success factors for this framework in your context
+
+# =========================================================
+# WAIT GATE 4
+# =========================================================
+# STOP HERE. Present the complete recommendation report.
+# Ask: "Does this recommendation make sense for your
+# situation? Any questions about the research or the
+# recommendation before you proceed to RCP-077?"
+#
+# Do NOT proceed until user confirms.
+# =========================================================
+
+# ===========================================================
+# END COPYWRITING FRAMEWORK RESEARCHER
+# ===========================================================
+\"\"\"
+
+
+# ===========================================================
+# EXAMPLE USAGE
+# ===========================================================
+
+example_usage = \"\"\"
+#H->AI::Directive: (Execute Copywriting Framework Researcher
+    with
+    content_brief: [paste full brief from RCP-075 here]
+)
+
+STANDALONE (without Content Brief):
+
+#H->AI::Directive: (Execute Copywriting Framework Researcher
+    with
+    content_type: landing_page
+    industry: B2B_SaaS
+    primary_goal: conversion
+    frameworks_of_interest: AIDA, PAS
+)
+The AI will ask clarifying questions about audience and
+constraints before proceeding to research.
+\"\"\"
+
+
+# ===========================================================
+# SUCCESS CRITERIA
+# ===========================================================
+
+success_criteria = \"\"\"
+A successful Framework Recommendation Report:
+1. Is based on real research, not guessing or inferences
+2. Every recommendation cites specific evidence or data
+3. Confidence scores are realistic and explained
+4. Frameworks are ranked with clear justification
+5. Trade-offs are visible (what each framework gives/takes)
+6. Framework-to-situation fit is clearly articulated
+7. Research gaps and limitations are acknowledged
+8. User can make an informed decision about framework choice
+9. Recommendation output feeds directly into RCP-077 input
+10. User understands not just WHICH framework, but WHY
+\"\"\"
+
+# ===========================================================
+# END ACTUAL RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: How is RCP-076 different from RCP-077 (Transformer)?
+A: RCP-076 researches frameworks and recommends based on
+   evidence. RCP-077 applies a framework to transform your
+   content. RCP-076 answers "Which framework should I use?"
+   RCP-077 answers "How do I apply it?"
+
+Q: Can I use RCP-077 without RCP-076?
+A: Yes. RCP-077 has built-in framework selection logic and
+   works standalone. Use RCP-076 when you want research-
+   backed justification for high-stakes content.
+
+Q: How long does deep research take?
+A: Typically 10-20 minutes depending on framework complexity
+   and available research for your specific situation.
+
+Q: What if research is limited for my situation?
+A: The recipe explicitly notes research gaps and confidence
+   levels. If evidence is scarce, you get an honest
+   assessment and theoretical reasoning with confidence
+   labeled as Medium or Low.
+
+Q: Can I ask the AI to prioritize specific frameworks?
+A: Yes — use the frameworks_of_interest parameter to focus
+   research on frameworks you are considering. Deep research
+   is thorough but not infinite.
+
+Q: What makes a "good" confidence score?
+A: High confidence = strong data + clear framework-situation
+   fit. Low confidence = limited data OR unclear fit. The
+   recipe explains the confidence basis so you understand it.
+"""
+
+
+# ===========================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-076",
+  "recipe_name": "Copywriting Framework Researcher",
+  "version": "v3.00a-R",
+  "pipeline_run": 48,
+  "session": "H089",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "origin": {
+    "project": "P051f (WPRM-RECIPE-QA-TESTING)",
+    "session": "H015",
+    "created_by": "Cat (B)",
+    "original_version": "v3.00a",
+    "replaces": "RCP-057 (Copywriting Frameworks Master v2.00a, framework research component, deleted)"
+  },
+  "series": {
+    "name": "Copywriting Frameworks",
+    "id": "SUB-017",
+    "position": "2 of 3",
+    "workflow": ["RCP-075", "RCP-076", "RCP-077"],
+    "multi_recipe_combo": true,
+    "combo_stage": 2,
+    "usage_paths": {
+      "quick": "075 → 077",
+      "thorough": "075 → 076 → 077",
+      "standalone_076": "076 as independent research tool"
+    }
+  },
+  "family": {
+    "name": "Copywriting Frameworks",
+    "number": 16,
+    "status": "open",
+    "pipeline_position": "Second Multi-Recipe Combo recipe in Phase 3 pipeline"
+  },
+  "architecture": {
+    "type": "Research and Analysis",
+    "difficulty": "Medium",
+    "parameters": {
+      "count": 6,
+      "required": 0,
+      "optional_list": ["content_brief", "content_type", "industry", "primary_goal", "deep_research_findings", "frameworks_of_interest"]
+    },
+    "behavioral_rules": 12,
+    "wait_gates": 4,
+    "phases": 2,
+    "stage_structure": {
+      "stage_1": {
+        "name": "Research Setup and Execution",
+        "phases": ["Phase 1A: Context Extraction and Research Prompt Generation", "Phase 1B: Deep Research Execution"]
+      },
+      "stage_2": {
+        "name": "Analysis and Recommendation",
+        "phases": ["Phase 2A: Research Synthesis and Confidence Analysis", "Phase 2B: Framework Recommendation"]
+      }
+    }
+  },
+  "frameworks": {
+    "count": 10,
+    "list": ["AIDA", "PAS", "BAB", "FAB", "ACC", "4Ps", "4Cs", "4Us", "QUEST", "SLAP"],
+    "reference_fields": ["full_name", "ideal_for", "strength", "application_complexity"]
+  },
+  "outputs": [
+    "RESEARCH_SYNTHESIS: Per-framework findings (source, confidence, fit assessment, limitations)",
+    "FRAMEWORK_RECOMMENDATION_REPORT: Ranked recommendations (top choice + alternatives) with evidence citations and confidence scores",
+    "TRADE_OFF_ANALYSIS: What each framework does well vs. limitations for this situation",
+    "IMPLEMENTATION_READINESS: Framework + Content Brief ready for RCP-077 input"
+  ],
+  "relationships": {
+    "upstream_recommended": [
+      {
+        "recipe_id": "RCP-000-000-075",
+        "title": "Copywriting Context Analyzer",
+        "relationship": "recommended-upstream",
+        "note": "Content Brief provides ground truth for framework-situation matching. RCP-076 can work standalone but benefits from RCP-075 input."
+      }
+    ],
+    "downstream_required": [
+      {
+        "recipe_id": "RCP-000-000-077",
+        "title": "Copywriting Framework Transformer",
+        "relationship": "required-downstream",
+        "note": "Framework recommendation + Content Brief = input for transformation. RCP-077 implements the selected framework."
+      }
+    ],
+    "parallel": [
+      {
+        "recipe_id": "RCP-000-000-062",
+        "title": "Content Idea Generator",
+        "relationship": "orthogonal",
+        "note": "Different workflow — use RCP-062 for ideation, RCP-076 for framework selection on existing content."
+      }
+    ]
+  },
+  "ai_guidance": {
+    "research_quality": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "good_research",
+          "description": "A/B test results showing AIDA increased email CTR by 24% (n=5000, p<0.05) in B2B SaaS context. Case study: Company X applied PAS to landing page, conversion lifted 18%. Research limitation: Limited data for B2C ecommerce use."
+        },
+        {
+          "key": "bad_research",
+          "description": "AIDA is great for email. PAS is best for sales letters. No confidence scores, no data sources, no caveats."
+        },
+        {
+          "key": "research_gap_handling",
+          "description": "If research is limited: 'Framework QUEST has limited published A/B test data for landing pages. Confidence: Moderate. Reasoning: strong case study evidence but small sample size. Platform documentation suggests good fit but lacks controlled comparison.'"
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "fabrication_risk",
+          "description": "Do not invent research or test results. If A/B test data does not exist, say 'limited evidence' not 'testing shows.' Use inference only when explicitly labeled as such."
+        },
+        {
+          "key": "source_labeling",
+          "description": "Every claim needs a source or confidence label. 'Based on peer-reviewed study X', 'Common practice in industry Y', 'Limited published data; reasoning is theoretical', 'Case study Z suggests'."
+        },
+        {
+          "key": "deep_research_prompt_quality",
+          "description": "Weak: 'Research AIDA.' Strong: 'What controlled A/B tests compare AIDA vs. PAS for B2B SaaS email? What were lift numbers and sample sizes?' Weak prompts produce weak research."
+        },
+        {
+          "key": "research_gaps_invisibility",
+          "description": "If you cannot find data, say so. Do not hide uncertainty by sounding confident. 'Research on FAB for B2C social ads is limited' is honest. Proceeding as if you have robust data is not."
+        },
+        {
+          "key": "confidence_inflation",
+          "description": "Do not increase confidence because the user likes a framework or because it is famous. Base confidence purely on data fit + situation matching. Low confidence is honest and valuable."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-076-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field 'All' — 13th consecutive encounter, surface form 'All', 6th ADD. Auto-applied per REC-19 standing authority.",
+      "source": "REC-19 auto-apply, pipeline run 48"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

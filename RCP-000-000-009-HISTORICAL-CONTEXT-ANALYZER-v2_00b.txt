@@ -1,0 +1,1481 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER
+recipe_name:    Historical Context Analyzer
+version:        v2.00b
+authored_by:    Cat (P067)
+revision_date:  2026-04-24
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-009
+# Recipe Name: HISTORICAL-CONTEXT-ANALYZER
+# Version: v2.00a
+# Status: Official
+# CRAFT Flavors: Cowork
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = """
+RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER
+"""
+
+
+WPRM_FIELD_DESCRIPTION = """
+Minimize AI hallucination by focusing analysis on verified
+historical events within defined time boundaries. This recipe
+guides you through requesting time-bounded historical context
+that limits AI responses to documented past events, reducing
+speculation and inaccuracies. Ideal for research, strategic
+planning, and educational content requiring factual accuracy.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Not part of a combo"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID = "009"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Research, Analysis, Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Historical Analysis, Fact-Checking"
+
+
+WPRM_FIELD_RECIPE_TAGS = """
+historical context, hallucination reduction, time-bounded
+analysis, research, fact-based, retrospective, verified events
+"""
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Define Your Topic And Time Boundary
+--------------------------------------------
+Tell the AI what topic you want to research and set
+a clear cutoff date. The cutoff date is the key
+mechanism — it constrains the AI to verified historical
+facts and prevents speculation about recent or future
+events.
+
+    Example topics:
+    - Industry evolution (e.g., e-commerce up to 2015)
+    - Technology development (e.g., cloud computing to 2017)
+    - Market trends (e.g., subscription models to 2020)
+    - Regulatory history (e.g., data privacy laws to 2018)
+
+    Be specific about scope. "The history of technology"
+    is too broad. "The development of smartphone payment
+    systems from 2007 to 2020" is focused and useful.
+
+
+STEP 2: Select Your Analysis Mode
+-----------------------------------
+The AI will help you choose the right mode based on
+your research needs:
+
+    OVERVIEW MODE — Quick historical background
+        Best for: Getting oriented on a topic
+        Output: 4-section narrative covering origins,
+        milestones, evolution, and state at cutoff
+        Time: 5-10 minutes
+
+    TIMELINE MODE — Chronological event listing
+        Best for: Seeing the sequence of developments
+        Output: Dated entries with events, significance,
+        and key figures
+        Time: 5-10 minutes
+
+    DEEP DIVE MODE — Comprehensive multi-factor analysis
+        Best for: Serious research requiring full context
+        Output: 6-section analysis covering political/social,
+        economic, technological, stakeholder, cause-effect,
+        and documented outcomes
+        Time: 15-25 minutes
+
+
+STEP 3: Receive Your Analysis
+------------------------------
+The AI will deliver a time-bounded analysis that:
+    - Covers only events up to your cutoff date
+    - Avoids speculative language (may, might, will)
+    - Ties claims to documented events
+    - Flags areas where its knowledge may be limited
+
+If you specified focus areas, the analysis will
+emphasize those aspects within the chosen mode.
+
+
+STEP 4: Review And Refine
+---------------------------
+Check the AI response for:
+    - Any references to events after your cutoff date
+    - Speculative language that slipped through
+    - Unverified claims or assumptions
+    - Missing key historical milestones
+
+Ask for revisions if needed. You can also:
+    - Request expansion on specific events
+    - Switch to a different analysis mode
+    - Narrow the time window for more detail
+    - Add focus areas to highlight specific aspects
+
+
+STEP 5: Follow-Up Options
+---------------------------
+After receiving the analysis, you can:
+
+    1. Expand on a specific event or period
+    2. Switch to a different analysis mode
+    3. Narrow the time window for more detail
+    4. Add focus areas for specific aspects
+    5. Compare two time periods
+    6. List key figures involved in a specific aspect
+    7. Document findings and end session
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_USES_THIS_RECIPE = """
+The AI acts as a historical research assistant that
+constrains itself to verified past events. It helps
+you define your research scope, selects the right
+analysis depth, and delivers factual content while
+actively flagging any areas where its knowledge may
+be uncertain or limited. The key mechanism is the
+time boundary — by setting a firm cutoff date, the
+AI focuses on documented history rather than
+speculation.
+"""
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a hallucination-reduction
+protocol with these key behaviors:
+
+    TIME BOUNDARY ENFORCEMENT:
+        AI treats the cutoff date as absolute
+        No references to events after cutoff
+        No speculative language about future
+        No "this would later lead to" framing
+
+    FACTUAL RIGOR:
+        AI ties all claims to documented events
+        Distinguishes verified fact from interpretation
+        Flags areas of uncertainty explicitly
+        Provides dates and names where available
+
+    MODE-SPECIFIC BEHAVIOR:
+        Overview: Narrative structure, broad strokes
+        Timeline: Chronological, date-anchored entries
+        Deep Dive: Multi-factor analytical structure
+
+    SELF-MONITORING:
+        AI checks output for post-cutoff references
+        AI flags its own knowledge limitations
+        AI distinguishes established fact from
+        widely-accepted-but-debated interpretation
+
+    I-DON'T-KNOW PROTOCOL:
+        When knowledge is limited, AI follows a 4-option
+        fallback: (A) flag the gap and provide what is
+        known, (B) offer to narrow scope to stronger
+        coverage, (C) suggest alternative approaches
+        including primary source guidance, (D) provide
+        partial information with explicit caveats.
+        Admitting limitations IS delivering on the
+        recipe's promise.
+
+The AI maintains a scholarly, careful posture — better
+to acknowledge a gap than to fill it with plausible
+fabrication.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+USE THIS RECIPE WHEN:
+
+    RESEARCH REQUIRING ACCURACY:
+        - Academic or professional research
+        - Case study development
+        - Educational content creation
+        - Compliance or regulatory history
+
+    STRATEGIC PLANNING:
+        - Understanding industry evolution
+        - Analyzing historical patterns
+        - Learning from past market cycles
+        - Studying competitor history
+
+    CONTENT CREATION:
+        - Blog posts about industry history
+        - Presentations requiring historical context
+        - Reports needing factual background
+        - Thought leadership based on historical trends
+
+    SPECIFIC TRIGGERS:
+        - "I need accurate historical background on..."
+        - "What happened in [industry] before [date]?"
+        - "Give me a factual timeline of..."
+        - "I need to understand the history of..."
+
+DO NOT USE THIS RECIPE WHEN:
+
+    - You need analysis of current events (no cutoff)
+    - You want predictions or forecasting
+    - The topic is too recent for verified history
+    - You need opinion or editorial perspective
+
+COMPARE TO OTHER RECIPES:
+
+    vs HISTORICAL-COMPARATIVE-ANALYZER (010):
+        - Context Analyzer: Single topic, single period
+        - Comparative Analyzer: Two topics or periods
+        - Use 009 first to understand one topic
+        - Use 010 to compare across topics or eras
+
+    vs HISTORICAL-INNOVATION-TRACKER (011):
+        - Context Analyzer: General historical analysis
+        - Innovation Tracker: Focused on innovation patterns
+        - Use 009 for broad historical context
+        - Use 011 to trace specific innovation paths
+
+    vs SOCRATIC-PROBLEM-SOLVER (001):
+        - Context Analyzer: Historical facts and events
+        - Problem Solver: Problem decomposition and solutions
+        - Use 009 when you need historical grounding
+        - Use 001 when you need to solve a problem
+"""
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "Cat, Auguste"
+
+
+WPRM_FIELD_RECOMMENDED_AI_AGENTS = """
+Cat (orchestrator — multi-domain historical synthesis),
+Auguste (business strategy and market pattern analysis)
+"""
+
+
+WPRM_FIELD_RECIPE_AUTHOR = "CRAFT Framework"
+
+
+WPRM_FIELD_RECIPE_VERSION = "v2.00a"
+
+
+WPRM_FIELD_USER_PROVIDES = """
+    - Topic or subject to research
+    - Cutoff date for time boundary
+    - Preferred analysis mode (or let AI help choose)
+    - Optional focus areas for emphasis
+"""
+
+
+WPRM_FIELD_AI_DELIVERS = """
+    - Time-bounded historical analysis
+    - Verified facts with dates and key figures
+    - Mode-specific structured output
+    - Explicit uncertainty flags where knowledge is limited
+    - Follow-up options for deeper exploration
+"""
+
+
+WPRM_FIELD_RECIPE_SUCCESS_CRITERIA = """
+    - Analysis stays within specified time boundary
+    - No speculative language about future events
+    - Claims tied to documented events with dates
+    - AI knowledge limitations flagged explicitly
+    - Analysis structured per selected mode
+    - Focus areas emphasized if specified
+"""
+
+
+WPRM_FIELD_RECIPES_RELATED_TO_THIS_RECIPE = """
+    - RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+    - RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+    - RCP-000-000-001-SOCRATIC-PROBLEM-SOLVER
+"""
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# ===========================================================
+# START RECIPE-ID: RCP-000-000-009-HISTORICAL-CONTEXT
+# ===========================================================
+
+HISTORICAL_CONTEXT_ANALYZER = Recipe(
+    recipe_id=(
+        "RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER"
+    ),
+    title="Historical Context Analyzer",
+    description='''
+        Time-bounded historical analysis to minimize
+        AI hallucination by focusing on verified past
+        events within defined time boundaries.
+    ''',
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-RESEARCH",
+    difficulty="Easy",
+    version="v2.00a",
+
+    parameters={
+        "topic": {
+            "type": "string",
+            "required": True,
+            "description": "Subject to analyze historically"
+        },
+        "cutoff_date": {
+            "type": "string",
+            "required": True,
+            "description": "End date for analysis (nothing after this)"
+        },
+        "analysis_mode": {
+            "type": "string",
+            "required": False,
+            "default": "overview",
+            "options": ["overview", "timeline", "deep_dive"],
+            "description": "Depth of analysis"
+        },
+        "focus_areas": {
+            "type": "list",
+            "required": False,
+            "default": [],
+            "description": "Specific aspects to emphasize"
+        }
+    },
+
+    prompt_template='''
+    #H->AI::Directive: (Execute Historical Context
+    Analyzer recipe)
+    #H->AI::Context: (Topic: {topic})
+    #H->AI::Context: (Cutoff: {cutoff_date})
+    #H->AI::Context: (Mode: {analysis_mode})
+    #H->AI::Context: (Focus: {focus_areas})
+
+
+    # ==========================================
+    # BEHAVIORAL RULES
+    # ==========================================
+
+    RULE 1 - TIME BOUNDARY IS ABSOLUTE:
+        The cutoff date ({cutoff_date}) is sacred.
+        Never reference, hint at, or allude to any
+        event after this date. Do not use phrases
+        like "this would later become" or "setting
+        the stage for." The analysis ends at the
+        cutoff. Period.
+
+    RULE 2 - FACT VS INTERPRETATION:
+        Distinguish between established historical
+        fact and widely-accepted interpretation.
+        Facts: "The iPhone launched on June 29, 2007."
+        Interpretation: "Many analysts viewed this
+        as a turning point for the mobile industry."
+        Present facts as facts. Present interpretation
+        as interpretation, with attribution where
+        possible.
+
+    RULE 3 - UNCERTAINTY FLAGGING:
+        If your training data has limited or
+        conflicting information about a specific
+        event, date, or claim, say so explicitly.
+        Use phrases like:
+        - "My training data has limited detail on
+          this specific aspect"
+        - "Sources differ on the exact date/figure"
+        - "This is widely reported but I cannot
+          independently verify the specific number"
+        Never fill gaps with plausible-sounding
+        content. A flagged gap is more valuable than
+        a confident fabrication.
+
+    RULE 4 - SPECULATIVE LANGUAGE BAN:
+        Do not use: may, might, could, will, would,
+        should, likely, probably, possibly, perhaps,
+        presumably, arguably (when used to speculate).
+        These words are acceptable ONLY when
+        describing documented historical uncertainty:
+        "Historians have debated whether [X] may
+        have influenced [Y]" is acceptable because
+        the debate itself is a documented fact.
+
+    RULE 5 - PROPORTIONAL DEPTH:
+        Overview mode: Broad strokes, 4 sections,
+        aim for concise narrative (500-800 words).
+        Timeline mode: Dated entries, 10-20 key
+        milestones, brief significance for each.
+        Deep dive mode: Comprehensive analysis,
+        6 sections, 1000-2000 words, analytical
+        depth with citations.
+        Do not produce deep-dive depth when overview
+        was requested, and vice versa.
+
+    RULE 6 - SCHOLARLY TONE:
+        Write as a careful historian, not a
+        storyteller. Be precise with dates, names,
+        and figures. Avoid dramatic language or
+        narrative embellishment. The user chose
+        this recipe because they want accuracy,
+        not entertainment.
+
+
+    # ==========================================
+    # I-DON'T-KNOW HANDLING
+    # ==========================================
+
+    IF you encounter a topic, period, or specific
+    claim where your training data is limited,
+    conflicting, or absent:
+
+        DO NOT fabricate plausible-sounding history.
+        This directly contradicts the recipe's
+        core purpose.
+
+        INSTEAD, do one of the following:
+
+        OPTION A - FLAG THE GAP:
+            Say: "My training data has limited
+            coverage of [specific aspect]. I can
+            provide what I know, but there may be
+            significant gaps in this area. I
+            recommend verifying with primary sources."
+            Then provide what you DO know.
+
+        OPTION B - NARROW THE SCOPE:
+            Say: "I have stronger coverage of
+            [related aspect] within this topic.
+            Shall I focus there, or would you
+            prefer I cover [original aspect] with
+            the caveat that my information may be
+            incomplete?"
+
+        OPTION C - SUGGEST ALTERNATIVES:
+            Say: "For this specific period/topic,
+            my coverage is limited. I can offer:
+            (A) A broader overview that covers
+            what I am confident about,
+            (B) A related topic where I have
+            stronger historical data, or
+            (C) Key questions to guide your
+            research with primary sources."
+
+        OPTION D - PROVIDE WITH CAVEATS:
+            If you have partial information, provide
+            it with explicit caveats: "Based on my
+            training data, [claim] — however, I have
+            limited detail on [specific aspect] and
+            recommend verification."
+
+        The user chose this recipe BECAUSE they
+        want accuracy. Admitting limitations IS
+        delivering on the recipe's promise.
+
+
+    # ==========================================
+    # STEP 1: DEFINE TOPIC AND TIME BOUNDARY
+    # ==========================================
+
+    #AI->H::Status: (Setting up historical analysis)
+
+    IF {topic} AND {cutoff_date} are provided:
+
+        #AI->H::Confirmation: (You want to analyze
+        the history of {topic} up to {cutoff_date}.
+
+        IF {focus_areas}:
+            With focus on: {focus_areas}.
+
+        Before I proceed, let me confirm:
+        - Is this scope specific enough? Broad topics
+          produce shallow analysis.
+        - Is the cutoff date firm, or is there
+          flexibility?
+        - Any specific events or aspects you want
+          me to be sure to cover?)
+
+        WAIT for confirmation
+
+    ELSE:
+        #AI->H::Question: (What topic would you
+        like to research historically?
+
+        Please provide:
+        1. The specific topic or subject
+        2. A cutoff date (analysis will cover
+           only events UP TO this date)
+        3. Any specific aspects you want
+           emphasized
+
+        Example: "The development of electric
+        vehicles up to 2018, with focus on
+        battery technology and government policy.")
+
+        WAIT for response
+
+    RECORD topic
+    RECORD cutoff_date
+    RECORD focus_areas (if provided)
+
+    #AI->H::Note: (Time boundary set: I will
+    cover {topic} up to {cutoff_date} only.
+    No references to events after this date.)
+
+
+    # ==========================================
+    # STEP 2: SELECT ANALYSIS MODE
+    # ==========================================
+
+    #AI->H::Status: (Selecting analysis mode)
+
+    IF {analysis_mode} is provided AND
+    {analysis_mode} != "overview":
+
+        #AI->H::Confirmation: (You selected
+        {analysis_mode} mode. Proceeding.)
+
+    ELSE:
+        #AI->H::Question: (What depth of
+        analysis do you need?
+
+        1. OVERVIEW — Quick historical background
+           (5-10 min, narrative format)
+        2. TIMELINE — Chronological event listing
+           (5-10 min, dated entries)
+        3. DEEP DIVE — Comprehensive multi-factor
+           analysis (15-25 min, scholarly depth)
+
+        Which mode fits your needs?)
+
+        WAIT for response
+
+    RECORD analysis_mode
+
+
+    # ==========================================
+    # STEP 3: EXECUTE ANALYSIS
+    # ==========================================
+
+    #AI->H::Status: (Generating {analysis_mode}
+    analysis of {topic} up to {cutoff_date})
+
+    IF analysis_mode == "overview":
+
+        #AI->H::Analysis: (
+
+        HISTORICAL OVERVIEW: {topic}
+        Period: [earliest relevant date] to
+        {cutoff_date}
+
+        1. ORIGINS AND EARLY DEVELOPMENT
+           - When and how {topic} began
+           - Key founders or initiators
+           - Initial conditions and context
+           IF {focus_areas}: with emphasis on
+           {focus_areas} aspects of the origins
+
+        2. MAJOR MILESTONES
+           - Significant events with specific dates
+           - Turning points and their causes
+           - Key figures involved
+           IF {focus_areas}: highlighting milestones
+           related to {focus_areas}
+
+        3. EVOLUTION AND CHANGES
+           - How {topic} developed over time
+           - Major transitions or shifts
+           - Factors driving change
+           IF {focus_areas}: tracing {focus_areas}
+           through the evolution
+
+        4. STATE AS OF {cutoff_date}
+           - Conditions at the cutoff date
+           - Key players at that time
+           - Documented outcomes
+
+        KNOWLEDGE LIMITATIONS:
+        [Flag any areas where training data is
+        limited or uncertain])
+
+    ELIF analysis_mode == "timeline":
+
+        #AI->H::Analysis: (
+
+        HISTORICAL TIMELINE: {topic}
+        Period: [earliest relevant date] to
+        {cutoff_date}
+        IF {focus_areas}: Emphasis on {focus_areas}
+
+        GRANULARITY NOTE: [State whether entries
+        are yearly, monthly, or by-event based on
+        the topic's density and time span]
+
+        [DATE 1]: [Event]
+        Significance: [Why this mattered]
+        Key figures: [Names/organizations]
+        IF {focus_areas}: [Connection to focus]
+
+        [DATE 2]: [Event]
+        Significance: [Why this mattered]
+        Key figures: [Names/organizations]
+
+        ...continuing to {cutoff_date}
+
+        [Aim for 10-20 entries for most topics.
+        For dense periods, note that additional
+        entries are available on request.]
+
+        NOTABLE GAPS:
+        [Flag any periods where entries are
+        sparse due to training data limitations])
+
+    ELIF analysis_mode == "deep_dive":
+
+        #AI->H::Analysis: (
+
+        DEEP DIVE: {topic}
+        Period: [earliest relevant date] to
+        {cutoff_date}
+        IF {focus_areas}: Primary focus on
+        {focus_areas}
+
+        1. POLITICAL AND SOCIAL CONTEXT
+           - Government policies affecting {topic}
+           - Social movements and public opinion
+           - Cultural factors and attitudes
+           IF {focus_areas}: [focus-specific
+           political/social analysis]
+
+        2. ECONOMIC CONDITIONS
+           - Market conditions during key periods
+           - Investment and funding patterns
+           - Economic factors driving change
+
+        3. TECHNOLOGICAL INFLUENCES
+           - Technologies enabling or affecting
+             {topic}
+           - Innovation patterns
+           - Technical challenges and solutions
+
+        4. KEY STAKEHOLDERS
+           - Major organizations involved
+           - Influential individuals
+           - Competing interests and alliances
+
+        5. CAUSE AND EFFECT ANALYSIS
+           - What drove major changes
+           - Consequences of key decisions
+           - Ripple effects across related areas
+
+        6. DOCUMENTED OUTCOMES
+           - Measurable impacts as of {cutoff_date}
+           - Statistical data where available
+           - Verified results and conclusions
+
+        KNOWLEDGE LIMITATIONS:
+        [Flag any sections where training data
+        is limited, conflicting, or uncertain]
+
+        SOURCES NOTE:
+        [Note general source categories — e.g.,
+        "based on widely reported industry data"
+        vs "based on limited available records"])
+
+
+    # ==========================================
+    # STEP 4: OUTPUT VALIDATION
+    # ==========================================
+
+    Before delivering the analysis, actively
+    verify:
+
+    CHECK 1: Scan for any dates after {cutoff_date}.
+    If found, remove the reference and note what
+    was removed.
+
+    CHECK 2: Scan for speculative language (may,
+    might, could, will, would, likely, probably).
+    If found in a speculative context, rewrite to
+    factual framing or remove.
+
+    CHECK 3: Verify all specific dates and figures
+    match your training data. If uncertain, flag.
+
+    CHECK 4: Confirm focus areas ({focus_areas})
+    are addressed in each section where relevant.
+
+    #AI->H::Note: (Validation complete.
+    [Report any issues found and corrected,
+    or confirm clean pass.])
+
+
+    # ==========================================
+    # STEP 5: FOLLOW-UP OPTIONS
+    # ==========================================
+
+    #AI->H::Question: (
+        Would you like to:
+        1. Expand on a specific event or period
+           (drill deeper into one area)
+        2. Switch to a different analysis mode
+           (e.g., add a timeline to your overview)
+        3. Narrow the time window
+           (focus on a specific sub-period)
+        4. Add or change focus areas
+           (emphasize different aspects)
+        5. Compare two periods within the topic
+           (e.g., before and after a key event)
+        6. List key figures in a specific aspect
+           (people and organizations involved)
+        7. Document findings and end session
+    )
+
+    WAIT for response
+
+    IF selection == 1:
+        #AI->H::Question: (Which event or period
+        would you like me to expand on?)
+        WAIT for response
+        EXECUTE expanded analysis on sub-topic
+        with same cutoff_date and behavioral rules
+    IF selection == 2:
+        GOTO STEP 2 (mode selection)
+    IF selection == 3:
+        #AI->H::Question: (What time window
+        within {topic}? Please give start and
+        end dates.)
+        WAIT for response
+        GOTO STEP 3 with narrowed dates
+    IF selection == 4:
+        #AI->H::Question: (What aspects should
+        I emphasize? E.g., technological,
+        economic, political, cultural, specific
+        organizations or people.)
+        WAIT for response
+        RECORD new focus_areas
+        GOTO STEP 3 with updated focus
+    IF selection == 5:
+        #AI->H::Question: (What two periods
+        would you like to compare? Give me
+        Period A dates and Period B dates.)
+        WAIT for response
+        EXECUTE comparative analysis within
+        same {topic} and {cutoff_date}
+    IF selection == 6:
+        #AI->H::Question: (Which aspect of
+        {topic} should I list key figures for?)
+        WAIT for response
+        EXECUTE key figures listing
+    IF selection == 7:
+        #AI->H::Summary: (
+        SESSION SUMMARY:
+
+        Topic: {topic}
+        Cutoff: {cutoff_date}
+        Mode: {analysis_mode}
+        Focus: {focus_areas or "None specified"}
+        Knowledge gaps flagged: [count]
+
+        For additional research, consider:
+        - Primary sources for flagged gaps
+        - RCP-010 for cross-topic comparison
+        - RCP-011 for innovation pattern tracking)
+
+        #AI->H::Status: (Historical Context
+        Analyzer session complete.)
+
+
+    #AI->H::Status: (Historical Context Analyzer
+    complete)
+    '''
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-009-HISTORICAL-CONTEXT
+# ===========================================================
+"""
+
+
+WPRM_FIELD_EXAMPLE_AI_DIALOGUE = """
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = '''
+Context: Researching e-commerce history for a strategy doc
+
+User: #H->AI::Directive: (Run the Historical Context
+Analyzer for: The evolution of e-commerce, cutoff 2015)
+
+AI: You want to analyze the history of e-commerce up
+to 2015. Before I proceed — is there a specific aspect
+of e-commerce you want emphasized? For example: payment
+systems, marketplace models, mobile commerce, logistics?
+
+User: Focus on marketplace models specifically.
+
+AI: Got it. E-commerce marketplace models up to 2015,
+with focus on marketplace-specific developments.
+
+What depth do you need?
+1. OVERVIEW — Quick narrative background
+2. TIMELINE — Chronological milestone listing
+3. DEEP DIVE — Comprehensive multi-factor analysis
+
+User: Overview is fine.
+
+AI: HISTORICAL OVERVIEW: E-Commerce Marketplace Models
+Period: 1995 to 2015
+
+1. ORIGINS AND EARLY DEVELOPMENT
+eBay launched in September 1995 as AuctionWeb, creating
+one of the first peer-to-peer online marketplaces.
+Amazon, also founded in 1994 and launched in 1995,
+initially operated as a direct retailer before
+introducing its marketplace model. The late 1990s saw
+rapid experimentation with online auction and classified
+formats, many of which did not survive the dot-com bust
+of 2000-2001.
+
+2. MAJOR MILESTONES
+- 1995: eBay and Amazon launch
+- 2000: Amazon Marketplace opens, allowing third-party
+  sellers on the Amazon platform
+- 2003: Alibaba launches Taobao in China
+- 2005: Etsy launches, creating a niche marketplace for
+  handmade and vintage goods
+- 2008: Airbnb founded, extending marketplace model to
+  services and accommodations
+- 2009: Uber founded, applying marketplace to
+  transportation
+- 2011: Instacart founded, marketplace model for grocery
+- 2014: Amazon Prime membership reaches estimated 40
+  million US subscribers
+
+3. EVOLUTION AND CHANGES
+The marketplace model evolved from simple listing services
+(eBay auctions) to managed marketplaces where the platform
+provides fulfillment, payments, and quality control
+(Amazon FBA, launched 2006). The key shift was from
+"platform as listing board" to "platform as
+infrastructure."
+
+4. STATE AS OF 2015
+By 2015, Amazon's third-party marketplace accounted for
+approximately 50% of units sold on the platform. The
+marketplace model had expanded beyond goods into services
+(Uber, Airbnb, TaskRabbit). China's marketplace ecosystem
+(Alibaba, JD.com) had grown to rival US platforms in
+transaction volume.
+
+KNOWLEDGE LIMITATIONS:
+My training data has strong coverage of major US and
+Chinese marketplace platforms but limited detail on
+European and Southeast Asian marketplace developments
+during this period.
+
+Would you like to:
+1. Expand on a specific period or platform
+2. Switch to timeline mode for dated milestones
+3. Narrow to a specific sub-period
+4. Focus on a different aspect
+5. End session
+'''
+
+
+EXAMPLE_2 = '''
+Context: Deep dive on data privacy regulation history
+
+User: #H->AI::Directive: (Run the Historical Context
+Analyzer for: Data privacy regulation history, cutoff
+2018, deep dive mode, focus on EU and US)
+
+AI: Deep dive analysis of data privacy regulation
+history up to 2018, focusing on EU and US developments.
+Proceeding.
+
+DEEP DIVE: Data Privacy Regulation
+Period: 1970s to 2018
+Focus: EU and US regulatory frameworks
+
+1. POLITICAL AND SOCIAL CONTEXT
+Public awareness of data privacy evolved significantly
+over this period. The Watergate scandal (1972-1974) in
+the US heightened concerns about government surveillance,
+directly contributing to the Privacy Act of 1974. In
+Europe, post-WWII sensitivity to state control of
+personal information influenced early data protection
+legislation, with Germany's Hesse state passing the
+world's first data protection law in 1970.
+
+The Edward Snowden disclosures in June 2013 marked a
+major inflection point, revealing NSA mass surveillance
+programs and accelerating both public concern and
+regulatory momentum on both sides of the Atlantic.
+
+2. ECONOMIC CONDITIONS
+The growth of the digital economy created tension
+between data-driven business models and privacy
+protection. US tech companies built advertising-based
+revenue models dependent on data collection. The EU
+viewed unregulated data flows as both a consumer
+protection issue and a trade concern.
+
+3. TECHNOLOGICAL INFLUENCES
+Key technologies driving regulatory response:
+- Internet commercialization (mid-1990s)
+- Social media platforms (2004-2010)
+- Smartphone data collection (2007 onward)
+- Cloud computing and cross-border data storage
+- Big data analytics capabilities
+
+4. KEY STAKEHOLDERS
+US: FTC (primary enforcement), Congress (fragmented
+legislative approach), state attorneys general
+(California leading)
+EU: European Commission, Article 29 Working Party,
+national Data Protection Authorities
+Industry: IAB, tech company lobbying groups
+Advocacy: EFF, EPIC, Privacy International
+
+5. CAUSE AND EFFECT ANALYSIS
+The EU's 1995 Data Protection Directive established
+the framework that required "adequacy" from trading
+partners, creating pressure on the US to formalize
+privacy protections. The Safe Harbor agreement (2000)
+attempted to bridge this gap but was invalidated by
+the CJEU in Schrems I (October 2015). The Privacy
+Shield (2016) replaced it.
+
+The GDPR was adopted in April 2016 with enforcement
+beginning May 25, 2018, representing the most
+significant data privacy regulation globally.
+
+6. DOCUMENTED OUTCOMES AS OF 2018
+- EU: GDPR in effect as of May 2018
+- US: No comprehensive federal privacy law; sectoral
+  approach (HIPAA for health, COPPA for children,
+  GLBA for finance)
+- California Consumer Privacy Act signed June 2018
+  (enforcement beginning 2020 — note: this is after
+  my analysis period, so I flag this boundary)
+
+KNOWLEDGE LIMITATIONS:
+- My coverage of individual EU member state
+  implementations of the 1995 Directive varies
+- Specific enforcement actions before 2015 are
+  less detailed in my training data
+- Sources differ on exact lobbying expenditure
+  figures cited in some analyses of this period
+
+Would you like to expand on any section?
+'''
+"""
+
+
+# ===========================================================
+# RUNNER CONFIGURATION
+# ===========================================================
+
+
+WPRM_FIELD_RUNNER_COMPATIBLE = "Yes"
+
+
+WPRM_FIELD_RUNNER_RECIPE_ID = "RCP-001-001-019"
+
+
+WPRM_FIELD_STANDALONE_CAPABLE = "Yes"
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+USAGE NOTES:
+    - Always specify exact cutoff dates, not vague terms
+    - Best with topics that have substantial documented
+      history (post-1900 for most subjects)
+    - AI will flag its own knowledge limitations — this
+      is a feature, not a bug
+    - Follow-up prompts can fill gaps more safely than
+      asking for speculation
+    - Works well as a precursor to strategic planning
+      recipes
+
+HALLUCINATION REDUCTION MECHANISM:
+    The key mechanism is the explicit time boundary
+    combined with instruction to avoid future speculation.
+    This constrains the AI to training data about verified
+    past events. The behavioral rules add a second layer:
+    active self-monitoring for speculative language and
+    explicit uncertainty flagging.
+
+SOURCE:
+    Synthesized from 7 prompt variations across ChatGPT
+    and Gemini platforms. Three analysis modes combined
+    into single parameterized recipe.
+
+COMPATIBILITY:
+    - Works with RCP-001-001-019-SINGLE-RECIPE-RUNNER
+    - CRAFT Cowork + Recipe Runner
+    - Standalone capable: Yes
+"""
+
+
+# ===========================================================
+# Q&A SECTION
+# ===========================================================
+
+
+WPRM_FIELD_QA = """
+Q: How far back can the AI reliably analyze?
+A: The AI has strongest coverage of events from roughly
+   1900 onward, with diminishing detail for earlier
+   periods. For pre-1900 topics, expect the AI to flag
+   more knowledge gaps. Ancient history is covered at
+   a textbook level but with less granular detail.
+
+Q: What if the AI includes information after my cutoff?
+A: Ask it to revise: "Please remove any references to
+   events after [date] and replace with information
+   available up to that point." The behavioral rules
+   should prevent this, but complex topics occasionally
+   trigger boundary slips.
+
+Q: Which analysis mode should I choose?
+A: Overview for getting oriented quickly or providing
+   background in a document. Timeline for presentations,
+   visual displays, or when sequence matters. Deep dive
+   for serious research, strategy documents, or academic
+   work.
+
+Q: Can I use multiple modes on the same topic?
+A: Yes. A common workflow is Overview first to get
+   oriented, then Deep dive on the most interesting
+   period, then Timeline for a specific sub-topic to
+   share with a team.
+
+Q: What if the AI says it has limited knowledge?
+A: This is the recipe working correctly. The AI flagging
+   gaps is more valuable than filling them with plausible
+   fabrication. Use the flagged gaps as a research guide
+   for primary sources.
+
+Q: How do I know if the AI's historical claims are accurate?
+A: For high-stakes research, always verify key claims
+   with primary sources. The AI is a starting point and
+   organizer, not a primary source. The recipe reduces
+   but cannot eliminate hallucination risk.
+
+Q: Can I set a start date as well as a cutoff?
+A: Yes. In Step 1, specify both: "Analyze [topic] from
+   [start date] to [cutoff date]." This narrows the
+   scope and produces more focused analysis.
+
+Q: What counts as "speculative language"?
+A: Words like may, might, could, will, would, likely,
+   probably, possibly when used to guess about outcomes
+   or implications. These words are acceptable when
+   describing documented historical debates: "Historians
+   have debated whether X may have caused Y" is fine
+   because the debate itself is documented fact.
+"""
+
+
+# ===========================================================
+# END OF RECIPE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP (Human-facing summary)
+# ===========================================================
+
+# ===========================================================
+# TLDR RECAP — RCP-009 HISTORICAL-CONTEXT-ANALYZER
+# ===========================================================
+# For: Human users (website display)
+# Recipe: RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER
+# Version: v2.00a (Revised)
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+
+    Gets you accurate historical information by telling
+    the AI exactly what topic to research and where in
+    time to stop. By setting a firm cutoff date, the AI
+    focuses on documented past events and avoids making
+    things up about what happened recently or what might
+    happen next. When the AI is not sure about something,
+    it tells you instead of guessing.
+
+
+HOW IT WORKS (5 STEPS):
+
+    1. DEFINE TOPIC + CUTOFF — Tell the AI what to
+       research and set a hard end date (e.g., "the
+       history of electric vehicles up to 2018")
+    2. PICK YOUR MODE — Choose how deep you want to go:
+       - OVERVIEW: Quick narrative background (5-10 min)
+       - TIMELINE: Chronological milestones (5-10 min)
+       - DEEP DIVE: Full multi-factor scholarly analysis
+         (15-25 min)
+    3. RECEIVE ANALYSIS — Time-bounded, fact-based output
+       with dates, key figures, and explicit flags where
+       the AI's knowledge is limited
+    4. VALIDATE — The AI checks its own output for leaked
+       future references or speculative language
+    5. FOLLOW UP — Expand on events, switch modes, narrow
+       the window, compare periods, or document findings
+
+
+WHAT MAKES IT DIFFERENT FROM JUST ASKING THE AI:
+
+    When you ask an AI "tell me about X," it often mixes
+    verified history with speculation, recent events, and
+    plausible-sounding details it made up. This recipe
+    forces the AI to stay inside a time boundary, flag
+    its own uncertainty, and distinguish fact from
+    interpretation. The result is more trustworthy.
+
+
+BEST FOR:
+
+    - Research that needs to be accurate
+    - Strategy documents requiring historical context
+    - Educational content based on real events
+    - Case studies built from documented history
+    - Anyone who has been burned by AI making up facts
+
+
+TIME: 5-25 minutes depending on mode
+DIFFICULTY: Easy
+WORKS WITH: CRAFT Cowork + Recipe Runner
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION (Not visible to users)
+# ===========================================================
+
+# ===========================================================
+# EXTENDED INFORMATION FOR THE AI
+# ===========================================================
+# For: AI execution reference (collapsed on website)
+# Recipe: RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER
+# Version: v2.00a (Revised)
+# ===========================================================
+
+
+AI, this section addresses common execution failures for
+this specific recipe type. Read this before running the
+recipe. It bridges the gap between what the code says and
+what excellent execution looks like.
+
+
+CRITICAL EXECUTION GUIDANCE:
+
+    THE HALLUCINATION TRAP:
+    This recipe exists specifically to reduce hallucination.
+    That means your biggest failure mode is the exact
+    behavior the recipe was designed to prevent: generating
+    plausible-sounding historical content that you cannot
+    verify from your training data. The temptation is
+    strong — your architecture is optimized to produce
+    fluent, confident text. Fight that tendency here.
+    When you are uncertain, SAY SO. A response that says
+    "I have limited detail on this" is a success. A
+    response that fabricates a convincing date or figure
+    is a critical failure.
+
+    Specific hallucination risks:
+    - Exact dates: If you are not confident about a
+      specific day, give the month or year instead
+    - Specific figures: "approximately X" or "reported
+      as X by [source type]" rather than stating as fact
+    - Causal claims: "X is widely attributed to Y"
+      rather than "X caused Y" unless causation is
+      well-established
+    - Minor players: Stick to well-documented figures.
+      Do not generate plausible-sounding names for minor
+      historical actors you are unsure about.
+
+    THE CUTOFF BOUNDARY:
+    The cutoff date is the single most important
+    instruction in this recipe. Common boundary violations:
+    - "This would later become..." — references future
+    - "Setting the stage for..." — implies what comes next
+    - "In the years following..." — crosses the boundary
+    - "Which eventually led to..." — temporal leak
+    - Mentioning an organization's current name when it
+      had a different name at the cutoff date
+
+    If you catch yourself writing any of these phrases,
+    stop and rewrite. End your analysis AT the cutoff,
+    not with a preview of what came after.
+
+    FACT VS INTERPRETATION:
+    This is the hardest distinction to maintain. Many
+    "facts" in history are actually widely-accepted
+    interpretations. Be explicit about the difference:
+
+    FACT: "The iPhone launched on June 29, 2007."
+    INTERPRETATION: "The iPhone launch is widely
+    considered a turning point for the mobile industry."
+    FABRICATION: "The iPhone launch immediately caused
+    Nokia's stock to drop 15%." (Unless you can verify
+    this specific claim.)
+
+    When in doubt, frame as interpretation: "Analysts
+    at the time noted..." or "It has been widely
+    reported that..." This is more honest and still
+    useful to the reader.
+
+    MODE-SPECIFIC EXECUTION:
+
+    OVERVIEW MODE:
+    The risk is being too shallow or too detailed. Aim
+    for 500-800 words covering four sections. Each section
+    should have 2-3 key points with dates. Do not produce
+    a deep dive disguised as an overview — the user chose
+    overview because they want to get oriented quickly.
+
+    TIMELINE MODE:
+    The risk is uneven granularity. If you give monthly
+    entries for 1995-2000 and then yearly entries for
+    2000-2015, the user gets a distorted view. Decide
+    on a consistent granularity at the start (yearly,
+    by-event, or by-decade for long periods) and state
+    it. Aim for 10-20 entries. If the topic warrants
+    more, note that additional entries are available.
+
+    DEEP DIVE MODE:
+    The risk is producing a shallow overview with deep
+    dive section headers. Each of the 6 sections should
+    contain analytical depth — causal reasoning, multiple
+    stakeholder perspectives, documented tensions and
+    trade-offs. This is the mode where you should spend
+    time. Aim for 1000-2000 words total.
+
+    FOCUS AREAS:
+    The {focus_areas} parameter is used across all modes
+    in the revised code, not just deep dive. When focus
+    areas are specified, weave them into each section
+    rather than adding a separate "focus" section. The
+    focus should be a lens applied to the whole analysis,
+    not an appendix.
+
+    THE "TOO BROAD" PROBLEM:
+    If the user asks for "the history of technology up
+    to 2020," this is too broad to produce useful output.
+    In Step 1, ask the user to narrow: "That is a very
+    broad topic. Would you like to focus on a specific
+    technology (e.g., cloud computing, AI, smartphones)
+    or a specific aspect (e.g., consumer adoption,
+    enterprise transformation, regulatory response)?"
+
+    FOLLOW-UP HANDLING:
+    When the user picks a follow-up option, maintain ALL
+    behavioral rules from the original analysis. The
+    cutoff date does not reset. The speculative language
+    ban remains. If the user asks to expand on a specific
+    event, apply the same rigor to the expansion as to
+    the original analysis.
+
+
+TONE CALIBRATION:
+
+    This recipe requires the tone of a careful historian
+    or scholarly researcher, not a storyteller or
+    journalist. Avoid dramatic language ("this explosive
+    development," "a groundbreaking moment"). Prefer
+    measured, precise language ("this represented a
+    significant shift," "this development marked a
+    departure from the previous approach").
+
+    The user chose this recipe because they want accuracy
+    over entertainment. Your restraint IS the value.
+
+
+COMMON AI MISTAKES TO AVOID:
+
+    1. Fabricating specific dates, figures, or names when
+       uncertain (flag the gap instead)
+    2. Using "which would later become" or similar future-
+       referencing phrases that leak past the cutoff
+    3. Presenting widely-accepted interpretation as
+       established fact without attribution
+    4. Producing deep-dive depth when overview was
+       requested (or vice versa)
+    5. Uneven granularity in timeline mode (dense early,
+       sparse late or vice versa)
+    6. Ignoring focus areas in overview and timeline modes
+    7. Not actually performing the output validation
+       checklist before delivering
+    8. Filling knowledge gaps with plausible-sounding
+       content instead of flagging them
+    9. Using dramatic or narrative language instead of
+       scholarly tone
+   10. Accepting overly broad topics without asking the
+       user to narrow scope
+
+
+# ===========================================================
+# END RCP-009 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER",
+  "recipe_name": "Historical Context Analyzer",
+  "version": "v2.00b",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-9/RCP-009-EXTENDED-AI-INFO.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "Historical Context Analyzer — a hallucination-reduction protocol that constrains AI analysis to verified historical events within defined time boundaries. Category: CAT-000 Standalone. Difficulty: Easy. 5-step interactive workflow with three analysis modes (overview, timeline, deep dive), built-in output validation, and follow-up routing."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "THE HALLUCINATION TRAP",
+          "description": "This recipe exists specifically to reduce hallucination. Your biggest failure mode is the exact behavior the recipe was designed to prevent: generating plausible-sounding historical content that you cannot verify from your training data. When you are uncertain, SAY SO. A response that says I have limited detail on this is a success. A response that fabricates a convincing date or figure is a critical failure. Specific risks: exact dates (give month or year if unsure), specific figures (use approximately or reported as), causal claims (use widely attributed to rather than caused), minor players (stick to well-documented figures)."
+        },
+        {
+          "key": "THE CUTOFF BOUNDARY",
+          "description": "The cutoff date is the single most important instruction. Common boundary violations: this would later become (references future), setting the stage for (implies what comes next), in the years following (crosses boundary), which eventually led to (temporal leak), mentioning an organization's current name when it had a different name at the cutoff date. If you catch yourself writing any of these phrases, stop and rewrite. End your analysis AT the cutoff, not with a preview of what came after."
+        },
+        {
+          "key": "FACT VS INTERPRETATION",
+          "description": "The hardest distinction to maintain. Many facts in history are actually widely-accepted interpretations. Be explicit: FACT is The iPhone launched on June 29 2007. INTERPRETATION is The iPhone launch is widely considered a turning point for the mobile industry. FABRICATION is The iPhone launch immediately caused Nokia stock to drop 15 percent (unless you can verify this specific claim). When in doubt, frame as interpretation: Analysts at the time noted or It has been widely reported that."
+        },
+        {
+          "key": "MODE-SPECIFIC EXECUTION",
+          "description": "Overview mode: aim for 500-800 words covering four sections. Risk is being too shallow or too detailed. Timeline mode: decide on consistent granularity at the start (yearly, by-event, or by-decade) and state it. Risk is uneven granularity — dense early and sparse late or vice versa. Aim for 10-20 entries. Deep Dive mode: each of the 6 sections should contain analytical depth — causal reasoning, multiple stakeholder perspectives, documented tensions. Risk is producing a shallow overview with deep dive section headers. Aim for 1000-2000 words."
+        },
+        {
+          "key": "FOCUS AREAS",
+          "description": "The focus_areas parameter is used across all modes, not just deep dive. When focus areas are specified, weave them into each section rather than adding a separate focus section. The focus should be a lens applied to the whole analysis, not an appendix."
+        },
+        {
+          "key": "THE TOO BROAD PROBLEM",
+          "description": "If the user asks for the history of technology up to 2020 or similarly broad topics, this is too broad to produce useful output. In Step 1, ask the user to narrow: That is a very broad topic. Would you like to focus on a specific technology (e.g., cloud computing, AI, smartphones) or a specific aspect (e.g., consumer adoption, enterprise transformation, regulatory response)?"
+        },
+        {
+          "key": "FOLLOW-UP HANDLING",
+          "description": "When the user picks a follow-up option, maintain ALL behavioral rules from the original analysis. The cutoff date does not reset. The speculative language ban remains. If the user asks to expand on a specific event, apply the same rigor to the expansion as to the original analysis."
+        }
+      ]
+    },
+    "behavioral_infrastructure": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "RULE 1 — TIME BOUNDARY IS ABSOLUTE",
+          "description": "The cutoff date is sacred. Never reference, hint at, or allude to any event after this date. Do not use phrases like this would later become or setting the stage for. The analysis ends at the cutoff. Period."
+        },
+        {
+          "key": "RULE 2 — FACT VS INTERPRETATION",
+          "description": "Distinguish between established historical fact and widely-accepted interpretation. Present facts as facts. Present interpretation as interpretation, with attribution where possible."
+        },
+        {
+          "key": "RULE 3 — UNCERTAINTY FLAGGING",
+          "description": "If your training data has limited or conflicting information about a specific event, date, or claim, say so explicitly. Use phrases like My training data has limited detail on this specific aspect or Sources differ on the exact date/figure. Never fill gaps with plausible-sounding content. A flagged gap is more valuable than a confident fabrication."
+        },
+        {
+          "key": "RULE 4 — SPECULATIVE LANGUAGE BAN",
+          "description": "Do not use may, might, could, will, would, should, likely, probably, possibly, perhaps, presumably, arguably when used to speculate. These words are acceptable ONLY when describing documented historical uncertainty: Historians have debated whether X may have influenced Y is acceptable because the debate itself is a documented fact."
+        },
+        {
+          "key": "RULE 5 — PROPORTIONAL DEPTH",
+          "description": "Overview mode: broad strokes, 4 sections, 500-800 words. Timeline mode: dated entries, 10-20 milestones. Deep dive mode: comprehensive analysis, 6 sections, 1000-2000 words. Do not produce deep-dive depth when overview was requested, and vice versa."
+        },
+        {
+          "key": "RULE 6 — SCHOLARLY TONE",
+          "description": "Write as a careful historian, not a storyteller. Be precise with dates, names, and figures. Avoid dramatic language or narrative embellishment. The user chose this recipe because they want accuracy, not entertainment."
+        }
+      ]
+    },
+    "i_dont_know_handling": {
+      "type": "prose",
+      "body": "When you encounter a topic, period, or specific claim where your training data is limited, conflicting, or absent: DO NOT fabricate plausible-sounding history. This directly contradicts the recipe's core purpose. INSTEAD, use one of four options: (A) FLAG THE GAP — say My training data has limited coverage of this aspect, provide what you DO know, recommend verifying with primary sources; (B) NARROW THE SCOPE — offer to focus on a related aspect where you have stronger coverage; (C) SUGGEST ALTERNATIVES — offer a broader overview of what you are confident about, a related topic with stronger data, or key questions to guide primary source research; (D) PROVIDE WITH CAVEATS — give partial information with explicit caveats about limitations. The user chose this recipe BECAUSE they want accuracy. Admitting limitations IS delivering on the recipe's promise."
+    },
+    "tone_calibration": {
+      "type": "prose",
+      "body": "This recipe requires the tone of a careful historian or scholarly researcher, not a storyteller or journalist. Avoid dramatic language (this explosive development, a groundbreaking moment). Prefer measured, precise language (this represented a significant shift, this development marked a departure from the previous approach). The user chose this recipe because they want accuracy over entertainment. Your restraint IS the value."
+    },
+    "common_mistakes": {
+      "type": "list",
+      "items": [
+        "Fabricating specific dates, figures, or names when uncertain (flag the gap instead)",
+        "Using which would later become or similar future-referencing phrases that leak past the cutoff",
+        "Presenting widely-accepted interpretation as established fact without attribution",
+        "Producing deep-dive depth when overview was requested (or vice versa)",
+        "Uneven granularity in timeline mode (dense early, sparse late or vice versa)",
+        "Ignoring focus areas in overview and timeline modes",
+        "Not actually performing the output validation checklist before delivering",
+        "Filling knowledge gaps with plausible-sounding content instead of flagging them",
+        "Using dramatic or narrative language instead of scholarly tone",
+        "Accepting overly broad topics without asking the user to narrow scope"
+      ]
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

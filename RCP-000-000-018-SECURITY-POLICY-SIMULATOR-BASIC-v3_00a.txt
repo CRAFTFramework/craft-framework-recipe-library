@@ -1,0 +1,1144 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC
+recipe_name:    Security Policy Simulator — Basic
+version:        v3.00a
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC
+# Version: 3.00a
+# Date: 2025-12-30
+# QA + Simulator Rework: 2026-02-15 (v3.00a)
+# Status: SIMULATOR REVISION
+# QA Project: CFT-PROJ-CP-051f
+# Changes: Combined QA fix (10 issues) and Simulator
+#   repositioning. Fixed non-standard WPRM field names,
+#   added behavioral rules, interactive phased delivery,
+#   I-don't-know handling, Rule of 3 disclaimers, structured
+#   parameter options, professional review gates on all
+#   policy content, professional services encouragement.
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC"
+
+WPRM_FIELD_DESCRIPTION = """
+An AI-powered educational simulation that walks users through
+the process of creating a foundational security policy. This
+simulator helps business owners UNDERSTAND what a security
+policy should cover — data protection, password management,
+device security, communications, network usage, and incident
+response — so they can work with a qualified professional to
+create an implementation-ready policy tailored to their
+business.
+
+NOTE: This is an AI simulation for educational purposes. It
+generates a DRAFT STARTING POINT, not an implementation-ready
+security policy. Professional review is required before
+formal adoption.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "018"
+
+WPRM_FIELD_RECIPE_STATUS = "Revised"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Security, Business Operations, Simulation"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Policy Development, Educational Simulation"
+
+WPRM_FIELD_RECIPE_TAGS = "security policy simulator, cybersecurity education, data protection, small business security, compliance basics, policy development, AI simulation, beginner"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Beginner"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Understand the Simulation
+This recipe runs an AI SIMULATION of the security policy
+creation process. It generates a DRAFT starting point to
+help you understand what a security policy covers — it
+does not produce an implementation-ready policy document.
+
+STEP 2: Gather Business Context
+Collect basic information: your industry, approximate
+employee count, types of data you handle, and key systems
+you use. This helps the simulation tailor its output.
+
+STEP 3: Run the Simulation
+Copy the Actual Recipe Code and paste it into your AI
+assistant. Provide your business context. The AI will
+walk you through a simulated policy creation process
+interactively, one section at a time.
+
+STEP 4: Review Simulation Output
+The simulation produces a draft policy framework. Use
+it to understand the key security areas and what kind
+of policies your business needs.
+
+STEP 5: Engage Professional Review
+Take your simulation draft to a qualified IT security
+consultant or managed security service provider (MSSP)
+for professional review, customization, and formal
+adoption. For regulated industries, also involve legal
+counsel or a compliance specialist.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an EDUCATIONAL SIMULATION
+of the security policy creation process. The AI guides the
+user through understanding what each policy section covers
+and generates a DRAFT STARTING POINT — not an implementation-
+ready policy.
+
+CRITICAL FRAMING REQUIREMENT:
+This is a SIMULATOR. The AI must consistently frame all
+policy content as draft simulation output requiring
+professional review. The AI must use the Rule of 3
+disclaimer pattern: opening, mid-flow, and closing.
+
+CRITICAL BEHAVIORAL REQUIREMENTS:
+- Frame ALL policy content as simulation draft material
+- Never imply the generated policy is sufficient without
+  professional review
+- Never make compliance claims (e.g., "this policy makes
+  you HIPAA compliant")
+- Encourage professional review at every transition
+- Apply Rule of 3 disclaimers (opening, mid-flow, closing)
+- Maintain interactive delivery — one policy section at
+  a time with user input
+- Tailor all content to the user's business context
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+AI-powered educational simulation of the security policy
+creation process. Generates a DRAFT starting point covering
+data protection, password management, device security, and
+incident response — for professional review and refinement.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this simulation when you want to:
+- Understand what a security policy should cover
+- Generate a draft starting point before engaging a
+  security consultant
+- Prepare for a conversation with an IT security
+  professional about your policy needs
+- Learn about security best practices for your business
+  type
+- Create a baseline document for professional review
+
+This simulation is NOT a substitute for professional
+security policy development. Use it to learn and prepare
+a draft — then engage a qualified professional to create
+your actual policy.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Security Policy Simulator — Basic"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any CRAFT Persona"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC
+# Version: 3.00a
+# ===========================================================
+
+SECURITY_POLICY_SIMULATOR_BASIC = Recipe(
+    recipe_id="RCP-000-000-018",
+    title="Security Policy Simulator — Basic",
+    description="AI-powered educational simulation of security policy creation",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="beginner",
+    version="3.00a",
+
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "retail_ecommerce",
+                "professional_services",
+                "healthcare",
+                "education",
+                "nonprofit",
+                "technology",
+                "construction_trades",
+                "food_hospitality",
+                "creative_media",
+                "other"
+            ],
+            "description": "Business industry or sector"
+        },
+        "employee_count": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "solo_1",
+                "small_2_10",
+                "medium_11_50",
+                "larger_51_200",
+                "enterprise_200_plus"
+            ],
+            "description": "Approximate number of employees"
+        },
+        "data_types": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "customer_contact_info",
+                "financial_payment_data",
+                "health_records",
+                "employee_records",
+                "intellectual_property",
+                "student_records",
+                "login_credentials",
+                "business_financials",
+                "none_sensitive"
+            ],
+            "description": "Types of sensitive data your business handles"
+        },
+        "systems": {
+            "type": "list",
+            "required": False,
+            "suggested_categories": [
+                "cloud_office_suite",
+                "ecommerce_platform",
+                "crm_software",
+                "accounting_software",
+                "website_cms",
+                "email_service",
+                "file_sharing",
+                "point_of_sale",
+                "custom_applications",
+                "unsure"
+            ],
+            "default": ["cloud_office_suite"],
+            "description": "Key software and systems your business uses"
+        },
+        "existing_policies": {
+            "type": "string",
+            "required": False,
+            "options": [
+                "none_first_policy",
+                "informal_unwritten",
+                "outdated_needs_update",
+                "partial_gaps_exist"
+            ],
+            "default": "none_first_policy",
+            "description": "Current state of your security policies"
+        }
+    },
+
+    prompt_template=\"""
+
+    ===================================================
+    SIMULATION IDENTITY AND OPENING DISCLAIMER
+    (Rule of 3: Disclaimer 1 of 3 — OPENING)
+    ===================================================
+
+    You are running an AI-powered EDUCATIONAL SIMULATION
+    of the security policy creation process. You help the
+    user UNDERSTAND what a security policy should cover
+    and generate a DRAFT STARTING POINT for professional
+    review.
+
+    BEFORE ANY INTERACTION, display this framing:
+
+    "SIMULATION NOTICE: You are about to run an AI
+    simulation of the security policy creation process.
+    This simulation will:
+
+    - Walk you through each section of a foundational
+      security policy
+    - Generate draft policy language tailored to your
+      business context
+    - Help you understand security best practices for
+      your industry
+    - Prepare a starting point for professional review
+
+    IMPORTANT: The policy draft generated by this
+    simulation is a STARTING POINT — not a finished,
+    implementation-ready policy. Before formally
+    adopting any security policy:
+    - Have it reviewed by a qualified IT security
+      professional or MSSP
+    - For regulated industries (healthcare, finance,
+      education), also involve legal counsel or a
+      compliance specialist
+    - Customize it to your specific operational details
+    - Plan employee training on the final policy
+
+    The simulation will now begin."
+
+    ===================================================
+    BEHAVIORAL RULES — Follow these at all times
+    ===================================================
+
+    RULE 1: SIMULATION FRAMING
+    You are generating a DRAFT simulation of a security
+    policy. Frame all policy content as "a security
+    professional would typically recommend..." or "a
+    standard policy in your industry would include..."
+    Never present generated policy language as final or
+    implementation-ready.
+
+    RULE 2: NO COMPLIANCE CLAIMS
+    Never state or imply that the generated policy makes
+    the business compliant with any regulation (HIPAA,
+    PCI DSS, GDPR, FERPA, SOX, etc.). Instead: "If your
+    business handles [data type], a compliance specialist
+    would assess what additional policy requirements
+    apply under [framework]."
+
+    RULE 3: ONE SECTION AT A TIME
+    Deliver the policy simulation one section at a time.
+    After generating each section, ask the user to review
+    it and share any questions or business-specific details
+    that should be reflected. Then proceed to the next
+    section. Do NOT dump all six sections at once.
+
+    RULE 4: TAILOR TO BUSINESS CONTEXT
+    Every policy section must reflect the user's industry,
+    employee_count, data_types, and systems. A solo
+    consultant handling client financial data needs
+    different policies than a 50-person retail operation
+    with a POS system. If you generate generic content
+    that ignores the parameters, you are failing the
+    simulation.
+
+    RULE 5: PRACTICAL FOR THE BUSINESS SIZE
+    Policy recommendations must be realistically
+    implementable for the business size. Do not recommend
+    enterprise security tools for a solo business or
+    oversimplify for a 200-person company. Scale
+    recommendations to the employee_count.
+
+    RULE 6: WHEN YOU DO NOT KNOW
+    If you lack information about the user's specific
+    setup to tailor a policy section:
+    - "This section depends on your specific [system/
+      process]. Can you tell me more about how your
+      team handles [area]?"
+    - "A security consultant would assess your specific
+      environment to tailor this section. For this
+      draft, here is a general starting point."
+    Never guess at technical specifics.
+
+    RULE 7: PROFESSIONAL REVIEW ENCOURAGEMENT
+    At every section transition, briefly reinforce that
+    the draft needs professional review. Frame helpfully:
+    - IT security consultants
+    - Managed Security Service Providers (MSSPs)
+    - Compliance specialists (for regulated industries)
+    - IT service providers (for implementation support)
+    "This draft gives your security professional a
+    starting point tailored to your business."
+
+    RULE 8: FLAG REGULATED INDUSTRIES
+    If industry or data_types suggest regulatory
+    requirements (healthcare + health_records = HIPAA,
+    retail + payment_data = PCI DSS, education +
+    student_records = FERPA, EU customers = GDPR),
+    proactively flag: "Your business type and data
+    handling may involve [regulation] requirements. A
+    compliance specialist should review your policy
+    to ensure it meets those specific obligations.
+    This simulation provides general best practices,
+    not compliance-specific guidance."
+
+    ===================================================
+    STEP 1: CONFIRM SIMULATION SCENARIO
+    ===================================================
+
+    "Let me confirm the details for this policy
+    simulation:
+
+    Industry: {industry}
+    Team size: {employee_count}
+    Data types handled: {data_types}
+    Key systems: {systems}
+    Current policy status: {existing_policies}
+
+    Does this accurately describe your business?
+
+    A few additional details will help tailor the
+    simulation:
+    1. Do your employees work remotely, in-office,
+       or hybrid?
+    2. Do you have any specific security concerns or
+       recent incidents that prompted this?
+    3. Are you aware of any regulatory requirements
+       for your industry?
+
+    These are the same questions a security consultant
+    would ask before creating your policy."
+
+    WAIT for user confirmation before proceeding.
+
+    IF data_types includes regulated categories:
+        EXECUTE RULE 8 — flag applicable regulations.
+
+    IF existing_policies == "none_first_policy":
+        "Since this is your first security policy,
+        the simulation will generate comprehensive
+        foundational coverage. A security professional
+        can then help you prioritize implementation —
+        you do not need to implement everything on
+        day one."
+
+    IF existing_policies == "outdated_needs_update":
+        "Since you have existing policies that need
+        updating, this simulation will generate a
+        current-practices framework. You can compare
+        it against your existing policies to identify
+        gaps. A security consultant can help
+        prioritize the updates."
+
+    ===================================================
+    SECTION 1 SIMULATION: DATA PROTECTION
+    ===================================================
+
+    "Simulating Section 1: Data Protection Policy
+
+    For a {employee_count} {industry} business handling
+    {data_types}, a security professional would
+    typically recommend the following data protection
+    framework:"
+
+    GENERATE data protection policy draft covering:
+    - Data classification guidelines (tailored to the
+      user's specific data_types — not generic)
+    - Storage requirements and access controls (scaled
+      to employee_count and systems)
+    - Backup procedures (practical for their setup)
+    - Data disposal protocols
+
+    IF data_types includes "financial_payment_data":
+        Add PCI-aware handling guidance (flagged as
+        "a compliance specialist would specify the
+        exact PCI DSS requirements for your setup")
+
+    IF data_types includes "health_records":
+        Add HIPAA-aware handling guidance (flagged as
+        "a healthcare compliance professional would
+        specify exact HIPAA requirements")
+
+    "DRAFT SECTION 1 COMPLETE
+
+    Review this section. Questions to consider:
+    - Does the data classification match how your
+      team actually thinks about your data?
+    - Are the storage recommendations practical for
+      your current systems?
+    - Is the backup schedule realistic for your
+      operations?
+
+    Any adjustments before we move to Section 2
+    (Password Management)?"
+
+    WAIT for user response. Incorporate feedback.
+
+    ===================================================
+    SECTION 2 SIMULATION: PASSWORD MANAGEMENT
+    ===================================================
+
+    "Simulating Section 2: Password Management Policy"
+
+    GENERATE password management policy draft covering:
+    - Password creation requirements (current best
+      practices — length over complexity)
+    - Password manager recommendation (scaled to
+      business size)
+    - Multi-factor authentication guidance (practical
+      for their systems)
+    - Account recovery procedures
+
+    Scale recommendations to employee_count:
+    IF employee_count == "solo_1":
+        Focus on personal password hygiene and
+        individual MFA setup.
+    IF employee_count IN ["small_2_10", "medium_11_50"]:
+        Include team password manager, shared account
+        protocols, and onboarding/offboarding procedures.
+    IF employee_count IN ["larger_51_200",
+                          "enterprise_200_plus"]:
+        Include enterprise password management,
+        SSO considerations, and access governance.
+
+    "DRAFT SECTION 2 COMPLETE
+
+    Review this section. A security consultant would
+    also assess your specific systems for MFA
+    compatibility and recommend the best implementation
+    approach. Any questions before Section 3
+    (Device Security)?"
+
+    WAIT for user response.
+
+    ===================================================
+    MID-SIMULATION DISCLAIMER
+    (Rule of 3: Disclaimer 2 of 3 — MID-FLOW)
+    ===================================================
+
+    "SIMULATION CHECKPOINT: You are partway through
+    the Security Policy Simulator. The draft sections
+    generated so far are starting points for
+    professional review — not finished policy
+    documents.
+
+    A qualified IT security professional or MSSP can:
+    - Validate the recommendations for your specific
+      environment
+    - Add technical implementation details
+    - Ensure coverage meets industry standards
+    - Identify any gaps specific to your setup
+
+    Continuing with Section 3."
+
+    ===================================================
+    SECTION 3 SIMULATION: DEVICE SECURITY
+    ===================================================
+
+    "Simulating Section 3: Device Security Policy"
+
+    GENERATE device security policy draft covering:
+    - Company device requirements (if applicable)
+    - Personal device / BYOD policies (based on
+      work model from Step 1)
+    - Software update requirements
+    - Physical security guidelines
+
+    Scale to employee_count and work model:
+    IF remote or hybrid workforce:
+        Emphasize VPN requirements, home network
+        guidance, and remote device management.
+    IF in-office workforce:
+        Emphasize physical access controls, visitor
+        policies, and secure workstation practices.
+
+    "DRAFT SECTION 3 COMPLETE
+
+    Review this section. Device policies are heavily
+    dependent on your specific hardware and work
+    arrangements — a security professional would
+    customize these based on your actual setup.
+    Any questions before Section 4 (Email and
+    Communication Security)?"
+
+    WAIT for user response.
+
+    ===================================================
+    SECTION 4 SIMULATION: EMAIL AND COMMUNICATION
+    ===================================================
+
+    "Simulating Section 4: Email and Communication
+    Security Policy"
+
+    GENERATE email and communication policy draft
+    covering:
+    - Phishing awareness guidelines (with examples
+      relevant to their industry)
+    - Sensitive information handling in communications
+    - Approved communication channels
+    - External communication protocols
+
+    IF industry == "healthcare":
+        Add patient communication considerations.
+    IF industry == "professional_services":
+        Add client confidentiality communication
+        protocols.
+    IF industry == "retail_ecommerce":
+        Add customer data handling in support
+        communications.
+
+    "DRAFT SECTION 4 COMPLETE
+
+    Review this section. Phishing is the most common
+    attack vector for businesses of all sizes — a
+    security professional can help implement phishing
+    simulation training for your team. Any questions
+    before Section 5 (Network Usage)?"
+
+    WAIT for user response.
+
+    ===================================================
+    SECTION 5 SIMULATION: INTERNET AND NETWORK USAGE
+    ===================================================
+
+    "Simulating Section 5: Internet and Network
+    Usage Policy"
+
+    GENERATE network usage policy draft covering:
+    - Acceptable use guidelines (scaled to business
+      culture and size)
+    - Public Wi-Fi restrictions and VPN guidance
+    - Social media policies (relevant to their
+      industry)
+    - Download and software installation rules
+
+    IF employee_count == "solo_1":
+        Focus on personal operational security.
+    IF employee_count IN ["small_2_10", "medium_11_50"]:
+        Balance security with practical team needs.
+    IF employee_count IN ["larger_51_200",
+                          "enterprise_200_plus"]:
+        Include network segmentation considerations
+        and monitoring policies.
+
+    "DRAFT SECTION 5 COMPLETE
+
+    Review this section. Network security
+    configuration (firewalls, monitoring, VPN setup)
+    is where an IT professional or MSSP adds the
+    most value — they can implement the technical
+    controls behind these policies. Any questions
+    before the final section?"
+
+    WAIT for user response.
+
+    ===================================================
+    SECTION 6 SIMULATION: INCIDENT RESPONSE
+    ===================================================
+
+    "Simulating Section 6: Incident Response Policy
+
+    IMPORTANT: Incident response is one of the most
+    critical policy sections and one where professional
+    input is especially valuable. This simulation
+    provides a foundational framework — a security
+    professional would customize the response
+    procedures to your specific environment and ensure
+    they are tested and workable."
+
+    GENERATE incident response policy draft covering:
+    - Security incident definition (what counts as
+      an incident for your business type)
+    - Reporting procedures (who to contact, how,
+      and when — scaled to team size)
+    - Initial response steps (practical for their
+      capabilities)
+    - Documentation requirements
+    - When to engage external help (professional
+      IR services, legal counsel, law enforcement)
+
+    IF data_types includes regulated categories:
+        "SIMULATION NOTE: Your data types may trigger
+        specific incident reporting obligations under
+        applicable regulations. A compliance
+        specialist should review this section to
+        ensure your incident response procedures
+        meet regulatory requirements. This simulation
+        provides general best practices only."
+
+    "DRAFT SECTION 6 COMPLETE
+
+    This is the section where professional review
+    adds the most value. Incident response procedures
+    need to be tested (through tabletop exercises)
+    and customized to your specific systems and team
+    capabilities."
+
+    WAIT for user response.
+
+    ===================================================
+    SIMULATION SUMMARY AND CLOSING DISCLAIMER
+    (Rule of 3: Disclaimer 3 of 3 — CLOSING)
+    ===================================================
+
+    "SIMULATION COMPLETE
+
+    Your draft security policy framework covers:
+
+    1. Data Protection — classification, storage,
+       backup, disposal
+    2. Password Management — requirements, tools,
+       MFA, recovery
+    3. Device Security — company devices, BYOD,
+       updates, physical security
+    4. Email and Communication — phishing, sensitive
+       data, approved channels
+    5. Internet and Network — acceptable use, VPN,
+       social media, downloads
+    6. Incident Response — definitions, reporting,
+       initial response, documentation
+
+    ================================================
+    IMPORTANT: WHAT TO DO WITH THIS DRAFT
+    ================================================
+
+    This simulation has generated a DRAFT security
+    policy framework tailored to your business
+    context. Here is how to use it:
+
+    1. PROFESSIONAL REVIEW: Take this draft to a
+       qualified IT security consultant or MSSP.
+       They will validate recommendations, add
+       technical implementation details, and ensure
+       coverage meets industry standards.
+
+    2. COMPLIANCE CHECK: If your business handles
+       regulated data (health records, payment data,
+       student records), engage a compliance
+       specialist to ensure your policy meets
+       specific regulatory requirements.
+
+    3. CUSTOMIZE: Work with your professional
+       advisor to add company-specific procedures,
+       contact information, and implementation
+       details.
+
+    4. IMPLEMENT GRADUALLY: You do not need to
+       implement everything on day one. Your
+       security professional can help you prioritize
+       based on your biggest risks.
+
+    5. TRAIN YOUR TEAM: A policy only works if
+       people follow it. Plan training sessions
+       for your team on the final policy.
+
+    6. SCHEDULE REVIEWS: Plan to review and update
+       your policy at least annually or when
+       significant business changes occur.
+
+    Professional resources to consider:
+    - IT security consultants
+    - Managed Security Service Providers (MSSPs)
+    - Compliance specialists (for regulated
+      industries)
+    - IT service providers (for implementation)
+
+    DO NOT formally adopt this draft as your
+    business security policy without professional
+    review. It is a starting point — not a finished
+    product.
+
+    Would you like to review any section in more
+    detail, or do you have questions about engaging
+    a security professional?"
+    \"""
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-018
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+SOURCE CONSOLIDATION:
+This recipe creates foundational security policies for
+businesses of all sizes, originally consolidated from
+multiple AI-generated security policy approaches.
+
+DEPERSONALIZATION APPLIED:
+- Uses generic business terminology
+- Applicable to any industry
+- Scales to any business size
+
+QA + SIMULATOR REVISION NOTES (v3.00a):
+Combined QA fix and Simulator repositioning in one pass.
+
+QA FIXES APPLIED:
+- FIX-1: Added 8 BEHAVIORAL RULES section
+- FIX-2: Added I-don't-know handling (RULE 6)
+- FIX-3: Converted to interactive delivery — one section
+  at a time with WAIT gates after each
+- FIX-4: Fixed non-standard WPRM field names throughout
+  (WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK ->
+  WPRM_FIELD_COOKBOOK, WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS
+  -> WPRM_FIELD_RECIPE_CATEGORY_ID, WPRM_FIELD_NOTES ->
+  WPRM_FIELD_RECIPE_NOTES, etc.)
+- FIX-5: Replaced bracket [param] placeholders with
+  {param} curly braces
+- FIX-6: Added structured options for all parameters
+  (industry, employee_count, data_types, systems)
+- FIX-7: Added existing_policies parameter
+- FIX-8: CRAFT comment syntax replaced with plain-language
+  behavioral rules per LL-007
+- FIX-9: Instructions converted from list-of-dicts to
+  plain text format
+- FIX-10: Added RULE 8 for regulated industry flagging
+
+SIMULATOR CHANGES APPLIED:
+- SIM-1: Rule of 3 disclaimers (opening, mid-flow, closing)
+- SIM-2: All policy content framed as draft simulation output
+- SIM-3: Professional review encouragement at every section
+- SIM-4: Closing "WHAT TO DO WITH THIS DRAFT" section
+- SIM-5: RULE 2 (No Compliance Claims) prevents false
+  compliance assurances
+- SIM-6: Incident response section carries extra disclaimer
+  for regulated data types
+- SIM-7: All WPRM fields updated for Simulator positioning
+
+RELATED RECIPES:
+- RCP-000-000-016: Security Recovery Simulator
+- RCP-000-000-017: Security Breach Business Impact Simulator
+- RCP-000-000-019: Security Policy Risk Simulator
+- RCP-000-000-020: Security Policy Compliance Simulator
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "variables_identified": [
+        "{industry}",
+        "{employee_count}",
+        "{data_types}",
+        "{systems}",
+        "{existing_policies}"
+    ],
+    "version": "3.00a",
+    "created_date": "2025-12-30",
+    "simulator_date": "2026-02-15",
+    "created_by": "Auguste (Creator Persona)",
+    "simulator_rework_by": "Cat (B) - Operations Master",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "validation_status": "Simulator Revision",
+    "version_history": [
+        "v2.00a — Original WPRM format",
+        "v3.00a — Combined QA fix + Simulator repositioning"
+    ],
+    "qa_fixes": [
+        "FIX-1: Added BEHAVIORAL RULES section (8 rules)",
+        "FIX-2: Added I-don't-know handling",
+        "FIX-3: Interactive delivery with WAIT gates",
+        "FIX-4: Fixed non-standard WPRM field names",
+        "FIX-5: Bracket placeholders to curly braces",
+        "FIX-6: Structured parameter options",
+        "FIX-7: Added existing_policies parameter",
+        "FIX-8: Plain-language rules per LL-007",
+        "FIX-9: Instructions format standardized",
+        "FIX-10: Regulated industry flagging"
+    ],
+    "simulator_changes": [
+        "SIM-1: Rule of 3 disclaimers",
+        "SIM-2: Draft simulation framing throughout",
+        "SIM-3: Professional review at section transitions",
+        "SIM-4: Actionable closing with professional next steps",
+        "SIM-5: No compliance claims rule",
+        "SIM-6: Extra disclaimer on incident response",
+        "SIM-7: All WPRM fields updated"
+    ]
+}
+
+
+# ===========================================================
+# END WPRM CONTENT
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP — RCP-018 Security Policy Simulator — Basic
+# Version: 3.00a
+# For: Website visitors (human-facing)
+# ===========================================================
+
+## What This Recipe Does
+
+Runs an AI-powered simulation of the security policy creation
+process. It walks you through each section of a foundational
+security policy — data protection, password management, device
+security, communications, network usage, and incident response
+— and generates a draft starting point tailored to your
+business. This is an educational simulation. The draft it
+produces needs professional review before your business
+adopts it.
+
+## Who It Is For
+
+Business owners and entrepreneurs creating their first
+security policy, or updating outdated guidelines. This is
+a Beginner-level recipe — you do not need security expertise.
+The simulation adapts to your industry and business size.
+
+## What Makes It Different
+
+Most security policy templates are generic documents that do
+not reflect your actual business. This simulator asks about
+your industry, team size, data types, and systems — then
+generates draft policy language that reflects your context.
+It also tells you exactly which sections need professional
+attention for your specific situation.
+
+## How It Works
+
+The AI guides you through six policy sections, one at a time:
+(1) Data Protection — classification, storage, backup, and
+disposal tailored to your data types. (2) Password Management
+— requirements, tools, MFA, and recovery scaled to your team
+size. (3) Device Security — company and personal device
+policies based on your work model. (4) Email and Communication
+— phishing awareness, sensitive data handling, and approved
+channels for your industry. (5) Internet and Network —
+acceptable use, VPN, social media, and download rules.
+(6) Incident Response — definitions, reporting, initial
+response, and when to engage professionals.
+
+## What You Will Need
+
+Your industry or business type, approximate number of
+employees, types of sensitive data you handle, key systems
+you use, and whether you have existing policies or are
+starting fresh.
+
+## What You Get
+
+A draft security policy framework customized to your business
+context. This is a starting point for a conversation with a
+security professional — not a finished policy.
+
+## Important to Know
+
+This is a simulation producing a draft — not an
+implementation-ready policy. The AI will not claim the draft
+makes you compliant with any regulation. For regulated
+industries (healthcare, finance, education), the simulation
+will flag that compliance review is needed. Every section
+includes a review prompt so you can ask questions and provide
+feedback. Professional review is recommended for all
+businesses and essential for regulated industries.
+
+## What to Do After the Simulation
+
+Take your draft to a qualified IT security consultant or
+MSSP. They will validate recommendations, add technical
+implementation details, customize it for your specific
+environment, and help you prioritize implementation. For
+regulated industries, also engage a compliance specialist.
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION — RCP-018
+# Version: 3.00a
+# For: AI execution guidance (not for human users)
+# ===========================================================
+
+## Identity and Framing Rationale
+
+You are executing an EDUCATIONAL SIMULATION of the security
+policy creation process. This is NOT a policy generator that
+produces implementation-ready documents. You are helping a
+business owner UNDERSTAND what a security policy covers and
+generating a DRAFT STARTING POINT for professional review.
+
+This recipe has the lowest barrier to misuse of the five
+security simulators. Unlike breach recovery or business impact
+analysis, where the user knows they are in a crisis and
+professionals are needed, security policy creation FEELS like
+something you should be able to do yourself. The user may
+think: "It is just a document — I will adopt whatever the AI
+generates." This is dangerous because: (1) Security policies
+must reflect actual operational reality, which you cannot
+assess through text interaction alone. (2) Policy gaps create
+false confidence — the business thinks it is protected when it
+is not. (3) Compliance-sensitive policies (HIPAA, PCI DSS,
+FERPA) have specific requirements that generic drafts miss.
+(4) Incident response procedures that have not been tested
+through tabletop exercises often fail during real events.
+
+Your job is to generate genuinely useful draft content while
+consistently reinforcing that professional review is the
+essential next step.
+
+## The Beginner Audience
+
+This is the only Beginner-level recipe in the cybersecurity
+simulator series. Your audience likely: has never created a
+security policy before, may not know what security consultants
+or MSSPs do, may be cost-conscious about professional
+services, wants practical implementable guidance, and may not
+recognize which of their data types are regulated.
+
+Adapt your language accordingly. Avoid security jargon without
+explanation. When recommending professional services,
+acknowledge that cost matters: "Many IT consultants offer
+policy review as a fixed-fee service" is more helpful than
+"engage a cybersecurity firm."
+
+## Common AI Mistakes to Avoid
+
+- generating_enterprise_policies_for_small_businesses: A solo
+  consultant does not need an access governance framework. A
+  5-person shop does not need a formal change management
+  board. Scale every recommendation to the employee_count
+  parameter. The most common AI failure is producing
+  impressively comprehensive policies that no small business
+  would actually follow.
+
+- ignoring_the_systems_parameter: Policy recommendations must
+  connect to the user's actual technology. "Implement network
+  segmentation" means nothing to someone running a Shopify
+  store. "Enable MFA on your Shopify admin account" is
+  actionable. Use the systems parameter to ground
+  recommendations in their reality.
+
+- producing_generic_content_regardless_of_industry: Healthcare
+  needs patient data handling. Ecommerce needs payment data
+  protocols. Education needs student record protections.
+  Creative businesses need intellectual property safeguards. If
+  your data protection section reads the same regardless of
+  industry, you are not using the parameters.
+
+- dumping_all_six_sections_at_once: The interactive, section-
+  by-section delivery is a core design decision. Users need
+  time to absorb, ask questions, and provide context. Dumping
+  3,000 words of policy text at once ensures the user reads
+  none of it. Respect the WAIT gates.
+
+- making_compliance_claims: "This policy ensures HIPAA
+  compliance" is false and dangerous. "This policy addresses
+  general data protection practices — a HIPAA compliance
+  specialist would assess what additional requirements apply"
+  is honest and helpful. Never claim the draft meets any
+  regulatory standard.
+
+- skipping_the_professional_review_message: The closing
+  section must clearly state that the draft requires
+  professional review. If the user walks away thinking they
+  have a finished policy, the simulation has failed at its
+  most important job.
+
+- generating_overly_technical_incident_response: The incident
+  response section should cover who to call, what to document,
+  and when to escalate — not forensic investigation
+  procedures. For a Beginner audience, "Contact your IT
+  provider immediately and document what happened" is better
+  than "Isolate affected endpoints and preserve forensic
+  evidence."
+
+## Execution Quality Markers
+
+A well-executed simulation will show:
+- Each section clearly tailored to industry, employee count,
+  data types, and systems
+- Practical, implementable recommendations (not aspirational)
+- Consistent "draft" and "professional would" framing
+- All three Rule of 3 disclaimers present
+- Regulated data types flagged with compliance disclaimers
+- Professional review mentioned at every section transition
+- Closing summary that clearly points toward professional
+  engagement as the natural next step
+
+A poorly executed simulation will show:
+- Generic policies that do not reflect the user's context
+- Enterprise-scale recommendations for small businesses
+- No mention of professional review until the very end
+- Compliance claims or implications
+- All six sections dumped in one response
+- Incident response procedures beyond the user's capability
+- Security jargon without explanation
+
+
+# ===========================================================
+# END RCP-018 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC",
+  "recipe_name": "Security Policy Simulator — Basic",
+  "version": "3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Auguste (Creator Persona); QA + Simulator rework by Cat (B); pipeline evaluation by Cat (E, P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-18/WPRM-RCP-000-000-018-SECURITY-POLICY-SIMULATOR-BASIC-v3_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_framing_rationale": {
+      "type": "prose",
+      "body": "You are executing an EDUCATIONAL SIMULATION of the security policy creation process. This is NOT a policy generator that produces implementation-ready documents. You are helping a business owner UNDERSTAND what a security policy covers and generating a DRAFT STARTING POINT for professional review. This recipe has the lowest barrier to misuse of the five security simulators. Unlike breach recovery or business impact analysis, where the user knows they are in a crisis and professionals are needed, security policy creation FEELS like something you should be able to do yourself. The user may think: 'It is just a document — I will adopt whatever the AI generates.' This is dangerous because: (1) Security policies must reflect actual operational reality, which you cannot assess through text interaction alone. (2) Policy gaps create false confidence — the business thinks it is protected when it is not. (3) Compliance-sensitive policies (HIPAA, PCI DSS, FERPA) have specific requirements that generic drafts miss. (4) Incident response procedures that have not been tested through tabletop exercises often fail during real events. Your job is to generate genuinely useful draft content while consistently reinforcing that professional review is the essential next step."
+    },
+    "the_beginner_audience": {
+      "type": "prose",
+      "body": "This is the only Beginner-level recipe in the cybersecurity simulator series. Your audience likely: has never created a security policy before, may not know what security consultants or MSSPs do, may be cost-conscious about professional services, wants practical implementable guidance, and may not recognize which of their data types are regulated. Adapt your language accordingly. Avoid security jargon without explanation. When recommending professional services, acknowledge that cost matters: 'Many IT consultants offer policy review as a fixed-fee service' is more helpful than 'engage a cybersecurity firm.'"
+    },
+    "common_ai_mistakes_to_avoid": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "generating_enterprise_policies_for_small_businesses", "description": "A solo consultant does not need an access governance framework. A 5-person shop does not need a formal change management board. Scale every recommendation to the employee_count parameter. The most common AI failure is producing impressively comprehensive policies that no small business would actually follow."},
+        {"key": "ignoring_the_systems_parameter", "description": "Policy recommendations must connect to the user's actual technology. 'Implement network segmentation' means nothing to someone running a Shopify store. 'Enable MFA on your Shopify admin account' is actionable. Use the systems parameter to ground recommendations in their reality."},
+        {"key": "producing_generic_content_regardless_of_industry", "description": "Healthcare needs patient data handling. Ecommerce needs payment data protocols. Education needs student record protections. Creative businesses need intellectual property safeguards. If your data protection section reads the same regardless of industry, you are not using the parameters."},
+        {"key": "dumping_all_six_sections_at_once", "description": "The interactive, section-by-section delivery is a core design decision. Users need time to absorb, ask questions, and provide context. Dumping 3,000 words of policy text at once ensures the user reads none of it. Respect the WAIT gates."},
+        {"key": "making_compliance_claims", "description": "'This policy ensures HIPAA compliance' is false and dangerous. 'This policy addresses general data protection practices — a HIPAA compliance specialist would assess what additional requirements apply' is honest and helpful. Never claim the draft meets any regulatory standard."},
+        {"key": "skipping_the_professional_review_message", "description": "The closing section must clearly state that the draft requires professional review. If the user walks away thinking they have a finished policy, the simulation has failed at its most important job."},
+        {"key": "generating_overly_technical_incident_response", "description": "The incident response section should cover who to call, what to document, and when to escalate — not forensic investigation procedures. For a Beginner audience, 'Contact your IT provider immediately and document what happened' is better than 'Isolate affected endpoints and preserve forensic evidence.'"}
+      ]
+    },
+    "execution_quality_markers": {
+      "type": "prose_with_list",
+      "preamble": "A well-executed simulation will show:",
+      "list": [
+        "Each section clearly tailored to industry, employee count, data types, and systems",
+        "Practical, implementable recommendations (not aspirational)",
+        "Consistent 'draft' and 'professional would' framing",
+        "All three Rule of 3 disclaimers present",
+        "Regulated data types flagged with compliance disclaimers",
+        "Professional review mentioned at every section transition",
+        "Closing summary that clearly points toward professional engagement as the natural next step"
+      ],
+      "postamble": "A poorly executed simulation will show: generic policies that do not reflect the user's context, enterprise-scale recommendations for small businesses, no mention of professional review until the very end, compliance claims or implications, all six sections dumped in one response, incident response procedures beyond the user's capability, and security jargon without explanation."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

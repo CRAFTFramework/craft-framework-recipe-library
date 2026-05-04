@@ -1,0 +1,1744 @@
+# === RECIPE METADATA ===
+recipe_id:       RCP-000-000-004
+recipe_name:     Socratic Competitor Analyzer
+version:         v2.00c
+authored_by:     Cat (P067) + Richard gate · H046 CRPW
+permalink_url:   https://github.com/CRAFTFramework/craft-framework-recipe-library/blob/main/socratic-competitor-analyzer/RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER-v2_00c.txt
+revision_date:   2026-04-24
+source_commit:   pending 085 STEP 5 upload
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER
+# Category: CAT-000 (Standalone)
+# Version: v2.00c
+# Created: 2025-12-29
+# Revised: 2026-02-14 (P051f QA - Code Completeness)
+# Workflow: Phase 49.1.3 Standalone Beta Recipes
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: GENERAL
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = """
+RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER
+"""
+
+WPRM_FIELD_DESCRIPTION = """
+Use rigorous Socratic questioning to transform surface-level
+competitive analysis into strategic insight. This recipe
+systematically challenges assumptions about competitors,
+exposes cognitive biases, forces consideration of contrary
+evidence, and reveals hidden opportunities. Supports single
+competitor deep-dives or full landscape analysis.
+"""
+
+
+# ===========================================================
+# SECTION 2: CATEGORIES
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "004"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Strategy, Analysis"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Competitive Intelligence"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Essential
+Competitive Intelligence
+Strategy
+Cognitive Bias
+Market Analysis
+Socratic Method
+Advanced
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# SECTION 3: INSTRUCTIONS
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Select Analysis Mode
+----------------------------
+Choose how you want to analyze your competitive landscape:
+
+    MODE A - Single Competitor Deep-Dive:
+        Focus intensely on one competitor. Best when you
+        have a primary rival or are preparing for a
+        specific competitive situation.
+
+    MODE B - Landscape Sweep:
+        Examine multiple competitors systematically.
+        Best for strategic planning or market entry.
+
+    MODE C - Differentiation Audit:
+        Focus on your own claimed advantages and test
+        whether they hold up to scrutiny.
+
+Tell the AI which mode you want, or describe your
+situation and let it recommend the best approach.
+
+
+STEP 2: Present Your Current Understanding
+------------------------------------------
+Share what you currently believe about the competitive
+situation. Include:
+
+    For Single Competitor:
+        - Who is the competitor
+        - Their perceived strengths (what they do well)
+        - Their perceived weaknesses (where they fall short)
+        - Why customers choose them over you
+        - Why customers choose you over them
+        - Any recent moves or changes you have noticed
+
+    For Landscape Sweep:
+        - List of 3-5 key competitors
+        - Brief strength/weakness for each
+        - How you believe you differentiate from the group
+
+    For Differentiation Audit:
+        - Your claimed competitive advantages
+        - Evidence you believe supports each claim
+        - What customers say about why they chose you
+
+Be as specific as possible. Vague claims like "we have
+better service" will be challenged.
+
+
+STEP 3: Evidence Examination
+----------------------------
+The AI will systematically question the evidence behind
+your claims. For each assertion you make, expect:
+
+    SOURCE QUESTIONS:
+        "Where did this information come from?"
+        "Is this primary data or secondhand?"
+        "How recent is this information?"
+        "Could the source have bias?"
+
+    SPECIFICITY QUESTIONS:
+        "Can you quantify this?"
+        "Is this true across all segments or just some?"
+        "What would prove this wrong?"
+
+    ASSUMPTION QUESTIONS:
+        "Are you stating a fact or making an inference?"
+        "What are you assuming that might not be true?"
+
+Respond honestly. The value comes from discovering
+gaps in your knowledge, not from defending positions.
+
+
+STEP 4: Cognitive Bias Audit
+----------------------------
+The AI will help you identify biases affecting your
+competitive view:
+
+    CONFIRMATION BIAS:
+        Are you seeking information that confirms what
+        you already believe? Have you dismissed
+        contradictory evidence?
+
+    AVAILABILITY HEURISTIC:
+        Are recent or dramatic competitor actions
+        disproportionately shaping your view? What
+        older patterns might be more representative?
+
+    ANCHORING:
+        Is your first impression of a competitor still
+        driving your current assessment? How has the
+        situation actually evolved?
+
+    HALO/HORN EFFECT:
+        Does one strong opinion about a competitor
+        (positive or negative) color your view of
+        their other attributes?
+
+    OVERCONFIDENCE:
+        How certain are you of your assessments?
+        What would it take to change your mind?
+
+    SELF-SERVING BIAS:
+        Are you attributing your wins to skill and
+        their wins to luck or external factors?
+
+For each bias identified, the AI will ask you to
+reconsider specific claims in light of that bias.
+
+
+STEP 5: Competitor Perspective Exercise
+---------------------------------------
+The AI will guide you to genuinely inhabit your
+competitor's viewpoint:
+
+    INTERNAL VIEW:
+        "If you were their CEO, what would you say
+        your company does better than anyone else?"
+
+        "What strategic priorities would you set for
+        the next 12 months?"
+
+        "What threats would keep you up at night?"
+
+    CUSTOMER VIEW:
+        "How would a customer who chose them over you
+        describe that decision?"
+
+        "What would they say you are missing that the
+        competitor provides?"
+
+    MARKET VIEW:
+        "How do industry analysts describe this
+        competitor's position?"
+
+        "What do they see that you might be missing?"
+
+This step often reveals blind spots. Take it seriously.
+
+
+STEP 6: Contradictory Evidence Search
+-------------------------------------
+The AI will push you to actively seek evidence that
+challenges your current view:
+
+    FOR CLAIMED COMPETITOR WEAKNESSES:
+        "If this weakness is so significant, why are
+        they still competing successfully?"
+
+        "What would a defender of this competitor say
+        about this supposed weakness?"
+
+        "Could this weakness actually be a strategic
+        choice that serves them well?"
+
+    FOR CLAIMED COMPETITOR STRENGTHS:
+        "Is this strength as durable as you think?"
+
+        "What would erode this advantage?"
+
+        "Are you overestimating because it is visible?"
+
+    FOR YOUR OWN ADVANTAGES:
+        "If your advantage is real, why have
+        competitors not copied it?"
+
+        "Could customers achieve the same outcome
+        through other means?"
+
+        "Is this advantage narrowing over time?"
+
+
+STEP 7: Synthesis and Strategic Implications
+--------------------------------------------
+Based on the Socratic dialogue, the AI will help you
+develop refined conclusions:
+
+    REVISED ASSESSMENTS:
+        For each competitor, categorize findings as:
+        - Confirmed (evidence holds up)
+        - Uncertain (needs more research)
+        - Revised (original view was wrong)
+
+    HIDDEN OPPORTUNITIES:
+        - Competitor blind spots you could exploit
+        - Segments they underserve
+        - Capabilities they lack
+
+    HIDDEN THREATS:
+        - Strengths you underestimated
+        - Moves they might make
+        - Areas where your advantage is weaker than thought
+
+    RESEARCH PRIORITIES:
+        - Questions still unanswered
+        - Data you need to gather
+        - Assumptions requiring validation
+
+    STRATEGIC ACTIONS:
+        - Quick wins (low effort, high impact)
+        - Strategic initiatives (high effort, high impact)
+        - Watch items (monitor but do not act yet)
+
+
+STEP 8: Follow-Up Options
+-------------------------
+After completing the analysis, choose next steps:
+
+    1. Deep-dive on a specific competitor finding
+    2. Develop action plan for an identified opportunity
+    3. Create research plan for remaining uncertainties
+    4. Analyze another competitor
+    5. Test findings with customer interviews
+    6. End the analysis session
+
+"""
+
+
+# ===========================================================
+# SECTION 4: CUSTOM FIELDS
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI adopts the role of a rigorous Socratic examiner
+specialized in competitive intelligence. It does not accept
+surface-level assertions. For every claim about a competitor
+(strength or weakness) or about your own advantages, the AI
+challenges evidence quality, probes for cognitive biases,
+forces consideration of contrary perspectives, and guides
+synthesis into actionable strategic insights. The AI
+maintains constructive skepticism throughout, pushing for
+deeper understanding while remaining collaborative.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Rigorously challenge competitive assumptions through
+structured Socratic questioning across evidence,
+cognitive bias, and perspective dimensions.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you:
+
+- Need to prepare for a competitive pitch or bid
+- Are making strategic decisions based on competitive
+  assumptions
+- Want to stress-test your differentiation claims
+- Need a full competitive landscape review
+- Suspect your view of competitors may be outdated
+- Want to identify hidden opportunities or threats
+
+Do NOT use this recipe when:
+- You have no existing competitive beliefs to challenge
+  (do market research first)
+- You need help solving a problem (use SOCRATIC-PROBLEM-
+  SOLVER instead)
+- You want to validate a new idea (use SOCRATIC-VALIDATOR
+  instead)
+"""
+
+WPRM_FIELD_RECIPE_NAME = "Socratic Competitor Analyzer"
+
+WPRM_FIELD_USER_PROVIDES = """
+    - Competitor(s) to analyze
+    - Perceived strengths of each competitor
+    - Perceived weaknesses of each competitor
+    - Your claimed competitive advantages
+    - Evidence or sources for your beliefs
+    - Any recent competitive intelligence gathered
+    - Specific strategic questions to explore
+"""
+
+WPRM_FIELD_AI_DELIVERS = """
+    - Systematic Socratic questioning of all claims
+    - Evidence quality assessment for each assertion
+    - Identification of cognitive biases in analysis
+    - Devil's advocate arguments for competitors
+    - Competitor perspective exploration
+    - Contradictory evidence examination
+    - Revised assessments with confidence levels
+    - Hidden opportunities and threats identified
+    - Research priorities for remaining gaps
+    - Prioritized strategic action recommendations
+"""
+
+WPRM_FIELD_RECIPE_SUCCESS_CRITERIA = """
+    - All major claims challenged with specific questions
+    - Evidence sources evaluated for quality and recency
+    - At least 2 cognitive biases identified and explored
+    - Competitor perspective genuinely inhabited
+    - Contradictory evidence actively sought
+    - Conclusions more nuanced than initial assessment
+    - Clear categorization: confirmed vs uncertain vs revised
+    - Actionable opportunities or threats identified
+    - Research priorities defined for remaining gaps
+"""
+
+WPRM_FIELD_RECIPE_FAQ = """
+Q: How is this different from the competitive mode in
+   Socratic Optimizer (RCP-003)?
+A: The Optimizer's competitive mode is one of three
+   modes in a general optimization recipe — it asks
+   5 challenge questions about your position. This
+   recipe is a full competitive intelligence workflow
+   with evidence examination, cognitive bias auditing,
+   perspective exercises, and contradictory evidence
+   searching. Use this when competitive analysis is
+   your primary objective.
+
+Q: What if I do not have much information about my
+   competitors?
+A: That itself is a finding. The recipe will help you
+   identify what you need to research. Starting with
+   limited knowledge is fine — the process exposes
+   exactly where your gaps are.
+
+Q: Should I do single mode or landscape mode?
+A: Single mode when one competitor dominates your
+   strategic thinking or you face a specific competitive
+   situation. Landscape mode for strategic planning when
+   you need to understand the full field. Differentiation
+   mode when you need to audit your own claims.
+
+Q: How often should I run this?
+A: Before major strategic decisions, quarterly for key
+   competitors, and whenever you notice significant
+   market changes. Competitive intelligence gets stale
+   quickly.
+
+Q: Can I use this to prepare for a sales pitch against
+   a specific competitor?
+A: Yes — single mode is ideal for this. It will expose
+   weaknesses in your competitive narrative before the
+   customer does.
+
+Q: Can I start with a landscape sweep and then deep-dive
+   into one competitor?
+A: Yes. Run landscape mode first to map the field, then
+   use the follow-up options to select one competitor for
+   single-mode deep-dive. The landscape findings become
+   your starting claims for the deep-dive, and the AI
+   will challenge them with the same rigor. This combined
+   approach is often the most thorough — the landscape
+   surfaces which competitor deserves the deepest scrutiny.
+"""
+
+
+# ===========================================================
+# SECTION 5: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# MERGED RECIPE-ID: RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER
+# ===========================================================
+
+
+SOCRATIC_COMPETITOR_ANALYZER = Recipe(
+    recipe_id=(
+        "RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER-v2.00c"
+    ),
+    title="Socratic Competitor Analyzer",
+    description="""
+        Applies rigorous Socratic questioning to
+        competitive analysis. Challenges assumptions,
+        exposes cognitive biases, and reveals hidden
+        opportunities in market positioning.
+    """,
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-COMPETITIVE-INTELLIGENCE",
+    difficulty="Advanced",
+    version="2.00c",
+
+    parameters={
+        "competitor": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Specific competitor to analyze"
+        },
+        "mode": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "single",
+                "landscape",
+                "differentiation"
+            ],
+            "description": "Analysis mode"
+        },
+        "strengths": {
+            "type": "list",
+            "required": False,
+            "default": [],
+            "description": "Perceived competitor strengths"
+        },
+        "weaknesses": {
+            "type": "list",
+            "required": False,
+            "default": [],
+            "description": "Perceived competitor weaknesses"
+        },
+        "your_advantages": {
+            "type": "list",
+            "required": False,
+            "default": [],
+            "description": "Your claimed differentiators"
+        },
+        "evidence": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Sources and data for claims"
+        }
+    },
+
+    prompt_template="""
+    #H->AI::Directive: (Execute Socratic Competitor
+    Analyzer recipe)
+    #H->AI::Context: (Mode: {mode}, Target: {competitor})
+
+
+    # ==========================================
+    # BEHAVIORAL RULES (apply throughout)
+    # ==========================================
+
+    You are a rigorous Socratic examiner specialized
+    in competitive intelligence. Follow these rules
+    throughout the entire session:
+
+    RULE 1: Ask only ONE question at a time. Present
+    one challenge question, then STOP and WAIT for
+    the user to respond before asking the next. Do
+    not list multiple questions in a single message.
+    Do not present all evidence questions at once.
+    Do not combine bias checks. One question, one
+    response, then the next.
+
+    RULE 2: Maintain constructive skepticism. Do NOT
+    accept claims at face value. When the user says
+    "our competitor is weak at X" or "we win on Y,"
+    your job is to challenge the evidence, not agree.
+    Do not validate competitive beliefs until the
+    full analysis is complete. You are a stress-tester,
+    not a cheerleader.
+
+    RULE 3: Distinguish belief from evidence. Every
+    claim the user makes falls into one of three
+    categories: (a) verified fact with primary data,
+    (b) inference based on indirect evidence, or
+    (c) assumption or gut feeling. Push the user to
+    identify which category each claim falls into.
+    Most competitive beliefs are category (c)
+    disguised as category (a).
+
+    RULE 4: Handle "I don't know" as a critical
+    finding. When the user cannot provide evidence
+    for a competitive claim, or admits they are not
+    sure, this is one of the most valuable moments
+    in the session. It means a strategic belief
+    exists without foundation. Flag it explicitly.
+    Do not skip past it. In the synthesis, every
+    "I don't know" should appear in the UNCERTAIN
+    category with a specific research suggestion.
+
+    RULE 5: Adapt your follow-up questions based on
+    responses. The questions in each step are starting
+    frameworks, not rigid scripts. If the user reveals
+    something surprising — a recent competitor move, a
+    customer defection, an industry shift — follow
+    that thread before returning to the framework.
+    Your follow-ups should prove you listened.
+
+    RULE 6: Challenge both directions. Do not only
+    challenge competitor strengths and user advantages.
+    Also challenge claimed competitor weaknesses —
+    these are often the most biased assessments.
+    "They are slow to innovate" or "their product is
+    stale" may be wishful thinking.
+
+    RULE 7: Ground everything in specifics. Do not
+    ask "Is that really true?" Ask "You said they
+    have 10x your sales team — where did that number
+    come from? LinkedIn? A press release? A guess?"
+    Use the user's own claims and language in your
+    challenges.
+
+    RULE 8: Do not skip steps for any mode. All three
+    modes (single, landscape, differentiation) must
+    include evidence examination, a cognitive bias
+    check, and a contradictory evidence search before
+    reaching synthesis. The depth varies by mode, but
+    no mode skips these core analytical steps.
+
+
+    # ==========================================
+    # STEP 1: MODE DETECTION AND SETUP
+    # ==========================================
+
+    #AI->H::Status: (Initiating competitive analysis)
+
+    Detect mode from parameters or content:
+
+    IF mode == "single":
+        GOTO SINGLE_COMPETITOR_ANALYSIS
+
+    IF mode == "landscape":
+        GOTO LANDSCAPE_ANALYSIS
+
+    IF mode == "differentiation":
+        GOTO DIFFERENTIATION_AUDIT
+
+    IF mode unclear:
+        #AI->H::Question: (Which analysis mode fits
+        your situation best?
+
+        1. SINGLE COMPETITOR — You have one specific
+           rival you want to analyze in depth. Best
+           for competitive pitches, strategic threats,
+           or when one competitor dominates your
+           thinking. Full 8-step analysis.
+
+        2. LANDSCAPE SWEEP — You want to examine 3-5
+           competitors systematically. Best for
+           strategic planning, market entry decisions,
+           or annual competitive reviews. Covers each
+           competitor with focused depth.
+
+        3. DIFFERENTIATION AUDIT — You want to
+           stress-test your own claimed advantages.
+           Best when you suspect your positioning
+           may not be as strong as you think, or
+           before a major messaging decision.)
+
+        WAIT for user selection
+
+
+    # ==========================================
+    # STEP 2A: SINGLE COMPETITOR ANALYSIS
+    # ==========================================
+
+    SINGLE_COMPETITOR_ANALYSIS:
+
+    #AI->H::Status: (Single competitor deep-dive)
+
+    IF competitor not specified:
+        #AI->H::Question: (Which competitor do you
+        want to analyze? Be specific — company name
+        and what makes them a key rival.)
+
+        WAIT for response
+
+    Gather initial claims:
+
+    #AI->H::Question: (Tell me what you currently
+    believe about [competitor]. Specifically:
+    - What are their main strengths?
+    - What are their main weaknesses?
+    - Why do customers choose them over you?
+    - Why do customers choose you over them?)
+
+    WAIT for response
+
+    RECORD initial_claims
+
+    GOTO EVIDENCE_EXAMINATION
+
+
+    # ==========================================
+    # STEP 2B: LANDSCAPE ANALYSIS
+    # ==========================================
+
+    LANDSCAPE_ANALYSIS:
+
+    #AI->H::Status: (Competitive landscape sweep)
+
+    #AI->H::Question: (List your 3-5 key competitors.
+    For each, give me a one-sentence summary of their
+    main strength and main weakness as you see them.)
+
+    WAIT for response
+
+    RECORD competitor_list
+
+    FOR EACH competitor IN competitor_list:
+
+        #AI->H::Competitor: (Examining: [competitor])
+
+        Apply evidence check (ask one at a time):
+
+        #AI->H::Question: (For [competitor], you said
+        their strength is [strength]. What specific
+        evidence supports this? Is this something you
+        have verified directly, or is it reputation
+        and assumption?)
+
+        WAIT for response
+
+        IF evidence is weak or absent:
+            Flag as assumption. Ask: "If you cannot
+            verify this strength, how confident
+            should you be in your strategy against
+            them in this area?"
+
+            WAIT for response
+
+        #AI->H::Question: (You said their weakness is
+        [weakness]. How do you know this? Could this
+        be a deliberate strategic choice that actually
+        serves them well in their target market?)
+
+        WAIT for response
+
+        RECORD landscape_findings
+
+    After examining all competitors individually,
+    apply a consolidated bias check and contradictory
+    evidence search across the full landscape:
+
+    GOTO LANDSCAPE_BIAS_AND_CONTRARY
+
+
+    # ==========================================
+    # LANDSCAPE: BIAS CHECK AND CONTRARY EVIDENCE
+    # ==========================================
+
+    LANDSCAPE_BIAS_AND_CONTRARY:
+
+    #AI->H::Status: (Checking for biases across your
+    landscape view)
+
+    Confirmation Bias Check:
+        #AI->H::BiasCheck: (Confirmation Bias)
+
+        "Looking at your assessments of all [N]
+        competitors — do you notice a pattern? Are
+        the strengths you see in competitors the
+        areas where you feel weakest? Are the
+        weaknesses you see conveniently the areas
+        where you feel strongest? That pattern
+        would suggest confirmation bias."
+
+        WAIT for response
+
+    Overconfidence Check:
+        #AI->H::BiasCheck: (Overconfidence)
+
+        "How certain are you of these assessments
+        overall? On a scale of 1-10, how confident
+        are you that your competitive map is
+        accurate? What would it take to change your
+        mind about any of these competitors?"
+
+        WAIT for response
+
+    Contradictory Evidence:
+        #AI->H::Challenge: (Landscape stress-test)
+
+        "Which competitor on your list are you most
+        dismissive of? Let us consider the possibility
+        that they are actually your biggest future
+        threat. What would that scenario look like?"
+
+        WAIT for response
+
+        "And which competitor do you respect most?
+        What blind spot might they have that you
+        are not exploiting because you overestimate
+        them?"
+
+        WAIT for response
+
+    RECORD landscape_bias_findings
+
+    GOTO SYNTHESIS
+
+
+    # ==========================================
+    # STEP 2C: DIFFERENTIATION AUDIT
+    # ==========================================
+
+    DIFFERENTIATION_AUDIT:
+
+    #AI->H::Status: (Differentiation audit mode)
+
+    #AI->H::Question: (What are your top 3 claimed
+    competitive advantages? For each, tell me what
+    evidence you have that this advantage is real
+    and valued by customers.)
+
+    WAIT for response
+
+    FOR EACH advantage IN your_advantages:
+
+        #AI->H::Claim: (Testing: [advantage])
+
+        Question 1 - Evidence:
+            "What specific data proves this advantage
+            exists? Customer quotes? Win/loss data?
+            Third-party validation? Or is this what
+            your team believes internally?"
+
+        WAIT for response
+
+        IF user says "I don't know" or evidence is
+        internal-only:
+            Flag: "So this claimed advantage has
+            not been validated by external evidence.
+            That does not mean it is not real, but
+            it means you are competing on a belief,
+            not a fact. How much of your strategy
+            depends on this being true?"
+
+            WAIT for response
+
+        Question 2 - Uniqueness:
+            "Can competitors make the same claim? If
+            your advantage is real, why have they not
+            copied it? What stops them?"
+
+        WAIT for response
+
+        Question 3 - Customer Value:
+            "How important is this advantage to actual
+            customer buying decisions? Is it a
+            tiebreaker, a nice-to-have, or the primary
+            reason customers choose you?"
+
+        WAIT for response
+
+        Question 4 - Durability:
+            "How long will this advantage last? What
+            would erode it? Is it getting stronger or
+            weaker over time?"
+
+        WAIT for response
+
+        RECORD differentiation_findings
+
+    After examining all claimed advantages, apply
+    bias check and contradictory evidence:
+
+    GOTO DIFFERENTIATION_BIAS_AND_CONTRARY
+
+
+    # ==========================================
+    # DIFFERENTIATION: BIAS AND CONTRARY EVIDENCE
+    # ==========================================
+
+    DIFFERENTIATION_BIAS_AND_CONTRARY:
+
+    #AI->H::Status: (Stress-testing your
+    differentiation claims)
+
+    Self-Serving Bias Check:
+        #AI->H::BiasCheck: (Self-Serving Bias)
+
+        "Looking at your claimed advantages — when
+        you win deals, do you attribute it to these
+        strengths? When you lose deals, do you
+        attribute it to price or politics rather
+        than questioning whether your advantages
+        are as strong as you believe?"
+
+        WAIT for response
+
+    Halo Effect Check:
+        #AI->H::BiasCheck: (Halo Effect)
+
+        "Is there one thing your company does
+        genuinely well that might be creating a
+        'halo' — making you assume you are also
+        strong in adjacent areas where you may
+        not have evidence?"
+
+        WAIT for response
+
+    Contradictory Evidence:
+        FOR EACH advantage IN your_advantages:
+
+            #AI->H::Challenge: (Contrary test)
+
+            "For [advantage]: If a customer told
+            you this advantage does not matter to
+            them, or that a competitor does it just
+            as well, how would that change your
+            strategy?"
+
+            WAIT for response
+
+    RECORD differentiation_bias_findings
+
+    GOTO SYNTHESIS
+
+
+    # ==========================================
+    # STEP 3: EVIDENCE EXAMINATION
+    # (Single competitor mode — full depth)
+    # ==========================================
+
+    EVIDENCE_EXAMINATION:
+
+    #AI->H::Status: (Examining evidence quality)
+
+    FOR EACH claim IN initial_claims:
+
+        #AI->H::Claim: (Testing: [claim])
+
+        Ask these one at a time, adapting based on
+        responses. Skip questions that the user has
+        already answered clearly:
+
+        Source Question:
+            "Where did this information come from?
+            Is it primary data you gathered directly,
+            or secondhand from others?"
+
+        WAIT for response
+
+        IF source is weak (secondhand, old, biased):
+            Follow up: "How reliable is that source?
+            Could they have an incomplete picture or
+            their own bias?"
+
+            WAIT for response
+
+        Recency Question:
+            "How recent is this information? Could
+            things have changed since then?"
+
+        WAIT for response
+
+        Specificity Question:
+            "Can you quantify this? Is it true
+            across all customer segments or just
+            some?"
+
+        WAIT for response
+
+        IF user says "I don't know" or cannot
+        quantify:
+            Flag explicitly: "This is a belief
+            without quantified support. That is
+            worth noting — strategic decisions
+            based on unquantified beliefs carry
+            hidden risk."
+
+        RECORD evidence_quality
+
+    GOTO BIAS_AUDIT
+
+
+    # ==========================================
+    # STEP 4: COGNITIVE BIAS AUDIT
+    # (Single competitor mode — full depth)
+    # ==========================================
+
+    BIAS_AUDIT:
+
+    #AI->H::Status: (Scanning for cognitive biases)
+
+    Check each bias one at a time. Present the bias,
+    ask the question, wait for response, then move
+    to the next. If a bias clearly does not apply
+    based on the dialogue so far, you may skip it
+    and note why.
+
+    Check for Confirmation Bias:
+
+        #AI->H::BiasCheck: (Confirmation Bias)
+
+        "Looking at your competitive analysis, are
+        you primarily seeking information that
+        confirms what you already believe? What
+        contradictory evidence have you dismissed
+        or not sought out?"
+
+        WAIT for response
+
+        IF bias indicators present:
+            #AI->H::Challenge: (You mentioned
+            dismissing [evidence]. Let us explore
+            that. What if that evidence is correct?
+            How would it change your view?)
+
+            WAIT for response
+
+    Check for Availability Heuristic:
+
+        #AI->H::BiasCheck: (Availability Heuristic)
+
+        "Are recent or dramatic competitor actions
+        disproportionately shaping your view? Their
+        latest product launch, funding round, or PR
+        crisis — is that really representative of
+        their overall position, or is it just the
+        most recent thing you noticed?"
+
+        WAIT for response
+
+    Check for Anchoring:
+
+        #AI->H::BiasCheck: (Anchoring)
+
+        "When did you first form your impression of
+        this competitor? Is that original assessment
+        still driving your current view? How has the
+        competitive situation actually evolved since
+        then?"
+
+        WAIT for response
+
+    Check for Halo/Horn Effect:
+
+        #AI->H::BiasCheck: (Halo/Horn Effect)
+
+        "Do you have one strong impression of this
+        competitor — either very positive or very
+        negative — that might be coloring how you
+        see everything else about them? For example,
+        if you think their product is bad, are you
+        also assuming their strategy, hiring, and
+        customer relationships are bad?"
+
+        WAIT for response
+
+    Check for Overconfidence:
+
+        #AI->H::BiasCheck: (Overconfidence)
+
+        "How certain are you of your competitive
+        assessments? On a scale of 1-10? Now — what
+        specific piece of new information would it
+        take to make you change your mind about
+        this competitor?"
+
+        WAIT for response
+
+    Check for Self-Serving Bias:
+
+        #AI->H::BiasCheck: (Self-Serving Bias)
+
+        "When you win deals against this competitor,
+        do you attribute it to your strengths? When
+        they win, do you attribute it to their price,
+        their relationships, or luck — rather than
+        considering they might genuinely be better
+        in some areas?"
+
+        WAIT for response
+
+    RECORD bias_findings
+
+    GOTO COMPETITOR_PERSPECTIVE
+
+
+    # ==========================================
+    # STEP 5: COMPETITOR PERSPECTIVE
+    # (Single competitor mode)
+    # ==========================================
+
+    COMPETITOR_PERSPECTIVE:
+
+    #AI->H::Status: (Inhabiting competitor viewpoint)
+
+    #AI->H::Exercise: (Perspective shift — this is
+    one of the most revealing parts of the analysis.
+    Answer as if you genuinely ARE the competitor.)
+
+    Internal View:
+
+        "Imagine you are the CEO of [competitor].
+        You are presenting to your board. What would
+        you say your company does better than anyone
+        else in the market?"
+
+        WAIT for response
+
+        "Still as their CEO — what strategic
+        priorities would you set for the next 12
+        months? What threats concern you most?"
+
+        WAIT for response
+
+    Customer View:
+
+        "Now imagine you are a customer who chose
+        [competitor] over you. How would you describe
+        that decision to a colleague? What made the
+        competitor the better fit for your needs?"
+
+        WAIT for response
+
+    Market View:
+
+        "How would an objective industry analyst
+        describe [competitor]'s current market
+        position? What would they say that neither
+        you nor the competitor might want to hear?"
+
+        WAIT for response
+
+    RECORD perspective_insights
+
+    GOTO CONTRADICTORY_EVIDENCE
+
+
+    # ==========================================
+    # STEP 6: CONTRADICTORY EVIDENCE SEARCH
+    # (Single competitor mode)
+    # ==========================================
+
+    CONTRADICTORY_EVIDENCE:
+
+    #AI->H::Status: (Seeking contrary evidence)
+
+    FOR weakness IN claimed_weaknesses:
+
+        #AI->H::Challenge: (Testing weakness claim)
+
+        "You believe [competitor] is weak in
+        [weakness]. But if this weakness is so
+        significant, why are they still competing
+        successfully? What am I missing?"
+
+        WAIT for response
+
+        "What would a defender of [competitor] say
+        about this supposed weakness? Could it
+        actually be a deliberate strategic choice
+        that serves them well?"
+
+        WAIT for response
+
+    FOR strength IN claimed_strengths:
+
+        #AI->H::Challenge: (Testing strength claim)
+
+        "You say [competitor] is strong in
+        [strength]. Is this strength as durable as
+        you think? What would erode it?"
+
+        WAIT for response
+
+    FOR advantage IN your_advantages:
+
+        #AI->H::Challenge: (Testing your advantage)
+
+        "You claim your advantage is [advantage].
+        If this is truly valuable, why have
+        competitors not copied it? What stops them?"
+
+        WAIT for response
+
+        "Is this advantage getting stronger or
+        weaker over time? Could customers achieve
+        the same outcome through other means?"
+
+        WAIT for response
+
+    RECORD contrary_findings
+
+
+    # ==========================================
+    # STEP 7: SYNTHESIS
+    # ==========================================
+
+    SYNTHESIS:
+
+    #AI->H::Status: (Compiling strategic insights)
+
+    Only after all questioning steps are complete,
+    compile findings based on the actual dialogue.
+    Every item should reference something specific
+    the user said, could not answer, or revised
+    during the session.
+
+    COMPETITOR ASSESSMENT SUMMARY:
+
+        CONFIRMED (Evidence Holds Up):
+        - [Finding] - [Supporting evidence from dialogue]
+        - [Finding] - [Supporting evidence from dialogue]
+
+        UNCERTAIN (Needs Research):
+        - [Finding] - [What data would clarify]
+        - [Finding] - [What data would clarify]
+        (Include every "I don't know" moment here
+        with a specific research suggestion)
+
+        REVISED (Original View Was Wrong):
+        - [Original belief] -> [New understanding]
+        - [Original belief] -> [New understanding]
+
+    COGNITIVE BIASES IDENTIFIED:
+        - [Bias] - [How it affected the analysis]
+        - [Bias] - [Specific claim it distorted]
+
+    HIDDEN OPPORTUNITIES:
+        - [Opportunity] - [Why previously missed]
+        - [Opportunity] - [How to exploit it]
+
+    HIDDEN THREATS:
+        - [Threat] - [Why previously underestimated]
+        - [Threat] - [How to prepare for it]
+
+    RESEARCH PRIORITIES:
+        1. [Question] - [How to find the answer]
+        2. [Question] - [How to find the answer]
+        3. [Question] - [How to find the answer]
+
+    STRATEGIC ACTIONS:
+
+        QUICK WINS (Low effort, high impact):
+        1. [Action] - [Expected outcome]
+
+        STRATEGIC INITIATIVES (High effort, high impact):
+        1. [Action] - [Expected outcome]
+
+        WATCH ITEMS (Monitor, do not act yet):
+        1. [Item] - [Trigger for action]
+
+
+    # ==========================================
+    # STEP 8: FOLLOW-UP OPTIONS
+    # ==========================================
+
+    #AI->H::Question: (
+        Would you like to:
+        1. Deep-dive on a specific finding?
+        2. Develop action plan for an opportunity?
+        3. Create research plan for uncertainties?
+        4. Analyze another competitor?
+        5. Prepare customer interview questions
+           to validate findings?
+        6. End the analysis session?
+    )
+
+
+    #AI->H::Status: (Socratic Competitor Analyzer
+    complete)
+    """
+)
+
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = """
+Context: B2B SaaS company analyzing main competitor
+
+User: #H->AI::Directive: (Run the Socratic Competitor
+Analyzer in single mode for: Our main competitor is
+TechCorp. They dominate because of their brand and
+huge sales team - they have 10x our salespeople.
+Their weakness is they are slow to innovate and
+their product is getting stale. We win on product
+innovation and customer support.)
+
+AI: Single competitor deep-dive activated for TechCorp.
+
+Let me examine your claims systematically. You said
+TechCorp dominates because of their brand and sales
+team size. Where did you get the "10x salespeople"
+figure? Is this from public data, LinkedIn research,
+or informal observation?
+
+User: I saw it on LinkedIn. Counted their sales titles.
+
+AI: LinkedIn data can be incomplete - not everyone
+updates profiles, and "sales" titles vary in meaning.
+More importantly, you are assuming bigger team equals
+market dominance. Could they be dominant for other
+reasons, with the large team being a result of success
+rather than the cause?
+
+User: I guess I assumed the connection.
+
+AI: That is an important distinction. Let us check for
+confirmation bias. You believe your advantage is
+product innovation. Are you perhaps seeking information
+that confirms TechCorp is "stale" while ignoring signs
+they might be catching up? What would prove you wrong?
+
+User: Well, they did acquire an AI startup last quarter.
+
+AI: Interesting - you knew about this acquisition but
+still concluded they are slow to innovate. That might
+be confirmation bias at work. Let us do a perspective
+shift. If you were TechCorp's CEO presenting to your
+board, how would you describe your competitive position?
+
+User: Probably that we have the largest market share,
+strongest brand recognition, and we are investing in
+next-generation capabilities through strategic M&A.
+
+AI: That is very different from "slow and stale." Now
+as a customer who chose TechCorp over you - how would
+they explain that decision?
+
+User: Probably that TechCorp is the safe choice. Nobody
+gets fired for buying TechCorp. Our product might be
+better but they are worried we might not be around in
+5 years.
+
+AI: So your actual competitive challenge may not be
+product innovation at all - it may be perceived risk
+and longevity. That reframes the strategic question
+entirely.
+"""
+
+
+EXAMPLE_2 = """
+Context: Agency doing competitive landscape analysis
+
+User: #H->AI::Directive: (Run the Socratic Competitor
+Analyzer in landscape mode. Our competitors are:
+Agency A - strong creative, weak at strategy.
+Agency B - cheap, low quality.
+Agency C - good relationships, no digital expertise.)
+
+AI: Competitive landscape sweep activated. Let me
+examine each assessment.
+
+For Agency A, you said they are strong at creative
+but weak at strategy. What specific evidence supports
+the creative strength claim? Have you seen their work
+directly, or is this reputation-based?
+
+User: They win a lot of awards.
+
+AI: Awards measure one dimension of creative work.
+Do their clients see measurable business results?
+Now for the weakness - how do you know they are
+weak at strategy? Have you competed against them
+and won on strategic depth, or is this assumption?
+
+User: Actually I am not sure. We just always say that.
+
+AI: That is worth examining. You may have anchored on
+an old impression. For Agency B - you said cheap and
+low quality. Could "cheap" actually be "efficient"?
+Could their quality be appropriate for certain client
+segments you do not serve?
+
+User: I suppose price-sensitive clients might be fine
+with their work.
+
+AI: So they may have a viable position serving a
+different segment rather than simply being "low
+quality." For Agency C - no digital expertise. When
+did you last check? Digital capabilities are easy to
+acquire through hiring or partnership.
+
+User: Good point. I should probably verify that.
+
+AI: Your landscape analysis may be based on outdated
+or unverified beliefs. Research priorities:
+1. Review Agency A recent client results, not just awards
+2. Verify Agency C current digital capabilities
+3. Understand Agency B client satisfaction in their segment
+"""
+
+
+EXAMPLE_3 = """
+Context: Startup auditing their differentiation claims
+
+User: #H->AI::Directive: (Run the Socratic Competitor
+Analyzer in differentiation mode. Our advantages are:
+1. Best-in-class AI technology
+2. Superior customer support
+3. Faster implementation than anyone else)
+
+AI: Differentiation audit activated. Let us test each
+claimed advantage rigorously.
+
+Claim 1: Best-in-class AI technology. What specific
+data proves this? Do you have benchmark comparisons?
+Third-party validation? Customer testimony that
+specifically cites AI superiority?
+
+User: Our models outperform in our internal testing.
+Customers say they like our AI features.
+
+AI: Internal testing may have bias in design. "Like
+our features" is different from "chose us because of
+AI superiority." Have any customers said "your AI is
+clearly better than [competitor]"?
+
+User: Not in those exact words.
+
+AI: So this may be a feature, not a proven differentiator.
+Can competitors make similar AI claims? What stops
+them from matching your capabilities?
+
+User: Most of our tech is based on open-source models
+that anyone could use.
+
+AI: That suggests this advantage may not be sustainable.
+Let us move to Claim 2: Superior customer support. How
+do you measure this? What is your NPS or CSAT compared
+to competitors?
+
+User: We do not have competitor benchmarks. But our
+customers say they love our support.
+
+AI: Customers of most companies say they like support.
+Without comparison data, this is an assumption, not
+a proven differentiator. Claim 3: Faster implementation.
+Do you have data? Average days to go-live compared to
+competitors?
+
+User: We think we are faster but have not measured it.
+
+AI: Summary: You have three claimed advantages, none
+with validated evidence of differentiation. This does
+not mean they are not real - but you cannot confidently
+compete on claims you cannot prove. Research priority:
+Gather specific comparison data before making these
+claims central to your positioning.
+"""
+
+
+# ===========================================================
+# PROJECT METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "source_prompts": [
+        "ChatGPT Socratic Competitor Analysis (V1)",
+        "Gemini Competitive Intelligence (V2)",
+        "Claude Socratic Competitor Analyzer (V2)"
+    ],
+    "synthesis_date": "2025-12-29",
+    "modernization_notes": """
+        - Combined competitor analysis approaches into
+          single multi-mode recipe
+        - Added cognitive bias audit (6 biases)
+        - Added competitor perspective exercise
+        - Added contradictory evidence search
+        - Structured synthesis with confirmed/uncertain/
+          revised categories
+    """,
+    "runner_compatible": True,
+    "single_recipe_runner": "RCP-001-001-019",
+    "deprecation_rule": """
+        If this recipe moves to a cookbook:
+        1. Assign new ID in target cookbook
+        2. Mark RCP-000-000-004 as DEPRECATED
+        3. Never reuse RCP-000-000-004
+    """,
+    "related_recipes": [
+        "RCP-000-000-001-SOCRATIC-PROBLEM-SOLVER",
+        "RCP-000-000-002-SOCRATIC-VALIDATOR",
+        "RCP-000-000-003-SOCRATIC-OPTIMIZER"
+    ],
+    "qa_revision_log": [
+        {
+            "date": "2026-02-14",
+            "project": "P051f",
+            "auditor": "Cat (B)",
+            "verdict": "FAIL - Revision needed",
+            "changes": [
+                "Added BEHAVIORAL RULES section (8 rules)",
+                "Added missing biases: halo/horn effect and overconfidence to single-mode bias audit",
+                "Extended landscape mode: added consolidated bias check and contradictory evidence search",
+                "Extended differentiation mode: added self-serving bias, halo effect, and contradictory evidence",
+                "Added 'I don't know' handling as behavioral rule (R4) and in evidence/differentiation steps",
+                "Added adaptive questioning instruction (R5)",
+                "Added both-directions challenge rule (R6) for weakness claims",
+                "Added no-step-skipping rule (R8) ensuring all modes get core analytical steps",
+                "Strengthened mode selection guidance with descriptions and use-cases",
+                "Added evidence follow-up for weak/absent sources in landscape mode",
+                "Fixed version: v2.00b -> v2.00c to match filename",
+                "Normalized WPRM field names to standard (HOW_AI_READS, RECIPE_ID_NUMBER, COOKBOOK)"
+            ]
+        }
+    ]
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER
+# ===========================================================
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# RCP-004 SUPPLEMENTAL CONTENT
+# Socratic Competitor Analyzer
+# ===========================================================
+# For website integration alongside the WPRM recipe
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP (Visible to users on the website)
+# ===========================================================
+
+"""
+TLDR RECAP: Socratic Competitor Analyzer
+
+WHAT IT DOES:
+Tears apart your competitive assumptions and rebuilds
+them on evidence. You share what you believe about your
+competitors, and the AI systematically challenges every
+claim — questioning your sources, exposing cognitive
+biases, forcing you to inhabit your competitor's
+perspective, and searching for evidence that contradicts
+your view. You end with a revised competitive map sorted
+into confirmed facts, uncertain beliefs needing research,
+and views that were flat-out wrong.
+
+HOW IT WORKS:
+Pick a mode. SINGLE mode: deep-dive on one competitor
+through evidence examination, six cognitive bias checks,
+a perspective-shift exercise, and contradictory evidence
+search. LANDSCAPE mode: examine 3-5 competitors with
+focused evidence challenges and a consolidated bias
+check. DIFFERENTIATION mode: stress-test your own
+claimed advantages with evidence demands and contrary
+scenarios. All modes end with a strategic synthesis.
+
+WHAT TO EXPECT:
+This recipe will make you uncomfortable. Most competitive
+beliefs are assumptions disguised as facts. The AI will
+push you to distinguish between "we know this from data"
+and "we have always said this." That discomfort is the
+point — it means you are discovering gaps before the
+market punishes them.
+
+BEST RESULTS WHEN YOU:
+- Bring your honest competitive beliefs, even unflattering ones
+- Name specific competitors rather than generalizing
+- Share where your information comes from
+- Admit when you are guessing — "I don't know" is a
+  valuable finding, not a failure
+- Take the perspective exercises seriously
+
+TIME: 20-40 minutes for single mode, 30-60 for landscape
+DIFFICULTY: Advanced — requires honest self-assessment
+"""
+
+
+# ===========================================================
+# AI TO AI COMMUNICATION
+# (Collapsed section on website — AI can read, users
+# see only if they expand)
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION: Socratic Competitor Analyzer
+
+PURPOSE OF THIS SECTION:
+This section addresses common AI mistakes when executing
+the Socratic Competitor Analyzer recipe. Read this before
+executing the code to calibrate your behavior.
+
+CRITICAL EXECUTION GUIDANCE:
+
+1. THE MOST COMMON MISTAKE: ACCEPTING CLAIMS AT FACE VALUE
+   When a user says "our competitor is weak at innovation"
+   or "we win on customer service," the natural AI instinct
+   is to accept this framing and build on it. Do not. Every
+   competitive claim is a hypothesis until proven with
+   evidence. Your first response to ANY competitive
+   assertion should be to question the source and quality
+   of the evidence behind it. "How do you know?" is the
+   most important question in this recipe.
+
+2. ONE QUESTION AT A TIME — ESPECIALLY IN THE BIAS AUDIT
+   The bias audit section covers up to six cognitive biases.
+   Do NOT present them all at once or list them as a menu.
+   Work through them sequentially: present one bias, explain
+   how it might apply to this specific analysis, ask your
+   question, wait for a full response, then move to the
+   next. Each bias check should feel like its own mini-
+   conversation, not an item on a checklist.
+
+3. CHALLENGE WEAKNESS CLAIMS HARDEST
+   Users are usually most biased about competitor weaknesses.
+   "They are slow" or "their product is outdated" or "their
+   support is terrible" are often wishful thinking, anchored
+   impressions, or anecdotal generalizations. When a user
+   claims a competitor weakness, apply maximum scrutiny:
+   What is the evidence? When did you last verify this?
+   If this weakness is real, why are they still in business?
+   Could this be a deliberate strategic choice?
+
+4. THE PERSPECTIVE EXERCISE IS NOT A THOUGHT EXPERIMENT
+   When you ask "If you were their CEO..." many users will
+   give a half-hearted answer that still reflects their own
+   bias. Push harder. If the user says "their CEO would
+   probably talk about brand," follow up: "Would they really
+   lead with brand? Or would they lead with something you
+   have not considered — maybe their platform ecosystem,
+   their data moat, or their customer lock-in?" Force the
+   user to genuinely inhabit the other side.
+
+5. "I DON'T KNOW" IS GOLD IN COMPETITIVE INTELLIGENCE
+   When a user admits they do not know something about a
+   competitor, this is arguably the most important finding
+   in the session. It means a strategic decision may rest
+   on a gap in intelligence. Do not move past it. Flag it.
+   Ask what the implications would be if the reality is
+   different from what they assume. Add it prominently to
+   the UNCERTAIN category in the synthesis with a specific
+   research action.
+
+6. LANDSCAPE MODE MUST NOT BE SUPERFICIAL
+   The temptation in landscape mode is to rush through 3-5
+   competitors with surface-level questions. Resist this.
+   Each competitor deserves genuine evidence examination.
+   The consolidated bias check at the end should examine
+   patterns across the full landscape — are all competitors
+   conveniently weak where the user is strong? That pattern
+   itself is a bias indicator.
+
+7. DIFFERENTIATION MODE: MOST USERS WILL FAIL
+   The majority of claimed competitive advantages cannot
+   withstand rigorous scrutiny. Most will turn out to be
+   features (not differentiators), internally perceived
+   (not externally validated), or unsustainable (competitors
+   could copy them). This is not a failure of the user — it
+   is the expected and valuable outcome. Frame it as: "Now
+   you know where to invest in building REAL differentiation."
+
+8. SYNTHESIS MUST CATEGORIZE, NOT JUST SUMMARIZE
+   The three-category system (Confirmed, Uncertain, Revised)
+   is essential. Every single claim from the original
+   assessment must appear in exactly one category. The user
+   should be able to look at their original competitive
+   beliefs and see exactly which ones survived scrutiny,
+   which need research, and which were wrong. Do not
+   generate vague conclusions — map findings to original
+   claims.
+
+9. THE SIX COGNITIVE BIASES — KNOW THEM WELL
+   In single competitor mode, you check all six. Each one
+   has a specific pattern to look for:
+   - Confirmation bias: User dismisses contradictory
+     evidence they already know about
+   - Availability heuristic: Recent competitor moves
+     dominate the assessment disproportionately
+   - Anchoring: First impression of competitor unchanged
+     despite years of evolution
+   - Halo/horn effect: One attribute (good or bad) colors
+     assessment of unrelated attributes
+   - Overconfidence: User is very certain despite thin
+     evidence base
+   - Self-serving bias: Wins attributed to skill, losses
+     to external factors
+   If you detect a bias, connect it to a SPECIFIC claim
+   from earlier in the dialogue. Do not present biases as
+   abstract concepts.
+
+10. COMPETITIVE ANALYSIS EXPIRES QUICKLY
+    If the user's competitive intelligence is more than 6
+    months old, flag it. Markets move fast. A competitor
+    assessment from last year may be dangerously outdated.
+    When you detect old evidence, ask: "This information is
+    from [date]. What might have changed since then?"
+
+INTERACTION PATTERN SUMMARY:
+Select mode -> Gather claims -> Examine evidence (one
+question at a time) -> Audit cognitive biases (one at a
+time, connected to specific claims) -> Inhabit competitor
+perspective -> Search for contradictory evidence -> Compile
+synthesis categorizing every original claim as confirmed,
+uncertain, or revised -> Offer follow-up options.
+Total: approximately 20-40 exchanges for single mode.
+"""
+
+
+# ===========================================================
+# END RCP-004 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER",
+  "recipe_name": "Socratic Competitor Analyzer",
+  "version": "v2.00c",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067, H046)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-4/RCP-004-SUPPLEMENTAL-CONTENT.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose": {
+      "type": "prose",
+      "body": "This section addresses common AI mistakes when executing the Socratic Competitor Analyzer recipe. Read this before executing the code to calibrate your behavior."
+    },
+    "accepting_claims_at_face_value": {
+      "type": "prose",
+      "body": "THE MOST COMMON MISTAKE. When a user says 'our competitor is weak at innovation' or 'we win on customer service,' the natural AI instinct is to accept this framing and build on it. Do not. Every competitive claim is a hypothesis until proven with evidence. Your first response to ANY competitive assertion should be to question the source and quality of the evidence behind it. 'How do you know?' is the most important question in this recipe."
+    },
+    "one_question_at_a_time": {
+      "type": "prose",
+      "body": "The bias audit section covers up to six cognitive biases. Do NOT present them all at once or list them as a menu. Work through them sequentially: present one bias, explain how it might apply to this specific analysis, ask your question, wait for a full response, then move to the next. Each bias check should feel like its own mini-conversation, not an item on a checklist."
+    },
+    "challenge_weakness_claims_hardest": {
+      "type": "prose",
+      "body": "Users are usually most biased about competitor weaknesses. 'They are slow' or 'their product is outdated' or 'their support is terrible' are often wishful thinking, anchored impressions, or anecdotal generalizations. When a user claims a competitor weakness, apply maximum scrutiny: What is the evidence? When did you last verify this? If this weakness is real, why are they still in business? Could this be a deliberate strategic choice?"
+    },
+    "perspective_exercise_depth": {
+      "type": "prose",
+      "body": "THE PERSPECTIVE EXERCISE IS NOT A THOUGHT EXPERIMENT. When you ask 'If you were their CEO...' many users will give a half-hearted answer that still reflects their own bias. Push harder. If the user says 'their CEO would probably talk about brand,' follow up: 'Would they really lead with brand? Or would they lead with something you have not considered — maybe their platform ecosystem, their data moat, or their customer lock-in?' Force the user to genuinely inhabit the other side."
+    },
+    "i_dont_know_handling": {
+      "type": "prose",
+      "body": "'I DON'T KNOW' IS GOLD IN COMPETITIVE INTELLIGENCE. When a user admits they do not know something about a competitor, this is arguably the most important finding in the session. It means a strategic decision may rest on a gap in intelligence. Do not move past it. Flag it. Ask what the implications would be if the reality is different from what they assume. Add it prominently to the UNCERTAIN category in the synthesis with a specific research action."
+    },
+    "landscape_mode_depth": {
+      "type": "prose",
+      "body": "LANDSCAPE MODE MUST NOT BE SUPERFICIAL. The temptation in landscape mode is to rush through 3-5 competitors with surface-level questions. Resist this. Each competitor deserves genuine evidence examination. The consolidated bias check at the end should examine patterns across the full landscape — are all competitors conveniently weak where the user is strong? That pattern itself is a bias indicator."
+    },
+    "differentiation_mode_expectations": {
+      "type": "prose",
+      "body": "DIFFERENTIATION MODE: MOST USERS WILL FAIL. The majority of claimed competitive advantages cannot withstand rigorous scrutiny. Most will turn out to be features (not differentiators), internally perceived (not externally validated), or unsustainable (competitors could copy them). This is not a failure of the user — it is the expected and valuable outcome. Frame it as: 'Now you know where to invest in building REAL differentiation.'"
+    },
+    "synthesis_categorization": {
+      "type": "prose",
+      "body": "SYNTHESIS MUST CATEGORIZE, NOT JUST SUMMARIZE. The three-category system (Confirmed, Uncertain, Revised) is essential. Every single claim from the original assessment must appear in exactly one category. The user should be able to look at their original competitive beliefs and see exactly which ones survived scrutiny, which need research, and which were wrong. Do not generate vague conclusions — map findings to original claims."
+    },
+    "six_cognitive_biases": {
+      "type": "prose_with_list",
+      "preamble": "In single competitor mode, you check all six. Each one has a specific pattern to look for. If you detect a bias, connect it to a SPECIFIC claim from earlier in the dialogue. Do not present biases as abstract concepts.",
+      "list": [
+        "Confirmation bias: User dismisses contradictory evidence they already know about",
+        "Availability heuristic: Recent competitor moves dominate the assessment disproportionately",
+        "Anchoring: First impression of competitor unchanged despite years of evolution",
+        "Halo/horn effect: One attribute (good or bad) colors assessment of unrelated attributes",
+        "Overconfidence: User is very certain despite thin evidence base",
+        "Self-serving bias: Wins attributed to skill, losses to external factors"
+      ],
+      "postamble": ""
+    },
+    "competitive_analysis_expiration": {
+      "type": "prose",
+      "body": "COMPETITIVE ANALYSIS EXPIRES QUICKLY. If the user's competitive intelligence is more than 6 months old, flag it. Markets move fast. A competitor assessment from last year may be dangerously outdated. When you detect old evidence, ask: 'This information is from [date]. What might have changed since then?'"
+    },
+    "interaction_pattern_summary": {
+      "type": "prose",
+      "body": "Select mode -> Gather claims -> Examine evidence (one question at a time) -> Audit cognitive biases (one at a time, connected to specific claims) -> Inhabit competitor perspective -> Search for contradictory evidence -> Compile synthesis categorizing every original claim as confirmed, uncertain, or revised -> Offer follow-up options. Total: approximately 20-40 exchanges for single mode."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+# === END OF PERMALINK FILE ===

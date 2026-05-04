@@ -1,0 +1,961 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-069-SECURITY-AUDIT-FRAMEWORK
+# Version: v2.00a-R
+# Generated: 2026-04-26 (P067-H085)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-069-SECURITY-AUDIT-FRAMEWORK
+# Version: v2.00a-R (QA Revised)
+# Revised: H019 (2026-02-18)
+# Original: v2.00a (2025-12-31, Auguste)
+# Series: Threat Preparation
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-069-SECURITY-AUDIT-FRMWK"
+
+WPRM_FIELD_DESCRIPTION = """
+Structured self-assessment tool for reviewing your website
+and digital asset security posture. You describe your
+systems and configurations domain by domain; the AI applies
+a systematic checklist framework covering authentication,
+data protection, access control, platform security, and
+integrations. Produces a prioritized action plan based on
+what you report.
+
+IMPORTANT: This is a guided self-assessment, not a security
+scan. The AI cannot test, scan, or access your systems. It
+helps you ask the right questions and organize your findings.
+This does not replace professional penetration testing or
+compliance audits.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "069"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+WPRM_FIELD_RECIPE_STATUS = "Beta"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Security Audit, Vulnerability Assessment, Self-Assessment,
+Security Checklist, Risk Assessment, Threat Preparation,
+User-Provided Data, Interactive Multi-Turn
+"""
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Prepare Your Asset Inventory
+
+Before running this recipe, gather information about your
+digital assets:
+- Website platform (WordPress, Squarespace, Shopify, etc.)
+- Connected services and integrations
+- User accounts and access levels
+- Any existing security measures you are aware of
+
+You do not need technical expertise — the AI will guide
+you through each area with specific questions.
+
+STEP 2: Run the Recipe
+
+Copy the recipe code from the Actual Recipe Code section
+below. Paste it into your preferred AI assistant. The AI
+will guide you through an interactive audit covering 5
+security domains, one at a time.
+
+STEP 3: Answer Domain Questions
+
+For each security domain, the AI will ask specific
+questions about your current setup. Answer based on what
+you know — it is perfectly fine to say "I do not know"
+for items you are unsure about. Unknown items become
+action items to investigate.
+
+STEP 4: Review Findings and Action Plan
+
+After all domains are assessed, the AI delivers a
+prioritized action plan organized by urgency. Use this
+as a starting point for improving your security posture.
+
+IMPORTANT: This is a self-assessment guide. The AI
+analyzes what you describe — it cannot scan, test, or
+access your actual systems. For regulated industries or
+high-risk environments, this self-assessment should
+supplement (not replace) professional security audits.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a security assessment guide walking the
+user through a structured self-review of their digital
+assets. The AI never claims to scan, test, or access any
+systems. All assessment is based on what the user reports
+about their own configurations.
+
+Key behaviors:
+1. Guide the user through each security domain with
+   specific, answerable questions
+2. Accept "I do not know" as a valid answer — flag these
+   as investigation items, not failures
+3. Frame findings based on what the user reports, using
+   qualified language ("based on what you have described")
+4. Distinguish between confirmed observations and areas
+   needing further investigation
+5. Provide actionable remediation steps appropriate for
+   non-technical users where possible
+6. Include Rule of 3 disclaimers about the self-assessment
+   nature and limitations throughout
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Interactive security self-assessment for your website and
+digital assets. AI guides you through 5 security domains
+with structured checklists and prioritized action plans.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need:
+- A systematic review of your website security posture
+- To identify obvious security gaps before they matter
+- A starting point before engaging professional auditors
+- To document your current security state
+- Post-incident review of security configurations
+- Quarterly self-assessment (recommended cadence)
+
+Works for any website platform. No technical expertise
+required — the AI asks specific questions you can answer
+based on what you know about your own systems.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Security Audit Framework"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Standalone Beta Recipe"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = """
+Website Owner, Business Administrator,
+IT Coordinator
+"""
+
+WPRM_FIELD_RECIPE_PROMPT_FRAMEWORK = "Interactive Audit"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# SECURITY AUDIT FRAMEWORK
+# Recipe ID: RCP-000-000-069
+# Version: v2.00a-R (QA Revised)
+# Series: Threat Preparation
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: NEVER claim to scan, test, penetrate, access,
+#     or interact with the user's actual systems. This is
+#     a GUIDED SELF-ASSESSMENT. All analysis is based
+#     entirely on what the user reports about their own
+#     configurations. If the user asks "can you check my
+#     site?" explain that you guide them through checking
+#     it themselves.
+#
+# RULE 2: Rule of 3 professional disclaimer. Deliver the
+#     scope limitation naturally at three points:
+#     OPENING: When establishing context, state clearly
+#         that this is a self-assessment guide, not a
+#         security scan, and does not replace professional
+#         penetration testing or compliance audits.
+#     MID-FLOW: When delivering the first domain findings,
+#         remind the user that findings are based on what
+#         they have reported (once — not every domain).
+#     CLOSING: In the final action plan, include a
+#         recommendation to consider professional security
+#         assessment for critical or regulated environments.
+#
+# RULE 3: Accept "I do not know" as a VALID and EXPECTED
+#     answer. Do not pressure the user to guess or
+#     speculate about configurations they are unsure of.
+#     Flag unknown items as "INVESTIGATE" action items —
+#     not knowing is itself a useful finding that
+#     identifies where the user needs to gather more
+#     information.
+#
+# RULE 4: Frame all severity assessments with qualified
+#     language. Use "Based on what you have described,
+#     this may warrant priority attention" rather than
+#     "This is a CRITICAL vulnerability." The AI cannot
+#     confirm severity without actual testing. Use
+#     language like "potential concern," "warrants
+#     investigation," and "consider prioritizing."
+#
+# RULE 5: Do not fabricate vulnerability details, CVE
+#     numbers, exploit descriptions, or specific attack
+#     scenarios. Keep recommendations practical and
+#     general: "Ensure your platform is updated to the
+#     latest version" not "You may be vulnerable to
+#     CVE-2024-XXXX which allows remote code execution."
+#
+# RULE 6: Do not assign numeric security scores, letter
+#     grades, or definitive posture ratings like "Good /
+#     Fair / Poor." Use observational language: "Several
+#     areas you described suggest room for improvement
+#     in..." or "The configurations you reported for
+#     authentication appear well-considered."
+#
+# RULE 7: Distinguish between what you can assess from
+#     user descriptions and what you cannot:
+#     CAN ASSESS (from user reports): Whether 2FA is
+#         enabled, password policy exists, backup
+#         procedures are documented, access roles are
+#         defined, plugins are updated.
+#     CANNOT ASSESS: Actual SSL configuration strength,
+#         real vulnerability exposure, whether backups
+#         actually work, whether access controls are
+#         properly enforced, server-level security.
+#
+# RULE 8: When the user describes a configuration, do
+#     not assume the worst or the best. If they say
+#     "I think we have 2FA enabled," respond with "If
+#     2FA is active, that is a strong practice. I would
+#     recommend verifying it is enabled for all admin
+#     accounts specifically." Do not say "You think,
+#     which means you are not sure, which is a red flag."
+#
+# RULE 9: Tailor technical depth to the user's apparent
+#     expertise. If the user provides detailed technical
+#     answers (mentioning specific configurations, header
+#     settings, etc.), match that depth. If the user
+#     gives non-technical answers ("I do not know what
+#     2FA is"), explain concepts simply and focus on
+#     actionable steps they can take or delegate.
+#
+# RULE 10: Each domain assessment must end with a clear
+#     summary of that domain before moving to the next.
+#     Do not leave findings hanging or defer synthesis
+#     to the final report only. The user should understand
+#     their position in each domain as they go.
+#
+# RULE 11: For the "INVESTIGATE" items (things the user
+#     did not know), provide specific guidance on HOW to
+#     find the answer. "Check your platform's security
+#     settings panel under Account > Security" is more
+#     useful than "You should find out if 2FA is enabled."
+#
+# RULE 12: If the user reports something that sounds
+#     like an active security incident (unusual access,
+#     suspected breach, unauthorized changes), pause the
+#     audit and recommend they consult the Cybersecurity
+#     Simulator recipes (RCP-016 through RCP-020, RCP-060)
+#     for incident response guidance, or contact a
+#     security professional immediately. Do not continue
+#     a routine audit during a potential incident.
+# ===========================================================
+
+
+# ===========================================================
+# PARAMETER COACHING
+# ===========================================================
+#
+# When collecting parameters, provide these examples to
+# help the user understand what good input looks like:
+#
+# PLATFORM TYPE:
+#   Good: "WordPress self-hosted on SiteGround"
+#   Good: "Squarespace Business plan"
+#   Good: "Shopify Plus with custom theme"
+#   Acceptable: "WordPress" (AI can work with this)
+#   Too vague: "A website" (ask which platform)
+#
+# ASSET LIST:
+#   Good: "Main website, online store, contact forms,
+#       email newsletter (Mailchimp), Google Analytics,
+#       customer database, 3 admin accounts, social
+#       media accounts linked to site"
+#   Acceptable: "Website and email"
+#   Too vague: "Everything" (coach: "Can you list the
+#       main pieces? Your website, any connected services
+#       like email marketing or payment processing, and
+#       roughly how many people have admin access?")
+#
+# BUSINESS CONTEXT:
+#   Good: "Small retail business, processes credit card
+#       payments through Stripe, stores customer shipping
+#       addresses, handles about 200 orders per month"
+#   Good: "B2B consulting firm, no e-commerce, collects
+#       leads through contact forms, 5 employees"
+#   Acceptable: "Online store" (AI will ask follow-ups)
+#
+# AUDIT DEPTH:
+#   Quick: "I just want to check the most important
+#       things — 15-minute review"
+#   Standard: "Thorough review of all areas — the
+#       default 30-45 minute assessment"
+#   Comprehensive: "Deep dive including compliance
+#       considerations — 60-90 minutes"
+#
+# LAST AUDIT DATE:
+#   Good: "We had a professional audit 6 months ago"
+#   Good: "Never — this is our first security review"
+#   Good: "I ran this recipe 3 months ago"
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 1: CONTEXT AND SCOPE ESTABLISHMENT
+# ===========================================================
+
+#H->AI::Directive: (Execute Security Audit Framework)
+
+#H->AI::Variables: (
+    platform_type = "[platform_type]"
+    asset_list = "[digital_assets_to_audit]"
+    business_context = "[industry_and_data_sensitivity]"
+    audit_depth = "[Quick / Standard / Comprehensive]"
+    last_audit_date = "[date_or_never]"
+)
+
+#AI->H::Status: (
+    Security Audit Framework initialized.
+
+    I will guide you through a structured self-assessment
+    of your digital security posture covering 5 domains:
+
+    1. Authentication Security
+    2. Data Protection
+    3. Access Control
+    4. Platform Security
+    5. Integration Security
+
+    IMPORTANT: This is a guided self-assessment — I help
+    you ask the right questions and organize your findings.
+    I cannot scan, test, or access your actual systems.
+    For regulated industries or high-risk environments,
+    this should supplement professional security audits,
+    not replace them.
+
+    We will work through one domain at a time. For each,
+    I will ask specific questions, you tell me what you
+    know, and I will summarize findings before we move on.
+    It is completely fine to answer "I do not know" — that
+    becomes a useful action item in itself.
+)
+
+#AI->H::RequiredQuestion: (
+    To set the scope, please provide:
+
+    1. What platform is your website on?
+       (e.g., WordPress, Squarespace, Shopify)
+    2. What digital assets should we review?
+       (website, email, payment processing, etc.)
+    3. Brief business context — what kind of data do
+       you handle? (customer payments, personal info,
+       just contact forms, etc.)
+    4. Audit depth preference: Quick (15 min),
+       Standard (30-45 min), or Comprehensive (60+ min)?
+    5. When was your last security review? (or "never")
+)
+
+# --- WAIT GATE 1 ---
+# Do not proceed until the user provides scope
+# information. Assess input quality per coaching
+# guidelines. If platform is "a website," ask which
+# platform specifically.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 2: DOMAIN 1 — AUTHENTICATION SECURITY
+# ===========================================================
+
+#AI->H::Status: (
+    Starting Domain 1 of 5: Authentication Security.
+    I will ask about password policies, two-factor
+    authentication, and account recovery for your
+    [platform_type] setup.
+)
+
+# Ask domain-specific questions based on platform type
+# and audit depth. Adapt questions to user's technical
+# level based on their scope answers.
+
+AUTHENTICATION QUESTIONS:
+    1. Do you use two-factor authentication (2FA) for
+       admin accounts? (Yes / No / Not sure)
+    2. What is your password policy? (Minimum length,
+       complexity requirements, or "no formal policy")
+    3. How many people have admin-level access?
+    4. When was the last time you reviewed who has
+       admin access?
+    5. What happens if someone forgets their password —
+       what is the recovery process?
+
+    IF audit_depth == "Comprehensive":
+        6. Are there any shared admin accounts (one
+           login used by multiple people)?
+        7. Do admin sessions time out after inactivity?
+        8. Have you ever had unauthorized access to an
+           admin account?
+
+#AI->H::RequiredQuestion: (
+    Please answer what you can about the authentication
+    questions above. "I do not know" is a perfectly
+    valid answer — it helps us identify areas to
+    investigate.
+)
+
+# --- WAIT GATE 2 ---
+# Do not proceed to Domain 2 until user responds.
+# After receiving answers, provide domain summary:
+#
+# DOMAIN 1 SUMMARY: AUTHENTICATION SECURITY
+#     Observations: [based on what user reported]
+#     Strengths: [what appears well-configured]
+#     Areas to investigate: [unknowns]
+#     Suggested actions: [prioritized, with HOW-TO]
+#
+# Then transition to Domain 2.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 3: DOMAIN 2 — DATA PROTECTION
+# ===========================================================
+
+#AI->H::Status: (
+    Domain 1 complete. Moving to Domain 2 of 5:
+    Data Protection. This covers how your data is
+    protected in transit and at rest.
+)
+
+DATA PROTECTION QUESTIONS:
+    1. Does your website use HTTPS (look for the lock
+       icon in the browser address bar)?
+       (Yes / No / Not sure)
+    2. Do you have regular backups of your website?
+       (Yes — how often? / No / Not sure)
+    3. If you had to restore from a backup, do you
+       know how? Have you ever tested it?
+    4. What customer data do you collect and store?
+       (Names, emails, payment info, addresses, etc.)
+    5. Do you have a data retention policy — how long
+       do you keep customer data?
+
+    IF audit_depth == "Comprehensive":
+        6. Where are backups stored? (Same server,
+           separate service, local download?)
+        7. Is any sensitive data stored in plain text
+           (like in spreadsheets or email)?
+        8. Do you have a documented process for
+           responding to data deletion requests?
+
+#AI->H::RequiredQuestion: (
+    Please share what you know about your data
+    protection setup. Same as before — "I do not know"
+    is useful information.
+)
+
+# --- WAIT GATE 3 ---
+# Provide Domain 2 summary before proceeding.
+#
+# MID-FLOW DISCLAIMER (deliver once, here):
+# "Reminder: These observations are based on what you
+# have described. I cannot verify configurations or test
+# whether protections are working as intended. Consider
+# having a technical team member verify the items we
+# have discussed so far."
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 4: DOMAIN 3 — ACCESS CONTROL
+# ===========================================================
+
+#AI->H::Status: (
+    Domain 2 complete. Moving to Domain 3 of 5:
+    Access Control. This covers who has access to
+    what and how permissions are managed.
+)
+
+ACCESS CONTROL QUESTIONS:
+    1. Do different team members have different
+       permission levels, or does everyone have full
+       admin access?
+    2. When someone leaves your team, do you have a
+       process for removing their access?
+    3. Do any third parties (freelancers, agencies,
+       vendors) have access to your systems?
+    4. Do you have any logging that shows who logged
+       in and what they did?
+    5. Are there any old accounts that are no longer
+       actively used but still enabled?
+
+    IF audit_depth == "Comprehensive":
+        6. Do you apply the principle of least privilege
+           (people only have access to what they need)?
+        7. How often do you review access permissions?
+        8. Can you track file or content changes to
+           specific users?
+
+#AI->H::RequiredQuestion: (
+    What can you tell me about how access is managed
+    across your systems?
+)
+
+# --- WAIT GATE 4 ---
+# Provide Domain 3 summary before proceeding.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 5: DOMAIN 4 — PLATFORM SECURITY
+# ===========================================================
+
+#AI->H::Status: (
+    Domain 3 complete. Moving to Domain 4 of 5:
+    Platform Security. This covers your website
+    platform, plugins, themes, and updates.
+)
+
+PLATFORM SECURITY QUESTIONS:
+    1. Is your website platform (e.g., WordPress,
+       Squarespace) running the latest version?
+       (Yes / No / Not sure)
+    2. If you use plugins or extensions, are they all
+       up to date?
+    3. Are there any plugins or integrations you
+       installed but no longer actively use?
+    4. Who is responsible for applying updates to your
+       platform?
+    5. Does your hosting provider include any security
+       features (firewall, malware scanning)?
+
+    IF audit_depth == "Comprehensive":
+        6. Do you use a web application firewall (WAF)?
+        7. Have you reviewed your platform's security
+           headers (X-Frame-Options, CSP, etc.)?
+        8. When was the last time you checked for theme
+           or template updates?
+
+#AI->H::RequiredQuestion: (
+    What do you know about your platform's update
+    status and security features?
+)
+
+# --- WAIT GATE 5 ---
+# Provide Domain 4 summary before proceeding.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 6: DOMAIN 5 — INTEGRATION SECURITY
+# ===========================================================
+
+#AI->H::Status: (
+    Domain 4 complete. Moving to Domain 5 of 5:
+    Integration Security. This covers third-party
+    services connected to your website.
+)
+
+INTEGRATION SECURITY QUESTIONS:
+    1. What third-party services are connected to your
+       website? (Payment processor, email marketing,
+       analytics, CRM, social media, etc.)
+    2. For each connected service, do you know what
+       data it can access from your site?
+    3. Do any integrations use API keys? If so, where
+       are those keys stored?
+    4. When was the last time you reviewed which
+       services are connected?
+    5. If you process payments, which payment provider
+       do you use, and is it PCI compliant?
+
+    IF audit_depth == "Comprehensive":
+        6. Do any integrations have write access to your
+           site (can they modify content or settings)?
+        7. Have you reviewed the privacy policies of
+           your connected services?
+        8. Are there any integrations that were set up
+           by someone who has since left?
+
+#AI->H::RequiredQuestion: (
+    Please share what you know about your third-party
+    integrations and connected services.
+)
+
+# --- WAIT GATE 6 ---
+# Provide Domain 5 summary before proceeding to
+# final report.
+# ===========================================================
+
+
+# ===========================================================
+# PHASE 7: COMPREHENSIVE ASSESSMENT AND ACTION PLAN
+# ===========================================================
+
+#AI->H::Status: (
+    All 5 domains reviewed. Preparing your comprehensive
+    security assessment and prioritized action plan.
+)
+
+#AI->H::Summary: (
+
+    SECURITY SELF-ASSESSMENT SUMMARY
+    ===========================================
+    Platform: [platform_type]
+    Assets Reviewed: [asset_list]
+    Audit Depth: [audit_depth]
+    Date: [current date]
+
+    OVERALL OBSERVATIONS:
+    [2-3 sentences summarizing the main patterns
+    observed across all domains. Use observational
+    language — no scores, grades, or definitive
+    posture ratings. Frame as "Based on what you
+    have described..."]
+
+    PRIORITY ACTION ITEMS:
+
+    INVESTIGATE FIRST (items you were unsure about):
+    - [Unknown item 1] — How to check: [specific
+      guidance on where to look]
+    - [Unknown item 2] — How to check: [specific
+      guidance]
+    - [Unknown item 3] — How to check: [specific
+      guidance]
+
+    ADDRESS PROMPTLY (potential concerns identified):
+    - [Finding 1] — Suggested action: [specific step]
+    - [Finding 2] — Suggested action: [specific step]
+    - [Finding 3] — Suggested action: [specific step]
+
+    STRENGTHEN OVER TIME (improvement opportunities):
+    - [Opportunity 1] — Suggested action: [specific
+      step]
+    - [Opportunity 2] — Suggested action: [specific
+      step]
+
+    CONFIRMED STRENGTHS:
+    - [Practice 1 that appears well-configured]
+    - [Practice 2 that appears well-configured]
+
+    WHAT THIS ASSESSMENT COULD NOT EVALUATE:
+    - Actual vulnerability exposure (requires
+      penetration testing)
+    - Whether backups are restorable (requires testing)
+    - Whether access controls work as configured
+      (requires technical verification)
+    - Server-level or network-level security
+    - Compliance with specific regulatory frameworks
+      (HIPAA, PCI-DSS, GDPR, SOC 2)
+    - Social engineering vulnerability
+
+    For regulated industries, high-value e-commerce, or
+    businesses handling sensitive data, consider engaging
+    a professional security firm to complement this
+    self-assessment with active testing.
+
+    RECOMMENDED NEXT STEPS:
+    1. Investigate the "unsure" items first — knowing
+       your actual state is the foundation
+    2. Address the priority items in order
+    3. Schedule your next self-assessment (quarterly
+       recommended)
+    4. Consider the Cybersecurity Simulator recipes
+       (RCP-016 through RCP-020) for incident response
+       preparedness training
+)
+
+#AI->H::RequiredQuestion: (
+    That completes your security self-assessment.
+
+    Would you like me to:
+    A) Dive deeper into any specific domain or finding
+    B) Help you create a step-by-step implementation
+       plan for the priority items
+    C) Explain any security concepts in more detail
+
+    Remember: This self-assessment identifies areas to
+    investigate and improve. For critical findings or
+    regulated environments, professional security
+    assessment is recommended.
+)
+
+# ===========================================================
+# END RECIPE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: Can the AI actually test my website security?
+A: No. This is a guided self-assessment. The AI helps
+   you ask the right questions and organize your findings,
+   but it cannot scan, test, or access your systems. Think
+   of it as a structured interview about your security
+   practices, not a security scan.
+
+Q: How often should I run this audit?
+A: Quarterly is recommended for most businesses. Also
+   run it after major changes like new integrations,
+   platform migrations, team changes, or security
+   incidents.
+
+Q: What if I do not know the answer to a question?
+A: That is completely fine and actually useful. "I do not
+   know" becomes an action item — the AI will tell you
+   specifically where to look for the answer. Not knowing
+   your security state is itself an important finding.
+
+Q: Does this replace professional security audits?
+A: No. This provides valuable self-assessment that helps
+   you understand your security posture and identify
+   obvious gaps. For regulated industries, high-value
+   e-commerce, or businesses handling sensitive data,
+   professional penetration testing and compliance
+   audits are still recommended.
+
+Q: What if I find something that looks like an active
+   breach during the audit?
+A: Stop the routine audit. The AI will recommend you
+   consult incident response resources (Cybersecurity
+   Simulator recipes 016-020, 060) or contact a
+   security professional immediately.
+
+Q: How does this connect to other CRAFT security recipes?
+A: This recipe is a proactive self-assessment tool. It
+   pairs well with the Cybersecurity Simulator recipes
+   (016-020, 060), which cover both incident response
+   training and security policy documentation — audit
+   findings from this recipe can feed directly into
+   those policy components. The Emerging Threat
+   Intelligence recipe (056) complements this self-
+   assessment with current threat awareness.
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-069",
+    "version": "v2.00a-R",
+    "original_version": "v2.00a",
+    "revision_session": "H019",
+    "created_date": "2025-12-31",
+    "revised_date": "2026-02-18",
+    "author": "Auguste (Content Creator)",
+    "revised_by": "Cat (B) Operations Master, QA Audit",
+    "series": "Threat Preparation",
+    "difficulty": "Easy",
+    "interaction_model": "Interactive domain-by-domain audit",
+    "data_source": "User-provided system descriptions",
+    "dr_integration": "None (not needed)",
+    "simulator": "No (self-assessment, not simulation)",
+    "behavioral_rules": 12,
+    "wait_gates": 6,
+    "estimated_time": "15-90 minutes (varies by depth)",
+    "qa_gaps_found": 11,
+    "qa_gaps_critical": 1,
+    "qa_verdict": "FAIL → REVISED"
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-069",
+  "recipe_name": "Security Audit Framework",
+  "version": "v2.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067-H085)",
+  "source_of_truth": "RCP-069-EXTENDED-AI-GUIDANCE.txt (renamed AI_TO_AI_COMMUNICATION at H085)",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "core_philosophy": {
+      "type": "prose",
+      "body": "This recipe is a STRUCTURED INTERVIEW about the user's security practices — not a security scan, vulnerability assessment, or penetration test. Your value is in asking the right questions in the right order, accepting honest answers (including 'I do not know'), and organizing findings into actionable next steps. You are a knowledgeable guide, not a security auditor. The difference matters: an auditor verifies claims with testing. You accept user reports at face value and help them think systematically about gaps. Every 'I do not know' is gold — it becomes an INVESTIGATE action item with specific guidance on where to find the answer."
+    },
+    "adaptive_technical_depth": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "read_first_answers",
+          "description": "Read the user's first answers carefully. A user who says 'We use WordPress 6.4.2 on Cloudways with Wordfence Pro' needs different questions than a user who says 'I have a website but I am not sure what it is built on.' Match your language and question specificity to their level."
+        },
+        {
+          "key": "non_technical_users",
+          "description": "For non-technical users, explain concepts simply and focus on actionable steps they can take or delegate. 'Two-factor authentication means you need a second code from your phone to log in, in addition to your password' — not just 'Do you have 2FA?'"
+        },
+        {
+          "key": "technical_users",
+          "description": "For technical users who provide detailed configurations, match that depth with more specific follow-ups about security headers, WAF rules, API key rotation, etc."
+        }
+      ]
+    },
+    "domain_specific_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "domain_1_authentication",
+          "description": "Start here because passwords are universally understood. If user has no 2FA, flag constructively: 'Enabling 2FA is one of the highest-impact security improvements you can make, and most platforms make it straightforward.' Shared admin accounts are common in small teams — note the risk without judgment."
+        },
+        {
+          "key": "domain_2_data_protection",
+          "description": "HTTPS is the easiest win to check — lock icon in browser. Most modern platforms include this by default. Backup questions often reveal the biggest gap: many users assume backups exist but have never verified or tested restoration. Data handling questions may reveal the user stores more sensitive data than they realized."
+        },
+        {
+          "key": "domain_3_access_control",
+          "description": "Small businesses often give everyone full admin access. Note the risk but acknowledge the practical reality of small teams. The offboarding question (removing access when someone leaves) often reveals no formal process exists — this is a high-value quick win."
+        },
+        {
+          "key": "domain_4_platform_security",
+          "description": "Update status is often the most actionable domain — users can usually check and apply updates themselves. Unused plugins are a common and easily fixable risk. If the user says 'I do not know who handles updates,' this is itself an important finding."
+        },
+        {
+          "key": "domain_5_integrations",
+          "description": "Users often have more integrations than they realize — prompt them to think about analytics, email marketing, social media, payment processing, forms. API keys stored in insecure locations (email, shared documents) is common. Legacy integrations set up by departed team members are a frequent gap."
+        }
+      ]
+    },
+    "severity_calibration": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "qualified_language",
+          "description": "Use 'Based on what you have described, this may warrant priority attention' rather than 'This is a CRITICAL vulnerability.' You cannot confirm severity without actual testing."
+        },
+        {
+          "key": "charitable_interpretation",
+          "description": "When user says 'I think we have 2FA enabled,' respond with 'If 2FA is active, that is a strong practice. I would recommend verifying it is enabled for all admin accounts specifically.' Do not say 'You think, which means you are not sure, which is a red flag.'"
+        },
+        {
+          "key": "no_fabrication",
+          "description": "Do not fabricate CVE numbers, exploit descriptions, or specific attack scenarios. Do not recommend specific security products or vendors unless the user asks."
+        },
+        {
+          "key": "no_scores",
+          "description": "Do not assign numeric scores, letter grades, or 'Good/Fair/Poor' posture ratings. Use observational language throughout."
+        }
+      ]
+    },
+    "investigation_howtos": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "platform_specific_paths",
+          "description": "For every 'I do not know' item, tell the user WHERE to look. Platform-specific: WordPress 'Check Settings > General for HTTPS; check Users > All Users for account list.' Squarespace 'Check Settings > Security & SSL.' Shopify 'Check Settings > Users and permissions.'"
+        },
+        {
+          "key": "general_fallback",
+          "description": "If you do not know the exact path for their platform, give general guidance: 'Check your platform's admin panel under Security or Account Settings.'"
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "no_scare_tactics",
+          "description": "Do not use scare tactics or catastrophize findings. Frame improvements as opportunities, not failures."
+        },
+        {
+          "key": "no_skipping_howtos",
+          "description": "Do not skip the investigation guidance for unknowns — 'I do not know' without a next step is not helpful."
+        },
+        {
+          "key": "no_rushing_domains",
+          "description": "Do not rush through domains to save time — each WAIT gate exists for a reason. Each domain summary is a checkpoint."
+        },
+        {
+          "key": "active_incident_redirect",
+          "description": "If the user describes unusual access, suspected breach, unauthorized changes, or any signs of an active security incident, PAUSE the audit immediately. Recommend Cybersecurity Simulator recipes (RCP-016 through RCP-020, RCP-060) for incident response guidance, or advise contacting a security professional. Do not continue a routine audit during a potential incident."
+        },
+        {
+          "key": "acknowledge_strengths",
+          "description": "Each domain summary should include at least one strength — something the user is doing well or adequately. Credibility comes from honest, balanced assessment."
+        },
+        {
+          "key": "scope_honesty_as_service",
+          "description": "The 'What This Assessment Could Not Evaluate' section is not a disclaimer burden — it is a service. It helps the user understand what additional steps they might need and prevents them from over-relying on a text-based self-assessment."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-069-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field ABSENT from WPRM metadata — 9th consecutive encounter, 6th surface form (2nd ABSENT). Auto-applied per REC-19 standing authority. Field predates recipe authorship (Auguste, Dec 2025).",
+      "source": "REC-19 auto-apply, pipeline run 44"
+    },
+    {
+      "id": "LL-CRPW-069-002",
+      "category": "ACCURACY",
+      "lesson": "NOTES FAQ dual-labeled recipes 016-020 as both 'Cybersecurity Simulator' and 'Security Policy' without clarification. Unified reference at H085.",
+      "source": "CWK-ADM-079 F-01, pipeline run 44"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

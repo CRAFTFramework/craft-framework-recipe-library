@@ -1,0 +1,851 @@
+# ===========================================================
+# CRAFT RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK
+# Version: 2.00b-R
+# Display Name: Conservative Estimation Framework
+# Category: Standalone Beta Recipe
+# Subcategory: Conservative Planning
+# Cookbook: Standalone (No Cookbook)
+# Difficulty: Easy
+# Status: Official
+# CRAFT Flavors: CRAFT Cowork
+# Output Type: Conservative-framed AI response
+# Tags: hallucination prevention, accuracy,
+#        conservative estimation, data integrity,
+#        proactive quality, universal application,
+#        risk reduction, foundational, beta,
+#        frequently used
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: WPRM RECIPE FIELDS
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK"
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you embed conservative estimation
+principles into any AI request before the AI generates
+its response. Rather than checking content after
+creation, this recipe coaches the AI to use cautious
+estimates, acknowledge uncertainties, and avoid
+speculation from the start. Results depend on your
+follow-up judgment -- this improves but does not
+guarantee accuracy.
+"""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = """
+Standalone (No Cookbook)
+"""
+
+WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID_NUMBERS = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBERS = "052"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone Beta Recipe"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Conservative Planning"
+
+WPRM_FIELD_RECIPE_TAGS = """
+hallucination prevention, accuracy,
+conservative estimation, data integrity,
+proactive quality, universal application,
+risk reduction, foundational, beta,
+frequently used
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Launch the Framework
+    Tell the AI you want to use conservative estimation
+    principles for an upcoming request. You can say
+    something like: "I need to ask you something where
+    accuracy matters. Please use conservative estimation
+    principles when responding." Or invoke directly:
+    #H->AI::Directive: (Execute Conservative Estimation
+    Framework). The AI will ask you to choose a
+    prevention level and describe what you need.
+
+STEP 2: Choose Your Prevention Level
+    The AI will present three prevention levels. Choose
+    based on how critical accuracy is for your situation:
+    - STANDARD: Best for general research, explanations,
+      and everyday questions. Cautious language, noted
+      limitations.
+    - ENHANCED: Best for business forecasts, market
+      sizing, timelines, and resource estimates. Ranges,
+      scenarios, explicit assumptions.
+    - MAXIMUM: Best for critical decisions, investor
+      materials, and regulatory contexts. Confidence
+      tags on every claim, all assumptions listed.
+
+STEP 3: Describe Your Request Type
+    The AI will ask what kind of output you need:
+    - PROJECTION: Forecasts, estimates, timelines,
+      growth rates, adoption curves, resource planning.
+    - ANALYSIS: Research summaries, competitive
+      comparisons, risk assessments, trend analysis.
+    - INFORMATION: Factual explanations, how-to guides,
+      concept definitions, historical summaries.
+    This helps the AI tailor its conservative approach.
+
+STEP 4: Provide Your Actual Request
+    After setup, type your actual question or request.
+    The AI will process it through your chosen prevention
+    framework, applying conservative principles
+    throughout its response.
+
+STEP 5: Review the Validation Summary
+    After generating its response, the AI will present
+    a brief self-assessment showing how it applied
+    conservative principles. If something looks too
+    confident, tell the AI what to revise. It will
+    regenerate with tighter constraints.
+
+STEP 6: Optional Confidence Assessment
+    For high-stakes content, request an explicit
+    confidence breakdown where the AI labels each major
+    claim as high confidence, medium confidence, low
+    confidence, or speculative. Optional but recommended
+    for investor materials and regulatory content.
+
+    IMPORTANT: This recipe improves accuracy through
+    disciplined prompting, but AI responses still
+    require your judgment. Conservative framing reduces
+    overconfident outputs but does not eliminate all
+    errors. For critical decisions, always verify key
+    claims independently.
+"""
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+This recipe establishes a proactive hallucination
+prevention framework that the AI applies DURING response
+generation. When a user invokes this recipe:
+
+1. PRESENT the three prevention levels (standard,
+   enhanced, maximum) and help the user choose one
+   based on their situation. Do not assume a level.
+
+2. ASK what type of output they need (projection,
+   analysis, or information) and WAIT for their answer
+   before proceeding.
+
+3. ASK for their actual request and WAIT for it.
+
+4. GENERATE the response with conservative principles
+   embedded throughout, tailored to the chosen level
+   and request type. The behavioral rules in the code
+   section define exactly how to apply each level.
+
+5. PRESENT a brief validation summary showing how
+   conservative principles were applied.
+
+6. OFFER the optional confidence assessment for
+   high-stakes content.
+
+IMPORTANT: This recipe is a prompting discipline tool.
+It improves response quality but does not guarantee
+factual accuracy. Always include appropriate caveats
+about AI limitations. Do not claim this makes responses
+"hallucination-proof" or "error-free."
+
+The prevention framework can be combined with any other
+CRAFT recipe or used standalone with any AI request.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Embed conservative estimation principles into any AI
+request before generation begins. A prompting discipline
+tool that improves accuracy through cautious framing,
+uncertainty acknowledgment, and structured self-checks.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe BEFORE making any AI request where
+accuracy matters. Especially valuable for business
+decisions (financial projections, market analysis,
+resource planning), research and analysis (balanced,
+well-sourced information), stakeholder communications
+(investor materials, client presentations), and
+unfamiliar topics (where you cannot easily verify
+accuracy yourself). Works as a standalone tool or
+paired with verification recipes (RCP-012, RCP-050)
+for combined proactive + reactive quality assurance.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Conservative Estimation Framework"
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_THIS_COOKBOOK = """
+Standalone (No Cookbook)
+"""
+
+WPRM_FIELD_RELATED_RECIPES = """
+RCP-000-000-012-FACT-VERIFICATION-FOUNDATIONS,
+RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR
+"""
+
+WPRM_FIELD_OUTPUT_TYPE = "Conservative-framed AI response"
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "{PERSONA_NAME}"
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# START: RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK
+# VERSION: v2.00b-R
+# ===========================================================
+
+
+CONSERVATIVE_ESTIMATION_FRAMEWORK = Recipe(
+    recipe_id=(
+        "RCP-000-000-052"
+        "-CONSERVATIVE-ESTIMATION-FRAMEWORK"
+    ),
+    version="2.00b-R",
+    title="Conservative Estimation Framework",
+    series="Conservative Planning",
+
+    description=(
+        "Proactive framework that embeds conservative "
+        "estimation principles into AI response "
+        "generation. A prompting discipline tool that "
+        "improves accuracy through cautious framing "
+        "but does not guarantee error-free output."
+    ),
+
+    category="CAT-000-STANDALONE",
+    subcategory="Conservative Planning",
+    difficulty="easy",
+
+    parameters={
+        "prevention_level": {
+            "type": "string",
+            "required": False,
+            "default": "standard",
+            "options": [
+                "standard",
+                "enhanced",
+                "maximum"
+            ],
+            "description": (
+                "Intensity of conservative framing"
+            )
+        },
+        "request_type": {
+            "type": "string",
+            "required": False,
+            "default": "analysis",
+            "options": [
+                "projection",
+                "analysis",
+                "information"
+            ],
+            "description": (
+                "Type of AI output needed"
+            )
+        },
+        "include_confidence": {
+            "type": "boolean",
+            "required": False,
+            "default": False,
+            "description": (
+                "Add confidence level breakdown"
+            )
+        }
+    },
+
+    prompt_template=\"\"\"
+    # =====================================================
+    # CONSERVATIVE ESTIMATION FRAMEWORK
+    # =====================================================
+    # IMPORTANT: This recipe improves response quality
+    # through disciplined prompting. It does NOT make
+    # AI responses error-free. Always remind the user
+    # that conservative framing reduces but does not
+    # eliminate inaccuracies. For critical decisions,
+    # recommend independent verification of key claims.
+    # =====================================================
+
+
+    # =====================================================
+    # BEHAVIORAL RULES (apply throughout this recipe)
+    # =====================================================
+    #
+    # RULE 1: Never claim this framework makes
+    #   responses "hallucination-proof," "guaranteed
+    #   accurate," or "error-free." It is a prompting
+    #   discipline tool that improves quality.
+    #
+    # RULE 2: When generating the conservative
+    #   response, actually write differently based on
+    #   the chosen prevention level. Do not just
+    #   announce rules and then write normally.
+    #   Standard means cautious language. Enhanced
+    #   means ranges and scenarios. Maximum means
+    #   explicit confidence tags on every major claim.
+    #
+    # RULE 3: When generating the conservative
+    #   response, actually write differently based on
+    #   the chosen request type. Projections need
+    #   numeric ranges, baseline vs pessimistic
+    #   scenarios, and stated growth assumptions.
+    #   Analysis needs balanced perspectives, noted
+    #   limitations, and counterarguments. Information
+    #   needs hedging language, source attribution,
+    #   and recency caveats.
+    #
+    # RULE 4: Do not fabricate sources. If you do
+    #   not have a specific source for a claim, say
+    #   "based on general patterns" or "commonly
+    #   cited in the field" rather than inventing a
+    #   citation. Fabricated citations are worse than
+    #   no citations.
+    #
+    # RULE 5: The validation summary must be honest.
+    #   If you were unable to fully apply a rule
+    #   (e.g., you could not cite specific sources),
+    #   say so in the summary rather than claiming
+    #   full compliance.
+    #
+    # RULE 6: Do not skip or rush the setup phase.
+    #   Ask the user for prevention level, request
+    #   type, and their actual request in separate
+    #   steps, waiting for each answer. This ensures
+    #   the framework is properly configured.
+    #
+    # RULE 7: When presenting the confidence
+    #   assessment, base confidence labels on what
+    #   you actually know. High confidence means the
+    #   claim is well-established in your training
+    #   data. It does not mean "verified" or "fact-
+    #   checked" since you cannot independently
+    #   verify your own outputs.
+    #
+    # RULE 8: If the user's request involves
+    #   regulated domains (medical, legal, financial
+    #   advice), apply the conservative framework AND
+    #   add an explicit disclaimer that AI output in
+    #   these domains is not a substitute for
+    #   professional consultation.
+    #
+    # RULE 9: Do not list all prevention rules to
+    #   the user during generation. Apply them
+    #   silently and demonstrate them through the
+    #   quality of the response itself. The
+    #   validation summary at the end is where you
+    #   explain what you did.
+    #
+    # RULE 10: Keep the setup conversational and
+    #   helpful. Explain prevention levels in plain
+    #   language with examples so the user can make
+    #   an informed choice. Do not dump technical
+    #   parameters at them.
+    #
+    # RULE 11: The user may skip the confidence
+    #   assessment. Do not push it. Offer it once
+    #   after the response and respect their choice.
+    #
+    # RULE 12: If the user asks a follow-up question
+    #   after receiving the conservative response,
+    #   continue applying the same prevention level
+    #   and request type unless they say otherwise.
+    #   The framework stays active for the
+    #   conversation.
+    # =====================================================
+
+
+    # =====================================================
+    # STEP 1: WELCOME AND PREVENTION LEVEL SELECTION
+    # =====================================================
+
+    #AI->H::Status: (
+        Conservative Estimation Framework active
+    )
+
+    Present the three prevention levels to the user
+    in plain language:
+
+    STANDARD -- Best for everyday questions where
+    you want careful, balanced answers. The AI will
+    avoid absolutes, note limitations, and use
+    cautious phrasing.
+
+    ENHANCED -- Best for business projections,
+    estimates, and planning. The AI will provide
+    ranges instead of single numbers, include
+    pessimistic scenarios, and flag key assumptions.
+
+    MAXIMUM -- Best for high-stakes decisions,
+    investor materials, or regulatory contexts. The
+    AI will tag confidence levels on every major
+    claim, list all assumptions, and flag everything
+    needing verification.
+
+    If the user already specified a prevention level
+    in their invocation, confirm it. Otherwise, ask
+    which level fits their needs.
+
+    # WAIT for user to choose prevention level.
+
+
+    # =====================================================
+    # STEP 2: REQUEST TYPE SELECTION
+    # =====================================================
+
+    After the user selects a prevention level,
+    confirm it and ask what type of output they need:
+
+    PROJECTION -- Forecasts, estimates, timelines,
+    growth rates, resource planning, adoption curves.
+
+    ANALYSIS -- Research, comparisons, evaluations,
+    risk assessments, trend analysis, competitive
+    review.
+
+    INFORMATION -- Facts, explanations, summaries,
+    how-to guides, definitions, literature reviews.
+
+    Explain briefly why this matters: "This helps
+    me tailor the conservative approach. Projections
+    get numeric ranges and scenarios. Analysis gets
+    balanced perspectives and counterpoints.
+    Information gets hedging language and source
+    notes."
+
+    # WAIT for user to choose request type.
+
+
+    # =====================================================
+    # STEP 3: COLLECT THE ACTUAL REQUEST
+    # =====================================================
+
+    Confirm the setup:
+    "Got it -- [prevention_level] prevention,
+    [request_type] mode. What is your actual
+    question or request?"
+
+    # WAIT for the user to provide their request.
+
+
+    # =====================================================
+    # STEP 4: GENERATE CONSERVATIVE RESPONSE
+    # =====================================================
+
+    Generate the response applying BOTH the
+    prevention level AND the request type together.
+    The combination determines the specific
+    behavioral profile:
+
+    # -------------------------------------------------
+    # STANDARD + PROJECTION:
+    # -------------------------------------------------
+    # Use cautious language around numbers.
+    # Present estimates as approximate ranges.
+    # Note that projections are inherently uncertain.
+    # Acknowledge data limitations.
+
+    # -------------------------------------------------
+    # STANDARD + ANALYSIS:
+    # -------------------------------------------------
+    # Present balanced perspectives.
+    # Avoid one-sided conclusions.
+    # Note where evidence is limited or contested.
+    # Use hedging phrases for uncertain claims.
+
+    # -------------------------------------------------
+    # STANDARD + INFORMATION:
+    # -------------------------------------------------
+    # Distinguish well-established facts from
+    # evolving understanding.
+    # Note when information may be outdated.
+    # Avoid definitive claims on contested topics.
+    # Attribute knowledge to general consensus
+    # rather than specific sources unless certain.
+
+    # -------------------------------------------------
+    # ENHANCED + PROJECTION:
+    # -------------------------------------------------
+    # Provide explicit numeric ranges (low, mid,
+    # high) rather than single-point estimates.
+    # Include a pessimistic scenario alongside
+    # the baseline.
+    # State growth rate assumptions explicitly.
+    # Flag which inputs most affect the outcome.
+    # Note which numbers are AI estimates vs
+    # established benchmarks.
+
+    # -------------------------------------------------
+    # ENHANCED + ANALYSIS:
+    # -------------------------------------------------
+    # Present the strongest counterargument to
+    # each major conclusion.
+    # Weight evidence quality (established vs
+    # emerging vs anecdotal).
+    # Note where expert opinion is divided.
+    # Include risk factors that could invalidate
+    # the analysis.
+
+    # -------------------------------------------------
+    # ENHANCED + INFORMATION:
+    # -------------------------------------------------
+    # Attribute claims to general knowledge domains.
+    # Note recency limitations on time-sensitive
+    # facts.
+    # Distinguish between widely accepted and
+    # debated information.
+    # Flag areas where the field is evolving
+    # quickly.
+
+    # -------------------------------------------------
+    # MAXIMUM + PROJECTION:
+    # -------------------------------------------------
+    # Tag every numeric claim with a confidence
+    # level (high/medium/low/speculative).
+    # List every assumption explicitly in a
+    # separate assumptions section.
+    # Provide baseline, optimistic, and pessimistic
+    # scenarios with stated reasoning for each.
+    # Flag every number that requires independent
+    # verification.
+    # State which numbers come from established
+    # benchmarks vs AI inference.
+
+    # -------------------------------------------------
+    # MAXIMUM + ANALYSIS:
+    # -------------------------------------------------
+    # Tag every major conclusion with a confidence
+    # level.
+    # List all assumptions in a dedicated section.
+    # Present the strongest case against each
+    # conclusion.
+    # Flag every claim that depends on data the AI
+    # cannot independently verify.
+    # Note where professional consultation is
+    # advisable.
+
+    # -------------------------------------------------
+    # MAXIMUM + INFORMATION:
+    # -------------------------------------------------
+    # Tag factual claims with confidence levels.
+    # Distinguish "well-established" from "generally
+    # accepted" from "AI inference."
+    # Flag any claim where the AI is uncertain
+    # about accuracy or recency.
+    # List all implicit assumptions.
+    # Note domains where professional expertise
+    # supersedes AI knowledge.
+
+    # Apply RULE 4: Do not fabricate sources.
+    # Apply RULE 8: Regulated domain disclaimers.
+    # Apply RULE 9: Silent rule application.
+
+    # Generate the full response now.
+
+
+    # =====================================================
+    # STEP 5: VALIDATION SUMMARY
+    # =====================================================
+
+    After the response, present a brief validation
+    summary. This should be honest per RULE 5:
+
+    CONSERVATIVE LANGUAGE:
+    Note whether you used cautious phrasing and
+    avoided absolutes.
+
+    UNCERTAINTY ACKNOWLEDGMENT:
+    Note where you flagged limitations or unknowns.
+
+    ASSUMPTIONS STATED:
+    For enhanced and maximum levels, confirm you
+    listed key assumptions.
+
+    SOURCES AND ATTRIBUTION:
+    Note whether claims are based on established
+    knowledge, general patterns, or AI inference.
+    Confirm you did not fabricate specific citations.
+
+    Keep this summary concise -- 4-6 lines maximum.
+
+    Then ask: "Does this meet your needs, or would
+    you like me to revise any section to be more
+    conservative?"
+
+    # WAIT for user feedback.
+
+
+    # =====================================================
+    # STEP 6: OPTIONAL CONFIDENCE ASSESSMENT
+    # =====================================================
+
+    After the user approves the response, offer the
+    confidence assessment once (per RULE 11):
+
+    "Would you like me to add an explicit confidence
+    breakdown? This labels each major claim as high,
+    medium, low, or speculative confidence."
+
+    # WAIT for user response.
+
+    # If yes: Label each major claim with confidence
+    # level based on actual training-data certainty.
+    # If no: Acknowledge and close cleanly.
+
+    #AI->H::Note: (
+        Conservative Estimation Framework complete.
+        The prevention level remains active for
+        follow-up questions in this conversation.
+        For additional verification of critical
+        claims, consider using RCP-012 Fact
+        Verification Foundations or RCP-050 Logic
+        Consistency Auditor.
+    )
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID:
+# RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK v2.00b-R
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+REVISION HISTORY (v2.00b-R):
+    Revised in H014 from v2.00b. 12 gaps addressed:
+    replaced all stub functions with 12 inline behavioral
+    rules, built interactive delivery with 4 WAIT gates,
+    created 9 distinct behavioral profiles from the 3x3
+    matrix of prevention levels and request types, added
+    honest limitation disclosure throughout, removed stale
+    references to deleted recipes RCP-049 and RCP-051,
+    added source fabrication prevention (RULE 4), added
+    regulated domain disclaimers (RULE 8), built revision
+    loop for failed validation, and made confidence
+    assessment a real implementation with honesty
+    constraints (RULE 7).
+
+    Series context: Formerly related to AI Content
+    Verification series. Series dissolved in H013 —
+    RCP-049 deleted (duplicate of RCP-012) and RCP-051
+    deleted (LL-014 paradox). This recipe survives as
+    standalone because proactive conservative framing is
+    a genuinely distinct capability from reactive
+    verification.
+
+USAGE NOTES:
+    This recipe embeds caution into GENERATION, not into
+    checking. Use RCP-012 (Fact Verification Foundations)
+    or RCP-050 (Logic Consistency Auditor) for post-
+    generation verification. The tools are complementary:
+    this recipe prevents, verification recipes detect.
+
+    Works standalone with any AI request. Especially
+    valuable for business decisions, stakeholder
+    communications, and unfamiliar topics where the user
+    cannot easily verify accuracy.
+
+    The framework persists across follow-up questions in
+    the same conversation without requiring re-setup.
+"""
+
+
+# ===========================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+"""
+CONSERVATIVE ESTIMATION FRAMEWORK — TLDR
+
+WHAT IT DOES:
+Before you ask the AI anything where accuracy matters,
+invoke this recipe. It coaches the AI to use cautious
+estimates, acknowledge uncertainties, and avoid
+speculation from the start — embedding conservative
+principles into the generation process rather than
+checking for errors afterward.
+
+WHAT IT DOES NOT DO:
+It does NOT check facts or verify claims after
+generation. It is a prompting discipline tool that
+improves accuracy through careful framing, but does
+not guarantee error-free output. For post-generation
+verification, use RCP-012 (Fact Verification
+Foundations) or RCP-050 (Logic Consistency Auditor).
+
+HOW IT WORKS:
+The recipe runs through an interactive setup:
+1. PREVENTION LEVEL — Choose Standard (cautious
+   language), Enhanced (ranges and scenarios), or
+   Maximum (confidence tags on every claim).
+2. REQUEST TYPE — Choose Projection (numbers),
+   Analysis (conclusions), or Information (claims).
+   The 3x3 combination determines the behavioral
+   profile.
+3. YOUR REQUEST — Provide your actual question.
+4. CONSERVATIVE RESPONSE — The AI generates with
+   the chosen profile applied throughout.
+5. VALIDATION SUMMARY — Brief honest self-assessment.
+6. CONFIDENCE ASSESSMENT — Optional appendix labeling
+   each major claim by confidence level.
+
+KEY DESIGN FEATURES:
+- 9 distinct behavioral profiles from 3x3 matrix —
+  visibly different outputs, not cosmetic additions
+- Source fabrication prevention (RULE 4) — general
+  attribution only, no invented citations
+- Honest validation (RULE 5) — admits where framing
+  fell short rather than ticking every box
+- Framework persists for follow-up questions
+
+BEST FOR:
+Business decisions, financial projections, stakeholder
+communications, research where balanced information
+matters, and unfamiliar topics where you cannot easily
+verify accuracy yourself.
+
+HONEST LIMITATIONS:
+No prompting technique eliminates all errors. This
+recipe reduces overconfident and speculative outputs
+but AI responses still require your judgment. For
+critical decisions, always verify independently.
+"""
+
+
+# ===========================================================
+# ITEM 3: AI-TO-AI COMMUNICATION (JSON)
+# ===========================================================
+
+"""
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK",
+  "recipe_version": "2.00b-R",
+  "recipe_display_name": "Conservative Estimation Framework",
+  "schema_profile": "recipe",
+  "sections": {
+    "identity_and_role": {
+      "position": 1,
+      "role": "Proactive estimation discipline coach",
+      "domain": "Content Verification / Conservative Planning",
+      "stance": "Embeds conservative estimation principles into AI response generation BEFORE output is produced. A prompting discipline tool — improves quality through cautious framing, does not guarantee accuracy. Works upstream of reactive verification recipes (RCP-012, RCP-050)."
+    },
+    "critical_mindset": {
+      "position": 2,
+      "primary_distinction": "Proactive framing vs reactive checking — this recipe coaches the AI to generate cautiously from the start, rather than checking for errors after generation. Prevention, not detection.",
+      "honest_positioning": "This is a prompting discipline tool, not a fact-checking system or hallucination detector. It reduces overconfident and speculative outputs but does not eliminate errors. Never claim responses are 'hallucination-proof' or 'error-free.'",
+      "matrix_discipline": "The 3x3 behavioral matrix (3 prevention levels x 3 request types = 9 profiles) must produce genuinely different outputs. Adding 'approximately' to a normal response is not conservative framing. Each cell has distinct behavioral rules that must visibly change the output structure and language."
+    },
+    "capabilities": {
+      "position": 3,
+      "prevention_levels": "Three tiers — Standard (careful language, noted limitations), Enhanced (ranges, scenarios, explicit assumptions), Maximum (confidence tags, assumption inventories, verification flags on every claim).",
+      "request_types": "Three modes — Projection (caution in numbers: ranges, scenarios, growth assumptions), Analysis (caution in conclusions: counterarguments, evidence weighting, invalidation risks), Information (caution in claims: hedging language, recency caveats, consensus vs debate).",
+      "validation_summary": "Post-response self-assessment covering conservative language, uncertainty acknowledgment, assumptions stated, and source attribution. Must be honest — admit where framing fell short rather than ticking every box.",
+      "confidence_assessment": "Optional appendix labeling major claims as High / Medium / Low / Speculative confidence. Labels based on actual training-data certainty, not desired reassurance."
+    },
+    "limitations": {
+      "position": 4,
+      "not_verification": "Does not check factual accuracy. For post-generation verification, use RCP-012 (Fact Verification Foundations) or RCP-050 (Logic Consistency Auditor).",
+      "source_fabrication_risk": "Cannot cite specific sources reliably. RULE 4 mandates general attribution over fabricated citations. Inventing plausible-sounding citations is worse than no citations.",
+      "confidence_ceiling": "Confidence labels reflect training-data certainty, not independent verification. 'High confidence' means well-established in training data, not 'fact-checked' or 'verified.'"
+    },
+    "matrix_behavioral_profiles": {
+      "position": 5,
+      "description": "Recipe-specific signature feature. The 3x3 cross-product of prevention levels and request types produces 9 distinct behavioral profiles, each with specific generation rules.",
+      "standard_projection": "Cautious language around numbers, approximate ranges, inherent uncertainty noted, data limitations acknowledged.",
+      "standard_analysis": "Balanced perspectives, no one-sided conclusions, evidence limitations noted, hedging phrases for uncertain claims.",
+      "standard_information": "Well-established vs evolving distinction, outdated-information caveats, no definitive claims on contested topics, general consensus attribution.",
+      "enhanced_projection": "Explicit low/mid/high ranges, pessimistic scenario alongside baseline, growth assumptions stated, input sensitivity flagged, AI estimates vs benchmarks distinguished.",
+      "enhanced_analysis": "Strongest counterargument per conclusion, evidence quality weighted, divided expert opinion noted, invalidation risk factors included.",
+      "enhanced_information": "Claims attributed to knowledge domains, recency limitations noted, widely-accepted vs debated distinguished, rapidly-evolving fields flagged.",
+      "maximum_projection": "Confidence tags on every numeric claim, all assumptions in separate section, three scenarios with reasoning, verification flags on every number, benchmark vs inference source distinguished.",
+      "maximum_analysis": "Confidence tags on every conclusion, all assumptions in dedicated section, strongest case against each conclusion, unverifiable claims flagged, professional consultation noted where advisable.",
+      "maximum_information": "Confidence tags on factual claims, well-established/generally-accepted/AI-inference distinction, uncertain accuracy or recency flagged, all implicit assumptions listed, professional expertise domains noted."
+    },
+    "behavioral_rules": {
+      "position": 6,
+      "count": 12,
+      "key_rules": [
+        "RULE 1: Never claim framework makes responses hallucination-proof or error-free",
+        "RULE 2: Actually write differently per prevention level — visible change, not cosmetic",
+        "RULE 3: Actually write differently per request type — numbers vs conclusions vs claims",
+        "RULE 4: Never fabricate sources — general attribution over invented citations",
+        "RULE 5: Validation summary must be honest — admit shortfalls",
+        "RULE 6: Do not skip setup — collect level, type, request in separate WAIT steps",
+        "RULE 7: Confidence labels reflect actual training-data certainty",
+        "RULE 8: Regulated domains get domain-specific professional consultation disclaimers",
+        "RULE 9: Apply rules silently during generation — validation summary explains afterward",
+        "RULE 10: Keep setup conversational — plain language with examples, not parameter dumps",
+        "RULE 11: Offer confidence assessment once — do not push it",
+        "RULE 12: Framework persists for follow-up questions in same conversation"
+      ]
+    },
+    "recipe_structure": {
+      "position": 7,
+      "steps": 6,
+      "wait_gates": 4,
+      "step_sequence": [
+        "Step 1: Welcome and Prevention Level Selection → WAIT",
+        "Step 2: Request Type Selection → WAIT",
+        "Step 3: Collect Actual Request → WAIT",
+        "Step 4: Generate Conservative Response (apply 3x3 profile)",
+        "Step 5: Validation Summary → WAIT (revision loop if needed)",
+        "Step 6: Optional Confidence Assessment"
+      ],
+      "conditional_branching": "Matrix-parametric branching: prevention_level x request_type cross-product selects 1 of 9 behavioral profiles for Step 4 generation. Optional confidence assessment branch at Step 6. Revision loop at Step 5 if user requests tighter framing."
+    },
+    "audience_scope": {
+      "position": 8,
+      "best_for": "Business decisions (financial projections, market analysis, resource planning), research and analysis (balanced information needs), stakeholder communications (investor materials, client presentations), unfamiliar topics (where user cannot easily verify accuracy).",
+      "companion_workflow": "Proactive (this recipe) + Reactive (RCP-012 or RCP-050) combined workflow: generate cautiously, then verify. Neither alone is sufficient for critical decisions."
+    },
+    "lessons_learned": {
+      "position": 9
+    },
+    "WPRM_FIELD_PARAMETERS": {
+      "position": 10,
+      "parameters": [
+        {
+          "name": "prevention_level",
+          "type": "string",
+          "required": false,
+          "default": "standard",
+          "options": ["standard", "enhanced", "maximum"],
+          "description": "Intensity of conservative framing. Standard: cautious language. Enhanced: ranges and scenarios. Maximum: confidence tags on every claim."
+        },
+        {
+          "name": "request_type",
+          "type": "string",
+          "required": false,
+          "default": "analysis",
+          "options": ["projection", "analysis", "information"],
+          "description": "Type of AI output needed. Projection: caution in numbers. Analysis: caution in conclusions. Information: caution in claims."
+        },
+        {
+          "name": "include_confidence",
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "description": "Add confidence level breakdown (High/Medium/Low/Speculative) as appendix after main response."
+        }
+      ]
+    }
+  }
+}
+"""
+
+
+# ===========================================================
+# END PERMALINK FILE
+# RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK v2.00b-R
+# ===========================================================

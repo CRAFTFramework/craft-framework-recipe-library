@@ -1,0 +1,1456 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-041
+# Recipe Name:  Competitor Differentiator
+# Version:      v3.00a
+# Series:       Niche Discovery (5 of 5) — Capstone
+# Category:     Business Strategy
+# Subcategory:  Competitive Intelligence
+# Difficulty:   Advanced
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Consolidated: Absorbs RCP-042, RCP-043, RCP-044
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H071
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-041-COMPETITOR-DIFFERENTIATOR-v3_00a.txt
+# Generated:    2026-04-26
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-041
+# Recipe Name: COMPETITOR-DIFFERENTIATOR
+# Version: v3.00a
+# Status: REVISED (H011 - Deep Research Integration)
+#         CONSOLIDATED: Absorbs RCP-042, RCP-043, RCP-044
+# Series: Niche Discovery (5 of 5)
+# Previous Version: v2.00a (H011 audit)
+# Absorbed Recipes:
+#   RCP-042 Competitive Landscape Analyzer v2.00a
+#   RCP-043 Competitor Content Gap Finder v2.00a
+#   RCP-044 Competitor Customer Voice Miner v2.00a
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "COMPETITOR-DIFFERENTIATOR"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Competitor Differentiator"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-041"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v3.00a"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED - CONSOLIDATED"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Business Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Competitive Intelligence"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Niche Discovery Series (5 of 5)"
+WPRM_FIELD_SERIES_ORDER = "037 -> 038 -> 039 -> 040 -> 041 (this)"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Comprehensive competitive intelligence powered by Deep
+Research. Analyzes competitors across positioning, content
+strategy, SEO, and customer voice, then synthesizes a
+differentiation strategy with messaging pillars and an
+action plan. Combines the capabilities of four former
+recipes into one DR-integrated experience.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe is the capstone of the Niche Discovery series,
+transforming competitive research into strategic positioning
+that makes your business stand out. It consolidates four
+competitive intelligence capabilities into one Deep
+Research-powered experience:
+
+- Competitive landscape analysis (from RCP-042)
+- Content and SEO gap identification (from RCP-043)
+- Customer voice and review mining (from RCP-044)
+- Differentiation strategy synthesis (original RCP-041)
+
+STAGE 1 - RESEARCH PREPARATION:
+The recipe gathers context about your business and
+competitors through intake questions (quick or detailed),
+then generates tailored Deep Research prompts covering
+the competitive angles most relevant to your situation:
+landscape positioning, content strategy, customer
+sentiment, SEO performance, and more. You run these
+through any DR tool and return with the reports.
+We recommend 2-5 reports for thorough coverage.
+
+STAGE 2 - DATA-INFORMED COMPETITIVE INTELLIGENCE:
+With real research attached, the recipe reads your
+reports and guides you through: competitive landscape
+mapping with evidence, multi-dimensional gap analysis
+(positioning, content, experience, customer sentiment),
+differentiation strategy synthesis, messaging pillar
+development, and a prioritized action plan.
+
+The result: a differentiation strategy grounded in
+real competitive intelligence, not AI-fabricated
+assessments.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Have chosen a niche and need to understand your
+  competitive landscape with real data
+- Want a differentiation strategy grounded in actual
+  competitor analysis and customer voice data
+- Are planning a product launch, website redesign,
+  content strategy, or marketing initiative
+- Need comprehensive competitive intelligence covering
+  positioning, content, SEO, and customer sentiment
+- Have completed earlier Niche Discovery recipes or have
+  your own niche research ready
+
+Do NOT use if you:
+- Have not chosen a niche yet (start with RCP-038)
+- Want the AI to visit competitor websites for you (the
+  AI cannot access external sites - Deep Research provides
+  this intelligence)
+- Need a quick competitive check without research depth
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "intake_mode": {
+        "type": "string",
+        "required": True,
+        "options": ["quick", "detailed"],
+        "description": "Quick: 5 essential questions. Detailed: 12 questions for comprehensive competitive DR prompts.",
+        "default": "quick"
+    },
+    "your_business": {
+        "type": "string",
+        "required": True,
+        "description": "Your business name and brief description of what you offer."
+    },
+    "niche_market": {
+        "type": "string",
+        "required": True,
+        "description": "Your specific niche (be specific - not just 'health and wellness')."
+    },
+    "competitors": {
+        "type": "list",
+        "required": True,
+        "description": "3-5 direct competitors. Include names and websites if known.",
+        "min": 3,
+        "max": 5
+    },
+    "analysis_depth": {
+        "type": "list",
+        "required": False,
+        "options": [
+            "landscape",
+            "content_seo",
+            "customer_voice",
+            "all"
+        ],
+        "description": "Which competitive angles to prioritize. Default: AI decides based on intake.",
+        "default": "AI decides"
+    },
+    "known_strengths": {
+        "type": "string",
+        "required": False,
+        "description": "Your existing competitive advantages, if any.",
+        "default": "None specified"
+    },
+    "deep_research_files": {
+        "type": "file_list",
+        "required": True,
+        "description": "2-5 Deep Research report files (PDF, TXT, or DOC). Can include reports from earlier Niche Discovery recipes. Accepted from Claude, Gemini, ChatGPT, or any combination.",
+        "min_recommended": 2,
+        "max_recommended": 5
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe consolidates four competitive intelligence
+capabilities (landscape analysis, content/SEO gaps,
+customer voice mining, and differentiation strategy) into
+one DR-integrated experience.
+
+STAGE 1 (Phases 0A-0B): Intake and DR prompt generation.
+The AI determines which competitive angles are most
+relevant and generates 2-5 tailored prompts covering
+landscape positioning, content strategy, customer
+reviews, SEO performance, or other angles. The AI
+decides the mix based on intake answers.
+
+STAGE 2 (Phases 1-5): Data-informed competitive
+intelligence. The AI reads all DR reports and guides
+through landscape mapping, multi-dimensional gap analysis,
+differentiation strategy, messaging development, and
+action planning.
+
+CRITICAL: The AI cannot visit competitor websites, read
+their content, check their SEO rankings, or access their
+customer reviews. ALL competitive intelligence comes from
+the DR reports. The AI must cite DR sources and clearly
+flag when its analysis goes beyond what the research
+provides.
+
+CRITICAL: Competitive assessments without evidence are
+fabrications. "Competitor A has poor mobile experience"
+is only valid if the DR reports say so. Without evidence,
+the AI should say "Your research did not cover Competitor
+A's mobile experience - consider adding this to future
+research."
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-041 COMPETITOR DIFFERENTIATOR v3.00a
+# Deep Research Integrated Edition
+# Consolidated: 042 + 043 + 044
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: Ask only ONE question at a time. Wait for the
+#         user's response before asking the next question.
+#
+# RULE 2: Do NOT analyze competitors or generate competitive
+#         assessments until Deep Research files have been
+#         read. Competitive intelligence without data is
+#         fabrication.
+#
+# RULE 3: When citing competitive findings, indicate which
+#         DR report the information comes from (e.g., "Your
+#         Gemini research on competitor reviews found...").
+#
+# RULE 4: When the DR reports do not cover a competitive
+#         dimension, say so plainly: "Your research did not
+#         address [topic] for [competitor]. I will note
+#         this as a gap in your competitive intelligence."
+#
+# RULE 5: Do NOT fabricate competitor strengths, weaknesses,
+#         market positions, SEO rankings, content quality
+#         assessments, customer sentiment, or any other
+#         competitive metric. Use only what the DR reports
+#         provide. If the DR reports contain estimates or
+#         assessments, present them as "per your research."
+#
+# RULE 6: Do NOT generate Deep Research prompts until
+#         intake questions are answered. Competitive DR
+#         prompts must target specific competitors and
+#         angles relevant to this user's situation.
+#
+# RULE 7: The number and focus of recommended DR prompts
+#         (2-5) is YOUR decision based on what you learn
+#         during intake. Wider competitive landscape or
+#         less user knowledge = more prompts recommended.
+#
+# RULE 8: DR prompts must be platform-agnostic - written
+#         to work with Claude Deep Research, Gemini Deep
+#         Research, ChatGPT Deep Research, or any other
+#         deep research tool.
+#
+# RULE 9: When the user returns with DR files, read ALL
+#         attached files before proceeding. If they bring
+#         files from RCP-038, 039, or 040, extract
+#         competitively relevant findings from those too.
+#
+# RULE 10: Maintain the WAIT gate pattern - do not skip
+#          ahead or combine phases without user permission.
+#
+# RULE 11: The differentiation strategy must be grounded
+#          in BOTH competitive evidence (what competitors
+#          do/don't do, per DR) AND user capabilities
+#          (what the user can authentically deliver). A
+#          differentiator the user cannot execute is
+#          worthless.
+#
+# RULE 12: Demand/feasibility/defensibility ratings in
+#          gap analysis must cite evidence. "Demand: HIGH"
+#          requires DR evidence of demand. If no evidence,
+#          say "Demand: UNKNOWN - needs validation."
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 0A: INTAKE - GATHER COMPETITIVE CONTEXT
+# ===========================================================
+
+# STEP 1: WELCOME AND MODE SELECTION
+# -----------------------------------------------------------
+
+Display welcome message:
+
+    COMPETITOR DIFFERENTIATOR - Deep Research Edition
+    ================================================
+
+    This recipe builds a comprehensive competitive
+    intelligence picture and synthesizes a differentiation
+    strategy for your business, all powered by real
+    research data.
+
+    It covers:
+    - Competitive landscape mapping and positioning
+    - Content and SEO gap identification
+    - Customer voice and review intelligence
+    - Differentiation strategy with messaging pillars
+    - Prioritized action plan
+
+    Here is how it works:
+    1. I ask about your business and competitors
+    2. I generate Deep Research prompts targeting the
+       competitive angles most relevant to you
+    3. You run those through any DR tool (Claude,
+       Gemini, ChatGPT, or a mix)
+    4. You return with research files attached
+    5. We build your competitive intelligence and
+       differentiation strategy using real data
+
+    HAVE DR FILES FROM EARLIER RECIPES?
+    Bring any reports from RCP-038, 039, or 040 -
+    I will extract competitively relevant findings.
+
+    We recommend 2-5 Deep Research reports for
+    thorough competitive coverage.
+
+    Which intake mode would you prefer?
+
+    [1] QUICK - 5 essential questions (faster, good
+        if you know your competitors well)
+
+    [2] DETAILED - 12 questions (produces more
+        targeted competitive research prompts, best
+        for thorough competitive intelligence)
+
+WAIT for user to select mode.
+
+
+# STEP 2A: QUICK INTAKE (if user selected [1])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What is your business and what do you offer?
+        (name, products/services, target audience)
+
+    Q2: What is your specific niche? (e.g., "premium
+        meal planning for women over 40" not just
+        "health and wellness")
+
+    Q3: Who are your 3-5 main competitors? For each,
+        share: name, website (if known), and a brief
+        description of what they offer. (If you know
+        fewer than 3, share what you know and I will
+        help identify others.)
+
+    Q4: What do you think your current strengths are
+        compared to these competitors? (Or "I am not
+        sure yet" is fine.)
+
+    Q5: What is your main goal from this analysis?
+        [a] Understand the overall competitive landscape
+        [b] Find content and SEO opportunities
+        [c] Understand what competitors' customers
+            think of them
+        [d] Build a complete differentiation strategy
+        [e] All of the above
+
+After all 5 answers collected, proceed to Phase 0B.
+
+
+# STEP 2B: DETAILED INTAKE (if user selected [2])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What is your business and what do you offer?
+
+    Q2: What is your specific niche?
+
+    Q3: Who are your 3-5 direct competitors?
+        (name, website, what they offer)
+
+    Q4: Are there any indirect competitors - businesses
+        solving the same problem differently? (DIY
+        solutions, adjacent market players, alternative
+        approaches)
+
+    Q5: What do you know about your competitors'
+        strengths? What do they do well?
+
+    Q6: What weaknesses or gaps have you noticed in
+        their offerings? (things they get wrong, miss,
+        or ignore)
+
+    Q7: Do you know anything about how their customers
+        feel about them? (reviews, complaints, praise
+        you have seen)
+
+    Q8: How does your pricing compare to competitors?
+        (cheaper, similar, premium, not set yet)
+
+    Q9: What content or marketing do your competitors
+        produce? (blogs, videos, social media, email,
+        paid ads - share what you have noticed)
+
+    Q10: What do you think your current strengths are
+         compared to these competitors?
+
+    Q11: What is your main goal from this analysis?
+         [a] Landscape overview
+         [b] Content and SEO opportunities
+         [c] Customer sentiment intelligence
+         [d] Full differentiation strategy
+         [e] All of the above
+
+    Q12: What would make this analysis most useful to
+         you right now? What decisions are you trying
+         to make?
+
+After all 12 answers collected, proceed to Phase 0B.
+
+
+# ===========================================================
+# PHASE 0B: GENERATE COMPETITIVE DR PROMPTS
+# ===========================================================
+
+# STEP 3: ANALYZE INTAKE AND DESIGN RESEARCH STRATEGY
+# -----------------------------------------------------------
+
+Based on the user's intake answers AND their stated
+goal, determine:
+
+    a) How many DR prompts to recommend (2-5):
+       - User has strong competitive knowledge, narrow
+         goal = 2-3 prompts
+       - User has moderate knowledge, broad goals
+         = 3-4 prompts
+       - User is early-stage, wants comprehensive
+         intelligence = 4-5 prompts
+
+    b) Which competitive research angles to cover.
+       ALWAYS include at least one landscape prompt.
+       Then add angles based on user's goal and gaps:
+
+       - COMPETITIVE LANDSCAPE AND POSITIONING: Who
+         are the key players? How are they positioned?
+         What are their value propositions, pricing
+         models, target audiences, and brand
+         personalities? Market share signals. Emerging
+         competitors. (Core of RCP-042)
+
+       - CONTENT AND SEO STRATEGY: What content do
+         competitors produce? What topics do they
+         cover? What keywords do they appear to target?
+         Where are the content gaps? What formats do
+         they use? Publishing frequency. Content
+         quality signals. (Core of RCP-043)
+
+       - CUSTOMER VOICE AND REVIEWS: What do customers
+         say about each competitor? Common complaints,
+         praised features, unmet needs expressed in
+         reviews. Review sentiment patterns. Customer
+         language and terminology. Review platforms
+         specific to this industry. (Core of RCP-044)
+
+       - PRICING AND BUSINESS MODEL: How do competitors
+         price? What is included at each tier? Where
+         are the pricing gaps? What business models do
+         they use? Free vs paid, subscription vs
+         one-time, service tiers.
+
+       - MARKETING AND ACQUISITION: How do competitors
+         reach customers? Advertising channels, social
+         media strategy, partnership approaches,
+         influencer use, lead generation tactics.
+
+       - COMPETITIVE WEAKNESSES: Specific focus on
+         what competitors get wrong, what their
+         customers complain about, and where they are
+         vulnerable to displacement.
+
+# STEP 4: PRESENT COMPETITIVE DR PROMPTS
+# -----------------------------------------------------------
+
+Present the prompts to the user:
+
+    DEEP RESEARCH PROMPTS - COMPETITIVE INTELLIGENCE
+    ====================================================
+
+    Based on your business, competitors, and goals, I
+    recommend running [N] Deep Research reports to build
+    a comprehensive competitive picture.
+
+    [Brief explanation of research strategy - which
+    angles you chose and why, based on the user's
+    specific situation and stated goals.]
+
+    You can run these through ANY Deep Research tool:
+    - Claude Deep Research
+    - Gemini Deep Research
+    - ChatGPT Deep Research
+    - Or a combination
+
+    TIP: For competitive intelligence, different DR
+    tools may surface different sources. Running the
+    customer voice prompt through one tool and the
+    landscape prompt through another often gives
+    complementary perspectives.
+
+    ------------------------------------------------
+
+    PROMPT [1] OF [N]: [COMPETITIVE ANGLE TITLE]
+    Purpose: [What competitive intelligence this
+    surfaces]
+
+    [Full Deep Research prompt text - MUST name the
+    specific competitors from intake. Should request
+    structured comparison data, specific examples,
+    and sources. Should be detailed enough that the
+    DR tool produces actionable competitive findings,
+    not generic industry overviews.]
+
+    ------------------------------------------------
+
+    [Repeat for each prompt]
+
+    ------------------------------------------------
+
+    WHAT TO DO NEXT:
+    1. Copy each prompt and run it in your chosen
+       Deep Research tool(s)
+    2. Save each report as a file (PDF, TXT, or DOC)
+    3. If you have DR files from earlier Niche
+       Discovery recipes, gather those too
+    4. Return to this chat and attach ALL files
+    5. Say "I am back with my research" or similar
+
+    Thorough competitive research pays for itself
+    in strategic clarity. Take your time.
+
+WAIT for user to return with DR files.
+
+
+# ===========================================================
+# PHASE 1: RESEARCH INTAKE AND COMPETITIVE MAPPING
+# ===========================================================
+# (User has returned with Deep Research files attached)
+
+# STEP 5: READ AND ACKNOWLEDGE DR FILES
+# -----------------------------------------------------------
+
+When the user returns with files:
+
+    Read ALL attached Deep Research files completely.
+    Identify which are competitive-focused and which
+    are from earlier series recipes.
+
+    Present a competitive intelligence summary:
+
+    RESEARCH RECEIVED - COMPETITIVE FINDINGS
+    ================================================
+
+    Files received: [list each with label and type]
+
+    COMPETITOR INTELLIGENCE OVERVIEW:
+
+    [For EACH named competitor]:
+
+    [COMPETITOR NAME]:
+    - Positioning: [How they present themselves -
+      cite report]
+    - Key strengths: [What the research says they
+      do well - cite report]
+    - Key weaknesses: [What the research found as
+      gaps or complaints - cite report]
+    - Customer sentiment: [If DR covered reviews -
+      cite report]
+    - Content/SEO presence: [If DR covered this -
+      cite report]
+
+    [Repeat for each competitor]
+
+    CROSS-COMPETITOR PATTERNS:
+    - [Pattern that appears across multiple competitors]
+    - [Common strength across the market]
+    - [Common weakness across the market]
+
+    GAPS IN COMPETITIVE INTELLIGENCE:
+    - [Competitor or dimension not well-covered]
+    - [Topic that needs more research]
+
+    Does this capture what your research found?
+    Anything I missed or got wrong?
+
+WAIT for user confirmation before proceeding.
+
+
+# ===========================================================
+# PHASE 2: MULTI-DIMENSIONAL GAP ANALYSIS
+# ===========================================================
+
+# STEP 6: POSITIONING GAP ANALYSIS
+# -----------------------------------------------------------
+
+    COMPETITIVE GAP ANALYSIS: POSITIONING
+    ================================================
+
+    Based on your research, here is how the market
+    is positioned and where the gaps are:
+
+    POSITIONING MAP:
+    [Describe where each competitor sits on the most
+    relevant dimensions for this market. Use dimensions
+    suggested by the DR data - e.g., price vs depth,
+    DIY vs done-for-you, generalist vs specialist.
+    Cite DR evidence for each placement.]
+
+    YOUR POSITION: [Where the user currently sits or
+    could sit, based on their stated strengths and
+    offerings]
+
+    POSITIONING GAPS IDENTIFIED:
+    For each gap:
+    - GAP: [Description of unclaimed positioning space]
+    - EVIDENCE: [What DR data shows this space is open
+      - cite report]
+    - DEMAND SIGNAL: [Evidence of customer interest
+      in this position, or UNKNOWN if DR did not cover]
+    - YOUR FIT: [How well the user's capabilities
+      match this gap]
+
+    Which of these positioning gaps interests you
+    most? (Or should we continue to content/experience
+    gaps first?)
+
+WAIT for user response.
+
+# STEP 7: CONTENT AND EXPERIENCE GAP ANALYSIS
+# -----------------------------------------------------------
+
+[Include this section if DR data covers content/SEO
+strategy. If not, note the gap and move to Step 8.]
+
+    COMPETITIVE GAP ANALYSIS: CONTENT AND EXPERIENCE
+    ================================================
+
+    CONTENT LANDSCAPE (from your research):
+    [Summary of what competitors produce, how often,
+    what topics, what formats - all from DR data]
+
+    CONTENT GAPS IDENTIFIED:
+    For each gap:
+    - GAP: [Topic, format, or audience not well-served
+      by competitor content]
+    - EVIDENCE: [What DR data shows - cite report]
+    - OPPORTUNITY: [How the user could fill this gap]
+
+    [If DR covered SEO]:
+    SEO OPPORTUNITIES:
+    - [Keyword or topic area where competitors are
+      weak - cite DR evidence]
+    - [Content type that could capture search traffic]
+
+    EXPERIENCE GAPS:
+    [If DR data covers customer experience, service
+    quality, or user experience]:
+    - GAP: [Experience dimension competitors miss]
+    - EVIDENCE: [From DR - cite report]
+
+WAIT for user response.
+
+# STEP 8: CUSTOMER VOICE ANALYSIS
+# -----------------------------------------------------------
+
+[Include this section if DR data covers customer reviews
+and sentiment. If not, note the gap and move to Phase 3.]
+
+    COMPETITIVE GAP ANALYSIS: CUSTOMER VOICE
+    ================================================
+
+    What competitors' customers are saying:
+
+    [For EACH competitor with review data in DR]:
+
+    [COMPETITOR NAME] - Customer Sentiment:
+
+    TOP COMPLAINTS (from your research):
+    - [Complaint theme - cite report]
+      Customer language: "[Paraphrase or pattern
+      from DR]"
+      Your opportunity: [How to address this]
+
+    - [Complaint theme - cite report]
+      Customer language: "[Paraphrase from DR]"
+      Your opportunity: [How to address this]
+
+    TOP PRAISES (table stakes to match):
+    - [Praised aspect - cite report]
+      Implication: [What this means for your offering]
+
+    UNMET NEEDS EXPRESSED:
+    - [Need expressed by customers - cite report]
+
+    [Repeat per competitor]
+
+    CROSS-COMPETITOR CUSTOMER PATTERNS:
+    - Universal complaints: [Issues across ALL
+      competitors - these are market-level gaps]
+    - Universal expectations: [What customers treat
+      as baseline - you must match these]
+    - Differentiation opportunities: [Complaints or
+      needs unique to specific competitors]
+
+    What stands out to you from the customer voice
+    data? Any patterns that confirm or surprise you?
+
+WAIT for user response.
+
+
+# ===========================================================
+# PHASE 3: DIFFERENTIATION STRATEGY SYNTHESIS
+# ===========================================================
+
+# STEP 9: IDENTIFY PRIMARY DIFFERENTIATOR
+# -----------------------------------------------------------
+
+    DIFFERENTIATION STRATEGY
+    ================================================
+
+    Based on everything we have analyzed - positioning
+    gaps, content opportunities, customer complaints,
+    and your capabilities - here is my synthesis:
+
+    PRIMARY DIFFERENTIATOR:
+    ------------------------------------------------
+    [Single most compelling point of difference]
+
+    Why this works:
+    - Customer demand: [Cite DR evidence of demand]
+    - Competitor gap: [Cite DR evidence that
+      competitors miss this]
+    - Your authenticity: [Connection to user's stated
+      strengths and capabilities]
+    - Defensibility: [Why this is hard to copy -
+      cite evidence if available]
+
+    SUPPORTING DIFFERENTIATORS:
+    ------------------------------------------------
+    1. [Differentiator] - [Brief explanation with
+       DR evidence]
+    2. [Differentiator] - [Brief explanation with
+       DR evidence]
+    3. [Differentiator] - [Brief explanation with
+       DR evidence]
+
+    Does this differentiation direction resonate?
+    Is there anything here that does not feel
+    authentic to what you can deliver?
+
+WAIT for user confirmation or adjustment.
+
+# STEP 10: MESSAGING AND POSITIONING
+# -----------------------------------------------------------
+
+    POSITIONING AND MESSAGING
+    ================================================
+
+    POSITIONING STATEMENT:
+    "For [target customer from user's niche] who
+    [need/problem supported by DR data],
+    [user's business] is the [category] that
+    [key benefit grounded in primary differentiator]
+    because [reason to believe from user's strengths]."
+
+    MESSAGING PILLARS:
+
+    Pillar 1: [Message grounded in DR evidence]
+        Proof point: [Specific evidence or capability]
+        Customer language: [Use language patterns from
+        customer voice DR data if available]
+
+    Pillar 2: [Message grounded in DR evidence]
+        Proof point: [Specific evidence or capability]
+        Customer language: [From DR if available]
+
+    Pillar 3: [Message grounded in DR evidence]
+        Proof point: [Specific evidence or capability]
+        Customer language: [From DR if available]
+
+    COMPETITIVE RESPONSES:
+    [For each major competitor]:
+
+    "Why not [Competitor A]?"
+        Response: [Grounded in DR evidence of their
+        weakness or your strength - cite report]
+
+    "Why not [Competitor B]?"
+        Response: [Same approach]
+
+    "Why not [Competitor C]?"
+        Response: [Same approach]
+
+    NOTE: These responses should be honest and
+    respectful. Focus on what you offer differently,
+    not on attacking competitors. The strongest
+    competitive response highlights your unique value,
+    not their flaws.
+
+WAIT for user response.
+
+
+# ===========================================================
+# PHASE 4: ACTION PLAN
+# ===========================================================
+
+# STEP 11: PRIORITIZED ACTION PLAN
+# -----------------------------------------------------------
+
+    ACTION PLAN: IMPLEMENTING YOUR DIFFERENTIATION
+    ================================================
+
+    WHAT YOUR RESEARCH CONFIRMED:
+    - [Key competitive insight 1 - cite report]
+    - [Key competitive insight 2 - cite report]
+    - [Key competitive insight 3 - cite report]
+    (These form the foundation of your strategy.)
+
+    IMMEDIATE ACTIONS (This Week):
+    [ ] [Specific action grounded in analysis -
+        e.g., "Update homepage headline to reflect
+        positioning statement"]
+    [ ] [Specific action - e.g., "Draft 3 proof
+        points for primary differentiator"]
+    [ ] [Specific action]
+
+    SHORT-TERM ACTIONS (This Month):
+    [ ] [Content or marketing action - informed by
+        content gap analysis if available]
+    [ ] [Product or service action - informed by
+        customer voice data if available]
+    [ ] [Competitive positioning action]
+
+    LONG-TERM INVESTMENTS (This Quarter):
+    [ ] [Strategic action to widen competitive moat]
+    [ ] [Content or thought leadership investment]
+    [ ] [Feature or capability development]
+
+    MONITORING PLAN:
+    - Track: [Specific competitor changes to watch]
+    - Measure: [Your differentiation metrics]
+    - Review: [Recommended frequency based on market
+      pace]
+    - Re-research: [When to run updated DR reports
+      for competitive refresh]
+
+    WHAT STILL NEEDS VALIDATION:
+    ------------------------------------------------
+    [List competitive assumptions that the DR reports
+    did not fully confirm]
+    - [Assumption 1 - how to validate]
+    - [Assumption 2 - how to validate]
+
+    Consider these investigation methods:
+    - Customer conversations (use RCP-040 persona to
+      prepare, then talk to real prospects)
+    - Competitive secret shopping (experience
+      competitors' offerings firsthand)
+    - Community observation (monitor competitor
+      communities for sentiment shifts)
+
+    ================================================
+
+    SERIES COMPLETION NOTE:
+    You have reached the end of the Niche Discovery
+    series. If you completed the full series:
+    - 037: Your passions and skills alignment
+    - 038: Your chosen niche with research basis
+    - 039: Gaps identified within your niche
+    - 040: Your target customer persona with DR
+    - 041: Your competitive differentiation strategy
+
+    You now have a research-grounded foundation for
+    building your business. The most important next
+    step is always execution and real-world validation.
+
+# ===========================================================
+# END OF RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = """
+Q: What Deep Research tools work with this recipe?
+A: Any tool that produces a comprehensive research report:
+   Claude Deep Research, Gemini Deep Research, ChatGPT
+   Deep Research, or others. For competitive intelligence,
+   using different tools for different angles often surfaces
+   complementary sources.
+
+Q: How many competitors should I include?
+A: The recipe works best with 3-5 direct competitors.
+   Fewer than 3 may not reveal meaningful patterns. In
+   detailed mode, you can also include indirect competitors
+   (businesses solving the same problem differently).
+
+Q: How is this different from RCP-039 Market Gap Detective?
+A: RCP-039 finds gaps WITHIN your niche (underserved
+   audiences, unmet needs). RCP-041 analyzes how COMPETITORS
+   are positioned and finds your differentiation strategy.
+   RCP-039 asks "where are the opportunities?" RCP-041 asks
+   "how do I stand out from the competition?"
+
+Q: Can I bring my DR files from earlier recipes?
+A: Yes, and you should. Files from RCP-038, 039, or 040
+   contain competitively relevant data. This recipe will
+   also generate new competitor-focused DR prompts to fill
+   gaps that earlier research may not have covered.
+
+Q: What if I do not know who my competitors are?
+A: Share your niche and target audience in intake. The DR
+   prompts will be designed to identify and analyze likely
+   competitors in your space.
+
+Q: What happened to RCP-042, 043, and 044?
+A: They were consolidated into this recipe. RCP-042's
+   landscape analysis, RCP-043's content/SEO gap finding,
+   and RCP-044's customer voice mining are all integrated
+   as competitive angles that the AI selects based on your
+   needs. One recipe, comprehensive coverage.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+v3.00a (H011): Major revision - integrated Deep Research
+as required input. Consolidated RCP-042 (Competitive
+Landscape Analyzer), RCP-043 (Competitor Content Gap
+Finder), and RCP-044 (Competitor Customer Voice Miner)
+into this recipe as competitive research angles. Added
+Phase 0A/0B for intake and DR prompt generation. All
+competitive analysis phases now cite DR evidence.
+Differentiation strategy grounded in research data.
+Platform access problem resolved via DR integration.
+
+v2.00a: Original pre-beta version. Assumed AI could
+access competitor websites and analyze their positioning,
+content, pricing, and reviews directly. No behavioral
+rules, no WAIT gates, no evidence grounding.
+"""
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+# NOTE: Image Generation Prompts (Section 3) excluded per H039-006 ruling.
+
+# ===========================================================
+# RCP-041 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: COMPETITOR-DIFFERENTIATOR
+# Version: v3.00a (Revised H011 - DR Integration +
+#          Consolidated 042, 043, 044)
+# Generated: 2026-02-16
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-041 Competitor Differentiator
+
+WHAT IT DOES:
+    Builds comprehensive competitive intelligence from
+    Deep Research reports covering landscape positioning,
+    content/SEO strategy, customer voice analysis, and
+    competitive gaps. Synthesizes a differentiation
+    strategy with messaging pillars, competitive responses,
+    and a prioritized action plan. Consolidates the
+    capabilities of four former recipes (041, 042, 043,
+    044) into one DR-powered experience.
+
+WHAT IT DOES NOT DO:
+    - Does not visit competitor websites or read their
+      content directly
+    - Does not access SEO tools, review platforms, or
+      social media analytics
+    - Does not fabricate competitor strengths, weaknesses,
+      rankings, or sentiment data
+    - Does not replace competitive secret shopping or
+      direct market experience
+    - Does not score competitors numerically without
+      DR evidence
+
+HOW IT WORKS (Two Stages, 6 Phases):
+
+    STAGE 1 - Research Preparation:
+    Phase 0A: Intake Questions
+        Choose quick (5 questions) or detailed (12
+        questions). Share your business, niche, 3-5
+        competitors, known strengths, and analysis goal.
+    Phase 0B: Competitive DR Prompt Generation
+        AI analyzes your situation and generates 2-5
+        DR prompts targeting the most relevant angles:
+        landscape positioning, content/SEO strategy,
+        customer voice/reviews, pricing models, marketing
+        tactics, competitive weaknesses. AI decides the
+        mix based on your goals. Session pauses.
+
+    STAGE 2 - Data-Informed Competitive Intelligence:
+    Phase 1: Research Intake
+        Attach DR reports (plus any from 038/039/040).
+        AI reads all files, builds per-competitor
+        intelligence profiles, identifies cross-competitor
+        patterns and intelligence gaps.
+    Phase 2: Multi-Dimensional Gap Analysis
+        Three analysis layers with WAIT gates between:
+        - Positioning gaps: where competitors leave space
+        - Content/experience gaps: what they miss in
+          delivery (if DR covers this)
+        - Customer voice gaps: what their customers
+          complain about (if DR covers this)
+        All findings cite DR sources.
+    Phase 3: Differentiation Strategy
+        Primary differentiator (with demand evidence,
+        competitor gap evidence, user fit, defensibility).
+        Supporting differentiators. Positioning statement.
+        Messaging pillars with proof points and customer
+        language. Competitive response scripts.
+    Phase 4: Action Plan
+        Immediate/short-term/long-term actions. Monitoring
+        plan. Validation agenda for unconfirmed assumptions.
+        Series completion summary.
+
+KEY INPUTS REQUIRED:
+    - Business description and niche
+    - 3-5 competitor names (websites if known)
+    - 2-5 Deep Research report files (any platform)
+
+CONSOLIDATED FROM:
+    RCP-042 Competitive Landscape Analyzer (landscape
+    angle in DR prompts + Phase 1 mapping)
+    RCP-043 Competitor Content Gap Finder (content/SEO
+    angle in DR prompts + Phase 2 content analysis)
+    RCP-044 Competitor Customer Voice Miner (customer
+    voice angle in DR prompts + Phase 2 voice analysis)
+
+SERIES POSITION: 5 of 5 (Niche Discovery - Capstone)
+    037 (Passion-Skills) -> 038 (Niche Identifier) ->
+    039 (Market Gap Detective) -> 040 (Niche Persona
+    Generator) -> 041 (this)
+
+HONEST POSITIONING:
+    Competitive intelligence is only as good as the
+    research behind it. The AI structures your thinking
+    and surfaces patterns in your data, but the DR
+    reports provide the evidence. Your direct market
+    experience and customer conversations validate it.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-041
+
+PURPOSE AND POSITIONING:
+    This recipe is the capstone of the Niche Discovery
+    series and the most complex consolidation in the
+    CRAFT recipe library. It absorbed three separate
+    competitive intelligence recipes (042, 043, 044)
+    because with DR integration, the distinction between
+    "landscape analysis," "content gap finding," and
+    "customer voice mining" becomes a distinction between
+    DR prompt angles, not separate recipe workflows.
+
+    The consolidation serves users better: instead of
+    running four recipes with overlapping intake and
+    redundant competitive research, they run ONE recipe
+    that generates targeted DR prompts across all relevant
+    angles and synthesizes everything into a unified
+    differentiation strategy.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    THE PLATFORM ACCESS PROBLEM (CORE DESIGN DRIVER):
+    All four original recipes assumed the AI could access
+    competitor websites, read their content, check SEO
+    rankings, and browse customer reviews. The AI cannot
+    do any of this. This is not a limitation to work
+    around - it is the fundamental reason for the DR
+    integration. Deep Research tools CAN access these
+    sources and produce reports the AI can read.
+
+    The AI must NEVER:
+    - Describe a competitor's website design quality
+      without DR evidence
+    - Assess a competitor's content strategy without
+      DR evidence
+    - Quote or paraphrase customer reviews without
+      DR evidence
+    - Estimate SEO rankings or keyword performance
+      without DR evidence
+    - Generate a comparison matrix with cells filled
+      from general knowledge
+
+    Every cell in every comparison, every competitive
+    assessment, every customer sentiment claim MUST trace
+    back to a DR report or be flagged as "not covered in
+    your research."
+
+    DR PROMPT DESIGN FOR COMPETITIVE INTELLIGENCE:
+    Competitive DR prompts must be SPECIFIC to produce
+    actionable intelligence:
+
+    Bad: "Research competitors in the meal planning
+    market"
+    Good: "Analyze the competitive positioning of
+    Mealime, PlateJoy, and Eat This Much in the meal
+    planning market targeting women over 40 with hormonal
+    health concerns. For each competitor, identify:
+    (1) their stated value proposition and target audience
+    from their website and marketing, (2) their pricing
+    tiers and what each includes, (3) their content
+    strategy: blog topics, publishing frequency, social
+    media presence, (4) customer reviews from App Store,
+    Google Play, and Trustpilot: top 3 complaints and
+    top 3 praises with representative quotes, (5) their
+    apparent SEO strategy: what terms they rank for, what
+    content types they produce. Cite sources for all
+    data points."
+
+    The AI must generate prompts at this level of
+    specificity, naming the actual competitors from
+    intake and requesting structured, source-cited
+    output.
+
+    SELECTING COMPETITIVE ANGLES:
+    The AI decides which DR prompt angles to recommend
+    based on intake answers. The decision framework:
+
+    Goal "landscape" → Always include: landscape
+    positioning. Optional: pricing/business model.
+
+    Goal "content_seo" → Always include: content/SEO
+    strategy. Optional: landscape for context.
+
+    Goal "customer_voice" → Always include: customer
+    reviews and sentiment. Optional: competitive
+    weaknesses for context.
+
+    Goal "differentiation" or "all" → Include: landscape
+    + customer voice minimum. Add content/SEO and
+    pricing if user has enough competitors and scope.
+
+    The AI should explain its angle selection reasoning
+    when presenting prompts.
+
+    HANDLING UNEVEN DR COVERAGE:
+    DR reports will inevitably cover some competitors
+    better than others and some angles more thoroughly
+    than others. The AI must:
+    - Work with whatever coverage exists
+    - Be transparent about uneven coverage: "Your
+      research covered Competitor A thoroughly but
+      only briefly mentioned Competitor C"
+    - Flag per-competitor intelligence confidence
+    - Never pad thin coverage with fabricated
+      assessments to make the analysis look balanced
+    - Note coverage gaps in the action plan as areas
+      needing additional research
+
+    If one competitor has rich review data and another
+    has none, the customer voice analysis should cover
+    the data-rich competitor in depth and explicitly
+    state what is missing for the others.
+
+    THE GAP ANALYSIS STRUCTURE:
+    Phase 2 presents gaps across three dimensions. Not
+    all dimensions will have DR data. The AI should:
+
+    - POSITIONING GAPS: Almost always possible if
+      landscape DR was run. Map competitors on relevant
+      dimensions, identify white space. This is the
+      most reliable analysis.
+
+    - CONTENT/EXPERIENCE GAPS: Only possible if DR
+      covered content strategy. If not, skip this
+      section and note: "Your research did not cover
+      competitor content strategies. Consider running
+      a content-focused DR prompt for this dimension."
+
+    - CUSTOMER VOICE GAPS: Only possible if DR covered
+      reviews. If not, skip and note the gap. If
+      partially covered, analyze what is available and
+      flag missing competitors.
+
+    The AI should never force all three sections if the
+    data does not support them. Quality analysis of what
+    the data covers beats thin analysis stretched across
+    all dimensions.
+
+    DIFFERENTIATION STRATEGY GROUNDING:
+    The Phase 3 differentiation strategy must pass TWO
+    tests:
+
+    Test 1 - Evidence test: Is the primary differentiator
+    supported by DR evidence? Can I cite a report showing
+    that competitors DON'T do this and customers DO want
+    it? If not, it is a hypothesis, not a strategy.
+
+    Test 2 - Authenticity test: Can the user actually
+    deliver this? A differentiation strategy the user
+    cannot execute is worse than useless. The AI should
+    cross-reference the proposed differentiator against
+    the user's stated strengths and capabilities.
+
+    If the evidence is strong but the user's fit is
+    questionable, present it honestly: "The research
+    suggests strong demand for [X], but based on what
+    you have shared about your capabilities, this would
+    require significant investment in [Y]. Is that
+    feasible for you?"
+
+    COMPETITIVE RESPONSE SCRIPTS:
+    The "Why not [Competitor]?" responses are among the
+    most directly useful outputs. They must be:
+    - Grounded in DR evidence (reference real competitor
+      weaknesses, not invented ones)
+    - Respectful (focus on your unique value, not
+      competitor bashing)
+    - Honest (do not claim advantages you do not have)
+    - Specific (not generic "we offer better service"
+      but "our customers get [specific thing] that
+      [Competitor] does not offer, which addresses
+      the [specific complaint] we saw in their reviews")
+
+    SERIES CAPSTONE POSITIONING:
+    Users who completed the full Niche Discovery series
+    arrive at this recipe with:
+    - RCP-037 output: Skills/passions alignment
+    - RCP-038 DR files: Niche evaluation research
+    - RCP-039 DR files: Gap identification research
+    - RCP-040 output: Target customer persona
+
+    The AI should leverage ALL available context. If
+    the user brings prior DR files, extract competitive
+    intelligence from them. The persona from RCP-040
+    can inform which competitive dimensions matter most
+    to the target customer. The gap analysis from
+    RCP-039 can confirm positioning opportunities.
+
+    Users arriving without prior series context get the
+    full value of this recipe alone - it is self-
+    contained. The series context enriches but is not
+    required.
+
+COMMON USER PATTERNS:
+    - Users who want to analyze 10+ competitors: Redirect
+      to 3-5 most relevant. Comprehensive analysis of 5
+      beats surface-level analysis of 10. DR prompts
+      become unfocused with too many targets.
+    - Users who expect the AI to browse competitor sites:
+      Explain clearly that this is what the DR step
+      provides. "I cannot visit websites directly, but
+      the Deep Research prompts I generated will have
+      the DR tool analyze those exact sites and produce
+      reports I can work with."
+    - Users who bring only landscape data but want full
+      differentiation: Work with what is available but
+      note the gaps. "Your differentiation strategy is
+      grounded in positioning data. Adding customer voice
+      research would strengthen the messaging pillars
+      significantly."
+    - Users who want to skip straight to messaging:
+      Redirect through the analysis. "Effective messaging
+      must be grounded in competitive reality. Let us
+      map the landscape first so your messaging targets
+      real gaps."
+    - Users whose competitors are very similar: This is
+      actually the hardest scenario and the most valuable
+      one. When competitors look alike, differentiation
+      matters most. Focus on customer voice data for
+      micro-level gaps, and experience/service model
+      differences.
+"""
+
+
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-041",
+  "recipe_name": "Competitor Differentiator",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067, H071)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-41/RCP-041-SUPPLEMENTAL-CONTENT-v3_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "This recipe is the capstone of the Niche Discovery series and the most complex consolidation in the CRAFT recipe library. It absorbed three separate competitive intelligence recipes (042, 043, 044) because with DR integration, the distinction between 'landscape analysis,' 'content gap finding,' and 'customer voice mining' becomes a distinction between DR prompt angles, not separate recipe workflows. The consolidation serves users better: instead of running four recipes with overlapping intake and redundant competitive research, they run ONE recipe that generates targeted DR prompts across all relevant angles and synthesizes everything into a unified differentiation strategy."
+    },
+    "platform_access_problem": {
+      "type": "prose",
+      "body": "All four original recipes assumed the AI could access competitor websites, read their content, check SEO rankings, and browse customer reviews. The AI cannot do any of this. This is not a limitation to work around — it is the fundamental reason for the DR integration. Deep Research tools CAN access these sources and produce reports the AI can read. The AI must NEVER: describe a competitor's website design quality without DR evidence, assess a competitor's content strategy without DR evidence, quote or paraphrase customer reviews without DR evidence, estimate SEO rankings or keyword performance without DR evidence, or generate a comparison matrix with cells filled from general knowledge. Every cell in every comparison, every competitive assessment, every customer sentiment claim MUST trace back to a DR report or be flagged as 'not covered in your research.'"
+    },
+    "dr_prompt_design": {
+      "type": "prose",
+      "body": "Competitive DR prompts must be SPECIFIC to produce actionable intelligence. Bad: 'Research competitors in the meal planning market.' Good: 'Analyze the competitive positioning of Mealime, PlateJoy, and Eat This Much in the meal planning market targeting women over 40 with hormonal health concerns. For each competitor, identify: (1) their stated value proposition and target audience from their website and marketing, (2) their pricing tiers and what each includes, (3) their content strategy: blog topics, publishing frequency, social media presence, (4) customer reviews from App Store, Google Play, and Trustpilot: top 3 complaints and top 3 praises with representative quotes, (5) their apparent SEO strategy: what terms they rank for, what content types they produce. Cite sources for all data points.' The AI must generate prompts at this level of specificity, naming the actual competitors from intake and requesting structured, source-cited output."
+    },
+    "selecting_competitive_angles": {
+      "type": "prose",
+      "body": "The AI decides which DR prompt angles to recommend based on intake answers. The decision framework: Goal 'landscape' — always include landscape positioning, optional pricing/business model. Goal 'content_seo' — always include content/SEO strategy, optional landscape for context. Goal 'customer_voice' — always include customer reviews and sentiment, optional competitive weaknesses for context. Goal 'differentiation' or 'all' — include landscape + customer voice minimum, add content/SEO and pricing if user has enough competitors and scope. The AI should explain its angle selection reasoning when presenting prompts."
+    },
+    "handling_uneven_dr_coverage": {
+      "type": "prose",
+      "body": "DR reports will inevitably cover some competitors better than others and some angles more thoroughly than others. The AI must: work with whatever coverage exists, be transparent about uneven coverage ('Your research covered Competitor A thoroughly but only briefly mentioned Competitor C'), flag per-competitor intelligence confidence, never pad thin coverage with fabricated assessments to make the analysis look balanced, and note coverage gaps in the action plan as areas needing additional research. If one competitor has rich review data and another has none, the customer voice analysis should cover the data-rich competitor in depth and explicitly state what is missing for the others."
+    },
+    "gap_analysis_structure": {
+      "type": "prose",
+      "body": "Phase 2 presents gaps across three dimensions. Not all dimensions will have DR data. POSITIONING GAPS: almost always possible if landscape DR was run — map competitors on relevant dimensions, identify white space, most reliable analysis. CONTENT/EXPERIENCE GAPS: only possible if DR covered content strategy — if not, skip and note the gap. CUSTOMER VOICE GAPS: only possible if DR covered reviews — if not, skip and note, if partially covered analyze what is available and flag missing competitors. The AI should never force all three sections if the data does not support them. Quality analysis of what the data covers beats thin analysis stretched across all dimensions."
+    },
+    "differentiation_strategy_grounding": {
+      "type": "prose",
+      "body": "The Phase 3 differentiation strategy must pass TWO tests. Test 1 — Evidence test: Is the primary differentiator supported by DR evidence? Can the AI cite a report showing that competitors DON'T do this and customers DO want it? If not, it is a hypothesis, not a strategy. Test 2 — Authenticity test: Can the user actually deliver this? A differentiation strategy the user cannot execute is worse than useless. The AI should cross-reference the proposed differentiator against the user's stated strengths and capabilities. If the evidence is strong but the user's fit is questionable, present it honestly."
+    },
+    "competitive_response_scripts": {
+      "type": "prose",
+      "body": "The 'Why not [Competitor]?' responses are among the most directly useful outputs. They must be: grounded in DR evidence (reference real competitor weaknesses, not invented ones), respectful (focus on your unique value, not competitor bashing), honest (do not claim advantages you do not have), and specific (not generic 'we offer better service' but 'our customers get [specific thing] that [Competitor] does not offer, which addresses the [specific complaint] we saw in their reviews')."
+    },
+    "series_capstone_positioning": {
+      "type": "prose",
+      "body": "Users who completed the full Niche Discovery series arrive at this recipe with: RCP-037 output (skills/passions alignment), RCP-038 DR files (niche evaluation research), RCP-039 DR files (gap identification research), RCP-040 output (target customer persona). The AI should leverage ALL available context. If the user brings prior DR files, extract competitive intelligence from them. The persona from RCP-040 can inform which competitive dimensions matter most to the target customer. The gap analysis from RCP-039 can confirm positioning opportunities. Users arriving without prior series context get the full value of this recipe alone — it is self-contained. The series context enriches but is not required."
+    },
+    "common_user_patterns": {
+      "type": "prose_with_list",
+      "preamble": "Five common user behavior patterns the AI should be prepared for:",
+      "list": [
+        "Users who want to analyze 10+ competitors: Redirect to 3-5 most relevant. Comprehensive analysis of 5 beats surface-level analysis of 10. DR prompts become unfocused with too many targets.",
+        "Users who expect the AI to browse competitor sites: Explain clearly that this is what the DR step provides. The Deep Research prompts will have the DR tool analyze those exact sites and produce reports the AI can work with.",
+        "Users who bring only landscape data but want full differentiation: Work with what is available but note the gaps. The differentiation strategy is grounded in positioning data; adding customer voice research would strengthen the messaging pillars significantly.",
+        "Users who want to skip straight to messaging: Redirect through the analysis. Effective messaging must be grounded in competitive reality — map the landscape first so messaging targets real gaps.",
+        "Users whose competitors are very similar: This is the hardest scenario and the most valuable one. When competitors look alike, differentiation matters most. Focus on customer voice data for micro-level gaps, and experience/service model differences."
+      ],
+      "postamble": ""
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

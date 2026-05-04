@@ -1,0 +1,668 @@
+# === RECIPE METADATA ===
+recipe_id:       RCP-000-000-083
+recipe_name:     Discussion Synthesis & Strategic Alignment
+version:         v3.00a-R
+authored_by:     Cat (P067) + Richard gate · H094 CRPW pipeline run 53
+permalink_url:   https://github.com/CRAFTFramework/craft-framework-recipe-library/blob/main/discussion-synthesis-strategic-alignment/RCP-000-000-083-DISCUSSION-SYNTHESIS-STRATEGIC-ALIGNMENT-v3.00a-R.txt
+revision_date:   2026-04-27
+source_commit:   pending CWK-ADM-085 STEP 5 upload
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-083-DISCUSSION-SYNTHESIS-STRATEGIC-ALIGNMENT-v3.00a-R
+# Category: CAT-000 (Standalone)
+# Version: v3.00a-R
+# Created: 2026-02-17
+# Revised: 2026-04-27 (P067-H094 CRPW pipeline revision - added CRAFT_FLAVORS)
+# Prior revision: 2026-02-17 (Initial creation)
+# Workflow: Stakeholder Analysis Workflow (Recipe 4 of 4)
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: GENERAL
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-083-DISCUSSION-SYNTHESIS-STRATEGIC-ALIGNMENT"
+
+WPRM_FIELD_DESCRIPTION = """
+Discussion Synthesis & Strategic Alignment is the final
+recipe in the 4-recipe Stakeholder Analysis Workflow. It
+takes the Discussion Transcript from RCP-082 and converts
+simulation findings into an actionable engagement strategy.
+
+This recipe helps you:
+- Analyze where stakeholders aligned and where they diverged
+- Identify blocking issues and negotiation opportunities
+- Map alliances and opposition patterns
+- Develop a recommended engagement sequence (who first, why)
+- Create stakeholder-specific communication strategies
+- Convert simulation insights into real-world action steps
+
+IMPORTANT: Everything in this report is framed as "based on
+the simulation, here is what appears likely." The closing
+section explicitly converts simulation outputs into
+real-world engagement steps that you test with actual
+stakeholders. This is PREPARATION, not prediction.
+"""
+
+
+# ===========================================================
+# SECTION 2: CATEGORIES
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Multi-Recipe Combo (Workflow)"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "083"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Business Strategy"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Stakeholder Analysis"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Strategic Alignment
+Engagement Strategy
+Stakeholder Synthesis
+Action Planning
+Multi-Recipe Workflow
+Hypothesis Testing
+Simulation Analysis
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# SECTION 3: INSTRUCTIONS
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+
+STEP 1: Attach or paste the Discussion Transcript from
+RCP-082. Provide any additional context about real-world
+constraints the synthesis should consider.
+
+STEP 2: Review the AI's analysis of alignment, opposition,
+and negotiation space. Correct any misinterpretations.
+
+STEP 3: Review the recommended engagement sequence and
+communication strategies. Adjust based on your knowledge
+of organizational dynamics.
+
+STEP 4: Review the real-world action steps. These are
+testable hypotheses — use them to guide actual stakeholder
+conversations.
+
+
+"""
+
+
+# ===========================================================
+# SECTION 4: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP: Discussion Synthesis & Strategic Alignment
+
+WHAT IT DOES:
+Converts stakeholder simulation findings into an actionable
+engagement strategy. Takes the Discussion Transcript from
+RCP-082 and produces a 13-section Strategic Alignment Report
+that maps alignment, identifies blocking issues, recommends
+engagement sequence, and generates testable action steps.
+
+HOW IT WORKS:
+You provide the Discussion Transcript from your stakeholder
+simulation (from RCP-082). The AI systematically analyzes
+where stakeholders aligned and where they diverged, identifies
+blocking issues and negotiation opportunities, maps alliances
+and opposition patterns, develops a recommended engagement
+sequence with specific rationale, and creates stakeholder-
+specific communication strategies. Everything is grounded
+in simulation evidence and framed as hypotheses to test.
+
+WHAT TO EXPECT:
+This is NOT a prediction or guarantee of engagement outcomes.
+The report gives you a map based on simulation findings and
+a starting plan for real conversations. It explicitly
+acknowledges what the simulation could NOT capture (personal
+relationships, political dynamics, informal influence
+networks, recent events). Your first real conversation will
+teach you more than the entire simulation.
+
+BEST RESULTS WHEN YOU:
+- Provide a detailed Discussion Transcript from RCP-082
+- Bring real-world constraints (organizational politics,
+  budget cycles, relationship dynamics)
+- Use the engagement sequence and action steps as testable
+  hypotheses, not certainties
+- Adjust strategy after each real stakeholder conversation
+- Review surprise findings for mental model updates
+
+WORKFLOW POSITION:
+Recipe 4 of 4 in the Stakeholder Analysis Workflow:
+  RCP-080 (Stakeholder Map) →
+  DR (Deep Research) →
+  RCP-081 (Persona File) →
+  RCP-082 (Discussion Simulation) →
+  RCP-083 (This Recipe - Strategic Alignment Report)
+
+TIME: 20-40 minutes for full report synthesis
+DIFFICULTY: Intermediate — analyze simulation findings and
+  convert to actionable strategy
+"""
+
+
+# ===========================================================
+# ITEM 2: EXTENDED AI GUIDANCE
+# ===========================================================
+
+"""
+EXTENDED AI GUIDANCE: Discussion Synthesis & Strategic Alignment
+
+PURPOSE OF THIS GUIDANCE:
+This section provides supplementary direction for AI
+platforms executing RCP-083. It covers synthesis methodology,
+report quality standards, and the critical simulation-to-
+reality transition.
+
+
+CORE PHILOSOPHY:
+
+RCP-083 is the BRIDGE between simulation and reality. It
+converts structured thought experiments into actionable
+engagement plans. Every recommendation is a hypothesis —
+the user walks out with testable assumptions, not false
+certainty.
+
+Think of the AI as a post-game analyst who reviews the
+footage and prepares the next game plan, knowing the
+actual game will be different.
+
+
+SYNTHESIS METHODOLOGY:
+
+EVIDENCE HIERARCHY:
+    The report should prioritize evidence by strength:
+    1. Positions stated multiple times across rounds
+       (consistent, likely durable in reality)
+    2. Positions stated once with supporting reasoning
+       (credible but less tested)
+    3. Positions inferred from reactions or silence
+       (weakest — flag as inference)
+
+    When a persona shifted position during the discussion,
+    note BOTH the original and final positions. The shift
+    itself is data.
+
+BLOCKING ISSUE IDENTIFICATION:
+    A true blocking issue requires three elements:
+    1. A stakeholder with sufficient influence to halt progress
+    2. An unresolved objection to a core element of the proposal
+    3. No resolution path demonstrated in the simulation
+
+    If ANY of these is missing, it's a concern, not a block.
+    Overstating concerns as blocking issues creates false
+    urgency. Understating true blocks creates blind spots.
+
+ENGAGEMENT SEQUENCE LOGIC:
+    The sequence is the report's highest-value output.
+    Common sequencing strategies:
+
+    Convert-blockers-first: Engage potential blockers early,
+    convert them to supporters or co-designers before they
+    can organize opposition.
+
+    Build-coalition-first: Engage natural supporters to
+    build momentum, then approach skeptics from a position
+    of strength.
+
+    Address-dependencies: Some stakeholders need information
+    from others. Engage information providers first.
+
+    The right strategy depends on the specific dynamics.
+    State which strategy you're using and why.
+
+
+REPORT SECTION GUIDANCE:
+
+EXECUTIVE SUMMARY:
+    2-3 sentences maximum. "We simulated [topic] with
+    [N] stakeholders over [N] rounds. Key finding:
+    [one-sentence takeaway]. Primary path forward:
+    [one-sentence recommendation]."
+
+STAKEHOLDER LANDSCAPE:
+    For each stakeholder, capture: where they ended
+    (not just where they started), what moved them
+    (or didn't), and what remains unresolved. This
+    section answers "where do we stand with each person?"
+
+ALIGNMENT MAP:
+    Visual-friendly format. Group stakeholders by position:
+    supportive / conditional / opposed / undetermined.
+    Note cross-group connections. This should be scannable.
+
+BLOCKING ISSUES:
+    Prioritize ruthlessly. Most simulations reveal 1-3
+    true blocking issues. If you have more than 5, you're
+    either overstating concerns or the proposal needs
+    fundamental rethinking (which is also a valid finding).
+
+COMMUNICATION STRATEGY:
+    Be specific. "Lead with data" is too vague. "Open with
+    the SHRM retention study (cited in simulation Round 2),
+    frame as investment with defined payback period, avoid
+    'everyone is doing it' framing (triggered skepticism
+    in Round 3)" is actionable.
+
+REAL-WORLD ACTION STEPS:
+    This is the most important section. Each action should
+    be a specific, testable hypothesis:
+
+    Good: "Ask CFO: 'If we co-designed the evaluation
+    metrics, would you support a 6-month pilot?' Listen
+    for whether they engage with the specifics or deflect
+    to broader concerns."
+
+    Bad: "Discuss pilot metrics with finance leadership."
+
+    The distinction is specificity. The user should know
+    exactly what to say, what to ask, and what to listen for.
+
+
+SIMULATION-TO-REALITY TRANSITION:
+
+This is the hardest and most important part of the recipe.
+The user has spent time in a structured simulation and may
+have developed confidence in the outcomes. The report must
+CALIBRATE that confidence.
+
+WHAT SIMULATION CAPTURES WELL:
+    - Logical structure of stakeholder arguments
+    - Which concerns are predictable given role and evidence
+    - Where flexibility zones MIGHT exist
+    - Which proposals address multiple concerns simultaneously
+
+WHAT SIMULATION MISSES:
+    - Personal relationships and trust levels
+    - Informal influence networks
+    - Recent events that changed dynamics
+    - Emotional responses to specific framings
+    - Political calculations beyond the immediate decision
+    - Information stakeholders have that wasn't in DR
+
+The closing section should be clear: "Your first real
+conversation will teach you more than the entire simulation.
+Be prepared to update your strategy after every interaction."
+
+
+EDGE CASES:
+
+SIMULATION ENDED WITHOUT RESOLUTION:
+    This is a VALID finding. The report should say: "The
+    simulation did not produce consensus, which suggests
+    this decision may require phased or conditional
+    approaches rather than full-group agreement."
+
+ALL STAKEHOLDERS AGREED:
+    Be suspicious. Check whether artificial consensus
+    crept in during simulation. If genuine agreement
+    existed, the report should note: "Broad alignment
+    suggests the proposal may succeed, but TEST this
+    assumption — simulation tends to underrepresent
+    hidden objections."
+
+TRANSCRIPT IS THIN (few rounds):
+    Work with what you have. Note in limitations that
+    the simulation was brief and deeper exploration
+    might reveal additional dynamics. Recommend specific
+    areas where additional simulation rounds would help.
+
+USER PROVIDES EXTENSIVE REAL-WORLD CONSTRAINTS:
+    Incorporate them into the engagement sequence and
+    communication strategy. Real-world constraints often
+    change the optimal engagement order.
+
+
+QUALITY STANDARDS:
+
+REPORT QUALITY CHECKLIST:
+    [ ] Every recommendation cites simulation evidence
+    [ ] No fabricated precision (percentages, probabilities)
+    [ ] Hypothesis framing throughout
+    [ ] Blocking issues limited to genuine blocks
+    [ ] Engagement sequence has rationale for each position
+    [ ] Communication strategies are specific and actionable
+    [ ] Action steps include what to say, ask, and listen for
+    [ ] Simulation limitations explicitly acknowledged
+    [ ] Surprise findings highlighted
+    [ ] Report is self-contained (readable independently)
+    [ ] Closing transitions from simulation to real world
+    [ ] No new stakeholder intelligence introduced
+"""
+
+
+# ===========================================================
+# SECTION 5: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+
+"""
+BEHAVIORAL RULES for RCP-083 execution (from WPRM):
+
+RULE 1 — SIMULATION-GROUNDED ONLY:
+  Every recommendation must be traceable to something
+  that happened in the simulation. Do not introduce new
+  stakeholder intelligence, industry analysis, or
+  strategic frameworks beyond what the discussion
+  produced. If a recommendation isn't supported by
+  simulation evidence, don't make it. Cite specific
+  rounds, statements, or dynamics as evidence.
+
+RULE 2 — HYPOTHESIS FRAMING:
+  All strategic recommendations are HYPOTHESES to test
+  with real stakeholders, not conclusions. Frame every
+  recommendation as: "Based on the simulation, [finding].
+  Test this by [action]." The user should leave this
+  recipe with testable assumptions, not false certainty.
+
+RULE 3 — ENGAGEMENT SEQUENCE RATIONALE:
+  The recommended engagement sequence must explain WHY
+  each stakeholder should be engaged in that order.
+  "Start with Finance" needs a reason: "because
+  converting them from blocker to co-architect provides
+  the metrics framework others will need." Order matters
+  and the rationale should reference simulation dynamics.
+
+RULE 4 — HONEST ABOUT SIMULATION LIMITS:
+  The report must explicitly acknowledge what the
+  simulation COULD NOT capture: personal relationships,
+  political dynamics not reflected in personas, recent
+  events, emotional context, informal influence networks.
+  Real stakeholder engagement will always reveal factors
+  the simulation missed.
+
+RULE 5 — STAKEHOLDER-SPECIFIC COMMUNICATION:
+  Communication strategy recommendations should reflect
+  each stakeholder's communication style from the persona
+  file AND their behavior during the simulation. If
+  Finance responded well to data in the simulation,
+  recommend a data-led approach. If Client Success
+  needed concrete proposals, recommend leading with
+  specifics.
+
+RULE 6 — BLOCKING ISSUE PRIORITIZATION:
+  Not all disagreements are blocking issues. A blocking
+  issue is one where a stakeholder with sufficient
+  influence to halt progress holds an unresolved
+  objection. Distinguish between: blocking issues
+  (must resolve), concerns (should address), and
+  preferences (nice to accommodate). Prioritize
+  blocking issues in the action plan.
+
+RULE 7 — ALLIANCE MAPPING:
+  Identify which stakeholders aligned during the
+  simulation and on what basis. Natural alliances
+  (shared interests) are stronger than tactical
+  alliances (temporary alignment). Map both. Note
+  which alliances could be leveraged in real-world
+  engagement and which might be fragile.
+
+RULE 8 — RISK MAPPING:
+  For each blocking issue, identify: who could block,
+  what triggers the block, what mitigates it, and what
+  happens if it's not resolved. Risk levels should be
+  grounded in simulation evidence, not generic risk
+  frameworks. "Finance will block if no metrics
+  framework is presented" is simulation-grounded.
+  "There is a 60% risk of organizational resistance"
+  is fabricated precision.
+
+RULE 9 — ACTIONABLE OUTPUT:
+  The final section must convert ALL findings into
+  concrete, testable actions. Each action should be
+  specific enough that the user could act on it
+  tomorrow: who to talk to, what to propose, what
+  question to ask, what to listen for. Abstract
+  recommendations ("build coalition support") are
+  insufficient without specifics.
+
+RULE 10 — REAL-WORLD TRANSITION:
+  The closing section must explicitly acknowledge the
+  transition from simulation to reality: "This report
+  gives you a map and a starting plan. The first real
+  conversation will update that map. Be prepared to
+  adjust." Frame the report as a living starting point,
+  not a finished strategy.
+
+RULE 11 — NO FALSE PRECISION:
+  Do not assign percentages, probability scores,
+  success likelihoods, or numerical confidence levels
+  to engagement outcomes. "Finance is likely to support
+  a pilot with metrics" is appropriate. "There is a
+  75% chance Finance supports the pilot" is not.
+  Qualitative assessments only.
+
+RULE 12 — SURPRISE FINDINGS:
+  Highlight any simulation outcomes that were unexpected
+  based on initial persona definitions. If a stakeholder
+  showed flexibility where their persona predicted
+  rigidity, or vice versa, call it out. Surprises from
+  simulation are the most valuable findings because they
+  suggest the user's mental model may need updating.
+"""
+
+
+# ===========================================================
+# JSON SERIALIZATION
+# ===========================================================
+
+```json
+{
+  "recipe_id": "RCP-000-000-083",
+  "recipe_name": "Discussion Synthesis & Strategic Alignment",
+  "version": "v3.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "Option-B typed-envelope (H041 LOCKED canonical)",
+  "authored_by": "Cat (P067) on H094 CRPW pipeline run 53",
+  "source_of_truth": "phase3/recipe-83/RCP-083-EXTENDED-AI-GUIDANCE.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "core_philosophy": {
+      "type": "prose",
+      "body": "RCP-083 is the BRIDGE between simulation and reality. It converts structured thought experiments into actionable engagement plans. Every recommendation is a hypothesis — the user walks out with testable assumptions, not false certainty. Think of the AI as a post-game analyst who reviews the footage and prepares the next game plan, knowing the actual game will be different."
+    },
+    "synthesis_methodology": {
+      "type": "keyed_list",
+      "preamble": "SYNTHESIS METHODOLOGY — evidence handling, blocking issue identification, and engagement sequence logic.",
+      "items": [
+        {
+          "key": "EVIDENCE HIERARCHY",
+          "body": "Prioritize evidence by strength: (1) Positions stated multiple times across rounds — consistent, likely durable in reality. (2) Positions stated once with supporting reasoning — credible but less tested. (3) Positions inferred from reactions or silence — weakest, flag as inference. When a persona shifted position during the discussion, note BOTH the original and final positions. The shift itself is data."
+        },
+        {
+          "key": "BLOCKING ISSUE IDENTIFICATION",
+          "body": "A true blocking issue requires three elements: (1) A stakeholder with sufficient influence to halt progress, (2) An unresolved objection to a core element of the proposal, (3) No resolution path demonstrated in the simulation. If ANY of these is missing, it's a concern, not a block. Overstating concerns as blocking issues creates false urgency. Understating true blocks creates blind spots."
+        },
+        {
+          "key": "ENGAGEMENT SEQUENCE LOGIC",
+          "body": "The sequence is the report's highest-value output. Common strategies: Convert-blockers-first (engage potential blockers early, convert them to supporters or co-designers before they can organize opposition). Build-coalition-first (engage natural supporters to build momentum, then approach skeptics from a position of strength). Address-dependencies (some stakeholders need information from others; engage information providers first). State which strategy you're using and why."
+        }
+      ]
+    },
+    "report_section_guidance": {
+      "type": "keyed_list",
+      "preamble": "REPORT SECTION GUIDANCE — quality standards for key sections of the Strategic Alignment Report.",
+      "items": [
+        {
+          "key": "EXECUTIVE SUMMARY",
+          "body": "2-3 sentences maximum. 'We simulated [topic] with [N] stakeholders over [N] rounds. Key finding: [one-sentence takeaway]. Primary path forward: [one-sentence recommendation].'"
+        },
+        {
+          "key": "STAKEHOLDER LANDSCAPE",
+          "body": "For each stakeholder: where they ended (not just where they started), what moved them (or didn't), and what remains unresolved. This section answers 'where do we stand with each person?'"
+        },
+        {
+          "key": "ALIGNMENT MAP",
+          "body": "Visual-friendly format. Group stakeholders by position: supportive / conditional / opposed / undetermined. Note cross-group connections. This should be scannable."
+        },
+        {
+          "key": "BLOCKING ISSUES",
+          "body": "Prioritize ruthlessly. Most simulations reveal 1-3 true blocking issues. If you have more than 5, you're either overstating concerns or the proposal needs fundamental rethinking (which is also a valid finding)."
+        },
+        {
+          "key": "COMMUNICATION STRATEGY",
+          "body": "Be specific. 'Lead with data' is too vague. 'Open with the SHRM retention study (cited in simulation Round 2), frame as investment with defined payback period, avoid everyone-is-doing-it framing (triggered skepticism in Round 3)' is actionable."
+        },
+        {
+          "key": "REAL-WORLD ACTION STEPS",
+          "body": "This is the most important section. Each action should be a specific, testable hypothesis. Good: 'Ask CFO: If we co-designed the evaluation metrics, would you support a 6-month pilot? Listen for whether they engage with the specifics or deflect to broader concerns.' Bad: 'Discuss pilot metrics with finance leadership.' The distinction is specificity."
+        }
+      ]
+    },
+    "simulation_to_reality_transition": {
+      "type": "keyed_list",
+      "preamble": "SIMULATION-TO-REALITY TRANSITION — calibrating user confidence in simulation outcomes.",
+      "items": [
+        {
+          "key": "WHAT SIMULATION CAPTURES WELL",
+          "body": "Logical structure of stakeholder arguments. Which concerns are predictable given role and evidence. Where flexibility zones MIGHT exist. Which proposals address multiple concerns simultaneously."
+        },
+        {
+          "key": "WHAT SIMULATION MISSES",
+          "body": "Personal relationships and trust levels. Informal influence networks. Recent events that changed dynamics. Emotional responses to specific framings. Political calculations beyond the immediate decision. Information stakeholders have that wasn't in the deep research."
+        },
+        {
+          "key": "CLOSING CALIBRATION",
+          "body": "The closing section should be clear: 'Your first real conversation will teach you more than the entire simulation. Be prepared to update your strategy after every interaction.'"
+        }
+      ]
+    },
+    "strategic_synthesis_engine": {
+      "type": "keyed_list",
+      "preamble": "STRATEGIC SYNTHESIS ENGINE — the design pattern driving this recipe's analytical approach.",
+      "items": [
+        {
+          "key": "PATTERN DESCRIPTION",
+          "body": "Takes simulation transcript from RCP-082, systematically analyzes alignment, opposition, alliances, and negotiation space, then generates a 13-section Strategic Alignment Report with testable engagement sequence and action steps. Every recommendation grounded in simulation evidence (RULE 1), framed as hypothesis (RULE 2)."
+        },
+        {
+          "key": "ANTI-PATTERNS",
+          "body": "Do NOT introduce new stakeholder intelligence beyond simulation data. Do NOT assign probability scores or percentages to outcomes (RULE 11). Do NOT claim strategic certainty — all recommendations are hypotheses. Do NOT overstate concerns as blocking issues. Do NOT provide generic recommendations ('build coalition support') without specifics."
+        },
+        {
+          "key": "WORKFLOW CONTEXT",
+          "body": "RCP-083 is the 4th and final recipe in the Stakeholder Analysis Workflow (080→081→082→083). Input is the Discussion Transcript from RCP-082. Output is the Strategic Alignment Report — the workflow's culminating deliverable that converts the entire simulation investment into actionable engagement strategy."
+        }
+      ]
+    },
+    "edge_cases": {
+      "type": "keyed_list",
+      "preamble": "EDGE CASES — handling unusual simulation outcomes.",
+      "items": [
+        {
+          "key": "SIMULATION ENDED WITHOUT RESOLUTION",
+          "body": "This is a VALID finding. Report should say: 'The simulation did not produce consensus, which suggests this decision may require phased or conditional approaches rather than full-group agreement.'"
+        },
+        {
+          "key": "ALL STAKEHOLDERS AGREED",
+          "body": "Be suspicious. Check whether artificial consensus crept in. If genuine, note: 'Broad alignment suggests the proposal may succeed, but TEST this assumption — simulation tends to underrepresent hidden objections.'"
+        },
+        {
+          "key": "TRANSCRIPT IS THIN",
+          "body": "Work with what you have. Note in limitations that the simulation was brief and deeper exploration might reveal additional dynamics. Recommend specific areas where additional simulation rounds would help."
+        },
+        {
+          "key": "EXTENSIVE REAL-WORLD CONSTRAINTS",
+          "body": "Incorporate into engagement sequence and communication strategy. Real-world constraints often change the optimal engagement order."
+        }
+      ]
+    },
+    "quality_standards": {
+      "type": "keyed_list",
+      "preamble": "QUALITY STANDARDS — report quality checklist for self-verification.",
+      "items": [
+        {
+          "key": "EVIDENCE GROUNDING",
+          "body": "Every recommendation cites simulation evidence. No fabricated precision (percentages, probabilities). Hypothesis framing throughout."
+        },
+        {
+          "key": "BLOCKING ISSUE DISCIPLINE",
+          "body": "Blocking issues limited to genuine blocks (3-element test). Concerns and preferences clearly distinguished from blocks."
+        },
+        {
+          "key": "ACTIONABILITY",
+          "body": "Engagement sequence has rationale for each position. Communication strategies are specific and actionable. Action steps include what to say, ask, and listen for."
+        },
+        {
+          "key": "INTELLECTUAL HONESTY",
+          "body": "Simulation limitations explicitly acknowledged. Surprise findings highlighted. No new stakeholder intelligence introduced. Report is self-contained and readable independently. Closing transitions from simulation to real world."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-RCP-083-001",
+      "date": "2026-04-27",
+      "from": "AI",
+      "lesson": "Pipeline revision (v3.00a-R) successfully added WPRM_FIELD_CRAFT_FLAVORS via REC-19 auto-apply mechanism. Field correctly reflects CRAFT Cowork as sole flavor per P061 framework consolidation.",
+      "context": "P067-H094 CRPW pipeline run 53; CFT-PROJ-CP-067 permalink generation workflow.",
+      "affects": ["CWK-ADM-085 STEP 5 upload", "Framework-wide flavor unification"],
+      "severity": "LOW",
+      "disposition": "APPLIED"
+    },
+    {
+      "id": "LL-RCP-083-002",
+      "date": "2026-02-17",
+      "from": "AI",
+      "lesson": "Simulation-to-reality transition is the hardest section to write correctly. Quality hinges on explicit acknowledgment that the simulation COULD NOT capture: personal relationships, political dynamics, recent events, emotional context, informal networks. Reports that omit this transition guidance overstate simulation confidence.",
+      "context": "Cat (B) during RCP-083 initial construction (H017, CFT-PROJ-CP-051f); validated during design review.",
+      "affects": ["RCP-083 behavioral rules", "EXTENDED_AI_GUIDANCE section", "Report quality standards"],
+      "severity": "MED",
+      "disposition": "CODIFIED"
+    },
+    {
+      "id": "LL-RCP-083-003",
+      "date": "2026-02-17",
+      "from": "AI",
+      "lesson": "Engagement sequence rationale is the report's single highest-value output. Users repeatedly report that understanding WHY to engage stakeholders in a specific order is more actionable than the sequence itself. Every engagement position must have a reason grounded in simulation dynamics.",
+      "context": "Cat (B) during RCP-083 behavioral rules codification (H017); RULE 3 design.",
+      "affects": ["RULE 3 — ENGAGEMENT SEQUENCE RATIONALE", "Report section guidance", "Quality standards checklist"],
+      "severity": "MED",
+      "disposition": "CODIFIED"
+    }
+  ]
+}
+```
+
+# === END OF PERMALINK FILE ===

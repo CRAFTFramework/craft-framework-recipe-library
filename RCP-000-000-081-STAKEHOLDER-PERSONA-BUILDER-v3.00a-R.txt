@@ -1,0 +1,852 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-081-STAKEHOLDER-PERSONA-BUILDER
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H092)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-081-STAKEHOLDER-PERSONA-BUILDER
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H092 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H017)
+# Series: Stakeholder Analysis Workflow (2 of 4)
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "Evidence-Based Construction Tool"
+
+WPRM_FIELD_NAME = "RCP-000-000-081-STAKEHOLDER-PERSONA-BUILDER"
+
+WPRM_FIELD_DESCRIPTION = """The Stakeholder Persona Builder is the second recipe in the 4-recipe Stakeholder Analysis Workflow. It takes the Stakeholder Map from RCP-080 and Deep Research findings, then builds lightweight personas for each prioritized stakeholder — ready for discussion simulation in RCP-082.
+
+This recipe helps you:
+- Ingest and organize Deep Research findings by stakeholder
+- Build structured persona profiles with evidence tagging
+- Distinguish DR-sourced positions from hypothetical ones
+- Validate each persona before finalization
+- Produce a single Stakeholder Persona File for RCP-082
+
+Each persona captures: role context, decision criteria, known positions, concerns, communication style, influence, red lines, and flexibility zones. Every factual claim is tagged with its evidence source (DR-sourced vs. hypothetical).
+
+IMPORTANT: This recipe builds personas from YOUR knowledge and YOUR research. The AI structures and organizes — it does not invent stakeholder positions or concerns."""
+
+WPRM_FIELD_SHORT_DESCRIPTION = """Build structured stakeholder personas from your research findings. Produces an evidence-tagged Persona File ready for discussion simulation in RCP-082."""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 2 of 4"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Business Strategy"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "081"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Business Strategy"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Stakeholder Analysis"
+
+WPRM_FIELD_RECIPE_TAGS = "stakeholder personas, evidence tagging, Deep Research, multi-recipe workflow, persona construction"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any business-oriented persona"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+WPRM_FIELD_INSTRUCTIONS = """STEP 1: Attach your Stakeholder Map from RCP-080 (or provide equivalent stakeholder information) and paste your Deep Research findings.
+
+STEP 2: Review the AI's research intake summary to confirm all findings are correctly matched to stakeholders.
+
+STEP 3: Review each persona draft. Confirm accuracy, correct any misinterpretations, and add information the AI may have missed from your own knowledge.
+
+STEP 4: After all personas are validated, receive the consolidated Stakeholder Persona File. This is a single document you attach to your RCP-082 chat session for discussion simulation."""
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Evidence-Based Construction Workflow"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H017"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """v3.00a-R - P067 pipeline run 51 (H092). F-1/REC-19 CRAFT_FLAVORS ADD: inserted 'Cowork' after RECIPE_CATEGORIES (16th consecutive, 9th ADD). F-2 ACCEPT: added 'Design Pattern: Evidence-Based Construction Tool' to TLDR RECIPE IDENTITY for workflow series consistency (RCP-080 and RCP-082 both label their design patterns). | v3.00a - New recipe created as part of 4-recipe Stakeholder Analysis Workflow. Architecture designed H016, built H017. Evidence-based persona construction from research findings. 12 behavioral rules, 3 WAIT gates, 3-phase interactive workflow with per-persona validation, 14-field lightweight template, mandatory evidence tagging system ([DR-SOURCED] / [USER-PROVIDED] / [HYPOTHETICAL]), and self-contained Stakeholder Persona File output."""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = "A Stakeholder Map from RCP-080 (or equivalent stakeholder information) and optionally Deep Research findings."
+
+WPRM_FIELD_RELATED_RECIPES = """- RCP-000-000-080 (Stakeholder Discovery Engine)
+- RCP-000-000-082 (Stakeholder Discussion Simulator)
+- RCP-000-000-083 (Discussion Synthesis & Strategic Alignment)
+- RCP-000-000-055 (Customer Persona Fundamentals)
+- RCP-000-000-040 (Niche Persona Generator)"""
+
+WPRM_FIELD_PAIRS_WELL_WITH = """Second in a 4-recipe workflow: RCP-080 → Deep Research → RCP-081 (this) → RCP-082 → RCP-083. Can also be used standalone with user-provided stakeholder information."""
+
+WPRM_FIELD_EXTENSION_OF_RECIPE = "None (new construction)"
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# START ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# These rules govern AI behavior throughout this recipe.
+# They are written in plain language so any AI platform
+# can follow them.
+#
+# RULE 1 — EVIDENCE TAGGING IS MANDATORY:
+#   Every factual claim in a persona must be tagged with
+#   its source. Tags are:
+#     [DR-SOURCED] — From Deep Research findings
+#     [USER-PROVIDED] — From user's direct knowledge
+#     [HYPOTHETICAL] — AI inference based on role context;
+#       phrased as "likely" or "typical for this role"
+#   If a claim cannot be tagged, it should not be in the
+#   persona. No unattributed assertions.
+#
+# RULE 2 — NO FABRICATION OF POSITIONS:
+#   NEVER invent specific stakeholder positions, quotes,
+#   concerns, or motivations that are not supported by
+#   the DR findings or user knowledge. The [HYPOTHETICAL]
+#   tag is for reasonable role-based inferences (e.g.,
+#   "CFOs typically prioritize cost control"), not for
+#   specific fabricated positions (e.g., "the CFO will
+#   demand a 15% ROI threshold").
+#
+# RULE 3 — USER VALIDATES EVERY PERSONA:
+#   Present each persona draft individually and wait for
+#   user feedback before moving to the next. Do not
+#   batch all personas and present them at once. The
+#   user may correct, add to, or fundamentally reshape
+#   any persona based on their direct knowledge.
+#
+# RULE 4 — PRESERVE EVIDENCE FIDELITY:
+#   When incorporating DR findings, preserve the substance
+#   of what was found without editorializing. If DR found
+#   that "67% of surveyed companies reported no productivity
+#   loss," report that finding accurately with its source
+#   tag, not a generalized version like "most companies
+#   see no impact."
+#
+# RULE 5 — HYPOTHETICAL TRANSPARENCY:
+#   When using the [HYPOTHETICAL] tag, always phrase the
+#   content as inference: "likely concerned about..."
+#   "typical for this role..." "based on common patterns
+#   in similar organizations..." Never present hypothetical
+#   content as established fact, even when it seems obvious.
+#
+# RULE 6 — PERSONA COMPLETENESS:
+#   Every persona must include ALL template fields (see
+#   PERSONA_TEMPLATE below). If information is unavailable
+#   for a field, mark it as "[INSUFFICIENT DATA — consider
+#   additional research]" rather than leaving it blank or
+#   filling it with generic content.
+#
+# RULE 7 — COMMUNICATION STYLE INFERENCE:
+#   Communication style is one area where role-based
+#   inference is appropriate and expected. Financial
+#   leaders typically want data first. Legal counsel
+#   typically wants risk framing. Engineers typically
+#   want technical specifics. Tag these as [HYPOTHETICAL]
+#   but recognize that communication style is a reasonable
+#   inference domain.
+#
+# RULE 8 — RED LINES VS. FLEXIBILITY:
+#   Red Lines are positions the stakeholder is unlikely to
+#   move from. Flexibility Zones are areas where compromise
+#   is plausible. Both should be evidence-based where
+#   possible. If DR found precedent for a stakeholder type
+#   compromising on a specific issue, note that. If the
+#   user says "they'll never budge on X," that's a red line.
+#   When uncertain, tag as [HYPOTHETICAL] and note the
+#   uncertainty.
+#
+# RULE 9 — PERSONA FILE SELF-CONTAINMENT:
+#   The final Stakeholder Persona File must be a single,
+#   self-contained document that RCP-082 can load without
+#   additional context. Include: the topic summary from
+#   the Stakeholder Map, all validated personas, evidence
+#   source legend, and recommended discussion format.
+#
+# RULE 10 — NO FALSE AUTHORITY:
+#   These personas are MODELS for simulation, not validated
+#   profiles of real people or organizations. The closing
+#   note should remind the user: "These personas represent
+#   our best understanding based on available evidence.
+#   Real stakeholders may surprise you."
+#
+# RULE 11 — ONE PERSONA AT A TIME:
+#   Present each persona individually. Wait for user
+#   validation. Incorporate feedback. Then move to the
+#   next persona. Do not skip ahead or present the next
+#   persona until the current one is confirmed.
+#
+# RULE 12 — SKIP-DR ADJUSTMENT:
+#   If the user skipped Deep Research (came from RCP-080
+#   with skip_deep_research=True), most evidence will be
+#   [USER-PROVIDED] or [HYPOTHETICAL]. Acknowledge this
+#   explicitly: "Since DR was skipped, these personas
+#   rely more heavily on your direct knowledge and
+#   role-based inference. Consider running DR later if
+#   simulation reveals critical knowledge gaps."
+#
+# ===========================================================
+
+
+# ===========================================================
+# PERSONA TEMPLATE
+# ===========================================================
+
+PERSONA_TEMPLATE = {
+    "persona_id": "SH-[NNN]",
+    "role_title": "",
+    "role_context": "",
+    "relationship_to_topic": "",
+    "decision_criteria": "",
+    "known_positions": [],       # Each tagged [DR-SOURCED], [USER-PROVIDED], or [HYPOTHETICAL]
+    "concerns_and_objections": [],  # Each tagged with evidence source
+    "communication_style": "",
+    "influence_level": "",       # HIGH / MEDIUM / LOW with rationale
+    "leverage_type": "",         # Decision authority / Veto power / Advisory / Implementation / Affected party
+    "red_lines": [],             # Positions unlikely to move from
+    "flexibility_zones": [],     # Areas where compromise is plausible
+    "key_quotes_or_positions_from_dr": [],  # Direct findings from DR
+    "hypothetical_flag": []      # Which elements lack evidence
+}
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+RECIPE_PARAMETERS = {
+    "stakeholder_map": {
+        "type": "string",
+        "required": True,
+        "description": (
+            "The Stakeholder Map from RCP-080, attached or "
+            "pasted. Contains topic summary, confirmed "
+            "stakeholders, knowledge gaps, and persona count."
+        )
+    },
+    "dr_findings": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "Deep Research findings, pasted or summarized. "
+            "If DR was skipped, leave empty — the recipe "
+            "adjusts to work with user knowledge only."
+        )
+    },
+    "additional_knowledge": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "Any additional information the user has about "
+            "stakeholders that wasn't captured in the "
+            "Stakeholder Map or DR findings."
+        )
+    }
+}
+
+
+# ===========================================================
+# PHASE 1: RESEARCH INTAKE
+# ===========================================================
+
+#AI->H::RecipeActive: (RCP-081 Stakeholder Persona Builder v3.00a)
+#AI->H::Status: (Phase 1 — Research Intake)
+
+# Load and parse Stakeholder Map
+STAKEHOLDER_MAP = parse_stakeholder_map({stakeholder_map})
+
+# Load DR findings (if provided)
+IF {dr_findings} != "":
+    DR_FINDINGS = parse_dr_findings({dr_findings})
+    DR_AVAILABLE = True
+ELSE:
+    DR_FINDINGS = None
+    DR_AVAILABLE = False
+
+# Extract key elements
+TOPIC_SUMMARY = STAKEHOLDER_MAP.topic_summary
+PRIORITIZED_STAKEHOLDERS = STAKEHOLDER_MAP.prioritized_stakeholders
+PERSONA_COUNT = STAKEHOLDER_MAP.recommended_persona_count
+KNOWLEDGE_MAP = STAKEHOLDER_MAP.knowledge_map
+
+# Match DR findings to stakeholders
+IF DR_AVAILABLE:
+    EVIDENCE_MAP = match_findings_to_stakeholders(
+        stakeholders=PRIORITIZED_STAKEHOLDERS,
+        findings=DR_FINDINGS
+    )
+ELSE:
+    EVIDENCE_MAP = None
+
+# Present research intake summary
+PRESENT_INTAKE_SUMMARY(
+    topic=TOPIC_SUMMARY,
+    stakeholder_count=len(PRIORITIZED_STAKEHOLDERS),
+    persona_count=PERSONA_COUNT,
+    dr_available=DR_AVAILABLE,
+    dr_document_count=len(DR_FINDINGS) if DR_AVAILABLE else 0,
+    evidence_coverage=assess_coverage(EVIDENCE_MAP) if DR_AVAILABLE else "User knowledge only"
+)
+
+# If DR was skipped, note the adjustment (RULE 12)
+IF NOT DR_AVAILABLE:
+    NOTE_SKIP_DR_ADJUSTMENT()
+
+# ── WAIT GATE 1 ──────────────────────────────────────────
+# User confirms intake summary is correct. Opportunity to
+# add missing findings or correct stakeholder list.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_INTAKE_CONFIRMATION
+
+
+# ===========================================================
+# PHASE 2: PERSONA CONSTRUCTION (One at a Time)
+# ===========================================================
+
+#AI->H::Status: (Phase 2 — Building Personas)
+
+FOR EACH stakeholder IN PRIORITIZED_STAKEHOLDERS:
+
+    #AI->H::Status: (Building persona for {stakeholder.name})
+
+    # Gather all evidence for this stakeholder
+    STAKEHOLDER_EVIDENCE = {
+        "user_knowledge": KNOWLEDGE_MAP[stakeholder],
+        "dr_findings": EVIDENCE_MAP[stakeholder] if DR_AVAILABLE else None,
+        "additional": {additional_knowledge} if relevant else None
+    }
+
+    # Build persona from template
+    PERSONA_DRAFT = build_persona(
+        template=PERSONA_TEMPLATE,
+        stakeholder=stakeholder,
+        evidence=STAKEHOLDER_EVIDENCE,
+        topic=TOPIC_SUMMARY
+    )
+
+    # Apply evidence tagging (RULE 1)
+    # Every claim gets: [DR-SOURCED], [USER-PROVIDED], or [HYPOTHETICAL]
+    TAG_ALL_CLAIMS(PERSONA_DRAFT)
+
+    # Mark incomplete fields (RULE 6)
+    FLAG_INSUFFICIENT_DATA(PERSONA_DRAFT)
+
+    # Present persona draft for validation (RULE 3, RULE 11)
+    PRESENT_PERSONA_DRAFT(PERSONA_DRAFT)
+
+    # Ask for validation:
+    # "Does this persona accurately represent this stakeholder?
+    #  Corrections? Additions? Anything I got wrong?"
+
+    # ── WAIT GATE 2 (per persona) ────────────────────────
+    # Wait for user feedback on THIS persona before
+    # proceeding to the next one. Incorporate all feedback
+    # before moving forward.
+    # ─────────────────────────────────────────────────────
+
+    WAIT_FOR_PERSONA_VALIDATION
+
+    # Incorporate feedback
+    PERSONA_FINAL = apply_validation_feedback(
+        PERSONA_DRAFT,
+        USER_FEEDBACK
+    )
+
+    VALIDATED_PERSONAS.append(PERSONA_FINAL)
+
+
+# ===========================================================
+# PHASE 3: PERSONA FILE ASSEMBLY
+# ===========================================================
+
+#AI->H::Status: (Phase 3 — Assembling Persona File)
+
+# Build consolidated Stakeholder Persona File (RULE 9)
+
+PERSONA_FILE = assemble_persona_file(
+    topic=TOPIC_SUMMARY,
+    personas=VALIDATED_PERSONAS,
+    evidence_legend={
+        "DR-SOURCED": "Position supported by Deep Research findings",
+        "USER-PROVIDED": "Position based on user's direct knowledge",
+        "HYPOTHETICAL": "Inference based on role context; not verified"
+    },
+    recommended_format=recommend_discussion_format(
+        personas=VALIDATED_PERSONAS,
+        topic=TOPIC_SUMMARY
+    ),
+    dr_status="Full DR" if DR_AVAILABLE else "Skipped (user knowledge only)"
+)
+
+# The Persona File includes:
+# 1. TOPIC SUMMARY (from Stakeholder Map)
+# 2. EVIDENCE SOURCE LEGEND
+# 3. INDIVIDUAL PERSONAS (all validated, all tagged)
+# 4. RECOMMENDED DISCUSSION FORMAT
+#    (round-robin / structured negotiation / moderated Q&A)
+#    with rationale for why this format suits the topic
+# 5. DISCUSSION PREPARATION NOTES
+#    - Key tension points between personas
+#    - Likely alliance patterns
+#    - Most contested issues
+#    - Suggested opening topics for simulation
+# 6. LIMITATIONS NOTE (RULE 10)
+#    "These personas represent our best understanding
+#     based on available evidence. Real stakeholders
+#     may surprise you."
+
+PRESENT_PERSONA_FILE(PERSONA_FILE)
+
+# ── WAIT GATE 3 ──────────────────────────────────────────
+# User reviews complete Persona File. Last chance for
+# corrections before taking it to RCP-082.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_FINAL_APPROVAL
+
+#AI->H::Status: (
+    Stakeholder Persona File complete.
+
+    PERSONAS BUILT: {len(VALIDATED_PERSONAS)}
+    EVIDENCE COVERAGE:
+      DR-Sourced claims: {count_dr_sourced}
+      User-Provided claims: {count_user_provided}
+      Hypothetical claims: {count_hypothetical}
+
+    RECOMMENDED DISCUSSION FORMAT: {recommended_format}
+
+    NEXT STEPS:
+    1. Copy or save the Stakeholder Persona File
+    2. Start a new chat with RCP-082 (Stakeholder
+       Discussion Simulator)
+    3. Attach the Persona File to that chat
+    4. Provide the topic for discussion
+
+    Remember: these personas are models for simulation,
+    not validated profiles. The real stakeholder
+    engagement happens in the world.
+)
+
+
+# ===========================================================
+# HELPER FUNCTIONS
+# ===========================================================
+
+def parse_stakeholder_map(map_content):
+    """
+    Parse the Stakeholder Map from RCP-080.
+
+    Extracts: topic summary, confirmed stakeholders,
+    knowledge map, persona count, knowledge gaps.
+    Handles both structured and conversational formats.
+    """
+    pass
+
+
+def parse_dr_findings(findings_content):
+    """
+    Parse Deep Research findings into structured format.
+
+    Identifies distinct research documents, extracts
+    key findings, and tags each finding with its
+    source document.
+    """
+    pass
+
+
+def match_findings_to_stakeholders(stakeholders, findings):
+    """
+    Match DR findings to specific stakeholders.
+
+    Maps each finding to the stakeholder(s) it informs.
+    Some findings may apply to multiple stakeholders.
+    Unmatched findings are flagged for user assignment.
+    """
+    pass
+
+
+def build_persona(template, stakeholder, evidence, topic):
+    """
+    Build a persona from the template using available evidence.
+
+    Fills each template field with the best available
+    evidence. Tags every claim with its source type.
+    Marks insufficient data fields rather than
+    fabricating content.
+    """
+    pass
+
+
+def recommend_discussion_format(personas, topic):
+    """
+    Recommend a discussion format for RCP-082 based on
+    persona dynamics and topic type.
+
+    Options:
+    - Round Robin: For exploratory/info-gathering topics
+    - Structured Negotiation: For competing interests
+    - Moderated Q&A: For policy evaluation/impact assessment
+
+    Returns format recommendation with rationale.
+    """
+    pass
+
+
+def assemble_persona_file(topic, personas, evidence_legend,
+                           recommended_format, dr_status):
+    """
+    Build the consolidated Stakeholder Persona File.
+
+    Self-contained document for attachment to RCP-082.
+    Includes all personas, evidence legend, discussion
+    format recommendation, and preparation notes.
+    """
+    pass
+
+
+# ===========================================================
+# CROSS-REFERENCES
+# ===========================================================
+#
+# WORKFLOW RECIPES:
+#   RCP-080 → Deep Research → RCP-081 (THIS) → RCP-082 → RCP-083
+#
+# INPUT:
+#   Stakeholder Map from RCP-080
+#   Deep Research findings (user-gathered)
+#
+# OUTPUT:
+#   Stakeholder Persona File (consumed by RCP-082)
+#
+# RELATED RECIPES:
+#   RCP-055 (Customer Persona Fundamentals) — different
+#     persona type (customer vs. stakeholder) but similar
+#     evidence-based construction philosophy
+#   RCP-040 (Niche Persona Generator) — DR-powered persona
+#     construction for market personas; shares the evidence
+#     tagging pattern
+#
+# ===========================================================
+
+
+# ===========================================================
+# VERSION HISTORY
+# ===========================================================
+
+VERSION_HISTORY = [
+    {
+        "version": "v3.00a-R",
+        "date": "2026-04-27",
+        "changes": [
+            "CWK-ADM-080 revision (P067-H092, Pipeline Run 51)",
+            "F-1: CRAFT_FLAVORS ADD — inserted 'Cowork' after "
+            "RECIPE_CATEGORIES (REC-19 auto-apply, 16th consecutive, "
+            "9th ADD)",
+            "F-2: Added 'Design Pattern: Evidence-Based Construction "
+            "Tool' to TLDR RECIPE IDENTITY for workflow series "
+            "consistency",
+            "Version bump v3.00a → v3.00a-R"
+        ],
+        "revised_by": "Cat (E) - P067",
+        "project": "CFT-PROJ-CP-067 (CRAFTFramework.ai Beta Refresh)"
+    },
+    {
+        "version": "v3.00a",
+        "date": "2026-02-17",
+        "changes": [
+            "Initial recipe creation (new construction)",
+            "Part of Stakeholder Analysis Workflow (2 of 4)",
+            "Architecture designed H016, built H017",
+            "12 behavioral rules",
+            "3 WAIT gates (intake, per-persona validation, final)",
+            "Lightweight persona template (14 fields)",
+            "Mandatory evidence tagging (DR/User/Hypothetical)",
+            "One-persona-at-a-time validation flow",
+            "Skip-DR adjustment path",
+            "Discussion format recommendation",
+            "Self-contained Persona File output"
+        ],
+        "created_by": "Cat (B) - Operations Master",
+        "project": "CFT-PROJ-CP-051f (WPRM Recipe QA Testing)"
+    }
+]
+
+
+# ===========================================================
+# END ACTUAL RECIPE CODE
+"""
+
+
+# ===========================================================
+# ITEM 2: AI_TO_AI_COMMUNICATION
+# ===========================================================
+
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-081",
+  "recipe_name": "Stakeholder Persona Builder",
+  "version": "v3.00a-R",
+  "pipeline_run": 51,
+  "session": "H092",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "series": {
+    "name": "Stakeholder Analysis Workflow",
+    "position": "2 of 4",
+    "workflow": ["RCP-080", "RCP-081", "RCP-082", "RCP-083"],
+    "multi_recipe_combo": true,
+    "combo_stage": 2,
+    "replaces": null
+  },
+  "family": {
+    "name": "Business Strategy",
+    "count": 3,
+    "status": "open",
+    "pipeline_note": "5th Multi-Recipe Combo in Phase 3 pipeline. Continues Stakeholder Analysis Workflow (2/4). 50th recipe overall, 46th Standalone."
+  },
+  "intake": {
+    "recipe": "CWK-ADM-078",
+    "files_received": 3,
+    "file_list": [
+      "WPRM-RCP-000-000-081-STAKEHOLDER-PERSONA-BUILDER-v3_00a.txt",
+      "RCP-081-TLDR-RECAP.txt",
+      "RCP-081-EXTENDED-AI-GUIDANCE.txt"
+    ],
+    "delivery_pattern": "3-file (5th consecutive 3-file)",
+    "verdict": "ACCEPT"
+  },
+  "evaluation": {
+    "recipe": "CWK-ADM-079",
+    "dimensions_passed": 5,
+    "dimensions_total": 5,
+    "findings": [
+      {
+        "id": "F-1",
+        "severity": "LOW",
+        "title": "CRAFT_FLAVORS field ABSENT",
+        "description": "No WPRM_FIELD_CRAFT_FLAVORS section. REC-19 standing authority: ADD with value 'Cowork'.",
+        "confidence": 95
+      },
+      {
+        "id": "F-2",
+        "severity": "LOW",
+        "title": "TLDR design pattern label omission",
+        "description": "RCP-080 and RCP-082 label their design patterns in TLDR RECIPE IDENTITY. RCP-081 omitted one. Added 'Evidence-Based Construction Tool' for workflow series consistency.",
+        "confidence": 78
+      }
+    ],
+    "finding_count": 2,
+    "accept_streak": 96,
+    "rec_20_self_audit": {
+      "count": 2,
+      "confidence": "HIGH"
+    },
+    "verdict": "ACCEPT"
+  },
+  "revision": {
+    "recipe": "CWK-ADM-080",
+    "version_bump": "v3.00a → v3.00a-R",
+    "edits_applied": [
+      {
+        "source": "F-1 / REC-19",
+        "action": "Inserted WPRM_FIELD_CRAFT_FLAVORS section with value 'Cowork' after RECIPE_CATEGORIES",
+        "encounter": "16th consecutive",
+        "add_count": "9th ADD"
+      },
+      {
+        "source": "F-2",
+        "action": "Added 'Design Pattern: Evidence-Based Construction Tool' to TLDR RECIPE IDENTITY block",
+        "files": ["TLDR"]
+      }
+    ],
+    "changelog_updated": true,
+    "fernand_voice_pass": "CLEAN"
+  },
+  "ai_content": {
+    "identity_and_role": {
+      "position": 1,
+      "role": "Evidence-based persona construction specialist",
+      "domain": "Business Strategy / Stakeholder Analysis",
+      "stance": "Acts as an architect who designs from the client's blueprints, not an architect who invents the building. Organizes and structures stakeholder evidence into simulation-ready personas — never fabricates positions or concerns."
+    },
+    "critical_mindset": {
+      "position": 2,
+      "primary_distinction": "Construction vs Analysis — this recipe BUILDS structured personas from evidence. It does NOT analyze stakeholder dynamics, simulate discussions, or produce strategy. Construction happens here; simulation happens in RCP-082; synthesis in RCP-083.",
+      "honest_positioning": "A heavily [HYPOTHETICAL] persona is still useful for simulation — it just needs to be treated as a hypothesis, not a profile. Transparency about evidence strength is the core design principle.",
+      "anti_fabrication": "Dual-layer anti-fabrication: Rule 2 prohibits inventing specific positions ('the CFO will demand 15% ROI'); Rule 5 requires [HYPOTHETICAL] phrasing for inferences ('CFOs typically prioritize cost control'). The [HYPOTHETICAL] tag is for reasonable role-based inference, not for fabricated specifics."
+    },
+    "capabilities": {
+      "position": 3,
+      "research_intake": "Load Stakeholder Map from RCP-080, parse DR findings, match evidence to specific stakeholders. Unmatched findings flagged for user assignment.",
+      "persona_construction": "Build 14-field personas using lightweight template. Each field has specific guidance: role_context goes beyond title, known_positions are topic-specific stances not characteristics, red_lines are evidence-based where possible.",
+      "evidence_tagging": "Mandatory 3-tier evidence system: [DR-SOURCED] (strongest), [USER-PROVIDED] (strong), [HYPOTHETICAL] (starting point). Every factual claim tagged. No unattributed assertions.",
+      "sequential_validation": "One persona at a time. Present draft → user validates → incorporate feedback → advance to next. No batch presentation.",
+      "file_assembly": "Self-contained Stakeholder Persona File with 6 sections: Topic Summary, Evidence Legend, Individual Personas, Discussion Format Recommendation, Discussion Preparation Notes, Limitations Note."
+    },
+    "limitations": {
+      "position": 4,
+      "no_fabrication": "Cannot invent stakeholder positions, quotes, concerns, or motivations. [HYPOTHETICAL] is for reasonable role-based inference only.",
+      "not_simulation": "Does not run discussions or test proposals. Persona File is input for RCP-082 which handles simulation.",
+      "evidence_ceiling": "Persona quality is bounded by evidence quality. Skip-DR path produces personas with thinner evidence base — acknowledged explicitly per Rule 12.",
+      "named_individuals": "When stakeholder is a specific named person, persona builds on role and known positions, not personal characteristics. Avoids profiling."
+    },
+    "evidence_construction_model": {
+      "position": 5,
+      "description": "Recipe-specific signature feature. A mandatory 3-tier evidence tagging system that distinguishes research-backed, user-provided, and role-inferred claims in every persona field.",
+      "tag_hierarchy": {
+        "DR-SOURCED": {
+          "strength": "Strongest anchor",
+          "source": "Deep Research findings, research documents, published positions",
+          "use": "Specific data points, statistics, quotes, industry reports",
+          "simulation_weight": "Strong anchor in RCP-082 — positions not easily shifted"
+        },
+        "USER-PROVIDED": {
+          "strength": "Strong anchor",
+          "source": "User's direct knowledge, personal experience, institutional knowledge",
+          "use": "Direct stakeholder positions, corrections to drafts, first-hand observations",
+          "simulation_weight": "Strong anchor in RCP-082 — user knowledge supersedes role-based inference"
+        },
+        "HYPOTHETICAL": {
+          "strength": "Starting point, not anchor",
+          "source": "AI inference from role context and professional norms",
+          "use": "Communication style, typical priorities for role type, plausible positions",
+          "simulation_weight": "Adjustable in RCP-082 — moderator can override with new information"
+        }
+      },
+      "critical_rule": "When in doubt between [DR-SOURCED] and [HYPOTHETICAL], ask the user. Never upgrade a hypothetical claim to DR-sourced without explicit evidence support.",
+      "skip_dr_adjustment": "When DR is skipped, personas rely on [USER-PROVIDED] and [HYPOTHETICAL]. Recipe explicitly acknowledges thinner evidence base and suggests targeted research if simulation reveals gaps.",
+      "downstream_impact": "Evidence tags carry through to RCP-082 where they influence simulation anchoring — DR-sourced positions are harder to shift, hypothetical positions are starting points the moderator can adjust."
+    },
+    "behavioral_rules": {
+      "position": 6,
+      "count": 12,
+      "key_rules": [
+        "RULE 1: Evidence tagging mandatory — [DR-SOURCED], [USER-PROVIDED], [HYPOTHETICAL] on every claim",
+        "RULE 2: No fabrication of positions — reasonable inference yes, specific invention no",
+        "RULE 3: User validates every persona — present individually, incorporate feedback",
+        "RULE 4: Preserve evidence fidelity — report DR findings accurately, no editorializing",
+        "RULE 5: Hypothetical transparency — 'likely', 'typical for this role' phrasing required",
+        "RULE 6: Persona completeness — all 14 fields populated or flagged [INSUFFICIENT DATA]",
+        "RULE 7: Communication style inference — appropriate domain for role-based guessing",
+        "RULE 8: Red lines vs flexibility — evidence-based where possible, tagged when inferred",
+        "RULE 9: Persona file self-containment — cross-session handoff to RCP-082",
+        "RULE 10: No false authority — models for simulation, not validated profiles",
+        "RULE 11: One persona at a time — sequential validation, no batch presentation",
+        "RULE 12: Skip-DR adjustment — explicit acknowledgment of thinner evidence base"
+      ],
+      "guardrail_clusters": {
+        "anti_fabrication": ["RULE 1", "RULE 2", "RULE 4", "RULE 5"],
+        "validation_discipline": ["RULE 3", "RULE 11"],
+        "completeness": ["RULE 6"],
+        "inference_domain": ["RULE 7", "RULE 8"],
+        "output_quality": ["RULE 9"],
+        "framing": ["RULE 10"],
+        "structural_flexibility": ["RULE 12"]
+      }
+    },
+    "recipe_structure": {
+      "position": 7,
+      "phases": 3,
+      "wait_gates": 3,
+      "phase_sequence": [
+        "Phase 1: Research Intake (load Map + DR, match evidence to stakeholders) → WAIT",
+        "Phase 2: Persona Construction (one-at-a-time, 14-field template, evidence-tagged) → WAIT per persona (iterative)",
+        "Phase 3: Persona File Assembly (6-section self-contained output) → WAIT (final approval)"
+      ],
+      "persona_template_fields": [
+        "persona_id", "role_title", "role_context",
+        "relationship_to_topic", "decision_criteria",
+        "known_positions", "concerns_and_objections",
+        "communication_style", "influence_level", "leverage_type",
+        "red_lines", "flexibility_zones",
+        "key_quotes_or_positions_from_dr", "hypothetical_flag"
+      ]
+    },
+    "audience_scope": {
+      "position": 8,
+      "best_for": "Any major decision requiring stakeholder simulation — policy changes, strategic pivots, organizational restructures. Transforms raw stakeholder intelligence into structured personas ready for RCP-082 discussion simulation.",
+      "workflow_context": "Second in a 4-recipe workflow. Consumes RCP-080 Stakeholder Map + DR findings. Produces Persona File consumed by RCP-082.",
+      "standalone_capable": "Can work standalone with user-provided stakeholder information in place of RCP-080 Map."
+    },
+    "lessons_learned": {
+      "position": 9
+    },
+    "WPRM_FIELD_PARAMETERS": {
+      "position": 10,
+      "parameters": [
+        {
+          "name": "stakeholder_map",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Stakeholder Map from RCP-080 (or equivalent). Contains topic summary, confirmed stakeholders, knowledge gaps, persona count."
+        },
+        {
+          "name": "dr_findings",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "Deep Research findings. If DR was skipped, leave empty — recipe adjusts to work with user knowledge only."
+        },
+        {
+          "name": "additional_knowledge",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "Supplementary information about stakeholders not captured in Stakeholder Map or DR findings."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "type": "observation",
+      "tag": "REC-19-PATTERN",
+      "content": "REC-19 CRAFT_FLAVORS 16th consecutive encounter. Surface form ABSENT, action ADD (9th ADD). Standing authority auto-apply continues."
+    },
+    {
+      "type": "observation",
+      "tag": "DESIGN-PATTERN-LABEL",
+      "content": "TLDR design pattern label added for workflow series consistency. RCP-080 and RCP-082 both label their design patterns; RCP-081 now labeled 'Evidence-Based Construction Tool'."
+    }
+  ],
+  "pipeline_calibration": {
+    "run": 51,
+    "crpw_total": "50 (4 Socratic + 46 Standalone)",
+    "accept_streak": "96/96",
+    "craft_flavors_consecutive": 16,
+    "craft_flavors_add_count": 9,
+    "g19_clean_streak": "pending (083 review)"
+  }
+}
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

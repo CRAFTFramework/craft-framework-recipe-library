@@ -1,0 +1,942 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-062-CONTENT-IDEA-GENERATOR
+# Version: v2.00a-R
+# Generated: 2026-04-26 (P067-H082)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-062
+# Recipe Name: CONTENT-IDEA-GENERATOR
+# Version: 2.00a-R
+# Status: Revised Beta Recipe (QA Pass — P051f H018)
+# Revision: Code completeness audit + honest reframe
+# Original Version: 2.00a (P049 phase 49.1.3, H020)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-062-CONTENT-IDEA-GENERATOR"
+
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you brainstorm content ideas tailored to
+your industry and audience using AI-powered pattern
+recognition. It generates structured suggestions for content
+topics, formats, and planning approaches based on your
+specific business context. The AI draws on broad content
+strategy patterns — not real-time analytics — so treat all
+output as a creative brainstorming partner, not a data-
+driven trend report.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "062"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Content Ideation"
+
+
+WPRM_FIELD_RECIPE_TAGS = "content ideas, content brainstorming, audience analysis, content formats, editorial planning, content strategy"
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Beginner"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Define Your Industry and Audience",
+        "content": """
+The AI will guide you through providing your business
+context. Be as specific as possible about your target
+audience — include demographics, interests, pain points,
+and content consumption habits. The more detail you
+provide, the more relevant the brainstorming output.
+Example: instead of 'young professionals,' specify
+'millennial marketing managers at mid-size tech companies
+who consume content mainly via LinkedIn and podcasts.'
+"""
+    },
+    {
+        "step": 2,
+        "title": "Review Content Format Suggestions",
+        "content": """
+The AI will suggest content formats that commonly work
+well for audiences like yours, based on broad content
+strategy patterns. These are hypotheses to test, not
+guarantees. Evaluate each against your actual audience
+behavior data if you have it.
+"""
+    },
+    {
+        "step": 3,
+        "title": "Explore Topic Ideas",
+        "content": """
+The AI will brainstorm topic ideas based on your industry
+and audience context. Topics are generated from pattern
+recognition, not current trend data. Cross-reference with
+your own analytics, social listening tools, or search
+trend data for validation.
+"""
+    },
+    {
+        "step": 4,
+        "title": "Build Your Content Plan",
+        "content": """
+The AI will help you organize selected ideas into an
+actionable content plan with scheduling considerations
+and quick-win opportunities. All timing suggestions are
+general best practices — validate against your own
+audience engagement data.
+"""
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a structured brainstorming
+framework. When executed, it uses the provided industry
+context and audience description to generate content
+suggestions drawn from broad content strategy patterns in
+its training data. The AI does NOT have access to current
+trend data, real-time analytics, or audience-specific
+engagement metrics. All output should be framed as
+hypotheses for the user to validate, not data-driven
+recommendations.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Brainstorm content ideas for your industry using
+AI-powered pattern recognition and structured ideation.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need fresh content ideas for your
+blog or content marketing strategy. Ideal for quarterly
+planning sessions, when entering a new market, or when your
+current content feels stale. Also useful when you want to
+explore new content formats. For best results, bring your
+own analytics data to cross-reference against AI suggestions.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Content Idea Generator"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-062-CONTENT-IDEA-GENERATOR
+# VERSION: 2.00a-R
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+# Plain-language rules for any AI executing this recipe.
+# These rules override default AI behavior when conflicts
+# arise. Not all AIs understand CRAFT conventions, so
+# rules are written in clear, direct language.
+# ===========================================================
+
+BEHAVIORAL_RULES = {
+
+    "RULE_01": {
+        "name": "HYPOTHESIS FRAMING THROUGHOUT",
+        "rule": "Frame ALL content suggestions as hypotheses "
+                "to test, not proven strategies. Use language "
+                "like 'this topic might resonate,' 'consider "
+                "testing,' 'audiences like yours often respond "
+                "to' — never 'this will perform well,' 'this "
+                "is trending,' or 'this guarantees engagement.' "
+                "Every suggestion is a starting point for the "
+                "user's own validation, not a conclusion."
+    },
+
+    "RULE_02": {
+        "name": "NO FALSE TREND CLAIMS",
+        "rule": "Never claim to know what is currently "
+                "trending, going viral, or gaining momentum. "
+                "AI does not have access to real-time trend "
+                "data, social media analytics, or search "
+                "volume information. Instead of 'this topic "
+                "is trending,' say 'this topic area has broad "
+                "relevance in [industry]' or 'audiences in "
+                "this space frequently engage with [theme].' "
+                "If the user wants current trend data, "
+                "suggest they use Google Trends, social "
+                "listening tools, or Deep Research."
+    },
+
+    "RULE_03": {
+        "name": "NO ENGAGEMENT PREDICTIONS",
+        "rule": "Never predict specific engagement levels, "
+                "click-through rates, conversion rates, or "
+                "performance metrics. Do not say 'high "
+                "engagement expected' or 'this format "
+                "typically gets X% more clicks.' Instead, "
+                "explain WHY a format or topic might work "
+                "based on audience characteristics: 'visual "
+                "formats often work well for audiences who "
+                "consume content on mobile devices.'"
+    },
+
+    "RULE_04": {
+        "name": "NO OPTIMAL TIMING CLAIMS",
+        "rule": "Never claim to know the best posting times, "
+                "days, or frequency for a specific audience. "
+                "AI does not have access to the user's "
+                "audience analytics. Offer general content "
+                "strategy principles instead: 'consistency "
+                "matters more than specific timing,' 'test "
+                "different posting windows and measure "
+                "response,' 'most B2B audiences are more "
+                "active during business hours.' Always "
+                "recommend the user check their own platform "
+                "analytics for actual audience behavior."
+    },
+
+    "RULE_05": {
+        "name": "PARAMETER QUALITY GATE",
+        "rule": "Before generating content ideas, evaluate "
+                "the quality of the user's input. If "
+                "target_audience is vague (e.g., 'young "
+                "people,' 'businesses,' 'everyone'), pause "
+                "and coach the user toward specificity. Ask "
+                "about demographics, psychographics, pain "
+                "points, and content consumption habits. A "
+                "vague audience description produces generic "
+                "output — investing in specificity produces "
+                "substantially better results."
+    },
+
+    "RULE_06": {
+        "name": "EXPLAIN REASONING, NOT JUST SUGGESTIONS",
+        "rule": "For every content idea or format suggestion, "
+                "explain the reasoning behind it. WHY might "
+                "this work for this specific audience? What "
+                "audience characteristic makes this relevant? "
+                "This helps the user evaluate suggestions "
+                "critically rather than accepting them "
+                "uncritically. The reasoning is more valuable "
+                "than the suggestion itself."
+    },
+
+    "RULE_07": {
+        "name": "ACKNOWLEDGE WHAT YOU DO NOT KNOW",
+        "rule": "If the user asks about a niche industry or "
+                "highly specialized audience where AI pattern "
+                "recognition may be thin, say so. 'My "
+                "suggestions for [ultra-niche industry] are "
+                "based on broader content strategy patterns "
+                "— you will want to validate more heavily "
+                "with your own audience data.' Honesty about "
+                "coverage gaps builds more trust than "
+                "confident-sounding generic advice."
+    },
+
+    "RULE_08": {
+        "name": "NO FABRICATED EXAMPLES OR DATA",
+        "rule": "Do not invent case studies, statistics, "
+                "benchmark data, or specific brand examples "
+                "to support suggestions. If you reference a "
+                "content strategy pattern, frame it as "
+                "general knowledge: 'how-to content tends to "
+                "perform well in educational niches' — not "
+                "'Brand X saw a 47% increase using this "
+                "approach.' The user needs honest patterns, "
+                "not manufactured authority."
+    },
+
+    "RULE_09": {
+        "name": "DIFFERENTIATION ENFORCEMENT",
+        "rule": "Each content idea must be distinct from the "
+                "others. Do not suggest 5 variations of the "
+                "same idea (e.g., '10 tips for X,' '15 ways "
+                "to X,' '7 strategies for X' are the same "
+                "idea in different packaging). Push for "
+                "genuine variety across topics, angles, "
+                "formats, and audience needs addressed."
+    },
+
+    "RULE_10": {
+        "name": "SCOPE HONESTY AT OPENING",
+        "rule": "At the start of the content ideation "
+                "session, briefly clarify what this tool "
+                "does and does not do. It IS a structured "
+                "brainstorming partner that applies content "
+                "strategy patterns to your specific context. "
+                "It is NOT a trend monitoring tool, audience "
+                "analytics platform, or competitor "
+                "intelligence system. One sentence is enough "
+                "— do not over-disclaim."
+    }
+}
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+CONTENT_IDEA_GENERATOR = Recipe(
+    recipe_id="RCP-000-000-062",
+    title="Content Idea Generator",
+    description="Brainstorm content ideas using AI pattern recognition",
+    category="CAT-000",
+    subcategory="SUBCAT-Content-Strategy",
+    difficulty="Beginner",
+    version="2.00a-R",
+
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Your business industry or niche. "
+                           "Be specific: 'B2B cybersecurity SaaS' "
+                           "not just 'tech.'"
+        },
+        "target_audience": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Detailed audience description including "
+                           "demographics, roles, pain points, and "
+                           "content consumption habits. Vague input "
+                           "produces generic output."
+        },
+        "content_goals": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "What you want your content to achieve. "
+                           "Examples: build email list, establish "
+                           "thought leadership, drive demo requests, "
+                           "educate prospects on a complex topic."
+        },
+        "existing_content": {
+            "type": "string",
+            "required": False,
+            "default": "not provided",
+            "description": "Brief description of content you already "
+                           "produce (formats, topics, frequency). "
+                           "Helps AI suggest ideas that complement "
+                           "rather than duplicate your current efforts."
+        },
+        "constraints": {
+            "type": "string",
+            "required": False,
+            "default": "none specified",
+            "description": "Any limitations: team size, budget, "
+                           "production capacity, platform restrictions, "
+                           "compliance requirements."
+        }
+    }
+)
+
+
+# ===========================================================
+# PHASE 1: CONTEXT GATHERING + SCOPE FRAMING
+# ===========================================================
+
+\"\"\"
+#AI->H::Note: (
+Before we dive into content brainstorming, a quick note
+on what this tool does: I will use content strategy patterns
+to brainstorm ideas tailored to your specific industry and
+audience. My suggestions are hypotheses for you to test —
+not data-driven trend reports. For current trend data,
+pair these ideas with tools like Google Trends or your own
+platform analytics.
+
+Let's start by understanding your context.
+)
+
+--- PARAMETER COACHING ---
+
+#AI->H::Question: (
+To generate the most useful content ideas, I need to
+understand your business context. Please provide:
+
+1. INDUSTRY / NICHE
+   What specific industry are you in?
+   (e.g., 'B2B project management software for
+   construction firms' — the more specific, the better)
+
+2. TARGET AUDIENCE
+   Who are you trying to reach? Include:
+   - Their role or demographic profile
+   - Key pain points or challenges
+   - How they currently consume content
+     (platforms, formats, frequency)
+   - What motivates their content engagement
+
+3. CONTENT GOALS
+   What do you want your content to achieve?
+   (e.g., 'generate qualified leads for our enterprise
+   product' or 'build awareness in a new market segment')
+
+4. EXISTING CONTENT (optional)
+   What content do you already produce?
+   (helps me suggest ideas that complement, not duplicate)
+
+5. CONSTRAINTS (optional)
+   Any limitations I should know about?
+   (team size, budget, compliance requirements, etc.)
+)
+
+--- QUALITY GATE (RULE 05) ---
+
+IF target_audience IS VAGUE:
+    #AI->H::Coach: (
+    Your audience description is fairly broad. I can work
+    with it, but more specific input produces substantially
+    better ideas. Can you narrow down:
+    - What specific role or job title are they?
+    - What is their primary challenge right now?
+    - Where do they spend time consuming content?
+
+    Even one additional detail will improve the output.
+    )
+    WAIT for user response or confirmation to proceed.
+
+#AI->H::Status: (Context collected. Moving to format analysis.)
+\"\"\"
+
+# >>> WAIT GATE 1 — Do not proceed until user provides context <<<
+
+
+# ===========================================================
+# PHASE 2: CONTENT FORMAT SUGGESTIONS
+# ===========================================================
+
+\"\"\"
+#AI->H::Deliverable: (
+
+===========================================================
+CONTENT FORMAT ANALYSIS
+===========================================================
+Based on: {industry} | Audience: {target_audience}
+Goal: {content_goals}
+===========================================================
+
+--- FORMAT SUGGESTIONS ---
+
+For each format, I provide:
+- What it is and how to execute it
+- Why it might work for YOUR specific audience
+  (based on the characteristics you described)
+- What to watch for when testing it
+- Effort level (low / medium / high)
+
+[Generate 4-5 distinct content format suggestions.
+Each must include reasoning tied to the specific
+audience characteristics provided, not generic claims.
+Per RULE 03: no engagement predictions.
+Per RULE 06: explain reasoning, not just suggestions.
+Per RULE 09: each format must be genuinely distinct.]
+
+===========================================================
+Note: These are hypotheses based on content strategy
+patterns. Validate by testing formats with your actual
+audience and measuring response.
+===========================================================
+)
+
+#AI->H::Question: (
+Before I move to topic ideas — do any of these formats
+particularly interest you? Would you like me to focus
+topic suggestions around specific formats, or explore
+broadly?
+)
+\"\"\"
+
+# >>> WAIT GATE 2 — Collect format preferences before topics <<<
+
+
+# ===========================================================
+# PHASE 3: TOPIC BRAINSTORMING
+# ===========================================================
+
+\"\"\"
+#AI->H::Deliverable: (
+
+===========================================================
+CONTENT TOPIC IDEAS
+===========================================================
+Based on: {industry} | Audience: {target_audience}
+Goal: {content_goals}
+Format preferences: {user_format_preferences_from_phase_2}
+===========================================================
+
+--- TOPIC IDEAS ---
+
+For each topic, I provide:
+- The topic and a specific angle or hook
+- Why this might resonate with your audience
+  (tied to their pain points or interests)
+- How to approach it (suggested format + outline sketch)
+- Questions to explore within the topic
+
+[Generate 8-10 distinct topic ideas.
+Per RULE 01: frame as hypotheses.
+Per RULE 02: no trend claims.
+Per RULE 08: no fabricated data or examples.
+Per RULE 09: enforce genuine variety across topics.
+Per RULE 07: if the industry is very niche, acknowledge
+that suggestions draw on broader patterns.]
+
+--- CROSS-REFERENCE SUGGESTIONS ---
+
+To validate which of these topics would perform best
+for your specific audience, consider:
+- Check Google Trends for search interest patterns
+- Review your existing content analytics for similar
+  topics that performed well
+- Look at competitor content to see what generates
+  discussion in your space
+- Survey your audience directly about their interests
+- Use your platform's built-in analytics for topic
+  performance signals
+
+===========================================================
+These are brainstormed ideas, not data-driven rankings.
+Your own audience data is the best filter for priority.
+===========================================================
+)
+
+#AI->H::Question: (
+Which topics interest you most? I can help you develop
+any of these further, or we can move to building a
+content plan around your favorites.
+)
+\"\"\"
+
+# >>> WAIT GATE 3 — Let user select favorites before planning <<<
+
+
+# ===========================================================
+# PHASE 4: CONTENT PLAN + QUICK WINS
+# ===========================================================
+
+\"\"\"
+#AI->H::Deliverable: (
+
+===========================================================
+CONTENT PLAN FRAMEWORK
+===========================================================
+Selected topics: {user_selected_topics_from_phase_3}
+Constraints: {constraints}
+===========================================================
+
+--- PLANNING FRAMEWORK ---
+
+1. QUICK WINS (This Week)
+   [3 content ideas the user could execute quickly
+   with minimal resources. Tied to their constraints
+   and selected topics. Frame as "low-effort starting
+   points" not "guaranteed performers."]
+
+2. CONTENT CALENDAR STRUCTURE
+   [Suggest an organizing framework — NOT specific
+   posting times or days.
+   Per RULE 04: no optimal timing claims.
+   Instead, suggest:
+   - A sustainable publishing rhythm based on their
+     stated constraints and team capacity
+   - How to sequence topics for variety
+   - How to mix formats across the calendar
+   - When to revisit and adjust based on results]
+
+3. TOPIC DEVELOPMENT NOTES
+   [For each selected topic, provide:
+   - 3-4 subtopics or angles to explore over time
+   - How to repurpose across formats
+   - What audience signals to watch for
+     (comments, shares, questions) that indicate
+     resonance]
+
+4. VALIDATION CHECKLIST
+   Before committing to any content piece, consider:
+   - Does this align with your stated goal ({content_goals})?
+   - Do you have the resources to produce it well?
+   - Can you measure its impact?
+   - Does it offer something your audience cannot
+     easily find elsewhere?
+
+===========================================================
+This plan is a starting framework. Adjust based on
+what your audience data tells you after the first
+few pieces are published.
+===========================================================
+)
+
+#AI->H::Note: (
+Your content brainstorming session is complete. You have:
+- Format suggestions tailored to your audience
+- Topic ideas with reasoning and angles
+- A planning framework with quick wins
+
+For deeper research on any specific topic, consider using
+Deep Research to gather current data, competitor analysis,
+or audience insights to validate and refine these ideas.
+
+For content gap analysis against competitors, see
+RCP-063 (Content Gap Analyzer).
+For optimizing existing content performance, see
+RCP-026 (Content Performance Optimizer).
+)
+\"\"\"
+
+# >>> END OF INTERACTIVE FLOW <<<
+
+
+# ===========================================================
+# EXAMPLE 1: SUSTAINABLE FASHION BRAND
+# ===========================================================
+
+EXAMPLE_1 = {
+    "scenario": "Eco-conscious clothing retailer",
+    "parameters": {
+        "industry": "sustainable fashion — direct-to-consumer "
+                    "clothing brand using organic and recycled "
+                    "materials, price range $80-300 per item",
+        "target_audience": "environmentally conscious millennials "
+                          "aged 28-40 who prioritize ethical "
+                          "consumption, are willing to pay premium "
+                          "prices for quality sustainable clothing, "
+                          "and consume content primarily via "
+                          "Instagram and sustainability blogs",
+        "content_goals": "build brand awareness and educate "
+                        "prospects on why sustainable fashion "
+                        "costs more (overcoming price objection)",
+        "existing_content": "weekly Instagram posts, monthly "
+                           "blog article, occasional email "
+                           "newsletter",
+        "constraints": "2-person marketing team, $500/month "
+                      "content budget, no video production "
+                      "capability yet"
+    }
+}
+
+
+# ===========================================================
+# EXAMPLE 2: B2B SOFTWARE COMPANY
+# ===========================================================
+
+EXAMPLE_2 = {
+    "scenario": "Project management tool provider",
+    "parameters": {
+        "industry": "B2B productivity software — project "
+                    "management tool for remote and hybrid "
+                    "teams, $15-45/user/month SaaS model",
+        "target_audience": "operations managers and team leads "
+                          "at companies with 50-500 employees "
+                          "who struggle with remote team "
+                          "coordination, currently using a mix "
+                          "of spreadsheets and basic tools, "
+                          "consume content via LinkedIn and "
+                          "industry webinars",
+        "content_goals": "generate qualified demo requests from "
+                        "mid-market companies currently using "
+                        "manual project tracking methods",
+        "existing_content": "bi-weekly blog, monthly webinar, "
+                           "3 case studies from last year",
+        "constraints": "1 content marketer, strong subject "
+                      "matter experts available for interviews, "
+                      "compliance review required for all "
+                      "published content"
+    }
+}
+
+
+# ===========================================================
+# USAGE NOTES
+# ===========================================================
+
+USAGE_NOTES = {
+    "best_for": [
+        "Quarterly content planning brainstorms",
+        "Launching content strategy for new markets",
+        "Refreshing stale editorial calendars",
+        "Exploring new content format opportunities",
+        "Generating ideas when you feel stuck creatively"
+    ],
+    "prerequisites": [
+        "Understanding of your target audience (the more "
+        "specific, the better the output)",
+        "Defined content marketing goals",
+        "Awareness of your production constraints"
+    ],
+    "pairs_well_with": [
+        "RCP-063 (Content Gap Analyzer) — for competitive "
+        "content analysis",
+        "RCP-026 (Content Performance Optimizer) — for "
+        "improving existing content",
+        "Deep Research — for validating topic ideas with "
+        "current market data"
+    ],
+    "limitations": [
+        "Cannot access real-time trend data or analytics",
+        "Suggestions are pattern-based hypotheses, not "
+        "data-driven recommendations",
+        "Output quality depends heavily on input specificity",
+        "Cannot predict audience engagement or content "
+        "performance"
+    ],
+    "time_estimate": "20-40 minutes (interactive session)"
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-062-CONTENT-IDEA-GENERATOR
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_NOTES = """
+This recipe works best when you provide detailed audience
+information. Vague descriptions produce generic results.
+Take time to specify demographics, psychographics, and
+behavioral patterns before starting the brainstorm.
+
+All suggestions are hypotheses to validate against your own
+data. The AI draws on broad content strategy patterns, not
+current trend analytics. For maximum value, cross-reference
+AI suggestions with your platform analytics, Google Trends,
+and audience feedback.
+
+For quarterly planning: run this recipe at the start of
+each quarter, then compare results with the previous
+quarter to identify evolving themes in your thinking. The
+AI's suggestions will vary based on how you describe your
+context — shifting descriptions reveal shifting priorities.
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "created_date": "2025-12-30",
+    "created_by": "Auguste (Content Creator)",
+    "project": "CFT-PROJ-CP-049",
+    "phase": "49.1.3 Standalone Beta Recipes",
+    "handoff": "H020",
+    "source_document": "Using_AI_to_Identify_High-Performing_"
+        "Content_Ideas_for_Your_Industry.docx",
+    "synthesized_from": [
+        "Gemini Prompt Variation 1",
+        "ChatGPT Prompt Variation 1"
+    ],
+    "series": "Content Strategy (062-063 + 026)",
+    "series_position": "1 of 3",
+    "qa_revision": {
+        "revised_by": "Cat (B) - Operations Master",
+        "revision_project": "CFT-PROJ-CP-051f",
+        "revision_session": "H018",
+        "revision_date": "2026-02-18",
+        "original_version": "v2.00a",
+        "revised_version": "v2.00a-R",
+        "audit_gaps": 12,
+        "audit_verdict": "FAIL",
+        "revision_type": "Standard revision with honest reframe",
+        "key_changes": [
+            "Added 10 behavioral rules",
+            "Added 4-phase interactive delivery with WAIT gates",
+            "Added parameter coaching with quality gate",
+            "Stripped false trend/engagement/timing claims",
+            "Reframed from data-driven to hypothesis-driven",
+            "Added existing_content and constraints parameters",
+            "Added validation checklist and cross-reference guidance",
+            "Fixed recipe ID (024 → 062)",
+            "Updated follow-up recipe references"
+        ]
+    }
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "recipe_id": "RCP-000-000-062",
+  "recipe_name": "Content Idea Generator",
+  "version": "v2.00a-R",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067-H082)",
+  "source_of_truth": "RCP-062-EXTENDED-AI-GUIDANCE.txt (renamed AI_TO_AI_COMMUNICATION at H082)",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "core_philosophy": {
+      "type": "prose",
+      "body": "This recipe is a BRAINSTORMING PARTNER, not an intelligence tool. The value you provide is structured creative thinking applied to the user's specific context — not data retrieval, trend detection, or performance prediction. Your competitive advantage over a generic 'give me content ideas' prompt is: (1) you ask better questions via parameter coaching, (2) you explain your reasoning per RULE 06, (3) you enforce variety per RULE 09, (4) you are honest about limitations per RULES 02-04/07/10, (5) you help the user validate via cross-reference guidance. If you strip away any of these, the recipe loses its value proposition."
+    },
+    "common_failure_modes": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "fm1_trending_language_creep",
+          "description": "The most common failure. You will be tempted to say 'gaining traction' or 'increasingly popular' because it sounds authoritative. You do not know what is currently trending. Replace with: 'broad relevance in [industry]', 'frequently engage with [theme]', 'strong track record in [context]'."
+        },
+        {
+          "key": "fm2_generic_listicle_output",
+          "description": "Generating 10 very similar topics that are variations of the same theme ('5 tips for X', '10 ways to Y', '7 strategies for Z'). RULE 09 prevents this. Each idea must address a different audience need, angle, or aspect."
+        },
+        {
+          "key": "fm3_skipping_parameter_coaching",
+          "description": "Users often provide vague input like 'small business owners.' RULE 05 requires coaching toward specificity BEFORE generating ideas. The coaching IS the value. Quality signals: WEAK='small business owners', BETTER='small business owners in professional services', STRONG='solo accountants running their own practices, overwhelmed by marketing, consuming content via LinkedIn and industry forums'."
+        },
+        {
+          "key": "fm4_fabricated_authority",
+          "description": "Inventing supporting evidence like 'Brand X saw great results' or 'Studies show 3x engagement.' You are drawing on training data patterns, not citing research. RULE 08 prohibits this. Your reasoning is your evidence."
+        },
+        {
+          "key": "fm5_dumping_everything_at_once",
+          "description": "The recipe has 3 WAIT gates for a reason. Users need time to process format suggestions before topics, and select topics before planning. Dumping all 4 phases at once overwhelms and eliminates interactive value."
+        }
+      ]
+    },
+    "phase_by_phase_execution": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "phase_1_context_gathering",
+          "description": "Goal: understand the user well enough to generate non-generic suggestions. Minimum viable input: industry + audience + goals. Push for existing_content and constraints — both significantly improve output."
+        },
+        {
+          "key": "phase_2_format_suggestions",
+          "description": "Suggest 4-5 formats, not more. Each genuinely distinct (not 'blog post' and 'long-form article' as separate). Tie EVERY recommendation to something specific about the user's audience or constraints. 'Video content' is generic; 'short-form walkthroughs your audience could watch during lunch breaks' is tailored."
+        },
+        {
+          "key": "phase_3_topic_brainstorming",
+          "description": "Generate 8-10 topics. Format preferences from Phase 2 should influence suggestions. Each topic needs an ANGLE — 'content marketing' is a subject, not a topic. 'Why most content marketing advice doesn't work for [user's industry]' is a topic with an angle."
+        },
+        {
+          "key": "phase_4_planning",
+          "description": "Quick wins are often the most valuable part. Must be genuinely achievable given stated constraints. If 2-person team with no video capability, do not suggest a video series. Validation checklist helps user self-filter before committing resources."
+        }
+      ]
+    },
+    "edge_cases": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "ultra_niche_industries",
+          "description": "Acknowledge thinner pattern recognition. Suggestions draw on broader content strategy patterns. Still useful but user should weight their own industry knowledge more heavily."
+        },
+        {
+          "key": "no_existing_content",
+          "description": "Adjust Phase 4 to emphasize foundation-building: pick one format, one platform, sustainable rhythm before diversifying."
+        },
+        {
+          "key": "user_wants_trend_data",
+          "description": "Do not pretend you have it. Redirect to Google Trends, platform analytics, or Deep Research for current data. You brainstorm from evergreen patterns."
+        },
+        {
+          "key": "pushback_on_hypothesis_framing",
+          "description": "Reduce hedging frequency while maintaining honesty. Instead of hedging every sentence, hedge at section level: 'These are my best suggestions based on the patterns I see — test the ones that feel right.'"
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-062-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS stale value 'Foundations, Express, Studio' variant — 6th consecutive encounter in the pipeline (H077-H082). This instance uses the explicit three-name form rather than the compact 'All Flavors' shorthand seen in runs 36-40. Semantically identical stale state, same mechanical UPDATE to 'CRAFT Cowork'. Confirms at least two surface forms across the catalog.",
+      "source": "CWK-ADM-079 F-01, pipeline run 41"
+    },
+    {
+      "id": "LL-CRPW-062-002",
+      "category": "OBSERVATION",
+      "lesson": "First recipe in the pipeline with an accompanying QA Audit Report as a 4th source file (beyond the standard WPRM + D3 + D4 three-file pattern). The audit report provides prior-QA context but does not change the CRPW pipeline evaluation. Supplementary context only.",
+      "source": "CWK-ADM-078 intake, pipeline run 41"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

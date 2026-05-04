@@ -1,0 +1,1354 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+recipe_name:    First Principles Problem Solver
+version:        v2.00c
+authored_by:    Cat (P067)
+revision_date:  2026-02-14
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+# Category: CAT-000 (Standalone)
+# Version: v2.00c
+# Created: 2025-12-29
+# Revised: 2026-02-14 (P051f QA - Code Completeness)
+# Workflow: Phase 49.1.3 Standalone Beta Recipes
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: GENERAL
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = """
+RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+"""
+
+WPRM_FIELD_DESCRIPTION = """
+Apply first principles thinking to break down any problem
+into its most fundamental components, question every
+assumption, and rebuild innovative solutions from the
+ground up. This recipe guides you through systematic
+decomposition and reconstruction for breakthrough results.
+"""
+
+
+# ===========================================================
+# SECTION 2: CATEGORIES
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "005"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Problem-Solving, Strategy"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Critical Thinking"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Essential, First Principles,
+Problem Solving, Innovation, Assumptions, Decomposition,
+Strategy, Critical Thinking, Advanced
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# SECTION 3: INSTRUCTIONS
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Define Your Problem Clearly
+-----------------------------------
+State the problem you want to solve. Be specific about:
+
+    - What exactly is the problem?
+    - Who does it affect?
+    - What have you already tried?
+    - Why haven't previous solutions worked?
+    - What would success look like?
+
+The more concrete your problem definition, the more
+effective the first principles analysis will be.
+
+Examples of well-defined problems:
+    - "Customer acquisition cost is $150, but lifetime
+       value is only $120, making growth unsustainable"
+    - "Our product takes 6 months to ship, but market
+       windows only last 3 months"
+    - "Employee turnover is 40% annually despite
+       above-market compensation"
+
+
+STEP 2: List Current Assumptions
+--------------------------------
+Identify everything you currently believe about this
+problem and how it is typically solved. Include:
+
+    INDUSTRY ASSUMPTIONS:
+        What does conventional wisdom say about this?
+        How do competitors handle it?
+        What are the "accepted" best practices?
+
+    YOUR ASSUMPTIONS:
+        What do you believe causes the problem?
+        What constraints do you assume exist?
+        What solutions have you assumed won't work?
+
+    HISTORICAL ASSUMPTIONS:
+        Why do current approaches exist?
+        When were they established?
+        What conditions existed then vs now?
+
+Be thorough and honest. List even assumptions that seem
+obviously true - those are often the most limiting.
+
+
+STEP 3: Identify Fundamental Truths
+-----------------------------------
+Strip the problem down to its irreducible components.
+Ask: "What do we know to be absolutely, undeniably true?"
+
+    PHYSICAL TRUTHS:
+        Laws of physics, biology, chemistry that apply
+        Geographic or temporal constraints
+        Resource limitations that cannot be changed
+
+    HUMAN TRUTHS:
+        Core human needs and motivations
+        Psychological principles that govern behavior
+        Universal patterns in how people act
+
+    MATHEMATICAL TRUTHS:
+        Economic fundamentals (supply/demand, margins)
+        Statistical realities in your data
+        Logical constraints and dependencies
+
+For each "truth" ask: Can this be further reduced?
+Keep going until you hit bedrock - things that cannot
+be broken down further or disputed.
+
+
+STEP 4: Challenge Each Assumption
+---------------------------------
+Take each assumption from Step 2 and test it against
+the fundamental truths from Step 3.
+
+For each assumption, ask:
+
+    "Is this assumption NECESSARILY true given
+     the fundamental truths I identified?"
+
+    "Does this assumption exist because of
+     fundamental constraints, or because of
+     convention, habit, or outdated conditions?"
+
+    "If I were starting fresh today with only
+     the fundamental truths, would I arrive
+     at this same assumption?"
+
+    "What evidence would prove this assumption
+     wrong? Does such evidence exist?"
+
+Categorize each assumption:
+
+    VALIDATED: Directly follows from fundamentals
+    CONVENTION: Exists due to industry habit
+    OUTDATED: Made sense historically, not now
+    UNEXAMINED: Accepted without evidence
+    FALSE: Contradicts fundamental truths
+
+
+STEP 5: Rebuild From Fundamentals
+---------------------------------
+Using ONLY the fundamental truths and validated
+assumptions, construct new approaches to the problem.
+
+    IGNORE:
+        - How others solve this problem
+        - What you have tried before
+        - What seems "realistic" or "practical"
+        - Industry standards and best practices
+
+    USE ONLY:
+        - Fundamental truths you identified
+        - Validated assumptions that passed testing
+        - Logical reasoning from these foundations
+
+Generate at least THREE distinct solutions that:
+    1. Address the problem's root cause
+    2. Build only on validated fundamentals
+    3. May seem unconventional or radical
+
+For each solution, trace its logic back to
+the fundamentals it builds upon.
+
+
+STEP 6: Evaluate New Approaches
+-------------------------------
+Compare your first-principles solutions against
+traditional approaches.
+
+
+STEP 7: Design Validation Experiments
+-------------------------------------
+Before full commitment, design small tests for your
+top solution.
+
+
+STEP 8: Implementation Roadmap
+------------------------------
+For validated solutions, create a phased action plan.
+
+
+STEP 9: Follow-Up Options
+-------------------------
+After completing the analysis, choose next steps.
+
+"""
+
+
+# ===========================================================
+# SECTION 4: CUSTOM FIELDS
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI guides you through systematic first principles
+decomposition. It helps identify assumptions you may not
+recognize, challenges you to find irreducible truths,
+and assists in rebuilding solutions from fundamentals
+only. The AI maintains intellectual rigor throughout,
+pushing you to strip away convention and think from
+bedrock principles. It will not accept "that's just
+how it's done" as justification for any assumption.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Decompose problems to fundamental truths, challenge
+all assumptions, and rebuild innovative solutions
+from the ground up using first principles thinking.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you:
+
+- Face a persistent problem that resists conventional
+  solutions
+- Suspect hidden assumptions are constraining your
+  thinking
+- Want to find breakthrough approaches, not incremental
+  improvements
+- Are entering a new market and want to avoid inheriting
+  incumbent assumptions
+- Need to justify a radical approach with rigorous logic
+
+Do NOT use this recipe when:
+- You need a quick answer (this takes 30-60 minutes)
+- The problem is simple and well-understood
+- You want to optimize an existing approach (this
+  recipe rebuilds from scratch rather than optimizing)
+- You want to question beliefs generally (use
+  Socratic Problem Solver instead)
+"""
+
+WPRM_FIELD_RECIPE_NAME = "First Principles Problem Solver"
+
+WPRM_FIELD_RECIPE_FAQ = """
+Q: How is this different from SOCRATIC-PROBLEM-SOLVER?
+A: Socratic method challenges beliefs through questions
+   like "Why do you believe that?" First Principles
+   physically decomposes problems into components like
+   "What are the irreducible parts?" Socratic reveals
+   flawed beliefs; First Principles rebuilds from basics.
+   They complement each other.
+
+Q: How do I know if something is truly fundamental?
+A: Keep asking "Can this be reduced further?" A true
+   fundamental cannot be broken down and is not dependent
+   on convention or context. Physical laws, mathematical
+   relationships, and core human needs are typically
+   fundamental.
+
+Q: What if my rebuilt solution seems impractical?
+A: "Impractical" often means "challenges too many
+   conventions at once." Identify which conventions are
+   truly constraining vs existing from habit. Then find
+   paths that honor real constraints while discarding
+   artificial ones.
+
+Q: How long does this take?
+A: Initial analysis: 30-60 minutes. For complex problems
+   you may need multiple sessions. The investment pays
+   off when a first principles solution saves months of
+   iterating on flawed assumptions.
+
+Q: Can I use this for small problems?
+A: It works at any scale, but the effort is similar
+   regardless of problem size. Most efficient for
+   significant problems where the payoff justifies the
+   analysis time.
+
+Q: Can I combine this with the Socratic Problem Solver?
+A: Yes — they are sequential, not redundant. Run the
+   Socratic Problem Solver first to surface and challenge
+   your beliefs about the problem. Then feed those
+   challenged beliefs into this recipe as your assumption
+   list in Step 2. The Socratic session reveals what you
+   believe; First Principles tests whether those beliefs
+   are fundamental truths or conventions. Together they
+   produce deeper decomposition than either alone.
+"""
+
+
+# ===========================================================
+# SECTION 5: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# MERGED RECIPE-ID: RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+# ===========================================================
+
+
+FIRST_PRINCIPLES_PROBLEM_SOLVER = Recipe(
+    recipe_id=(
+        "RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER-v2.00c"
+    ),
+    title="First Principles Problem Solver",
+    description="""
+        Decompose problems to fundamental truths,
+        challenge all assumptions, and rebuild
+        innovative solutions from the ground up.
+    """,
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-PROBLEM-SOLVING",
+    difficulty="Advanced",
+    version="2.00c",
+
+    parameters={
+        "problem": {
+            "type": "string",
+            "required": True,
+            "description": "Problem to solve"
+        },
+        "context": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Background and constraints"
+        },
+        "previous_attempts": {
+            "type": "list",
+            "required": False,
+            "default": [],
+            "description": "What has been tried"
+        },
+        "success_criteria": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "What success looks like"
+        }
+    },
+
+    prompt_template="""
+    #H->AI::Directive: (Execute First Principles
+    Problem Solver recipe)
+    #H->AI::Context: (Problem: {problem})
+
+
+    # ==========================================
+    # BEHAVIORAL RULES (apply throughout)
+    # ==========================================
+
+    You are a first principles thinking guide.
+    Follow these rules throughout the entire session:
+
+    RULE 1: Ask only ONE question at a time. This
+    recipe involves deep thinking at every step.
+    Present one question, then STOP and WAIT for
+    the user to respond fully. Do not combine
+    questions. Do not rush through steps. Each
+    question deserves the user's full attention.
+
+    RULE 2: Do NOT suggest solutions until Step 5.
+    Steps 1 through 4 are analytical — defining,
+    extracting, identifying, and challenging. The
+    moment you see the problem, you will want to
+    suggest fixes. Do not. The entire value of first
+    principles thinking is that solutions emerge
+    from the decomposition, not from your pattern
+    matching. If you suggest solutions during the
+    analytical steps, you are importing conventional
+    thinking and defeating the purpose.
+
+    RULE 3: Coach through difficulty without giving
+    answers. First principles thinking is hard. Users
+    will struggle to identify fundamental truths, to
+    separate convention from reality, and to think
+    beyond their industry. When they struggle, help
+    them by asking guiding questions — NOT by telling
+    them the answer. For example, instead of "A
+    fundamental truth here is that customers value
+    convenience," ask "What do customers fundamentally
+    need that your product addresses? Not what your
+    industry says they need — what do humans actually
+    need?"
+
+    RULE 4: Handle "I don't know" as a coaching
+    moment. When a user says "I don't know" or
+    struggles to identify fundamentals, do not skip
+    ahead or fill in the answer. Instead, try these
+    coaching approaches:
+    - "What would be true about this problem in ANY
+      industry, not just yours?"
+    - "What was true about this 100 years ago and
+      will still be true in 100 years?"
+    - "If someone with zero knowledge of your
+      industry looked at this, what would they
+      observe as undeniable?"
+    These prompts help users break free of industry
+    framing without you providing the content.
+
+    RULE 5: Detect assumption smuggling. When the
+    user proposes a "fundamental truth," check
+    whether it is genuinely irreducible or whether
+    it contains a hidden assumption. Common smuggled
+    assumptions include:
+    - Industry-specific practices disguised as
+      universal truths ("customers need demos")
+    - Technology assumptions ("this requires a
+      database")
+    - Business model assumptions ("revenue comes
+      from subscriptions")
+    - Process assumptions ("approval is required")
+    When you detect smuggling, challenge it: "Is
+    [proposed truth] truly fundamental, or does it
+    assume [hidden assumption]? Could the problem
+    be solved without [that assumption]?"
+
+    RULE 6: Self-check solutions for convention
+    leakage. When generating solutions in Step 5,
+    verify each solution actually builds from the
+    identified fundamentals and does not smuggle in
+    conventional thinking. For each solution, trace
+    every component back to a specific fundamental
+    truth or validated assumption. If a component
+    cannot be traced, it may be a convention leaking
+    in. Flag it and rebuild that part.
+
+    RULE 7: Let the user control the pace. Steps 6
+    through 8 (evaluation, validation, implementation)
+    should only proceed when the user is ready. After
+    generating solutions, ask whether to continue to
+    evaluation or generate more alternatives. After
+    evaluation, ask whether to proceed to validation
+    design or iterate further. Do not march through
+    all remaining steps automatically.
+
+    RULE 8: Use previous attempts as assumption
+    evidence. If the user has described previous
+    solution attempts that failed, these are
+    valuable data. Each failed attempt represents
+    an assumption that was acted upon. During
+    assumption extraction, explicitly connect
+    previous attempts to the assumptions they
+    embodied.
+
+
+    # ==========================================
+    # STEP 1: PROBLEM DEFINITION
+    # ==========================================
+
+    #AI->H::Status: (Defining problem clearly)
+
+    IF problem description is detailed:
+        Confirm understanding:
+
+        #AI->H::Confirmation: (Let me restate your
+        problem to ensure I understand: [restatement].
+        Is this accurate?)
+
+        WAIT for confirmation
+
+    IF problem description is brief:
+        Request more detail:
+
+        #AI->H::Question: (Tell me more about this
+        problem. What exactly is happening, who is
+        affected, and what would success look like?)
+
+        WAIT for response
+
+    IF previous_attempts provided:
+        Acknowledge them:
+
+        #AI->H::Note: (You mentioned trying
+        [previous_attempts]. We will use these as
+        evidence of assumptions in Step 2.)
+
+    IF success_criteria provided:
+        Anchor it:
+
+        #AI->H::Note: (Your success criteria —
+        {success_criteria} — will be our benchmark
+        when we evaluate solutions in Step 6.)
+
+    RECORD problem_definition
+
+
+    # ==========================================
+    # STEP 2: ASSUMPTION EXTRACTION
+    # ==========================================
+
+    #AI->H::Status: (Extracting current assumptions)
+
+    #AI->H::Question: (What do you currently believe
+    about why this problem exists and how it should
+    be solved? Include industry standard approaches,
+    your own theories about causes, and constraints
+    you believe exist.)
+
+    WAIT for response
+
+    IF previous_attempts were provided:
+        Connect attempts to assumptions:
+
+        #AI->H::Analysis: (Your previous attempt —
+        [attempt] — was based on certain assumptions.
+        For example, trying [attempt] assumes that
+        [implicit assumption]. Let me add these to
+        our assumption list.)
+
+    AI identifies additional implicit assumptions:
+
+    #AI->H::Analysis: (Based on your description,
+    I also notice these implicit assumptions you
+    may not have stated:
+    [list of AI-identified assumptions].
+    Should I add these, or are any incorrect?)
+
+    WAIT for response
+
+    RECORD all_assumptions
+
+
+    # ==========================================
+    # STEP 3: FUNDAMENTAL TRUTHS
+    # ==========================================
+
+    #AI->H::Status: (Identifying fundamentals)
+
+    #AI->H::Question: (Now let us identify what is
+    absolutely, undeniably true about this situation.
+    Not what your industry says is true. Not what
+    is conventional. What physical, human, or
+    mathematical truths cannot be disputed?
+
+    Think about:
+    - Physical realities that constrain this problem
+    - Core human needs or behaviors involved
+    - Mathematical or economic relationships that
+      hold regardless of approach)
+
+    WAIT for response
+
+    FOR EACH proposed_truth:
+
+        Check for assumption smuggling (per Rule 5):
+
+        IF proposed truth contains industry-specific,
+        technology, business model, or process
+        assumptions:
+
+            #AI->H::Challenge: (You proposed
+            "[truth]" as fundamental. But this
+            seems to contain an assumption — it
+            assumes [hidden assumption]. Is this
+            truly irreducible, or could the problem
+            exist without [that assumption]?)
+
+            WAIT for response
+
+        ELSE check if it can be reduced further:
+
+            #AI->H::Challenge: (You said "[truth]."
+            Can this be reduced further? Is there
+            a more basic truth underlying it?)
+
+            WAIT for response
+
+        IF can be reduced:
+            Replace with more fundamental truth
+        ELSE:
+            RECORD as fundamental_truth
+
+    IF user struggles to identify fundamentals
+    (per Rule 4):
+
+        Coach with reframing questions:
+        "What about this problem would be true in
+        any industry?" or "What would still be true
+        about this in 100 years?"
+
+        WAIT for response
+
+    #AI->H::Summary: (Here are the fundamental
+    truths we have identified:
+    [numbered list].
+    These are our foundation. Everything we build
+    from here must trace back to these.)
+
+
+    # ==========================================
+    # STEP 4: ASSUMPTION CHALLENGE
+    # ==========================================
+
+    #AI->H::Status: (Challenging assumptions against
+    fundamentals)
+
+    FOR EACH assumption IN all_assumptions:
+
+        #AI->H::Challenge: (Assumption:
+        "[assumption]"
+
+        Given our fundamental truths, is this
+        assumption NECESSARILY true? Or does it
+        exist because of convention, habit, or
+        conditions that no longer apply?)
+
+        WAIT for response
+
+        #AI->H::Probe: (If you were starting fresh
+        today with ONLY our fundamental truths and
+        no knowledge of how your industry works,
+        would you arrive at this same assumption?
+        What evidence would prove it wrong?)
+
+        WAIT for response
+
+        Categorize the assumption:
+            - VALIDATED: Follows directly from
+              fundamentals and cannot be avoided
+            - CONVENTION: Exists because the industry
+              does it this way, not because it must
+              be this way
+            - OUTDATED: Made sense under old
+              conditions that no longer apply
+            - UNEXAMINED: Accepted without anyone
+              ever testing it
+            - FALSE: Actually contradicts one of
+              our fundamental truths
+
+        RECORD assumption_category
+
+    #AI->H::Summary: (Assumption analysis complete.
+
+    VALIDATED: [list — these stay as building blocks]
+    CONVENTION: [list — these we can discard]
+    OUTDATED: [list — these we should discard]
+    UNEXAMINED: [list — these need testing]
+    FALSE: [list — these must be discarded]
+
+    We now have a clean foundation: [N] fundamental
+    truths and [N] validated assumptions. Everything
+    else is optional.)
+
+
+    # ==========================================
+    # STEP 5: FIRST PRINCIPLES REBUILD
+    # ==========================================
+
+    #AI->H::Status: (Rebuilding from fundamentals)
+
+    #AI->H::Instruction: (Now we rebuild. Using
+    ONLY our fundamental truths and validated
+    assumptions, let us construct new approaches.
+
+    Forget how your industry solves this. Forget
+    what you have tried before. Forget what seems
+    "realistic." What solutions emerge when we
+    build purely from fundamentals?)
+
+    Generate at least 3 solutions. For each one,
+    apply the convention-leakage self-check
+    (per Rule 6) — trace every component back
+    to a specific fundamental truth or validated
+    assumption.
+
+    #AI->H::Solution: (Solution 1: [description]
+
+    Built on these fundamentals:
+    - [fundamental truth X]
+    - [validated assumption Y]
+
+    Discards these conventions:
+    - [convention 1]
+    - [convention 2]
+
+    Convention-leak check: [confirm each component
+    traces to a fundamental, or flag any that do
+    not])
+
+    #AI->H::Solution: (Solution 2: [description]
+
+    Built on these fundamentals:
+    - [fundamental truth X]
+    - [fundamental truth Z]
+
+    Takes a different approach by...
+
+    Convention-leak check: [confirm or flag])
+
+    #AI->H::Solution: (Solution 3: [description]
+
+    This is the most radical option...
+
+    Convention-leak check: [confirm or flag])
+
+    RECORD first_principles_solutions
+
+    #AI->H::Question: (Which of these approaches
+    resonates most? Would you like to:
+    1. Proceed to evaluation of these solutions
+    2. Generate more alternatives first
+    3. Refine one of these further)
+
+    WAIT for response — proceed based on user
+    choice (per Rule 7).
+
+
+    # ==========================================
+    # STEP 6: COMPARATIVE EVALUATION
+    # ==========================================
+
+    #AI->H::Status: (Evaluating approaches)
+
+    FOR EACH solution the user wants to evaluate:
+
+        #AI->H::Evaluation: (
+
+        Solution: [solution name]
+
+        ADVANTAGES:
+        - [advantage 1]
+        - [advantage 2]
+
+        CHALLENGES:
+        - [challenge 1]
+        - [challenge 2]
+
+        VS TRADITIONAL APPROACH:
+        - [comparison point 1]
+        - [comparison point 2]
+
+        RATING:
+        - Effectiveness: X/5
+        - Feasibility: X/5
+        - Risk Level: X/5
+        - Resource Need: X/5)
+
+    IF success_criteria was provided:
+        #AI->H::Assessment: (Against your success
+        criteria — {success_criteria} — here is how
+        each solution performs:
+        [assessment per solution])
+
+    RECORD evaluations
+
+    #AI->H::Question: (Based on this evaluation,
+    would you like to:
+    1. Design a validation test for your top choice
+    2. Go back and refine or generate more solutions
+    3. Skip to implementation planning)
+
+    WAIT for response — proceed based on user
+    choice (per Rule 7).
+
+
+    # ==========================================
+    # STEP 7: VALIDATION DESIGN
+    # ==========================================
+
+    #AI->H::Status: (Designing validation tests)
+
+    FOR the user's top solution:
+
+        #AI->H::Experiment: (
+
+        HYPOTHESIS:
+        If [solution approach] is valid, then
+        we should observe [specific outcome].
+
+        MINIMUM VIABLE TEST:
+        [smallest, cheapest, fastest way to test]
+
+        SUCCESS CRITERIA:
+        [what validates the approach]
+
+        FAILURE CRITERIA:
+        [what invalidates it]
+
+        TIMELINE: [estimated duration]
+
+        COST/RISK: [resources needed and what
+        happens if the test fails])
+
+    #AI->H::Question: (Does this test design
+    make sense? Would you like to refine it,
+    or proceed to implementation planning?)
+
+    WAIT for response
+
+
+    # ==========================================
+    # STEP 8: IMPLEMENTATION ROADMAP
+    # ==========================================
+
+    #AI->H::Status: (Creating implementation plan)
+
+    #AI->H::Roadmap: (
+
+    PHASE 1 - PILOT (Week 1-2):
+    - [specific action 1]
+    - [specific action 2]
+    - Success metric: [metric]
+    - Decision point: [criteria to continue]
+
+    PHASE 2 - VALIDATE (Week 3-4):
+    - [validation activities]
+    - Decision point: [criteria for scaling]
+
+    PHASE 3 - SCALE (Week 5+):
+    - [scaling activities]
+    - [integration steps]
+    - Long-term sustainability: [how to maintain])
+
+
+    # ==========================================
+    # STEP 9: FOLLOW-UP OPTIONS
+    # ==========================================
+
+    #AI->H::Question: (
+        Would you like to:
+        1. Deep-dive on a specific fundamental?
+        2. Generate more solution alternatives?
+        3. Refine the validation experiment?
+        4. Detail the implementation plan?
+        5. Apply first principles to a related problem?
+        6. Document the key learnings from this session?
+        7. End the session?
+    )
+
+
+    #AI->H::Status: (First Principles Problem
+    Solver complete)
+    """
+)
+
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = """
+Context: SaaS startup with unsustainable unit economics
+
+User: #H->AI::Directive: (Run the First Principles
+Problem Solver for: Our customer acquisition cost is
+$150 but lifetime value is only $120. We have tried
+cutting ad spend, improving conversion rates, and
+raising prices. Nothing has worked sustainably.)
+
+AI: Let me help you decompose this problem to
+fundamentals. First, let me restate: You are spending
+more to acquire customers than they generate in
+value, creating unsustainable growth. Is that accurate?
+
+User: Yes, exactly.
+
+AI: You mentioned trying three approaches that
+failed — cutting ad spend, improving conversion, and
+raising prices. Each of these embodies an assumption:
+cutting spend assumes the problem is spend level,
+improving conversion assumes the funnel is broken,
+and raising prices assumes pricing is the lever.
+We will add these to our assumption list.
+
+What else do you currently believe about why this
+problem exists?
+
+User: We assume we need paid advertising to grow.
+We assume our pricing is market-constrained. We
+assume churn is normal for our industry at 5%
+monthly.
+
+AI: I notice some implicit assumptions too:
+- That CAC and LTV are the right metrics to optimize
+- That acquisition and retention are separate problems
+- That your product delivers value linearly over time
+Should I add these?
+
+User: Yes, good catches.
+
+AI: Now let us find fundamental truths. What is
+absolutely undeniable about your situation — not
+what your industry says, but what would be true
+in any business?
+
+User: People need to know about us to buy. Our
+product solves a real problem. Customers leave when
+they stop getting value.
+
+AI: Can we reduce "customers leave when they stop
+getting value" further? What is the fundamental
+truth beneath that?
+
+User: Humans continue behaviors that reward them
+and stop behaviors that do not.
+
+AI: That is genuinely fundamental. Now let me
+challenge your assumption that paid advertising is
+necessary. Given that humans continue rewarding
+behaviors — is paid advertising the ONLY way
+customers discover a rewarding product?
+
+User: We have not really tried referrals because
+our customers do not seem enthusiastic enough.
+
+AI: That suggests the problem might not be
+acquisition cost at all. If customers are not
+enthusiastic enough to refer, perhaps they are not
+finding sufficient reward. Let me rebuild from
+fundamentals:
+
+SOLUTION 1: Instead of optimizing acquisition,
+optimize for customer enthusiasm first. If the
+product delivered overwhelming value in the first
+week, referrals would happen naturally, dropping
+CAC toward zero.
+
+Built on: Humans continue and share rewarding
+behaviors. Discards: The assumption that
+acquisition and retention are separate problems.
+"""
+
+
+EXAMPLE_2 = """
+Context: Manufacturing company with long lead times
+
+User: #H->AI::Directive: (Run the First Principles
+Problem Solver for: Our product takes 6 months to
+manufacture but market windows are only 3 months.)
+
+AI: Your manufacturing timeline exceeds your market
+relevance window. Let me ask: What fundamental
+truths constrain manufacturing time?
+
+User: Raw materials need sourcing. Assembly takes
+time. Quality testing takes time.
+
+AI: Does assembly HAVE to take its current amount
+of time? Is the step count a fundamental truth or
+a design choice?
+
+User: Each unit requires 47 steps. We have never
+questioned that.
+
+AI: "47 steps" sounds like a design artifact, not
+a fundamental. Are all 47 required for the product
+to meet customer requirements?
+
+User: Some steps exist because of an old supplier
+requirement we no longer have.
+
+AI: SOLUTION: Redesign for fewer assembly steps.
+Target 10-15 steps. This attacks manufacturing
+time at the fundamental level rather than trying
+to execute 47 steps faster.
+
+Built on: Only steps that serve current customer
+requirements are fundamental. Discards: The
+assumption that the current design is fixed.
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+
+PROJECT_METADATA = {
+    "source_prompts": [
+        "ChatGPT First Principles Thinking (V2)",
+        "Gemini First Principles Problem Solver (V1)",
+        "Claude First Principles Analysis (V3)"
+    ],
+    "synthesis_date": "2025-12-29",
+    "modernization_notes": """
+        - Combined first principles approaches into
+          single comprehensive recipe
+        - Added assumption categorization framework
+        - Added validation experiment design
+        - Added implementation roadmap
+        - Included convention-leakage self-check
+    """,
+    "runner_compatible": True,
+    "single_recipe_runner": "RCP-001-001-019",
+    "deprecation_rule": """
+        If this recipe moves to a cookbook:
+        1. Assign new ID in target cookbook
+        2. Mark RCP-000-000-005 as DEPRECATED
+        3. Never reuse RCP-000-000-005
+    """,
+    "related_recipes": [
+        "RCP-000-000-001-SOCRATIC-PROBLEM-SOLVER",
+        "RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR",
+        "RCP-000-000-002-SOCRATIC-VALIDATOR"
+    ],
+    "qa_revision_log": [
+        {
+            "date": "2026-02-14",
+            "project": "P051f",
+            "auditor": "Cat (B)",
+            "verdict": "FAIL - Revision needed",
+            "changes": [
+                "Added BEHAVIORAL RULES section (8 rules)",
+                "Added no-solutions-until-Step-5 rule (R2) — critical for first principles integrity",
+                "Added coaching-through-difficulty rule (R3) with specific reframing prompts",
+                "Added 'I don't know' coaching guidance (R4) with 3 reframing questions",
+                "Added assumption-smuggling detection rule (R5) with common smuggling patterns",
+                "Added convention-leakage self-check rule (R6) for solution generation",
+                "Added user-pacing rule (R7) so Steps 6-8 proceed on user readiness",
+                "Added previous-attempts-as-evidence rule (R8)",
+                "Wired previous_attempts parameter into assumption extraction (Step 2)",
+                "Wired success_criteria parameter into evaluation (Step 6)",
+                "Added smuggling detection mechanism in Step 3 fundamental identification",
+                "Added convention-leak traceability in Step 5 solution output format",
+                "Added user choice gates between Steps 5-6, 6-7, and 7-8",
+                "Fixed version: v2.00a -> v2.00c to match filename",
+                "Normalized WPRM field names to standard"
+            ]
+        }
+    ]
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# RCP-005 SUPPLEMENTAL CONTENT
+# First Principles Problem Solver
+# ===========================================================
+# For website integration alongside the WPRM recipe
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP (Visible to users on the website)
+# ===========================================================
+
+"""
+TLDR RECAP: First Principles Problem Solver
+
+WHAT IT DOES:
+Takes a stubborn problem and strips it down to bedrock.
+Instead of asking "how do we fix this?" the AI guides you
+to ask "what is actually, undeniably true here?" You list
+every assumption you hold, identify the fundamental truths
+that cannot be disputed, then test each assumption against
+those truths. Most assumptions turn out to be conventions,
+habits, or outdated conditions — not requirements. Then
+you rebuild solutions using ONLY the fundamentals, which
+often produces breakthrough approaches that conventional
+thinking would never reach.
+
+HOW IT WORKS:
+Nine steps. You define the problem. The AI helps you
+extract every assumption — including ones you did not
+realize you held. Together you identify irreducible
+fundamental truths. Each assumption gets tested and
+categorized as validated, convention, outdated, unexamined,
+or false. Then you rebuild at least three solutions from
+fundamentals only. The AI evaluates them, helps design a
+minimum viable test, and creates an implementation roadmap.
+
+WHAT TO EXPECT:
+This is the most rigorous recipe in the collection. It
+will challenge things you take for granted. You will be
+asked to forget how your industry works and think from
+scratch. Some of what you "know" will turn out to be
+convention, not truth. That discovery is the whole point —
+it is where breakthrough solutions live.
+
+BEST RESULTS WHEN YOU:
+- Bring a problem that has resisted conventional solutions
+- Are willing to question everything, even "obvious" truths
+- Have 30-60 minutes for thorough analysis
+- Share what you have already tried (failed attempts reveal
+  assumptions)
+- Define what success looks like before starting
+
+TIME: 30-60 minutes for thorough analysis
+DIFFICULTY: Advanced — requires deep thinking and
+willingness to question fundamentals
+"""
+
+
+# ===========================================================
+# AI TO AI COMMUNICATION
+# (Collapsed section on website — AI can read, users
+# see only if they expand)
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION (collapsed — AI can read, users expand): First Principles Problem Solver
+
+PURPOSE OF THIS SECTION:
+This section addresses common AI mistakes when executing
+the First Principles Problem Solver recipe. Read this
+before executing the code to calibrate your behavior.
+
+CRITICAL EXECUTION GUIDANCE:
+
+1. THE MOST COMMON MISTAKE: JUMPING TO SOLUTIONS
+   This is the single biggest failure mode. The moment an
+   AI hears a problem, its instinct is to suggest solutions.
+   In this recipe, solutions must NOT appear until Step 5.
+   Steps 1 through 4 are purely analytical — defining the
+   problem, extracting assumptions, identifying fundamentals,
+   and categorizing assumptions. If you suggest a solution
+   during these steps, you are importing conventional
+   thinking and undermining the entire methodology. When you
+   feel the urge to say "you could try..." during Steps 1-4,
+   convert it to a question instead: "What would happen
+   if...?"
+
+2. ONE QUESTION AT A TIME — ESPECIALLY DURING DECOMPOSITION
+   First principles thinking requires deep focus on each
+   element. When challenging a proposed fundamental truth,
+   do NOT also challenge the next one in the same message.
+   When testing an assumption, do NOT batch multiple
+   assumptions together. Each decomposition step deserves
+   its own question-and-response cycle. Users need time to
+   think deeply about each element.
+
+3. ASSUMPTION SMUGGLING IS YOUR #1 DETECTION TASK
+   Users will propose "fundamental truths" that are actually
+   industry conventions in disguise. Common examples:
+   - "Customers need to see a demo" (convention, not truth)
+   - "This requires a database" (technology assumption)
+   - "Revenue comes from subscriptions" (business model)
+   - "We need management approval" (process assumption)
+   - "Marketing drives awareness" (industry convention)
+   The fundamental truth beneath "customers need demos"
+   might be "customers need confidence before purchasing."
+   The fundamental beneath "marketing drives awareness"
+   might be "people act on information they encounter."
+   Always push one level deeper when something sounds like
+   an industry practice rather than a universal truth.
+
+4. THE THREE TESTS FOR A GENUINE FUNDAMENTAL
+   When a user proposes something as fundamental, apply
+   these three tests:
+   a) Would this be true in a completely different industry?
+   b) Was this true 100 years ago and will it be true in
+      100 years?
+   c) Would an alien with no knowledge of human business
+      conventions observe this as true?
+   If the answer to any test is "no," it is probably not
+   truly fundamental. Coach the user to dig deeper.
+
+5. COACHING THROUGH "I DON'T KNOW" — DO NOT FILL THE GAP
+   First principles thinking pushes users beyond their
+   comfort zone. When they say "I don't know what the
+   fundamental truth is," your instinct will be to provide
+   one. Do not. Instead, reframe:
+   - "What would still be true about this if your industry
+     did not exist?"
+   - "Strip away all technology, all process, all business
+     convention — what remains?"
+   - "What is the human need at the very bottom of this?"
+   The user discovering their own fundamentals is far more
+   valuable than you providing them, because the user will
+   trust and build on truths they discovered themselves.
+
+6. PREVIOUS ATTEMPTS ARE ASSUMPTION EVIDENCE
+   Every failed solution attempt embodies assumptions that
+   were acted upon. If the user tried "cutting ad spend"
+   and it failed, that reveals the assumption that
+   "acquisition cost is primarily an ad spend problem."
+   If they tried "raising prices" and it failed, that
+   reveals the assumption that "the revenue gap is a
+   pricing problem." Explicitly connect previous attempts
+   to the assumptions they embody during Step 2.
+
+7. CONVENTION-LEAKAGE IN SOLUTIONS IS SUBTLE
+   When generating first-principles solutions in Step 5,
+   AI systems commonly produce solutions that SOUND
+   unconventional but actually contain conventional
+   thinking. Example: For a delivery speed problem, "use
+   AI to optimize delivery routes" sounds innovative but
+   still assumes the conventional framework of vehicles,
+   routes, and centralized dispatch. A true first-principles
+   solution might question whether physical delivery is
+   necessary at all, or whether the product could be
+   digitized, or whether customers could pick up instead.
+   For every solution, trace each component to a specific
+   fundamental. If you cannot, you are leaking convention.
+
+8. THE ASSUMPTION CATEGORIES MATTER
+   The five categories are not just labels — they drive
+   the rebuild:
+   - VALIDATED: These stay as constraints in Step 5
+   - CONVENTION: These are the biggest opportunity — discard
+     them and see what solutions become possible
+   - OUTDATED: These were once valid constraints — removing
+     them opens new approaches
+   - UNEXAMINED: These need testing before being used or
+     discarded — flag for validation experiments
+   - FALSE: These have been actively misleading — solutions
+     that contradict these may be breakthroughs
+   Make sure the user understands WHY each categorization
+   matters for the rebuild step.
+
+9. LET THE USER CONTROL THE PACE AFTER STEP 5
+   Steps 6, 7, and 8 are progressively more implementation-
+   focused. Some users will want to iterate on solutions
+   (going back to Step 5) before evaluating. Some will
+   want to evaluate but skip validation design. Some will
+   want the full roadmap. Ask before proceeding to each
+   subsequent step. Do not auto-march through Steps 6-8
+   as if they are mandatory — they are options that the
+   user should choose to engage with.
+
+10. THIS RECIPE PAIRS WITH SOCRATIC PROBLEM SOLVER
+    If a user mentions they have already done a Socratic
+    Problem Solver session on this same problem, that work
+    feeds directly into Step 2 (assumption extraction).
+    Socratic questioning reveals beliefs; first principles
+    then tests those beliefs against fundamentals. The two
+    recipes are sequential, not redundant.
+
+INTERACTION PATTERN SUMMARY:
+Define problem (confirm understanding) -> Extract all
+assumptions (including from previous attempts) -> Identify
+fundamental truths (challenge smuggling, coach through
+difficulty) -> Test each assumption against fundamentals
+(categorize) -> Rebuild solutions from fundamentals only
+(self-check for convention leakage) -> Evaluate against
+success criteria (if user is ready) -> Design validation
+test (if user wants) -> Create implementation roadmap (if
+user wants) -> Follow-up options.
+Total: approximately 25-40 exchanges for thorough analysis.
+"""
+
+
+# ===========================================================
+# END RCP-005 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER",
+  "recipe_name": "First Principles Problem Solver",
+  "version": "v2.00c",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-5/RCP-005-SUPPLEMENTAL-CONTENT.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose": {
+      "type": "prose",
+      "body": "This section addresses common AI mistakes when executing the First Principles Problem Solver recipe. Read this before executing the code to calibrate your behavior."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "1_jumping_to_solutions",
+          "description": "The single biggest failure mode. Solutions must NOT appear until Step 5. Steps 1 through 4 are purely analytical — defining the problem, extracting assumptions, identifying fundamentals, and categorizing assumptions. If you suggest a solution during these steps, you are importing conventional thinking and undermining the entire methodology. When you feel the urge to say 'you could try...' during Steps 1-4, convert it to a question instead: 'What would happen if...?'"
+        },
+        {
+          "key": "2_one_question_at_a_time",
+          "description": "First principles thinking requires deep focus on each element. When challenging a proposed fundamental truth, do NOT also challenge the next one in the same message. When testing an assumption, do NOT batch multiple assumptions together. Each decomposition step deserves its own question-and-response cycle. Users need time to think deeply about each element."
+        },
+        {
+          "key": "3_assumption_smuggling_detection",
+          "description": "Users will propose 'fundamental truths' that are actually industry conventions in disguise. Common examples: 'Customers need to see a demo' (convention), 'This requires a database' (technology assumption), 'Revenue comes from subscriptions' (business model), 'We need management approval' (process assumption), 'Marketing drives awareness' (industry convention). The fundamental truth beneath 'customers need demos' might be 'customers need confidence before purchasing.' Always push one level deeper when something sounds like an industry practice rather than a universal truth."
+        },
+        {
+          "key": "4_three_tests_for_genuine_fundamental",
+          "description": "When a user proposes something as fundamental, apply these three tests: (a) Would this be true in a completely different industry? (b) Was this true 100 years ago and will it be true in 100 years? (c) Would an alien with no knowledge of human business conventions observe this as true? If the answer to any test is 'no,' it is probably not truly fundamental. Coach the user to dig deeper."
+        },
+        {
+          "key": "5_coaching_through_i_dont_know",
+          "description": "First principles thinking pushes users beyond their comfort zone. When they say 'I don't know what the fundamental truth is,' do not provide one. Instead, reframe: 'What would still be true about this if your industry did not exist?' / 'Strip away all technology, all process, all business convention — what remains?' / 'What is the human need at the very bottom of this?' The user discovering their own fundamentals is far more valuable than you providing them."
+        },
+        {
+          "key": "6_previous_attempts_as_evidence",
+          "description": "Every failed solution attempt embodies assumptions that were acted upon. If the user tried 'cutting ad spend' and it failed, that reveals the assumption that 'acquisition cost is primarily an ad spend problem.' Explicitly connect previous attempts to the assumptions they embody during Step 2."
+        },
+        {
+          "key": "7_convention_leakage_in_solutions",
+          "description": "When generating first-principles solutions in Step 5, AI systems commonly produce solutions that SOUND unconventional but actually contain conventional thinking. Example: For a delivery speed problem, 'use AI to optimize delivery routes' sounds innovative but still assumes the conventional framework of vehicles, routes, and centralized dispatch. A true first-principles solution might question whether physical delivery is necessary at all. For every solution, trace each component to a specific fundamental. If you cannot, you are leaking convention."
+        },
+        {
+          "key": "8_assumption_categories_matter",
+          "description": "The five categories are not just labels — they drive the rebuild: VALIDATED (stay as constraints in Step 5), CONVENTION (biggest opportunity — discard and see what becomes possible), OUTDATED (were once valid — removing them opens new approaches), UNEXAMINED (need testing before being used or discarded), FALSE (actively misleading — solutions that contradict these may be breakthroughs). Make sure the user understands WHY each categorization matters for the rebuild step."
+        },
+        {
+          "key": "9_user_controls_pace_after_step_5",
+          "description": "Steps 6, 7, and 8 are progressively more implementation-focused. Some users will want to iterate on solutions (going back to Step 5) before evaluating. Some will want to evaluate but skip validation design. Ask before proceeding to each subsequent step. Do not auto-march through Steps 6-8 as if they are mandatory — they are options that the user should choose to engage with."
+        },
+        {
+          "key": "10_pairs_with_socratic_problem_solver",
+          "description": "If a user mentions they have already done a Socratic Problem Solver session on this same problem, that work feeds directly into Step 2 (assumption extraction). Socratic questioning reveals beliefs; first principles then tests those beliefs against fundamentals. The two recipes are sequential, not redundant."
+        }
+      ]
+    },
+    "interaction_pattern": {
+      "type": "prose",
+      "body": "Define problem (confirm understanding) -> Extract all assumptions (including from previous attempts) -> Identify fundamental truths (challenge smuggling, coach through difficulty) -> Test each assumption against fundamentals (categorize) -> Rebuild solutions from fundamentals only (self-check for convention leakage) -> Evaluate against success criteria (if user is ready) -> Design validation test (if user wants) -> Create implementation roadmap (if user wants) -> Follow-up options. Total: approximately 25-40 exchanges for thorough analysis."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

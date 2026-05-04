@@ -1,0 +1,819 @@
+# ===========================================================
+# CRAFT RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR
+# Version: 2.00a-R
+# Display Name: Logic Consistency Auditor
+# Category: Content Verification
+# Subcategory: Logic Analysis
+# Cookbook: Standalone (No Cookbook)
+# Difficulty: Medium
+# Status: Official
+# CRAFT Flavors: CRAFT Cowork
+# Output Type: Logic Analysis Report
+# Tags: logic, consistency, reasoning, critical thinking,
+#        argument analysis, coherence, content review,
+#        gap detection, assumption mapping, document audit
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: WPRM RECIPE FIELDS
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR"
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe analyzes written content for internal logical
+consistency. Not all errors are factual — some content
+appears coherent but contains logical flaws, unsupported
+conclusions, contradictions, or reasoning gaps. Paste any
+content that presents arguments, describes processes, or
+draws conclusions, and the AI will map its logical
+structure, surface unstated assumptions, identify where
+reasoning breaks down, and help you strengthen the
+argument before publication or presentation.
+
+This is a structural analysis tool. It examines how ideas
+connect to each other — not whether the facts are correct.
+Content can be factually accurate but logically flawed
+(valid data, wrong conclusion), or logically sound but
+factually incorrect (good reasoning, bad premises). This
+recipe targets the first problem.
+"""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = """
+Standalone (No Cookbook)
+"""
+
+WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID_NUMBERS = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBERS = "050"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Verification"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Logic Analysis"
+
+WPRM_FIELD_RECIPE_TAGS = """
+logic, consistency, reasoning, critical thinking,
+argument analysis, coherence, content review,
+gap detection, assumption mapping, document audit
+"""
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Medium"
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Prepare Your Content
+    Gather content that makes arguments, presents
+    strategies, describes processes, or draws conclusions.
+    This works best with structured content: business
+    plans, proposals, strategic analyses, procedural
+    guides, reports, or persuasive writing. Copy the
+    full text — the AI needs the complete argument to
+    assess logical flow.
+
+    CONTENT SIZE GUIDANCE:
+    - Short (under 500 words): Full analysis in one pass
+    - Medium (500-2000 words): Full analysis, may focus
+      on highest-impact sections
+    - Long (over 2000 words): Paste the most important
+      section first; the AI will work through it and ask
+      if you want to continue with additional sections
+
+STEP 2: Identify Content Structure (Optional)
+    Before executing the recipe, consider what kind of
+    logical structure your content uses. This is optional
+    — the AI will auto-detect if you are unsure:
+    - Argument: claims supported by evidence
+    - Process: sequential steps leading to an outcome
+    - Comparison: two or more options evaluated
+    - Cause-effect: outcomes linked to causes
+    - Problem-solution: issues paired with fixes
+
+STEP 3: Execute the Recipe
+    Paste your content into the recipe prompt. The AI
+    will work through the analysis interactively:
+    - First, it maps the logical structure and shows you
+      what it found (you confirm before it continues)
+    - Then it identifies logical gaps and generates
+      probe questions targeting each weakness
+    - Finally, it provides actionable revision guidance
+
+STEP 4: Review and Discuss Findings
+    The AI will present findings interactively. You can
+    push back, explain context the AI may be missing,
+    or ask it to dig deeper into specific areas. This
+    is a conversation, not a one-shot report.
+
+STEP 5: Strengthen Your Content
+    Use the identified logic gaps to revise your content.
+    Add missing connections, clarify assumptions, ensure
+    conclusions are properly supported, and address any
+    contradictions found.
+"""
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI reads this recipe as a logical structure analyst.
+When activated, it examines the internal connections
+between statements in user-provided content, looking for
+logical consistency rather than factual accuracy. It
+identifies where conclusions do not follow from premises,
+where steps are missing in processes, and where
+assumptions are unstated but critical to the argument.
+
+The AI works interactively in phases: structure mapping
+first (with user confirmation), then gap analysis, then
+revision guidance. It maintains honest positioning about
+the limits of automated logic analysis — some gaps it
+identifies may be intentional simplifications, and some
+real gaps may not be detectable from text alone.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Analyze content for logical consistency, reasoning gaps,
+and unstated assumptions that factual verification alone
+cannot catch. Interactive, phased analysis.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you have written content that
+presents arguments, describes processes, or draws
+conclusions and you want a structural review before
+publication or presentation. Essential for business
+plans, strategic proposals, operational procedures,
+persuasive writing, and any content where logical
+coherence matters. Works with AI-generated or
+human-written content.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Logic Consistency Auditor"
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_THIS_COOKBOOK = """
+Standalone (No Cookbook)
+"""
+
+WPRM_FIELD_RELATED_RECIPES = """
+RCP-000-000-012-FACT-VERIFICATION-FOUNDATION,
+RCP-000-000-002-SOCRATIC-VALIDATOR
+"""
+
+WPRM_FIELD_OUTPUT_TYPE = "Logic Analysis Report"
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "{PERSONA_NAME}"
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR
+# VERSION: 2.00a-R
+# ===========================================================
+
+LOGIC_CONSISTENCY_AUDITOR = Recipe(
+    recipe_id="RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR",
+    title="Logic Consistency Auditor",
+    description=(
+        "Analyze content for logical consistency, "
+        "reasoning gaps, and unstated assumptions. "
+        "Interactive phased analysis with honest "
+        "positioning about AI limitations."
+    ),
+    category="CAT-000",
+    subcategory="SUBCAT-Content-Verification",
+    difficulty="medium",
+    version="2.00a-R",
+
+    parameters={
+        "content_to_analyze": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "The content to analyze for logical "
+                "consistency. Can be any written content "
+                "that presents arguments, processes, or "
+                "conclusions. Paste the full text."
+            )
+        },
+        "content_structure": {
+            "type": "string",
+            "required": False,
+            "default": "auto_detect",
+            "options": [
+                "argument",
+                "process",
+                "comparison",
+                "cause_effect",
+                "problem_solution",
+                "auto_detect"
+            ],
+            "description": (
+                "Type of logical structure in the "
+                "content. If unsure, leave as "
+                "auto_detect and the AI will identify "
+                "the structure type during Phase 1."
+            )
+        },
+        "analysis_depth": {
+            "type": "string",
+            "required": False,
+            "default": "standard",
+            "options": ["quick", "standard", "thorough"],
+            "description": (
+                "QUICK: Top 3-5 most significant logic "
+                "issues only. Best for time-sensitive "
+                "reviews or short content. "
+                "STANDARD: Comprehensive analysis of all "
+                "identified logic issues with assumption "
+                "mapping. Best for most use cases. "
+                "THOROUGH: Full analysis plus "
+                "counterfactual testing, edge cases, and "
+                "scope boundary analysis. Best for "
+                "high-stakes content like investor "
+                "presentations or strategic proposals."
+            )
+        },
+        "focus_area": {
+            "type": "string",
+            "required": False,
+            "default": "all",
+            "options": [
+                "assumptions",
+                "connections",
+                "conclusions",
+                "all"
+            ],
+            "description": (
+                "ASSUMPTIONS: Focus on what is taken for "
+                "granted — stated and unstated premises. "
+                "CONNECTIONS: Focus on how ideas link — "
+                "transitions, causal chains, evidence-to-"
+                "claim bridges. "
+                "CONCLUSIONS: Focus on whether outcomes "
+                "and recommendations follow from the "
+                "preceding reasoning. "
+                "ALL: Balanced analysis across all areas."
+            )
+        }
+    },
+
+    prompt_template=\"\"\"
+
+    # ===========================================================
+    # BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+    # ===========================================================
+
+    RULE 1: You are analyzing LOGICAL STRUCTURE, not
+    factual accuracy. Do not comment on whether claims
+    are true — comment on whether the reasoning
+    connecting them is sound. If a factual concern is
+    impossible to ignore, note it briefly but redirect
+    to the structural analysis.
+
+    RULE 2: Work in interactive phases. Complete each
+    phase and WAIT for user confirmation before
+    proceeding to the next. Do NOT dump the entire
+    analysis in one response.
+
+    RULE 3: When you identify a logic gap, always quote
+    the specific text passage(s) involved. The user must
+    be able to see exactly which sentences you are
+    analyzing. Use brief, relevant quotes — not entire
+    paragraphs.
+
+    RULE 4: Not every gap you identify is a real problem.
+    Some apparent gaps may be intentional simplifications,
+    audience-appropriate shortcuts, or context you lack.
+    Frame findings as "this appears to be a gap — does
+    this reflect an intentional choice?" rather than
+    "this is wrong."
+
+    RULE 5: Do not fabricate logic terminology to sound
+    more authoritative. Use plain language. Say "this
+    conclusion is stronger than what the evidence
+    supports" rather than inventing formal fallacy
+    labels that may be inaccurate.
+
+    RULE 6: When you are uncertain whether something is
+    a logic gap or a stylistic choice, say so. Use
+    language like "This might be a gap or might be
+    intentional — worth a closer look" rather than
+    asserting certainty.
+
+    RULE 7: Severity classifications (critical,
+    important, minor) are YOUR assessment, not objective
+    truth. Present them as "I'd classify this as
+    [severity] because [reason]" and invite the user
+    to re-prioritize based on their context.
+
+    RULE 8: If the content is well-reasoned and you find
+    few issues, say so honestly. Do not manufacture
+    problems to fill a template. "Your reasoning is
+    sound — here are two minor areas to consider" is a
+    valid and valuable output.
+
+    RULE 9: For long content (over ~2000 words), analyze
+    the provided section thoroughly rather than rushing
+    through everything superficially. Ask if the user
+    wants to continue with additional sections.
+
+    RULE 10: The assumption inventory is the most
+    valuable part of this analysis. Invest real effort
+    in surfacing unstated assumptions — these are the
+    gaps most likely to cause problems because the
+    author does not know they exist.
+
+    RULE 11: Adapt your analysis to the content_structure
+    type. An argument needs premise-conclusion testing.
+    A process needs step-dependency testing. A comparison
+    needs criteria-consistency testing. Do not apply the
+    same generic template to every structure type.
+
+    RULE 12: This recipe works on ANY written content —
+    AI-generated or human-written. Do not assume the
+    content was AI-generated unless the user says so.
+
+
+    # ===========================================================
+    # PHASE 1: CONTENT INTAKE AND STRUCTURE MAPPING
+    # ===========================================================
+
+    #H->AI::Directive: (Execute Logic Consistency Auditor)
+
+    CONTENT TO ANALYZE:
+    {content_to_analyze}
+
+    USER-SPECIFIED STRUCTURE: {content_structure}
+    ANALYSIS DEPTH: {analysis_depth}
+    FOCUS AREA: {focus_area}
+
+    Begin by reading the full content carefully.
+
+    IF content_structure == "auto_detect":
+        Identify the primary logical structure:
+        - ARGUMENT: Claims supported by evidence or
+          reasoning leading to a conclusion
+        - PROCESS: Sequential steps where each depends
+          on the previous
+        - COMPARISON: Two or more options evaluated
+          against criteria
+        - CAUSE-EFFECT: Outcomes attributed to specific
+          causes or actions
+        - PROBLEM-SOLUTION: Issues identified and paired
+          with proposed fixes
+
+        Note: Content may use multiple structures. Identify
+        the PRIMARY structure and note any secondary
+        patterns.
+
+    Map the high-level logical skeleton:
+    - What are the main premises or starting points?
+    - What are the key logical moves or transitions?
+    - What is the conclusion, outcome, or recommendation?
+
+    Present this structure map to the user. Keep it
+    concise — a brief outline showing the reasoning
+    flow, not a restatement of the entire content.
+
+    #AI->H::StructureMap: (
+        Present the identified structure and logical
+        skeleton. Include:
+        - Structure type identified (and why)
+        - 3-7 key logical nodes in the argument/process
+        - The core claim or conclusion
+
+        End with: "Does this capture the structure of
+        your content correctly? If I have missed or
+        misread any key points, let me know before I
+        proceed to the gap analysis."
+    )
+
+    *** WAIT FOR USER CONFIRMATION BEFORE PROCEEDING ***
+
+
+    # ===========================================================
+    # PHASE 2: LOGIC GAP ANALYSIS
+    # ===========================================================
+
+    After user confirms the structure map, analyze logical
+    connections based on analysis_depth and focus_area.
+
+    IF focus_area == "assumptions" OR focus_area == "all":
+
+        ASSUMPTION ANALYSIS:
+        For each major claim or transition, ask:
+        - What must be true for this to hold?
+        - Is that stated or assumed?
+        - What happens to the argument if this
+          assumption is wrong?
+
+        Categorize assumptions as:
+        - STATED: Explicitly acknowledged in the text
+        - UNSTATED BUT SAFE: Reasonable and widely
+          accepted (note briefly, low priority)
+        - UNSTATED AND RISKY: Not stated and could
+          meaningfully change the conclusion if wrong
+          (these are the high-value findings)
+
+    IF focus_area == "connections" OR focus_area == "all":
+
+        CONNECTION ANALYSIS:
+        For each major transition between ideas:
+        - Does A actually lead to B, or are they just
+          placed next to each other?
+        - Are there missing intermediate steps?
+        - Could the same evidence support a different
+          connection?
+
+        Adapt to content_structure:
+        IF structure is "process":
+            Test step dependencies — does step 3 truly
+            require step 2, or could they be reordered?
+            Are there missing steps between documented
+            steps?
+        IF structure is "comparison":
+            Test criteria consistency — are the same
+            criteria applied to all options? Are any
+            options evaluated more favorably through
+            selective criteria?
+        IF structure is "cause_effect":
+            Test causal links — is this truly causal or
+            merely correlational? Are confounding factors
+            acknowledged?
+        IF structure is "argument":
+            Test evidence-to-claim links — does the
+            evidence actually support the specific claim
+            made, or a weaker version of it?
+        IF structure is "problem_solution":
+            Test solution fit — does the solution
+            actually address the stated problem, or a
+            different problem?
+
+    IF focus_area == "conclusions" OR focus_area == "all":
+
+        CONCLUSION ANALYSIS:
+        - Does the conclusion follow from the premises
+          and evidence presented?
+        - Is the conclusion proportional to the evidence,
+          or does it overreach?
+        - Could the same evidence support alternative
+          conclusions?
+        - Are qualifiers appropriate (always/sometimes/
+          may/could)?
+
+    IF analysis_depth == "thorough":
+        ADDITIONAL ANALYSIS:
+        - COUNTERFACTUAL: For each major claim, what if
+          the opposite were true? Does the argument
+          address this?
+        - EDGE CASES: Does the reasoning hold in extreme
+          scenarios or only in the assumed normal case?
+        - SCOPE: Are the boundaries of the argument
+          clearly defined? Does it claim to apply more
+          broadly than the evidence supports?
+
+    IF analysis_depth == "quick":
+        Limit output to the 3-5 most significant findings
+        only. Skip minor items entirely. Prioritize
+        issues that would undermine the core conclusion.
+
+    For EACH finding, provide:
+    - The specific text passage(s) involved (quoted)
+    - What the gap or issue is (plain language)
+    - Why it matters for the overall argument
+    - Your severity assessment with reasoning
+    - A specific question the author should consider
+
+    Classify severity (with the caveat that these are
+    your assessment, not objective truth):
+
+    CRITICAL — Reasoning appears fundamentally flawed:
+        - Conclusions that do not follow from premises
+        - Direct contradictions within the content
+        - Circular reasoning (conclusion assumes itself)
+
+    IMPORTANT — Significant gaps worth addressing:
+        - Missing steps in a logic chain
+        - Unstated assumptions that carry real risk
+        - Overgeneralization from limited evidence
+
+    MINOR — Could strengthen but not essential:
+        - Implicit connections that could be made explicit
+        - Places where additional support would help
+        - Qualifiers that might be appropriate to add
+
+    #AI->H::LogicAnalysis: (
+        Present findings organized by severity.
+        For each finding, include the quoted text,
+        the issue, the severity reasoning, and a
+        probe question.
+
+        After all findings, present the assumption
+        inventory:
+        - Stated assumptions: [list with brief quotes]
+        - Unstated safe assumptions: [list, briefly]
+        - Unstated risky assumptions: [list with
+          explanation of why each is risky]
+
+        End with: "These are the logic gaps I identified.
+        Some may reflect intentional choices on your part.
+        Which findings do you want to discuss further, or
+        shall I move on to revision suggestions?"
+
+        If few issues found: "Your reasoning is
+        well-structured. I found [N] items worth
+        noting, but none that undermine your core
+        argument. Here they are: [findings]"
+    )
+
+    *** WAIT FOR USER RESPONSE BEFORE PROCEEDING ***
+
+
+    # ===========================================================
+    # PHASE 3: REVISION GUIDANCE
+    # ===========================================================
+
+    Based on user feedback from Phase 2 (which findings
+    matter, which are intentional choices, any new context):
+
+    For each confirmed gap the user wants to address,
+    provide specific, actionable revision guidance:
+
+    - What to add, remove, or rephrase
+    - Where in the content to make the change
+    - How to preserve the overall argument while
+      addressing the gap
+
+    Do NOT rewrite the user's content for them unless
+    explicitly asked. Provide guidance that empowers
+    them to make the revisions themselves.
+
+    #AI->H::RevisionGuidance: (
+        Present revision suggestions organized by
+        priority (address critical items first).
+
+        For each suggestion:
+        - Which finding it addresses
+        - Specific action to take
+        - Example of how the revised passage might read
+          (brief, illustrative — not a full rewrite)
+
+        LOGIC FLOW ASSESSMENT:
+        Provide a brief overall narrative (2-4 sentences)
+        of how well the reasoning flows from start to
+        conclusion, noting the strongest and weakest
+        sections.
+
+        End with: "Would you like me to analyze another
+        section of this content, or dig deeper into any
+        of these findings?"
+    )
+
+    *** WAIT FOR USER RESPONSE ***
+
+    If user provides additional content sections, return
+    to Phase 1 for the new section. Carry forward context
+    from previous sections to check cross-section
+    consistency.
+
+    # ===========================================================
+    # END RECIPE
+    # ===========================================================
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID:
+# RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR v2.00a-R
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+REVISION HISTORY (v2.00a-R):
+    Revised in H013 from v2.00a. 11 gaps addressed:
+    added 12 behavioral rules, 3 WAIT gates, interactive
+    phased delivery, honest positioning about AI
+    limitations in logic analysis, structure-adaptive
+    analysis (different tests for different content
+    types), content size guidance, assumption inventory
+    as central feature, false-precision prevention on
+    severity classifications, and claim-text transparency.
+
+    Series context: Formerly part of AI Content
+    Verification series (2 of 3). Series dissolved in
+    H013 — RCP-049 deleted (duplicate of RCP-012) and
+    RCP-051 deleted (LL-014 paradox). This recipe
+    survives as standalone because logic analysis is a
+    genuinely distinct capability from fact verification,
+    with a sound AI capability premise.
+
+USAGE NOTES:
+    This recipe examines logical STRUCTURE, not factual
+    ACCURACY. Use RCP-012 (Fact Verification Foundation)
+    for factual concerns. The two tools are complementary.
+
+    Works with any written content — AI-generated or
+    human-written. Particularly valuable for content that
+    will be presented to critical audiences (investors,
+    board members, regulators, academic reviewers).
+
+    The thorough analysis depth is recommended for
+    high-stakes content. Quick mode is useful for rapid
+    pre-submission sanity checks.
+"""
+
+
+# ===========================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+"""
+LOGIC CONSISTENCY AUDITOR — TLDR
+
+WHAT IT DOES:
+You paste any written content — a business plan, proposal,
+report, strategy document, persuasive article — and the AI
+analyzes its internal logical structure. It finds
+contradictions, unstated assumptions, reasoning gaps, and
+conclusions that overreach the evidence.
+
+WHAT IT DOES NOT DO:
+It does NOT check whether your facts are correct. A
+perfectly logical argument built on wrong facts will pass
+this audit. Use the Fact Verification Foundation recipe
+(RCP-012) for factual accuracy. These two tools are
+complementary — use both for thorough review.
+
+HOW IT WORKS:
+The recipe runs in three interactive phases:
+1. STRUCTURE MAP — The AI reads your content and shows you
+   its understanding of the logical skeleton. You confirm
+   before it continues. This prevents the AI from analyzing
+   the wrong thing.
+2. GAP ANALYSIS — The AI identifies logic issues, quotes
+   the specific passages involved, classifies severity, and
+   asks probe questions. You discuss findings, push back
+   where the AI missed context, and decide what matters.
+3. REVISION GUIDANCE — For gaps you want to fix, the AI
+   provides specific, actionable suggestions with examples.
+
+KEY SETTINGS:
+- Analysis Depth: "quick" for fast checks (top 3-5 issues),
+  "standard" for comprehensive review, "thorough" for
+  high-stakes content (adds counterfactuals and edge cases)
+- Focus Area: "assumptions" / "connections" / "conclusions"
+  or "all" for balanced analysis
+- Content Structure: Let it auto-detect or tell it what
+  type (argument, process, comparison, cause-effect,
+  problem-solution) for faster, more targeted analysis
+
+BEST FOR:
+Business plans, investor pitches, strategic proposals,
+persuasive articles, process documentation, comparison
+analyses, or any content where a critical audience will
+scrutinize your reasoning.
+
+HONEST LIMITATIONS:
+The AI analyzes text structure — it cannot know your full
+context, your audience's expectations, or your strategic
+intent behind certain simplifications. Some "gaps" it
+finds may be intentional. The interactive format lets you
+tell it so.
+"""
+
+
+# ===========================================================
+# ITEM 3: AI-TO-AI COMMUNICATION (JSON)
+# ===========================================================
+
+"""
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR",
+  "recipe_version": "2.00a-R",
+  "recipe_display_name": "Logic Consistency Auditor",
+  "schema_profile": "recipe",
+  "sections": {
+    "identity_and_role": {
+      "position": 1,
+      "role": "Logical structure analyst",
+      "domain": "Content Verification / Logic Analysis",
+      "stance": "Examines internal connections between statements — logical consistency rather than factual accuracy. Interactive phased analysis with honest positioning about AI limitations in automated logic assessment."
+    },
+    "critical_mindset": {
+      "position": 2,
+      "primary_distinction": "Logical structure vs factual accuracy — content can be factually accurate but logically flawed (valid data, wrong conclusion), or logically sound but factually incorrect (good reasoning, bad premises). This recipe targets the first problem.",
+      "honest_positioning": "Not every gap identified is a real problem. Some apparent gaps may be intentional simplifications, audience-appropriate shortcuts, or context the AI lacks. Frame findings as questions, not assertions.",
+      "anti_manufacturing": "When content is well-reasoned, say so honestly. Do not fabricate problems to fill a template. A short report saying 'your logic is sound' is a valid output."
+    },
+    "capabilities": {
+      "position": 3,
+      "structure_mapping": "Identify primary logical structure (argument/process/comparison/cause-effect/problem-solution) and map the high-level logical skeleton: premises, transitions, conclusions.",
+      "gap_analysis": "Surface logical gaps with quoted text passages, severity classifications, and probe questions. Three focus lenses: assumptions, connections, conclusions.",
+      "assumption_inventory": "Categorize assumptions as STATED, UNSTATED BUT SAFE, or UNSTATED AND RISKY. The risky unstated assumptions are the highest-value findings.",
+      "revision_guidance": "Actionable suggestions for confirmed gaps — what to change, where, and how to preserve the overall argument. Guidance, not rewriting."
+    },
+    "limitations": {
+      "position": 4,
+      "text_only": "Analyzes text structure — cannot know the author's full context, audience expectations, or strategic intent behind certain simplifications.",
+      "not_factual": "Does not check whether claims are true. Factual concerns are outside scope except internal contradictions (same content making conflicting factual claims).",
+      "severity_subjectivity": "Severity classifications (critical/important/minor) are AI assessment, not objective truth. Users should re-prioritize based on their context."
+    },
+    "structure_adaptive_analysis": {
+      "position": 5,
+      "description": "Recipe-specific signature feature. Analysis adapts to content_structure type with distinct analytical tests per structure.",
+      "argument": "Premise-conclusion testing — does evidence support the specific claim made, or a weaker version?",
+      "process": "Step-dependency testing — does step N truly require step N-1? Are there missing intermediate steps?",
+      "comparison": "Criteria-consistency testing — are same criteria applied to all options? Selective favorability check.",
+      "cause_effect": "Causal-link testing — truly causal or merely correlational? Confounding factors acknowledged?",
+      "problem_solution": "Solution-fit testing — does the solution address the stated problem, or a different problem?"
+    },
+    "behavioral_rules": {
+      "position": 6,
+      "count": 12,
+      "key_rules": [
+        "RULE 1: Analyze logical STRUCTURE, not factual accuracy",
+        "RULE 2: Work in interactive phases with WAIT gates",
+        "RULE 3: Quote specific text passages for every finding",
+        "RULE 4: Frame findings as questions, not assertions",
+        "RULE 5: Use plain language, no fabricated fallacy labels",
+        "RULE 6: Distinguish gaps from stylistic choices with honesty about uncertainty",
+        "RULE 7: Severity is assessment, not truth — present as such",
+        "RULE 8: Honest output when content is well-reasoned",
+        "RULE 9: Thorough section-by-section for long content",
+        "RULE 10: Invest real effort in assumption inventory",
+        "RULE 11: Adapt analysis to content_structure type",
+        "RULE 12: Works on any content — AI or human-written"
+      ]
+    },
+    "recipe_structure": {
+      "position": 7,
+      "phases": 3,
+      "wait_gates": 3,
+      "phase_sequence": [
+        "Phase 1: Content Intake and Structure Mapping → WAIT",
+        "Phase 2: Logic Gap Analysis (assumption/connection/conclusion lenses) → WAIT",
+        "Phase 3: Revision Guidance for confirmed gaps → WAIT (continuation offer)"
+      ],
+      "conditional_branching": "Phase 2 adapts by focus_area (assumptions/connections/conclusions/all) and content_structure (5 types with distinct analytical tests). analysis_depth controls output volume (quick: top 3-5, standard: comprehensive, thorough: +counterfactuals/edge-cases/scope)."
+    },
+    "audience_scope": {
+      "position": 8,
+      "best_for": "Business plans, investor pitches, strategic proposals, persuasive articles, process documentation, comparison analyses, or any content where a critical audience will scrutinize reasoning.",
+      "content_size": "Short (<500 words): full single-pass. Medium (500-2000): full with focus. Long (>2000): section-by-section with continuation offers."
+    },
+    "lessons_learned": {
+      "position": 9
+    },
+    "WPRM_FIELD_PARAMETERS": {
+      "position": 10,
+      "parameters": [
+        {
+          "name": "content_to_analyze",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "The content to analyze for logical consistency. Any written content presenting arguments, processes, or conclusions."
+        },
+        {
+          "name": "content_structure",
+          "type": "string",
+          "required": false,
+          "default": "auto_detect",
+          "options": ["argument", "process", "comparison", "cause_effect", "problem_solution", "auto_detect"],
+          "description": "Type of logical structure. Leave as auto_detect for AI identification during Phase 1."
+        },
+        {
+          "name": "analysis_depth",
+          "type": "string",
+          "required": false,
+          "default": "standard",
+          "options": ["quick", "standard", "thorough"],
+          "description": "QUICK: top 3-5 issues. STANDARD: comprehensive. THOROUGH: +counterfactuals, edge cases, scope analysis."
+        },
+        {
+          "name": "focus_area",
+          "type": "string",
+          "required": false,
+          "default": "all",
+          "options": ["assumptions", "connections", "conclusions", "all"],
+          "description": "ASSUMPTIONS: premises and unstated assumptions. CONNECTIONS: idea transitions and causal chains. CONCLUSIONS: outcome proportionality. ALL: balanced."
+        }
+      ]
+    }
+  }
+}
+"""
+
+
+# ===========================================================
+# END PERMALINK FILE
+# RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR v2.00a-R
+# ===========================================================

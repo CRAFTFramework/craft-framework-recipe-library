@@ -1,0 +1,1598 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-021-CUSTOMER-SUPPORT-CONTENT-PLANNER
+recipe_name:    Customer Support Content Planner
+version:        v3.00a
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# ITEM 1: WPRM RECIPE FILE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# File: WPRM-RCP-000-000-021-CUSTOMER-SUPPORT-CONTENT-PLANNER
+# Version: v3.00a
+# Updated: 2026-02-15
+# Category: Standalone (000)
+# Difficulty: Beginner
+# ===========================================================
+# REVISION HISTORY:
+#   v2.00a - Original (Customer Support Chatbot Designer)
+#   v3.00a - Consolidated with RCP-022 (FAQ Optimizer),
+#            reframed as Content Planner, added behavioral
+#            rules, interactive delivery, parameter coaching,
+#            honest scope framing. 21 issues resolved.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-021-CUSTOMER-SUPPORT-CONTENT-PLANNER"
+
+
+WPRM_FIELD_DESCRIPTION = """
+Helps you organize your customer support knowledge into a
+structured content plan you can use across any channel —
+FAQ pages, chatbot scripts, email templates, or help docs.
+This recipe guides you through inventorying what customers
+ask, identifying gaps in your coverage, writing clear
+answers in your brand voice, and organizing everything
+for deployment. The output is a support content library
+you adapt to your specific platforms and tools.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBERS = "021"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Revised"
+
+
+WPRM_FIELD_RECOMMENDED_AI_PROMPT_FRAMEWORKS = "RISEN, COSTAR"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Customer Support, Content Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = (
+    "Knowledge Management, Self-Service"
+)
+
+
+WPRM_FIELD_RECIPE_TAGS = (
+    "customer support, FAQ, chatbot planning, content "
+    "strategy, knowledge base, self-service, automation "
+    "planning, beginner, customer service"
+)
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Beginner"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Gather Your Support Knowledge",
+        "content": """
+Before running this recipe, collect information about
+what your customers actually ask. The more specific
+you are, the better the output:
+
+    - Paste real support emails, chat logs, or ticket
+      subjects (not summaries — actual examples)
+    - List your most common questions from memory
+    - Note which questions have simple answers vs.
+      which need back-and-forth conversation
+    - If you have an existing FAQ page or help docs,
+      copy that text too
+
+TIP: Even 10-15 real customer questions will produce
+significantly better results than a vague description
+like "customers ask about shipping."
+        """
+    },
+    {
+        "step": 2,
+        "title": "Define Your Business Context",
+        "content": """
+Prepare basic details the AI needs to generate
+relevant content:
+
+    - Business type and industry
+    - Products or services you offer
+    - How you currently handle support (email, phone,
+      chat, social media, etc.)
+    - Your brand voice — are you formal, casual,
+      friendly, technical? Give an example sentence
+      if possible.
+
+The AI will use this context to tailor question
+categories and answer tone to your business.
+        """
+    },
+    {
+        "step": 3,
+        "title": "Execute the Recipe",
+        "content": """
+Copy the Actual Recipe Code and paste it into your
+AI assistant. Replace the placeholders with your
+specific information:
+
+    - {business_type} — Your business description
+    - {products_services} — What you offer
+    - {known_questions} — Your real customer questions
+    - {existing_content} — Current FAQ/help text, or
+      "none" if starting fresh
+    - {brand_voice} — Your communication style
+    - {support_channels} — Where you deliver support
+
+The AI will guide you through four phases
+interactively, pausing for your input between each.
+        """
+    },
+    {
+        "step": 4,
+        "title": "Work Through Each Phase",
+        "content": """
+This recipe delivers content in four interactive
+phases. At each phase, review the output and confirm
+before moving on:
+
+    Phase 1: Question Inventory — organized categories
+             of what customers ask
+    Phase 2: Gap Analysis — questions you may not have
+             considered
+    Phase 3: Answer Writing — clear responses in your
+             brand voice, one category at a time
+    Phase 4: Organization & Deployment Guide — how to
+             structure and use your content library
+
+Take your time. Add questions the AI missed. Edit
+answers that don't sound like your business. This is
+a collaborative planning session, not a one-click
+generator.
+        """
+    },
+    {
+        "step": 5,
+        "title": "Deploy Your Content Library",
+        "content": """
+The output is a structured content plan — a library
+of organized questions, answers, and categories. You
+decide where to deploy it:
+
+    - FAQ page on your website
+    - Chatbot conversation scripts
+    - Email response templates
+    - Help desk knowledge base
+    - Team training reference
+
+The recipe provides deployment guidance for each
+channel but does NOT configure any specific platform.
+You (or your team) handle implementation using your
+chosen tools.
+        """
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+This recipe instructs the AI to act as a customer
+support content strategist guiding the user through a
+structured planning session. Key interpretation points:
+
+    1. INTERACTIVE DELIVERY: The AI presents one phase
+       at a time, pausing for user confirmation and
+       input before proceeding. This is NOT a single
+       dump of all content.
+
+    2. USER AS EXPERT: The user knows their business
+       and customers better than the AI. The AI
+       organizes and extends the user's knowledge —
+       it does not replace it.
+
+    3. HONEST SCOPE: The output is a content planning
+       document. The AI does not claim to configure
+       platforms, predict ticket reduction, or produce
+       ready-to-deploy chatbot scripts.
+
+    4. INPUT QUALITY MATTERS: The AI should coach the
+       user toward providing specific, real examples
+       rather than accepting vague descriptions.
+
+    5. BRAND VOICE WIRING: The brand_voice parameter
+       must influence ALL generated answer content,
+       not just appear in a context line.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Organize your customer support knowledge into a
+structured content plan with categorized questions,
+clear answers in your brand voice, and deployment
+guidance for FAQ pages, chatbots, or help docs.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need to:
+    - Organize scattered support knowledge into a
+      usable content library
+    - Plan content for a FAQ page, chatbot, or
+      knowledge base
+    - Identify gaps in your customer support coverage
+    - Write clear, consistent answers in your brand
+      voice
+    - Prepare support content before choosing or
+      configuring a platform
+
+This Beginner-level recipe is ideal for small
+businesses building their first structured support
+content, or any business wanting to audit and improve
+existing support materials.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME = "Customer Support Content Planner"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "None required"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-021
+# Customer Support Content Planner
+# Version: v3.00a
+# Consolidates: Old RCP-021 + Old RCP-022
+# ===========================================================
+
+CUSTOMER_SUPPORT_CONTENT_PLANNER = Recipe(
+    recipe_id="RCP-000-000-021",
+    title="Customer Support Content Planner",
+    description=(
+        "Guides the user through building a structured "
+        "customer support content library with categorized "
+        "questions, clear answers, gap analysis, and "
+        "deployment guidance."
+    ),
+    category="CAT-000",
+    subcategory="SUBCAT-Support",
+    difficulty="beginner",
+    version="3.00a",
+
+
+    # -------------------------------------------------------
+    # PARAMETERS
+    # -------------------------------------------------------
+
+    parameters={
+        "business_type": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "Your business type and industry. "
+                "Example: 'Online pet supply store' or "
+                "'B2B SaaS project management tool'"
+            ),
+            "coaching": (
+                "Be specific. 'E-commerce' is too broad. "
+                "'Online store selling handmade jewelry "
+                "to consumers in the US' gives the AI "
+                "enough context to generate relevant "
+                "question categories."
+            )
+        },
+        "products_services": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "What you sell or offer. List your main "
+                "products, services, or plans."
+            ),
+            "coaching": (
+                "Include details that affect support: "
+                "pricing tiers, subscription models, "
+                "physical vs digital delivery, warranty "
+                "or guarantee policies."
+            )
+        },
+        "known_questions": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "Customer questions you already know "
+                "about. Paste real examples if possible."
+            ),
+            "coaching": (
+                "REAL EXAMPLES produce the best results. "
+                "Paste actual support emails, chat logs, "
+                "or ticket subjects. Even 10-15 real "
+                "questions are better than a summary "
+                "like 'customers ask about shipping.' "
+                "If you have no records, list questions "
+                "from memory as specifically as you can."
+            )
+        },
+        "existing_content": {
+            "type": "string",
+            "required": False,
+            "default": "none",
+            "description": (
+                "Your current FAQ page text, help docs, "
+                "or canned responses. Paste the full "
+                "text, or 'none' if starting fresh."
+            ),
+            "coaching": (
+                "If you have existing content, paste it "
+                "so the AI can identify gaps and suggest "
+                "improvements. If starting from scratch, "
+                "say 'none' — the recipe works either way "
+                "but the gap analysis phase will focus on "
+                "building from zero rather than improving "
+                "existing material."
+            )
+        },
+        "brand_voice": {
+            "type": "string",
+            "required": False,
+            "default": "friendly and professional",
+            "description": (
+                "Your communication style for customer-"
+                "facing content."
+            ),
+            "coaching": (
+                "An example sentence is more useful than "
+                "a label. Instead of just 'casual,' try: "
+                "'We write like we're texting a friend "
+                "who asked a smart question — relaxed "
+                "but helpful.' The AI will match this "
+                "tone in all generated answers."
+            )
+        },
+        "support_channels": {
+            "type": "string",
+            "required": False,
+            "default": "email",
+            "description": (
+                "Where you currently deliver support "
+                "and/or plan to deploy this content."
+            ),
+            "coaching": (
+                "List all channels: email, live chat, "
+                "phone, social media, FAQ page, chatbot, "
+                "knowledge base, etc. This drives the "
+                "deployment recommendations in Phase 4."
+            )
+        }
+    },
+
+
+    # -------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -------------------------------------------------------
+
+    behavioral_rules=[
+        {
+            "rule_id": "RULE-1",
+            "name": "One Phase at a Time",
+            "description": (
+                "Present ONE phase at a time. After "
+                "presenting a phase, STOP and WAIT for "
+                "the user to confirm, add to, or edit "
+                "the output before proceeding. Do NOT "
+                "combine phases or deliver all content "
+                "at once. The four phases are: "
+                "(1) Question Inventory, (2) Gap "
+                "Analysis, (3) Answer Writing, "
+                "(4) Organization & Deployment Guide."
+            ),
+            "priority": "CRITICAL"
+        },
+        {
+            "rule_id": "RULE-2",
+            "name": "Brand Voice Consistency",
+            "description": (
+                "ALL customer-facing content generated "
+                "in Phase 3 (answers, templates, example "
+                "responses) MUST match the {brand_voice} "
+                "parameter. Before writing answers, "
+                "confirm your understanding of the "
+                "brand voice with one example sentence "
+                "and ask the user to approve the tone "
+                "before proceeding."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-3",
+            "name": "No Platform Configuration Claims",
+            "description": (
+                "Do NOT claim to configure, set up, or "
+                "produce ready-to-import files for any "
+                "specific platform (Intercom, Zendesk, "
+                "Drift, etc.). The output is a content "
+                "library the user deploys using their "
+                "chosen tools. Phase 4 may discuss "
+                "general deployment considerations by "
+                "channel type (FAQ page, chatbot, email) "
+                "but must not promise platform-specific "
+                "configuration guidance."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-4",
+            "name": "When You Do Not Know",
+            "description": (
+                "If the user's input is too vague to "
+                "generate useful content, ASK for "
+                "clarification before proceeding. "
+                "Example triggers: business_type is a "
+                "single word ('retail'), known_questions "
+                "is a category summary ('shipping "
+                "questions') rather than real examples, "
+                "or products_services is unclear. Say "
+                "what you need and why it helps. Do NOT "
+                "fill gaps with generic assumptions when "
+                "specific information would produce "
+                "significantly better output."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-5",
+            "name": "Input Quality Coaching",
+            "description": (
+                "At the start of the recipe, if the user "
+                "provided vague inputs, offer ONE round "
+                "of coaching to improve them before "
+                "beginning Phase 1. Frame coaching as "
+                "helpful, not gatekeeping: 'I can work "
+                "with what you gave me, but if you can "
+                "paste 10-15 real customer questions, "
+                "the output will be much more specific "
+                "to your business. Want to add more, or "
+                "should I proceed with what I have?'"
+            ),
+            "priority": "MEDIUM"
+        },
+        {
+            "rule_id": "RULE-6",
+            "name": "Honest Scope Framing",
+            "description": (
+                "This recipe produces a PLANNING "
+                "DOCUMENT — a structured content library "
+                "the user then deploys to their chosen "
+                "channels. It does not produce a working "
+                "chatbot, a configured FAQ system, or "
+                "an automated support solution. If the "
+                "user asks for implementation beyond "
+                "content planning, acknowledge the "
+                "boundary honestly and suggest next "
+                "steps they can take on their own."
+            ),
+            "priority": "MEDIUM"
+        }
+    ],
+
+
+    # -------------------------------------------------------
+    # PROMPT TEMPLATE
+    # -------------------------------------------------------
+
+    prompt_template=\"\"\"
+# ===========================================================
+# CUSTOMER SUPPORT CONTENT PLANNER
+# ===========================================================
+
+#H->AI::Directive: (Execute Customer Support Content Planner)
+
+You are a customer support content strategist helping a
+business owner build a structured support content library.
+Your job is to organize their knowledge, identify gaps,
+write clear answers, and provide deployment guidance.
+
+IMPORTANT: You are a planning partner, not an automated
+system. The user knows their business and customers better
+than you do. Your role is to organize, extend, and improve
+their existing knowledge — not to replace it with generic
+assumptions.
+
+
+# -----------------------------------------------------------
+# BUSINESS CONTEXT
+# -----------------------------------------------------------
+
+Business Type: {business_type}
+Products/Services: {products_services}
+Known Questions: {known_questions}
+Existing Content: {existing_content}
+Brand Voice: {brand_voice}
+Support Channels: {support_channels}
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES — FOLLOW THESE THROUGHOUT
+# -----------------------------------------------------------
+
+RULE 1 — ONE PHASE AT A TIME:
+Present one phase, then STOP and WAIT for user confirmation.
+Do NOT combine phases or deliver all content at once.
+Phases: (1) Question Inventory → (2) Gap Analysis →
+(3) Answer Writing → (4) Organization & Deployment Guide.
+
+RULE 2 — BRAND VOICE CONSISTENCY:
+All customer-facing content must match {brand_voice}.
+Before writing answers in Phase 3, show one example
+sentence in the target tone and get user approval.
+
+RULE 3 — NO PLATFORM CONFIGURATION CLAIMS:
+Do not claim to configure or produce files for any specific
+platform. Output is a content library the user deploys
+using their chosen tools.
+
+RULE 4 — WHEN YOU DO NOT KNOW:
+If input is too vague to be useful, ask for clarification.
+Do not fill gaps with generic assumptions when asking would
+produce better output.
+
+RULE 5 — INPUT QUALITY COACHING:
+If inputs are vague, offer one round of coaching before
+starting Phase 1. Be helpful, not gatekeeping.
+
+RULE 6 — HONEST SCOPE FRAMING:
+This produces a planning document, not a configured system.
+
+
+# -----------------------------------------------------------
+# INITIAL INPUT ASSESSMENT
+# -----------------------------------------------------------
+
+Before starting Phase 1, quickly assess input quality:
+
+IF {known_questions} contains specific real questions:
+    Acknowledge the strong input and proceed to Phase 1.
+
+IF {known_questions} is vague or category-level only:
+    Offer coaching: "I can work with this, but pasting
+    10-15 real customer questions would make the output
+    much more specific to your business. Want to add
+    more before I start, or should I proceed?"
+    WAIT for user response.
+
+IF {existing_content} is not "none":
+    Note that gap analysis (Phase 2) will compare against
+    existing content to identify improvements and missing
+    coverage.
+
+
+# -----------------------------------------------------------
+# PHASE 1: QUESTION INVENTORY
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 1 of 4 — Question Inventory)
+
+Using {known_questions} and your understanding of
+{business_type} businesses, organize customer questions
+into logical categories.
+
+FOR EACH CATEGORY:
+    - Category name (descriptive, plain language)
+    - Questions in this category (from user input first,
+      then any obvious additions based on business type)
+    - Estimated frequency: High / Medium / Low
+      (based on what the user told you, NOT fabricated
+      metrics — if you are unsure, say "frequency
+      unknown — you would know better than I would")
+    - Complexity: Simple answer / Needs context /
+      Likely needs human
+
+IMPORTANT: Prioritize questions the user actually
+provided. Clearly label any questions YOU added vs.
+ones from the user's input, so they can verify.
+
+Present the organized inventory, then:
+
+#AI->H::WAIT: (
+    Phase 1 complete. Please review the question
+    inventory above.
+
+    - Are the categories organized the way you think
+      about your support topics?
+    - Did I miss any questions you know customers ask?
+    - Should any questions move between categories?
+    - Are the frequency and complexity ratings accurate?
+
+    Let me know what to adjust, or say "approved" to
+    proceed to Phase 2.
+)
+
+STOP. Do NOT proceed until the user responds.
+
+
+# -----------------------------------------------------------
+# PHASE 2: GAP ANALYSIS
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 2 of 4 — Gap Analysis)
+
+IF {existing_content} is not "none":
+    Compare the approved question inventory against
+    {existing_content} and identify:
+    - Questions in the inventory NOT covered by
+      existing content
+    - Existing content that is unclear, incomplete,
+      or outdated based on what the user described
+    - Categories with thin or no existing coverage
+
+IF {existing_content} is "none":
+    Based on the approved inventory and your knowledge
+    of {business_type} businesses, suggest additional
+    questions the user may not have considered:
+
+FOR EACH SUGGESTED GAP:
+    - The question customers might ask
+    - Why it is likely relevant to this business type
+      (brief explanation)
+    - Priority: High / Medium / Low
+    - Flag: "This is my suggestion based on common
+      patterns for {business_type} businesses — you
+      know your customers best. Keep, modify, or
+      remove as you see fit."
+
+IMPORTANT: Do NOT fabricate ticket volume numbers,
+deflection percentages, or quantitative impact
+estimates. Use qualitative priority ratings only.
+
+Present the gap analysis, then:
+
+#AI->H::WAIT: (
+    Phase 2 complete. Please review the gap analysis.
+
+    - Which suggested gaps are relevant to your
+      business?
+    - Any you want to remove or modify?
+    - Any additional gaps you thought of while
+      reviewing?
+
+    Confirm which gaps to include, or say "approved"
+    to proceed to Phase 3.
+)
+
+STOP. Do NOT proceed until the user responds.
+
+
+# -----------------------------------------------------------
+# PHASE 3: ANSWER WRITING
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 3 of 4 — Answer Writing)
+
+Before writing answers, confirm brand voice:
+
+#AI->H::WAIT: (
+    Before I write customer-facing answers, let me
+    confirm the tone. Based on your brand voice
+    description ({brand_voice}), here is one example
+    answer so you can check the tone:
+
+    [Generate one sample Q&A in the target voice]
+
+    Does this tone feel right for your business?
+    Adjust if needed before I write the full set.
+)
+
+STOP. Wait for tone approval.
+
+AFTER TONE APPROVAL:
+Process one category at a time from the approved
+inventory (Phase 1 + Phase 2 additions).
+
+FOR EACH CATEGORY:
+    FOR EACH QUESTION:
+        - Question (natural phrasing a customer would
+          use)
+        - Answer in {brand_voice} (clear, complete,
+          conversational)
+        - IF the question needs context-dependent
+          responses, provide a template with
+          [PLACEHOLDER] markers the user fills in
+          with their specific details
+        - Follow-up prompt if the answer might not
+          fully resolve the issue
+        - Escalation note if this question commonly
+          needs human involvement
+
+    Present the category, then:
+
+    #AI->H::WAIT: (
+        Category "[name]" complete. Review the
+        answers above.
+
+        - Do any answers need editing for accuracy?
+        - Is the tone consistent with your brand?
+        - Any questions to add or remove?
+
+        Confirm this category, then I will proceed
+        to the next. Say "approved" to continue.
+    )
+
+    STOP. Do NOT proceed to the next category until
+    the user confirms.
+
+AFTER ALL CATEGORIES ARE APPROVED:
+
+    #AI->H::Status: (All answer categories complete.
+    Proceeding to Phase 4.)
+
+
+# -----------------------------------------------------------
+# PHASE 4: ORGANIZATION & DEPLOYMENT GUIDE
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 4 of 4 — Organization &
+Deployment Guide)
+
+SECTION A: CONTENT LIBRARY STRUCTURE
+    Recommend how to organize the completed content:
+    - Suggested category order (by frequency or
+      customer journey stage)
+    - Cross-linking opportunities between related
+      questions
+    - Naming conventions for internal reference
+
+SECTION B: DEPLOYMENT GUIDANCE BY CHANNEL
+    Based on {support_channels}, provide guidance for
+    each channel the user listed:
+
+    FOR EACH CHANNEL:
+        - How to adapt the content library for this
+          channel (e.g., shorter answers for chat,
+          fuller answers for FAQ page)
+        - What to consider when implementing
+        - Limitations to be aware of
+
+    IMPORTANT (RULE 3): Provide GENERAL channel
+    guidance, not platform-specific configuration
+    steps. Example:
+        GOOD: "For a chatbot, your greeting message
+        should offer 3-4 quick-reply options based on
+        your highest-frequency categories."
+        BAD: "In Intercom, go to Settings > Messenger >
+        Greeting and paste this text."
+
+SECTION C: ESCALATION FRAMEWORK
+    Based on the complexity ratings from Phase 1,
+    recommend:
+    - Which questions should always route to a human
+    - Trigger phrases or signals indicating frustration
+    - What information to capture before handoff
+    - Suggested handoff message the customer sees
+
+SECTION D: MAINTENANCE RECOMMENDATIONS
+    - How often to review and update content
+    - How to identify new questions to add
+    - Signs that answers need updating
+    - Simple feedback collection approaches
+
+
+# -----------------------------------------------------------
+# VALIDATION SUMMARY
+# -----------------------------------------------------------
+
+#AI->H::Status: (Recipe complete — Content library
+summary)
+
+Present a summary of everything produced:
+
+CONTENT LIBRARY SUMMARY:
+    - Total categories: [count]
+    - Total questions covered: [count]
+    - Questions from user input: [count]
+    - Questions added via gap analysis: [count]
+    - Channels addressed: {support_channels}
+
+WHAT YOU NOW HAVE:
+    A structured support content library with
+    categorized questions, approved answers in your
+    brand voice, and deployment guidance for your
+    channels.
+
+WHAT TO DO NEXT:
+    1. Deploy content to your chosen channel(s)
+       using the guidance in Phase 4
+    2. Test with team members before going live
+    3. Collect customer feedback on answer quality
+    4. Revisit and update quarterly or when products
+       change
+
+HONEST NOTE:
+    This is a planning document. Deploying it requires
+    you or your team to implement the content in your
+    chosen platform. The AI organized and wrote the
+    content — the implementation is your next step.
+
+#AI->H::Status: (Customer Support Content Planner
+complete for {business_type})
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-021
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+ABOUT THIS RECIPE:
+
+This recipe consolidates two earlier recipes:
+    - Old RCP-021: Customer Support Chatbot Designer
+    - Old RCP-022: Customer Support FAQ Optimizer
+
+The consolidation reflects that the core work — inventorying
+questions, writing clear answers, and organizing content —
+is the same regardless of deployment channel. A well-built
+support content library serves FAQ pages, chatbots, email
+templates, and knowledge bases equally.
+
+TIPS FOR BEST RESULTS:
+
+1. REAL EXAMPLES WIN: Pasting 10-15 actual customer
+   questions produces dramatically better output than
+   summarizing "customers ask about shipping." The AI
+   can organize and extend real examples; it can only
+   guess from summaries.
+
+2. BRAND VOICE EXAMPLE: Instead of saying "friendly,"
+   give the AI a sample sentence in your voice. This
+   single step transforms generic-sounding answers into
+   content that sounds like your business.
+
+3. WORK THROUGH IT: This is an interactive planning
+   session, not a one-click generator. The pauses
+   between phases are where the real value happens —
+   your edits and additions make the output specific
+   to your business.
+
+4. START SMALL: You do not need to cover every possible
+   question in your first pass. Build a solid library
+   for your top 15-20 questions, deploy it, and expand
+   based on what customers actually ask.
+
+5. MAINTENANCE MATTERS: Support content gets stale.
+   Set a quarterly review reminder. When you change
+   products, pricing, or policies, update your content
+   library first.
+
+RELATED RECIPES:
+    - RCP-000-000-023: Proactive Support Planning
+      Framework (for proactive outreach planning)
+"""
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+
+# ================================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ================================================================
+
+# ===========================================================
+# SUPPLEMENTAL CONTENT BUNDLE
+# Recipe: RCP-000-000-021
+# Customer Support Content Planner
+# Version: v3.00a
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. MARKETING DESCRIPTION (Website/Catalog Use)
+# -----------------------------------------------------------
+
+"""
+CUSTOMER SUPPORT CONTENT PLANNER
+
+Stop guessing what your customers need and start organizing
+what you already know. This recipe walks you through
+building a complete support content library — the questions
+your customers ask, clear answers in your brand voice, and
+a plan for putting it all to work.
+
+No technical skills required. No platform commitments.
+Just a structured conversation that turns your scattered
+support knowledge into an organized, reusable content
+library you can deploy to your FAQ page, chatbot, email
+templates, or knowledge base.
+
+Works best when you bring real customer questions to the
+table. The more specific your input, the more specific
+your output.
+
+Difficulty: Beginner
+Time: 30-60 minutes (interactive session)
+Output: Organized content library with deployment guide
+"""
+
+
+# -----------------------------------------------------------
+# 2. RECIPE COMPARISON NOTE
+# -----------------------------------------------------------
+
+"""
+WHAT THIS RECIPE REPLACED:
+
+This recipe (v3.00a) consolidates two earlier recipes:
+
+    Old RCP-021: "Customer Support Chatbot Designer"
+    - Focused specifically on chatbot conversation
+      design, but the core work (inventory questions,
+      write answers, organize) is channel-agnostic.
+
+    Old RCP-022: "Customer Support FAQ Optimizer"
+    - Focused on FAQ page optimization, but 60-70%
+      of the work overlapped with chatbot design.
+
+WHY CONSOLIDATE:
+    A well-built content library serves ALL support
+    channels. Separating chatbot content from FAQ
+    content from email templates forces users to
+    repeat the same foundational work three times.
+    The new recipe builds the library once and helps
+    deploy it anywhere.
+
+WHAT'S BETTER IN v3.00a:
+    - Interactive 4-phase delivery (old versions
+      dumped everything at once)
+    - Brand voice approval before answer writing
+    - Input quality coaching for better results
+    - Honest framing (planning tool, not magic
+      chatbot generator)
+    - Gap analysis informed by user's business type
+    - Per-category answer review and approval
+    - Deployment guidance by channel type
+"""
+
+
+# -----------------------------------------------------------
+# 3. SAMPLE PARAMETER INPUTS (for testing/demos)
+# -----------------------------------------------------------
+
+"""
+SAMPLE INPUT SET 1: Small E-Commerce
+
+    business_type: "Online store selling handmade
+    scented candles, direct to consumer, US-based"
+
+    products_services: "Handmade soy candles in 15
+    scents, three sizes (4oz, 8oz, 12oz), gift sets,
+    monthly subscription box, custom labels for
+    events. Price range $12-$45. Free shipping over
+    $35."
+
+    known_questions: "Where is my order? / How long
+    does shipping take? / Can I change my order after
+    placing it? / Do you ship internationally? / My
+    candle arrived broken, what do I do? / What is
+    your return policy? / Can I get a custom scent? /
+    How do I cancel my subscription? / Do you offer
+    wholesale? / What are your candles made of?"
+
+    existing_content: "none"
+
+    brand_voice: "Warm and casual, like texting a
+    friend who happens to make great candles. We use
+    first person, emoji occasionally, and we never
+    say 'valued customer.'"
+
+    support_channels: "email, Instagram DMs, FAQ
+    page on Shopify store"
+
+
+SAMPLE INPUT SET 2: B2B SaaS
+
+    business_type: "B2B SaaS platform for small
+    accounting firms to manage client document
+    collection"
+
+    products_services: "Three plans: Starter ($29/mo,
+    up to 50 clients), Professional ($79/mo, up to
+    200 clients), Enterprise (custom pricing). Annual
+    billing discount 20%. 14-day free trial."
+
+    known_questions: "How do I add a new client? /
+    Can my clients upload documents directly? / Is
+    the data encrypted? / How do I export client
+    files? / What happens when my trial ends? / Can
+    I downgrade my plan? / Do you integrate with
+    QuickBooks? / How do I add team members? / What
+    file types are supported? / My client says they
+    can't access their portal."
+
+    existing_content: "We have a basic FAQ page with
+    6 questions but it hasn't been updated in 8
+    months and doesn't cover the new features we
+    added."
+
+    brand_voice: "Professional but not stuffy.
+    We're accountants helping accountants — we respect
+    their expertise and keep things clear and
+    efficient. No fluff, no jargon for jargon's sake."
+
+    support_channels: "email, in-app help widget,
+    knowledge base, scheduled onboarding calls for
+    Professional and Enterprise"
+"""
+
+
+# -----------------------------------------------------------
+# 4. SUCCESS CRITERIA
+# -----------------------------------------------------------
+
+"""
+A SUCCESSFUL EXECUTION OF THIS RECIPE PRODUCES:
+
+MINIMUM VIABLE OUTPUT:
+    - At least 3 organized question categories
+    - At least 15 questions with clear answers
+    - Answers that match the stated brand voice
+    - Basic deployment guidance for stated channels
+
+GOOD OUTPUT (typical):
+    - 5-8 well-organized categories
+    - 25-40 questions covering common scenarios
+    - Consistent brand voice across all answers
+    - Gap analysis revealing 5-10 questions the user
+      hadn't considered
+    - Channel-specific deployment guidance
+    - Escalation framework for complex issues
+
+EXCELLENT OUTPUT (with strong user input):
+    - Comprehensive category structure reflecting the
+      business's actual support landscape
+    - 40+ questions with context-aware answers
+    - Templates with clear placeholder markers for
+      user-specific details
+    - Gap analysis informed by existing content
+      comparison
+    - Deployment guidance tailored to each stated
+      channel
+    - Maintenance schedule with specific triggers
+      for content updates
+
+FAILURE INDICATORS:
+    - Generic answers that could apply to any business
+    - All content delivered in one dump (WAIT gates
+      skipped)
+    - Brand voice inconsistent or defaulting to
+      corporate formality
+    - Fabricated metrics (ticket reduction %, response
+      time stats)
+    - Platform-specific configuration instructions
+"""
+
+
+# -----------------------------------------------------------
+# 5. CONSOLIDATION TRACKING
+# -----------------------------------------------------------
+
+"""
+RECIPES CONSOLIDATED INTO THIS FILE:
+
+    Source 1: WPRM-RCP-000-000-021-CUSTOMER-SUPPORT-
+              CHATBOT-DESIGNER-v2_00a.txt
+    Status: Superseded by this recipe (v3.00a)
+    Disposition: Content absorbed, file retired
+
+    Source 2: WPRM-RCP-000-000-022-CUSTOMER-SUPPORT-
+              FAQ-OPTIMIZER-v2_00a.txt
+    Status: Superseded by this recipe (v3.00a)
+    Disposition: Content absorbed, file retired
+    Note: RCP-022 ID number reassigned to Customer
+    Experience Strategy Workshop in Batch 3
+    restructuring
+
+PROJECT TRACKING IMPACT:
+    - Active recipe count reduced by 1 (consolidation)
+    - Old RCP-022 ID repurposed
+    - Total project active recipes: 69 → 68 at this
+      step (further reduced when RCP-024/025
+      consolidate into new RCP-022)
+"""
+
+
+# ===========================================================
+# END SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP: RCP-000-000-021
+# Customer Support Content Planner
+# Version: v3.00a
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+    Guides a business owner through building a structured
+    customer support content library — organized questions,
+    clear answers in their brand voice, gap analysis, and
+    deployment guidance for any channel (FAQ, chatbot,
+    email, knowledge base).
+
+
+WHAT CHANGED IN v3.00a:
+    - Consolidated old RCP-021 (Chatbot Designer) and
+      old RCP-022 (FAQ Optimizer) into a single recipe
+    - Reframed from "designer/optimizer" to honest
+      "content planner"
+    - Added 6 behavioral rules (interactive delivery,
+      brand voice wiring, no platform configuration
+      claims, I-don't-know handling, input coaching,
+      honest scope framing)
+    - Added WAIT gates between all 4 phases and within
+      Phase 3 (per-category approval)
+    - Added parameter coaching in all 6 parameters
+    - Added brand voice approval step before answer
+      writing
+    - Added input quality assessment at recipe start
+    - Added validation summary at close
+    - Replaced bracket [param] with curly {param}
+    - Removed false-precision elements (ticket
+      reduction percentages, platform configuration
+      claims)
+    - Removed dead parameters and platform-specific
+      promises
+
+
+ISSUES RESOLVED: 21 (from combined audit of both
+    source recipes)
+
+
+PARAMETERS:
+    business_type (required) — industry and business
+    products_services (required) — what they offer
+    known_questions (required) — real customer questions
+    existing_content (optional) — current FAQ/help text
+    brand_voice (optional) — communication style
+    support_channels (optional) — deployment targets
+
+
+FOUR PHASES:
+    1. Question Inventory → WAIT
+    2. Gap Analysis → WAIT
+    3. Answer Writing → WAIT per category
+    4. Organization & Deployment Guide → Summary
+
+
+KEY BEHAVIORAL RULES:
+    1. One Phase at a Time (interactive delivery)
+    2. Brand Voice Consistency (wired throughout)
+    3. No Platform Configuration Claims
+    4. When You Do Not Know (ask, don't assume)
+    5. Input Quality Coaching (help users give better input)
+    6. Honest Scope Framing (planning doc, not configured system)
+
+
+# ===========================================================
+# END TLDR RECAP
+# ===========================================================
+
+
+# ===========================================================
+# EXTENDED INFORMATION FOR AI
+# Recipe: RCP-000-000-021
+# Customer Support Content Planner
+# Version: v3.00a
+# ===========================================================
+#
+# This file provides additional context for AI systems
+# executing this recipe. It supplements the recipe code
+# with background knowledge, domain expertise, and
+# guidance for producing high-quality output.
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. RECIPE INTENT AND PHILOSOPHY
+# -----------------------------------------------------------
+
+"""
+This recipe exists because small business owners need help
+organizing their customer support knowledge — not because
+they need an AI to pretend it knows their customers better
+than they do.
+
+The core insight: most small businesses already HAVE the
+answers to their customers' questions. Those answers live
+in the owner's head, in scattered email replies, in chat
+logs they never review, and in FAQ pages that haven't been
+updated since launch. The AI's job is to help organize,
+structure, and extend that existing knowledge into something
+usable.
+
+The recipe is deliberately interactive because the user's
+edits and additions at each phase are where the real value
+is created. A one-shot content dump produces generic output.
+A guided conversation produces content specific to the
+user's actual business.
+"""
+
+
+# -----------------------------------------------------------
+# 2. DOMAIN KNOWLEDGE: SUPPORT CONTENT ORGANIZATION
+# -----------------------------------------------------------
+
+"""
+COMMON SUPPORT CATEGORIES (by business type):
+
+E-commerce / Retail:
+    - Shipping and delivery
+    - Returns and refunds
+    - Order status and tracking
+    - Product information and sizing
+    - Payment and billing
+    - Account management
+    - Promotions and discounts
+
+SaaS / Software:
+    - Getting started / onboarding
+    - Feature usage and how-to
+    - Account and billing
+    - Integrations and compatibility
+    - Troubleshooting and errors
+    - Data and security
+    - Plan changes and cancellation
+
+Service businesses:
+    - Booking and scheduling
+    - Pricing and packages
+    - Service scope and limitations
+    - Cancellation and rescheduling
+    - Credentials and qualifications
+    - Service area and availability
+
+B2B:
+    - Pricing and contracts
+    - Implementation and onboarding
+    - Support and SLAs
+    - Security and compliance
+    - Integrations and API
+    - Billing and invoicing
+    - Account management
+
+These are starting points, not prescriptions. The user's
+actual question inventory should always take priority over
+generic category lists.
+"""
+
+
+# -----------------------------------------------------------
+# 3. ANSWER WRITING BEST PRACTICES
+# -----------------------------------------------------------
+
+"""
+EFFECTIVE SUPPORT ANSWERS SHARE THESE TRAITS:
+
+1. LEAD WITH THE ANSWER: Don't make the reader hunt.
+   Put the direct answer in the first sentence, then
+   provide context or detail below.
+
+   BAD: "Great question! At our company, we believe
+   in making returns easy. Our policy was updated
+   last year to reflect customer feedback, and we
+   now offer..."
+
+   GOOD: "You can return any item within 30 days for
+   a full refund. Here's how..."
+
+2. MATCH THE QUESTION'S COMPLEXITY: Simple questions
+   get short answers. Complex questions get structured
+   answers with steps. Don't over-explain simple things
+   or under-explain complex ones.
+
+3. ANTICIPATE THE FOLLOW-UP: After answering "How do I
+   return an item?" the customer will likely wonder
+   about refund timing, shipping costs for returns,
+   and exchange options. A good answer addresses these
+   proactively.
+
+4. USE THE USER'S LANGUAGE: Customers don't say
+   "initiate a return merchandise authorization."
+   They say "send it back." Match their vocabulary.
+
+5. INCLUDE ACTIONABLE NEXT STEPS: Every answer should
+   end with what to do next — a link, a step, a
+   contact method, or a clear "you're all set."
+"""
+
+
+# -----------------------------------------------------------
+# 4. GAP ANALYSIS GUIDANCE
+# -----------------------------------------------------------
+
+"""
+COMMON GAPS IN SMALL BUSINESS SUPPORT CONTENT:
+
+- EDGE CASES: Main scenarios are covered but unusual
+  situations aren't. "What if my package was stolen?"
+  "What if I ordered the wrong size but it's on sale?"
+
+- PROCESS QUESTIONS: Users want to know HOW, not just
+  WHAT. The FAQ says "We accept returns within 30 days"
+  but doesn't explain the step-by-step return process.
+
+- TIMING QUESTIONS: "How long does shipping take?"
+  "When will my refund appear?" "How quickly do you
+  respond to support emails?" Customers care about
+  when things happen.
+
+- POLICY BOUNDARIES: "Do you ship internationally?"
+  "Is there a minimum order?" "Can I combine discounts?"
+  Answers that define what ISN'T possible prevent
+  frustration.
+
+- TRUST QUESTIONS: "Is your site secure?" "What
+  happens to my data?" "Are you a real company?"
+  Especially important for newer or smaller businesses.
+
+When suggesting gaps, always explain WHY the question
+is relevant to the user's specific business type.
+Generic suggestions without context feel unhelpful.
+"""
+
+
+# -----------------------------------------------------------
+# 5. DEPLOYMENT CHANNEL CONSIDERATIONS
+# -----------------------------------------------------------
+
+"""
+ADAPTING CONTENT BY CHANNEL:
+
+FAQ PAGE:
+    - Fuller answers with detail sections
+    - Organized by category with navigation
+    - Searchable — include alternate phrasings
+    - Progressive disclosure (short answer + expandable detail)
+
+CHATBOT:
+    - Shorter, conversational answers
+    - Decision trees for multi-step issues
+    - Quick-reply buttons for common follow-ups
+    - Clear escalation path to human support
+
+EMAIL TEMPLATES:
+    - Complete, standalone answers (no navigation context)
+    - Personalization tokens for customer name, order details
+    - Professional formatting with greeting and sign-off
+    - Consistent signature and branding
+
+KNOWLEDGE BASE:
+    - Detailed articles with step-by-step instructions
+    - Screenshots or visual aids recommended
+    - Related article links
+    - Feedback mechanism ("Was this helpful?")
+
+SOCIAL MEDIA:
+    - Very brief answers with links to full content
+    - Public-facing tone (other customers can see)
+    - Quick acknowledgment + DM for account-specific issues
+
+The recipe should NOT attempt to produce ready-to-import
+files for any specific platform. It produces content that
+the user adapts to their chosen tools.
+"""
+
+
+# -----------------------------------------------------------
+# 6. ANTI-PATTERNS TO AVOID
+# -----------------------------------------------------------
+
+"""
+COMMON AI FAILURE MODES IN THIS DOMAIN:
+
+1. FABRICATING SPECIFICS: Generating "Your average
+   response time is 2.3 hours" or "This will reduce
+   tickets by 30%" when the AI has no data. All
+   quantitative claims must come from the user's input
+   or be explicitly flagged as estimates they need to
+   validate.
+
+2. GENERIC CORPORATE VOICE: Defaulting to stiff,
+   formal language ("We appreciate your inquiry and
+   are committed to resolving your concern") when the
+   user asked for casual or friendly tone. The
+   brand_voice parameter exists to prevent this.
+
+3. OVER-PROMISING AUTOMATION: Implying the output is
+   a working chatbot or configured FAQ system. The
+   output is content. Implementation is a separate
+   step the user handles.
+
+4. IGNORING USER INPUT: Generating a full generic
+   category list when the user provided real questions
+   that should drive the organization. Always prioritize
+   what the user gave you.
+
+5. DUMPING EVERYTHING AT ONCE: The interactive phases
+   exist for a reason. Skipping WAIT gates or combining
+   phases defeats the purpose of the collaborative
+   planning session.
+"""
+
+
+# ===========================================================
+# END EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+
+# ================================================================
+# ITEM 4: AI-TO-AI COMMUNICATION
+# ================================================================
+
+```json
+{
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "recipe_id": "RCP-000-000-021",
+  "recipe_name": "Customer Support Content Planner",
+  "version": "v3.00a",
+  "revision_date": "2026-04-25",
+  "revision_session": "H059",
+  "ai_to_ai": {
+    "execution_context": {
+      "summary": "Standalone Beginner recipe guiding users through building a structured customer support content library. 4 interactive phases with WAIT gates: Question Inventory, Gap Analysis, Answer Writing (per-category approval), Organization & Deployment Guide. 6 behavioral rules enforce interactive delivery, brand voice consistency, no platform configuration claims, I-don't-know handling, input quality coaching, and honest scope framing. Consolidates old RCP-021 (Chatbot Designer) + old RCP-022 (FAQ Optimizer).",
+      "parameters": {
+        "required": ["business_type", "products_services", "known_questions"],
+        "optional": ["existing_content", "brand_voice", "support_channels"],
+        "total": 6
+      },
+      "behavioral_rules": [
+        "RULE-1: One Phase at a Time (CRITICAL)",
+        "RULE-2: Brand Voice Consistency (HIGH)",
+        "RULE-3: No Platform Configuration Claims (HIGH)",
+        "RULE-4: When You Do Not Know (HIGH)",
+        "RULE-5: Input Quality Coaching (MEDIUM)",
+        "RULE-6: Honest Scope Framing (MEDIUM)"
+      ],
+      "phases": [
+        "Phase 1: Question Inventory → WAIT",
+        "Phase 2: Gap Analysis → WAIT",
+        "Phase 3: Answer Writing → WAIT per category",
+        "Phase 4: Organization & Deployment Guide → Summary"
+      ],
+      "difficulty": "Beginner",
+      "category": "Customer Support, Content Strategy",
+      "subcategory": "Knowledge Management, Self-Service",
+      "prompt_frameworks": "RISEN, COSTAR"
+    },
+    "revision_history": {
+      "crpw_session": "H059",
+      "crpw_pipeline_run": 18,
+      "findings_count": 2,
+      "findings": [
+        {
+          "id": "F-01",
+          "field": "WPRM_FIELD_CRAFT_FLAVORS",
+          "old_value": "Universal",
+          "new_value": "Cowork",
+          "portable_finding": "PF-1",
+          "confidence": 95
+        },
+        {
+          "id": "F-02",
+          "field": "WPRM_FIELD_RECIPE_STATUS",
+          "old_value": "Official",
+          "new_value": "Revised",
+          "portable_finding": "PF-STATUS",
+          "confidence": 80
+        }
+      ],
+      "edit_count": 2,
+      "line_count_delta": 0,
+      "pattern_12_result": "86/86",
+      "fernand_post_revision": "CLEAN"
+    },
+    "quality_signals": {
+      "voice_scan": "CLEAN",
+      "friction_scan": "CLEAN",
+      "faq_candidates": 0,
+      "accept_streak": "44/44",
+      "finding_count_trend": "9th consecutive floor at 2"
+    },
+    "consolidation_note": {
+      "sources": [
+        "Old RCP-021: Customer Support Chatbot Designer (v2.00a)",
+        "Old RCP-022: Customer Support FAQ Optimizer (v2.00a)"
+      ],
+      "rationale": "Core work (inventory questions, write answers, organize) is channel-agnostic. Consolidation builds the content library once; deployment guidance covers all channels.",
+      "issues_resolved": 21
+    },
+    "family_classification": {
+      "family": "Customer Support",
+      "family_number": 6,
+      "family_member_n": 1,
+      "note": "First recipe in family. No prior family members for cross-reference."
+    }
+  },
+  "lessons_learned": {
+    "populated": true,
+    "entries": [
+      {
+        "id": "LL-RCP021-001",
+        "observation": "First Customer Support family recipe. Consolidation recipe (2→1) with 21 issues resolved — highest issue count in any v3.00a recipe seen so far. The consolidation pattern (merging overlapping recipes) is a distinct QA profile from single-recipe revisions.",
+        "recommendation": "Track consolidation recipes separately in family profiling. The higher issue count reflects merger complexity, not lower source quality."
+      },
+      {
+        "id": "LL-RCP021-002",
+        "observation": "6 behavioral rules is the highest rule count in any Standalone recipe processed. Rules are well-scoped (each addresses a distinct failure mode) and priority-tiered (1 CRITICAL, 3 HIGH, 2 MEDIUM). No redundancy detected.",
+        "recommendation": "Rule count alone is not a complexity signal — rule quality and non-overlap matter more. This recipe's rules could serve as a reference for rule authoring in future recipes."
+      }
+    ]
+  }
+}
+```
+
+
+# === END OF PERMALINK FILE ===

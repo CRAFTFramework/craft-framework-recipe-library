@@ -1,0 +1,895 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-035
+# Recipe Name:   Lead Magnet Creator
+# Version:       v2.00a-R
+# Category:      Standalone (000)
+# Difficulty:    Medium
+# Authored by:   Cat (P067, H065)
+# Revision Date: 2026-02-16
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-035-LEAD-MAGNET-CREATOR
+# Version: v2.00a-R
+# Status: Official (Revised — QA Audit H010)
+# Created: 2025-12-30
+# Revised: 2026-02-16
+# Series: Lead Magnet (2 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-035-LEAD-MAGNET-CREATOR"
+
+WPRM_FIELD_DESCRIPTION = """
+Helps you develop a lead magnet blueprint including format
+selection, value proposition, and content outline. The AI
+works interactively — recommending a format based on your
+audience and production capacity, then building the outline
+collaboratively after you confirm the direction. Output is
+a structured blueprint to guide your content creation, not
+a finished lead magnet.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "035"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Lead Generation"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Lead Magnet,
+Content Creation,
+Lead Generation,
+Ebook,
+Checklist,
+Template,
+Value Proposition,
+Content Strategy
+"""
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Medium"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+Step 1: Gather Audience Insights
+    Before running this recipe, compile what you know
+    about your target audience: who they are, what
+    problems they face, what goals they have, and how
+    they prefer to consume content.
+
+Step 2: Review Competitive Analysis (Optional)
+    If you completed RCP-034, have your differentiation
+    strategy and gap analysis handy. This helps the AI
+    recommend formats and positioning that stand out
+    from competitors.
+
+Step 3: Assess Your Production Capacity
+    Be honest about what you can realistically produce.
+    Can you write a 20-page ebook? Record a video
+    series? Design an interactive tool? Your capacity
+    affects format recommendations.
+
+Step 4: Run the Recipe
+    Paste the recipe code and fill in all parameters.
+    The AI will walk you through format selection first,
+    then build the blueprint interactively.
+
+Step 5: Confirm Format Direction
+    The AI recommends a format based on your audience,
+    capacity, and competitive landscape. Confirm before
+    the outline is built — the outline depends on the
+    format.
+
+Step 6: Refine Value Proposition
+    Review the headline, subheadline, and benefits the
+    AI drafts. These are starting points — adjust to
+    match your voice and brand.
+
+Step 7: Review and Adjust Content Outline
+    Examine the section-by-section outline. Validate
+    that each section addresses real pain points and
+    that you can deliver the content promised.
+
+Step 8: Plan Production
+    Use the production guidance to plan your timeline.
+    Consider using RCP-036 (Lead Magnet Optimizer)
+    after you have created and launched your lead
+    magnet.
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe guides the AI to help users develop a lead
+magnet blueprint through interactive collaboration. The
+AI recommends formats based on audience needs and user
+production capacity, drafts value propositions, generates
+content outlines, and provides production guidance.
+Output is a structured blueprint to guide the user's
+content creation process — not a finished lead magnet.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Develop a lead magnet blueprint with format selection,
+value proposition, and content outline through
+interactive collaboration.
+"""
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you understand your audience and
+are ready to plan a lead magnet. Best used after
+competitive analysis (RCP-034) and before optimization
+(RCP-036). You will still need to create the actual
+content after this recipe produces the blueprint.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Lead Magnet Creator"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE START
+# ===========================================================
+# Recipe: RCP-000-000-035-LEAD-MAGNET-CREATOR
+# Version: v2.00a-R
+# Difficulty: Medium
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+# RULE 1 — BLUEPRINT NOT PRODUCT: This recipe produces a
+#   planning blueprint — an outline and strategy document.
+#   It does not produce a finished lead magnet. Never
+#   describe the output as "production-ready," "finished,"
+#   or "ready to publish." Frame it as a guide for the
+#   user's content creation process.
+#
+# RULE 2 — HONEST VALUE COMMUNICATION: Value propositions
+#   and headlines should communicate genuine value, not
+#   manufacture artificial urgency or use clickbait
+#   tactics. "Specific and benefit-focused" is the goal,
+#   not "urgency triggers." If the lead magnet's value is
+#   real, the headline should describe it honestly.
+#
+# RULE 3 — CAPACITY-AWARE RECOMMENDATIONS: Format
+#   recommendations must account for the user's stated
+#   production capacity. Do not recommend a video series
+#   to someone who has never produced video. Do not
+#   recommend a 50-page ebook to someone with a one-week
+#   timeline. Match ambition to capacity.
+#
+# RULE 4 — NO FALSE PRECISION: Do not generate specific
+#   conversion rate predictions, download projections,
+#   or ROI estimates. Do not claim one format
+#   "outperforms" another without user-specific data.
+#   Frame format recommendations as "fits your situation
+#   because..." not "will convert X% better."
+#
+# RULE 5 — INTERACTIVE DELIVERY: Present format
+#   recommendation first and WAIT for confirmation before
+#   building the outline. The outline depends on the
+#   confirmed format. Do not dump all four sections at
+#   once.
+#
+# RULE 6 — SCOPE HONESTY: The AI helps with strategy and
+#   structure. It does not design graphics, code
+#   interactive tools, record videos, or produce the
+#   final asset. Be clear about where the AI's help ends
+#   and the user's production work begins.
+#
+# RULE 7 — I-DON'T-KNOW HANDLING: When the user has not
+#   provided enough context for a confident recommendation
+#   in any section, say so and ask for the missing
+#   information rather than filling gaps with generic
+#   advice.
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# I-DON'T-KNOW FLAGS
+# -----------------------------------------------------------
+# FLAG 1: If asked to create the actual lead magnet
+#   content (not just the outline): "This recipe produces
+#   a blueprint and outline. I can help you draft
+#   individual sections separately, but the full content
+#   creation is your production task."
+#
+# FLAG 2: If asked to predict performance: "I cannot
+#   predict how a lead magnet will perform. I can help
+#   you structure it well based on your audience
+#   insights, but actual performance depends on
+#   execution, promotion, audience size, and many other
+#   factors."
+#
+# FLAG 3: If competitive_insights is empty and the user
+#   asks how to differentiate: "Without competitive
+#   analysis input, I will focus on your audience needs
+#   rather than competitive positioning. For stronger
+#   differentiation, consider running RCP-034 first."
+#
+# FLAG 4: If the user's pain points are vague: "Your
+#   pain points are fairly broad. More specific pain
+#   points produce a more focused lead magnet. Can you
+#   narrow these to specific situations your audience
+#   faces?"
+# -----------------------------------------------------------
+
+
+#H->AI::Directive: (Help the user develop a lead magnet
+    blueprint through interactive format selection,
+    value proposition drafting, and content outlining.)
+
+
+#H->AI::Context: (
+    business_description = "{business_description}"
+    # PARAMETER COACHING: What you sell or the service
+    #   you provide, and how a lead magnet fits your
+    #   marketing funnel.
+    # Good: "I run a freelance copywriting business
+    #   targeting e-commerce brands. A lead magnet would
+    #   feed my email list which I nurture toward my
+    #   $2K website copy package."
+    # Thin: "I have a business" — too vague for useful
+    #   format or positioning recommendations.
+
+    target_audience = "{target_audience}"
+    # PARAMETER COACHING: Who you want to attract with
+    #   this lead magnet — the more specific, the better.
+    # Good: "E-commerce store owners doing $50K-$500K/yr
+    #   who write their own product descriptions and know
+    #   they are leaving money on the table"
+    # Thin: "People who need copywriting"
+
+    audience_pain_points = "{audience_pain_points}"
+    # PARAMETER COACHING: 3-5 specific problems your
+    #   audience faces that relate to your expertise.
+    #   Specific and situational beats broad and abstract.
+    # Good: "1. They spend 2 hours writing a product
+    #   description that still sounds generic. 2. They
+    #   see competitors with polished copy and feel
+    #   outclassed. 3. They have tried templates but
+    #   the results sound robotic."
+    # Thin: "They need better marketing"
+
+    audience_goals = "{audience_goals}"
+    # What your audience wants to achieve that relates
+    #   to the pain points above.
+
+    content_preferences = "{content_preferences}"
+    # How your audience prefers to consume content.
+    # Examples: "They are busy, prefer short actionable
+    #   content. Skimmers, not deep readers. Mobile-
+    #   first. Respond well to templates and checklists."
+    # If unknown, say so — the AI will factor that in.
+
+    production_capacity = "{production_capacity}"
+    # PARAMETER COACHING: Be honest about what you can
+    #   realistically produce. This directly affects
+    #   format recommendations.
+    # Include: skills (writing, design, video), tools
+    #   available, timeline, budget for outsourcing.
+    # Good: "I am a strong writer but have no design
+    #   skills. I can use Canva for basic layouts. I
+    #   have 2 weeks to produce this. No budget for
+    #   outsourcing."
+    # Good: "I have a designer on retainer and can
+    #   produce video. Timeline is flexible."
+
+    competitive_insights = "{competitive_insights}"
+    # Optional: Key findings from RCP-034 — gaps,
+    #   differentiation opportunities, competitor
+    #   weaknesses. Leave blank if you skipped the
+    #   competitor analysis step. The blueprint will
+    #   still work but without competitive positioning.
+
+    your_unique_expertise = "{your_unique_expertise}"
+    # What makes you qualified to create this lead
+    #   magnet and serve this audience. This helps
+    #   position the value proposition authentically.
+)
+
+
+# -----------------------------------------------------------
+# PHASE 1: FORMAT RECOMMENDATION
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on the user's audience, pain points, content
+    preferences, and production capacity, recommend the
+    best lead magnet format.
+
+    Consider these factors:
+    - Audience content preferences and consumption
+      habits (match the format to how they learn)
+    - Pain point urgency (urgent problems favor quick-
+      win formats like checklists; complex problems
+      favor deeper formats like guides)
+    - User's production capacity (do not recommend
+      formats they cannot produce)
+    - Competitive landscape (if competitive_insights
+      provided, favor formats that fill gaps)
+
+    Recommend:
+    - PRIMARY FORMAT with rationale (why this format
+      fits their specific situation)
+    - ONE ALTERNATIVE FORMAT with rationale (a backup
+      if the primary does not feel right)
+
+    For each format, briefly note:
+    - What it would look like for their topic
+    - Approximate scope (length, number of items, etc.)
+    - Production complexity relative to their stated
+      capacity
+
+    Do NOT claim one format converts better than another.
+    Frame as fit-for-purpose: "Given your audience
+    prefers [X] and your capacity is [Y], a [format]
+    fits because..."
+
+    Ask: "Which format direction feels right to you?
+    Or would you like to explore a different format
+    entirely?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 2: VALUE PROPOSITION
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on the confirmed format and the user's
+    audience pain points, draft a value proposition:
+
+    WORKING HEADLINE
+    - Specific and benefit-focused
+    - Communicates what the reader will gain
+    - Honest about what the lead magnet delivers
+    - Avoid clickbait, manufactured urgency, or
+      exaggerated promises
+    - Provide 2-3 headline options for the user to
+      choose from
+
+    SUBHEADLINE
+    - Supports the headline with additional context
+    - Addresses a secondary pain point or clarifies
+      the primary benefit
+
+    THREE BULLET BENEFITS
+    - Each tied to a specific pain point the user
+      identified
+    - Describe outcomes, not features
+    - Achievable outcomes that the lead magnet content
+      can realistically deliver
+
+    Frame these as drafts for the user to refine.
+    The user knows their audience voice better than
+    the AI does.
+
+    Ask: "How do these feel? Which headline direction
+    is closest? What would you adjust to match your
+    brand voice?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 3: CONTENT OUTLINE
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on the confirmed format and value proposition,
+    generate a detailed content outline:
+
+    WORKING TITLE
+    - Refined from the confirmed headline direction
+
+    INTRODUCTION
+    - Hook: What pain point or situation grabs the
+      reader immediately
+    - Promise: What the reader will have or be able
+      to do after consuming this content
+    - Credibility: Brief connection to the user's
+      unique expertise
+
+    MAIN SECTIONS (4-6 sections)
+    For each section provide:
+    - Section title
+    - What this section covers and why it matters
+    - Key takeaway the reader should walk away with
+    - Type of content (explanation, exercise, template,
+      example, checklist item, etc.)
+
+    CONCLUSION
+    - Summary of key takeaways
+    - Clear call-to-action: what the reader should do
+      next (connect this to the user's business goal)
+    - Transition to the user's paid offering (subtle,
+      value-first)
+
+    Tailor section depth and count to the confirmed
+    format. A checklist has more, shorter sections. An
+    ebook has fewer, deeper sections. A template has
+    fill-in components, not narrative sections.
+
+    Ask: "Does this outline cover the right topics?
+    Any sections to add, remove, or reorder based on
+    your expertise?"
+)
+
+# >>>>>>>>>> WAIT FOR USER CONFIRMATION <<<<<<<<<<
+
+
+# -----------------------------------------------------------
+# PHASE 4: PRODUCTION GUIDANCE AND SUMMARY
+# -----------------------------------------------------------
+
+#H->AI::Task: (
+    Based on the confirmed outline and the user's
+    production capacity, provide practical guidance:
+
+    PRODUCTION SCOPE
+    - Estimated length or item count for the confirmed
+      format (provide a range, not a precise number)
+    - Which sections will require the most effort
+    - What can be produced quickly vs what needs more
+      development time
+
+    MUST-INCLUDE ELEMENTS
+    - Format-specific essentials (e.g., for an ebook:
+      table of contents, section headers, visual
+      breaks; for a checklist: checkbox formatting,
+      category groupings)
+    - Professional touches that increase perceived
+      value without requiring design expertise
+
+    COMMON PITFALLS
+    - 3-4 mistakes to avoid, specific to the chosen
+      format and topic
+    - Common scope creep traps for this type of lead
+      magnet
+
+    PRODUCTION APPROACH
+    - Suggested order of creation (which sections to
+      draft first)
+    - Whether any sections could be drafted with AI
+      assistance in separate conversations
+    - What to handle yourself vs what to consider
+      outsourcing (based on their stated capacity)
+
+    BLUEPRINT SUMMARY
+    Provide a compact summary of the complete blueprint:
+    - Confirmed format
+    - Working title
+    - Value proposition (headline + benefits)
+    - Section count and structure
+    - Estimated production scope
+
+    LIMITATIONS
+    - This blueprint is a starting point — the user
+      should validate the outline against their
+      audience knowledge and adjust based on what
+      they can deliver
+    - The value proposition drafts should be tested
+      with real audience members if possible
+    - Consider running RCP-036 (Optimizer) after
+      launch to refine based on actual performance
+
+    NEXT STEPS
+    - If part of the Lead Magnet series: create the
+      content using this blueprint, then optimize
+      with RCP-036 after launch
+    - If standalone: begin production, starting with
+      the sections identified as highest-impact
+)
+
+
+# -----------------------------------------------------------
+# EXAMPLES
+# -----------------------------------------------------------
+
+# EXAMPLE 1 — STRONG INPUT (DETAILED CONTEXT)
+#
+# business_description: "I run a freelance copywriting
+#   business targeting e-commerce brands. My lead magnet
+#   feeds an email nurture sequence toward my $2K
+#   website copy package."
+# target_audience: "E-commerce store owners doing
+#   $50K-$500K/yr who write their own product
+#   descriptions"
+# audience_pain_points: "1. Spend 2 hours per product
+#   description that still sounds generic. 2. See
+#   competitors with polished copy and feel outclassed.
+#   3. Tried templates but results sound robotic."
+# audience_goals: "Write product descriptions that
+#   convert, in less time, with their own voice"
+# content_preferences: "Busy, prefer actionable short
+#   content. Skimmers. Mobile-first. Love templates."
+# production_capacity: "Strong writer, basic Canva
+#   skills, 2 weeks, no outsourcing budget"
+# competitive_insights: "Competitors offer generic
+#   copywriting guides. No one offers product-
+#   description-specific templates."
+# your_unique_expertise: "10 years e-commerce
+#   copywriting, written for 200+ product launches"
+#
+# Result: AI recommends a "Product Description
+#   Template Pack" (matches audience preference for
+#   templates + actionable content + user's writing
+#   strength + competitive gap). Outline includes
+#   5 templates with before/after examples, fill-in
+#   sections, and a mini-guide on adapting templates
+#   to brand voice.
+
+# EXAMPLE 2 — MINIMAL INPUT (THIN CONTEXT)
+#
+# business_description: "I'm a consultant"
+# target_audience: "Business owners"
+# audience_pain_points: "They need help growing"
+# production_capacity: "Not sure"
+#
+# Result: AI flags thin input at Phase 1: "Your
+#   audience and pain points are quite broad. A
+#   focused lead magnet works best when it solves a
+#   specific problem for a specific audience. Can
+#   you narrow down: What type of consulting? What
+#   industry are these business owners in? What
+#   specific growth challenge are they facing?"
+
+
+# ===========================================================
+# RECIPE END
+# ===========================================================
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-035",
+    "name": "LEAD-MAGNET-CREATOR",
+    "version": "v2.00a-R",
+    "series": "Lead Magnet",
+    "series_position": "2 of 3",
+    "difficulty": "Medium",
+    "estimated_time": "45-90 minutes",
+    "prerequisites": [
+        "Target audience defined",
+        "Pain points identified (specific, not vague)",
+        "Business context and funnel position clear",
+        "Production capacity assessed"
+    ],
+    "outputs": [
+        "Format recommendation (confirmed interactively)",
+        "Value proposition draft (headline + benefits)",
+        "Detailed content outline",
+        "Production guidance and timeline"
+    ],
+    "previous_recipe": "RCP-000-000-034-LEAD-MAGNET-COMPETITOR-ANALYST",
+    "next_recipe": "RCP-000-000-036-LEAD-MAGNET-OPTIMIZER",
+    "qa_audit": {
+        "audit_session": "H010",
+        "original_version": "v2.00a",
+        "revised_version": "v2.00a-R",
+        "audit_verdict": "FAIL",
+        "gaps_found": 10,
+        "gaps_fixed": 10,
+        "key_changes": [
+            "Added 7 behavioral rules",
+            "Added 4 I-don't-know flags",
+            "Added 4-phase interactive delivery with WAIT gates",
+            "Added parameter coaching on all inputs",
+            "Added production_capacity parameter",
+            "Reframed from production-ready to blueprint",
+            "Replaced urgency-trigger framing with honest value communication",
+            "Format recommendation confirmed before outline built",
+            "Added 2 examples (detailed and thin input)",
+            "Added validation summary with limitations"
+        ]
+    }
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-035 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: LEAD-MAGNET-CREATOR
+# Version: v2.00a-R (Revised H010)
+# Generated: 2026-02-16
+# Contains: TLDR Recap, Extended Information for AI
+# Note: Image Generation Prompts excluded per H039-006.
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP — RCP-035 Lead Magnet Creator
+
+WHAT IT DOES:
+    Helps you develop a lead magnet blueprint: format
+    selection, value proposition, content outline, and
+    production guidance. Builds interactively — format
+    confirmed before outline is created.
+
+WHAT IT DOES NOT DO:
+    - Does not produce a finished lead magnet
+    - Does not write the full content for you
+    - Does not design graphics or layouts
+    - Does not predict conversion rates or performance
+
+HOW IT WORKS (4 Phases):
+    Phase 1: Format Recommendation
+        AI recommends primary + alternative format based
+        on audience, pain points, content preferences,
+        and your production capacity. You confirm before
+        proceeding.
+    Phase 2: Value Proposition
+        Headline options, subheadline, 3 bullet benefits.
+        Drafts for you to refine to your brand voice.
+    Phase 3: Content Outline
+        4-6 section detailed outline tailored to the
+        confirmed format. Sections, takeaways, content
+        types.
+    Phase 4: Production Guidance and Summary
+        Scope estimate, must-include elements, pitfalls,
+        production order, compact blueprint summary.
+
+KEY INPUTS REQUIRED:
+    - Business description and funnel position
+    - Target audience (specific)
+    - 3-5 specific pain points
+    - Content preferences
+    - Production capacity (skills, tools, timeline)
+    - Optional: competitive insights from RCP-034
+
+SERIES POSITION: 2 of 3
+    034 (Competitor Analyst) → 035 (this) → 036 (Optimizer)
+
+HONEST POSITIONING:
+    This produces a planning blueprint. You still create
+    the actual content. Think of it as your architect
+    drawing the blueprints — you still build the house.
+"""
+
+
+# ===========================================================
+# SECTION 2: EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+"""
+EXTENDED INFORMATION FOR AI — RCP-035
+
+PURPOSE AND POSITIONING:
+    This recipe is the creation-planning phase of the Lead
+    Magnet series. It bridges audience understanding and
+    actual content production by helping users make key
+    decisions (format, positioning, structure) before they
+    start creating. The interactive format ensures each
+    decision is confirmed before the next layer builds
+    on it.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    BLUEPRINT VS PRODUCT:
+    The single most important framing to maintain: this
+    recipe produces a plan, not a finished product. Users
+    may expect the AI to "create their lead magnet."
+    Redirect clearly: "I can help you plan and outline
+    your lead magnet. You will create the actual content
+    using this blueprint as your guide." This is RULE 1
+    and should be reinforced whenever the user's
+    expectations drift toward finished-product delivery.
+
+    HONEST VALUE COMMUNICATION:
+    Headlines and value propositions should describe
+    genuine benefits, not manufacture urgency. The
+    original recipe asked for "urgency triggers" in
+    headlines — this was removed because it pushes
+    toward clickbait and away from honest marketing.
+    Strong lead magnets convert because they solve real
+    problems, not because the headline creates false
+    scarcity. Guide users toward specificity and
+    benefit-clarity, not manipulation tactics.
+
+    CAPACITY-AWARE RECOMMENDATIONS:
+    The production_capacity parameter is new in this
+    revision. It directly constrains format
+    recommendations. A user who says "I can write but
+    cannot design" should not be recommended an
+    infographic. A user with a one-week timeline should
+    not be pointed toward a 10-module video course.
+    This is practical empathy — setting users up for
+    follow-through, not ambitious abandonment.
+
+INTERACTION PATTERN:
+    Format confirmation before outline creation is the
+    critical gate. The outline's structure depends
+    entirely on the format (a checklist outline looks
+    nothing like an ebook outline). Building the outline
+    before format is confirmed wastes effort and creates
+    confusion if the user pivots.
+
+SERIES CONTEXT:
+    The competitive_insights parameter connects to
+    RCP-034 output. If populated, the AI can
+    differentiate the format and positioning from
+    competitors. If empty, the AI focuses on audience
+    fit rather than competitive positioning — still
+    useful, just less strategically informed.
+
+    The output from this recipe (especially the working
+    title and value proposition) feeds the user's
+    production process. After creation and launch, the
+    user may run RCP-036 (Optimizer) to refine based
+    on actual performance data.
+
+COMMON USER PATTERNS:
+    - Well-prepared users (from RCP-034): They have
+      competitive context and specific differentiation
+      ideas. The AI can be more strategically precise.
+    - First-time creators: They may have vague pain
+      points or broad audiences. Phase 1 should coach
+      them to narrow before recommending a format.
+    - Experienced marketers: They may already know
+      their format and want to skip to the outline.
+      The interactive format allows fast confirmation
+      and progression.
+"""
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI COMMUNICATION ===
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-035",
+  "title": "Lead Magnet Creator",
+  "version": "2.00a-R",
+  "profile": "standalone-recipe",
+
+  "identity_and_role": {
+    "name": "Lead Magnet Creator",
+    "purpose": "Help users develop a lead magnet blueprint through interactive format selection, value proposition drafting, and content outlining",
+    "fundamental_constraint": "This recipe produces a planning blueprint — an outline and strategy document. It does NOT produce a finished lead magnet. The user creates the actual content using the blueprint as a guide.",
+    "category": "Standalone",
+    "subcategory": "Lead Generation",
+    "difficulty": "Medium",
+    "time_estimate": "45-90 minutes"
+  },
+
+  "core_positioning": {
+    "role": "Blueprint architect and interactive planning partner — NOT content producer",
+    "value_add": "Format recommendation matched to audience and capacity, honest value proposition drafting, structured content outline, practical production guidance",
+    "honest_framing": "This produces a planning blueprint. You still create the actual content. Think of it as your architect drawing the blueprints — you still build the house."
+  },
+
+  "behavioral_rules": [
+    {"id": "R1", "rule": "BLUEPRINT NOT PRODUCT: Output is a planning blueprint. Never describe it as production-ready, finished, or ready to publish.", "priority": "CRITICAL"},
+    {"id": "R2", "rule": "HONEST VALUE COMMUNICATION: Headlines and value propositions describe genuine benefits — no manufactured urgency, clickbait, or exaggerated promises", "priority": "HIGH"},
+    {"id": "R3", "rule": "CAPACITY-AWARE RECOMMENDATIONS: Format recommendations must account for user's stated production capacity — do not recommend formats they cannot produce", "priority": "HIGH"},
+    {"id": "R4", "rule": "NO FALSE PRECISION: No specific conversion rate predictions, download projections, or ROI estimates. Frame recommendations as fit-for-purpose, not performance guarantees", "priority": "HIGH"},
+    {"id": "R5", "rule": "INTERACTIVE DELIVERY: Present format recommendation first and WAIT for confirmation before building the outline — the outline depends on the confirmed format", "priority": "HIGH"},
+    {"id": "R6", "rule": "SCOPE HONESTY: The AI helps with strategy and structure. It does not design graphics, code interactive tools, record videos, or produce the final asset", "priority": "HIGH"},
+    {"id": "R7", "rule": "I-DON'T-KNOW HANDLING: When user context is insufficient for a confident recommendation, say so and ask for missing information rather than filling gaps with generic advice", "priority": "HIGH"}
+  ],
+
+  "parameters": [
+    {"name": "business_description", "type": "string", "required": true, "description": "What the user sells or the service they provide, and how a lead magnet fits their marketing funnel"},
+    {"name": "target_audience", "type": "string", "required": true, "description": "Who they want to attract with this lead magnet — the more specific, the better"},
+    {"name": "audience_pain_points", "type": "string", "required": true, "description": "3-5 specific problems the audience faces that relate to the user's expertise"},
+    {"name": "audience_goals", "type": "string", "required": true, "description": "What the audience wants to achieve that relates to the pain points"},
+    {"name": "content_preferences", "type": "string", "required": true, "description": "How the audience prefers to consume content"},
+    {"name": "production_capacity", "type": "string", "required": true, "description": "User's skills, tools, timeline, and budget for producing the lead magnet"},
+    {"name": "competitive_insights", "type": "string", "required": false, "description": "Key findings from RCP-034 — gaps, differentiation opportunities, competitor weaknesses. Optional."},
+    {"name": "your_unique_expertise", "type": "string", "required": true, "description": "What makes the user qualified to create this lead magnet and serve this audience"}
+  ],
+
+  "phase_structure": [
+    {"phase": 1, "title": "Format Recommendation", "description": "Recommend primary + alternative format based on audience, pain points, content preferences, and production capacity. Frame as fit-for-purpose. WAIT for confirmation."},
+    {"phase": 2, "title": "Value Proposition", "description": "Draft 2-3 headline options, subheadline, and 3 bullet benefits tied to specific pain points. Frame as drafts for user refinement. WAIT for confirmation."},
+    {"phase": 3, "title": "Content Outline", "description": "Generate 4-6 section detailed outline tailored to confirmed format. Introduction with hook/promise/credibility, main sections with titles/coverage/takeaways/content types, conclusion with CTA. WAIT for confirmation."},
+    {"phase": 4, "title": "Production Guidance and Summary", "description": "Production scope estimate, must-include elements, common pitfalls, production approach, compact blueprint summary, limitations acknowledgment, next steps including RCP-036 handoff."}
+  ],
+
+  "i_dont_know_flags": [
+    {"flag": 1, "trigger": "Asked to create the actual lead magnet content, not just the blueprint"},
+    {"flag": 2, "trigger": "Asked to predict conversion rates or lead magnet performance"},
+    {"flag": 3, "trigger": "No competitive insights provided and user asks how to differentiate from competitors"},
+    {"flag": 4, "trigger": "User's pain points are vague — needs narrowing before a focused lead magnet can be planned"}
+  ],
+
+  "series_context": {
+    "series_name": "Lead Magnet",
+    "position": "2 of 3",
+    "sequence": ["RCP-034 Competitor Analyst", "RCP-035 Lead Magnet Creator (this)", "RCP-036 Lead Magnet Optimizer"],
+    "handoff_in": "RCP-034 Phase 4 differentiation strategy feeds this recipe's competitive_insights parameter (optional)",
+    "handoff_out": "Blueprint output (working title, value proposition, content outline) guides user's production process. After creation and launch, user may run RCP-036 to optimize based on actual performance data."
+  },
+
+  "quality_hierarchy": {
+    "blueprint_discipline": "Every output framed as planning document, not finished product — RULE 1 reinforced throughout all phases",
+    "capacity_matching": "Format recommendations constrained by user's stated production capacity — prevents ambitious abandonment",
+    "interactive_pacing": "Format confirmed before outline built — outline structure depends entirely on format choice",
+    "honest_communication": "Value propositions describe genuine benefits; no urgency triggers or clickbait tactics"
+  },
+
+  "lessons_learned": [
+    {
+      "id": "LL-RECIPE-035-001",
+      "lesson": "Recipes that produce planning documents (blueprints, outlines, strategies) must reinforce the blueprint-not-product framing at every phase transition. Users naturally drift toward expecting a finished deliverable as the conversation progresses — each phase confirmation is an opportunity to recalibrate expectations."
+    },
+    {
+      "id": "LL-RECIPE-035-002",
+      "lesson": "Series recipes in the middle position (2 of 3) should treat upstream input as optional enhancement rather than required prerequisite. RCP-035 works without competitive_insights from RCP-034 — the blueprint focuses on audience fit rather than competitive positioning. This preserves standalone usability while rewarding series completion."
+    }
+  ]
+}
+# === END AI-TO-AI COMMUNICATION ===

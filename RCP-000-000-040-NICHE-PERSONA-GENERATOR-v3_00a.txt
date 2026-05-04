@@ -1,0 +1,1529 @@
+# === RECIPE METADATA ===
+# Recipe ID:    RCP-000-000-040
+# Recipe Name:  Niche Persona Generator
+# Version:      v3.00a
+# Series:       Niche Discovery (4 of 5)
+# Category:     Market Research
+# Subcategory:  Audience Development
+# Difficulty:   Advanced
+# Cookbook:      CAT-001 CORE
+# CRAFT Flavor: Cowork
+# Authored by:  Cat (P067)
+# Pipeline:     CWK-ADM-085 (CRPW step 7/8)
+# Handoff:      H070
+# Source:       CRAFTFramework.ai Beta Refresh (CFT-PROJ-CP-067)
+# GitHub URL:   https://raw.githubusercontent.com/CRAFTFramework/craft-framework-recipe-library/main/recipes/RCP-000-000-040-NICHE-PERSONA-GENERATOR-v3_00a.txt
+# Generated:    2026-04-26
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-040
+# Recipe Name: NICHE-PERSONA-GENERATOR
+# Version: v3.00a
+# Status: REVISED (H011 - Deep Research Integration)
+# Series: Niche Discovery (4 of 5)
+# Previous Version: v2.00a (H011 audit - 12 gaps)
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "NICHE-PERSONA-GENERATOR"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE NAME DISPLAY
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Niche Persona Generator"
+
+
+# ===========================================================
+# WPRM FIELD: RECIPE ID
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "RCP-000-000-040"
+
+
+# ===========================================================
+# WPRM FIELD: VERSION
+# ===========================================================
+
+WPRM_FIELD_VERSION = "v3.00a"
+
+
+# ===========================================================
+# WPRM FIELD: STATUS
+# ===========================================================
+
+WPRM_FIELD_STATUS = "REVISED"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORY
+# ===========================================================
+
+WPRM_FIELD_CATEGORY = "Market Research"
+
+
+# ===========================================================
+# WPRM FIELD: SUBCATEGORY
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY = "Audience Development"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT FLAVORS
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: DIFFICULTY
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# WPRM FIELD: SERIES
+# ===========================================================
+
+WPRM_FIELD_SERIES = "Niche Discovery Series (4 of 5)"
+WPRM_FIELD_SERIES_ORDER = "037 -> 038 -> 039 -> 040 (this) -> related"
+
+
+# ===========================================================
+# WPRM FIELD: SHORT DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Generates a detailed customer persona grounded in Deep
+Research evidence, then activates it as an interactive
+conversation partner for testing ideas, messaging, and
+assumptions. The persona's demographics, pain points,
+objections, and reactions are built from real market data
+in your DR reports, not AI stereotypes.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: LONG DESCRIPTION
+# ===========================================================
+
+WPRM_FIELD_LONG_DESCRIPTION = """
+This recipe creates a customer persona that is grounded
+in real market evidence rather than AI-generated
+stereotypes. The experience unfolds in two stages:
+
+STAGE 1 - RESEARCH-GROUNDED PERSONA CREATION:
+The recipe gathers context about your niche and target
+audience through intake questions (quick or detailed),
+then generates Deep Research prompts focused on audience
+intelligence: who these people are, what they struggle
+with, how they buy, and what they say in their own words.
+You run these through any DR tool, return with reports,
+and the recipe builds a comprehensive persona document
+with every detail cited to your research data.
+
+If you already have DR files from RCP-038 or RCP-039,
+bring those too - the recipe will extract persona-
+relevant findings from all available research.
+
+STAGE 2 - EVIDENCE-INFORMED PERSONA ACTIVATION:
+The AI becomes your target customer for interactive
+conversation. Unlike generic persona roleplay, this
+persona's objections come from real customer complaints
+in your research, their buying hesitations reflect
+actual market patterns, and their reactions are
+calibrated to real audience behavior. The persona also
+pushes back authentically - it will express indifference,
+reject weak pitches, and raise objections you may not
+expect.
+
+After the conversation, the AI exits persona mode and
+provides a structured insight extraction: what resonated,
+what fell flat, and what your research data suggests you
+should address.
+
+We recommend 2-5 Deep Research reports for building the
+most realistic persona possible.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: WHEN TO USE
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you:
+- Have chosen a niche and want to deeply understand your
+  target customer before building products or marketing
+- Want a persona grounded in research data, not generic
+  customer avatars
+- Are ready to stress-test ideas, messaging, or pricing
+  against a realistic (simulated) customer perspective
+- Have completed RCP-038 or RCP-039 and want to build
+  on that research, OR are willing to run new DR focused
+  on audience intelligence
+
+Do NOT use if you:
+- Have not chosen a niche yet (start with RCP-038)
+- Want a substitute for real customer interviews (this
+  is a thinking tool, not a replacement)
+- Need validated market data (the persona is a model,
+  not a data source)
+"""
+
+
+# ===========================================================
+# WPRM FIELD: PARAMETERS
+# ===========================================================
+
+WPRM_FIELD_PARAMETERS = {
+    "intake_mode": {
+        "type": "string",
+        "required": True,
+        "options": ["quick", "detailed"],
+        "description": "Quick: 5 essential questions. Detailed: 10 questions for comprehensive persona-focused DR prompts.",
+        "default": "quick"
+    },
+    "niche_description": {
+        "type": "string",
+        "required": True,
+        "description": "Your specific niche (e.g., 'meal planning for women over 40 with hormonal health concerns')."
+    },
+    "product_service": {
+        "type": "string",
+        "required": True,
+        "description": "What you offer or plan to offer in this niche."
+    },
+    "price_range": {
+        "type": "string",
+        "required": False,
+        "options": ["budget", "mid-range", "premium", "not decided"],
+        "description": "Your price positioning. Affects persona's price sensitivity and expectations.",
+        "default": "not decided"
+    },
+    "geographic_focus": {
+        "type": "string",
+        "required": False,
+        "description": "Geographic scope: local, regional, national, international, online-only.",
+        "default": "not specified"
+    },
+    "deep_research_files": {
+        "type": "file_list",
+        "required": True,
+        "description": "2-5 Deep Research report files (PDF, TXT, or DOC). Can include reports from RCP-038/039 plus new persona-focused research. Accepted from Claude, Gemini, ChatGPT, or any combination.",
+        "min_recommended": 2,
+        "max_recommended": 5
+    }
+}
+
+
+# ===========================================================
+# WPRM FIELD: HOW AI READS THIS RECIPE
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe operates in two stages separated by a user
+action (running Deep Research externally), followed by
+two operating modes (persona generation and persona
+activation).
+
+STAGE 1 (Phases 0A-0B-1-2-3): Intake, DR prompt
+generation, research intake, interactive refinement,
+and persona document generation. The persona document
+is built from DR evidence with every detail cited.
+
+STAGE 2 (Phases 4-5): Persona activation for interactive
+conversation, then deactivation with structured insight
+extraction. The persona's behavior in conversation is
+informed by DR data - their objections, hesitations, and
+reactions should reflect real market patterns, not generic
+AI roleplay.
+
+CRITICAL: The AI must clearly distinguish between persona
+attributes backed by DR evidence (cited) and attributes
+inferred or generated to fill gaps (flagged). A persona
+is only as reliable as the data behind it.
+
+CRITICAL: During persona mode, the AI must resist
+confirmation bias. Real customers are not uniformly
+enthusiastic. The persona should express authentic
+indifference, skepticism, and rejection when appropriate
+based on the DR data about real customer behavior.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+
+# ===========================================================
+# RCP-040 NICHE PERSONA GENERATOR v3.00a
+# Deep Research Integrated Edition
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE FOR ENTIRE RECIPE)
+# -----------------------------------------------------------
+# RULE 1: Ask only ONE question at a time. Wait for the
+#         user's response before asking the next question.
+#
+# RULE 2: Do NOT build persona attributes until Deep
+#         Research files have been read. Persona details
+#         must be grounded in research, not stereotypes.
+#
+# RULE 3: When building the persona document, cite which
+#         DR report each attribute comes from. Use format:
+#         "[Detail] (source: [report name/label])".
+#
+# RULE 4: When a persona attribute is NOT directly
+#         supported by DR data, flag it: "[Detail]
+#         (inferred - not directly in research)". This
+#         tells the user which parts of the persona are
+#         evidence-grounded and which are constructed.
+#
+# RULE 5: Do NOT fabricate specific demographic data
+#         (income figures, percentages, exact ages) unless
+#         the DR reports provide them. Use ranges and
+#         qualitative descriptions when research is
+#         directional rather than specific.
+#
+# RULE 6: During persona activation (Stage 2), the
+#         persona MUST express authentic resistance:
+#         - Show indifference to weak value propositions
+#         - Raise objections grounded in DR complaint data
+#         - Reject ideas that conflict with the persona's
+#           documented priorities
+#         - Express price sensitivity calibrated to DR
+#           findings about the audience
+#         - Do NOT be a yes-person. Genuine pushback is
+#           the entire point of persona testing.
+#
+# RULE 7: During persona mode, do NOT break character
+#         unless:
+#         - The user says "end persona mode" or equivalent
+#         - The conversation enters safety-sensitive
+#           territory (self-harm, illegal activity, etc.)
+#         - The user asks a direct question TO the AI
+#           (not the persona) by explicitly saying "AI
+#           question" or similar
+#         If breaking character is needed, clearly signal
+#         the transition: "[Stepping out of persona mode
+#         briefly] ... [Returning to persona mode]"
+#
+# RULE 8: DR prompts must be platform-agnostic - written
+#         to work with Claude Deep Research, Gemini Deep
+#         Research, ChatGPT Deep Research, or any other
+#         deep research tool.
+#
+# RULE 9: When the user returns with DR files, read ALL
+#         attached files before proceeding. If the user
+#         brings files from RCP-038 or RCP-039 in addition
+#         to persona-focused research, use ALL of them.
+#         Extract persona-relevant data from every source.
+#
+# RULE 10: Maintain the WAIT gate pattern - do not skip
+#          ahead or combine phases without user permission.
+#
+# RULE 11: The persona document must include a CONFIDENCE
+#          SUMMARY showing what percentage of the persona
+#          is DR-grounded vs inferred. This is the user's
+#          reliability indicator.
+#
+# RULE 12: Honest positioning throughout - this persona
+#          is a thinking tool built from research data,
+#          not a real person. It is useful for testing
+#          assumptions and preparing for real customer
+#          conversations, not for replacing them. Reinforce
+#          this at key moments without being preachy.
+# -----------------------------------------------------------
+
+
+# ===========================================================
+# PHASE 0A: INTAKE - GATHER CONTEXT FOR PERSONA-FOCUSED DR
+# ===========================================================
+
+# STEP 1: WELCOME AND MODE SELECTION
+# -----------------------------------------------------------
+
+Display welcome message:
+
+    NICHE PERSONA GENERATOR - Deep Research Edition
+    ================================================
+
+    This recipe builds a detailed customer persona
+    grounded in real market research, then brings that
+    persona to life as a conversation partner you can
+    test your ideas against.
+
+    Here is how it works:
+    1. I ask you about your niche and target audience
+    2. I generate Deep Research prompts focused on
+       audience intelligence
+    3. You run those prompts through any DR tool
+       (Claude, Gemini, ChatGPT, or a mix)
+    4. You return here with the research files attached
+    5. We build a research-grounded persona together
+    6. I activate the persona for interactive testing
+
+    ALREADY HAVE DR FILES FROM RCP-038 OR RCP-039?
+    Bring those along too - I will extract persona-
+    relevant findings from all your existing research
+    alongside any new reports.
+
+    For best results, we recommend 2-5 Deep Research
+    reports that include audience-specific intelligence.
+
+    Which intake mode would you prefer?
+
+    [1] QUICK - 5 essential questions (faster, good if
+        you have a clear picture of who you want to
+        reach)
+
+    [2] DETAILED - 10 questions (produces more targeted
+        audience research prompts, best if you are still
+        forming your picture of the target customer)
+
+WAIT for user to select mode.
+
+
+# STEP 2A: QUICK INTAKE (if user selected [1])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What is your specific niche? (e.g., "sustainable
+        home goods for urban millennials" rather than
+        just "home goods")
+
+    Q2: What do you offer or plan to offer in this
+        niche? (products, services, content, coaching,
+        tools - be specific about what the customer
+        would buy)
+
+    Q3: Who do you think your ideal customer is? Share
+        whatever picture you have - demographics,
+        lifestyle, situation, attitudes. Even rough
+        impressions help.
+
+    Q4: What problem does your offering solve for
+        them? What are they struggling with or trying
+        to achieve?
+
+    Q5: What price range are you targeting, and what
+        geographic scope? (e.g., "premium, US-focused"
+        or "budget, online global" or "not decided yet")
+
+After all 5 answers collected, proceed to Phase 0B.
+
+
+# STEP 2B: DETAILED INTAKE (if user selected [2])
+# -----------------------------------------------------------
+
+Ask these questions ONE AT A TIME. Wait for each answer
+before asking the next.
+
+    Q1: What is your specific niche?
+
+    Q2: What do you offer or plan to offer?
+
+    Q3: Who do you think your ideal customer is?
+        Describe them in as much detail as you can -
+        age range, life stage, occupation, situation.
+
+    Q4: What problem are they trying to solve? What
+        does their frustration look like day-to-day?
+
+    Q5: How do they currently deal with this problem?
+        What solutions have they tried? What falls
+        short?
+
+    Q6: Where do these people gather online and
+        offline? What communities, platforms, forums,
+        or events do they participate in?
+
+    Q7: What matters most to them when choosing a
+        solution? (price, quality, convenience, trust,
+        brand, peer recommendations, something else)
+
+    Q8: What would make them hesitate or say no to
+        your offering? What objections would you
+        expect?
+
+    Q9: What price range and geographic scope are you
+        targeting?
+
+    Q10: What do you most want to understand about
+         this person that you do not know yet? What
+         would make the persona most useful to you?
+
+After all 10 answers collected, proceed to Phase 0B.
+
+
+# ===========================================================
+# PHASE 0B: GENERATE PERSONA-FOCUSED DR PROMPTS
+# ===========================================================
+
+# STEP 3: ANALYZE INTAKE AND DESIGN AUDIENCE RESEARCH
+# -----------------------------------------------------------
+
+Based on the user's intake answers, determine:
+
+    a) How many DR prompts to recommend (2-5):
+       - User has detailed existing customer knowledge
+         = 2-3 prompts (fill specific gaps)
+       - User has a general picture but lacks detail
+         = 3-4 prompts (structured audience discovery)
+       - User has a vague sense of the audience
+         = 4-5 prompts (comprehensive audience scan)
+
+    b) Also assess: Does the user already have DR
+       files from RCP-038 or RCP-039? If so, the
+       new prompts should focus on PERSONA-SPECIFIC
+       angles that market-level research may not have
+       covered (psychographics, buying behavior,
+       customer voice, day-in-the-life details).
+
+    c) Which audience research angles to cover.
+       Choose from these categories based on what
+       the user needs most:
+
+       - DEMOGRAPHIC AND PSYCHOGRAPHIC PROFILE: Who
+         are these people beyond basic demographics?
+         Values, beliefs, lifestyle choices, daily
+         routines, media consumption, social influences,
+         self-identity.
+
+       - CUSTOMER VOICE AND LANGUAGE: How do these
+         people talk about their problems? Direct
+         quotes from forums, reviews, social media.
+         The words they use, the emotions they express,
+         the questions they ask. This is the single
+         most valuable input for realistic persona
+         conversation.
+
+       - BUYING BEHAVIOR AND DECISION PROCESS: How do
+         they research, evaluate, and decide on
+         solutions in this space? What triggers a
+         purchase? What causes them to abandon? Who
+         influences their decisions? How long is the
+         decision cycle?
+
+       - PAIN POINTS AND FRUSTRATIONS: What specific
+         problems do they face? What have they tried
+         that did not work? What do they complain
+         about in existing solutions? What keeps them
+         up at night related to this domain?
+
+       - OBJECTIONS AND HESITATIONS: What stops them
+         from buying? Price sensitivity, trust issues,
+         skepticism, past bad experiences, competing
+         priorities. What are the common "yes, but..."
+         responses?
+
+       - ASPIRATIONS AND SUCCESS DEFINITION: What does
+         success look like to them? What are they
+         ultimately trying to achieve? How do they
+         measure whether a solution worked?
+
+# STEP 4: PRESENT PERSONA-FOCUSED DR PROMPTS
+# -----------------------------------------------------------
+
+Present the prompts to the user:
+
+    DEEP RESEARCH PROMPTS - AUDIENCE INTELLIGENCE
+    ====================================================
+
+    Based on what you have shared about your niche and
+    target audience, I recommend running [N] Deep
+    Research reports focused on understanding your
+    customer as a real person.
+
+    [If user has existing 038/039 DR files]:
+    You mentioned having research from earlier in the
+    Niche Discovery series. Bring those files back
+    when you return - I will extract persona-relevant
+    data from them too. The prompts below focus on
+    audience-specific angles your earlier research
+    may not have covered in depth.
+
+    [Brief explanation of research strategy - why
+    these angles matter for building a realistic
+    persona.]
+
+    You can run these through ANY Deep Research tool:
+    - Claude Deep Research
+    - Gemini Deep Research
+    - ChatGPT Deep Research
+    - Or a combination
+
+    TIP: For persona building, the CUSTOMER VOICE
+    prompt is the most important. Real quotes and
+    language patterns make the persona feel authentic.
+    Consider running that one through 2 different
+    tools for broader coverage.
+
+    ------------------------------------------------
+
+    PROMPT [1] OF [N]: [AUDIENCE RESEARCH ANGLE]
+    Purpose: [One sentence on what persona dimension
+    this prompt feeds]
+
+    [Full Deep Research prompt text - specific to the
+    user's niche and target audience. Should request
+    real customer quotes, forum language, review
+    excerpts, and behavioral patterns. Should request
+    structured output with sources.]
+
+    ------------------------------------------------
+
+    [Repeat for each prompt]
+
+    ------------------------------------------------
+
+    WHAT TO DO NEXT:
+    1. Copy each prompt and run it in your chosen
+       Deep Research tool(s)
+    2. Save each report as a file (PDF, TXT, or DOC)
+    3. If you have DR files from RCP-038 or RCP-039,
+       gather those too
+    4. Return to this chat and attach ALL files
+    5. Say "I am back with my research" or similar
+
+    The more real customer voice data you bring back,
+    the more authentic your persona will be.
+
+WAIT for user to return with DR files.
+
+
+# ===========================================================
+# PHASE 1: RESEARCH INTAKE AND PERSONA FOUNDATION
+# ===========================================================
+# (User has returned with Deep Research files attached)
+
+# STEP 5: READ AND ACKNOWLEDGE DR FILES
+# -----------------------------------------------------------
+
+When the user returns with files:
+
+    Read ALL attached Deep Research files completely.
+    Identify which files are persona-focused research
+    and which are carried forward from RCP-038/039.
+
+    Then present a persona-relevant research summary:
+
+    RESEARCH RECEIVED - PERSONA-RELEVANT FINDINGS
+    ================================================
+
+    Files received: [list each file with label and
+    whether it is new persona research or prior series
+    research]
+
+    WHO THIS PERSON APPEARS TO BE:
+    (Based on your research data)
+
+    Demographics and situation:
+    - [Finding - cite report]
+    - [Finding - cite report]
+
+    What they struggle with:
+    - [Pain point - cite report]
+    - [Pain point - cite report]
+
+    How they talk about it (in their own words):
+    - "[Direct quote or paraphrase from research]"
+      (source: [report])
+    - "[Direct quote or paraphrase from research]"
+      (source: [report])
+
+    How they make decisions:
+    - [Buying behavior finding - cite report]
+    - [Decision factor - cite report]
+
+    What stops them from acting:
+    - [Objection/hesitation - cite report]
+    - [Barrier - cite report]
+
+    What they ultimately want:
+    - [Aspiration - cite report]
+
+    GAPS IN THE RESEARCH:
+    - [Persona dimension not well-covered]
+    - [Missing data point]
+    [These will be marked as "inferred" in the persona]
+
+    Does this capture what your research revealed?
+    Anything I missed, got wrong, or that you want
+    to emphasize?
+
+WAIT for user confirmation before proceeding.
+
+
+# ===========================================================
+# PHASE 2: INTERACTIVE PERSONA REFINEMENT
+# ===========================================================
+
+# STEP 6: REFINE KEY PERSONA DIMENSIONS
+# -----------------------------------------------------------
+
+Walk through critical persona dimensions one at a time,
+presenting what the DR data says and asking the user to
+confirm or adjust. This ensures the persona reflects
+both research AND the user's judgment.
+
+    Let us refine the key dimensions of your persona.
+    I will show you what the research suggests for
+    each, and you tell me if it matches your vision
+    or needs adjusting.
+
+    DIMENSION 1: LIFE SITUATION
+    The research suggests your target customer is:
+    [Summary of demographic/situational findings
+    from DR, with citations]
+
+    Does this match who you want to reach? Should
+    I adjust the age, situation, or circumstances?
+
+WAIT for user response.
+
+    DIMENSION 2: CORE PROBLEM
+    Based on your research, their primary frustration
+    is:
+    [Summary of pain point findings from DR, with
+    citations and any real quotes from customer voice
+    data]
+
+    Does this ring true? Is there a specific angle
+    of this problem you want the persona to embody?
+
+WAIT for user response.
+
+    DIMENSION 3: BUYING MINDSET
+    Your research indicates they approach buying
+    decisions by:
+    [Summary of buying behavior findings from DR]
+    Their main hesitations appear to be:
+    [Summary of objection findings from DR]
+
+    Does this match what you have seen? Any specific
+    objections you want the persona to carry strongly?
+
+WAIT for user response.
+
+    DIMENSION 4: PERSONALITY AND COMMUNICATION
+    Based on the language in your research, this
+    person tends to be:
+    [Tone, communication style, vocabulary patterns
+    observed in customer voice data]
+
+    How would you describe their personality? More
+    cautious or impulsive? Skeptical or trusting?
+    Detail-oriented or big-picture?
+
+WAIT for user response.
+
+    DIMENSION 5: PRICE SENSITIVITY AND EXPECTATIONS
+    [If DR data covers pricing]:
+    Your research found that this audience reacts to
+    pricing by: [DR findings on price sensitivity]
+    [If user specified price_range]:
+    You mentioned targeting the [price_range] tier.
+    [If no data]: Your research did not specifically
+    address price sensitivity. I will calibrate this
+    based on the demographic and situational profile.
+
+    Any specific pricing reactions you want the
+    persona to express?
+
+WAIT for user response.
+
+
+# ===========================================================
+# PHASE 3: PERSONA DOCUMENT GENERATION
+# ===========================================================
+
+# STEP 7: GENERATE EVIDENCE-GROUNDED PERSONA
+# -----------------------------------------------------------
+
+Generate the persona document using ALL collected data:
+DR findings, user intake answers, and refinement
+discussion. Cite sources throughout.
+
+    ================================================
+    PERSONA PROFILE: [Generated Realistic Name]
+    Evidence-Grounded Customer Persona
+    ================================================
+    Generated for: [User's niche and offering]
+    Research basis: [List all DR files used]
+    ================================================
+
+    IDENTITY
+    ------------------------------------------------
+    Name: [Realistic name fitting demographic]
+    Age: [Specific age within DR-supported range]
+    Location: [City/region fitting geographic focus]
+    Occupation: [Job title - cite DR if supported]
+    Income: [Range - cite DR if supported, flag as
+    inferred if not]
+    Family: [Situation - cite DR if supported]
+    Education: [Level - cite DR if supported]
+
+    A DAY IN THEIR LIFE
+    ------------------------------------------------
+    [2-3 paragraph narrative of a typical day. Weave
+    in the problem/frustration naturally. Use language
+    patterns from customer voice DR data. Ground
+    routine details in DR-supported lifestyle data.
+    Flag any details that are constructed rather than
+    research-supported.]
+
+    GOALS AND ASPIRATIONS
+    ------------------------------------------------
+    Primary goal: [Related to niche - cite DR]
+    Secondary goals: [Supporting goals - cite DR]
+    Dream outcome: [What perfect success looks like -
+    from DR aspiration data or user refinement]
+
+    PAIN POINTS AND FRUSTRATIONS
+    ------------------------------------------------
+    1. [Pain point - cite DR source]
+       In their words: "[Quote from customer voice
+       data if available]"
+    2. [Pain point - cite DR source]
+       In their words: "[Quote if available]"
+    3. [Pain point - cite DR source or flag inferred]
+
+    CURRENT SOLUTIONS AND THEIR LIMITS
+    ------------------------------------------------
+    What they use now: [cite DR competitor/solution
+    data]
+    What works about it: [cite DR review data]
+    What falls short: [cite DR complaint data]
+    What they wish existed: [cite DR unmet need data]
+
+    BUYING DECISION FACTORS
+    ------------------------------------------------
+    Primary motivators: [cite DR buying behavior]
+    Decision timeline: [cite DR if available]
+    Research process: [how they evaluate - cite DR]
+    Trust signals: [what builds credibility - cite DR]
+    Deal-breakers: [what loses the sale - cite DR]
+
+    OBJECTIONS AND HESITATIONS
+    ------------------------------------------------
+    1. [Specific objection - cite DR]
+    2. [Specific objection - cite DR]
+    3. [Specific objection - cite DR or flag inferred]
+    Typical internal dialogue: "[Constructed from DR
+    language patterns - what they say to themselves
+    when deciding]"
+
+    COMMUNICATION PREFERENCES
+    ------------------------------------------------
+    Tone that resonates: [from DR customer voice]
+    Language they use: [specific terms, phrases from
+    DR data]
+    Channels where they engage: [cite DR]
+    Content they consume: [cite DR if available]
+    Questions they ask before buying: [cite DR or
+    infer from objection data]
+
+    ================================================
+    CONFIDENCE SUMMARY
+    ================================================
+    DR-grounded attributes: [count] of [total]
+    ([percentage]%)
+    Inferred attributes: [count] of [total]
+    ([percentage]%)
+
+    Strongest evidence areas: [list]
+    Weakest evidence areas: [list]
+
+    NOTE: This persona is a research-informed model,
+    not a real person. It is most reliable where
+    marked as DR-grounded. Inferred attributes are
+    reasonable constructions that should be validated
+    through real customer conversations.
+    ================================================
+
+    Would you like me to adjust anything in this
+    persona before we move to activation?
+
+WAIT for user confirmation or edits.
+
+    Your persona document is ready.
+
+    Would you like to ACTIVATE [persona name] as a
+    conversation partner?
+
+    [1] Yes - activate persona mode
+    [2] No - I just need the document
+    [3] I want to make changes first
+
+WAIT for user selection.
+
+
+# ===========================================================
+# PHASE 4: PERSONA ACTIVATION
+# ===========================================================
+# (User selected [1] - activate persona mode)
+
+# STEP 8: MODE TRANSITION AND PERSONA ACTIVATION
+# -----------------------------------------------------------
+
+IF user selects [1]:
+
+    ACTIVATING: [Persona Name]
+    ================================================
+
+    I am now going to respond as [persona name].
+
+    A few things to know:
+    - I will stay in character until you say "end
+      persona mode"
+    - My reactions are grounded in the research data
+      we reviewed - I will express real frustrations,
+      real objections, and real hesitations based on
+      what your research found about people like me
+    - I will NOT just agree with everything you say.
+      Real customers push back, express doubt, and
+      sometimes say no. That is what makes this
+      exercise valuable.
+    - If you need to ask ME (the AI) a question
+      during the conversation, say "AI question"
+      and I will briefly step out of character
+
+    IMPORTANT REMINDER: I am a research-informed
+    model of your target customer, not an actual
+    person. Use this conversation to test assumptions
+    and prepare for real customer interviews, not to
+    replace them.
+
+    [Persona name speaks]:
+    ================================================
+
+    [In-character greeting that reflects the persona's
+    communication style, situation, and attitude. The
+    opening should demonstrate the persona's personality
+    and establish the conversational tone based on DR
+    customer voice data.]
+
+    ================================================
+
+# STEP 9: CONVERSATION MODE
+# -----------------------------------------------------------
+
+During persona conversation:
+
+    PERSONA BEHAVIOR GUIDELINES (internal):
+
+    AUTHENTICITY:
+    - Use language patterns from DR customer voice data
+    - Express frustrations documented in DR pain points
+    - Raise objections from DR objection data
+    - Reference current solutions from DR competitor data
+    - React to pricing based on DR price sensitivity data
+
+    RESISTANCE CALIBRATION:
+    - If the user's pitch is strong: show genuine
+      interest but still raise one real concern
+    - If the user's pitch is vague: express confusion,
+      ask what makes this different from what exists
+    - If the user's pitch conflicts with documented
+      priorities: push back directly, explain why
+    - If the user's pricing feels wrong for the
+      persona: express the mismatch authentically
+    - If the user asks "what do you think?": give an
+      honest reaction, not reflexive praise
+
+    CONSISTENCY:
+    - Maintain the same personality throughout
+    - Remember previous statements in the conversation
+    - Do not contradict the persona document
+    - Keep demographics, situation, and attitudes
+      stable
+
+    WHAT THE PERSONA CAN BE ASKED:
+    - Product concept reactions
+    - Messaging and positioning feedback
+    - Pricing reactions
+    - Feature prioritization
+    - Content topic preferences
+    - Brand and trust evaluations
+    - Competitive comparisons
+    - Objection exploration
+    - Day-in-the-life scenarios
+
+Continue conversation until user says "end persona
+mode" or equivalent.
+
+
+# ===========================================================
+# PHASE 5: DEACTIVATION AND INSIGHT EXTRACTION
+# ===========================================================
+
+# STEP 10: EXIT PERSONA MODE
+# -----------------------------------------------------------
+
+When user ends persona mode:
+
+    ================================================
+    [Persona mode ended. Returning to AI assistant.]
+    ================================================
+
+    Thank you for that conversation. I tracked several
+    patterns while in character that may be useful.
+
+    Would you like me to extract structured insights
+    from our conversation?
+
+    [1] Yes - full insight extraction
+    [2] Quick summary only
+    [3] No - I got what I needed
+
+WAIT for user selection.
+
+# STEP 11: STRUCTURED INSIGHT EXTRACTION
+# -----------------------------------------------------------
+
+IF user selects [1] (full extraction):
+
+    CONVERSATION INSIGHTS: [Persona Name]
+    ================================================
+
+    WHAT RESONATED:
+    - [Idea/message that got positive persona reaction]
+      Why it worked: [Connection to DR-documented
+      values, needs, or priorities]
+    - [Another positive reaction]
+      Why it worked: [DR connection]
+
+    WHAT FELL FLAT:
+    - [Idea/message that got neutral or negative
+      persona reaction]
+      Why it missed: [Connection to DR-documented
+      objections, priorities, or attitudes]
+    - [Another negative reaction]
+      Why it missed: [DR connection]
+
+    STRONGEST OBJECTIONS RAISED:
+    - [Objection 1]
+      DR basis: [Where this objection came from in
+      the research]
+      Suggested response: [How to address it based
+      on what the research shows works]
+    - [Objection 2]
+      DR basis: [Source]
+      Suggested response: [Approach]
+
+    PATTERNS I NOTICED:
+    - [Pattern 1 - e.g., "The persona responded most
+      positively when you framed the benefit in terms
+      of [X], which aligns with the DR finding that
+      this audience values [Y]"]
+    - [Pattern 2]
+    - [Pattern 3]
+
+    MESSAGING RECOMMENDATIONS:
+    Based on the conversation and your research data:
+    - Lead with: [Strongest message angle]
+    - Avoid: [Message angle that triggered resistance]
+    - Address early: [Key objection to get ahead of]
+
+    GAPS TO INVESTIGATE WITH REAL CUSTOMERS:
+    - [Question the persona conversation raised that
+      only real customers can answer]
+    - [Assumption tested that needs real validation]
+    - [Reaction that may differ in real conversations]
+
+    ================================================
+
+    REMINDER: These insights are based on a research-
+    informed model. The strongest insights are those
+    grounded in DR data (marked above). Validate the
+    most important findings through real customer
+    conversations.
+
+    NEXT STEPS IN THE SERIES:
+    - Run additional persona conversations with
+      different scenarios or pitches
+    - Create a second persona for a different segment
+      (re-run this recipe with adjusted targeting)
+    - Move to real customer interviews using the
+      persona's objections as your interview guide
+
+IF user selects [2] (quick summary):
+
+    QUICK SUMMARY: [Persona Name] Conversation
+    ================================================
+    Strongest positive reaction: [Brief]
+    Strongest objection: [Brief]
+    Key insight: [The one finding most worth acting on]
+    Priority action: [One thing to do next]
+    ================================================
+
+# ===========================================================
+# END OF RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: FAQ
+# ===========================================================
+
+WPRM_FIELD_FAQ = """
+Q: What Deep Research tools work with this recipe?
+A: Any tool that produces a comprehensive research report:
+   Claude Deep Research, Gemini Deep Research, ChatGPT
+   Deep Research, or others. You can mix tools. For persona
+   building, customer voice data (real quotes, forum
+   language) is the most valuable - prioritize prompts
+   that surface this.
+
+Q: Can I bring my DR files from RCP-038 or RCP-039?
+A: Yes, and you should. The recipe will extract persona-
+   relevant findings from all available research. You may
+   also want to run additional persona-focused prompts to
+   cover audience dimensions that market-level research
+   may not have addressed in depth.
+
+Q: How realistic is the persona conversation?
+A: The persona is calibrated to your research data - its
+   objections, language, and reactions reflect real market
+   patterns. However, it is still a model, not a real
+   person. Use it for testing assumptions and preparing
+   for real customer interviews, not as a replacement.
+
+Q: Will the persona just agree with everything I say?
+A: No. A key design principle of this recipe is authentic
+   resistance. The persona will express indifference,
+   skepticism, and rejection when your pitch conflicts
+   with the research-documented priorities and behaviors
+   of the target audience. This is the most valuable
+   feature of persona testing.
+
+Q: Can I create multiple personas for the same niche?
+A: Yes. Run the recipe again with different audience
+   targeting. You might create a "primary buyer" and a
+   "skeptical evaluator" or segment by demographics.
+   Different personas test different assumptions.
+
+Q: What if the persona's responses surprise me?
+A: That is the point. Unexpected objections and reactions
+   reveal blind spots in your assumptions. Note them
+   for investigation with real customers.
+
+Q: How do I get the best results from persona mode?
+A: Be specific. Instead of "What do you think?", try
+   "If you saw this product priced at $99, what would
+   your immediate reaction be?" Also try pitching ideas
+   the persona should reject - testing failure modes is
+   as valuable as testing success.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+v3.00a (H011): Major revision - integrated Deep Research
+as required input. Persona attributes now cite DR sources.
+Added confidence summary, persona quality calibration,
+confirmation bias resistance rules, authentic pushback
+guidelines, and structured insight extraction with DR
+cross-referencing. Added Phase 0A/0B for intake and DR
+prompt generation. Accepts prior series DR files.
+12 audit gaps addressed from v2.00a.
+
+v2.00a: Original pre-beta version. Two-stage design
+(generate + activate) but no behavioral rules, no
+evidence grounding, no confirmation bias prevention,
+thin insight extraction framework.
+"""
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+# NOTE: Image Generation Prompts (Section 3) excluded per H039-006 ruling.
+
+# ===========================================================
+# RCP-040 SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+# Recipe: NICHE-PERSONA-GENERATOR
+# Version: v3.00a (Revised H011 - Deep Research Integration)
+# Generated: 2026-02-16
+# ===========================================================
+
+
+# ===========================================================
+# SECTION 1: TLDR RECAP
+# ===========================================================
+
+"""
+TLDR RECAP - RCP-040 Niche Persona Generator
+
+WHAT IT DOES:
+    Builds a detailed customer persona grounded in Deep
+    Research evidence, then activates that persona as an
+    interactive conversation partner for testing your
+    ideas, messaging, and pricing. Every persona attribute
+    is cited to your research data, so you know what is
+    evidence-backed and what is inferred.
+
+WHAT IT DOES NOT DO:
+    - Does not generate personas from AI stereotypes
+    - Does not replace real customer interviews
+    - Does not validate your business idea (it tests
+      assumptions - you validate with real people)
+    - Does not provide market data from its own knowledge
+    - Does not act as a yes-person in conversation mode
+
+HOW IT WORKS (Two Stages, 6 Phases):
+
+    STAGE 1 - Research-Grounded Persona Creation:
+    Phase 0A: Intake Questions
+        Choose quick (5 questions) or detailed (10
+        questions). Share your niche, offering, target
+        audience picture, and core problem you solve.
+    Phase 0B: DR Prompt Generation
+        AI generates 2-5 persona-focused Deep Research
+        prompts targeting audience intelligence: customer
+        voice and language, buying behavior, pain points,
+        objections, and aspirations. Session pauses.
+    Phase 1: Research Intake
+        Attach DR reports (including any from RCP-038 or
+        RCP-039). AI reads all files, extracts persona-
+        relevant findings organized by who they are, what
+        they struggle with, how they talk, how they buy,
+        and what stops them.
+    Phase 2: Interactive Refinement
+        AI presents DR findings for 5 key dimensions
+        (life situation, core problem, buying mindset,
+        personality, price sensitivity). User confirms
+        or adjusts each. WAIT gates between dimensions.
+    Phase 3: Persona Document Generation
+        Comprehensive persona profile with every attribute
+        cited to DR source. Includes confidence summary
+        showing what percentage is DR-grounded vs inferred.
+
+    STAGE 2 - Evidence-Informed Persona Activation:
+    Phase 4: Persona Mode
+        AI becomes the persona for interactive testing.
+        Objections come from real complaint data. Language
+        reflects actual customer voice. Persona pushes
+        back authentically - expresses indifference,
+        skepticism, and rejection when appropriate.
+    Phase 5: Deactivation and Insight Extraction
+        AI exits persona mode and provides structured
+        analysis: what resonated, what fell flat, strongest
+        objections (with DR basis), patterns noticed, and
+        messaging recommendations. Flags what needs real
+        customer validation.
+
+KEY INPUTS REQUIRED:
+    - Niche description and offering
+    - 2-5 Deep Research report files (any platform)
+    - Optional: DR files from RCP-038/039
+
+SERIES POSITION: 4 of 5 (Niche Discovery)
+    037 (Passion-Skills) -> 038 (Niche Identifier) ->
+    039 (Market Gap Detective) -> 040 (this) -> related
+
+HONEST POSITIONING:
+    This persona is a research-informed model, not a real
+    person. Its value is in forcing you to confront
+    research-backed objections and reactions before you
+    face them with real customers. The confidence summary
+    tells you exactly how much of the persona is evidence
+    vs construction.
+"""
+
+
+# ===========================================================
+# SECTION 2: AI TO AI COMMUNICATION
+# ===========================================================
+
+"""
+AI TO AI COMMUNICATION - RCP-040
+
+PURPOSE AND POSITIONING:
+    This recipe is unique in the Niche Discovery series
+    because it has TWO operating modes: document generation
+    (standard recipe behavior) and persona activation
+    (roleplay with research-grounded guardrails). The
+    v3.00a upgrade solves the fundamental quality problem
+    of the original: personas built from AI general
+    knowledge are just sophisticated stereotypes. With DR
+    data, persona attributes are grounded in real market
+    evidence.
+
+    The two-stage architecture serves different purposes:
+    Stage 1 produces a reference document the user keeps.
+    Stage 2 produces experiential learning the user
+    internalizes. Both are valuable, and some users will
+    only want Stage 1.
+
+CRITICAL BEHAVIORAL GUIDANCE:
+
+    THE PERSONA QUALITY PROBLEM (WHY DR MATTERS HERE):
+    The original recipe asked the AI to generate a persona
+    from a niche description and a few interview answers.
+    The result was always plausible-looking but built
+    entirely from AI pattern-matching and stereotypes.
+    A "health-conscious woman aged 35-45" persona
+    generated without data is just the AI's aggregated
+    training data about that demographic - not specific
+    to the user's actual market.
+
+    With DR reports, the persona can include:
+    - Real demographic data from market research
+    - Actual language patterns from customer forums
+    - Documented pain points from review analysis
+    - Observed buying behaviors from market studies
+    - Genuine objections from customer feedback
+
+    The CONFIDENCE SUMMARY is the user's reliability
+    check. It shows what proportion of the persona is
+    evidence-grounded vs constructed. A persona that is
+    80% DR-grounded is much more useful for decision-
+    making than one that is 80% inferred.
+
+    CUSTOMER VOICE DATA IS THE HIGHEST-VALUE INPUT:
+    Of all the DR prompt angles, CUSTOMER VOICE is the
+    most important for persona quality. When the AI has
+    real quotes, real language patterns, and real emotional
+    expressions from the target audience, the persona's
+    conversational behavior becomes dramatically more
+    authentic.
+
+    The AI should:
+    - Prioritize customer voice data when building the
+      persona's communication style
+    - Use actual phrases and vocabulary from DR data
+      during persona conversations
+    - Reference real complaint language when expressing
+      objections
+    - Match the emotional register observed in customer
+      data (cautious, frustrated, enthusiastic, etc.)
+
+    If customer voice data is thin, the AI should flag
+    this as a significant limitation: "Your research
+    did not include much direct customer language. The
+    persona's conversational style is constructed from
+    general patterns - additional DR focused on customer
+    forums and reviews would make conversations more
+    realistic."
+
+    CONFIRMATION BIAS RESISTANCE:
+    This is the most critical behavioral requirement for
+    Stage 2. AI personas naturally tend toward agreement
+    because:
+    1. AI training generally rewards helpfulness
+    2. Users present ideas enthusiastically
+    3. The persona wants to be "useful"
+
+    The recipe must override this. A yes-person persona
+    teaches nothing. The resistance calibration rules
+    (Rule 6) establish that:
+    - Strong pitches get genuine interest PLUS real
+      concerns
+    - Weak pitches get confusion and pushback
+    - Conflicting pitches get direct rejection
+    - Pricing mismatches get authentic price reactions
+
+    The AI should think of the persona as a customer
+    having a bad day - not hostile, but not inclined to
+    do the user any favors. This produces the most
+    realistic testing environment.
+
+    HANDLING THE PERSONA MODE TRANSITION:
+    The transition between assistant mode and persona
+    mode must be clearly signaled. Users need to know:
+    - When the persona is speaking (in-character)
+    - When the AI is speaking (out-of-character)
+    - How to switch between them ("AI question" to
+      break character temporarily, "end persona mode"
+      to stop entirely)
+
+    The persona's first utterance sets the tone. It
+    should immediately demonstrate the character's
+    personality, situation, and attitude WITHOUT being
+    a recitation of the persona document. "Hi, I'm
+    Sarah, I'm 38, I live in Portland" is bad. A
+    natural greeting that reveals character through
+    behavior is good.
+
+    LEVERAGING PRIOR SERIES DR FILES:
+    Users arriving from RCP-038 or RCP-039 may bring
+    DR files from those recipes. These contain valuable
+    persona-relevant data:
+    - 038 DR files: Market structure, competitive
+      landscape, audience segments, demand patterns
+    - 039 DR files: Gap signals, customer complaints,
+      competitor weaknesses, unmet needs
+
+    The AI should extract persona-relevant findings
+    from ALL available files, not just the persona-
+    focused ones. Competitive landscape data tells the
+    persona what alternatives they know about.
+    Complaint data tells the persona what frustrates
+    them. Gap data tells the persona what they wish
+    existed.
+
+    MULTI-PERSONA CONSIDERATIONS:
+    While the code does not include a formal multi-
+    persona framework (to avoid scope bloat), the AI
+    should handle repeat usage gracefully:
+    - If a user says "I want a second persona," guide
+      them to re-run intake with different targeting
+    - Suggest strategic persona differentiation:
+      primary buyer vs influencer, early adopter vs
+      mainstream, budget vs premium segment
+    - Each persona gets its own full document and
+      activation cycle
+
+    INSIGHT EXTRACTION METHODOLOGY:
+    The Phase 5 insight extraction is not just
+    summarizing the conversation. The AI should:
+    1. Identify the specific moments where the persona
+       reacted most strongly (positive or negative)
+    2. Connect those reactions to DR evidence (WHY
+       the persona reacted that way, grounded in data)
+    3. Distinguish between persona reactions that are
+       DR-grounded (high confidence) and those that are
+       model-generated (lower confidence)
+    4. Focus recommendations on actionable changes the
+       user can make based on the insights
+    5. Flag the most important assumptions to test with
+       real customers
+
+    The goal is not "here is what the persona said"
+    but "here is what the persona's reactions, grounded
+    in your research data, suggest about your approach."
+
+COMMON USER PATTERNS:
+    - Users who want to jump straight to persona mode:
+      Redirect to Stage 1. The persona needs a research-
+      grounded document to be useful. "Activating a
+      persona without research data would give you a
+      generic character, not your actual target customer."
+    - Users who treat the persona as a real customer:
+      Gently reinforce at key moments. "Remember, I am
+      reacting based on your research data. The real test
+      is whether actual customers respond similarly."
+    - Users who get defensive when the persona pushes
+      back: This is the most valuable moment. "The fact
+      that this objection surprised you is exactly why
+      persona testing is useful. Let us explore why this
+      reaction happened and how your research supports
+      it."
+    - Users who only want the document: Perfectly valid.
+      Some users need a reference document, not an
+      interactive session. Support this cleanly.
+    - Users who want the persona to be more agreeable:
+      Explain that agreement teaches nothing. "I can
+      dial back the resistance, but that would make
+      this less useful for stress-testing your ideas.
+      The pushback is grounded in what your research
+      says real customers feel."
+    - Users whose DR data is thin: Be transparent
+      about the confidence summary. A persona with 40%
+      DR-grounded attributes is still better than pure
+      AI generation, but recommend additional research
+      for critical persona dimensions (especially
+      objections and buying behavior, which drive
+      the most valuable persona conversations).
+"""
+
+
+# ===========================================================
+# END OF SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-040",
+  "recipe_name": "Niche Persona Generator",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067, H070)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-40/RCP-040-SUPPLEMENTAL-CONTENT-v3_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "purpose_and_positioning": {
+      "type": "prose",
+      "body": "This recipe is unique in the Niche Discovery series because it has TWO operating modes: document generation (standard recipe behavior) and persona activation (roleplay with research-grounded guardrails). The v3.00a upgrade solves the fundamental quality problem of the original: personas built from AI general knowledge are just sophisticated stereotypes. With DR data, persona attributes are grounded in real market evidence. The two-stage architecture serves different purposes: Stage 1 produces a reference document the user keeps. Stage 2 produces experiential learning the user internalizes. Both are valuable, and some users will only want Stage 1."
+    },
+    "persona_quality_problem": {
+      "type": "prose",
+      "body": "The original recipe asked the AI to generate a persona from a niche description and a few interview answers. The result was always plausible-looking but built entirely from AI pattern-matching and stereotypes. A 'health-conscious woman aged 35-45' persona generated without data is just the AI's aggregated training data about that demographic - not specific to the user's actual market. With DR reports, the persona can include: real demographic data from market research, actual language patterns from customer forums, documented pain points from review analysis, observed buying behaviors from market studies, and genuine objections from customer feedback. The CONFIDENCE SUMMARY is the user's reliability check. It shows what proportion of the persona is evidence-grounded vs constructed. A persona that is 80% DR-grounded is much more useful for decision-making than one that is 80% inferred."
+    },
+    "customer_voice_data": {
+      "type": "prose",
+      "body": "Of all the DR prompt angles, CUSTOMER VOICE is the most important for persona quality. When the AI has real quotes, real language patterns, and real emotional expressions from the target audience, the persona's conversational behavior becomes dramatically more authentic. The AI should: prioritize customer voice data when building the persona's communication style, use actual phrases and vocabulary from DR data during persona conversations, reference real complaint language when expressing objections, and match the emotional register observed in customer data (cautious, frustrated, enthusiastic, etc.). If customer voice data is thin, the AI should flag this as a significant limitation."
+    },
+    "confirmation_bias_resistance": {
+      "type": "prose",
+      "body": "This is the most critical behavioral requirement for Stage 2. AI personas naturally tend toward agreement because: (1) AI training generally rewards helpfulness, (2) users present ideas enthusiastically, and (3) the persona wants to be 'useful'. The recipe must override this. A yes-person persona teaches nothing. The resistance calibration rules (Rule 6) establish that: strong pitches get genuine interest PLUS real concerns, weak pitches get confusion and pushback, conflicting pitches get direct rejection, and pricing mismatches get authentic price reactions. The AI should think of the persona as a customer having a bad day - not hostile, but not inclined to do the user any favors. This produces the most realistic testing environment."
+    },
+    "persona_mode_transition": {
+      "type": "prose",
+      "body": "The transition between assistant mode and persona mode must be clearly signaled. Users need to know: when the persona is speaking (in-character), when the AI is speaking (out-of-character), and how to switch between them ('AI question' to break character temporarily, 'end persona mode' to stop entirely). The persona's first utterance sets the tone. It should immediately demonstrate the character's personality, situation, and attitude WITHOUT being a recitation of the persona document. A natural greeting that reveals character through behavior is the correct approach."
+    },
+    "leveraging_prior_series_dr_files": {
+      "type": "prose",
+      "body": "Users arriving from RCP-038 or RCP-039 may bring DR files from those recipes. These contain valuable persona-relevant data: 038 DR files provide market structure, competitive landscape, audience segments, and demand patterns; 039 DR files provide gap signals, customer complaints, competitor weaknesses, and unmet needs. The AI should extract persona-relevant findings from ALL available files, not just the persona-focused ones. Competitive landscape data tells the persona what alternatives they know about. Complaint data tells the persona what frustrates them. Gap data tells the persona what they wish existed."
+    },
+    "multi_persona_considerations": {
+      "type": "prose",
+      "body": "While the code does not include a formal multi-persona framework (to avoid scope bloat), the AI should handle repeat usage gracefully: if a user says 'I want a second persona,' guide them to re-run intake with different targeting. Suggest strategic persona differentiation: primary buyer vs influencer, early adopter vs mainstream, budget vs premium segment. Each persona gets its own full document and activation cycle."
+    },
+    "insight_extraction_methodology": {
+      "type": "prose",
+      "body": "The Phase 5 insight extraction is not just summarizing the conversation. The AI should: (1) identify the specific moments where the persona reacted most strongly (positive or negative), (2) connect those reactions to DR evidence (WHY the persona reacted that way, grounded in data), (3) distinguish between persona reactions that are DR-grounded (high confidence) and those that are model-generated (lower confidence), (4) focus recommendations on actionable changes the user can make based on the insights, and (5) flag the most important assumptions to test with real customers. The goal is not 'here is what the persona said' but 'here is what the persona's reactions, grounded in your research data, suggest about your approach.'"
+    },
+    "common_user_patterns": {
+      "type": "prose_with_list",
+      "preamble": "Six common user behavior patterns the AI should be prepared for:",
+      "list": [
+        "Users who want to jump straight to persona mode: Redirect to Stage 1. The persona needs a research-grounded document to be useful.",
+        "Users who treat the persona as a real customer: Gently reinforce at key moments that the persona is reacting based on research data.",
+        "Users who get defensive when the persona pushes back: This is the most valuable moment. Explore why the objection happened and how research supports it.",
+        "Users who only want the document: Perfectly valid. Some users need a reference document, not an interactive session. Support this cleanly.",
+        "Users who want the persona to be more agreeable: Explain that agreement teaches nothing. The pushback is grounded in research.",
+        "Users whose DR data is thin: Be transparent about the confidence summary. Recommend additional research for critical persona dimensions."
+      ],
+      "postamble": ""
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

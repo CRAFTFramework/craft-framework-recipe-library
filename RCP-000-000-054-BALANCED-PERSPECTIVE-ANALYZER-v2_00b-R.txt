@@ -1,0 +1,1312 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-054-BALANCED-PERSPECTIVE-ANALYZER
+# Version: v2.00b-R
+# Generated: 2026-04-26 (P067-H078)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 3-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe: RCP-000-000-054-BALANCED-PERSPECTIVE-ANALYZER
+# Version: v2.00b-R
+# Created: 2025-12-31
+# Revised: 2026-02-17
+# Creator: Auguste (Content Creator)
+# Revised By: Cat (B) QA Audit
+# Validator: Pending Fernand Review
+# Status: REVISED
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Recipe Type
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Name
+# ===========================================================
+
+WPRM_FIELD_NAME = (
+    "RCP-000-000-054"
+    "-BALANCED-PERSPECTIVE-ANALYZER"
+)
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL > Description
+# ===========================================================
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you get balanced, multi-perspective
+analysis from AI on complex topics where reasonable
+people disagree. AI often presents a single framing as
+definitive, creating hidden bias. This recipe coaches
+the AI to identify distinct viewpoints, present each
+at its strongest, and synthesize where they agree and
+why they differ. Results reflect AI training data and
+may underrepresent some perspectives.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Multi-Recipe Combo Stages
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Is Part Of This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Category ID Numbers
+# ===========================================================
+
+WPRM_FIELD_CATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Subcategory ID Numbers
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe ID Numbers
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "054"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Status
+# ===========================================================
+
+WPRM_FIELD_STATUS = "Official"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > CRAFT Flavors
+# ===========================================================
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Categories
+# ===========================================================
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Standalone Beta Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Subcategories
+# ===========================================================
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Critical Thinking"
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Tags
+# ===========================================================
+
+WPRM_FIELD_TAGS = """
+Introduced in Beta, Perspective Analysis,
+Balanced Viewpoints, Bias Prevention, Synthesis,
+Stakeholder Analysis, Critical Thinking,
+Decision Support, Multi-Perspective
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES > Recipe Difficulty
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Medium"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Launch the Analyzer
+
+Tell the AI you want a balanced multi-perspective
+analysis. You can say something like:
+
+    "I need to understand different viewpoints on
+    a complex topic. Please use the Balanced
+    Perspective Analyzer."
+
+Or invoke directly:
+
+    #H->AI::Directive: (Execute Balanced
+        Perspective Analyzer)
+
+The AI will ask you to choose an analysis mode and
+describe your topic.
+
+
+STEP 2: Choose Your Analysis Mode
+
+The AI will present two modes. Choose based on what
+kind of decision or understanding you need:
+
+GENERAL ANALYSIS (for exploring complex topics):
+Best for understanding debates, researching
+multifaceted issues, gathering balanced information,
+or exploring questions where reasonable people
+disagree. The AI will identify the most relevant
+perspectives on your specific topic (not locked to
+a fixed set) and present each at its strongest.
+
+STAKEHOLDER ANALYSIS (for strategic decisions):
+Best for business decisions affecting multiple
+groups, policy development, negotiation preparation,
+or any situation where understanding each group's
+interests matters. The AI will help you identify
+the relevant stakeholders and then analyze each
+group's perspective, interests, and concerns.
+
+You do not need to memorize these. The AI will
+explain them and help you choose.
+
+
+STEP 3: Describe Your Topic
+
+Tell the AI what topic or question you want analyzed.
+Be as specific as possible. Better topics include
+context about why you need this analysis, since that
+helps the AI identify the most relevant perspectives.
+
+Good examples:
+    "Should our company adopt a four-day work week?"
+    "What are the different views on AI regulation
+    in the EU?"
+    "My team disagrees about whether to build or
+    buy our analytics platform."
+
+For Stakeholder Analysis, the AI will also help you
+identify which stakeholder groups are relevant. You
+do not need to know them in advance. The AI will
+suggest groups based on your topic and you can add,
+remove, or adjust before it proceeds.
+
+
+STEP 4: Review the Multi-Perspective Analysis
+
+The AI will present its analysis with each perspective
+given equal depth and rigor. After the perspectives,
+it will provide a synthesis section covering:
+
+    Where perspectives agree (genuine common ground,
+    not superficial overlap).
+
+    Where they fundamentally disagree (and the
+    underlying values or priorities driving that
+    disagreement).
+
+    For Stakeholder Analysis: potential compromises
+    that address multiple groups' core concerns.
+
+The AI will also include a brief self-assessment
+noting any perspectives it may not have represented
+at full strength due to training data limitations.
+
+
+STEP 5: Request Adjustments
+
+If the analysis seems unbalanced or is missing an
+important viewpoint, tell the AI. Common requests:
+
+    "The critic perspective seems weaker than the
+    proponent. Can you strengthen it?"
+
+    "You're missing the perspective of [group].
+    Please add their viewpoint."
+
+    "The synthesis is too surface-level. Why do
+    these groups really disagree at a deeper level?"
+
+The AI will revise and present an updated analysis.
+
+
+STEP 6: Optional Deep Dive
+
+After the main analysis, you can ask the AI to go
+deeper on any single perspective, explore a specific
+disagreement in more detail, or brainstorm compromise
+solutions for Stakeholder Analysis.
+
+IMPORTANT: AI perspective analysis reflects patterns
+in training data. Some viewpoints may be stronger in
+AI training than others, which can create subtle
+imbalances even with this recipe active. For high-
+stakes decisions, supplement AI analysis with direct
+input from actual representatives of each perspective.
+
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > How A.I. Reads This Recipe
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS = """
+This recipe coaches the AI to produce genuinely
+balanced multi-perspective analysis. When invoked:
+
+1. PRESENT the two analysis modes (general vs
+   stakeholder) and help the user choose. Do not
+   assume a mode.
+
+2. ASK for the topic and WAIT for it.
+
+3. For General Analysis: identify the most relevant
+   perspectives based on the specific topic. Do NOT
+   default to a rigid pro/con/neutral structure.
+   Identify 3-5 perspectives that reflect how people
+   actually disagree on this topic.
+
+4. For Stakeholder Analysis: suggest relevant
+   stakeholder groups based on the topic. Present
+   the suggestions and WAIT for user confirmation
+   before proceeding. Let them add or remove groups.
+
+5. GENERATE the analysis following the behavioral
+   rules in the code section, especially the balance
+   enforcement rules. Present each perspective at
+   its strongest (steelman, not strawman).
+
+6. INCLUDE a synthesis section and a brief bias
+   self-assessment.
+
+7. OFFER revisions if any perspective feels weak.
+
+IMPORTANT: AI training data overrepresents some
+perspectives and underrepresents others. The
+behavioral rules require honest acknowledgment of
+this limitation rather than pretending perfect
+balance is achievable. Flag suspected imbalances
+proactively.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Recipe Short Description
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESCRIPTION = """
+Get balanced, multi-perspective analysis on complex
+topics where reasonable people disagree. The AI
+identifies relevant viewpoints, presents each at its
+strongest, and synthesizes agreements and
+disagreements to support informed decision-making.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > When To Use This Recipe
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you need to understand multiple
+sides of a complex issue. It is especially valuable
+for:
+
+STRATEGIC DECISIONS: Business choices where different
+teams or stakeholders hold different views and you
+need to understand each position before deciding.
+
+POLICY AND ETHICS: Topics where values drive
+disagreement and you want to understand the reasoning
+behind each position, not just the conclusions.
+
+NEGOTIATION PREPARATION: When you need to understand
+what each party cares about most, where they might
+compromise, and where they will not budge.
+
+RESEARCH AND CONTENT: When writing about contested
+topics and you need to represent multiple viewpoints
+fairly rather than defaulting to a single framing.
+
+UNFAMILIAR DEBATES: When you encounter a complex
+disagreement and want a structured overview of the
+key positions before forming your own view.
+
+Do NOT use this recipe for factual questions with
+clear answers. This recipe is for topics where
+multiple valid perspectives exist based on different
+values, priorities, or interpretations. For fact-
+checking, use RCP-012 (Fact Verification Foundations)
+or RCP-050 (Logic Consistency Auditor).
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Recipe Name
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NAME = "Balanced Perspective Analyzer"
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > This Recipe Is Included In
+# ===========================================================
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS > Actual Recipe Code
+# ===========================================================
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# START: RCP-000-000-054-BALANCED-PERSPECTIVE-ANALYZER
+# VERSION: v2.00b-R
+# ===========================================================
+
+
+BALANCED_PERSPECTIVE_ANALYZER = Recipe(
+    recipe_id=(
+        "RCP-000-000-054"
+        "-BALANCED-PERSPECTIVE-ANALYZER"
+    ),
+    version="2.00b-R",
+    title="Balanced Perspective Analyzer",
+
+    description=(
+        "Produces genuinely balanced multi-perspective "
+        "analysis on complex topics. Identifies "
+        "relevant viewpoints, presents each at its "
+        "strongest, and synthesizes agreements and "
+        "disagreements. Acknowledges training-data "
+        "limitations that may affect balance."
+    ),
+
+    category="CAT-000-STANDALONE",
+    subcategory="Critical Thinking",
+    difficulty="medium",
+
+    parameters={
+        "analysis_mode": {
+            "type": "string",
+            "required": False,
+            "default": "general",
+            "options": [
+                "general",
+                "stakeholder"
+            ],
+            "description": (
+                "Type of perspective analysis"
+            )
+        },
+        "topic": {
+            "type": "string",
+            "required": True,
+            "description": (
+                "The topic to analyze from multiple "
+                "perspectives"
+            )
+        }
+    },
+
+    prompt_template="""
+    # =====================================================
+    # BALANCED PERSPECTIVE ANALYZER
+    # =====================================================
+    # IMPORTANT: AI training data overrepresents some
+    # viewpoints and underrepresents others. This recipe
+    # cannot achieve perfect balance. The goal is to
+    # produce meaningfully MORE balanced analysis than
+    # the user would get from a default AI response,
+    # while being honest about remaining limitations.
+    # =====================================================
+
+
+    # =====================================================
+    # BEHAVIORAL RULES (apply throughout this recipe)
+    # =====================================================
+    #
+    # RULE 1 — STEELMAN EVERY PERSPECTIVE:
+    #   Present each viewpoint as its strongest
+    #   advocates would present it. Use their best
+    #   arguments, not weak versions an opponent
+    #   would construct. If you catch yourself
+    #   describing a perspective dismissively,
+    #   rewrite it from the inside.
+    #
+    # RULE 2 — EQUAL DEPTH AND RIGOR:
+    #   Each perspective should receive roughly
+    #   equal treatment in length, argument quality,
+    #   and evidence cited. If one perspective gets
+    #   three strong arguments and another gets one
+    #   vague sentence, the analysis is unbalanced.
+    #   Check this before presenting.
+    #
+    # RULE 3 — FLEXIBLE PERSPECTIVE IDENTIFICATION:
+    #   For General Analysis, identify perspectives
+    #   based on how people actually disagree on
+    #   THIS topic. Do not default to a rigid
+    #   pro/con/neutral structure. A topic might
+    #   have reformers, incrementalists,
+    #   preservationists, and pragmatists -- or
+    #   completely different groupings. Let the
+    #   topic dictate the perspectives.
+    #
+    # RULE 4 — HONEST BIAS SELF-ASSESSMENT:
+    #   After generating the analysis, briefly flag
+    #   any perspectives you suspect may be weaker
+    #   than the others due to training data
+    #   limitations. Say so directly rather than
+    #   pretending all perspectives are equally
+    #   well-represented. This gives the user
+    #   actionable information about where to seek
+    #   additional input.
+    #
+    # RULE 5 — SYNTHESIS MUST HAVE DEPTH:
+    #   "Both sides care about the economy" is not
+    #   useful synthesis. Identify SPECIFIC areas of
+    #   agreement (shared goals, common concerns,
+    #   overlapping proposals). For disagreements,
+    #   explain the underlying VALUES or PRIORITIES
+    #   driving the disagreement, not just the
+    #   surface positions. The synthesis should help
+    #   the user understand WHY people disagree, not
+    #   just THAT they disagree.
+    #
+    # RULE 6 — HELP IDENTIFY STAKEHOLDERS:
+    #   For Stakeholder Analysis, do not require the
+    #   user to pre-specify all stakeholder groups.
+    #   Suggest relevant groups based on the topic,
+    #   present them, and let the user confirm,
+    #   adjust, add, or remove before proceeding.
+    #   This makes the recipe accessible to users
+    #   who do not yet know which groups matter.
+    #
+    # RULE 7 — AVOID FALSE EQUIVALENCE:
+    #   Balance does not mean treating every
+    #   perspective as equally valid on factual
+    #   claims. If one perspective is based on a
+    #   factual error, note this while still
+    #   presenting the underlying concern fairly.
+    #   Balance means presenting each perspective's
+    #   REASONING at its strongest, not pretending
+    #   all factual claims are equally supported.
+    #
+    # RULE 8 — NOTE UNDERREPRESENTED VOICES:
+    #   For both modes, flag any perspectives that
+    #   are likely relevant but that you may not
+    #   represent well. This could include minority
+    #   viewpoints, emerging perspectives, or groups
+    #   whose voices are less prominent in
+    #   English-language training data.
+    #
+    # RULE 9 — KEEP SETUP CONVERSATIONAL:
+    #   The mode selection and topic collection
+    #   should feel like a brief, helpful
+    #   conversation, not a form to fill out.
+    #   Explain the two modes in plain language
+    #   and help the user decide based on their
+    #   actual need.
+    #
+    # RULE 10 — COMPROMISES MUST BE REALISTIC:
+    #   In Stakeholder Analysis, do not suggest
+    #   naive compromises that ignore real tradeoffs.
+    #   If two groups have genuinely conflicting
+    #   interests, acknowledge the tension. Suggest
+    #   compromises only where they actually address
+    #   multiple groups' core concerns. It is better
+    #   to say "this is a genuine tradeoff" than to
+    #   suggest a false solution.
+    #
+    # RULE 11 — DO NOT EDITORIALIZE:
+    #   The analysis should present perspectives,
+    #   not advocate. Do not conclude with "the best
+    #   approach is" or "the evidence suggests." Let
+    #   the user form their own conclusions from the
+    #   balanced presentation. The synthesis explains
+    #   the landscape; it does not pick a winner.
+    #
+    # RULE 12 — FRAMEWORK STAYS ACTIVE:
+    #   If the user asks follow-up questions about
+    #   the topic, continue applying balanced
+    #   perspective principles. Do not revert to
+    #   single-perspective default responses.
+    # =====================================================
+
+
+    # =====================================================
+    # STEP 1: WELCOME AND MODE SELECTION
+    # =====================================================
+
+    #AI->H::Status: (
+        Balanced Perspective Analyzer active
+    )
+
+    Present the two analysis modes in plain language:
+
+    GENERAL ANALYSIS -- Best for understanding
+    complex debates, exploring multifaceted issues,
+    or gathering balanced views on a topic where
+    reasonable people disagree. The AI will identify
+    the most relevant perspectives based on your
+    specific topic and present each at its strongest.
+
+    STAKEHOLDER ANALYSIS -- Best for strategic
+    decisions, negotiations, or policy development
+    where you need to understand what different
+    groups care about, where their interests align,
+    and where they conflict. The AI will help you
+    identify the relevant stakeholder groups before
+    analyzing each.
+
+    If the user already specified a mode in their
+    invocation, confirm it. Otherwise, ask which
+    mode fits their needs.
+
+    # WAIT for user to choose analysis mode.
+
+
+    # =====================================================
+    # STEP 2: COLLECT THE TOPIC
+    # =====================================================
+
+    Confirm the mode and ask for the topic:
+
+    "What topic or question would you like analyzed
+    from multiple perspectives? The more context you
+    provide about why you need this analysis, the
+    better I can identify the most relevant
+    viewpoints."
+
+    # WAIT for user to provide their topic.
+
+
+    # =====================================================
+    # STEP 3: PERSPECTIVE IDENTIFICATION
+    # =====================================================
+
+    # -------------------------------------------------
+    # FOR GENERAL ANALYSIS:
+    # -------------------------------------------------
+    # Analyze the topic and identify 3-5 distinct
+    # perspectives that reflect how people actually
+    # disagree on this issue. Per RULE 3, do NOT
+    # default to pro/con/neutral. Instead:
+    #
+    # Briefly name each perspective and describe its
+    # core position in one sentence. Present these
+    # to the user:
+    #
+    # "Based on your topic, I've identified these
+    # distinct perspectives:
+    #   1. [Name]: [one-sentence core position]
+    #   2. [Name]: [one-sentence core position]
+    #   3. [Name]: [one-sentence core position]
+    #   (4-5 if warranted by the topic)
+    #
+    # Do these cover the viewpoints you care about?
+    # I can add, remove, or adjust before I proceed
+    # with the full analysis."
+    #
+    # WAIT for user confirmation.
+
+    # -------------------------------------------------
+    # FOR STAKEHOLDER ANALYSIS:
+    # -------------------------------------------------
+    # Analyze the topic and suggest 3-6 relevant
+    # stakeholder groups. Per RULE 6, do not require
+    # the user to pre-specify these. Instead:
+    #
+    # "Based on your topic, I'd suggest analyzing
+    # these stakeholder groups:
+    #   1. [Group]: [why they're relevant]
+    #   2. [Group]: [why they're relevant]
+    #   3. [Group]: [why they're relevant]
+    #   (up to 6 if warranted)
+    #
+    # Would you like to adjust this list? I can add,
+    # remove, or redefine any groups."
+    #
+    # WAIT for user confirmation.
+
+
+    # =====================================================
+    # STEP 4: GENERATE THE ANALYSIS
+    # =====================================================
+
+    # -------------------------------------------------
+    # FOR GENERAL ANALYSIS:
+    # -------------------------------------------------
+    # For each confirmed perspective, present:
+    #
+    # PERSPECTIVE NAME
+    #
+    # Core position: What this perspective argues
+    # and why.
+    #
+    # Strongest arguments: The 2-3 best reasons
+    # advocates of this view give, presented as
+    # they would present them (per RULE 1,
+    # steelman each one).
+    #
+    # Key evidence or reasoning: What supports
+    # this perspective. Use honest attribution
+    # (general patterns, commonly cited, widely
+    # accepted). Do not fabricate specific sources.
+    #
+    # Underlying values: What priorities or
+    # principles drive people who hold this view.
+    #
+    # Per RULE 2, each perspective must receive
+    # roughly equal depth. Check this before
+    # presenting. If one perspective has 3
+    # paragraphs and another has 1, rebalance.
+    #
+    # Per RULE 7, if a perspective rests on a
+    # factual error, note the error while still
+    # presenting the underlying concern fairly.
+
+    # -------------------------------------------------
+    # FOR STAKEHOLDER ANALYSIS:
+    # -------------------------------------------------
+    # For each confirmed stakeholder group, present:
+    #
+    # STAKEHOLDER GROUP NAME
+    #
+    # Primary interests: What this group cares
+    # about most in relation to the topic.
+    #
+    # Main arguments and concerns: How this group
+    # views the topic and what worries them.
+    #
+    # Impact assessment: How different outcomes
+    # would affect this group's goals or wellbeing.
+    #
+    # What they would need: Conditions or outcomes
+    # that would address this group's core concerns.
+    #
+    # Per RULE 2, equal depth across all groups.
+
+
+    # =====================================================
+    # STEP 5: SYNTHESIS
+    # =====================================================
+
+    # Per RULE 5, synthesis must have genuine depth.
+
+    # -------------------------------------------------
+    # FOR GENERAL ANALYSIS:
+    # -------------------------------------------------
+    #
+    # AREAS OF AGREEMENT:
+    # Identify specific shared goals, concerns, or
+    # proposals that multiple perspectives support.
+    # Be precise -- "everyone cares about the issue"
+    # is not useful. What specifically do they agree
+    # on?
+    #
+    # FUNDAMENTAL DISAGREEMENTS:
+    # Identify where perspectives diverge and
+    # explain the underlying values, priorities, or
+    # assumptions driving each disagreement. The
+    # user should understand WHY people disagree,
+    # not just THAT they disagree.
+    #
+    # EXPLANATORY FACTORS:
+    # What makes this topic produce disagreement?
+    # Is it different values? Different risk
+    # tolerance? Different factual interpretations?
+    # Different affected populations? This helps
+    # the user understand the structure of the
+    # debate.
+
+    # -------------------------------------------------
+    # FOR STAKEHOLDER ANALYSIS:
+    # -------------------------------------------------
+    #
+    # SHARED INTERESTS:
+    # Map specific areas where multiple stakeholder
+    # groups' interests align. These are potential
+    # building blocks for solutions.
+    #
+    # CONFLICTING PRIORITIES:
+    # Identify where groups' interests directly
+    # conflict and explain why. Be specific about
+    # the tradeoff.
+    #
+    # POTENTIAL COMPROMISES:
+    # Per RULE 10, suggest only realistic
+    # compromises that genuinely address multiple
+    # groups' core concerns. If a conflict involves
+    # genuine tradeoffs, say so honestly. Do not
+    # manufacture false solutions.
+    #
+    # UNDERREPRESENTED PERSPECTIVES:
+    # Per RULE 8, flag any stakeholder groups or
+    # viewpoints that are likely relevant but were
+    # not included or may be weakly represented.
+
+
+    # =====================================================
+    # STEP 6: BIAS SELF-ASSESSMENT
+    # =====================================================
+
+    # Per RULE 4, include a brief honest assessment:
+
+    # "BALANCE NOTE: [2-3 sentences flagging any
+    # perspectives you suspect may be weaker than
+    # others due to training data limitations, or
+    # any viewpoints that may be underrepresented.
+    # If you believe the analysis is reasonably
+    # balanced, say so but note that AI training
+    # data always carries some perspective bias.]"
+
+    # Then ask:
+    # "Does this analysis cover the perspectives
+    # you need? I can strengthen any viewpoint,
+    # add missing perspectives, or go deeper on
+    # the synthesis."
+
+    # WAIT for user feedback.
+
+    # If the user requests changes:
+    # Address the specific request. Common cases:
+    #
+    # "Strengthen [perspective]" → Rewrite that
+    # perspective with stronger arguments, more
+    # evidence, and deeper reasoning. Present the
+    # updated version.
+    #
+    # "Add [group/viewpoint]" → Generate a new
+    # perspective section at the same depth as the
+    # others and note how it changes the synthesis.
+    #
+    # "Deeper synthesis" → Expand the synthesis
+    # section with more specific agreements,
+    # disagreements, and explanatory factors.
+    #
+    # "Check balance" → Review all perspectives
+    # for word count, argument strength, and
+    # framing fairness. Report findings and
+    # rebalance if needed.
+
+    # If the user is satisfied, proceed to Step 7.
+
+
+    # =====================================================
+    # STEP 7: OPTIONAL DEEP DIVE
+    # =====================================================
+
+    # Offer once:
+    # "Would you like to go deeper on any aspect?
+    # I can explore a single perspective in more
+    # detail, unpack a specific disagreement, or
+    # brainstorm compromise solutions for the
+    # stakeholder analysis."
+
+    # WAIT for user response.
+
+    # If yes: provide the requested deep dive,
+    # maintaining balanced framing throughout
+    # (per RULE 12).
+
+    # If no: close cleanly.
+
+    #AI->H::Note: (
+        Balanced Perspective Analyzer complete.
+        The balanced framing remains active for
+        follow-up questions on this topic. For
+        fact-checking specific claims within the
+        analysis, consider using RCP-012 Fact
+        Verification Foundations or RCP-050 Logic
+        Consistency Auditor.
+    )
+
+    # Per RULE 11: Do not conclude with a
+    # recommendation or editorial position. Let
+    # the user form their own conclusions from
+    # the balanced presentation.
+    """
+)
+
+
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_GENERAL = {
+    "scenario": "Exploring a workplace policy debate",
+    "input": '''
+        #H->AI::Directive: (Execute Balanced
+            Perspective Analyzer)
+
+        User selects: General Analysis
+
+        "Should our company adopt a mandatory
+        return-to-office policy?"
+    ''',
+    "expected_behavior": '''
+        AI identifies relevant perspectives
+        (not pro/con/neutral but topic-specific):
+        - Full return advocates (culture, mentoring)
+        - Remote-first advocates (productivity,
+          talent access)
+        - Hybrid pragmatists (flexibility with
+          structure)
+        - Individual contributor perspective
+          (autonomy, deep work)
+
+        Confirms perspectives with user, then
+        presents each at equal depth with steelmanned
+        arguments. Synthesis explains underlying
+        values (collaboration vs autonomy, trust vs
+        accountability). Bias note flags any
+        perspectives that may be underrepresented.
+    '''
+}
+
+
+EXAMPLE_STAKEHOLDER = {
+    "scenario": "Strategic business decision",
+    "input": '''
+        #H->AI::Directive: (Execute Balanced
+            Perspective Analyzer)
+
+        User selects: Stakeholder Analysis
+
+        "We are considering raising prices by 15%
+        to improve margins."
+    ''',
+    "expected_behavior": '''
+        AI suggests relevant stakeholder groups:
+        - Current customers (price sensitivity)
+        - Sales team (competitive positioning)
+        - Finance/leadership (margin targets)
+        - Customer support (complaint volume)
+        - Competitors (market response)
+
+        Confirms groups with user. Presents each
+        group's interests, arguments, and impact
+        at equal depth. Synthesis maps shared
+        interests (company sustainability), notes
+        conflicts (margins vs retention), suggests
+        realistic compromises (tiered pricing,
+        phased increases). Flags any
+        underrepresented stakeholders.
+    '''
+}
+
+
+# ===========================================================
+# RELATIONSHIP TO OTHER RECIPES
+# ===========================================================
+
+
+RECIPE_RELATIONSHIPS = {
+    "complements": [
+        "RCP-000-000-012-FACT-VERIFICATION-FOUNDATIONS",
+        "RCP-000-000-050-LOGIC-CONSISTENCY-AUDITOR",
+        "RCP-000-000-052-CONSERVATIVE-ESTIMATION-FRAMEWORK"
+    ],
+    "relationship_type": "Complementary analytical tools",
+    "usage_pattern": '''
+        This recipe analyzes PERSPECTIVES (multiple
+        viewpoints on complex topics).
+
+        RCP-052 manages CONFIDENCE (conservative
+        framing for estimates and claims).
+
+        RCP-012 and RCP-050 verify ACCURACY
+        (fact-checking and logic consistency).
+
+        COMBINED WORKFLOW for complex decisions:
+        1. Use RCP-054 to understand all perspectives
+        2. Use RCP-052 to generate conservative
+           estimates for the quantitative aspects
+        3. Use RCP-012 or RCP-050 to verify key
+           factual claims within the analysis
+
+        Each recipe addresses a different dimension
+        of AI output quality: balance, confidence,
+        and accuracy.
+    '''
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-054
+# BALANCED-PERSPECTIVE-ANALYZER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES > Recipe Notes
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+Q: How is this different from just asking for pros
+and cons?
+
+A: Pros and cons lists present arguments without
+attribution or context. This recipe requires distinct
+perspectives with their reasoning, evidence, and
+underlying values explained. It also requires
+synthesis that analyzes WHY perspectives differ, not
+just THAT they disagree. And it identifies perspectives
+based on the actual topic rather than forcing
+everything into a binary pro/con structure.
+
+
+Q: What if there are more than five perspectives?
+
+A: The AI will identify the 3-5 most distinct and
+relevant perspectives during setup. You can ask it
+to add more if important viewpoints are missing.
+For topics with many stakeholder groups, use the
+Stakeholder Analysis mode which scales to as many
+groups as needed.
+
+
+Q: Should I use this for factual questions?
+
+A: No. This recipe is for topics where multiple
+valid perspectives exist based on different values,
+priorities, or interpretations. For factual questions,
+use RCP-012 (Fact Verification Foundations). Use this
+recipe for strategic, ethical, policy, or opinion-
+based topics where reasonable people disagree.
+
+
+Q: How do I know if the AI response is truly
+balanced?
+
+A: Check whether you could identify which
+perspective the AI favors. If one side has stronger
+language, more evidence, or more space, request
+rebalancing. The AI includes a self-assessment
+flagging suspected imbalances, but your judgment is
+the final check. For high-stakes decisions,
+supplement with direct input from actual
+representatives of each perspective.
+
+
+Q: What topics work best with this recipe?
+
+A: Topics where reasonable people hold different
+views based on different values, priorities, or
+interpretations. Examples include business strategy
+decisions, policy debates, ethical dilemmas,
+technology adoption questions, workplace culture
+decisions, and stakeholder negotiations.
+
+
+Q: What happened to the three-tier system and the
+Source Verification series?
+
+A: The recipe was revised to two modes (General and
+Stakeholder) based on quality review. The three-tier
+system added complexity without proportional value.
+The Source Verification series was dissolved; this
+recipe now stands alone as a critical thinking tool.
+"""
+
+
+# ===========================================================
+# VALIDATION CHECKLIST
+# ===========================================================
+
+VALIDATION_CHECKLIST = {
+    "general_section": [
+        "[x] Recipe Type is How-to Instructions",
+        "[x] Name follows RCP-XXX-XXX-XXX-NAME format",
+        "[x] Description is 2-4 sentences, plaintext"
+    ],
+    "categories_section": [
+        "[x] Multi-Recipe Combo Stages is set",
+        "[x] Recipe Is Part Of This Cookbook is selected",
+        "[x] All three ID numbers set (000-000-054)",
+        "[x] Recipe Status is Official",
+        "[x] CRAFT Flavors is set to CRAFT Cowork",
+        "[x] Recipe Categories set",
+        "[x] Recipe Subcategories set",
+        "[x] Recipe Tags assigned (comma-separated)",
+        "[x] Recipe Difficulty is Medium"
+    ],
+    "instructions_section": [
+        "[x] 6 steps defined",
+        "[x] Each step has action-oriented title",
+        "[x] Step content is plaintext (no Markdown)",
+        "[x] Steps are logically sequenced",
+        "[x] Limitation disclaimer included"
+    ],
+    "custom_fields_section": [
+        "[x] How A.I. Reads This Recipe is populated",
+        "[x] Recipe Short Description is 2-3 sentences",
+        "[x] When To Use This Recipe is populated",
+        "[x] Recipe Name (display) is set",
+        "[x] This Recipe Is Included In Cookbook is set",
+        "[x] Actual Recipe Code is complete"
+    ],
+    "code_format": [
+        "[x] Uses Python-like CRAFT syntax",
+        "[x] Plaintext only (no Markdown)",
+        "[x] Line dividers use exact format (59 = chars)",
+        "[x] Recipe has START and END markers",
+        "[x] Version number follows X.YYz format",
+        "[x] Lines under 61 characters (LL-008)",
+        "[x] Indentation uses 4 spaces (LL-005)"
+    ],
+    "behavioral_rules": [
+        "[x] Plain-language behavioral rules present",
+        "[x] Steelman rule for perspective balance",
+        "[x] Equal depth enforcement rule",
+        "[x] Flexible perspective identification rule",
+        "[x] Honest bias self-assessment rule",
+        "[x] Synthesis depth rule",
+        "[x] False equivalence avoidance rule",
+        "[x] No editorializing rule",
+        "[x] Interactive delivery with WAIT gates"
+    ],
+    "depersonalization": [
+        "[x] No personal names or identifiers",
+        "[x] Variables use {placeholder} format",
+        "[x] Instructions work for any user",
+        "[x] Examples use generic scenarios"
+    ]
+}
+
+
+# ===========================================================
+# END OF WPRM RECIPE FILE
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "schema": "craft-ai-to-ai-communication",
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-054-BALANCED-PERSPECTIVE-ANALYZER",
+  "recipe_version": "v2.00b-R",
+  "generated": "2026-04-26",
+  "generated_session": "P067-H078",
+  "generator": "CWK-ADM-080 SUB-TASK 5 SERIALIZE",
+  "source_files": [
+    "RCP-054-TLDR-RECAP.txt",
+    "RCP-054-EXTENDED-AI-GUIDANCE.txt"
+  ],
+  "sections": {
+    "identity_and_role": {
+      "recipe_name": "Balanced Perspective Analyzer",
+      "recipe_id": "RCP-000-000-054",
+      "version": "v2.00b-R",
+      "category": "CAT-000-STANDALONE",
+      "subcategory": "Critical Thinking",
+      "difficulty": "Medium",
+      "creator": "Auguste (Content Creator)",
+      "revised_by": "Cat (B) QA Audit",
+      "purpose": "Produces genuinely balanced multi-perspective analysis on complex topics where reasonable people disagree. Identifies relevant viewpoints based on the specific topic (not a rigid pro/con structure), presents each at its strongest (steelman), and synthesizes where they agree and why they differ."
+    },
+    "critical_mindset": {
+      "core_principle": "Balance means equal rigor, not equal validity. Present each perspective's REASONING at its strongest. Acknowledge training-data limitations that may affect balance. Let the user form their own conclusions.",
+      "balance_definition": {
+        "balance_does_mean": [
+          "Presenting each perspective's reasoning at its strongest (steelmanning)",
+          "Giving each perspective roughly equal depth and rigor of engagement",
+          "Explaining the values and priorities behind each position",
+          "Being transparent about limitations in representing each viewpoint",
+          "Letting the user decide what to do with the analysis"
+        ],
+        "balance_does_not_mean": [
+          "Treating all perspectives as equally valid",
+          "Giving equal word count to fringe views and mainstream consensus",
+          "Pretending there is no factual basis for distinguishing positions",
+          "Avoiding all evaluative language"
+        ]
+      },
+      "steelmanning_test": "After writing a perspective section, ask: Would someone who holds this view feel fairly represented? If no, rewrite it.",
+      "common_steelmanning_failures": [
+        "Damning with faint praise (hedging language that undercuts the position)",
+        "Sneaking in rebuttals within a perspective's own section",
+        "Using weaker arguments when stronger ones exist",
+        "Framing language that implies unreasonableness (insist, claim, despite concerns)"
+      ]
+    },
+    "capabilities": {
+      "analysis_modes": {
+        "general": "Exploring complex debates, researching multifaceted issues, gathering balanced views on topics where reasonable people disagree. AI identifies 3-5 most relevant perspectives based on the specific topic.",
+        "stakeholder": "Strategic decisions, negotiations, policy development where understanding each group's interests matters. AI suggests 3-6 relevant stakeholder groups and analyzes each group's perspective, interests, and concerns."
+      },
+      "perspective_identification": {
+        "method": "Flexible and topic-driven. Identify perspectives based on how people actually disagree on THIS topic. Do not default to rigid pro/con/neutral.",
+        "how_to_identify": [
+          "Ask: Who are the distinct groups that care about this topic?",
+          "Ask: What different VALUES drive their views?",
+          "Ask: Are there positions that agree on goals but disagree on methods?",
+          "Group by genuine distinctiveness, not artificial balance requirements"
+        ],
+        "target_count": "3-5 perspectives. Fewer than 3 usually collapses distinct views. More than 5 usually splits hairs. 4 is often the sweet spot."
+      },
+      "synthesis_depth": {
+        "specific_agreements": "Not 'both sides care about the issue' but specific proposals, goals, or principles that multiple perspectives share.",
+        "structural_disagreements": "Not 'they disagree' but WHY they disagree — underlying values, priorities, assumptions, or risk tolerances.",
+        "explanatory_structure": "Help the user understand the SHAPE of the debate — is it about values? Evidence? Risk tolerance? This helps them decide what additional information would resolve (or not resolve) the disagreement."
+      },
+      "bias_self_assessment": "Must be specific and actionable, not a generic disclaimer. Flag WHERE the analysis may be weakest so the user knows which perspective to verify with real-world sources."
+    },
+    "limitations": {
+      "training_data_bias": "AI training data overrepresents some viewpoints and underrepresents others. The recipe cannot achieve perfect balance. The goal is meaningfully MORE balanced analysis than a default AI response.",
+      "not_for_factual_questions": "This recipe is for topics where multiple valid perspectives exist based on different values, priorities, or interpretations. For factual questions, use RCP-012 or RCP-050.",
+      "stakeholder_compromise_realism": "Do not suggest naive compromises that ignore real tradeoffs. If two groups have genuinely conflicting interests, acknowledge the tension."
+    },
+    "mode_specific_guidance": {
+      "general_analysis": {
+        "per_perspective_structure": [
+          "Core position: What this perspective argues and why",
+          "Strongest arguments: 2-3 best reasons, steelmanned",
+          "Key evidence or reasoning: Honest attribution, no fabricated sources",
+          "Underlying values: Priorities or principles driving this view"
+        ],
+        "synthesis_structure": [
+          "Areas of Agreement: Specific shared goals, concerns, or proposals",
+          "Fundamental Disagreements: Where perspectives diverge and WHY",
+          "Explanatory Factors: What makes this topic produce disagreement"
+        ]
+      },
+      "stakeholder_analysis": {
+        "per_stakeholder_structure": [
+          "Primary interests: What this group cares about most",
+          "Main arguments and concerns: How this group views the topic",
+          "Impact assessment: How different outcomes affect this group",
+          "What they would need: Conditions addressing core concerns"
+        ],
+        "synthesis_structure": [
+          "Shared Interests: Areas where multiple groups align",
+          "Conflicting Priorities: Where interests directly conflict and why",
+          "Potential Compromises: Realistic only — must genuinely address multiple groups' concerns",
+          "Underrepresented Perspectives: Groups or viewpoints not included or weakly represented"
+        ]
+      }
+    },
+    "behavioral_rules": {
+      "count": 12,
+      "rules": [
+        "RULE 1 — STEELMAN EVERY PERSPECTIVE: Present each viewpoint as its strongest advocates would present it.",
+        "RULE 2 — EQUAL DEPTH AND RIGOR: Each perspective receives roughly equal treatment in length, argument quality, and evidence.",
+        "RULE 3 — FLEXIBLE PERSPECTIVE IDENTIFICATION: Identify perspectives based on how people actually disagree on THIS topic.",
+        "RULE 4 — HONEST BIAS SELF-ASSESSMENT: Flag suspected weaker perspectives due to training data limitations.",
+        "RULE 5 — SYNTHESIS MUST HAVE DEPTH: Explain WHY people disagree, not just THAT they disagree.",
+        "RULE 6 — HELP IDENTIFY STAKEHOLDERS: Suggest relevant groups; do not require user to pre-specify.",
+        "RULE 7 — AVOID FALSE EQUIVALENCE: Balance means equal rigor, not equal validity on factual claims.",
+        "RULE 8 — NOTE UNDERREPRESENTED VOICES: Flag perspectives that are likely relevant but may not be well-represented.",
+        "RULE 9 — KEEP SETUP CONVERSATIONAL: Mode selection and topic collection should feel like a conversation, not a form.",
+        "RULE 10 — COMPROMISES MUST BE REALISTIC: Do not suggest naive compromises ignoring real tradeoffs.",
+        "RULE 11 — DO NOT EDITORIALIZE: Present perspectives, do not advocate. Let the user form conclusions.",
+        "RULE 12 — FRAMEWORK STAYS ACTIVE: Continue applying balanced perspective principles on follow-up questions."
+      ]
+    },
+    "recipe_structure": {
+      "steps": 7,
+      "wait_gates": 4,
+      "flow": [
+        "STEP 1: Welcome and mode selection (WAIT)",
+        "STEP 2: Collect the topic (WAIT)",
+        "STEP 3: Perspective identification — general or stakeholder path (WAIT for confirmation)",
+        "STEP 4: Generate the analysis — mode-specific structure",
+        "STEP 5: Synthesis — mode-specific depth requirements",
+        "STEP 6: Bias self-assessment + revision offer (WAIT for feedback)",
+        "STEP 7: Optional deep dive + clean close"
+      ],
+      "branching_pattern": "Mode-parametric. analysis_mode parameter (general vs stakeholder) drives structural branching at Steps 3, 4, 5.",
+      "parameters": {
+        "analysis_mode": {
+          "type": "string",
+          "required": false,
+          "default": "general",
+          "options": ["general", "stakeholder"]
+        },
+        "topic": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "audience_scope": {
+      "primary_audience": "Users facing complex decisions or topics where reasonable people disagree",
+      "use_cases": [
+        "Strategic decisions with multiple stakeholder groups",
+        "Policy and ethics topics where values drive disagreement",
+        "Negotiation preparation requiring understanding of each party's interests",
+        "Research and content requiring fair representation of multiple viewpoints",
+        "Unfamiliar debates requiring structured overview of key positions"
+      ],
+      "explicit_exclusions": [
+        "Factual questions with clear answers (use RCP-012 or RCP-050)",
+        "Topics without genuinely multiple valid perspectives"
+      ],
+      "companion_recipes": {
+        "RCP-012": "Fact Verification Foundations (accuracy dimension)",
+        "RCP-050": "Logic Consistency Auditor (logic dimension)",
+        "RCP-052": "Conservative Estimation Framework (confidence dimension)"
+      },
+      "combined_workflow": "perspectives (054) → confidence (052) → accuracy (012/050)"
+    },
+    "common_failure_modes": [
+      "Hidden editorial: Analysis presents all perspectives but synthesis clearly favors one",
+      "False equivalence: Treating fringe positions with same weight as mainstream",
+      "Collapsing distinct views: Forcing diverse perspectives into binary pro/con",
+      "Performative balance: Equal length without equal argument quality",
+      "Shallow synthesis: Listing disagreements without explaining underlying structure"
+    ],
+    "lessons_learned": {
+      "populated": true,
+      "entries": [
+        {
+          "id": "LL-RCP054-001",
+          "lesson": "Mode-parametric branching (2-branch) is structurally simpler than matrix-parametric (RCP-052 3x3) but still requires distinct behavioral paths at multiple steps. The general/stakeholder split maps cleanly to perspective identification, analysis generation, and synthesis — three steps with mode-dependent behavior."
+        },
+        {
+          "id": "LL-RCP054-002",
+          "lesson": "Steelmanning guidance requires explicit failure-mode examples to be actionable. Abstract instruction to 'present fairly' is insufficient; the four named failures (faint praise, sneaked rebuttals, weak arguments, framing language) give the AI concrete patterns to detect and avoid."
+        },
+        {
+          "id": "LL-RCP054-003",
+          "lesson": "Bias self-assessment value is proportional to specificity. Generic disclaimers ('AI may not represent all perspectives equally') provide no actionable information. Specific flags ('the candidate experience perspective may be weaker because...') tell the user exactly where to supplement with real-world input."
+        }
+      ]
+    }
+  }
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

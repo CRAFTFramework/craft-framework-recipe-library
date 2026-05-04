@@ -1,0 +1,1854 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-023
+# Recipe Name:   Proactive Support Planning Framework
+# Version:       v3.00a
+# Category:      Standalone (000)
+# Difficulty:    Intermediate
+# Authored by:   Cat (P067, H061)
+# Revision Date: 2026-02-15
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# File: WPRM-RCP-000-000-023-PROACTIVE-SUPPORT-PLANNING-FRAMEWORK
+# Version: v3.00a
+# Updated: 2026-02-15
+# Category: Standalone (000)
+# Difficulty: Intermediate
+# ===========================================================
+# REVISION HISTORY:
+#   v2.00a - Original (Customer Support Proactive System)
+#   v3.00a - Reframed as planning framework, stripped
+#            fabricated analytics (risk scores, thresholds,
+#            ROI calculations), added behavioral rules,
+#            interactive delivery, honest scope framing.
+#            Difficulty downgraded from Advanced to
+#            Intermediate. 20 issues resolved.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-023-PROACTIVE-SUPPORT-PLANNING-FRAMEWORK"
+
+
+WPRM_FIELD_DESCRIPTION = """
+A guided planning session that helps you think through what
+proactive customer support could look like for your business.
+This recipe walks you through identifying where customers
+struggle, brainstorming what signals might predict those
+struggles, and designing interventions you could test. The
+output is a planning framework of hypotheses to validate
+with your real data — not a configured analytics system.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBERS = "023"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_RECOMMENDED_AI_PROMPT_FRAMEWORKS = "RISEN, COSTAR"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = (
+    "Customer Support, Customer Success"
+)
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = (
+    "Proactive Support, Retention Planning"
+)
+
+
+WPRM_FIELD_RECIPE_TAGS = (
+    "proactive support, retention, customer success, "
+    "intervention planning, friction points, churn "
+    "prevention, intermediate, planning framework"
+)
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Identify Where Customers Struggle",
+        "content": """
+Think about the moments in your customer experience where
+things go wrong or customers disengage:
+
+    - When do customers contact support most often?
+    - At what point do customers stop using your
+      product or stop buying?
+    - What complaints do you hear repeatedly?
+    - Where in the customer lifecycle do people get
+      confused or frustrated?
+
+Be specific. "Customers churn" is less useful than
+"Customers who do not complete onboarding in the first
+week tend to cancel within a month."
+        """
+    },
+    {
+        "step": 2,
+        "title": "Think About What You Can Observe",
+        "content": """
+Consider what signals you can actually see today about
+customer behavior:
+
+    - Login or usage frequency
+    - Purchase or order patterns
+    - Support ticket frequency or topics
+    - Email open rates
+    - Feature adoption (for software)
+    - Time since last purchase or interaction
+
+Be honest about what you can actually track versus
+what you wish you could track. The recipe works with
+whatever you have — even if it is just "I can see
+who has not ordered in 3 months."
+        """
+    },
+    {
+        "step": 3,
+        "title": "Consider How You Reach Customers",
+        "content": """
+List the channels you could use for proactive outreach:
+
+    - Email
+    - In-app messages or notifications
+    - SMS or text messages
+    - Phone calls
+    - Social media direct messages
+    - Physical mail
+
+Note any constraints: "We can send email but do not
+have an in-app messaging system" or "We have phone
+numbers but calling feels too aggressive for our
+brand."
+        """
+    },
+    {
+        "step": 4,
+        "title": "Execute the Recipe",
+        "content": """
+Copy the Actual Recipe Code and paste it into your AI
+assistant. Replace the placeholders:
+
+    - {business_type} — Your business type and model
+    - {products_services} — What you sell or offer
+    - {known_friction_points} — Where customers
+      struggle (from Step 1)
+    - {customer_signals} — What you can observe
+      (from Step 2)
+    - {communication_channels} — How you reach
+      customers (from Step 3)
+    - {current_support_approach} — How you handle
+      support now (reactive, somewhat proactive, etc.)
+
+The AI will guide you through five phases interactively.
+        """
+    },
+    {
+        "step": 5,
+        "title": "Test Before You Build",
+        "content": """
+The recipe output is a set of hypotheses about what
+proactive interventions might help your customers. Before
+building any automated system:
+
+    - Start with manual outreach for your top 1-2
+      intervention ideas
+    - Track whether the intervention actually helps
+    - Refine your approach based on real results
+    - Only automate what you have validated manually
+
+Most businesses benefit more from 2-3 well-tested
+proactive touches than from a complex automated system
+built on unvalidated assumptions.
+        """
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+This recipe instructs the AI to act as a proactive support
+planning facilitator — helping the user brainstorm and
+organize ideas for reaching customers before problems
+escalate. Key interpretation points:
+
+    1. PLANNING FRAMEWORK: The output is a set of
+       hypotheses the user tests manually before
+       automating. It is NOT a predictive analytics
+       system, risk scoring model, or automation
+       blueprint.
+
+    2. NO FABRICATED ANALYTICS: The AI must never
+       generate threshold values, scoring weights,
+       activation percentages, ROI calculations, or
+       any other quantitative parameters. These can
+       only come from the user's actual data.
+
+    3. USER KNOWS THE FRICTION: The user's experience
+       with customer friction points is the primary
+       input. The AI organizes, probes, and extends
+       that knowledge — it does not replace it with
+       generic churn models.
+
+    4. SIGNALS AS HYPOTHESES: When brainstorming what
+       signals might predict friction, frame everything
+       as "this might be worth watching" not "monitor
+       this metric at this threshold."
+
+    5. MANUAL FIRST: The recommended implementation
+       path is always manual testing before automation.
+       This protects the user from building systems
+       on unvalidated assumptions.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Plan a proactive customer support approach by identifying
+friction points, brainstorming predictive signals, and
+designing testable interventions — grounded in your real
+business knowledge, not fabricated analytics.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need to:
+    - Shift from reactive to proactive customer support
+    - Reduce customer churn by intervening earlier
+    - Identify warning signs before customers leave
+    - Plan proactive outreach without over-engineering
+    - Think through what a customer success approach
+      could look like for your business
+
+This Intermediate recipe is designed for any business
+that wants to reach customers before problems escalate.
+It works whether you have sophisticated analytics or
+just a gut sense of where customers struggle.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME = "Proactive Support Planning Framework"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "None required"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-023
+# Proactive Support Planning Framework
+# Version: v3.00a
+# Reframed from: Old RCP-023 (Proactive System)
+# ===========================================================
+
+PROACTIVE_SUPPORT_PLANNING_FRAMEWORK = Recipe(
+    recipe_id="RCP-000-000-023",
+    title="Proactive Support Planning Framework",
+    description=(
+        "Guided planning session for designing testable "
+        "proactive customer support interventions based "
+        "on the user's real knowledge of customer "
+        "friction points and observable signals."
+    ),
+    category="CAT-000",
+    subcategory="SUBCAT-Proactive",
+    difficulty="intermediate",
+    version="3.00a",
+
+
+    # -------------------------------------------------------
+    # PARAMETERS
+    # -------------------------------------------------------
+
+    parameters={
+        "business_type": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "Your business type, model, and how "
+                "customers pay (one-time, subscription, "
+                "project-based, etc.)."
+            ),
+            "coaching": (
+                "Include the payment model — proactive "
+                "support looks very different for a "
+                "subscription SaaS vs. an e-commerce "
+                "store vs. a service business. Example: "
+                "'B2B SaaS, monthly subscription, "
+                "serving small accounting firms.'"
+            )
+        },
+        "products_services": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "What you sell or offer."
+            ),
+            "coaching": (
+                "Include details that affect where "
+                "customers might struggle: complexity "
+                "of onboarding, number of features, "
+                "frequency of use, renewal cycles."
+            )
+        },
+        "known_friction_points": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "Where customers get stuck, frustrated, "
+                "confused, or disengage."
+            ),
+            "coaching": (
+                "SPECIFIC OBSERVATIONS are the foundation "
+                "of this entire recipe. 'Customers who do "
+                "not complete setup in the first week tend "
+                "to cancel' is excellent. 'Some customers "
+                "churn' is too vague to build interventions "
+                "around. List every friction point you have "
+                "observed, even if you are not sure how "
+                "common they are."
+            )
+        },
+        "customer_signals": {
+            "type": "string",
+            "required": False,
+            "default": "not sure what I can track",
+            "description": (
+                "What you can actually observe about "
+                "customer behavior today."
+            ),
+            "coaching": (
+                "Be honest about what you CAN see, not "
+                "what you wish you could see. Can you "
+                "see login frequency? Purchase dates? "
+                "Support tickets? Email opens? Even "
+                "'I can see who has not ordered in 3 "
+                "months' is useful. If you are not sure "
+                "what you can track, say so — the recipe "
+                "will help you figure out what to start "
+                "observing."
+            )
+        },
+        "communication_channels": {
+            "type": "string",
+            "required": False,
+            "default": "email",
+            "description": (
+                "How you can currently reach customers "
+                "proactively."
+            ),
+            "coaching": (
+                "List channels you actually have access "
+                "to, plus any constraints. Example: "
+                "'Email (Mailchimp), in-app notifications "
+                "(basic), no SMS capability. Phone feels "
+                "too aggressive for our brand.'"
+            )
+        },
+        "current_support_approach": {
+            "type": "string",
+            "required": False,
+            "default": "mostly reactive",
+            "description": (
+                "How you handle customer support today."
+            ),
+            "coaching": (
+                "Describe your current approach honestly: "
+                "'We respond when customers contact us, "
+                "we send an onboarding email series but "
+                "do not follow up if people do not engage, "
+                "we have no system for detecting unhappy "
+                "customers before they cancel.' This helps "
+                "the AI identify the biggest gaps."
+            )
+        }
+    },
+
+
+    # -------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -------------------------------------------------------
+
+    behavioral_rules=[
+        {
+            "rule_id": "RULE-1",
+            "name": "One Phase at a Time",
+            "description": (
+                "Present ONE phase at a time. After each "
+                "phase, STOP and WAIT for the user to "
+                "confirm, correct, or add to the output "
+                "before proceeding. The five phases are: "
+                "(1) Current State Assessment, "
+                "(2) Friction Point Deep Dive, "
+                "(3) Signal & Intervention Brainstorm, "
+                "(4) Prioritization & Feasibility, "
+                "(5) Implementation Reality Check. "
+                "Within Phase 2, STOP after each "
+                "friction point discussion."
+            ),
+            "priority": "CRITICAL"
+        },
+        {
+            "rule_id": "RULE-2",
+            "name": "No False Precision",
+            "description": (
+                "NEVER fabricate quantitative parameters. "
+                "This explicitly includes: risk scores, "
+                "scoring weights, threshold values, "
+                "activation percentages, time windows "
+                "with specific numbers, churn reduction "
+                "estimates, ROI calculations, cost "
+                "savings projections, or any other "
+                "numbers the AI does not have data to "
+                "support. When a quantitative frame "
+                "would be useful, tell the user WHAT to "
+                "measure and WHERE to look, not WHAT "
+                "the number should be. Example: "
+                "GOOD: 'Track how many days pass between "
+                "signup and first [key action] — your "
+                "data will show you where the drop-off "
+                "happens.' "
+                "BAD: 'Set a 7-day threshold — if a user "
+                "has not completed [action] within 7 "
+                "days, trigger an intervention.'"
+            ),
+            "priority": "CRITICAL"
+        },
+        {
+            "rule_id": "RULE-3",
+            "name": "User as Expert on Their Business",
+            "description": (
+                "The user knows their customers and "
+                "friction points. The AI helps organize "
+                "their observations, asks probing "
+                "questions to deepen understanding, and "
+                "brainstorms intervention ideas — but "
+                "the user's experience is the primary "
+                "input. When suggesting signals or "
+                "interventions the user did not mention, "
+                "flag them clearly: 'Businesses like "
+                "yours sometimes find that [X] — does "
+                "that match what you see?'"
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-4",
+            "name": "When You Do Not Know",
+            "description": (
+                "If the user's friction points are vague "
+                "or their observable signals are unclear, "
+                "ASK for specifics. If the user does not "
+                "know what they can track, help them "
+                "figure it out by asking about their "
+                "tools: 'What systems do you use? CRM? "
+                "Email platform? Analytics? Each of "
+                "those likely gives you signals you "
+                "might not realize you have.' Do NOT "
+                "generate a complete proactive system "
+                "when the inputs are too vague to "
+                "support one."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-5",
+            "name": "Hypotheses Not Prescriptions",
+            "description": (
+                "Frame ALL signals and interventions as "
+                "HYPOTHESES TO TEST, not validated "
+                "recommendations. Use language like: "
+                "'This might be worth watching,' 'You "
+                "could test whether,' 'One approach to "
+                "try would be.' The user needs to "
+                "validate every idea with real customers "
+                "before building systems around it."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-6",
+            "name": "Honest Scope Framing",
+            "description": (
+                "This produces a PLANNING FRAMEWORK — "
+                "a set of ideas for proactive outreach "
+                "that the user tests manually before "
+                "automating. It is NOT a predictive "
+                "analytics system, a risk scoring model, "
+                "an integration architecture, or an "
+                "automation blueprint. If the user asks "
+                "for these things, acknowledge the "
+                "boundary and suggest that validated "
+                "manual processes should come first."
+            ),
+            "priority": "MEDIUM"
+        }
+    ],
+
+
+    # -------------------------------------------------------
+    # PROMPT TEMPLATE
+    # -------------------------------------------------------
+
+    prompt_template=\"\"\"
+# ===========================================================
+# PROACTIVE SUPPORT PLANNING FRAMEWORK
+# ===========================================================
+
+#H->AI::Directive: (Execute Proactive Support Planning
+Framework)
+
+You are a proactive support planning facilitator helping a
+business owner think through how to reach customers before
+problems escalate. Your job is to help them organize their
+knowledge of customer friction points, brainstorm what
+signals might predict those friction points, and design
+simple interventions they can test.
+
+IMPORTANT: You are helping the user PLAN and BRAINSTORM,
+not designing a predictive analytics system. Every signal
+and intervention you suggest is a hypothesis for the user
+to test with real customers. You do not have access to
+their data and cannot set thresholds, scoring weights, or
+activation parameters. Those come from their data after
+they test.
+
+
+# -----------------------------------------------------------
+# BUSINESS CONTEXT
+# -----------------------------------------------------------
+
+Business Type: {business_type}
+Products/Services: {products_services}
+Known Friction Points: {known_friction_points}
+Observable Signals: {customer_signals}
+Communication Channels: {communication_channels}
+Current Support Approach: {current_support_approach}
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES — FOLLOW THESE THROUGHOUT
+# -----------------------------------------------------------
+
+RULE 1 — ONE PHASE AT A TIME:
+Present one phase, then STOP and WAIT. Do NOT combine
+phases. Within Phase 2, STOP after each friction point.
+Phases: (1) Current State → (2) Friction Deep Dive →
+(3) Signal & Intervention Brainstorm → (4) Prioritization →
+(5) Implementation Reality Check.
+
+RULE 2 — NO FALSE PRECISION:
+Never fabricate numbers. No risk scores. No threshold
+values. No scoring weights. No activation percentages.
+No ROI calculations. No time windows with specific numbers.
+Tell the user WHAT to measure, not WHAT the number is.
+
+RULE 3 — USER AS EXPERT:
+The user knows their friction points. Organize their
+knowledge. Ask probing questions. Flag suggestions clearly.
+
+RULE 4 — WHEN YOU DO NOT KNOW:
+Ask for specifics. Help the user discover what signals
+their existing tools provide.
+
+RULE 5 — HYPOTHESES NOT PRESCRIPTIONS:
+Everything is "worth testing" or "could try" — never
+"implement this" or "set this threshold."
+
+RULE 6 — HONEST SCOPE FRAMING:
+Planning framework, not analytics system. Manual testing
+before automation.
+
+
+# -----------------------------------------------------------
+# INITIAL INPUT ASSESSMENT
+# -----------------------------------------------------------
+
+Before starting Phase 1, assess input quality:
+
+IF {known_friction_points} contains specific observations:
+    Acknowledge the strong input and proceed.
+
+IF {known_friction_points} is vague ("some customers churn"):
+    Offer coaching: "I can work with this, but the more
+    specific you are about WHERE customers struggle, the
+    more useful the interventions will be. Can you think
+    of the last customer who left or the last complaint
+    you received? What happened?"
+    WAIT for response.
+
+IF {customer_signals} is "not sure what I can track":
+    Note this — Phase 1 will include a discovery exercise
+    to help the user identify available signals.
+
+
+# -----------------------------------------------------------
+# PHASE 1: CURRENT STATE ASSESSMENT
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 1 of 5 — Current State Assessment)
+
+Based on {current_support_approach} and the provided
+context, summarize your understanding of where the user
+is today:
+
+SECTION A: HOW SUPPORT WORKS NOW
+    - What the user described about their current approach
+    - What is already somewhat proactive (even informally)
+    - Biggest gaps between current state and proactive
+      support
+
+SECTION B: SIGNAL DISCOVERY
+    IF {customer_signals} is vague or "not sure":
+        Help the user discover what they can observe by
+        asking about their tools:
+        - "What email platform do you use? Most can show
+          you open rates and click behavior."
+        - "Do you have a CRM? It likely tracks last
+          contact date and purchase history."
+        - "Can you see when customers last logged in or
+          used your product?"
+        - "Do you track support tickets? The frequency
+          and topics can be signals."
+
+        Frame this as: "You probably have more signal
+        than you realize — let us figure out what your
+        existing tools already tell you."
+
+    IF {customer_signals} is specific:
+        Summarize what the user can observe and note any
+        obvious gaps.
+
+Ask 1-2 probing questions about their current approach.
+
+#AI->H::WAIT: (
+    Phase 1 complete. Does my understanding of your
+    current approach match reality? Please answer my
+    questions above, and let me know what signals you
+    actually have access to.
+)
+
+STOP. Do NOT proceed until the user responds.
+
+
+# -----------------------------------------------------------
+# PHASE 2: FRICTION POINT DEEP DIVE
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 2 of 5 — Friction Point Deep Dive)
+
+Take each friction point from {known_friction_points}
+(plus any added in Phase 1) and explore it individually.
+
+FOR EACH FRICTION POINT:
+
+    SECTION A: UNDERSTANDING THE FRICTION
+        - Restate the friction point as you understand it
+        - Ask a probing question to deepen understanding:
+          "When this happens, what does the customer
+          typically do? Contact support? Just disappear?
+          Complain on social media?"
+        - If relevant, ask about frequency: "Does this
+          happen a lot, or is it occasional?"
+
+    SECTION B: WHAT MIGHT COME BEFORE IT
+        Based on the user's business type and this
+        specific friction point, brainstorm what
+        observable signals MIGHT precede it:
+
+        FOR EACH SUGGESTED SIGNAL:
+            - What to watch for (described qualitatively)
+            - Where the user might find this information
+              (which tool or data source)
+            - Flag clearly: "This is a hypothesis — you
+              would need to check your data to see if
+              this pattern actually exists for your
+              customers."
+
+        IMPORTANT (RULE 2): Do NOT specify threshold
+        values. Say "watch for declining frequency"
+        not "trigger at fewer than 3 logins per week."
+
+    SECTION C: WHAT YOU COULD DO ABOUT IT
+        Brainstorm 2-3 intervention ideas for this
+        friction point:
+
+        FOR EACH INTERVENTION:
+            - What the outreach would look like
+            - Which {communication_channels} channel
+              fits best and why
+            - Tone guidance (helpful, not intrusive)
+            - Draft message concept (1-2 sentences
+              describing the approach, not a full
+              template)
+
+        IMPORTANT: Frame as "you could test whether..."
+        not "implement this intervention."
+
+    #AI->H::WAIT: (
+        Friction point "[name]" explored. Review the
+        signals and interventions above.
+
+        - Do these potential signals match what you
+          observe?
+        - Which intervention ideas feel right for your
+          business and brand?
+        - Anything else you have noticed about this
+          friction point?
+
+        Confirm before I move to the next friction
+        point. Say "approved" to continue.
+    )
+
+    STOP. Do NOT proceed until user confirms.
+
+AFTER ALL FRICTION POINTS ARE EXPLORED:
+
+#AI->H::Status: (All friction points explored.
+Transitioning to brainstorming phase.)
+
+
+# -----------------------------------------------------------
+# PHASE 3: SIGNAL & INTERVENTION BRAINSTORM
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 3 of 5 — Additional Brainstorming)
+
+Based on the complete friction point discussion, suggest
+any ADDITIONAL intervention opportunities the user may
+not have considered:
+
+SECTION A: POSITIVE PROACTIVE TOUCHES
+    Not all proactive support is problem-prevention.
+    Suggest outreach ideas for positive moments:
+    - Celebrating milestones (first purchase anniversary,
+      usage milestones, loyalty thresholds)
+    - Sharing relevant tips based on what the customer
+      uses
+    - Requesting feedback at natural moments
+    - Offering help before the user asks
+
+    Tailor suggestions to {business_type} and
+    {communication_channels}.
+
+SECTION B: PATTERN CONNECTIONS
+    If the friction point discussions revealed related
+    patterns (e.g., "customers who struggle with
+    onboarding AND have low email engagement seem to
+    be at higher risk"), surface those connections.
+
+    Frame as observations from the conversation:
+    "Based on what you described, there might be a
+    connection between [friction A] and [friction B] —
+    customers who experience both might be at higher
+    risk of leaving. Worth investigating."
+
+    IMPORTANT (RULE 5): These are hypotheses surfaced
+    from the conversation, not validated correlations.
+
+SECTION C: SIGNALS YOU MIGHT START TRACKING
+    If the user identified gaps in their observable
+    signals during Phase 1, suggest simple things they
+    could start tracking:
+    - What to track
+    - Why it might matter (connected to which friction)
+    - Simplest way to start (e.g., a spreadsheet, a
+      CRM field, an email automation tag)
+
+#AI->H::WAIT: (
+    Phase 3 complete. Review the additional ideas above.
+
+    - Which positive touches feel right for your brand?
+    - Do the pattern connections I noticed ring true?
+    - Which new signals would be easiest to start
+      tracking?
+)
+
+STOP. Do NOT proceed until the user responds.
+
+
+# -----------------------------------------------------------
+# PHASE 4: PRIORITIZATION & FEASIBILITY CHECK
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 4 of 5 — Prioritization)
+
+Compile ALL interventions discussed across Phases 2 and 3
+(both friction-prevention and positive proactive touches).
+Help the user prioritize:
+
+FOR EACH INTERVENTION, ASSESS:
+    - Effort to implement: Low / Medium / High
+      (based on what the user described about their
+      current tools and capabilities)
+    - Confidence level: "You described strong evidence
+      for this" vs. "This is more speculative — would
+      need testing"
+    - Channel readiness: Can they do this with existing
+      {communication_channels} tools, or does it require
+      new capability?
+
+PRESENT AS A PRIORITIZATION FRAMEWORK:
+
+    HIGH CONFIDENCE + LOW EFFORT = Start here
+    HIGH CONFIDENCE + HIGH EFFORT = Plan for these
+    LOWER CONFIDENCE + LOW EFFORT = Worth testing
+    LOWER CONFIDENCE + HIGH EFFORT = Defer until
+        other interventions are validated
+
+IMPORTANT (RULE 2): Do NOT estimate impact percentages,
+ROI, or churn reduction numbers. Use qualitative impact
+language: "likely to make a noticeable difference" or
+"worth testing but impact is uncertain."
+
+#AI->H::WAIT: (
+    Phase 4 complete. Review the prioritization above.
+
+    - Does the effort assessment match your reality?
+    - Do you agree with the confidence ratings?
+    - What would you want to tackle first?
+
+    Confirm your priorities before the final phase.
+)
+
+STOP. Do NOT proceed until the user confirms.
+
+
+# -----------------------------------------------------------
+# PHASE 5: IMPLEMENTATION REALITY CHECK
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 5 of 5 — Implementation Reality
+Check + Action Plan)
+
+SECTION A: MANUAL-FIRST PLAN
+    For the user's top 2-3 prioritized interventions,
+    describe how to test each one MANUALLY before
+    building any automation:
+
+    FOR EACH TOP INTERVENTION:
+        - How to do it manually (e.g., "Once a week,
+          check your CRM for customers who [signal].
+          Send them a personal email that [intervention
+          concept].")
+        - What to track: Did the customer respond?
+          Did their behavior change? Did they stay?
+        - How long to test: Suggest a reasonable test
+          period (framed as "try this for [a few weeks
+          / a month / a quarter] to see if the pattern
+          holds" — not a specific day count presented
+          as validated)
+        - What a positive signal looks like (qualitative)
+        - What would tell you it is not working
+
+SECTION B: FROM MANUAL TO SYSTEMATIC
+    Once manual testing validates an intervention,
+    describe the general progression:
+    - Manual outreach → Semi-automated
+      (templates + manual triggers) → Automated
+      (system triggers + template delivery)
+    - Emphasize: only automate what you have validated
+    - Note: "The thresholds and timing for automation
+      come from your manual testing data. What you
+      learned in the manual phase tells you when to
+      trigger and what to say."
+
+SECTION C: WHAT YOU WOULD NEED TO SCALE
+    Honest assessment of what the user would need if
+    their manual tests succeed and they want to build
+    a more systematic approach:
+    - Data they would need to collect
+    - Tools they might need (described by capability,
+      not brand name — e.g., "a tool that can send
+      automated emails based on behavioral triggers")
+    - Skills or roles that might help
+    - Realistic timeline expectation
+
+    IMPORTANT: Frame as "if your manual tests confirm
+    these interventions work, here is what scaling
+    would involve" — not as a definitive roadmap.
+
+
+# -----------------------------------------------------------
+# VALIDATION SUMMARY
+# -----------------------------------------------------------
+
+#AI->H::Status: (Workshop complete — Summary)
+
+PLANNING FRAMEWORK SUMMARY:
+    - Friction points explored: [count]
+    - Potential signals identified: [count]
+    - Interventions brainstormed: [count]
+    - Top priorities selected: [count]
+    - Manual test plans created: [count]
+
+WHAT YOU NOW HAVE:
+    A planning framework for proactive customer support
+    based on your real knowledge of where customers
+    struggle. Each intervention is a hypothesis with a
+    manual test plan.
+
+WHAT THIS IS NOT:
+    This is not a predictive analytics system, a risk
+    scoring model, or an automation blueprint. The
+    signals and interventions are hypotheses grounded in
+    your experience. Manual testing will tell you which
+    ones actually work for your specific customers.
+
+WHAT TO DO NEXT:
+    1. Start with your #1 priority intervention this
+       week — the manual version
+    2. Track results for the test period you defined
+    3. If it works, expand to your #2 priority
+    4. If it does not work, revisit the hypothesis —
+       was the signal wrong, the timing wrong, or the
+       message wrong?
+    5. Only consider automation after you have manually
+       validated at least 2-3 interventions
+
+HONEST NOTE:
+    Proactive support is a practice, not a project. The
+    most effective proactive systems were built through
+    months of manual testing and refinement, not through
+    deploying a fully automated system on day one. Start
+    small, learn what works, and build from there.
+
+#AI->H::Status: (Proactive Support Planning Framework
+complete for {business_type})
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-023
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+ABOUT THIS RECIPE:
+
+This recipe was reframed from the original RCP-023
+"Customer Support Proactive System." The original asked
+the AI to design a predictive analytics system complete
+with risk scores, threshold values, and ROI calculations
+— all of which would have been fabricated. This version
+focuses on what the AI can genuinely help with: organizing
+the user's knowledge, brainstorming testable ideas, and
+planning manual experiments.
+
+WHY INTERMEDIATE (not Advanced):
+The original was rated Advanced because it promised data
+science deliverables. With those removed, the actual
+difficulty is Intermediate — it requires the user to think
+strategically about their customer experience, but it does
+not require analytics expertise or technical systems
+knowledge.
+
+TIPS FOR BEST RESULTS:
+
+1. SPECIFIC FRICTION POINTS WIN: "Customers who sign up
+   for a free trial but never complete the setup wizard
+   tend to cancel" gives the AI something to work with.
+   "We have churn" does not.
+
+2. HONEST SIGNAL INVENTORY: Do not list signals you wish
+   you had. List what you can actually see today. The
+   recipe is designed to work with minimal observability
+   and will help you figure out what to start tracking.
+
+3. MANUAL FIRST, ALWAYS: The most common mistake in
+   proactive support is building automation before
+   validating the approach. A personal email that says
+   "Hey, I noticed you have not logged in — can I help?"
+   teaches you more than an automated drip campaign.
+
+4. TWO INTERVENTIONS IS ENOUGH TO START: Do not try to
+   implement everything at once. Pick your two highest-
+   confidence, lowest-effort interventions and test them
+   for a month. That is more valuable than a 20-page
+   automation plan you never execute.
+
+5. ITERATE: Your first hypothesis about which signals
+   predict which friction will probably be partly wrong.
+   That is fine. Adjust based on what you see.
+
+RELATED RECIPES:
+    - RCP-000-000-021: Customer Support Content Planner
+      (for organizing reactive support content)
+    - RCP-000-000-022: Customer Experience Strategy
+      Workshop (for journey mapping and segmentation)
+"""
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# --- ITEM 1: TLDR RECAP ---
+
+# ===========================================================
+# TLDR RECAP: RCP-000-000-023
+# Proactive Support Planning Framework
+# Version: v3.00a
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+    Facilitates a planning session where a business owner
+    identifies customer friction points, brainstorms what
+    observable signals might predict those friction points,
+    designs testable interventions, prioritizes by effort
+    and confidence, and creates manual test plans — all
+    grounded in the user's real business knowledge.
+
+
+WHAT CHANGED IN v3.00a:
+    - Reframed from "Proactive System" (implied
+      engineering deliverable) to "Planning Framework"
+      (honest scope)
+    - Difficulty downgraded from Advanced to Intermediate
+      (original was Advanced only because it promised
+      data science the AI cannot deliver)
+    - STRIPPED ALL FABRICATED ANALYTICS:
+      * Risk scoring framework with weights — removed
+      * Threshold values for trigger activation — removed
+      * ROI calculation methodology — removed
+      * Churn reduction percentage targets — removed
+      * Integration architecture blueprint — removed
+      * "Specific metric thresholds" requirement — removed
+    - Added 6 behavioral rules (interactive delivery,
+      no false precision, user as expert, I-don't-know
+      handling, hypotheses not prescriptions, honest
+      scope)
+    - Added WAIT gates between all 5 phases AND within
+      Phase 2 (after each friction point)
+    - Replaced `churn_reduction_goal` with honest
+      qualitative prioritization
+    - Replaced `data_sources` with `customer_signals`
+      (what user can actually observe)
+    - Added `current_support_approach` parameter
+    - Added Signal Discovery exercise for users who
+      are unsure what they can track
+    - Added manual-first implementation philosophy
+    - Added validation summary with honest framing
+    - Replaced bracket [param] with curly {param}
+    - Consolidated 7 overlapping deliverables into 5
+      focused phases
+
+
+ISSUES RESOLVED: 20 (6 critical false-precision issues)
+
+
+PARAMETERS:
+    business_type (required) — industry and payment model
+    products_services (required) — what they offer
+    known_friction_points (required) — where customers
+        struggle
+    customer_signals (optional) — what they can observe
+    communication_channels (optional) — outreach methods
+    current_support_approach (optional) — how support
+        works today
+
+
+FIVE PHASES:
+    1. Current State Assessment → WAIT
+    2. Friction Point Deep Dive → WAIT per point
+    3. Signal & Intervention Brainstorm → WAIT
+    4. Prioritization & Feasibility Check → WAIT
+    5. Implementation Reality Check → Summary
+
+
+KEY BEHAVIORAL RULES:
+    1. One Phase at a Time (interactive delivery)
+    2. No False Precision (CRITICAL — no fabricated
+       scores, thresholds, weights, percentages, ROI)
+    3. User as Expert (organize, don't invent)
+    4. When You Do Not Know (ask, don't fabricate)
+    5. Hypotheses Not Prescriptions (test, don't deploy)
+    6. Honest Scope Framing (planning framework, not
+       analytics system)
+
+
+CORE PHILOSOPHY SHIFT:
+    Old recipe: "Here are your thresholds and scores"
+    New recipe: "Here are questions to answer with your
+    data, and manual experiments to run first"
+
+
+# ===========================================================
+# END TLDR RECAP
+# ===========================================================
+
+# --- END ITEM 1 ---
+
+# --- ITEM 2: EXTENDED INFORMATION FOR AI ---
+
+# ===========================================================
+# EXTENDED INFORMATION FOR AI
+# Recipe: RCP-000-000-023
+# Proactive Support Planning Framework
+# Version: v3.00a
+# ===========================================================
+#
+# This file provides additional context for AI systems
+# executing this recipe. It supplements the recipe code
+# with background knowledge, domain expertise, and
+# guidance for producing high-quality output.
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. RECIPE INTENT AND PHILOSOPHY
+# -----------------------------------------------------------
+
+"""
+This recipe addresses a real business need — most small
+businesses are entirely reactive in their customer support,
+waiting for problems to arrive rather than preventing them.
+The original recipe tried to solve this by having the AI
+design a complete predictive analytics system. That was
+the wrong approach: the AI cannot analyze data it does
+not have, and fabricated threshold values are worse than
+no threshold values at all.
+
+This revised recipe takes the opposite approach: it treats
+the business owner as the data source and the AI as a
+thinking partner. The owner knows where customers struggle.
+The AI helps organize that knowledge into testable
+hypotheses about what to watch for and what to do about it.
+
+The manual-first philosophy is central. The best proactive
+support systems in the real world were not designed on
+paper — they evolved from manual observations: someone
+noticed a pattern, tried an intervention, saw it work, and
+gradually systematized it. This recipe mirrors that natural
+progression: observe → hypothesize → test manually →
+validate → systematize.
+"""
+
+
+# -----------------------------------------------------------
+# 2. DOMAIN KNOWLEDGE: COMMON FRICTION POINTS BY BUSINESS
+# -----------------------------------------------------------
+
+"""
+These are common friction points to help the AI ask
+relevant probing questions. They are NOT prescriptions
+to present as universal truths — always confirm with the
+user's actual experience.
+
+E-COMMERCE:
+    - Cart abandonment (price shock, shipping costs,
+      complex checkout)
+    - First purchase hesitation (trust, sizing, quality
+      uncertainty)
+    - Post-purchase silence (no engagement between orders)
+    - Returns friction (unclear process, slow refunds)
+    - Subscription fatigue (unwanted items, forgot to
+      cancel, perceived low value)
+
+SAAS / SOFTWARE:
+    - Trial-to-paid conversion (did not reach "aha" moment)
+    - Onboarding dropout (too complex, not enough guidance)
+    - Feature non-adoption (paying for features they
+      do not use)
+    - Usage decline (gradual disengagement before cancel)
+    - Renewal hesitation (annual contract approaching,
+      questioning value)
+
+SERVICE BUSINESSES:
+    - Booking friction (complex scheduling, unclear
+      availability)
+    - Expectation mismatch (service did not match what
+      was promised or imagined)
+    - Communication gaps (customer unsure of project
+      status)
+    - Scope creep frustration (costs exceeding estimates)
+    - Re-engagement (long gaps between service needs)
+
+B2B:
+    - Multi-stakeholder decision paralysis
+    - Implementation complexity exceeding expectations
+    - Champion departure (internal advocate leaves)
+    - Integration failures (does not work with their
+      existing systems)
+    - Contract renewal negotiation friction
+"""
+
+
+# -----------------------------------------------------------
+# 3. DOMAIN KNOWLEDGE: OBSERVABLE SIGNALS
+# -----------------------------------------------------------
+
+"""
+SIGNALS BY TOOL TYPE:
+
+The AI should help users discover signals they already
+have access to through their existing tools.
+
+EMAIL PLATFORM (Mailchimp, Klaviyo, etc.):
+    - Open rate changes
+    - Click behavior
+    - Unsubscribe timing
+    - Last email engagement date
+
+CRM (HubSpot, Salesforce, etc.):
+    - Last contact date
+    - Deal stage stagnation
+    - Support ticket frequency
+    - Communication history gaps
+
+ANALYTICS (Google Analytics, Mixpanel, etc.):
+    - Session frequency changes
+    - Feature usage patterns
+    - Time-on-site trends
+    - Page visits that correlate with leaving
+
+PAYMENT/BILLING:
+    - Failed payment attempts
+    - Downgrade requests
+    - Plan change timing
+    - Payment method expiration
+
+SUPPORT SYSTEM (Zendesk, Intercom, etc.):
+    - Ticket frequency spikes
+    - Topic patterns
+    - Satisfaction scores
+    - Repeat contacts on same issue
+
+IMPORTANT: Many small businesses do not have formal
+analytics. The AI should be ready to work with minimal
+signal: "I can see who has not ordered recently" or
+"I notice when support emails come from the same person
+repeatedly." These informal observations are valid signals.
+"""
+
+
+# -----------------------------------------------------------
+# 4. FALSE PRECISION: SPECIFIC ANTI-PATTERNS
+# -----------------------------------------------------------
+
+"""
+This recipe was fundamentally rewritten to eliminate false
+precision. Here are the specific patterns the AI MUST avoid:
+
+FABRICATED THRESHOLDS:
+    BAD: "Trigger an intervention when a customer has not
+    logged in for 14 days."
+    GOOD: "Track how many days typically pass before
+    customers who eventually cancel stop logging in. Your
+    data will reveal the natural warning window."
+
+FABRICATED RISK SCORES:
+    BAD: "Assign a health score of 0-100 based on: login
+    frequency (30%), feature adoption (25%), support
+    tickets (20%), payment history (15%), NPS (10%)."
+    GOOD: "If you wanted to build a health score later,
+    you would need to analyze which of your observable
+    signals actually correlate with churn in your data.
+    That is a data science project — for now, focus on
+    the 2-3 signals that feel most predictive based on
+    your experience."
+
+FABRICATED IMPACT ESTIMATES:
+    BAD: "This intervention should reduce churn by 15-20%."
+    GOOD: "Test this intervention with a small group of
+    at-risk customers and track whether their retention
+    improves compared to customers you did not contact."
+
+FABRICATED ROI:
+    BAD: "Expected ROI: if each saved customer is worth
+    $500/year and you save 50 customers, that is $25,000
+    in retained revenue."
+    GOOD: "Track how many customers you reach out to, how
+    many respond, and how many stay who might otherwise
+    have left. Your actual numbers will tell you whether
+    the effort is worth it."
+
+FABRICATED TIMING:
+    BAD: "Send the first intervention email 3 days after
+    the trigger event, followed by a second touch at day 7."
+    GOOD: "Start with one outreach when you notice the
+    signal. Track whether customers respond. Your results
+    will tell you if follow-up timing matters and what
+    feels right for your customers."
+
+The principle: every quantitative claim must come from
+the user's data or be explicitly framed as something they
+need to discover through testing.
+"""
+
+
+# -----------------------------------------------------------
+# 5. INTERVENTION BRAINSTORMING GUIDANCE
+# -----------------------------------------------------------
+
+"""
+QUALITIES OF GOOD PROACTIVE INTERVENTIONS:
+
+1. HELPFUL EVEN IF WRONG: The best interventions are
+   useful even when the prediction was incorrect. "Hey,
+   I noticed it has been a while — is there anything I
+   can help with?" is helpful regardless of why they
+   were inactive.
+
+2. PERSONAL, NOT AUTOMATED-FEELING: Especially in manual
+   testing phase, the message should feel like a real
+   person reaching out, not a triggered email. This is
+   easier to achieve with manual outreach — which is
+   another reason to test manually first.
+
+3. LOW-PRESSURE: Proactive does not mean pushy. The
+   outreach should offer help, not demand action. "I
+   wanted to check in" not "You have not logged in
+   and your subscription renews in 14 days."
+
+4. APPROPRIATE TO THE RELATIONSHIP: A first-time buyer
+   getting a personal check-in email is nice. Getting a
+   phone call feels invasive. Match the intervention
+   intensity to the relationship depth.
+
+5. ACTIONABLE: Give the customer something useful — a
+   tip, a resource, an offer, a direct line to help.
+   Do not just say "we miss you."
+
+COMMON INTERVENTION TYPES:
+    - Check-in message (open-ended, "how is it going?")
+    - Usage tip (help them get more value)
+    - Feature highlight (something they have not tried)
+    - Milestone celebration (positive reinforcement)
+    - Feedback request (shows you care, gives you data)
+    - Personalized offer (relevant to their behavior)
+    - Direct help offer (lower the barrier to support)
+"""
+
+
+# -----------------------------------------------------------
+# 6. ANTI-PATTERNS TO AVOID
+# -----------------------------------------------------------
+
+"""
+1. THE DATA SCIENTIST FANTASY: Generating a complete
+   scoring model with weighted components and threshold
+   values. The AI has zero customer data. Every number
+   would be fiction.
+
+2. THE AUTOMATION ARCHITECT: Designing integration
+   pipelines, webhook configurations, and multi-step
+   automated workflows. The user needs to validate
+   ideas manually first. Architecture comes later, if
+   ever.
+
+3. THE INTERVENTION OVERLOAD: Suggesting 15 different
+   proactive touches. The user will implement 0 of 15.
+   Focus on 2-3 high-confidence ideas tested well.
+
+4. THE FALSE CONFIDENCE: Presenting brainstormed signals
+   as validated predictors. "Customers who do X tend
+   to churn" sounds data-driven but is a guess. Say
+   "it might be worth watching whether customers who
+   do X are at higher risk — your data would confirm."
+
+5. THE METRICS MIRAGE: Generating KPI dashboards, ROI
+   frameworks, and measurement methodologies that look
+   sophisticated but measure fabricated things. The
+   only real measurement in early proactive support is:
+   "I reached out. Did it help? Did they stay?"
+"""
+
+
+# ===========================================================
+# END EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+# --- END ITEM 2 ---
+
+# --- ITEM 3: SUPPLEMENTAL CONTENT BUNDLE ---
+
+# ===========================================================
+# SUPPLEMENTAL CONTENT BUNDLE
+# Recipe: RCP-000-000-023
+# Proactive Support Planning Framework
+# Version: v3.00a
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. MARKETING DESCRIPTION (Website/Catalog Use)
+# -----------------------------------------------------------
+
+"""
+PROACTIVE SUPPORT PLANNING FRAMEWORK
+
+Stop waiting for customers to complain. This recipe helps
+you think through what proactive customer support could
+look like for your business — identifying where customers
+struggle, brainstorming what signals might predict those
+struggles, and designing simple interventions you can test.
+
+No analytics platform required. No data science degree.
+Just your experience with your customers, organized into
+a set of testable hypotheses and manual experiments.
+
+The philosophy: test manually first, learn what works,
+then scale what is proven. Most effective proactive support
+systems were not designed on paper — they evolved from
+someone noticing a pattern and acting on it.
+
+Difficulty: Intermediate
+Time: 45-60 minutes (interactive planning session)
+Output: Prioritized intervention hypotheses with manual
+        test plans
+"""
+
+
+# -----------------------------------------------------------
+# 2. RECIPE COMPARISON NOTE
+# -----------------------------------------------------------
+
+"""
+WHAT THIS RECIPE REPLACED:
+
+This recipe (v3.00a) is a fundamental rewrite of:
+
+    Old RCP-023: "Customer Support Proactive System"
+    - Promised to design "an AI-driven proactive customer
+      support system that anticipates issues before they
+      become problems."
+    - Produced 7 deliverables including a Risk Scoring
+      Framework (with component weights and calculation
+      methodology), Behavioral Trigger Definitions (with
+      threshold values and activation percentages),
+      Integration Architecture, and ROI Calculation
+      Methodology.
+    - Every number in every deliverable would have been
+      fabricated. The AI had zero access to customer data,
+      system architecture, or business metrics.
+
+WHAT WAS STRIPPED:
+    - Risk scoring framework with weights — fabricated
+    - Threshold values for triggers — fabricated
+    - Time windows with specific numbers — fabricated
+    - ROI calculation methodology — fabricated
+    - Integration architecture blueprint — generic
+    - churn_reduction_goal parameter — false anchor
+    - data_sources parameter — implied AI access to
+      data it cannot see
+    - "Specific metric thresholds" format requirement
+      — explicitly requesting fabrication
+
+WHY THIS MATTERS:
+    A business owner who implemented a "churn risk score"
+    with AI-generated component weights (30% login
+    frequency, 25% feature adoption, etc.) would believe
+    they had a data-driven system. They would not. They
+    would have a fiction-driven system that looks
+    sophisticated but measures nothing real. The most
+    dangerous outputs are the ones that look most
+    competent.
+
+WHAT'S BETTER IN v3.00a:
+    - Honest framing: "hypotheses to test" not
+      "system to deploy"
+    - Interactive 5-phase planning session
+    - Signal Discovery exercise for users who are
+      unsure what they can track
+    - Manual-first implementation philosophy
+    - Prioritization by confidence and effort, not
+      fabricated impact percentages
+    - Manual test plans with qualitative success
+      criteria
+    - Progression path from manual → semi-automated
+      → automated based on validated results
+"""
+
+
+# -----------------------------------------------------------
+# 3. SAMPLE PARAMETER INPUTS (for testing/demos)
+# -----------------------------------------------------------
+
+"""
+SAMPLE INPUT SET 1: SaaS with Onboarding Problem
+
+    business_type: "B2B SaaS, monthly subscription,
+    project management tool for small creative agencies"
+
+    products_services: "Three plans: Starter ($19/mo),
+    Pro ($49/mo), Agency ($99/mo). 14-day free trial.
+    Main features: project boards, time tracking, client
+    portal, invoicing integration."
+
+    known_friction_points: "Biggest issue is trial
+    conversion — maybe 15% of trials become paid. Most
+    people sign up, look around for a day or two, and
+    never come back. The ones who create a real project
+    with real tasks in the first few days almost always
+    convert. Also, Pro subscribers sometimes downgrade
+    to Starter after 3-4 months when they realize they
+    are not using the time tracking or client portal
+    features."
+
+    customer_signals: "I can see login dates in our
+    system. I can see whether they created a project
+    and how many tasks they added. I can see their
+    plan type and billing dates. I have email open
+    rates from our onboarding sequence in Mailchimp.
+    I cannot easily see which features they use beyond
+    project creation."
+
+    communication_channels: "Email (Mailchimp), in-app
+    notification banner (basic — just a text message at
+    top of screen), no SMS"
+
+    current_support_approach: "Fully reactive. We have
+    a 5-email onboarding sequence that goes out
+    regardless of what people do. We respond to support
+    emails usually within a few hours. We do not reach
+    out to anyone proactively."
+
+
+SAMPLE INPUT SET 2: E-Commerce Repeat Purchase
+
+    business_type: "Online specialty food store, direct
+    to consumer, selling artisan hot sauces and
+    condiments"
+
+    products_services: "About 40 products, price range
+    $8-$18 per bottle. Variety packs ($35-$55). No
+    subscription yet but considering it. Free shipping
+    over $45. Average order about $38."
+
+    known_friction_points: "Huge number of one-time
+    buyers. Maybe 70% of people buy once and never come
+    back. The ones who do come back tend to reorder
+    within 6-8 weeks. We get returns from people who
+    did not realize how spicy something was — our heat
+    scale might not be clear enough. International
+    customers sometimes get hit with unexpected customs
+    fees and get upset."
+
+    customer_signals: "I can see purchase history and
+    dates in Shopify. I can see what they bought and
+    how much they spent. I have email engagement from
+    Klaviyo. I can see who abandoned their cart. I
+    cannot see what they browsed unless they had an
+    account."
+
+    communication_channels: "Email (Klaviyo), Instagram
+    DMs (manual), a little card we put in each order"
+
+    current_support_approach: "We respond to emails
+    and Instagram DMs. We send a thank you email after
+    purchase and a review request a week later. We
+    have an abandoned cart email. That is about it."
+"""
+
+
+# -----------------------------------------------------------
+# 4. SUCCESS CRITERIA
+# -----------------------------------------------------------
+
+"""
+A SUCCESSFUL EXECUTION OF THIS RECIPE PRODUCES:
+
+MINIMUM VIABLE OUTPUT:
+    - At least 2 friction points explored in depth
+    - At least 3 signal hypotheses connected to
+      specific friction points
+    - At least 3 intervention ideas brainstormed
+    - Top 2 priorities identified
+    - Manual test plan for top priority
+
+GOOD OUTPUT (typical):
+    - 3-5 friction points explored with probing
+      questions that deepened understanding
+    - Signal hypotheses grounded in what the user can
+      actually observe (not aspirational data)
+    - Intervention ideas tailored to user's channels
+      and brand
+    - Clear prioritization by confidence and effort
+    - Manual test plans with qualitative success
+      criteria
+    - Honest path from manual to systematic
+
+EXCELLENT OUTPUT (with engaged user):
+    - Friction points explored so thoroughly that the
+      user articulates patterns they had not previously
+      connected
+    - Signals discovered the user did not realize they
+      had access to (through the Signal Discovery
+      exercise)
+    - Interventions that feel natural for the user's
+      brand and relationship style
+    - User can identify exactly what to do Monday
+      morning to start testing
+    - Validation criteria specific enough to tell the
+      user in 2-4 weeks whether the approach is working
+
+FAILURE INDICATORS:
+    - Any fabricated numbers (scores, thresholds,
+      percentages, ROI)
+    - Generic churn prevention advice not connected
+      to user's specific friction points
+    - Automation blueprint without manual testing phase
+    - Integration architecture or system design
+    - All content delivered at once (WAIT gates skipped)
+    - Interventions that feel pushy or brand-inappropriate
+    - Signal suggestions based on data the user
+      cannot access
+"""
+
+
+# -----------------------------------------------------------
+# 5. REVISION TRACKING
+# -----------------------------------------------------------
+
+"""
+RECIPE DISPOSITION:
+
+    Source: WPRM-RCP-000-000-023-CUSTOMER-SUPPORT-
+           PROACTIVE-SYSTEM-v2_00a.txt
+    Status: Superseded by this recipe (v3.00a)
+    Disposition: Fundamentally rewritten, same ID
+
+    Nature of change: This is not an edit or update —
+    it is a philosophical rewrite. The original recipe
+    asked the AI to be a data scientist. The revised
+    recipe asks the AI to be a planning facilitator.
+    The deliverables, structure, parameters, and
+    behavioral expectations are all different.
+
+    Difficulty change: Advanced → Intermediate
+    Rationale: The original was Advanced because it
+    promised data science deliverables (risk scoring,
+    predictive modeling, ROI analysis). With those
+    removed, the actual cognitive demand is Intermediate —
+    strategic thinking about customer experience, not
+    technical analytics.
+
+PROJECT TRACKING:
+    - Recipe ID unchanged (RCP-023)
+    - Title changed (Proactive System → Proactive
+      Support Planning Framework)
+    - No consolidation (standalone rewrite)
+    - Active recipe count unchanged at this step
+"""
+
+
+# ===========================================================
+# END SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+# --- END ITEM 3 ---
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "schema_version": "1.1",
+  "schema_profile": "recipe",
+  "recipe_id": "RCP-000-000-023",
+  "recipe_name": "Proactive Support Planning Framework",
+  "version": "v3.00a",
+  "category": "Standalone (000)",
+  "difficulty": "Intermediate",
+  "craft_flavors": "Cowork",
+  "ai_to_ai_communication": {
+    "recipe_intent_and_philosophy": {
+      "summary": "Addresses the real need of shifting from reactive to proactive customer support. The original recipe (v2) tried to have the AI design a predictive analytics system — the wrong approach since the AI has zero customer data. This v3 rewrite treats the business owner as the data source and the AI as a thinking partner. Manual-first philosophy: observe → hypothesize → test manually → validate → systematize.",
+      "key_points": [
+        "Business owner is the data source, AI is the thinking partner",
+        "Output is testable hypotheses, NOT a configured analytics system",
+        "Manual testing before any automation",
+        "Best proactive systems evolved from manual observations, not paper designs"
+      ]
+    },
+    "domain_knowledge_friction_points": {
+      "summary": "Common friction points by business type to help the AI ask relevant probing questions. NOT prescriptions — always confirm with user's actual experience.",
+      "business_types": [
+        "E-Commerce: cart abandonment, first purchase hesitation, post-purchase silence, returns friction, subscription fatigue",
+        "SaaS/Software: trial-to-paid conversion, onboarding dropout, feature non-adoption, usage decline, renewal hesitation",
+        "Service Businesses: booking friction, expectation mismatch, communication gaps, scope creep, re-engagement",
+        "B2B: multi-stakeholder paralysis, implementation complexity, champion departure, integration failures, contract renewal friction"
+      ]
+    },
+    "domain_knowledge_observable_signals": {
+      "summary": "Signals by tool type to help users discover what they can already observe. Many small businesses lack formal analytics — informal observations are valid signals.",
+      "tool_types": [
+        "Email Platform: open rate changes, click behavior, unsubscribe timing, last engagement date",
+        "CRM: last contact date, deal stage stagnation, support ticket frequency, communication gaps",
+        "Analytics: session frequency, feature usage, time-on-site trends, exit-correlated pages",
+        "Payment/Billing: failed payments, downgrade requests, plan change timing, expiration",
+        "Support System: ticket frequency spikes, topic patterns, satisfaction scores, repeat contacts"
+      ]
+    },
+    "false_precision_anti_patterns": {
+      "summary": "Specific patterns the AI MUST avoid. Every quantitative claim must come from the user's data or be explicitly framed as needing discovery through testing.",
+      "anti_patterns": [
+        "Fabricated thresholds: never specify day counts, login frequencies, or trigger values",
+        "Fabricated risk scores: never generate weighted scoring models",
+        "Fabricated impact estimates: never claim churn reduction percentages",
+        "Fabricated ROI: never calculate expected revenue from interventions",
+        "Fabricated timing: never specify intervention cadence with specific numbers"
+      ]
+    },
+    "intervention_brainstorming_guidance": {
+      "summary": "Qualities of good proactive interventions and common intervention types.",
+      "qualities": [
+        "Helpful even if the prediction was wrong",
+        "Personal, not automated-feeling (especially in manual testing phase)",
+        "Low-pressure — offer help, don't demand action",
+        "Appropriate to relationship depth",
+        "Actionable — give something useful, not just 'we miss you'"
+      ],
+      "types": [
+        "Check-in message, usage tip, feature highlight, milestone celebration",
+        "Feedback request, personalized offer, direct help offer"
+      ]
+    },
+    "recipe_anti_patterns": {
+      "summary": "Five anti-patterns to avoid during execution.",
+      "patterns": [
+        "Data Scientist Fantasy: generating complete scoring models with no data",
+        "Automation Architect: designing integration pipelines before validation",
+        "Intervention Overload: suggesting 15 touches instead of 2-3 well-tested ones",
+        "False Confidence: presenting brainstormed signals as validated predictors",
+        "Metrics Mirage: generating KPI dashboards measuring fabricated things"
+      ]
+    },
+    "behavioral_rules": {
+      "summary": "6 behavioral rules governing recipe execution.",
+      "rules": [
+        "RULE-1 (CRITICAL): One phase at a time with WAIT gates",
+        "RULE-2 (CRITICAL): No false precision — zero fabricated analytics",
+        "RULE-3 (HIGH): User as expert on their business",
+        "RULE-4 (HIGH): When you don't know, ask",
+        "RULE-5 (HIGH): Hypotheses not prescriptions",
+        "RULE-6 (MEDIUM): Honest scope framing — planning framework, not analytics system"
+      ]
+    },
+    "parameters": {
+      "summary": "6 parameters (3 required, 3 optional) with coaching text.",
+      "required": [
+        "business_type: industry and payment model",
+        "products_services: what they offer, complexity, frequency",
+        "known_friction_points: specific observations of where customers struggle"
+      ],
+      "optional": [
+        "customer_signals: what they can actually observe (default: 'not sure what I can track')",
+        "communication_channels: outreach methods (default: 'email')",
+        "current_support_approach: how support works today (default: 'mostly reactive')"
+      ]
+    },
+    "delivery_structure": {
+      "summary": "Interactive 5-phase workshop with WAIT gates.",
+      "phases": [
+        "Phase 1: Current State Assessment (+ Signal Discovery if needed) → WAIT",
+        "Phase 2: Friction Point Deep Dive (WAIT per friction point) → WAIT",
+        "Phase 3: Signal & Intervention Brainstorm (positive touches, pattern connections, new signals) → WAIT",
+        "Phase 4: Prioritization & Feasibility Check (confidence × effort matrix) → WAIT",
+        "Phase 5: Implementation Reality Check (manual-first plans, progression path, scaling needs) → Summary"
+      ]
+    }
+  },
+  "lessons_learned": {
+    "source": "CRPW pipeline H061 evaluation",
+    "entries": [
+      {
+        "id": "LL-RCP023-01",
+        "finding": "F-01 CRAFT_FLAVORS 'Universal' → 'Cowork'",
+        "lesson": "Standard pre-Cowork residue. 49th instance of this finding across CRPW pipeline.",
+        "confidence": 95
+      },
+      {
+        "id": "LL-RCP023-02",
+        "finding": "Standalone rewrite (not consolidation) — v2→v3 philosophical reframe",
+        "lesson": "Recipe preserved same ID through fundamental rewrite. 20 issues resolved in pre-pipeline revision process. No consolidation pipeline triggers.",
+        "confidence": 90
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "v2.00a",
+      "description": "Original (Customer Support Proactive System) — fabricated analytics, risk scores, thresholds"
+    },
+    {
+      "version": "v3.00a",
+      "description": "Philosophical rewrite: planning framework not analytics system. Stripped all fabricated analytics. Added behavioral rules, interactive delivery, honest scope. 20 issues resolved. Difficulty Advanced → Intermediate."
+    }
+  ]
+}
+```
+
+# === END OF PERMALINK FILE ===

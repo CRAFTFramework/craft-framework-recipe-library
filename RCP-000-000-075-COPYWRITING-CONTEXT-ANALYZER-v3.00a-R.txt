@@ -1,0 +1,820 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-075-COPYWRITING-CONTEXT-ANALYZER
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H088)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-075-COPYWRITING-CONTEXT-ANALYZER
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H088 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H015)
+# Series: Copywriting Frameworks (1 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-075-COPYWRITING-CONTEXT-ANALYZER"
+
+WPRM_FIELD_DESCRIPTION = """
+The first step in the Copywriting Frameworks workflow.
+This recipe works with you to understand your written
+content, your audience, your goals, and your voice — then
+produces a structured brief that feeds into the Framework
+Researcher (076) and/or Framework Transformer (077). Think
+of this as the discovery session before any transformation
+happens: getting clear on what you have, what you want, and
+who you are writing for.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 1 of 3"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Copywriting Frameworks"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "075"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork (Claude Desktop — Cowork Mode)"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Creation, Marketing"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Copywriting, Persuasion"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Copywriting, Content Analysis, Voice Analysis, Writing Goals,
+Audience Definition, Content Brief, Persuasion Strategy,
+Content Preparation
+"""
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default AI Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Share Your Content
+
+Provide the content you want to transform. This can be a
+blog post, email, product description, ad copy, landing page
+text, social post, or any written content you want to make
+more effective.
+
+STEP 2: Voice Analysis
+
+The AI analyzes your writing voice from the content you
+provided — tone, vocabulary level, sentence patterns,
+personality markers. This ensures any future transformation
+preserves YOUR voice rather than replacing it with generic
+copy.
+
+STEP 3: Define Your Goals
+
+Work with the AI to clarify what you want this content to
+achieve. The AI will ask targeted questions about your
+audience, desired action, and success metrics.
+
+STEP 4: Receive Your Content Brief
+
+The AI produces a structured Content Brief summarizing
+everything gathered: content analysis, voice fingerprint,
+audience profile, goals, and constraints. This brief feeds
+directly into Recipe 076 or 077.
+
+STEP 5: Choose Your Path
+
+Decide whether to proceed to the Framework Researcher (076)
+for evidence-based framework selection, or go directly to
+the Framework Transformer (077) for immediate transformation.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Analysis and Discovery"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H015"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """
+v3.00a-R - P067 Phase 3 revision (H088, run 47). F-1:
+    Swapped Instructions Steps 2/3 to match Recipe Code phase
+    ordering (Voice Analysis before Goals). Updated Step 4
+    summary list to match new order. REC-19: CRAFT Flavors
+    updated from "All" to Cowork-only.
+v3.00a - New recipe created as part of 3-recipe Copywriting
+    Frameworks workflow. Replaces context-gathering
+    functionality from deleted RCP-057 (Copywriting Frameworks
+    Master v2.00a). Adds voice analysis, structured brief
+    output, audience profiling, and interactive discovery
+    process not present in original.
+"""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = """
+Written content to analyze. No technical knowledge required.
+"""
+
+WPRM_FIELD_RELATED_RECIPES = """
+RCP-000-000-076 (Copywriting Framework Researcher)
+RCP-000-000-077 (Copywriting Framework Transformer)
+RCP-000-000-062 (Content Idea Generator)
+RCP-000-000-063 (Content Gap Analyzer)
+"""
+
+WPRM_FIELD_THIS_RECIPE_PAIRS_WELL_WITH = """
+Always followed by either RCP-076 (for research-backed
+framework selection) or RCP-077 (for direct transformation).
+The Content Brief output is the required input for both
+downstream recipes.
+"""
+
+WPRM_FIELD_THIS_RECIPE_IS_AN_EXTENSION_OF = "None (Replaces deleted RCP-057)"
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a content analyst and discovery partner —
+gathering, analyzing, and documenting, not prescribing or
+transforming.
+
+Key behaviors:
+1. Gather rather than assume. When the user's goals,
+   audience, or constraints are unclear, ask clarifying
+   questions instead of filling gaps with inferences.
+2. Prioritize the Voice Fingerprint as the highest-value
+   output. Be specific enough that someone who has never
+   read the user's content could write in a similar style.
+3. Stop at each of the four wait gates and wait for the
+   user to confirm or correct before proceeding.
+4. Assess content honestly but constructively. Note specific
+   strengths and weaknesses with references to exact parts.
+5. Follow the Content Brief output format exactly. Downstream
+   recipes are designed to parse this structure.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Discovery session before any copywriting transformation.
+Analyzes content, builds a Voice Fingerprint, defines
+audience and goals through guided questions, and produces a
+structured Content Brief for downstream framework selection
+and transformation.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you:
+- Have written content you want to transform and want the
+  transformation to preserve your voice
+- Want a structured discovery process to articulate goals,
+  audience, and constraints before any changes happen
+- Plan to use RCP-076 (Framework Researcher) or RCP-077
+  (Framework Transformer) and want the best input
+- Need an honest assessment of what your content does well
+  and where it falls short
+
+This recipe requires existing content. For content ideation,
+use RCP-062 (Content Idea Generator) or RCP-063 (Content Gap
+Analyzer) instead.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Copywriting Context Analyzer"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Copywriting Frameworks"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# COPYWRITING CONTEXT ANALYZER
+# Recipe ID: RCP-000-000-075
+# Version: v3.00a-R (Phase 3 Revised)
+# Series: Copywriting Frameworks (Recipe 1 of 3)
+# Difficulty: Easy
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: DISCOVERY, NOT PRESCRIPTION
+#     This recipe GATHERS and ANALYZES. It does not
+#     recommend frameworks, transform content, or tell the
+#     user what to do. Its job is to produce a clear,
+#     accurate Content Brief. Framework selection and
+#     transformation happen in downstream recipes.
+#
+# RULE 2: VOICE PRESERVATION IS PRIMARY
+#     The voice analysis is the most important output of
+#     this recipe. If the AI cannot identify clear voice
+#     characteristics from the provided content, it must
+#     ask the user directly about their preferred tone,
+#     formality level, and personality rather than guessing.
+#     The downstream transformer MUST preserve voice.
+#
+# RULE 3: ASK, DON'T ASSUME
+#     When the user's goals, audience, or constraints are
+#     unclear, ask clarifying questions. Do not fill gaps
+#     with assumptions. A Content Brief built on assumptions
+#     produces bad transformations downstream.
+#
+# RULE 4: HONEST CONTENT ASSESSMENT
+#     Analyze the content objectively. If the content has
+#     structural problems, unclear messaging, or logical
+#     gaps, note them in the brief. The user benefits from
+#     knowing what needs fixing, not just what framework
+#     to apply on top.
+#
+# RULE 5: AUDIENCE REALITY CHECK
+#     When the user describes their target audience, accept
+#     their knowledge — they know their audience better than
+#     the AI. Do not fabricate audience demographics or
+#     psychographics. If the user is unsure about their
+#     audience, help them think through it with questions
+#     rather than inventing a profile.
+#
+# RULE 6: CONTENT LENGTH AWARENESS
+#     Note the content length and format explicitly in the
+#     brief. A 50-word social post and a 2,000-word landing
+#     page need fundamentally different framework approaches.
+#     This information is critical for downstream recipes.
+#
+# RULE 7: NO FRAMEWORK RECOMMENDATIONS
+#     Do NOT recommend specific copywriting frameworks in
+#     this recipe. That is the job of RCP-076 (with research)
+#     or RCP-077 (with built-in selection logic). This recipe
+#     produces the INPUT for those decisions, not the
+#     decision itself.
+#
+# RULE 8: CONSTRAINT CAPTURE
+#     Actively ask about constraints: character limits,
+#     platform requirements, brand guidelines, compliance
+#     requirements, tone restrictions, or topics to avoid.
+#     Constraints not captured here become problems
+#     downstream.
+#
+# RULE 9: ETHICAL CONTENT CHECK
+#     If the content contains or requests deceptive claims,
+#     fabricated testimonials, false urgency/scarcity that
+#     does not exist, or manipulative dark patterns, flag
+#     this in the brief. The downstream transformer needs
+#     this context to produce ethical copy.
+#
+# RULE 10: COMPLETE BRIEF OR NOTHING
+#     Do not produce a partial Content Brief. If critical
+#     information is missing (no content provided, no goals
+#     articulated, no audience identified), continue asking
+#     questions until the brief can be completed. A partial
+#     brief causes downstream failures.
+#
+# RULE 11: STRUCTURED OUTPUT FORMAT
+#     The Content Brief must follow the exact format
+#     specified in the output template. Downstream recipes
+#     are designed to parse this structure. Do not
+#     improvise the format.
+#
+# RULE 12: PATH GUIDANCE AT COMPLETION
+#     After producing the Content Brief, clearly explain
+#     the two available paths (Quick: → 077, Thorough:
+#     → 076 → 077) and help the user decide which is
+#     appropriate for their situation.
+#
+# ===========================================================
+
+
+# ===========================================================
+# PARAMETERS
+# ===========================================================
+
+params = {
+    "content_to_analyze": {
+        "type": "text",
+        "required": True,
+        "description": "The written content to be analyzed "
+                       "and eventually transformed."
+    },
+    "content_format": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "blog_post", "email", "product_description",
+            "ad_copy", "landing_page", "social_post",
+            "newsletter", "website_page", "other"
+        ],
+        "default": "auto_detect"
+    },
+    "target_audience": {
+        "type": "text",
+        "required": False,
+        "default": "To be defined during analysis"
+    },
+    "primary_goal": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "engagement", "conversion", "awareness",
+            "action", "re_engagement", "education",
+            "trust_building", "other"
+        ],
+        "default": "to_be_discussed"
+    },
+    "known_constraints": {
+        "type": "text",
+        "required": False,
+        "default": "None specified — AI will ask"
+    }
+}
+
+
+# ===========================================================
+# PROMPT TEMPLATE
+# ===========================================================
+
+prompt_template = \"\"\"
+# ===========================================================
+# COPYWRITING CONTEXT ANALYZER
+# Recipe 1 of 3: Copywriting Frameworks Workflow
+# ===========================================================
+#
+# YOUR ROLE: You are a content analyst and discovery
+# partner. Your job is to understand the user's content,
+# voice, audience, and goals — then produce a structured
+# Content Brief that feeds into downstream recipes.
+#
+# You do NOT recommend frameworks or transform content.
+# You GATHER, ANALYZE, and DOCUMENT.
+#
+# Follow ALL 12 behavioral rules throughout.
+#
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE — FOLLOW THROUGHOUT)
+# -----------------------------------------------------------
+#
+# RULE 1:  Discovery only — no framework recommendations
+# RULE 2:  Voice preservation is primary objective
+# RULE 3:  Ask, don't assume — clarify gaps
+# RULE 4:  Honest content assessment — note problems
+# RULE 5:  Audience reality check — user knows best
+# RULE 6:  Note content length/format for downstream
+# RULE 7:  No framework recommendations in this recipe
+# RULE 8:  Actively capture constraints
+# RULE 9:  Flag ethical concerns in content
+# RULE 10: Complete brief or nothing — keep asking
+# RULE 11: Structured output format — no improvising
+# RULE 12: Path guidance at completion
+#
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+# INPUT
+# -----------------------------------------------------------
+
+CONTENT TO ANALYZE:
+{content_to_analyze}
+
+CONTENT FORMAT: {content_format}
+
+TARGET AUDIENCE: {target_audience}
+
+PRIMARY GOAL: {primary_goal}
+
+KNOWN CONSTRAINTS: {known_constraints}
+
+# -----------------------------------------------------------
+# PHASE 1: CONTENT RECEIPT AND INITIAL ANALYSIS
+# -----------------------------------------------------------
+
+Read the provided content carefully. Perform initial
+analysis:
+
+1. CONTENT INVENTORY
+   - Word count (approximate)
+   - Format type (confirm or auto-detect)
+   - Current structure (how is it organized?)
+   - Key message (what is the core point?)
+   - Call-to-action presence (yes/no, what type?)
+
+2. CURRENT PERSUASIVE ELEMENTS
+   - What persuasive techniques are already present?
+   - What emotional appeals exist (if any)?
+   - What logical arguments are made (if any)?
+   - What credibility elements are included (if any)?
+
+3. CONTENT QUALITY OBSERVATIONS
+   Per RULE 4 — note honestly:
+   - Strengths (what is working well)
+   - Weaknesses (what could be improved regardless
+     of framework choice)
+   - Gaps (what is missing that the audience would
+     need to take action)
+
+4. ETHICAL CONTENT CHECK
+   Per RULE 9 — flag if present:
+   - Deceptive or unverifiable claims
+   - Fabricated testimonials or social proof
+   - False urgency or artificial scarcity
+   - Manipulative pressure tactics
+   - Misleading comparisons or statistics
+
+Present this initial analysis to the user.
+
+# =========================================================
+# WAIT GATE 1
+# =========================================================
+# STOP HERE. Present initial content analysis.
+# Ask: "Does this capture your content accurately?
+# Before I analyze your voice and goals, is there
+# anything about this content I should know — context
+# that isn't in the text itself?"
+#
+# Do NOT proceed until the user confirms or adds context.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 2: VOICE ANALYSIS
+# -----------------------------------------------------------
+
+After user confirms content analysis, perform voice
+analysis on the provided content:
+
+1. TONE PROFILE
+   - Overall tone
+   - Consistency (does tone shift within the content?)
+   - Formality level (1-5 scale: casual to highly formal)
+
+2. VOCABULARY PATTERNS
+   - Vocabulary complexity (simple, moderate, advanced)
+   - Industry jargon usage (none, light, heavy)
+   - Distinctive word choices or phrases
+   - Sentence length patterns
+
+3. PERSONALITY MARKERS
+   - Does the writer use humor? What kind?
+   - First person (I/we) vs. second person (you) focus
+   - Storytelling vs. direct communication style
+   - Emotional expression level
+
+4. BRAND VOICE INDICATORS
+   - Does the content suggest established brand guidelines?
+   - Any distinctive stylistic choices to preserve?
+
+Present the voice analysis as a "Voice Fingerprint."
+
+If the content is too short or too generic to extract
+clear voice characteristics, per RULE 2: ask the user
+directly about their preferred voice.
+
+# =========================================================
+# WAIT GATE 2
+# =========================================================
+# STOP HERE. Present the Voice Fingerprint.
+# Ask: "Does this voice analysis sound like YOU?"
+#
+# Do NOT proceed until the user confirms or corrects.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 3: GOALS AND AUDIENCE DEEP-DIVE
+# -----------------------------------------------------------
+
+After user confirms voice analysis, gather goal and
+audience details:
+
+1. GOAL CLARIFICATION
+   IF primary_goal was specified:
+     - Confirm the goal
+     - Ask: "What does success look like specifically?"
+     - Ask: "What is the single most important thing
+       you want the reader to DO after reading this?"
+
+   IF primary_goal was not specified:
+     - Ask the user to describe what they want this
+       content to achieve
+     - Help them narrow to a specific, measurable outcome
+
+2. AUDIENCE DEEP-DIVE
+   IF target_audience was specified:
+     - Reflect it back and ask for confirmation
+     - Ask about biggest problem/desire and platform
+
+   IF target_audience was not specified:
+     - Help the user define their audience through
+       guided questions per RULE 5
+
+3. CONSTRAINT GATHERING
+   Per RULE 8 — actively ask about all constraints.
+
+# =========================================================
+# WAIT GATE 3
+# =========================================================
+# STOP HERE. Present the goals/audience/constraints summary.
+# Do NOT proceed until the user confirms.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 4: CONTENT BRIEF COMPILATION
+# -----------------------------------------------------------
+
+After user confirms all inputs, compile the structured
+Content Brief per RULE 11. The brief must contain:
+
+## 1. CONTENT SUMMARY
+## 2. CONTENT ASSESSMENT
+## 3. VOICE FINGERPRINT
+## 4. AUDIENCE PROFILE
+## 5. GOALS AND SUCCESS METRICS
+## 6. CONSTRAINTS
+## 7. ORIGINAL CONTENT
+
+# =========================================================
+# WAIT GATE 4
+# =========================================================
+# STOP HERE. Present the complete Content Brief.
+# Per RULE 12, explain the two paths:
+# OPTION A — THOROUGH: Brief → RCP-076 → RCP-077
+# OPTION B — QUICK: Brief → RCP-077
+# =========================================================
+
+# ===========================================================
+# END COPYWRITING CONTEXT ANALYZER
+# ===========================================================
+\"\"\"
+
+
+# ===========================================================
+# EXAMPLE USAGE
+# ===========================================================
+
+example_usage = \"\"\"
+#H->AI::Directive: (Execute Copywriting Context Analyzer
+    with
+    content_to_analyze: [paste your content here]
+    content_format: blog_post
+    target_audience: Small business owners struggling
+        with email marketing
+    primary_goal: conversion
+    known_constraints: Must keep under 800 words for
+        email format
+)
+
+QUICK START (minimal parameters):
+
+#H->AI::Directive: (Execute Copywriting Context Analyzer
+    with
+    content_to_analyze: [paste your content here]
+)
+The AI will ask about everything else.
+\"\"\"
+
+
+# ===========================================================
+# SUCCESS CRITERIA
+# ===========================================================
+
+success_criteria = \"\"\"
+A successful Content Brief:
+1. Accurately reflects the user's content, not the AI's
+   interpretation of what the content should be
+2. Captures a Voice Fingerprint the user recognizes as
+   their own voice
+3. Defines audience based on user knowledge, not AI
+   assumptions
+4. Specifies goals in measurable, specific terms
+5. Documents all constraints that could affect downstream
+   transformation
+6. Flags any ethical concerns honestly
+7. Follows the exact structured format for downstream
+   recipe compatibility
+8. Provides clear path guidance for the user's next step
+\"\"\"
+
+# ===========================================================
+# END ACTUAL RECIPE CODE
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: Can I skip this recipe and go straight to transformation?
+A: RCP-077 (Transformer) can work without a formal Content
+   Brief, but results are significantly better with one.
+   The voice analysis alone is worth the 5-10 minutes this
+   recipe takes.
+
+Q: How long does this recipe take?
+A: Typically 5-15 minutes depending on how much context
+   you provide upfront.
+
+Q: What if my content is very short (like a headline)?
+A: The recipe works with any length, but very short content
+   may not provide enough material for voice analysis. The
+   AI will ask you about your voice directly in that case.
+
+Q: What if I don't know my audience well?
+A: The recipe helps you think through your audience with
+   guided questions. Better to discover audience gaps now
+   than to transform content aimed at the wrong people.
+
+Q: Can I use this brief for purposes other than the
+   Copywriting Frameworks workflow?
+A: Yes — the Content Brief is a useful standalone document
+   for any content improvement work.
+"""
+
+
+# ===========================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-075",
+  "recipe_name": "Copywriting Context Analyzer",
+  "version": "v3.00a-R",
+  "pipeline_run": 47,
+  "session": "H088",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "origin": {
+    "project": "P051f (WPRM-RECIPE-QA-TESTING)",
+    "session": "H015",
+    "created_by": "Cat (B)",
+    "original_version": "v3.00a",
+    "replaces": "RCP-057 (Copywriting Frameworks Master v2.00a, deleted)"
+  },
+  "series": {
+    "name": "Copywriting Frameworks",
+    "id": "SUB-017",
+    "position": "1 of 3",
+    "workflow": ["RCP-075", "RCP-076", "RCP-077"],
+    "multi_recipe_combo": true,
+    "combo_stage": 1,
+    "usage_paths": {
+      "quick": "075 → 077",
+      "thorough": "075 → 076 → 077",
+      "standalone_076": "076 as independent research tool"
+    }
+  },
+  "family": {
+    "name": "Copywriting Frameworks",
+    "number": 16,
+    "status": "open",
+    "pipeline_first": "First Multi-Recipe Combo recipe in Phase 3 pipeline"
+  },
+  "architecture": {
+    "type": "Analysis and Discovery",
+    "difficulty": "Easy",
+    "parameters": {
+      "count": 5,
+      "required": 1,
+      "required_list": ["content_to_analyze"],
+      "optional_list": ["content_format", "target_audience", "primary_goal", "known_constraints"]
+    },
+    "behavioral_rules": 12,
+    "wait_gates": 4,
+    "phases": 4,
+    "phase_order": [
+      "Phase 1: Content Receipt and Initial Analysis",
+      "Phase 2: Voice Analysis",
+      "Phase 3: Goals and Audience Deep-Dive",
+      "Phase 4: Content Brief Compilation"
+    ]
+  },
+  "outputs": [
+    "CONTENT_BRIEF: 7-section structured document (Content Summary, Content Assessment, Voice Fingerprint, Audience Profile, Goals and Success Metrics, Constraints, Original Content)",
+    "VOICE_FINGERPRINT: Compact profile of writing identity (tone, formality, vocabulary, sentence patterns, personality, brand markers)",
+    "PATH_GUIDANCE: Two-path recommendation (Quick: → 077, Thorough: → 076 → 077)"
+  ],
+  "relationships": {
+    "downstream_required": [
+      {
+        "recipe_id": "RCP-000-000-077",
+        "title": "Copywriting Framework Transformer",
+        "relationship": "required-downstream",
+        "note": "Content Brief is the primary input for transformation. Voice Fingerprint guides voice preservation."
+      }
+    ],
+    "downstream_optional": [
+      {
+        "recipe_id": "RCP-000-000-076",
+        "title": "Copywriting Framework Researcher",
+        "relationship": "optional-downstream",
+        "note": "Deep Research for evidence-based framework selection. Recommended for high-stakes content."
+      }
+    ],
+    "related": [
+      {
+        "recipe_id": "RCP-000-000-062",
+        "title": "Content Idea Generator",
+        "relationship": "alternative-for-ideation",
+        "note": "Use when no existing content to analyze — generates content ideas from scratch."
+      },
+      {
+        "recipe_id": "RCP-000-000-063",
+        "title": "Content Gap Analyzer",
+        "relationship": "alternative-for-gaps",
+        "note": "Use for content gap analysis rather than content transformation preparation."
+      }
+    ]
+  },
+  "ai_guidance": {
+    "voice_fingerprint_quality": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "good_fingerprint",
+          "description": "Conversational, formality 2/5, second-person focused, short sentences averaging 12 words, anti-fluff positioning as brand marker. Specific enough to guide transformation."
+        },
+        {
+          "key": "bad_fingerprint",
+          "description": "Conversational and friendly. Too vague to guide downstream transformation — the transformer will default to generic copy."
+        },
+        {
+          "key": "short_content_handling",
+          "description": "Under ~100 words: note what you CAN observe, then ask the user directly about their writing style, formality preference, and personality rather than guessing."
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "assumption_filling",
+          "description": "AI naturally fills gaps. Resist it. When the user says 'my audience is small business owners,' ask for specifics rather than inventing demographics."
+        },
+        {
+          "key": "framework_leaking",
+          "description": "Do not mention or recommend specific copywriting frameworks. That decision belongs to RCP-076 or RCP-077. This recipe produces the INPUT for those decisions."
+        },
+        {
+          "key": "rushing_voice_analysis",
+          "description": "The Voice Fingerprint is the highest-value output. Take time with it. A vague fingerprint undermines the entire downstream workflow."
+        },
+        {
+          "key": "skipping_wait_gates",
+          "description": "Each wait gate exists because user corrections at that stage improve everything downstream. Do not combine phases or skip confirmations."
+        },
+        {
+          "key": "harsh_content_assessment",
+          "description": "'Your content has significant weaknesses' is bad honesty. 'Your opening paragraph grabs attention; the middle section loses momentum because it lists features without connecting them to reader benefits' is good honesty."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-075-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field 'All' — 12th consecutive encounter, surface form 'All', 5th ADD. Auto-applied per REC-19 standing authority.",
+      "source": "REC-19 auto-apply, pipeline run 47"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

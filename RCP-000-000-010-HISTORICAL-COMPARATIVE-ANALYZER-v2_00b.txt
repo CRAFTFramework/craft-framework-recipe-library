@@ -1,0 +1,1227 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+recipe_name:    Historical Comparative Analyzer
+version:        v2.00b
+authored_by:    Cat (P067)
+revision_date:  2026-04-24
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+# Version: 2.00b
+# Date: 2025-12-29
+# Revised: 2026-02-14
+# Status: REVISED (QA Audit P051f-H005)
+# Cookbook: Standalone (No Cookbook)
+# ===========================================================
+
+
+# ===========================================================
+# LICENSE
+# ===========================================================
+# Licensed under the Business Source License 1.1 (BSL)
+# Copyright 2025 Ketelsen Digital Solutions LLC
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Type
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+# ===========================================================
+# WPRM FIELD: Name
+# ===========================================================
+
+WPRM_FIELD_NAME = "RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER"
+
+
+# ===========================================================
+# WPRM FIELD: Description
+# ===========================================================
+
+WPRM_FIELD_DESCRIPTION = """
+Analyze historical developments across multiple markets or
+regions simultaneously, drawing parallels and contrasts
+between different contexts. This recipe generates detailed
+historical comparisons while maintaining strict time
+boundaries to minimize AI hallucination. Ideal for market
+expansion planning, cross-border strategy, and understanding
+how similar trends played out differently in various contexts.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Multi-Recipe Combo Stages
+# ===========================================================
+
+WPRM_FIELD_COMBO_STAGE = "Single Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Is Part Of This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Category ID Numbers
+# ===========================================================
+
+WPRM_FIELD_CATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategory ID Numbers
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe ID Numbers
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "010"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Status
+# ===========================================================
+
+WPRM_FIELD_STATUS = "Official"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT Flavors
+# ===========================================================
+
+WPRM_FIELD_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Categories
+# ===========================================================
+
+WPRM_FIELD_CATEGORIES = "Research, Analysis, Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategories
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORIES = "Comparative Analysis, Market Research"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Tags
+# ===========================================================
+
+WPRM_FIELD_TAGS = "comparative analysis, cross-market, multi-region, historical research, market expansion, parallel development"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Difficulty
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# WPRM FIELD: How A.I. Reads This Recipe
+# ===========================================================
+
+WPRM_FIELD_AI_READS = """
+This recipe instructs the AI to conduct parallel historical
+analysis across two or more markets, regions, or contexts.
+The AI will examine how similar topics developed differently
+in different environments, identifying patterns, divergences,
+and lessons that apply across contexts. All analysis remains
+constrained to verified historical events within the specified
+time boundary, with explicit comparison of success and failure
+cases from each context analyzed.
+
+I-DON'T-KNOW PROTOCOL: When knowledge is limited for a
+context or dimension, the AI flags the gap, explains what
+is known versus what is not, marks claims with confidence
+levels (VERIFIED, LIKELY, UNCERTAIN), and suggests the user
+verify with primary sources. Asymmetric depth between
+contexts is disclosed, not disguised.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Short Description
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESC = """
+Compare historical developments across multiple markets or
+regions to identify patterns and lessons from different
+contexts.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: When To Use This Recipe
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you need:
+- Market expansion planning across regions
+- Cross-border business development research
+- Understanding how trends differed by geography
+- Product adaptation strategy based on history
+- Risk assessment from multiple market lessons
+- Investment decisions comparing market histories
+- Regulatory comparison across jurisdictions
+- Competitive analysis in different contexts
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Name (Display)
+# ===========================================================
+
+WPRM_FIELD_DISPLAY_NAME = "Historical Comparative Analyzer"
+
+
+# ===========================================================
+# WPRM FIELD: This Recipe Is Included In This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK_INCLUDE = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Instructions
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 0: Understand The Purpose
+
+    This recipe enables multi-dimensional historical analysis
+    that compares how similar topics, trends, or developments
+    played out across different markets or regions.
+
+    Key benefits:
+    - Identify patterns that transcend geography
+    - Understand context-specific factors
+    - Learn from success and failure in different settings
+    - Inform cross-market strategy decisions
+
+STEP 1: Define Your Primary And Secondary Contexts
+
+    Select your comparison framework:
+
+    GEOGRAPHIC COMPARISON:
+    - Primary: [Home market or region]
+    - Secondary: [Target market or region]
+
+    INDUSTRY COMPARISON:
+    - Primary: [Your industry]
+    - Secondary: [Adjacent or analogous industry]
+
+    TEMPORAL COMPARISON:
+    - Primary: [Recent era]
+    - Secondary: [Earlier analogous period]
+
+    Example: Comparing e-commerce evolution in the US
+    (primary) versus European Union (secondary) from
+    2000 to 2015.
+
+STEP 2: Set Your Time Boundary
+
+    Define the analysis period:
+    - Start date: When the topic first emerged
+    - End date: Your cutoff for historical analysis
+
+    Both contexts should be analyzed for the same
+    time period to enable meaningful comparison.
+
+STEP 3: Identify Comparison Dimensions
+
+    Select which aspects to compare:
+
+    - Market development and adoption rates
+    - Regulatory environment and changes
+    - Key players and competitive dynamics
+    - Technology or methodology evolution
+    - Economic conditions and influences
+    - Success and failure cases
+    - Consumer or user behavior patterns
+
+STEP 4: Execute The Comparative Analysis Prompt
+
+    Use this template:
+
+    "Provide a comprehensive historical analysis of [topic]
+    from [start date] to [end date], with the following
+    structure:
+
+    1. Chronological development in [primary context]
+    2. Parallel developments in [secondary context]
+       during the same period
+    3. Key technological or methodological transitions
+    4. Economic and market conditions during critical
+       turning points
+    5. Regulatory environment evolution in both contexts
+    6. Compare and contrast major success and failure
+       cases from both contexts
+
+    Focus exclusively on verified historical events and
+    documented outcomes. For each major development,
+    include specific dates, key figures or organizations
+    involved, and quantifiable impacts where available."
+
+STEP 5: Analyze The Comparison Results
+
+    Review the AI response for:
+
+    PATTERNS ACROSS CONTEXTS:
+    - What similarities emerged in both?
+    - What timing differences occurred?
+    - Which factors drove similar outcomes?
+
+    CONTEXT-SPECIFIC DIFFERENCES:
+    - What worked in one context but not the other?
+    - What unique factors existed in each?
+    - How did local conditions shape outcomes?
+
+    TRANSFERABLE LESSONS:
+    - What insights apply to your situation?
+    - What mistakes should be avoided?
+    - What success factors can be replicated?
+
+STEP 6: Document Comparative Insights
+
+    Create a structured summary:
+
+    1. Key parallels between contexts
+    2. Important divergences and their causes
+    3. Success patterns that transcend context
+    4. Failure patterns to avoid
+    5. Context-specific factors to consider
+    6. Recommended actions based on analysis
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Actual Recipe Code
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+# ===========================================================
+
+HISTORICAL_COMPARATIVE_ANALYZER = Recipe(
+    recipe_id="RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER",
+    title="Historical Comparative Analyzer",
+    description="Multi-context historical analysis comparing
+        developments across markets, regions, or time periods",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="advanced",
+    version="2.00b",
+
+    parameters={
+        "topic": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Subject to analyze"
+        },
+        "primary_context": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Primary market or region"
+        },
+        "secondary_context": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Comparison market or region"
+        },
+        "start_date": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Analysis start date"
+        },
+        "end_date": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Analysis end date"
+        },
+        "comparison_focus": {
+            "type": "list",
+            "required": False,
+            "default": ["market", "regulatory", "technology"],
+            "description": "Aspects to emphasize"
+        }
+    },
+
+    prompt_template=\"\"\"
+    # ===========================================================
+    # HISTORICAL COMPARATIVE ANALYSIS
+    # ===========================================================
+
+    # -----------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -----------------------------------------------------------
+
+    R1: NEVER include any event, date, statistic, or claim
+        that falls outside the user-specified time boundary.
+        If the user sets an end date of 2015, nothing from
+        2016 or later may appear anywhere in the analysis.
+
+    R2: ALWAYS confirm the analysis parameters with the user
+        before generating the full comparative analysis. Show
+        the topic, both contexts, the time boundary, and the
+        comparison focus areas. Ask if this scope looks right.
+        Do not proceed until the user confirms.
+
+    R3: NEVER present analytical interpretation as historical
+        fact. Every claim falls into one of two tiers:
+        DOCUMENTED (specific event, date, named entity,
+        published figure) or ANALYTICAL (pattern, inference,
+        comparison). Label which tier each major claim belongs
+        to. When in doubt, label it ANALYTICAL.
+
+    R4: ALWAYS maintain balanced depth between contexts. If
+        you can provide 8 detailed milestones for the primary
+        context but only 3 for the secondary, flag this
+        asymmetry explicitly. State: "My training data
+        provides more detail on [context A] than [context B]
+        for this topic. The following analysis reflects this
+        gap." Then proceed, but do not pad the weaker context
+        with vague filler to create an illusion of balance.
+
+    R5: NEVER invent specific dates, statistics, founding
+        years, or dollar figures. If you know an event
+        happened but are uncertain of the exact date, say
+        "approximately" or "in the early 2000s" rather than
+        fabricating a specific year. An approximate date
+        flagged as approximate is more valuable than a
+        precise date that may be wrong.
+
+    R6: ALWAYS tag each major claim with a confidence
+        indicator. Use these three levels:
+        VERIFIED — well-documented, widely cited event
+        LIKELY — strong basis but specific details uncertain
+        UNCERTAIN — pattern or claim based on limited data
+        The user needs to know which parts of your analysis
+        they can cite directly and which require their own
+        verification.
+
+    R7: NEVER let one context's analysis drive the structure
+        of the other. Analyze each context on its own terms
+        first, then compare. If e-commerce in the US was
+        driven by venture capital but in the EU by regulatory
+        frameworks, the analysis should reflect each context's
+        actual drivers rather than forcing both into the same
+        narrative template.
+
+    R8: ALWAYS generate follow-up options that are specific
+        to the analysis you just produced. Reference actual
+        divergences you found, specific cases you mentioned,
+        and areas where your confidence was lowest. Do not
+        use generic follow-up suggestions.
+
+    R9: IF the user's comparison framework is weak (contexts
+        are not meaningfully comparable, time period is too
+        broad to be useful, or topic is too vague for
+        historical analysis), say so. Suggest a refined
+        scope. Do not silently produce a low-quality analysis
+        from a poorly defined request.
+
+    # -----------------------------------------------------------
+    # I-DONT-KNOW HANDLING
+    # -----------------------------------------------------------
+
+    This is a hallucination-critical recipe. The AI must
+    actively flag its own knowledge limits rather than
+    filling gaps with plausible-sounding fabrications.
+
+    KNOWLEDGE GAP PROTOCOL:
+
+    IF you lack sufficient data for a context or dimension:
+        STATE which context or dimension is affected
+        EXPLAIN what you do know vs. what you do not
+        SUGGEST the user verify with primary sources
+        DO NOT pad thin sections with generic analysis
+
+    IF your knowledge of the two contexts is asymmetric:
+        FLAG the asymmetry at the start of the analysis
+        PROVIDE what you can for the weaker context
+        MARK claims in the weaker context with confidence
+        DO NOT fabricate balance where none exists
+
+    IF a specific date, figure, or name is uncertain:
+        USE hedging language ("approximately," "circa,"
+            "believed to be," "sources vary")
+        MARK the claim as LIKELY or UNCERTAIN
+        DO NOT present uncertain data as VERIFIED
+
+    IF the topic falls partially outside your training:
+        STATE the boundary of your knowledge clearly
+        ANALYZE what falls within your knowledge
+        IDENTIFY what the user should research independently
+        DO NOT speculate beyond your training data
+
+    # -----------------------------------------------------------
+    # PARAMETER CONFIRMATION
+    # -----------------------------------------------------------
+
+    Before generating the analysis, confirm these parameters
+    with the user:
+
+    ANALYSIS PARAMETERS:
+        Topic: {topic}
+        Primary Context: {primary_context}
+        Secondary Context: {secondary_context}
+        Time Period: {start_date} to {end_date}
+        Comparison Focus: {focus_display}
+
+    Ask: "Does this scope look right? Any adjustments to
+    the contexts, time period, or focus areas before I
+    proceed?"
+
+    SCOPE VALIDATION:
+    Before confirming, silently evaluate:
+    - Are these contexts meaningfully comparable?
+    - Is the time period appropriate for this topic?
+    - Do I have sufficient knowledge of BOTH contexts?
+
+    If any concern arises, raise it with the user per R9
+    before proceeding.
+
+    WAIT for user confirmation before generating analysis.
+
+    # -----------------------------------------------------------
+    # PARALLEL ANALYSIS FRAMEWORK
+    # -----------------------------------------------------------
+
+    After user confirms, provide a comprehensive historical
+    analysis of {topic} from {start_date} to {end_date},
+    comparing developments in {primary_context} and
+    {secondary_context}.
+
+    Structure your analysis as follows:
+
+    SECTION 1: PRIMARY CONTEXT DEVELOPMENT
+
+        Analyze {topic} in {primary_context}:
+
+        1.1 TIMELINE OF KEY EVENTS
+            For each milestone, provide:
+            - Date or approximate date
+            - What happened
+            - Key figures or organizations involved
+            - Confidence tag: VERIFIED / LIKELY / UNCERTAIN
+
+        1.2 MARKET DYNAMICS
+            - Market size and growth patterns
+            - Competitive landscape evolution
+            - Consumer adoption patterns
+            Tag quantitative claims with confidence level.
+
+        1.3 REGULATORY ENVIRONMENT
+            - Key regulations and their dates
+            - Policy changes and impacts
+            - Compliance requirements evolution
+
+        1.4 TECHNOLOGY AND METHODOLOGY
+            - Technological enablers
+            - Innovation patterns
+            - Operational approaches
+
+    SECTION 2: SECONDARY CONTEXT DEVELOPMENT
+
+        Analyze {topic} in {secondary_context} during the
+        same period ({start_date} to {end_date}):
+
+        DEPTH CHECK: Before writing this section, assess
+        whether your knowledge of {secondary_context} is
+        comparable to your knowledge of {primary_context}
+        for this topic. If not, state the asymmetry per R4.
+
+        2.1 TIMELINE OF KEY EVENTS
+            For each milestone, provide:
+            - Date or approximate date
+            - What happened
+            - Key figures or organizations involved
+            - Confidence tag: VERIFIED / LIKELY / UNCERTAIN
+
+        2.2 MARKET DYNAMICS
+            - Market size and growth patterns
+            - Competitive landscape evolution
+            - Consumer adoption patterns
+            Tag quantitative claims with confidence level.
+
+        2.3 REGULATORY ENVIRONMENT
+            - Key regulations and their dates
+            - Policy changes and impacts
+            - Compliance requirements evolution
+
+        2.4 TECHNOLOGY AND METHODOLOGY
+            - Technological enablers
+            - Innovation patterns
+            - Operational approaches
+
+    SECTION 3: COMPARATIVE ANALYSIS
+
+        3.1 PARALLEL PATTERNS
+            Identify developments that occurred similarly
+            in both {primary_context} and {secondary_context}:
+            - Common milestones
+            - Shared success factors
+            - Universal challenges
+
+        3.2 DIVERGENT PATHS
+            Identify where {primary_context} and
+            {secondary_context} differed:
+            - Timing differences
+            - Approach differences
+            - Outcome differences
+            - Factors explaining divergence
+            Per R7, let each context's actual dynamics
+            drive this comparison rather than forcing
+            parallel structure.
+
+        3.3 SUCCESS CASE COMPARISON
+            Compare major successes in each context:
+
+            {primary_context} SUCCESS CASES:
+            - Organization/Initiative name
+            - What they did
+            - Why it succeeded
+            - Quantifiable outcomes (with confidence tag)
+
+            {secondary_context} SUCCESS CASES:
+            - Organization/Initiative name
+            - What they did
+            - Why it succeeded
+            - Quantifiable outcomes (with confidence tag)
+
+        3.4 FAILURE CASE COMPARISON
+            Compare notable failures in each context:
+
+            {primary_context} FAILURE CASES:
+            - Organization/Initiative name
+            - What they attempted
+            - Why it failed
+            - Lessons learned
+
+            {secondary_context} FAILURE CASES:
+            - Organization/Initiative name
+            - What they attempted
+            - Why it failed
+            - Lessons learned
+
+    SECTION 4: CROSS-CONTEXT INSIGHTS
+
+        Based on this comparative historical analysis:
+
+        4.1 TRANSFERABLE SUCCESS FACTORS
+            What success patterns from either context
+            could apply elsewhere?
+
+        4.2 UNIVERSAL PITFALLS
+            What failure patterns appeared in both
+            contexts that should be avoided?
+
+        4.3 CONTEXT-SPECIFIC CONSIDERATIONS
+            What factors are unique to each context
+            that would not transfer?
+
+        4.4 TIMING INSIGHTS
+            What does the comparative timeline reveal
+            about adoption patterns and readiness?
+
+    # -----------------------------------------------------------
+    # VALIDATION SUMMARY
+    # -----------------------------------------------------------
+
+    After completing the analysis, provide this self-check:
+
+    VALIDATION SUMMARY:
+
+    TIME BOUNDARY COMPLIANCE:
+        All events fall between {start_date} and {end_date}:
+        YES / NO (if NO, identify violations)
+
+    DEPTH BALANCE:
+        Primary context milestones cited: [count]
+        Secondary context milestones cited: [count]
+        Asymmetry flagged: YES / NO / NOT APPLICABLE
+
+    CONFIDENCE DISTRIBUTION:
+        VERIFIED claims: [count]
+        LIKELY claims: [count]
+        UNCERTAIN claims: [count]
+
+    KNOWLEDGE GAPS FLAGGED:
+        [List any areas where data was limited or absent]
+
+    # -----------------------------------------------------------
+    # FOLLOW-UP OPTIONS
+    # -----------------------------------------------------------
+
+    Based on THIS specific analysis, suggest 3-4 follow-up
+    questions that address:
+    - The most significant divergence you identified
+    - The area where your confidence was lowest
+    - A specific case that warrants deeper exploration
+    - Any asymmetry in depth between the two contexts
+
+    Frame each suggestion as a specific question the user
+    can ask, referencing actual content from the analysis.
+
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Notes
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+SOURCE: Ketelsen.ai Week 21 - Claude Variation 2:
+Multi-Dimensional Historical Analysis Framework.
+
+This recipe is designed for strategic planning that requires
+understanding how similar developments played out in different
+contexts. The parallel structure ensures both contexts receive
+equal analytical depth.
+
+BEST PRACTICES:
+- Choose contexts that are meaningfully comparable
+- Use the same time period for both contexts
+- Be specific about which aspects to compare
+- Request quantifiable data where possible
+- Use follow-up prompts to explore specific differences
+
+COMMON APPLICATIONS:
+- Market expansion feasibility assessment
+- Product localization strategy
+- Regulatory compliance planning
+- Competitive strategy development
+- Investment due diligence
+
+QA REVISION NOTES (P051f-H005):
+- Added BEHAVIORAL RULES section (R1-R9)
+- Added I-DONT-KNOW HANDLING with knowledge gap protocol
+- Made prompt interactive (parameter confirmation before
+  analysis, per R2)
+- Added confidence tagging system (VERIFIED/LIKELY/UNCERTAIN)
+- Added asymmetric-depth detection and flagging (R4)
+- Replaced passive output checkboxes with active VALIDATION
+  SUMMARY self-check
+- Made follow-up options dynamic based on actual analysis (R8)
+- Added scope validation to catch weak comparison frameworks (R9)
+- comparison_focus now renders via {focus_display} helper
+  instead of raw list
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER",
+    "version": "2.00b",
+    "created_date": "2025-12-29",
+    "last_updated": "2026-02-14",
+    "author": "CRAFT Framework",
+    "status": "revised_qa",
+    "character_count": "TBD",
+    "line_count": "TBD",
+    "validation_status": "revised_p051f_h005",
+    "qa_audit_verdict": "FAIL — 8 fixes applied",
+    "qa_fixes_applied": [
+        "FIX-1: Added BEHAVIORAL RULES section (R1-R9)",
+        "FIX-2: Added I-DONT-KNOW HANDLING with AI-facing knowledge gap protocol",
+        "FIX-3: Made prompt interactive — parameter confirmation before analysis",
+        "FIX-4: comparison_focus renders via {focus_display} not raw list",
+        "FIX-5: Replaced passive checkboxes with active VALIDATION SUMMARY",
+        "FIX-6: Added asymmetric-depth detection (R4 + DEPTH CHECK in Section 2)",
+        "FIX-7: Added confidence tagging (VERIFIED/LIKELY/UNCERTAIN per R3, R6)",
+        "FIX-8: Follow-up options now dynamic based on actual analysis (R8)"
+    ],
+    "lessons_learned_applied": [
+        "LL-004", "LL-005", "LL-007", "LL-008",
+        "LL-009", "LL-013", "LL-015", "LL-017",
+        "LL-024"
+    ],
+    "source_document": "Request_Historical_Context_Recipe.docx",
+    "source_prompts_consolidated": 1,
+    "platforms_synthesized": ["Claude"],
+    "related_recipes": [
+        "RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER",
+        "RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER",
+        "RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER"
+    ]
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP (Human-facing summary)
+# ===========================================================
+
+# ===========================================================
+# TLDR RECAP — RCP-010 HISTORICAL-COMPARATIVE-ANALYZER
+# ===========================================================
+# For: Human users (website display)
+# Recipe: RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+# Version: v2.00b (Revised)
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+
+    It compares how the same topic played out in two
+    different places, industries, or time periods. You
+    pick a subject — like "e-commerce" or "renewable
+    energy regulation" — choose two contexts to compare,
+    set a time window, and the AI produces a structured
+    side-by-side historical analysis covering key events,
+    market dynamics, regulations, successes, and failures
+    in both contexts.
+
+
+WHY IT EXISTS:
+
+    When you are expanding into a new market, evaluating
+    a cross-border strategy, or just trying to understand
+    why the same trend went differently in two places,
+    you need more than a summary of each place separately.
+    You need someone to actually compare them — find the
+    patterns, explain the divergences, and tell you what
+    lessons transfer and what does not. That is what this
+    recipe does.
+
+
+WHAT YOU GIVE IT:
+
+    - A topic (what you want to compare)
+    - A primary context (your home market, industry, or era)
+    - A secondary context (the comparison target)
+    - A time window (start and end dates)
+    - Optional: which dimensions to focus on (market,
+      regulatory, technology, or others)
+
+
+WHAT YOU GET BACK:
+
+    A four-section analysis:
+
+    1. How the topic developed in your primary context —
+       timeline, market dynamics, regulations, technology.
+
+    2. How the same topic developed in the secondary
+       context during the same period.
+
+    3. A direct comparison — what was similar, what
+       diverged, why, and detailed success and failure
+       cases from each side.
+
+    4. Cross-context insights — which success factors
+       transfer, which pitfalls are universal, and what
+       is unique to each context.
+
+    Every major claim is tagged with a confidence level
+    (Verified, Likely, or Uncertain) so you know which
+    parts you can cite directly and which ones you should
+    double-check.
+
+
+WHAT MAKES THIS RECIPE DIFFERENT:
+
+    - It confirms your scope before diving in, so you
+      do not waste time on a misaligned analysis.
+
+    - It tells you when it knows more about one context
+      than the other, instead of quietly producing a
+      lopsided comparison.
+
+    - It separates documented facts from analytical
+      interpretation, so you always know what is history
+      and what is the AI's read on the history.
+
+    - It enforces a hard time boundary — no events
+      outside your specified window sneak in.
+
+    - The follow-up suggestions at the end are specific
+      to your actual results, not generic prompts.
+
+
+BEST USED FOR:
+
+    - Market expansion research (how did X play out
+      in the country I am entering?)
+    - Cross-border strategy (what regulatory differences
+      should I plan for?)
+    - Investment due diligence (how did similar markets
+      develop at different stages?)
+    - Product adaptation (what localization lessons can
+      I learn from history?)
+    - Risk assessment (what failed elsewhere that I
+      should watch for here?)
+
+
+TIPS FOR BEST RESULTS:
+
+    - Pick contexts that are genuinely comparable. Comparing
+      US fintech to EU fintech is strong. Comparing US
+      fintech to 18th-century maritime trade is not.
+
+    - Keep the time window focused. 10 to 20 years works
+      well. 50 years is usually too broad for useful
+      comparison.
+
+    - Be specific about your topic. "Technology adoption"
+      is vague. "Mobile payment adoption in retail" gives
+      the AI something concrete to work with.
+
+    - Use the follow-up prompts. The first pass gives you
+      breadth. Follow-ups give you depth on the parts
+      that matter most to your decision.
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION (Not visible to users)
+# ===========================================================
+
+# ===========================================================
+# EXTENDED INFORMATION FOR THE AI
+# ===========================================================
+# For: AI execution reference (collapsed on website)
+# Recipe: RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER
+# Version: v2.00b (Revised)
+# ===========================================================
+
+
+AI EXECUTION GUIDANCE:
+
+    You are executing a comparative historical analysis
+    recipe. Your primary failure modes on this recipe type
+    are fabrication of specifics, asymmetric depth disguised
+    as balanced analysis, and blurred boundaries between
+    documented history and your own analytical inference.
+    Every guardrail in this recipe exists because these
+    failures are common and damaging in historical research
+    contexts.
+
+
+PARAMETER CONFIRMATION IS NOT OPTIONAL:
+
+    R2 requires you to confirm parameters before generating
+    the analysis. This is not a courtesy step. It exists
+    because users frequently submit vague or overly broad
+    comparison frameworks that produce low-quality output.
+    During confirmation, actively evaluate whether the
+    comparison is viable. If the user asks to compare
+    "technology in Asia vs Europe from 1900 to 2020," that
+    is too broad on every axis — region, topic, and time.
+    Say so. Suggest a refinement. The ten seconds spent
+    narrowing scope saves the user from a shallow 2,000-word
+    analysis they cannot use.
+
+
+THE CONFIDENCE TAGGING SYSTEM IS STRUCTURAL:
+
+    The three tiers (VERIFIED, LIKELY, UNCERTAIN) are not
+    decorative. Apply them per-claim, not per-section.
+    Within a single timeline, some events will be VERIFIED
+    (Amazon launched in 1995) and others UNCERTAIN (the
+    exact market share shift in a specific quarter). Do not
+    batch-tag an entire section as one confidence level.
+
+    Common mistakes to avoid:
+    - Tagging everything VERIFIED because it "sounds right"
+    - Tagging everything LIKELY as a hedge to avoid commitment
+    - Forgetting to tag quantitative claims (market sizes,
+      growth rates, adoption percentages are the claims
+      most likely to be fabricated and most in need of
+      confidence tagging)
+
+
+ASYMMETRIC DEPTH IS YOUR BIGGEST CREDIBILITY RISK:
+
+    Your training data is not uniformly distributed across
+    geographies, languages, industries, and time periods.
+    You almost certainly know more about US markets than
+    Peruvian markets, more about English-language regulatory
+    frameworks than Mandarin-language ones, more about the
+    2010s than the 1970s. This is not a flaw to hide. It
+    is a fact to disclose.
+
+    When you notice the asymmetry (and you will — one
+    section will flow easily while the other requires more
+    hedging), trigger R4 immediately. The user would rather
+    know "I have 12 well-documented milestones for the US
+    context but only 4 for the Brazilian context on this
+    topic" than receive a comparison where one side is
+    rich with specifics and the other is padded with
+    generic observations dressed up as analysis.
+
+    Do not equalize depth by:
+    - Adding vague filler ("the market grew steadily")
+    - Repackaging the same point in different words
+    - Substituting regional generalizations for specific
+      country-level data
+    - Inventing plausible-sounding organizations or dates
+
+
+THE TIME BOUNDARY IS A HARD WALL:
+
+    R1 is absolute. If the user sets an end date of 2015,
+    you may not reference events from 2016 even if they
+    are directly relevant and would strengthen the analysis.
+    This is a deliberate design choice: the user is using
+    historical analysis to inform decisions, and mixing in
+    events they may already know about from recent memory
+    undermines the purpose. If post-boundary events are
+    critical, note in your follow-up suggestions that the
+    user may want to extend the analysis window, but do
+    not preemptively include them.
+
+    Similarly, do not anchor your analysis to your knowledge
+    of how things eventually turned out. If analyzing
+    e-commerce from 2000 to 2010, do not let your knowledge
+    of 2024 outcomes color how you describe 2005 dynamics.
+    Analyze the period as it was, not through the lens of
+    what came later.
+
+
+COMPARATIVE ANALYSIS IS NOT TWO SUMMARIES SIDE BY SIDE:
+
+    Sections 1 and 2 are individual context analyses.
+    Section 3 is where the actual comparison happens. The
+    most common failure here is producing Section 3 as a
+    superficial overlay that restates what was already said
+    in Sections 1 and 2. Section 3 should contain NEW
+    analytical insight that only emerges from the juxtaposition:
+
+    - Timing gaps (Context A adopted 5 years before B — why?)
+    - Causal differences (same outcome, different drivers)
+    - Structural divergences (Context A was market-led,
+      Context B was regulation-led)
+    - Transferability judgments (this success factor was
+      context-dependent vs. this one is portable)
+
+    If Section 3 could be generated without having written
+    Sections 1 and 2, it is not doing its job.
+
+
+FAILURE CASES REQUIRE THE SAME RIGOR AS SUCCESS CASES:
+
+    There is a tendency to provide detailed, specific
+    success cases and then offer vague, generic failure
+    cases. Both require named organizations, specific
+    actions, identifiable causes, and (where available)
+    quantifiable consequences. "Several companies failed
+    to adapt" is not a failure case. "Company X launched
+    initiative Y in [year], which failed because of Z,
+    resulting in [consequence]" is a failure case.
+
+    If you genuinely cannot identify specific failure cases
+    for a context, say so and explain why (limited
+    documentation, survivorship bias in available sources,
+    or gaps in your training data). Do not fabricate
+    failure narratives to fill the template.
+
+
+FOLLOW-UP SUGGESTIONS MUST BE EARNED:
+
+    R8 requires dynamic follow-ups. After completing the
+    analysis, review what you actually produced and
+    generate follow-up questions that address:
+
+    1. The most interesting divergence — the place where
+       the two contexts went most differently and the
+       user might want to understand why in more depth.
+
+    2. Your lowest-confidence area — where you had to
+       hedge the most, giving the user a chance to ask
+       you to dig deeper or flag it for their own research.
+
+    3. A specific case worth expanding — an organization,
+       regulation, or event that was mentioned briefly but
+       has a richer story behind it.
+
+    4. The asymmetry gap — if one context was thinner,
+       suggest the user ask specifically about that context
+       to see if targeted prompting surfaces more detail.
+
+    Do not recycle the generic suggestions from the
+    original recipe. Every follow-up should reference
+    something specific from THIS analysis.
+
+
+VALIDATION SUMMARY IS A SELF-AUDIT:
+
+    The VALIDATION SUMMARY at the end is not cosmetic.
+    Actually count your milestones per context. Actually
+    tally your confidence distribution. If the summary
+    reveals a 15-to-4 milestone imbalance you did not
+    flag earlier, that is a problem — go back and add the
+    R4 asymmetry disclosure. The summary exists to catch
+    your own oversights before the user has to.
+
+
+# ===========================================================
+# END RCP-010 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER",
+  "recipe_name": "Historical Comparative Analyzer",
+  "version": "v2.00b",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-10/RCP-010-EXTENDED-AI-INFO.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "Historical Comparative Analyzer — a hallucination-reduction protocol that conducts parallel historical analysis across two or more markets, regions, or contexts. Category: CAT-000 Standalone. Difficulty: Advanced. 7-step interactive workflow (Step 0-6) with parameter confirmation, 9 behavioral rules (R1-R9), per-claim confidence tagging (VERIFIED/LIKELY/UNCERTAIN), asymmetric-depth detection, I-DON'T-KNOW knowledge gap protocol, and validation summary self-audit."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "PARAMETER CONFIRMATION IS NOT OPTIONAL",
+          "description": "R2 requires you to confirm parameters before generating the analysis. This is not a courtesy step. It exists because users frequently submit vague or overly broad comparison frameworks that produce low-quality output. During confirmation, actively evaluate whether the comparison is viable. If the user asks to compare technology in Asia vs Europe from 1900 to 2020 that is too broad on every axis — region, topic, and time. Say so. Suggest a refinement. The ten seconds spent narrowing scope saves the user from a shallow 2000-word analysis they cannot use."
+        },
+        {
+          "key": "THE CONFIDENCE TAGGING SYSTEM IS STRUCTURAL",
+          "description": "The three tiers (VERIFIED, LIKELY, UNCERTAIN) are not decorative. Apply them per-claim, not per-section. Within a single timeline, some events will be VERIFIED (Amazon launched in 1995) and others UNCERTAIN (the exact market share shift in a specific quarter). Do not batch-tag an entire section as one confidence level. Common mistakes: tagging everything VERIFIED because it sounds right, tagging everything LIKELY as a hedge, forgetting to tag quantitative claims (market sizes, growth rates, adoption percentages are the claims most likely to be fabricated)."
+        },
+        {
+          "key": "ASYMMETRIC DEPTH IS YOUR BIGGEST CREDIBILITY RISK",
+          "description": "Your training data is not uniformly distributed across geographies, languages, industries, and time periods. When you notice asymmetry (one section flows easily while the other requires more hedging), trigger R4 immediately. The user would rather know I have 12 well-documented milestones for the US context but only 4 for the Brazilian context than receive a comparison where one side is rich with specifics and the other is padded with generic observations. Do not equalize depth by adding vague filler, repackaging the same point, substituting regional generalizations, or inventing plausible-sounding organizations or dates."
+        },
+        {
+          "key": "THE TIME BOUNDARY IS A HARD WALL",
+          "description": "R1 is absolute. If the user sets an end date of 2015, you may not reference events from 2016 even if directly relevant. Do not anchor analysis to knowledge of how things eventually turned out. If analyzing e-commerce from 2000 to 2010, do not let knowledge of 2024 outcomes color how you describe 2005 dynamics. Analyze the period as it was, not through the lens of what came later. If post-boundary events are critical, note in follow-up suggestions that the user may want to extend the analysis window."
+        },
+        {
+          "key": "COMPARATIVE ANALYSIS IS NOT TWO SUMMARIES SIDE BY SIDE",
+          "description": "Sections 1 and 2 are individual context analyses. Section 3 is where the actual comparison happens. The most common failure is producing Section 3 as a superficial overlay that restates Sections 1 and 2. Section 3 should contain NEW analytical insight that only emerges from the juxtaposition: timing gaps, causal differences, structural divergences, transferability judgments. If Section 3 could be generated without having written Sections 1 and 2, it is not doing its job."
+        },
+        {
+          "key": "FAILURE CASES REQUIRE THE SAME RIGOR AS SUCCESS CASES",
+          "description": "Both require named organizations, specific actions, identifiable causes, and quantifiable consequences where available. Several companies failed to adapt is not a failure case. Company X launched initiative Y in year which failed because of Z resulting in consequence is a failure case. If you genuinely cannot identify specific failure cases for a context, say so and explain why (limited documentation, survivorship bias, or gaps in training data). Do not fabricate failure narratives."
+        },
+        {
+          "key": "FOLLOW-UP SUGGESTIONS MUST BE EARNED",
+          "description": "R8 requires dynamic follow-ups referencing actual analysis content. After completing the analysis, generate follow-up questions addressing: the most interesting divergence, your lowest-confidence area, a specific case worth expanding, and the asymmetry gap if one context was thinner. Do not recycle generic suggestions. Every follow-up should reference something specific from THIS analysis."
+        },
+        {
+          "key": "VALIDATION SUMMARY IS A SELF-AUDIT",
+          "description": "The VALIDATION SUMMARY at the end is not cosmetic. Actually count your milestones per context. Actually tally your confidence distribution. If the summary reveals a 15-to-4 milestone imbalance you did not flag earlier, go back and add the R4 asymmetry disclosure. The summary exists to catch your own oversights before the user has to."
+        }
+      ]
+    },
+    "behavioral_infrastructure": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "R1 — TIME BOUNDARY IS ABSOLUTE",
+          "description": "NEVER include any event, date, statistic, or claim that falls outside the user-specified time boundary. If the user sets an end date of 2015, nothing from 2016 or later may appear anywhere in the analysis."
+        },
+        {
+          "key": "R2 — PARAMETER CONFIRMATION REQUIRED",
+          "description": "ALWAYS confirm analysis parameters with the user before generating the full comparative analysis. Show topic, both contexts, time boundary, and comparison focus areas. Ask if scope looks right. Do not proceed until confirmed."
+        },
+        {
+          "key": "R3 — FACT VS INTERPRETATION SEPARATION",
+          "description": "NEVER present analytical interpretation as historical fact. Every claim falls into DOCUMENTED (specific event, date, named entity, published figure) or ANALYTICAL (pattern, inference, comparison). Label which tier each major claim belongs to. When in doubt, label it ANALYTICAL."
+        },
+        {
+          "key": "R4 — BALANCED DEPTH WITH ASYMMETRY DISCLOSURE",
+          "description": "ALWAYS maintain balanced depth between contexts. If you can provide 8 detailed milestones for primary but only 3 for secondary, flag this asymmetry explicitly. Do not pad the weaker context with vague filler to create an illusion of balance."
+        },
+        {
+          "key": "R5 — NO FABRICATION OF SPECIFICS",
+          "description": "NEVER invent specific dates, statistics, founding years, or dollar figures. If uncertain of exact date, say approximately or in the early 2000s. An approximate date flagged as approximate is more valuable than a precise date that may be wrong."
+        },
+        {
+          "key": "R6 — PER-CLAIM CONFIDENCE TAGGING",
+          "description": "ALWAYS tag each major claim with VERIFIED (well-documented, widely cited), LIKELY (strong basis but specific details uncertain), or UNCERTAIN (pattern or claim based on limited data). The user needs to know which parts they can cite directly and which require verification."
+        },
+        {
+          "key": "R7 — INDEPENDENT CONTEXT ANALYSIS",
+          "description": "NEVER let one context's analysis drive the structure of the other. Analyze each context on its own terms first, then compare. If e-commerce in the US was driven by venture capital but in the EU by regulatory frameworks, the analysis should reflect each context's actual drivers."
+        },
+        {
+          "key": "R8 — DYNAMIC FOLLOW-UP OPTIONS",
+          "description": "ALWAYS generate follow-up options specific to the analysis produced. Reference actual divergences found, specific cases mentioned, and areas of lowest confidence. Do not use generic follow-up suggestions."
+        },
+        {
+          "key": "R9 — WEAK FRAMEWORK REJECTION",
+          "description": "IF the user's comparison framework is weak (contexts not meaningfully comparable, time period too broad, topic too vague), say so. Suggest a refined scope. Do not silently produce a low-quality analysis from a poorly defined request."
+        }
+      ]
+    },
+    "i_dont_know_handling": {
+      "type": "prose",
+      "body": "This is a hallucination-critical recipe. The AI must actively flag its own knowledge limits rather than filling gaps with plausible-sounding fabrications. KNOWLEDGE GAP PROTOCOL: If you lack sufficient data for a context or dimension, STATE which is affected, EXPLAIN what you do know vs what you do not, SUGGEST the user verify with primary sources, DO NOT pad thin sections with generic analysis. If your knowledge of the two contexts is asymmetric, FLAG the asymmetry at the start, PROVIDE what you can for the weaker context, MARK claims with confidence levels, DO NOT fabricate balance where none exists. If a specific date, figure, or name is uncertain, USE hedging language (approximately, circa, believed to be, sources vary), MARK as LIKELY or UNCERTAIN, DO NOT present uncertain data as VERIFIED. If the topic falls partially outside your training, STATE the boundary clearly, ANALYZE what falls within, IDENTIFY what the user should research independently, DO NOT speculate beyond your training data."
+    },
+    "tone_calibration": {
+      "type": "prose",
+      "body": "This recipe requires the tone of a careful historian or scholarly researcher, not a storyteller or journalist. Avoid dramatic language (this explosive development, a groundbreaking moment). Prefer measured, precise language (this represented a significant shift, this development marked a departure from the previous approach). The user chose this recipe because they want accuracy over entertainment. Your restraint IS the value."
+    },
+    "common_mistakes": {
+      "type": "list",
+      "items": [
+        "Fabricating specific dates, statistics, founding years, or dollar figures when uncertain (flag the gap instead)",
+        "Presenting analytical interpretation as historical fact without labeling the tier",
+        "Padding the weaker context with vague filler to create illusion of balance instead of flagging asymmetry per R4",
+        "Batch-tagging entire sections with one confidence level instead of per-claim tagging",
+        "Letting one context's analysis drive the structure of the other instead of analyzing each on its own terms first",
+        "Producing Section 3 as a superficial overlay restating Sections 1 and 2 instead of generating new juxtaposition insights",
+        "Providing detailed success cases but vague generic failure cases without named organizations and specific causes",
+        "Including events beyond the time boundary or anchoring analysis to knowledge of how things eventually turned out",
+        "Using generic follow-up suggestions instead of referencing specific divergences and low-confidence areas from THIS analysis",
+        "Not actually performing the VALIDATION SUMMARY milestone count and confidence tally before delivering"
+      ]
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

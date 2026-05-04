@@ -1,0 +1,2183 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER
+recipe_name:    First Principles Message Crafter
+version:        v2.00e
+authored_by:    Cat (P067)
+revision_date:  2026-04-24
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-007
+# Recipe Name: FIRST-PRINCIPLES-MESSAGE-CRAFTER
+# Version: v2.00e
+# Status: Official
+# CRAFT Flavors: Cowork
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = """
+RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER
+"""
+
+
+WPRM_FIELD_DESCRIPTION = """
+Create compelling marketing messages by applying first
+principles to audience psychology. This recipe guides you
+to identify fundamental desires and fears, leverage
+psychological truths, and craft messages that resonate
+at a deeper level than industry cliches allow.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Not part of a combo"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID = "007"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Marketing, Communication"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Copywriting"
+
+
+WPRM_FIELD_RECIPE_TAGS = """
+first principles
+marketing
+messaging
+psychology
+copywriting
+persuasion
+audience
+communication
+"""
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = """
+
+STEP 1: Define Your Messaging Context
+-------------------------------------
+Specify what you are creating messages for:
+
+    PRODUCT/SERVICE:
+        What do you offer?
+        What category does it compete in?
+        What is your current positioning?
+
+    TARGET AUDIENCE:
+        Who are you trying to reach?
+        What do you know about them?
+        Where will they encounter this message?
+
+    MESSAGING GOAL:
+        What action do you want them to take?
+        What feeling do you want to create?
+        What belief do you want to establish?
+
+    CHANNEL:
+        Website copy? Email? Social ad?
+        What format constraints exist?
+        What context surrounds the message?
+
+
+STEP 2: Identify the Ultimate Desired Outcome
+---------------------------------------------
+Find what your audience truly wants to achieve
+by using your product or service.
+
+Ask repeatedly: "Why do they want that?"
+
+    SURFACE:
+        "They want project management software"
+
+    DEEPER:
+        "They want to manage projects better"
+
+    DEEPER STILL:
+        "They want projects to succeed"
+
+    FUNDAMENTAL DESIRE:
+        "They want to feel confident that their
+         work will produce successful outcomes
+         and that they will be recognized for it"
+
+The fundamental desired outcome connects to
+core human motivations:
+
+    - Feel safe and secure
+    - Gain status and recognition
+    - Belong and connect with others
+    - Have control and autonomy
+    - Grow and achieve mastery
+    - Experience pleasure and avoid pain
+    - Save time and reduce effort
+    - Find meaning and purpose
+
+
+STEP 3: Identify Underlying Fears
+---------------------------------
+Find what your audience fears will happen if they
+do NOT achieve the desired outcome.
+
+Ask: "What is the worst case if they do not act?"
+
+    SURFACE FEARS:
+        "Project fails"
+        "Miss deadline"
+        "Team underperforms"
+
+    DEEPER FEARS:
+        "Look incompetent to leadership"
+        "Lose credibility"
+        "Career stalls or ends"
+
+    FUNDAMENTAL FEARS:
+        "Be seen as a failure"
+        "Lose status and respect"
+        "Feel out of control"
+        "Miss opportunities others seize"
+
+Fears are often more motivating than desires.
+Understanding both creates powerful messaging.
+
+
+STEP 4: Map Psychological Principles
+------------------------------------
+Identify which psychological truths apply to
+this audience and decision:
+
+    LOSS AVERSION:
+        People feel losses more strongly than
+        equivalent gains. "Stop losing X" often
+        works better than "Gain X."
+
+    SOCIAL PROOF:
+        People follow what others like them do.
+        "10,000 teams use this" creates safety.
+
+    SCARCITY:
+        Limited availability increases desire.
+        "Only 5 spots left" drives action.
+
+    AUTHORITY:
+        People trust credentialed sources.
+        "Recommended by Harvard" adds weight.
+
+    RECIPROCITY:
+        People return favors. Give value first,
+        then ask for action.
+
+    COMMITMENT/CONSISTENCY:
+        Small yeses lead to large yeses.
+        "Agree with this principle?" then offer.
+
+    LIKING:
+        People buy from those they like.
+        Similarity, compliments, familiarity.
+
+    ANCHORING:
+        First number shapes all comparisons.
+        Show high price first, then discount.
+
+    FRAMING:
+        Same information, different impact.
+        "90% success" vs "10% failure."
+
+Select 2-3 principles most relevant to your
+audience and their decision context.
+
+
+STEP 5: Analyze Conventional Messaging
+--------------------------------------
+Map how competitors and your industry typically
+communicate about this category:
+
+    COMMON CLAIMS:
+        What does everyone say?
+        What phrases appear everywhere?
+        What promises are standard?
+
+    OVERUSED APPROACHES:
+        What emotional appeals are tired?
+        What proof points are generic?
+        What formats are expected?
+
+    CLICHES TO AVOID:
+        "Leading solution"
+        "Best-in-class"
+        "Revolutionary"
+        "Seamless integration"
+        "Trusted by thousands"
+
+    MESSAGING GAPS:
+        What does no one say?
+        What fears go unaddressed?
+        What desires go unacknowledged?
+
+The goal: Stand out by NOT sounding like
+everyone else while still connecting to
+fundamental desires and fears.
+
+
+STEP 6: Craft First Principles Messages
+---------------------------------------
+Using ONLY:
+    - Fundamental desired outcome
+    - Underlying fears
+    - Selected psychological principles
+    - Gaps in conventional messaging
+
+Create messages that connect directly to
+psychology rather than through cliches.
+
+Generate at least THREE distinct messages:
+
+    MESSAGE TYPE 1 - DESIRE-FOCUSED:
+        Lead with the ultimate outcome they want.
+        Paint the picture of success achieved.
+        Connect to positive motivation.
+
+    MESSAGE TYPE 2 - FEAR-FOCUSED:
+        Address the underlying fear directly.
+        Show the cost of inaction.
+        Connect to loss aversion.
+
+    MESSAGE TYPE 3 - PROOF-FOCUSED:
+        Lead with evidence of capability.
+        Build trust before claiming benefits.
+        Connect to social proof or authority.
+
+    MESSAGE TYPE 4 - DIFFERENTIATOR:
+        Say what competitors do not say.
+        Challenge industry convention.
+        Create category of one.
+
+For each message, trace back to the
+psychological foundation it builds on.
+
+
+STEP 7: Test Message Strength
+-----------------------------
+Evaluate each message against criteria:
+
+    CLARITY:
+        Is the message immediately clear?
+        Does it pass the "5-second test"?
+        Would a stranger understand it?
+
+    SPECIFICITY:
+        Does it make a concrete claim?
+        Are vague words eliminated?
+        Can the reader picture the outcome?
+
+    DIFFERENTIATION:
+        Does it stand out from competitors?
+        Could a competitor say this identically?
+        Does it own a unique position?
+
+    EMOTIONAL RESONANCE:
+        Does it connect to fundamental desire?
+        Does it acknowledge underlying fear?
+        Does it feel true to the audience?
+
+    CREDIBILITY:
+        Is the claim believable?
+        Is there proof or path to proof?
+        Does it trigger skepticism?
+
+    ACTIONABILITY:
+        Is the next step clear?
+        Does it create urgency?
+        Does it reduce friction to action?
+
+Rate each message on these dimensions.
+Identify the strongest overall message.
+
+
+STEP 8: Refine and Variations
+-----------------------------
+Take your strongest message and create:
+
+    HEADLINE VERSION:
+        5-10 words maximum
+        Capture core message
+        Stop the scroll
+
+    SUBHEADLINE VERSION:
+        Expand on headline
+        Add specificity or proof
+        Bridge to body copy
+
+    BODY COPY VERSION:
+        Full message with detail
+        Include proof points
+        Clear call to action
+
+    ALTERNATIVE ANGLES:
+        Same core message
+        Different emotional entry
+        A/B test candidates
+
+Ensure all versions maintain psychological
+foundation while adapting to format.
+
+
+STEP 9: Create Message Testing Plan
+-----------------------------------
+Design how you will validate message
+effectiveness:
+
+    A/B TEST STRUCTURE:
+        Control: Current best message
+        Variant A: New message option 1
+        Variant B: New message option 2
+
+    METRICS TO TRACK:
+        Attention: Click rate, scroll depth
+        Engagement: Time on page, interactions
+        Conversion: Desired action completion
+        Sentiment: Qualitative feedback
+
+    SAMPLE SIZE:
+        How many impressions before decision?
+        Statistical significance threshold?
+        Timeline for test completion?
+
+    ITERATION PLAN:
+        What if Variant A wins?
+        What if control wins?
+        How to incorporate learnings?
+
+
+STEP 10: Follow-Up Options
+--------------------------
+After completing the analysis, choose next steps:
+
+    1. Generate more message variations
+    2. Deep-dive on specific psychological angle
+    3. Create full copy for specific channel
+    4. Develop messaging framework/guidelines
+    5. Apply to different audience segment
+    6. Design A/B testing campaign
+    7. End the session
+
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_USES_THIS_RECIPE = """
+The AI guides you through psychological analysis of your
+audience, helping surface fundamental desires and fears
+that drive decisions. It challenges conventional messaging
+approaches and helps craft communications that connect at
+a deeper level than industry cliches. The AI brings
+knowledge of psychological principles and helps apply them
+authentically to your specific context. When you get stuck,
+the AI contributes its own market knowledge rather than
+waiting. Fear-based messaging follows strict ethical
+guardrails — only confirmed fears, never manufactured
+anxiety. Output format adapts automatically to your
+target channel.
+"""
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a psychological messaging
+protocol with these key behaviors:
+
+    CONTEXT GATHERING:
+        AI establishes product, audience, goal, channel
+        Ensures sufficient information for targeting
+        Clarifies constraints and format requirements
+
+    DESIRE EXCAVATION:
+        AI repeatedly asks "why do they want that?"
+        Does not accept feature-level answers
+        Pushes until reaching fundamental human desires
+        (safety, status, belonging, control, mastery)
+
+    FEAR IDENTIFICATION:
+        AI probes for worst-case scenarios
+        Surfaces identity-level fears beneath surface fears
+        Connects fears to loss aversion psychology
+
+    PSYCHOLOGY MAPPING:
+        AI identifies relevant psychological principles
+        Selects 2-3 most applicable to context
+        Explains why each principle applies
+
+    CONVENTION AUDIT:
+        AI catalogs competitor and industry messaging
+        Identifies cliches and overused approaches
+        Finds gaps where no one is speaking
+
+    MESSAGE GENERATION:
+        AI creates multiple distinct message types
+        Each message traces to psychological foundation
+        Explains mechanism of each message
+
+    EVALUATION AND REFINEMENT:
+        AI applies structured criteria to each message
+        Creates format variations (headline/body/CTA)
+        Designs A/B testing approach
+
+The AI maintains a psychologically-grounded posture,
+refusing to accept surface-level messaging that does
+not connect to fundamental desires or fears.
+
+    BEHAVIORAL INFRASTRUCTURE:
+        AI follows six explicit rules: (1) sharp marketing
+        strategist tone, (2) three-level "why" depth gate on
+        desires and fears, (3) ethical guardrails for fear
+        messaging — only confirmed fears, no manufactured
+        anxiety, identity-protection test, (4) quality gate
+        requiring genuinely different psychological mechanisms
+        across message types, (5) channel awareness throughout,
+        (6) always add strategic value rather than echoing.
+        Additionally, a four-option I-don't-know handling
+        protocol ensures the AI contributes market knowledge,
+        competitor examples, scaffolded options, or recipe
+        examples when the user lacks domain expertise. Step 8
+        format variations adapt automatically to 5 channel
+        types (email, social/ad, LinkedIn, app store, web).
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+USE THIS RECIPE WHEN:
+
+    HIGH-STAKES MESSAGING:
+        - Homepage or landing page copy
+        - Paid advertising campaigns
+        - Sales page or conversion copy
+        - Email sequences that must perform
+
+    CUTTING THROUGH NOISE:
+        - Crowded market with similar offerings
+        - Audience is saturated with messages
+        - Need to stand out immediately
+
+    CONVERSION OPTIMIZATION:
+        - Current messaging underperforms
+        - A/B tests show no clear winner
+        - Need fresh psychological angles
+
+    NEW OFFERING LAUNCH:
+        - Introducing product to market
+        - Repositioning existing offering
+        - Entering new audience segment
+
+    SPECIFIC TRIGGERS:
+        - "Our messaging sounds like everyone else"
+        - "Customers do not seem to connect with us"
+        - "We are not sure what to say"
+        - "Our conversion rates are low"
+        - "Competitors say the same things we do"
+
+DO NOT USE THIS RECIPE WHEN:
+
+    - Quick tactical copy needed (use templates)
+    - Audience is not defined yet
+    - Product-market fit is unclear
+    - Messaging is performing well already
+    - Internal communication (though it can work)
+
+COMPARE TO OTHER RECIPES:
+
+    vs FIRST-PRINCIPLES-INNOVATOR (006):
+        - Innovator: Creates the offering
+        - Message Crafter: Communicates the offering
+        - Use Innovator if offering needs rethinking
+        - Use Message Crafter after offering is defined
+
+    vs FIRST-PRINCIPLES-PROBLEM-SOLVER (005):
+        - Problem Solver: General problem decomposition
+        - Message Crafter: Specific to communication
+        - Use Problem Solver for non-messaging issues
+        - Use Message Crafter for audience connection
+
+    vs SOCRATIC-IDEA-VALIDATOR (002):
+        - Validator: Tests if ideas are sound
+        - Message Crafter: Creates resonant messages
+        - Use Validator to test message concepts
+        - Can be used sequentially for validation
+
+OPTIMAL SEQUENCE:
+    1. Use 006 (Innovator) to define offering
+    2. Use 007 (Message Crafter) to communicate it
+    3. Use 002 (Idea Validator) to stress-test messages
+"""
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "Cat, Auguste"
+
+
+WPRM_FIELD_RECOMMENDED_AI_AGENTS = """
+Cat (orchestrator — strategic messaging synthesis),
+Auguste (business strategy and audience analysis)
+"""
+
+
+WPRM_FIELD_RECIPE_AUTHOR = "CRAFT Framework"
+
+
+WPRM_FIELD_RECIPE_VERSION = "v2.00e"
+
+
+WPRM_FIELD_USER_PROVIDES = """
+    - Product or service to create messaging for
+    - Target audience description
+    - Messaging goal and desired action
+    - Channel and format constraints
+    - Current positioning (if any)
+"""
+
+
+WPRM_FIELD_AI_DELIVERS = """
+    - Identification of ultimate desired outcome
+    - Analysis of underlying fears
+    - Relevant psychological principles
+    - Audit of conventional industry messaging
+    - Multiple first-principles messages
+    - Evaluation against strength criteria
+    - Channel-adapted format variations
+    - A/B testing recommendations
+"""
+
+
+WPRM_FIELD_RECIPE_SUCCESS_CRITERIA = """
+    - Fundamental desire clearly articulated
+    - Underlying fears identified
+    - 2-3 psychological principles selected
+    - Conventional messaging mapped
+    - At least 3 distinct message approaches
+    - Messages evaluated against criteria
+    - Format variations created for target channel
+    - Testing plan outlined
+"""
+
+
+WPRM_FIELD_RECIPES_RELATED_TO_THIS_RECIPE = """
+    - RCP-000-000-006-FIRST-PRINCIPLES-INNOVATOR
+    - RCP-000-000-005-FIRST-PRINCIPLES-PROBLEM-SOLVER
+    - RCP-000-000-002-SOCRATIC-IDEA-VALIDATOR
+"""
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# ===========================================================
+# START RECIPE-ID: RCP-000-000-007-FIRST-PRINCIPLES
+# ===========================================================
+
+FIRST_PRINCIPLES_MESSAGE_CRAFTER = Recipe(
+    recipe_id=(
+        "RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER"
+    ),
+    title="First Principles Message Crafter",
+    description='''
+        Create compelling marketing messages by applying
+        first principles to audience psychology. Connect
+        to fundamental desires and fears rather than
+        relying on industry cliches.
+    ''',
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-MARKETING",
+    difficulty="Intermediate",
+    version="2.00e",
+
+    parameters={
+        "product": {
+            "type": "string",
+            "required": True,
+            "description": "Product or service"
+        },
+        "audience": {
+            "type": "string",
+            "required": True,
+            "description": "Target audience"
+        },
+        "goal": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Messaging goal or desired action"
+        },
+        "channel": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Where message appears (web, email, social, app store, etc.)"
+        }
+    },
+
+    prompt_template='''
+    #H->AI::Directive: (Execute First Principles
+    Message Crafter recipe)
+    #H->AI::Context: (Product: {product},
+    Audience: {audience})
+    #H->AI::Context: (Goal: {goal})
+    #H->AI::Context: (Channel: {channel})
+
+
+    # ==========================================
+    # BEHAVIORAL RULES
+    # ==========================================
+
+    RULE 1 - TONE AND POSTURE:
+        Act as a sharp marketing strategist who
+        understands psychology deeply. Be direct
+        and confident in your analysis. When you
+        see weak messaging, say so clearly. When
+        the user identifies a genuine insight,
+        acknowledge it with enthusiasm. Your job
+        is to produce messages that WORK, not
+        messages that feel safe.
+
+    RULE 2 - DEPTH CALIBRATION:
+        In Steps 2-3 (desire/fear excavation),
+        push through at least THREE levels of
+        "why" before accepting an answer as
+        fundamental. Surface-level desires like
+        "save time" or "be more productive" are
+        NEVER the core desire. Keep pushing until
+        you reach identity-level motivation:
+        who they want to BE, how they want to be
+        SEEN, what they fear about THEMSELVES.
+
+    RULE 3 - ETHICAL GUARDRAILS FOR FEAR MESSAGING:
+        When crafting fear-based messages (MESSAGE
+        TYPE 2), follow these rules strictly:
+
+        ALLOWED: Referencing fears the user has
+        confirmed as real and present in the
+        audience. Showing legitimate consequences
+        of inaction. Highlighting real risks.
+
+        NOT ALLOWED: Manufacturing fears that do
+        not exist. Attacking the audience's
+        identity or self-worth. Using shame as a
+        motivator. Exaggerating consequences
+        beyond what is realistic. Creating
+        anxiety about things outside the
+        audience's control.
+
+        TEST: Would you be comfortable if the
+        audience knew exactly how this message
+        was designed to affect them? If not,
+        revise.
+
+    RULE 4 - MESSAGE QUALITY GATE:
+        Each of the 4 message types must use a
+        genuinely different psychological mechanism.
+        If two messages both rely on the same
+        principle (e.g., both use social proof),
+        rewrite one. The 4 types exist to give
+        the user real strategic choices, not
+        cosmetic variations.
+
+    RULE 5 - CHANNEL AWARENESS:
+        Always keep the target channel ({channel})
+        in mind when crafting messages. A LinkedIn
+        outreach message has different constraints
+        than a homepage headline. An app store
+        listing serves a different moment than a
+        paid social ad. Adapt message length, tone,
+        and call-to-action to channel context.
+
+    RULE 6 - ALWAYS ADD STRATEGIC VALUE:
+        After each user response, do not just
+        repeat what they said. Add your own
+        strategic insight: a reframe, a connection
+        to psychology, an observation about what
+        their answer reveals about their audience.
+        Then move forward.
+
+
+    # ==========================================
+    # I-DON'T-KNOW HANDLING
+    # ==========================================
+
+    IF the user says they do not know, are unsure,
+    or gives a vague or minimal answer at any step:
+
+        DO NOT stall or repeat the question.
+
+        INSTEAD, do one of the following:
+
+        OPTION A - CONTRIBUTE MARKET KNOWLEDGE:
+            Use your own knowledge of the market
+            and audience ({audience}) to propose
+            answers. Say: "Based on what I know
+            about {audience}, they typically fear
+            [X] and desire [Y]. Does that match
+            your experience?"
+
+        OPTION B - OFFER COMPETITOR EXAMPLES:
+            Provide specific examples of competitor
+            messaging you are aware of. Say: "In
+            the [product category] space, I commonly
+            see messaging like [examples]. What do
+            you see that is similar or different?"
+
+        OPTION C - SCAFFOLD WITH OPTIONS:
+            Present 3-4 psychological possibilities.
+            Say: "Your audience likely falls into
+            one of these patterns: (A) they fear
+            [X], (B) they desire [Y], (C) they are
+            motivated by [Z]. Which feels closest?"
+
+        OPTION D - USE THE EXAMPLES:
+            Reference the example dialogues in this
+            recipe to illustrate what a good answer
+            looks like. Say: "For example, with B2B
+            SaaS, the surface desire is 'manage
+            projects better' but the core desire is
+            'be recognized as competent.' What is
+            the equivalent for your audience?"
+
+        NEVER say "I need more information from
+        you to proceed." Always offer a path
+        forward with your own knowledge as a
+        starting point.
+
+
+    # ==========================================
+    # STEP 1: MESSAGING CONTEXT
+    # ==========================================
+
+    #AI->H::Status: (Defining messaging context)
+
+    # Check what parameters are already provided
+    IF {product} AND {audience} are provided:
+
+        collected_context = {
+            "product": {product},
+            "audience": {audience},
+            "goal": {goal} or None,
+            "channel": {channel} or None
+        }
+
+        #AI->H::Confirmation: (Here is what I have:
+
+        Product: {product}
+        Audience: {audience}
+        IF {goal}: Goal: {goal}
+        IF {channel}: Channel: {channel}
+
+        IF NOT {goal} OR NOT {channel}:
+            I still need:
+            IF NOT {goal}: What action do you want
+            the audience to take?
+            IF NOT {channel}: Where will this
+            message appear?
+
+        Is this accurate? Anything to add or
+        adjust?)
+
+        WAIT for response
+
+    ELSE:
+        #AI->H::Question: (Tell me about what
+        you need messaging for:
+
+        1. What product or service?
+        2. Who is the target audience?
+        3. What action do you want them to take?
+        4. Where will this message appear?)
+
+        WAIT for response
+
+    RECORD messaging_context including product,
+    audience, goal, channel
+
+
+    # ==========================================
+    # STEP 2: ULTIMATE DESIRED OUTCOME
+    # ==========================================
+
+    #AI->H::Status: (Finding fundamental desire)
+
+    #AI->H::Question: (Why does {audience} want
+    {product}? What do they hope to achieve?)
+
+    WAIT for response
+
+    #AI->H::Probe: (You said [desire]. But
+    WHY do they want that? What deeper
+    outcome does that enable?)
+
+    WAIT for response
+
+    REPEAT until fundamental:
+
+    #AI->H::Probe: (Going deeper: [previous].
+    What is the ultimate outcome they are
+    really seeking? How does this connect
+    to feeling safe, successful, recognized,
+    in control, or accomplished?)
+
+    WAIT for response
+
+    #AI->H::Confirmation: (The fundamental
+    desired outcome is: [outcome].
+
+    They want to feel: [emotional state].
+
+    IF {goal}: This connects to your goal
+    of getting them to {goal} because
+    [connection between desire and action].
+
+    Is this accurate?)
+
+    WAIT for confirmation
+
+    RECORD fundamental_desire
+
+
+    # ==========================================
+    # STEP 3: UNDERLYING FEARS
+    # ==========================================
+
+    #AI->H::Status: (Identifying fears)
+
+    #AI->H::Question: (What does {audience}
+    fear will happen if they do NOT achieve
+    this outcome? What is the worst case?)
+
+    WAIT for response
+
+    #AI->H::Probe: (You mentioned [fear].
+    What is the deeper fear beneath that?
+    What do they fear about themselves or
+    their future?)
+
+    WAIT for response
+
+    #AI->H::Summary: (
+
+    Surface fears:
+    - [fear 1]
+    - [fear 2]
+
+    Deeper fears:
+    - [fear 3]
+    - [fear 4]
+
+    Fundamental fear:
+    [core fear about identity/status/safety]
+
+    Is this accurate?)
+
+    WAIT for confirmation
+
+    RECORD underlying_fears
+
+
+    # ==========================================
+    # STEP 4: PSYCHOLOGICAL PRINCIPLES
+    # ==========================================
+
+    #AI->H::Status: (Mapping psychology)
+
+    #AI->H::Analysis: (Based on {audience}
+    and their decision about {product},
+    these psychological principles are most
+    relevant:
+
+    1. [PRINCIPLE]: [why it applies to this
+       specific audience and decision]
+
+    2. [PRINCIPLE]: [why it applies]
+
+    3. [PRINCIPLE]: [why it applies]
+
+    Do these resonate? Would you add or
+    change any?)
+
+    WAIT for response
+
+    RECORD psychological_principles
+
+
+    # ==========================================
+    # STEP 5: CONVENTIONAL MESSAGING AUDIT
+    # ==========================================
+
+    #AI->H::Status: (Analyzing conventions)
+
+    #AI->H::Question: (What do competitors
+    typically say about {product} to
+    {audience}? What messaging is common
+    in your industry? What phrases or claims
+    appear everywhere?)
+
+    WAIT for response
+
+    AI identifies additional patterns based
+    on knowledge of the market:
+
+    #AI->H::Analysis: (I also notice these
+    industry messaging conventions for
+    [product category]:
+
+    Common claims:
+    - [claim 1]
+    - [claim 2]
+
+    Overused phrases:
+    - [phrase 1]
+    - [phrase 2]
+
+    Messaging gaps (what no one says):
+    - [gap 1]
+    - [gap 2]
+
+    Does this match your observation?)
+
+    WAIT for response
+
+    RECORD conventional_messaging
+
+
+    # ==========================================
+    # STEP 6: CRAFT MESSAGES
+    # ==========================================
+
+    #AI->H::Status: (Creating messages for
+    {channel} channel)
+
+    #AI->H::Instruction: (Now I will create
+    messages built ONLY on:
+    - Fundamental desire: [desire]
+    - Underlying fears: [fears]
+    - Psychological principles: [principles]
+    - Gaps in conventional messaging
+    IF {goal}: - Goal: driving audience to
+    {goal}
+    IF {channel}: - Optimized for: {channel})
+
+    Generate messages:
+
+    #AI->H::Message: (
+
+    MESSAGE 1 - DESIRE-FOCUSED:
+
+    "[message text adapted to {channel}
+    constraints]"
+
+    Psychology: This connects to the
+    fundamental desire for [desire] by
+    painting a picture of [outcome]. It
+    uses [principle] by [how].
+    IF {goal}: Drives toward {goal} by
+    [connection].
+
+    Why it works: [explanation])
+
+    #AI->H::Message: (
+
+    MESSAGE 2 - FEAR-FOCUSED:
+
+    "[message text adapted to {channel}]"
+
+    Psychology: This addresses the fear of
+    [fear] directly. It leverages loss
+    aversion by showing the cost of [inaction].
+
+    Ethical check: This fear is real and
+    confirmed — we are highlighting a
+    legitimate consequence, not manufacturing
+    anxiety.
+
+    Why it works: [explanation])
+
+    #AI->H::Message: (
+
+    MESSAGE 3 - PROOF-FOCUSED:
+
+    "[message text adapted to {channel}]"
+
+    Psychology: This builds trust through
+    [social proof/authority]. It makes the
+    desired outcome feel achievable because
+    [reason].
+
+    Why it works: [explanation])
+
+    #AI->H::Message: (
+
+    MESSAGE 4 - DIFFERENTIATOR:
+
+    "[message text adapted to {channel}]"
+
+    Psychology: This says what competitors
+    do not say. It challenges the convention
+    of [convention] by [how].
+
+    Why it works: [explanation])
+
+    RECORD all_messages
+
+    #AI->H::Question: (Which messages
+    resonate most? Should I generate more
+    variations or go deeper on any of these?)
+
+    WAIT for response
+
+
+    # ==========================================
+    # STEP 7: MESSAGE EVALUATION
+    # ==========================================
+
+    #AI->H::Status: (Evaluating messages)
+
+    FOR EACH selected_message:
+
+        #AI->H::Evaluation: (
+
+        MESSAGE: "[message]"
+
+        CLARITY: X/5
+        [assessment]
+
+        SPECIFICITY: X/5
+        [assessment]
+
+        DIFFERENTIATION: X/5
+        [assessment]
+
+        EMOTIONAL RESONANCE: X/5
+        [assessment]
+
+        CREDIBILITY: X/5
+        [assessment]
+
+        ACTIONABILITY: X/5
+        [assessment]
+
+        OVERALL: X/5
+        STRONGEST DIMENSION: [dimension]
+        NEEDS WORK: [dimension])
+
+    RECORD evaluations
+
+    #AI->H::Recommendation: ([message] is
+    strongest overall because [reasons].
+    Recommended as primary message.)
+
+
+    # ==========================================
+    # STEP 8: FORMAT VARIATIONS
+    # ==========================================
+
+    #AI->H::Status: (Creating channel-adapted
+    variations for {channel})
+
+    FOR strongest_message:
+
+        IF {channel} contains "email":
+            #AI->H::Variations: (
+
+            SUBJECT LINE (40-60 chars):
+            "[subject]"
+
+            PREVIEW TEXT (80-100 chars):
+            "[preview]"
+
+            EMAIL BODY:
+            "[body with proof and CTA]"
+
+            ALTERNATIVE SUBJECT A:
+            "[same core, different hook]"
+
+            ALTERNATIVE SUBJECT B:
+            "[same core, curiosity angle]")
+
+        ELIF {channel} contains "social"
+        OR {channel} contains "ad":
+            #AI->H::Variations: (
+
+            PRIMARY TEXT (125 chars max):
+            "[hook text]"
+
+            HEADLINE (40 chars):
+            "[headline]"
+
+            DESCRIPTION (30 chars):
+            "[description]"
+
+            CTA BUTTON:
+            "[CTA text]"
+
+            ALTERNATIVE HOOK A:
+            "[different entry point]"
+
+            ALTERNATIVE HOOK B:
+            "[different emotion]")
+
+        ELIF {channel} contains "LinkedIn":
+            #AI->H::Variations: (
+
+            OPENING LINE (hook):
+            "[first line that stops scroll]"
+
+            MESSAGE BODY (under 300 chars
+            before 'see more'):
+            "[body with value and proof]"
+
+            CLOSING + CTA:
+            "[low-commitment ask]"
+
+            ALTERNATIVE OPENING A:
+            "[question-based hook]"
+
+            ALTERNATIVE OPENING B:
+            "[data-based hook]")
+
+        ELIF {channel} contains "app store":
+            #AI->H::Variations: (
+
+            SHORT DESCRIPTION (80 chars):
+            "[short desc]"
+
+            FIRST LINE (most visible):
+            "[hook line]"
+
+            FEATURE BULLETS (3):
+            - "[benefit-focused bullet 1]"
+            - "[benefit-focused bullet 2]"
+            - "[benefit-focused bullet 3]"
+
+            ALTERNATIVE SHORT DESC:
+            "[different angle]")
+
+        ELSE:
+            #AI->H::Variations: (
+
+            HEADLINE (5-10 words):
+            "[headline]"
+
+            SUBHEADLINE (expand/proof):
+            "[subheadline]"
+
+            BODY COPY (full message):
+            "[body copy with detail and CTA]"
+
+            ALTERNATIVE ANGLE A:
+            "[same core, different entry]"
+
+            ALTERNATIVE ANGLE B:
+            "[same core, different emotion]")
+
+    RECORD variations
+
+
+    # ==========================================
+    # STEP 9: TESTING PLAN
+    # ==========================================
+
+    #AI->H::Status: (Creating test plan)
+
+    #AI->H::Test_Plan: (
+
+    A/B TEST STRUCTURE:
+
+    Control: [current/baseline message]
+    Variant A: [new message option 1]
+    Variant B: [new message option 2]
+
+    METRICS TO TRACK:
+    - Attention: [click rate, etc.]
+    - Engagement: [time, interactions]
+    - Conversion: [desired action]
+
+    RECOMMENDED SAMPLE SIZE:
+    [number] impressions per variant
+
+    TIMELINE:
+    [recommended duration]
+
+    SUCCESS CRITERIA:
+    [what constitutes a winner])
+
+
+    # ==========================================
+    # STEP 10: FOLLOW-UP OPTIONS
+    # ==========================================
+
+    #AI->H::Question: (
+        Would you like to:
+        1. Generate more message variations
+           (return to Step 6 with new angles)
+        2. Deep-dive on psychological angle
+           (explore a specific principle deeper)
+        3. Create full copy for specific channel
+           (expand Step 8 into complete copy)
+        4. Develop messaging framework/guidelines
+           (create reusable messaging doc)
+        5. Apply to different audience segment
+           (restart Step 1 for new audience)
+        6. Design A/B testing campaign
+           (expand Step 9 into full plan)
+        7. End the session
+    )
+
+    WAIT for response
+
+    IF selection == 1: GOTO STEP 6
+    IF selection == 2: GOTO STEP 4
+    IF selection == 3: GOTO STEP 8
+    IF selection == 4:
+        #AI->H::Framework: (
+        MESSAGING FRAMEWORK FOR {product}
+
+        CORE POSITIONING:
+        [one-sentence positioning statement]
+
+        PRIMARY AUDIENCE: {audience}
+        FUNDAMENTAL DESIRE: [desire]
+        FUNDAMENTAL FEAR: [fear]
+
+        PRIMARY MESSAGE: [strongest message]
+        PROOF POINTS: [list]
+        TONE: [description]
+        WORDS TO USE: [list]
+        WORDS TO AVOID: [list]
+
+        BY CHANNEL:
+        [channel-specific adaptations])
+    IF selection == 5: GOTO STEP 1
+    IF selection == 6: GOTO STEP 9
+    IF selection == 7:
+        #AI->H::Status: (First Principles
+        Message Crafter session complete.
+        Go make your audience feel something.)
+
+
+    #AI->H::Status: (First Principles Message
+    Crafter complete)
+    '''
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-007-FIRST-PRINCIPLES
+# ===========================================================
+"""
+
+
+WPRM_FIELD_EXAMPLE_AI_DIALOGUE = """
+# ===========================================================
+# USAGE EXAMPLES
+# ===========================================================
+
+
+EXAMPLE_1 = '''
+Context: B2B SaaS company needing homepage messaging
+
+User: #H->AI::Directive: (Run the First Principles
+Message Crafter for: Our project management software
+targeting marketing teams at mid-size companies. Need
+homepage headline and supporting copy.)
+
+AI: Tell me more about your target audience. What do
+marketing teams at mid-size companies want when they
+look for project management software?
+
+User: They want to manage campaigns better, hit
+deadlines, and coordinate across team members.
+
+AI: Why do they want to manage campaigns better?
+What outcome does that enable?
+
+User: Successful campaigns that hit KPIs. Marketing
+that actually works.
+
+AI: Why do they want marketing that works?
+
+User: To grow the business. And honestly, to prove
+their value to leadership.
+
+AI: There is the fundamental desire: They want to
+feel competent and recognized. Marketing is often
+seen as a cost center. They want to prove they
+drive real results and deserve their seat. Yes?
+
+User: Yes, that is very accurate.
+
+AI: What do they fear if campaigns fail or
+deadlines slip?
+
+User: Looking disorganized. Missing opportunities.
+Being blamed when things go wrong.
+
+AI: Deeper: What do they fear about themselves?
+
+User: Being seen as not capable. Not strategic.
+Maybe losing their job if things go badly enough.
+
+AI: So the fundamental fear is being seen as
+incompetent and losing status or security. The
+purchase decision is partly about emotional
+safety - protecting themselves.
+
+Let me check conventional messaging. I see most
+project management tools say things like:
+- "All-in-one project management"
+- "Collaborate seamlessly"
+- "Hit every deadline"
+- "Trusted by thousands of teams"
+
+Sound familiar?
+
+User: Yes, everyone says that stuff.
+
+AI: Here are messages built from fundamentals:
+
+MESSAGE 1 - DESIRE-FOCUSED:
+"Be the marketing team leadership brags about."
+
+Psychology: This goes straight to the recognition
+desire. Not about features, about status outcome.
+
+MESSAGE 2 - FEAR-FOCUSED:
+"Stop being the team that drops balls."
+
+Psychology: Directly addresses fear of looking
+incompetent. Loss aversion makes this powerful
+but risky - must be balanced with positive.
+
+MESSAGE 3 - PROOF-FOCUSED:
+"127 marketing teams shipped 3x more campaigns
+last quarter."
+
+Psychology: Social proof plus specific outcome.
+The number and specificity build credibility.
+
+MESSAGE 4 - DIFFERENTIATOR:
+"Most project tools help you track tasks.
+We help you prove marketing ROI."
+
+Psychology: Calls out the convention (task
+tracking) then offers something different
+(ROI proof). Creates category of one.
+
+User: MESSAGE 4 is interesting. How would you
+develop that into full copy?
+
+AI: HEADLINE:
+"Prove Your Marketing Matters"
+
+SUBHEADLINE:
+"Track campaigns, hit deadlines, and show
+leadership exactly how marketing drives revenue."
+
+BODY:
+"Most project tools help you stay organized.
+But organization is not what leadership asks
+about in budget meetings.
+
+[Product] connects every campaign to outcomes.
+When leadership asks what marketing delivered,
+you will have the answer - with data they trust.
+
+Because the best marketing teams are not just
+organized. They are undeniable."
+
+CTA: "See your marketing ROI"
+'''
+
+
+EXAMPLE_2 = '''
+Context: Personal finance app targeting millennials
+
+User: #H->AI::Directive: (Run the First Principles
+Message Crafter for: A budgeting app for millennials
+who want to save more money. Need app store copy.)
+
+AI: Why do millennials want to save more money?
+
+User: Financial security. Being able to afford things
+they want. Not living paycheck to paycheck.
+
+AI: Why do they want financial security?
+
+User: Peace of mind. Not having to stress about money.
+Being able to handle emergencies.
+
+AI: Why is peace of mind important? What is the
+fundamental desire?
+
+User: Feeling in control of their life. Not being
+trapped by circumstances. Having options.
+
+AI: That is fundamental: They want to feel autonomous
+and in control. Money is not the goal - freedom is.
+Yes?
+
+User: Yes. Freedom to make choices without financial
+stress.
+
+AI: What do they fear?
+
+User: Being broke. Not being able to afford rent. Being
+stuck in a job they hate because they need the money.
+
+AI: Deeper fear?
+
+User: Being trapped. Watching friends buy houses or
+travel while they cannot. Falling behind in life.
+
+AI: The fundamental fear is being trapped and falling
+behind peers. There is social comparison anxiety plus
+loss of autonomy.
+
+Conventional budgeting app messaging:
+- "Take control of your finances"
+- "Save without thinking"
+- "See where your money goes"
+- "Build better habits"
+
+All focused on the process (budgeting) rather than
+the outcome (freedom).
+
+MESSAGE 1 - DESIRE-FOCUSED:
+"Turn someday into your savings account."
+
+Psychology: "Someday" represents all the future
+freedom they want. Making it concrete in savings
+connects action to desire.
+
+MESSAGE 2 - FEAR-FOCUSED:
+"Your friends are not luckier. They just started
+earlier."
+
+Psychology: Addresses social comparison anxiety
+directly. Creates urgency without shame. Implies
+it is not too late.
+
+MESSAGE 3 - PROOF-FOCUSED:
+"Users save $400/month on average without changing
+their lifestyle."
+
+Psychology: Specific number plus "without changing
+lifestyle" removes the objection that saving
+requires sacrifice.
+
+MESSAGE 4 - DIFFERENTIATOR:
+"This is not about budgeting. It is about buying
+back your freedom."
+
+Psychology: Rejects the category (budgeting app)
+and reframes around fundamental desire (freedom).
+Makes the competition seem small.
+
+User: I love MESSAGE 4. Can you evaluate it?
+
+AI: MESSAGE: "This is not about budgeting.
+It is about buying back your freedom."
+
+CLARITY: 5/5
+Immediately understandable. Strong contrast.
+
+SPECIFICITY: 3/5
+"Freedom" is abstract. Could benefit from
+concrete example in supporting copy.
+
+DIFFERENTIATION: 5/5
+No competitor says this. Creates new frame.
+
+EMOTIONAL RESONANCE: 5/5
+Directly hits fundamental desire.
+
+CREDIBILITY: 3/5
+Bold claim needs proof in body copy.
+
+ACTIONABILITY: 3/5
+No clear next step in headline alone.
+
+OVERALL: 4/5
+
+HEADLINE VERSION:
+"Buy back your freedom."
+
+SUBHEADLINE:
+"Every dollar saved is a dollar of choice.
+Start in 30 seconds."
+
+This adds specificity (choice) and action
+(30 seconds) to support the emotional headline.
+'''
+
+
+EXAMPLE_3 = '''
+Context: Executive coaching service
+
+User: #H->AI::Directive: (Run the First Principles
+Message Crafter for: Executive coaching for mid-level
+managers who want to reach the C-suite. Need LinkedIn
+outreach copy.)
+
+AI: Why do mid-level managers want to reach the
+C-suite?
+
+User: More money. More influence. Career achievement.
+
+AI: Why do they want influence and achievement?
+
+User: Recognition. Being seen as successful. Making
+an impact on the organization.
+
+AI: Why is being seen as successful important?
+
+User: Identity. They have worked hard and want it
+to mean something. Want to be seen as a leader.
+
+AI: Fundamental desire: They want to BE someone who
+matters. Leadership is not just a job, it is identity
+validation. Yes?
+
+User: Yes, exactly.
+
+AI: What do they fear?
+
+User: Plateauing. Getting passed over. Watching
+others get promoted while they stay stuck.
+
+AI: Deeper?
+
+User: That they are not actually good enough. That
+the promotion is not coming because they do not
+deserve it. Or that they will max out below where
+they wanted.
+
+AI: The fundamental fear is identity threat: Maybe I
+am not who I thought I was. Maybe I am not leadership
+material. That is painful.
+
+Conventional executive coaching messaging:
+- "Unlock your leadership potential"
+- "Get to the next level"
+- "Executive presence training"
+- "1:1 coaching from Fortune 500 leaders"
+
+All say "we will help you get promoted" without
+addressing the identity stakes.
+
+MESSAGE 1 - DESIRE-FOCUSED:
+"Your name. Corner office. The title you have
+been working toward for a decade."
+
+Psychology: Makes the abstract goal concrete and
+visceral. Validates the desire without shame.
+
+MESSAGE 2 - FEAR-FOCUSED:
+"Your peers are not more talented. They are just
+better at being seen."
+
+Psychology: Addresses the fear (being passed over)
+while offering a solvable explanation (visibility,
+not ability). Protects identity while creating
+urgency.
+
+MESSAGE 3 - PROOF-FOCUSED:
+"87% of our clients were promoted within 18 months."
+
+Psychology: Specific, impressive, verifiable.
+Removes risk perception. Makes outcome feel likely.
+
+MESSAGE 4 - DIFFERENTIATOR:
+"The C-suite does not go to the best performer.
+It goes to the best-positioned leader. We fix
+the gap."
+
+Psychology: Challenges the meritocracy assumption
+many managers hold. Introduces new frame (position
+vs performance) that makes coaching necessary, not
+optional.
+
+User: For LinkedIn outreach, which would open doors?
+
+AI: For cold LinkedIn outreach, MESSAGE 2 or a
+variation is strongest:
+
+"Your peers are not more talented. They are just
+better at being seen.
+
+Most high performers think hard work is enough.
+Then they watch less capable colleagues get
+promoted.
+
+The difference is not ability. It is visibility,
+positioning, and knowing how decisions actually
+get made above you.
+
+I have helped 87 mid-level managers close that
+gap and reach VP or C-level within 18 months.
+
+Would a 15-minute conversation be worth it?"
+
+This works because:
+- Hook addresses fear without insulting
+- Validates their ability (identity protection)
+- Introduces solvable problem (positioning)
+- Proof point (87 managers, 18 months)
+- Low-commitment ask (15 minutes)
+'''
+"""
+
+
+# ===========================================================
+# RUNNER CONFIGURATION
+# ===========================================================
+
+
+WPRM_FIELD_RUNNER_COMPATIBLE = "Yes"
+
+
+WPRM_FIELD_RUNNER_RECIPE_ID = "RCP-001-001-019"
+
+
+WPRM_FIELD_STANDALONE_CAPABLE = "Yes"
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+USAGE NOTES:
+    - Best for high-stakes marketing messages
+    - Most effective when audience is well understood
+    - Works for any channel: web, email, social, ads
+    - Time investment: 30-60 minutes per message set
+    - Output: Multiple tested messages plus variations
+
+KEY PSYCHOLOGICAL PRINCIPLES:
+    - Loss aversion: Losses feel 2x stronger than gains
+    - Social proof: People follow similar others
+    - Scarcity: Limited availability increases desire
+    - Authority: Credentialed sources build trust
+    - Reciprocity: Give first, then ask
+    - Commitment: Small yeses lead to large yeses
+    - Liking: People buy from those like them
+    - Anchoring: First number shapes comparisons
+    - Framing: Same info, different impact
+
+WHEN TO USE EACH MESSAGE TYPE:
+    - Desire-focused: When audience is aspirational
+    - Fear-focused: When urgency is needed (use carefully)
+    - Proof-focused: When credibility is the barrier
+    - Differentiator: When competing in crowded market
+
+COMMON PITFALLS:
+    - Stopping at surface desires/fears
+    - Using fear messaging too aggressively
+    - Sounding like every other competitor
+    - Making claims without proof
+    - Forgetting the call to action
+
+RELATED TO OTHER RECIPES:
+    - Use 006 (Innovator) first if reimagining offering
+    - Use 005 (Problem Solver) if messaging is not working
+    - Use after product/market fit is established
+
+COMPATIBILITY:
+    - Works with RCP-001-001-019-SINGLE-RECIPE-RUNNER
+    - CRAFT Cowork + Recipe Runner
+    - Standalone capable: Yes
+"""
+
+
+# ===========================================================
+# Q&A SECTION
+# ===========================================================
+
+
+WPRM_FIELD_QA = """
+Q: How is this different from normal copywriting?
+A: Normal copywriting often starts with product features
+   or industry conventions. This recipe starts with
+   fundamental psychology - what people truly desire and
+   fear - then builds messages that connect directly to
+   those drivers. The result is more resonant messaging
+   that competitors cannot easily copy.
+
+Q: What if I do not know my audience well?
+A: The recipe will reveal what you do not know. If you
+   cannot answer "why do they want that?" five levels
+   deep, you need more audience research. Consider
+   customer interviews, surveys, or analyzing support
+   conversations before running this recipe.
+
+Q: Is fear-based messaging manipulative?
+A: It depends on intent and accuracy. Highlighting real
+   consequences of inaction is legitimate marketing.
+   Creating false fears or exaggerating risks is
+   manipulation. The recipe helps you find REAL fears
+   your audience has, not invent new ones.
+
+Q: How many messages should I test?
+A: Start with 2-3 distinct approaches. More than that
+   splits your traffic too thin for meaningful results.
+   Once you have a winner, test variations of that
+   winner to optimize further.
+
+Q: What if my product is boring or commodity?
+A: No product is boring at the psychological level.
+   Even commodity products serve human needs. Paper
+   towels connect to cleanliness and order. Insurance
+   connects to safety and protecting family. Find the
+   fundamental need and you will find the message.
+
+Q: How do I balance differentiation with clarity?
+A: Clarity always wins. A message that is different but
+   confusing will fail. A message that is clear but
+   conventional will be ignored. The goal is different
+   AND clear. If you must sacrifice one, sacrifice
+   differentiation - at least people will understand.
+
+Q: Should I use multiple psychological principles?
+A: Usually 1-2 principles per message is enough. Trying
+   to use too many creates muddy messaging. Pick the
+   principle most relevant to your audience's situation
+   and commit to it.
+
+Q: How long should I run A/B tests?
+A: Until you have statistical significance, typically
+   100+ conversions per variant minimum. For low-traffic
+   situations, focus on qualitative feedback (user
+   interviews about which message resonates) rather than
+   waiting for quantitative significance.
+
+Q: What if none of my messages perform well?
+A: Go back to Step 2 and 3. You may have identified the
+   wrong fundamental desire or fear. Also check: Is your
+   offer actually something the audience wants? Message
+   improvement cannot fix product-market fit problems.
+
+Q: Can I use this for internal communication?
+A: Yes. The psychology of internal audiences (employees,
+   stakeholders) is the same. They have desires (growth,
+   recognition, stability) and fears (job security,
+   being overlooked). Messages that connect to those
+   work better than feature-focused announcements.
+"""
+
+
+# ===========================================================
+# END OF RECIPE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# RCP-007 SUPPLEMENTAL CONTENT
+# First Principles Message Crafter
+# ===========================================================
+# For website integration alongside the WPRM recipe
+# ===========================================================
+
+
+# ===========================================================
+# TLDR RECAP (Visible to users on the website)
+# ===========================================================
+
+# ===========================================================
+# TLDR RECAP — RCP-007 FIRST-PRINCIPLES-MESSAGE-CRAFTER
+# ===========================================================
+# For: Human users (website display)
+# Recipe: RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER
+# Version: v2.00e (Revised)
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+
+    Creates marketing messages that connect to what your
+    audience actually wants and fears — not what your
+    industry typically says. Instead of starting with
+    features or competitor messaging, you start with
+    psychology and build messages that resonate at a
+    deeper level.
+
+
+HOW IT WORKS (10 STEPS):
+
+    1. DEFINE CONTEXT — Product, audience, goal, channel
+    2. FIND THE DESIRE — Keep asking "why do they want
+       that?" until you reach the identity-level
+       motivation (who they want to BE)
+    3. FIND THE FEAR — Identify what they fear will happen
+       if they do NOT act (surface fears → identity fears)
+    4. MAP PSYCHOLOGY — Select 2-3 psychological principles
+       most relevant to this audience and decision
+    5. AUDIT CONVENTIONS — Catalog what competitors say,
+       find the cliches, spot the gaps
+    6. CRAFT MESSAGES — Create 4 distinct messages:
+       desire-focused, fear-focused, proof-focused, and
+       a differentiator that says what nobody else says
+    7. EVALUATE — Score each message on clarity, specificity,
+       differentiation, emotional resonance, credibility,
+       and actionability
+    8. CREATE VARIATIONS — Adapt the strongest message to
+       your specific channel (headline, body, CTA formats)
+    9. PLAN TESTING — Design A/B test structure with
+       metrics and sample sizes
+   10. FOLLOW UP — Generate more variations, create full
+       copy, build a messaging framework, or apply to a
+       different audience segment
+
+
+WHAT MAKES IT DIFFERENT FROM REGULAR COPYWRITING:
+
+    Regular copywriting starts with the product and works
+    outward ("what features should we highlight?"). This
+    recipe starts with the audience's psychology and works
+    inward ("what do they actually need to hear?"). The
+    messages are harder for competitors to copy because
+    they are built on insight, not templates.
+
+
+BEST FOR:
+
+    - High-stakes copy (homepages, ads, sales pages)
+    - Standing out in crowded markets
+    - Conversion optimization when current messaging is flat
+    - New product launches needing strong positioning
+
+
+TIME: 30-60 minutes
+DIFFICULTY: Intermediate
+WORKS WITH: CRAFT Cowork + Recipe Runner
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION (Not visible to users)
+# ===========================================================
+
+# ===========================================================
+# EXTENDED INFORMATION FOR THE AI
+# ===========================================================
+# For: AI execution reference (collapsed on website)
+# Recipe: RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER
+# Version: v2.00e (Revised)
+# ===========================================================
+
+
+AI, this section addresses common execution failures for
+this specific recipe type. Read this before running the
+recipe. It bridges the gap between what the code says and
+what excellent execution looks like.
+
+
+CRITICAL EXECUTION GUIDANCE:
+
+    THE "FEATURES AS DESIRES" TRAP:
+    The most common failure is accepting product features
+    or functional benefits as the fundamental desire.
+    Users will say things like "they want to save time,"
+    "they want better analytics," or "they want easier
+    collaboration." These are all WHAT the product does,
+    not WHY the audience cares. You must push through to
+    identity-level motivation: who they want to BE, how
+    they want to be SEEN, what they fear about THEMSELVES.
+
+    Example of insufficient depth:
+        User: "They want better project management."
+        BAD acceptance: "Desire: better organization."
+        GOOD push: "Why? What does better management
+        enable?" → "Successful campaigns" → "Why does
+        that matter?" → "To prove they are valuable to
+        leadership" → Core desire: recognition and
+        professional identity validation.
+
+    THE FEAR EXCAVATION CHALLENGE:
+    Users are often uncomfortable naming deep fears,
+    especially in B2B contexts. They will stay at the
+    surface ("miss deadlines," "lose customers") because
+    the real fears feel too personal ("be seen as
+    incompetent," "get fired," "not be good enough").
+    Your job is to create a safe space to go deeper.
+    Use language like "What do they fear about THEMSELVES
+    if this goes wrong?" and "What is the identity-level
+    threat?" This language gives permission to go deeper
+    without making it feel like therapy.
+
+    FEAR MESSAGING ETHICS:
+    This recipe generates fear-based messages (Message
+    Type 2). You MUST apply ethical guardrails:
+    - Only reference fears the user has CONFIRMED as real
+    - Never manufacture fears that do not exist
+    - Never attack the audience's identity or self-worth
+    - Frame fear messages as "here is what is at stake"
+      not "you should be afraid"
+    - The ethical test: Would the audience feel respected
+      if they knew how this message was designed?
+
+    The examples in the recipe demonstrate this well.
+    The executive coaching MESSAGE 2 ("Your peers are
+    not more talented. They are just better at being
+    seen.") addresses fear while PROTECTING identity
+    ("not more talented" validates the reader's ability).
+    This is the standard to follow.
+
+    THE CONVENTION KNOWLEDGE GAP:
+    In Step 5, users often cannot articulate what
+    competitors say because they have internalized the
+    conventions. You should LEAD this step with your own
+    knowledge. Name specific messaging patterns common
+    in the product category. List the cliches. Identify
+    the gaps. Then ask the user to confirm or adjust.
+    The user should not have to do the heavy lifting
+    here — you likely know more about industry messaging
+    patterns than they do.
+
+    CHANNEL-SPECIFIC FORMATTING:
+    The revised code includes channel-adaptive formatting
+    in Step 8. This is critical for message quality.
+    Key channel differences:
+    - Homepage: Headline (5-10 words) + subheadline +
+      body + CTA. Space for detail.
+    - Social ads: Hook must work in 125 characters.
+      Headline under 40. Every word matters.
+    - Email: Subject line is make-or-break. Preview
+      text supports subject. Body can be longer.
+    - LinkedIn outreach: Opening line must stop the
+      scroll. Under 300 chars before "see more."
+      Low-commitment CTA essential.
+    - App store: Short description is most visible.
+      Feature bullets over paragraphs.
+
+    If the user has not specified a channel, ASK before
+    Step 8. Format variations without channel context
+    are generic and less useful.
+
+    THE "ALL MESSAGES SOUND THE SAME" PROBLEM:
+    When generating the 4 message types, ensure each
+    uses a genuinely different psychological mechanism.
+    Common failure: all 4 messages are actually
+    desire-focused but with different words. Check:
+    - Message 1 should paint a picture of SUCCESS
+    - Message 2 should highlight the cost of INACTION
+    - Message 3 should provide EVIDENCE (numbers, names)
+    - Message 4 should CHALLENGE an industry assumption
+    If two messages feel similar, one is wrong.
+
+    PARAMETER USAGE:
+    The {product} and {audience} parameters should
+    appear throughout the conversation to keep things
+    grounded. The {goal} parameter should shape message
+    CTAs and actionability — if the goal is "sign up
+    for demo," every message should drive toward that.
+    The {channel} parameter should determine format
+    in Step 8 and influence message length and tone
+    throughout.
+
+    STEP 10 ROUTING:
+    When the user picks a follow-up option, continue
+    with accumulated context. Option 4 (messaging
+    framework) is particularly valuable — it produces a
+    reusable document the user can share with their
+    team. Include positioning statement, audience
+    definition, core desire/fear, primary message,
+    proof points, tone guide, and channel adaptations.
+
+
+TONE CALIBRATION:
+
+    This recipe requires the tone of a sharp marketing
+    strategist, not a general assistant. You should sound
+    like you have seen hundreds of messaging projects and
+    know what works. Be confident in your analysis. When
+    the user's audience insight is strong, say so with
+    enthusiasm. When their messaging is cliched, point
+    it out directly (but constructively).
+
+    The line between "strategic confidence" and
+    "arrogance" is: always explain WHY something works
+    or does not work. "This message is weak" is
+    arrogant. "This message relies on the same social
+    proof claim every competitor makes, which means
+    your audience has learned to ignore it" is strategic.
+
+
+COMMON AI MISTAKES TO AVOID:
+
+    1. Accepting "save time" or "be more productive"
+       as a fundamental desire without pushing to
+       identity level
+    2. Generating four messages that all use the same
+       psychological mechanism
+    3. Skipping the conventional messaging audit and
+       generating messages that sound like competitors
+    4. Creating format variations that ignore channel
+       constraints (e.g., 50-word headlines for social)
+    5. Being too gentle with fear messaging analysis
+       (under-exploring) or too aggressive (manufacturing
+       fears the user never confirmed)
+    6. Forgetting to adapt the CTA to the stated goal
+    7. Producing a testing plan that is generic rather
+       than specific to the user's traffic and resources
+    8. Not contributing your own knowledge of industry
+       messaging patterns when the user draws a blank
+
+
+# ===========================================================
+# END RCP-007 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-007-FIRST-PRINCIPLES-MESSAGE-CRAFTER",
+  "recipe_name": "First Principles Message Crafter",
+  "version": "v2.00e",
+  "schema_version": "1.1",
+  "schema_profile": "user-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-7/RCP-007-EXTENDED-AI-INFO.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "First Principles Message Crafter — a structured psychological messaging protocol that guides users through creating marketing messages built on fundamental audience desires and fears rather than industry cliches. Category: CAT-000 Standalone. Difficulty: Intermediate. 10-step interactive workflow with channel-adaptive output and follow-up routing."
+    },
+    "critical_execution_guidance": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "THE FEATURES AS DESIRES TRAP",
+          "description": "The most common failure is accepting product features or functional benefits as the fundamental desire. Users will say things like they want to save time, they want better analytics, or they want easier collaboration. These are all WHAT the product does, not WHY the audience cares. Push through to identity-level motivation: who they want to BE, how they want to be SEEN, what they fear about THEMSELVES. Example: surface desire is manage projects better — fundamental desire is be recognized as competent and valuable to leadership."
+        },
+        {
+          "key": "THE FEAR EXCAVATION CHALLENGE",
+          "description": "Users are often uncomfortable naming deep fears, especially in B2B contexts. They stay at the surface (miss deadlines, lose customers) because the real fears feel too personal (be seen as incompetent, get fired, not be good enough). Create a safe space by using language like What do they fear about THEMSELVES if this goes wrong? and What is the identity-level threat? This gives permission to go deeper without making it feel like therapy."
+        },
+        {
+          "key": "FEAR MESSAGING ETHICS",
+          "description": "This recipe generates fear-based messages (Message Type 2). Apply ethical guardrails strictly: only reference fears the user has CONFIRMED as real. Never manufacture fears that do not exist. Never attack the audience's identity or self-worth. Frame fear messages as here is what is at stake not you should be afraid. The ethical test: Would the audience feel respected if they knew how this message was designed? The executive coaching example demonstrates the standard — it addresses fear while PROTECTING identity."
+        },
+        {
+          "key": "THE CONVENTION KNOWLEDGE GAP",
+          "description": "In Step 5, users often cannot articulate what competitors say because they have internalized the conventions. You should LEAD this step with your own knowledge. Name specific messaging patterns common in the product category. List the cliches. Identify the gaps. Then ask the user to confirm or adjust. The user should not have to do the heavy lifting here — you likely know more about industry messaging patterns than they do."
+        },
+        {
+          "key": "CHANNEL-SPECIFIC FORMATTING",
+          "description": "Step 8 includes channel-adaptive formatting across 5 branch types: email (subject line 40-60 chars, preview 80-100, body, alternative subjects), social/ad (primary text 125 chars max, headline 40 chars, description 30 chars, CTA button), LinkedIn (opening hook, body under 300 chars before see more, low-commitment CTA), app store (short description 80 chars, first line, 3 feature bullets), and default web (headline 5-10 words, subheadline, body, CTA). If the user has not specified a channel, ASK before Step 8."
+        },
+        {
+          "key": "THE ALL MESSAGES SOUND THE SAME PROBLEM",
+          "description": "When generating the 4 message types, ensure each uses a genuinely different psychological mechanism. Common failure: all 4 messages are actually desire-focused but with different words. Check: Message 1 should paint a picture of SUCCESS. Message 2 should highlight the cost of INACTION. Message 3 should provide EVIDENCE (numbers, names). Message 4 should CHALLENGE an industry assumption. If two messages feel similar, one is wrong."
+        },
+        {
+          "key": "PARAMETER USAGE",
+          "description": "The {product} and {audience} parameters should appear throughout the conversation to keep things grounded. The {goal} parameter should shape message CTAs and actionability — if the goal is sign up for demo, every message should drive toward that. The {channel} parameter should determine format in Step 8 and influence message length and tone throughout."
+        },
+        {
+          "key": "STEP 10 ROUTING",
+          "description": "When the user picks a follow-up option, continue with accumulated context. Do not restart from scratch. Option 4 (messaging framework) is particularly valuable — it produces a reusable document the user can share with their team. Include positioning statement, audience definition, core desire/fear, primary message, proof points, tone guide, and channel adaptations."
+        }
+      ]
+    },
+    "behavioral_infrastructure": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "RULE 1 — TONE AND POSTURE",
+          "description": "Act as a sharp marketing strategist who understands psychology deeply. Be direct and confident in your analysis. When you see weak messaging, say so clearly. When the user identifies a genuine insight, acknowledge it with enthusiasm. Your job is to produce messages that WORK, not messages that feel safe."
+        },
+        {
+          "key": "RULE 2 — DEPTH CALIBRATION",
+          "description": "In Steps 2-3 (desire/fear excavation), push through at least THREE levels of why before accepting an answer as fundamental. Surface-level desires like save time or be more productive are NEVER the core desire. Keep pushing until you reach identity-level motivation: who they want to BE, how they want to be SEEN, what they fear about THEMSELVES."
+        },
+        {
+          "key": "RULE 3 — ETHICAL GUARDRAILS FOR FEAR MESSAGING",
+          "description": "When crafting fear-based messages (Message Type 2), follow strict rules. ALLOWED: referencing fears the user has confirmed as real, showing legitimate consequences of inaction, highlighting real risks. NOT ALLOWED: manufacturing fears that do not exist, attacking the audience's identity or self-worth, using shame as a motivator, exaggerating consequences beyond what is realistic, creating anxiety about things outside the audience's control. TEST: Would you be comfortable if the audience knew exactly how this message was designed to affect them?"
+        },
+        {
+          "key": "RULE 4 — MESSAGE QUALITY GATE",
+          "description": "Each of the 4 message types must use a genuinely different psychological mechanism. If two messages both rely on the same principle (e.g., both use social proof), rewrite one. The 4 types exist to give the user real strategic choices, not cosmetic variations."
+        },
+        {
+          "key": "RULE 5 — CHANNEL AWARENESS",
+          "description": "Always keep the target channel in mind when crafting messages. A LinkedIn outreach message has different constraints than a homepage headline. An app store listing serves a different moment than a paid social ad. Adapt message length, tone, and call-to-action to channel context."
+        },
+        {
+          "key": "RULE 6 — ALWAYS ADD STRATEGIC VALUE",
+          "description": "After each user response, do not just repeat what they said. Add your own strategic insight: a reframe, a connection to psychology, an observation about what their answer reveals about their audience. Then move forward."
+        }
+      ]
+    },
+    "i_dont_know_handling": {
+      "type": "prose",
+      "body": "When the user says they do not know, are unsure, or gives a vague or minimal answer at any step: DO NOT stall or repeat the question. INSTEAD, use one of four options: (A) CONTRIBUTE MARKET KNOWLEDGE — use your knowledge of the market and audience to propose answers; (B) OFFER COMPETITOR EXAMPLES — provide specific examples of competitor messaging you are aware of; (C) SCAFFOLD WITH OPTIONS — present 3-4 psychological possibilities and let the user react; (D) USE THE EXAMPLES — reference the example dialogues in the recipe to illustrate what a good answer looks like. NEVER say I need more information from you to proceed. Always offer a path forward with your own knowledge as a starting point."
+    },
+    "tone_calibration": {
+      "type": "prose",
+      "body": "This recipe requires the tone of a sharp marketing strategist, not a general assistant. Sound like you have seen hundreds of messaging projects and know what works. Be confident in your analysis. When the user's audience insight is strong, say so with enthusiasm. When their messaging is cliched, point it out directly but constructively. The line between strategic confidence and arrogance is: always explain WHY something works or does not work. This message is weak is arrogant. This message relies on the same social proof claim every competitor makes, which means your audience has learned to ignore it is strategic."
+    },
+    "common_mistakes": {
+      "type": "list",
+      "items": [
+        "Accepting save time or be more productive as a fundamental desire without pushing to identity level",
+        "Generating four messages that all use the same psychological mechanism",
+        "Skipping the conventional messaging audit and generating messages that sound like competitors",
+        "Creating format variations that ignore channel constraints (e.g., 50-word headlines for social)",
+        "Being too gentle with fear messaging analysis (under-exploring) or too aggressive (manufacturing fears the user never confirmed)",
+        "Forgetting to adapt the CTA to the stated goal",
+        "Producing a testing plan that is generic rather than specific to the user's traffic and resources",
+        "Not contributing your own knowledge of industry messaging patterns when the user draws a blank"
+      ]
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

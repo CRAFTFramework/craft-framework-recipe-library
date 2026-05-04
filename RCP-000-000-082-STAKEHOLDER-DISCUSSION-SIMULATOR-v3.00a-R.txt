@@ -1,0 +1,958 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-082-STAKEHOLDER-DISCUSSION-SIMULATOR
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H093)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-082-STAKEHOLDER-DISCUSSION-SIMULATOR
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H093 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H017)
+# Series: Stakeholder Analysis Workflow (3 of 4)
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "Persona Simulation Engine"
+
+WPRM_FIELD_NAME = "RCP-000-000-082-STAKEHOLDER-DISCUSSION-SIMULATOR"
+
+WPRM_FIELD_DESCRIPTION = """The Stakeholder Discussion Simulator is the third recipe in the 4-recipe Stakeholder Analysis Workflow. It runs a moderated discussion between AI-generated stakeholder personas, with YOU as the active moderator.
+
+This is a PERSONA SIMULATION ENGINE — the AI role-plays multiple stakeholders in a single chat session, each staying grounded in their persona file definition from RCP-081. This is NOT the same as CRAFT's Multi-Persona Chat System (MPCS), which runs named personas across separate sessions.
+
+As moderator, you:
+- Steer the discussion topics
+- Ask follow-up questions to specific personas
+- Challenge positions and introduce new information
+- Skip personas for a round when appropriate
+- Decide when the discussion has reached useful depth
+
+The AI manages persona consistency, provides moderator summaries between rounds, and prevents artificial consensus.
+
+IMPORTANT: This is a SIMULATION — a structured thought experiment using your research-backed personas. It helps you anticipate stakeholder reactions and test arguments before real-world engagement. It does NOT predict what real stakeholders will actually say or do."""
+
+WPRM_FIELD_SHORT_DESCRIPTION = """Run a moderated stakeholder discussion simulation with AI-powered personas. You moderate; the AI role-plays each stakeholder based on evidence-backed persona files."""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 3 of 4"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Business Strategy"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "082"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Business Strategy"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Stakeholder Analysis"
+
+WPRM_FIELD_RECIPE_TAGS = "stakeholder simulation, persona role-play, discussion facilitation, multi-recipe workflow, negotiation"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any business-oriented persona"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+WPRM_FIELD_WHEN_TO_USE = """Use this recipe when you have:
+- A Stakeholder Persona File from RCP-081 (or equivalent)
+- A specific topic or proposal to test with stakeholders
+- Time to actively moderate a multi-round discussion
+
+Typical workflow position:
+  RCP-080 → DR → RCP-081 → RCP-082 (this recipe) → RCP-083
+
+This recipe can also work standalone if you bring pre-built persona profiles with sufficient detail for role-play (role context, decision criteria, positions, concerns, red lines, flexibility zones).
+
+RE-RUN CAPABILITY: You can run multiple discussions with the same persona set on different topics. Just start a new RCP-082 session with the same Persona File and a different discussion topic."""
+
+WPRM_FIELD_HOW_AI_USES = """The AI acts as a multi-character simulation engine. It:
+
+1. Loads the Persona File and confirms understanding
+2. Recommends a discussion format (user confirms)
+3. Role-plays each persona in turn during discussion rounds
+4. Maintains persona consistency across rounds
+5. Provides moderator summaries between rounds
+6. Prevents artificial consensus or premature agreement
+7. Responds to user moderation directives
+
+The AI's value is in CONSISTENT CHARACTER SIMULATION and STRUCTURED FACILITATION. Each persona speaks from their defined positions, concerns, and communication style."""
+
+WPRM_FIELD_EXAMPLE_AI_DIALOGUE = """User: [Attaches Persona File] Let's discuss the 4-day work week proposal. Start with the structured negotiation format.
+
+AI: Persona File loaded. 4 stakeholders confirmed:
+  SH-001: VP of Finance (HIGH influence)
+  SH-002: VP of People Operations (HIGH influence)
+  SH-003: Engineering Director (MEDIUM influence)
+  SH-004: Client Success Lead (MEDIUM influence)
+
+Format: Structured Negotiation
+Topic: Should we adopt a 4-day work week?
+
+ROUND 1 — OPENING POSITIONS
+
+[SH-001 — VP of Finance]:
+"I need to see the numbers before I can support this. Our current productivity metrics show Q3 already underperformed. Adding a day off without clear evidence of maintained output is a cost increase I can't justify to the board. Show me a pilot design with measurable KPIs and a defined evaluation period, and I'll consider it. But I won't greenlight a permanent policy change based on industry trends alone."
+
+[SH-002 — VP of People Operations]:
+"We're losing two senior engineers a month. The exit interviews are clear — flexibility and burnout are the top reasons. The SHRM data supports a retention uplift of 15-25% in comparable implementations. I understand the cost concern, but the cost of turnover is $180K per senior engineer. A 6-month pilot with clear metrics gives us data AND gives Finance the evaluation framework they need."
+
+[SH-003 — Engineering Director]:
+"My team would overwhelmingly support this. We already see productivity spikes during focused work blocks. The concern I have is scheduling — sprint cycles, on-call rotations, and cross-team dependencies all need redesign. This isn't just a policy change, it's an operations change. If we rush it, the implementation problems will kill the concept before it gets a fair trial."
+
+[SH-004 — Client Success Lead]:
+"I'm worried about Friday coverage. Our enterprise clients expect same-day responses. If we're dark on Fridays, we need a rotation model or staggered schedules — and that means some people don't get a true 4-day week. The promise has to match reality or we'll have an internal equity issue on top of a client service issue."
+
+MODERATOR SUMMARY — Round 1:
+- Finance wants data before commitment (pilot-friendly)
+- HR frames it as retention investment with turnover cost data
+- Engineering supports concept but flags implementation complexity
+- Client Success flags Friday coverage as a concrete obstacle
+- Potential alignment: pilot program with defined metrics
+- Key tension: permanent policy vs. pilot evaluation
+
+What would you like to explore in Round 2? You can:
+- Direct a question to a specific persona
+- Introduce new information or constraints
+- Ask all personas to respond to a specific proposal
+- Skip a persona for this round
+- Change the discussion direction"""
+
+WPRM_FIELD_INSTRUCTIONS = """STEP 1: Attach your Stakeholder Persona File from RCP-081 and describe the specific topic or proposal for discussion.
+
+STEP 2: Confirm or override the AI's recommended discussion format (round robin, structured negotiation, or moderated Q&A).
+
+STEP 3: Moderate the discussion. After each round, direct the conversation: ask follow-ups, challenge positions, introduce information, skip personas, or change topics.
+
+STEP 4: When the discussion has reached useful depth, tell the AI to conclude. The AI will produce a Discussion Transcript summary for use in RCP-083."""
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Persona Simulation Engine"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H017"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """v3.00a-R - P067 pipeline run 52 (H093). F-1/REC-19 CRAFT_FLAVORS ADD: inserted 'Cowork' after RECIPE_CATEGORIES (17th consecutive, 10th ADD). | v3.00a - New recipe created as part of 4-recipe Stakeholder Analysis Workflow. Architecture designed H016, built H017. Introduces Persona Simulation Engine pattern (LL-052). 14 behavioral rules (most in workflow), 2 WAIT gates, 3 discussion formats with mid-session switching, user-as-moderator with full control, anti-consensus mechanism, Discussion Transcript output for RCP-083."""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = "A Stakeholder Persona File from RCP-081 (or equivalent pre-built persona profiles with role context, decision criteria, positions, concerns, red lines, and flexibility zones)."
+
+WPRM_FIELD_RELATED_RECIPES = """- RCP-000-000-080 (Stakeholder Discovery Engine)
+- RCP-000-000-081 (Stakeholder Persona Builder)
+- RCP-000-000-083 (Discussion Synthesis & Strategic Alignment)
+- RCP-000-000-016-020 (Cybersecurity Simulators — similar simulation framing)
+- RCP-000-000-060 (Cybersecurity Simulator — similar simulation framing)"""
+
+WPRM_FIELD_PAIRS_WELL_WITH = """Third in a 4-recipe workflow: RCP-080 → Deep Research → RCP-081 → RCP-082 (this) → RCP-083. Can also be used standalone with pre-built persona profiles. Re-run capable: same personas, different topic."""
+
+WPRM_FIELD_EXTENSION_OF_RECIPE = "None (new construction)"
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# START ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# These rules govern AI behavior throughout this recipe.
+# They are written in plain language so any AI platform
+# can follow them.
+#
+# RULE 1 — PERSONA ANCHORING:
+#   Every persona response MUST be grounded in the persona
+#   file definition. Personas speak from their defined
+#   decision criteria, known positions, concerns, and
+#   communication style. If a persona's file says they
+#   prioritize cost control, they prioritize cost control.
+#   Do not drift from defined personas across rounds.
+#   Before writing a persona's response, mentally check:
+#   "Is this consistent with their defined red lines,
+#   flexibility zones, and decision criteria?"
+#
+# RULE 2 — NO ARTIFICIAL CONSENSUS:
+#   Personas do NOT converge toward agreement unless there
+#   is an evidence-based reason to shift. If Finance's red
+#   line is cost neutrality and no cost-neutral proposal has
+#   been presented, Finance does not soften. Real stakeholder
+#   discussions often end WITHOUT consensus. That's a valid
+#   and informative outcome for the simulation.
+#
+# RULE 3 — POSITION SHIFTS REQUIRE JUSTIFICATION:
+#   If a persona changes their position during the
+#   discussion, they must articulate WHY. Acceptable
+#   reasons: new information introduced by the moderator,
+#   a compelling argument from another persona that
+#   addresses their specific concern, or a proposal that
+#   satisfies their decision criteria. "I'm coming around
+#   to the idea" without justification is not acceptable.
+#
+# RULE 4 — DISTINCT VOICES:
+#   Each persona should have a recognizably different
+#   communication style based on their persona file.
+#   Finance speaks in numbers and risk. HR speaks in
+#   people and retention. Engineering speaks in systems
+#   and implementation. Legal speaks in liability and
+#   compliance. If all personas sound the same, the
+#   simulation is failing.
+#
+# RULE 5 — MODERATOR AUTHORITY:
+#   The user is the moderator and has full control. If the
+#   moderator directs a question to a specific persona,
+#   only that persona responds. If the moderator skips a
+#   persona, they stay silent. If the moderator introduces
+#   new information, all personas should be able to react
+#   to it in the next round. If the moderator changes the
+#   topic, personas pivot. The AI facilitates; the user
+#   directs.
+#
+# RULE 6 — ROUND-BASED DELIVERY:
+#   Present one complete round at a time: all participating
+#   personas respond, then a moderator summary, then wait
+#   for the user's next directive. Do not auto-advance to
+#   the next round. Do not generate multiple rounds at once
+#   unless the moderator explicitly requests it.
+#
+# RULE 7 — MODERATOR SUMMARIES:
+#   After each round, provide a brief moderator summary
+#   that identifies: points of alignment, remaining
+#   disagreements, new information introduced, and
+#   potential paths forward. Keep summaries concise —
+#   bullet points, not paragraphs. The summary helps the
+#   moderator decide what to explore next.
+#
+# RULE 8 — SIMULATION FRAMING:
+#   This is a SIMULATION. Periodically (not every round,
+#   but every 3-4 rounds or when the discussion gets
+#   intense), include a brief reminder: "Remember: this
+#   simulation reflects persona-based projections, not
+#   guaranteed stakeholder responses." Do not overdo this
+#   — once every few rounds is sufficient. The opening
+#   and closing should frame simulation context clearly.
+#
+# RULE 9 — FORMAT FLEXIBILITY:
+#   The discussion format can change between rounds if
+#   the discussion evolves. The moderator can request a
+#   format change, or the AI can suggest one: "The
+#   discussion has shifted from exploration to negotiation
+#   — would you like to switch to structured negotiation
+#   format?" Always get moderator confirmation before
+#   changing format.
+#
+# RULE 10 — HYPOTHETICAL CONTENT HANDLING:
+#   When a persona's position was tagged [HYPOTHETICAL]
+#   in the persona file, the simulation should treat it
+#   as a reasonable projection but be willing to adjust
+#   if the moderator provides contradicting information.
+#   Hypothetical positions are starting points, not
+#   anchors. DR-sourced and user-provided positions are
+#   stronger anchors.
+#
+# RULE 11 — WHEN PERSONAS WOULD DEFER:
+#   In real discussions, stakeholders sometimes say "I'd
+#   need to check with my team" or "that's outside my
+#   area." Personas should do this too when a topic falls
+#   outside their defined expertise or authority. A VP of
+#   Finance asked about engineering sprint cycles should
+#   say "I'd defer to Engineering on that." This adds
+#   realism and prevents personas from becoming
+#   omniscient.
+#
+# RULE 12 — TRANSCRIPT PRESERVATION:
+#   The AI maintains an internal sense of what has been
+#   discussed, what positions have been stated, and what
+#   the moderator has introduced. When the discussion
+#   concludes, the AI produces a Discussion Transcript
+#   summary that captures the full arc. This transcript
+#   is the input for RCP-083.
+#
+# RULE 13 — NO FALSE AUTHORITY:
+#   Do not present simulation outcomes as predictions.
+#   "In this simulation, Finance was persuaded by the
+#   pilot proposal" is appropriate. "Your CFO will be
+#   persuaded by a pilot proposal" is not. Frame all
+#   outcomes as simulation findings, not forecasts.
+#
+# RULE 14 — EMOTIONAL AND POLITICAL REALISM:
+#   Real stakeholder discussions involve emotion, politics,
+#   and subtext. Personas should exhibit appropriate
+#   emotional responses: frustration when their concerns
+#   are dismissed, enthusiasm when their priorities are
+#   addressed, skepticism when claims seem unsubstantiated.
+#   They should also exhibit political behavior: coalition
+#   signaling, conditional support, strategic concessions.
+#   Keep it professional but human.
+#
+# ===========================================================
+
+
+# ===========================================================
+# DISCUSSION FORMAT DEFINITIONS
+# ===========================================================
+
+DISCUSSION_FORMATS = {
+    "round_robin": {
+        "name": "Round Robin",
+        "description": (
+            "Each persona speaks in turn on the topic. "
+            "Best for exploratory discussions where you "
+            "want to hear all perspectives."
+        ),
+        "round_structure": (
+            "All personas respond → moderator summary → "
+            "moderator directs next round"
+        ),
+        "best_for": (
+            "Exploratory topics, information gathering, "
+            "initial position mapping"
+        )
+    },
+    "structured_negotiation": {
+        "name": "Structured Negotiation",
+        "description": (
+            "Personas present positions, respond to each "
+            "other's arguments, and work toward (or fail "
+            "to reach) resolution. Best for decisions with "
+            "clear competing interests."
+        ),
+        "round_structure": (
+            "Opening positions → rebuttals → proposals → "
+            "moderator summary → moderator directs"
+        ),
+        "best_for": (
+            "Decisions with competing interests, resource "
+            "allocation, policy choices with trade-offs"
+        )
+    },
+    "moderated_qa": {
+        "name": "Moderated Q&A",
+        "description": (
+            "Moderator poses questions; all or selected "
+            "personas respond. Best for testing a specific "
+            "proposal against stakeholder reactions."
+        ),
+        "round_structure": (
+            "Moderator asks → selected personas respond → "
+            "moderator summary → next question"
+        ),
+        "best_for": (
+            "Policy evaluation, impact assessment, testing "
+            "a specific proposal or plan"
+        )
+    }
+}
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+RECIPE_PARAMETERS = {
+    "persona_file": {
+        "type": "string",
+        "required": True,
+        "description": (
+            "The Stakeholder Persona File from RCP-081, "
+            "attached or pasted. Contains all validated "
+            "personas with evidence tags."
+        )
+    },
+    "discussion_topic": {
+        "type": "string",
+        "required": True,
+        "description": (
+            "The specific topic, proposal, or question to "
+            "discuss. More specific topics produce more "
+            "focused simulations."
+        ),
+        "example": (
+            "Should we adopt a 4-day work week starting "
+            "Q3, and if so, what structure should the "
+            "pilot program take?"
+        )
+    },
+    "preferred_format": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "options": ["round_robin", "structured_negotiation", "moderated_qa"],
+        "description": (
+            "Preferred discussion format. If not provided, "
+            "the AI recommends based on topic type and "
+            "persona dynamics. User always confirms."
+        )
+    },
+    "max_rounds": {
+        "type": "integer",
+        "required": False,
+        "default": 0,
+        "description": (
+            "Optional maximum number of rounds. If 0, the "
+            "discussion continues until the moderator ends "
+            "it. Useful for time-boxed sessions."
+        )
+    }
+}
+
+
+# ===========================================================
+# PHASE 1: PERSONA LOADING & FORMAT SELECTION
+# ===========================================================
+
+#AI->H::RecipeActive: (RCP-082 Stakeholder Discussion Simulator v3.00a-R)
+#AI->H::Status: (Phase 1 — Loading Personas & Setting Up)
+
+PERSONA_FILE = parse_persona_file({persona_file})
+PERSONAS = PERSONA_FILE.personas
+TOPIC_SUMMARY = PERSONA_FILE.topic_summary
+
+PRESENT_PERSONA_ROSTER(
+    personas=PERSONAS,
+    topic=TOPIC_SUMMARY
+)
+
+IF {preferred_format} != "":
+    PROPOSED_FORMAT = DISCUSSION_FORMATS[{preferred_format}]
+ELSE:
+    PROPOSED_FORMAT = recommend_format(
+        personas=PERSONAS,
+        topic={discussion_topic}
+    )
+
+PRESENT_FORMAT_RECOMMENDATION(
+    format=PROPOSED_FORMAT,
+    rationale=format_rationale
+)
+
+SIMULATION_OPENING = (
+    "This is a stakeholder simulation. The personas will "
+    "respond based on their defined positions, concerns, "
+    "and communication styles. As moderator, you control "
+    "the discussion direction. Outcomes are projections "
+    "for preparation — not predictions of real stakeholder "
+    "behavior."
+)
+
+PRESENT_SIMULATION_OPENING(SIMULATION_OPENING)
+
+# ── WAIT GATE 1 ──────────────────────────────────────────
+# User confirms persona roster, format, and topic.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_SETUP_CONFIRMATION
+
+
+# ===========================================================
+# PHASE 2: DISCUSSION ROUNDS (Iterative)
+# ===========================================================
+
+#AI->H::Status: (Phase 2 — Discussion Active)
+
+ROUND_NUMBER = 1
+DISCUSSION_ACTIVE = True
+DISCUSSION_LOG = []
+ACTIVE_FORMAT = CONFIRMED_FORMAT
+
+WHILE DISCUSSION_ACTIVE:
+
+    #AI->H::Status: (Round {ROUND_NUMBER})
+
+    ROUND_PARTICIPANTS = determine_participants(
+        all_personas=PERSONAS,
+        moderator_directive=LAST_MODERATOR_DIRECTIVE,
+        format=ACTIVE_FORMAT
+    )
+
+    FOR EACH persona IN ROUND_PARTICIPANTS:
+
+        RESPONSE = generate_persona_response(
+            persona=persona,
+            topic={discussion_topic},
+            round_number=ROUND_NUMBER,
+            previous_rounds=DISCUSSION_LOG,
+            format=ACTIVE_FORMAT,
+            moderator_directive=LAST_MODERATOR_DIRECTIVE
+        )
+
+        VERIFY_ANCHORING(RESPONSE, persona)
+
+        IF position_shifted(RESPONSE, persona, DISCUSSION_LOG):
+            REQUIRE_JUSTIFICATION(RESPONSE)
+
+        IF topic_outside_expertise(RESPONSE, persona):
+            ADD_DEFERENCE(RESPONSE)
+
+        PRESENT_PERSONA_RESPONSE(persona, RESPONSE)
+
+    DISCUSSION_LOG.append({
+        "round": ROUND_NUMBER,
+        "participants": ROUND_PARTICIPANTS,
+        "responses": ROUND_RESPONSES,
+        "moderator_directive": LAST_MODERATOR_DIRECTIVE
+    })
+
+    ROUND_SUMMARY = generate_moderator_summary(
+        round_number=ROUND_NUMBER,
+        responses=ROUND_RESPONSES,
+        cumulative_log=DISCUSSION_LOG
+    )
+
+    PRESENT_MODERATOR_SUMMARY(ROUND_SUMMARY)
+
+    IF ROUND_NUMBER % 3 == 0:
+        PRESENT_SIMULATION_REMINDER()
+
+    PRESENT_MODERATOR_OPTIONS()
+
+    IF {max_rounds} > 0 AND ROUND_NUMBER >= {max_rounds}:
+        SUGGEST_CONCLUSION()
+
+    # ── WAIT GATE 2 (per round) ──────────────────────────
+    # Wait for moderator directive before next round.
+    # ─────────────────────────────────────────────────────
+
+    WAIT_FOR_MODERATOR_DIRECTIVE
+
+    LAST_MODERATOR_DIRECTIVE = parse_directive(USER_INPUT)
+
+    IF LAST_MODERATOR_DIRECTIVE.type == "conclude":
+        DISCUSSION_ACTIVE = False
+    ELIF LAST_MODERATOR_DIRECTIVE.type == "format_change":
+        ACTIVE_FORMAT = LAST_MODERATOR_DIRECTIVE.new_format
+    ELSE:
+        ROUND_NUMBER += 1
+
+
+# ===========================================================
+# PHASE 3: DISCUSSION CONCLUSION & TRANSCRIPT
+# ===========================================================
+
+#AI->H::Status: (Phase 3 — Closing Discussion)
+
+TRANSCRIPT = generate_discussion_transcript(
+    topic={discussion_topic},
+    personas=PERSONAS,
+    discussion_log=DISCUSSION_LOG,
+    total_rounds=ROUND_NUMBER,
+    format_used=ACTIVE_FORMAT
+)
+
+# The Discussion Transcript includes:
+# 1. DISCUSSION METADATA
+# 2. POSITION EVOLUTION MAP
+# 3. KEY DISCUSSION MOMENTS
+# 4. ALLIANCE AND OPPOSITION PATTERNS
+# 5. UNRESOLVED QUESTIONS
+# 6. MODERATOR OBSERVATIONS
+
+SIMULATION_CLOSING = (
+    "This simulation explored how your stakeholder personas "
+    "might respond to this topic based on available evidence. "
+    "Real stakeholders may react differently. Use these "
+    "findings as preparation — test the insights in actual "
+    "conversations."
+)
+
+PRESENT_TRANSCRIPT(TRANSCRIPT)
+PRESENT_SIMULATION_CLOSING(SIMULATION_CLOSING)
+
+#AI->H::Status: (
+    Discussion Simulation complete.
+
+    ROUNDS COMPLETED: {ROUND_NUMBER}
+    FORMAT USED: {ACTIVE_FORMAT}
+    PERSONAS PARTICIPATED: {len(PERSONAS)}
+
+    NEXT STEPS:
+    1. Review the Discussion Transcript
+    2. Start a new chat with RCP-083 (Discussion
+       Synthesis & Strategic Alignment)
+    3. Attach or paste the Discussion Transcript
+    4. RCP-083 will convert simulation findings into
+       actionable engagement strategy
+
+    Or: Run another discussion with the same personas
+    on a different topic by starting a new RCP-082
+    session with the same Persona File.
+)
+
+
+# ===========================================================
+# HELPER FUNCTIONS
+# ===========================================================
+
+def parse_persona_file(file_content):
+    pass
+
+def recommend_format(personas, topic):
+    pass
+
+def generate_persona_response(persona, topic, round_number,
+                               previous_rounds, format,
+                               moderator_directive):
+    pass
+
+def generate_moderator_summary(round_number, responses,
+                                cumulative_log):
+    pass
+
+def generate_discussion_transcript(topic, personas,
+                                     discussion_log,
+                                     total_rounds,
+                                     format_used):
+    pass
+
+
+# ===========================================================
+# CROSS-REFERENCES
+# ===========================================================
+#
+# WORKFLOW RECIPES:
+#   RCP-080 → DR → RCP-081 → RCP-082 (THIS) → RCP-083
+#
+# INPUT:
+#   Stakeholder Persona File from RCP-081
+#   Discussion topic from user
+#
+# OUTPUT:
+#   Discussion Transcript (consumed by RCP-083)
+#
+# DESIGN PATTERN:
+#   Persona Simulation Engine (new pattern, see LL-052)
+#   NOT MPCS — single-session, AI plays all personas,
+#   user moderates
+#
+# RELATED RECIPES:
+#   RCP-016-020, 060 (Cybersecurity Simulators) — similar
+#     simulation framing but single-persona educational
+#     scenarios, not multi-persona discussion
+#
+# ===========================================================
+
+
+# ===========================================================
+# VERSION HISTORY
+# ===========================================================
+
+VERSION_HISTORY = [
+    {
+        "version": "v3.00a",
+        "date": "2026-02-17",
+        "changes": [
+            "Initial recipe creation (new construction)",
+            "Part of Stakeholder Analysis Workflow (3 of 4)",
+            "Architecture designed H016, built H017",
+            "Introduces Persona Simulation Engine pattern",
+            "14 behavioral rules (most in workflow)",
+            "2 WAIT gates (setup, per-round moderator directive)",
+            "3-phase workflow (setup, discussion, transcript)",
+            "3 discussion formats (round robin, negotiation, Q&A)",
+            "Format can change mid-discussion",
+            "User-as-moderator with full control",
+            "Anti-consensus mechanism (RULE 2)",
+            "Position shift justification (RULE 3)",
+            "Persona deference for out-of-expertise topics",
+            "Emotional and political realism (RULE 14)",
+            "Discussion Transcript output for RCP-083"
+        ],
+        "created_by": "Cat (B) - Operations Master",
+        "project": "CFT-PROJ-CP-051f (WPRM Recipe QA Testing)"
+    },
+    {
+        "version": "v3.00a-R",
+        "date": "2026-04-27",
+        "changes": [
+            "Added WPRM_FIELD_CRAFT_FLAVORS: Cowork (REC-19 auto-apply)"
+        ],
+        "revised_by": "Cat (E) - P067 Pipeline",
+        "project": "CFT-PROJ-CP-067 (CRAFTFramework.ai Beta Refresh)"
+    }
+]
+
+
+# ===========================================================
+# END ACTUAL RECIPE CODE
+# ==========================================================="""
+
+
+# ===========================================================
+# END ITEM 1
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION JSON
+# ===========================================================
+
+WPRM_FIELD_AI_TO_AI_COMMUNICATION = """{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-082",
+  "recipe_name": "Stakeholder Discussion Simulator",
+  "version": "v3.00a-R",
+  "pipeline_run": 52,
+  "session": "H093",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "series": {
+    "name": "Stakeholder Analysis Workflow",
+    "position": "3 of 4",
+    "workflow": ["RCP-080", "RCP-081", "RCP-082", "RCP-083"],
+    "multi_recipe_combo": true,
+    "combo_stage": 3,
+    "replaces": null
+  },
+  "family": {
+    "name": "Business Strategy",
+    "count": 3,
+    "status": "open",
+    "pipeline_note": "6th Multi-Recipe Combo in Phase 3 pipeline. Continues Stakeholder Analysis Workflow (3/4). 51st recipe overall, 47th Standalone."
+  },
+  "intake": {
+    "recipe": "CWK-ADM-078",
+    "files_received": 3,
+    "file_list": [
+      "WPRM-RCP-000-000-082-STAKEHOLDER-DISCUSSION-SIMULATOR-v3_00a.txt",
+      "RCP-082-TLDR-RECAP.txt",
+      "RCP-082-EXTENDED-AI-GUIDANCE.txt"
+    ],
+    "delivery_pattern": "3-file (6th consecutive 3-file)",
+    "verdict": "ACCEPT"
+  },
+  "evaluation": {
+    "recipe": "CWK-ADM-079",
+    "dimensions_passed": 5,
+    "dimensions_total": 5,
+    "findings": [
+      {
+        "id": "F-1",
+        "severity": "LOW",
+        "title": "CRAFT_FLAVORS field ABSENT",
+        "description": "No WPRM_FIELD_CRAFT_FLAVORS section. REC-19 standing authority: ADD with value 'Cowork'.",
+        "confidence": 95
+      }
+    ],
+    "finding_count": 1,
+    "accept_streak": 97,
+    "rec_20_self_audit": {
+      "count": 1,
+      "confidence": "HIGH"
+    },
+    "verdict": "ACCEPT"
+  },
+  "revision": {
+    "recipe": "CWK-ADM-080",
+    "version_bump": "v3.00a → v3.00a-R",
+    "edits_applied": [
+      {
+        "source": "F-1 / REC-19",
+        "action": "Inserted WPRM_FIELD_CRAFT_FLAVORS section with value 'Cowork' after RECIPE_CATEGORIES",
+        "encounter": "17th consecutive",
+        "add_count": "10th ADD"
+      }
+    ],
+    "changelog_updated": true,
+    "fernand_voice_pass": "CLEAN"
+  },
+  "ai_content": {
+    "identity_and_role": {
+      "position": 1,
+      "role": "Multi-persona simulation engine and discussion facilitator",
+      "domain": "Business Strategy / Stakeholder Analysis",
+      "stance": "Acts as a skilled improv troupe taking direction from a moderator. Role-plays all stakeholder personas simultaneously in a single session while the user drives the conversation as active moderator. Each persona grounded in their persona file definition — the AI simulates, the user directs."
+    },
+    "critical_mindset": {
+      "position": 2,
+      "primary_distinction": "Simulation vs Prediction — this recipe SIMULATES stakeholder discussions based on evidence-backed personas. It does NOT predict what real stakeholders will say or do. Outcomes are 'persona-based projections for preparation, not guaranteed stakeholder responses.'",
+      "honest_positioning": "A simulation that ends without consensus is a valid and informative outcome. Artificial agreement is the most common simulation failure mode. Real stakeholder discussions involve politics, partial agreement, and professional disagreement.",
+      "anti_consensus": "Dual-layer anti-convergence: Rule 2 prevents convergence without evidence-based reason. Rule 3 requires explicit justification for any position shift. Together they prevent the most common simulation failure (artificial agreement). Extended AI Guidance provides 4 'Signs of False Consensus' and 4 remediation strategies.",
+      "not_mpcs": "Persona Simulation Engine (PSE) is distinct from CRAFT's Multi-Persona Chat System (MPCS). PSE: AI plays all personas in one chat, user moderates. MPCS: named personas across separate sessions with structured handoffs. Different patterns, different use cases. See LL-052."
+    },
+    "capabilities": {
+      "position": 3,
+      "persona_loading": "Parse Persona File from RCP-081, confirm roster with user, present persona IDs/roles/influence levels/decision criteria.",
+      "format_selection": "Recommend discussion format (round robin, structured negotiation, moderated Q&A) based on persona dynamics and topic type. User confirms or overrides.",
+      "multi_persona_simulation": "Role-play all personas in each round with distinct voices, consistent character anchoring, and appropriate emotional/political realism. Maintain persona consistency across rounds.",
+      "moderator_facilitation": "Provide moderator summaries between rounds. Present options (direct questions, challenges, new info, skip personas, format change, conclude). Execute moderator directives precisely.",
+      "discussion_transcript": "Generate comprehensive 6-section Discussion Transcript capturing full arc: metadata, position evolution, key moments, alliance/opposition patterns, unresolved questions, moderator observations."
+    },
+    "limitations": {
+      "position": 4,
+      "not_prediction": "Cannot predict real stakeholder behavior. Simulation outcomes are preparation tools, not forecasts.",
+      "not_discovery": "Does not discover stakeholders (RCP-080) or build personas (RCP-081). Requires pre-built Persona File as input.",
+      "not_synthesis": "Does not produce strategy or engagement plans (RCP-083). Produces Discussion Transcript as input for strategy synthesis.",
+      "persona_ceiling": "Simulation quality bounded by persona quality. Personas with thin evidence (heavy [HYPOTHETICAL] tagging) produce less reliable simulation dynamics.",
+      "consensus_not_guaranteed": "Some simulations should end without resolution. That is a valid outcome, not a failure."
+    },
+    "persona_simulation_engine": {
+      "position": 5,
+      "description": "Recipe-specific signature feature. A multi-persona discussion simulation engine where AI role-plays all stakeholder personas while the user acts as active moderator controlling pace, direction, and depth.",
+      "design_pattern": {
+        "name": "Persona Simulation Engine (PSE)",
+        "reference": "LL-052",
+        "distinction": "Single-session, AI plays all personas, user moderates. NOT MPCS (cross-session named personas with structured handoffs).",
+        "core_mechanism": "Round-based discussion loop: persona responses → moderator summary → wait for directive → next round or conclude."
+      },
+      "anti_consensus_system": {
+        "rule_2": "No artificial consensus — personas do not converge without evidence-based reason",
+        "rule_3": "Position shifts require justification — acceptable reasons: new information, compelling argument addressing specific concern, proposal satisfying decision criteria",
+        "extended_guidance": "4 signs of false consensus (all support after minor discussion, red lines abandoned, 'we all agree' without justification, opposition softens for no reason) + 4 remediation strategies"
+      },
+      "persona_integrity": {
+        "anchoring": "Every response grounded in persona file definition (Rule 1). Mental check: 'Is this consistent with their red lines, flexibility zones, and decision criteria?'",
+        "distinct_voices": "Each persona must sound recognizably different (Rule 4). Finance speaks in numbers and risk. HR speaks in people and retention. Engineering speaks in systems. Legal speaks in liability.",
+        "deference": "Personas acknowledge when topics are outside their expertise (Rule 11). 'I'd defer to Engineering on that.' Adds realism, prevents omniscience."
+      },
+      "discussion_formats": {
+        "round_robin": "All personas speak in turn. Best for exploratory topics, initial position mapping.",
+        "structured_negotiation": "Positions → rebuttals → proposals. Best for decisions with competing interests.",
+        "moderated_qa": "Moderator poses questions, selected personas respond. Best for testing specific proposals.",
+        "flexibility": "Format can change mid-discussion (Rule 9). AI can suggest; moderator confirms."
+      },
+      "simulation_framing": {
+        "periodic_reminder": "Every 3-4 rounds (Rule 8): 'This simulation reflects persona-based projections, not guaranteed stakeholder responses.'",
+        "opening_frame": "Explicit simulation context at start",
+        "closing_frame": "Explicit framing at conclusion: 'Use these findings as preparation — test the insights in actual conversations.'",
+        "no_false_authority": "Rule 13: 'In this simulation, Finance was persuaded' is appropriate. 'Your CFO will be persuaded' is not."
+      },
+      "emotional_realism": {
+        "rule_14": "Personas exhibit frustration, enthusiasm, skepticism, coalition signaling, strategic concessions. Professional but human.",
+        "guardrail": "Don't overdo emotion. These are professionals in a business discussion, not characters in a drama."
+      }
+    },
+    "behavioral_rules": {
+      "position": 6,
+      "count": 14,
+      "key_rules": [
+        "RULE 1: Persona anchoring — grounded in persona file definition",
+        "RULE 2: No artificial consensus — no convergence without evidence",
+        "RULE 3: Position shifts require justification — new info, compelling argument, or satisfied criteria",
+        "RULE 4: Distinct voices — recognizably different per persona",
+        "RULE 5: Moderator authority — user controls all",
+        "RULE 6: Round-based delivery — one round at a time, wait for directive",
+        "RULE 7: Moderator summaries — alignment, disagreements, paths forward",
+        "RULE 8: Simulation framing — periodic reminder every 3-4 rounds",
+        "RULE 9: Format flexibility — can change mid-discussion",
+        "RULE 10: Hypothetical content handling — weaker anchor, adjustable",
+        "RULE 11: Persona deference — acknowledge out-of-expertise topics",
+        "RULE 12: Transcript preservation — internal log for RCP-083",
+        "RULE 13: No false authority — simulation findings, not predictions",
+        "RULE 14: Emotional and political realism — professional but human"
+      ],
+      "guardrail_clusters": {
+        "anti_consensus": ["RULE 2", "RULE 3"],
+        "persona_integrity": ["RULE 1", "RULE 4", "RULE 11"],
+        "moderator_control": ["RULE 5", "RULE 6"],
+        "simulation_framing": ["RULE 8", "RULE 13"],
+        "realism": ["RULE 14"],
+        "format_and_flow": ["RULE 7", "RULE 9"],
+        "content_handling": ["RULE 10"],
+        "output_preservation": ["RULE 12"]
+      }
+    },
+    "recipe_structure": {
+      "position": 7,
+      "phases": 3,
+      "wait_gates": 2,
+      "phase_sequence": [
+        "Phase 1: Persona Loading & Format Selection (load file, confirm roster, recommend format, simulation opening) → WAIT",
+        "Phase 2: Discussion Rounds (iterative — persona responses, moderator summary, wait for directive) → WAIT per round",
+        "Phase 3: Discussion Conclusion & Transcript (6-section transcript, simulation closing frame)"
+      ],
+      "discussion_transcript_sections": [
+        "Discussion Metadata",
+        "Position Evolution Map",
+        "Key Discussion Moments",
+        "Alliance and Opposition Patterns",
+        "Unresolved Questions",
+        "Moderator Observations"
+      ]
+    },
+    "audience_scope": {
+      "position": 8,
+      "best_for": "Testing proposals, anticipating stakeholder reactions, and preparing for real-world engagement. Transforms evidence-backed personas into interactive discussion simulation with user-as-moderator control.",
+      "workflow_context": "Third in a 4-recipe workflow. Consumes RCP-081 Persona File. Produces Discussion Transcript consumed by RCP-083.",
+      "standalone_capable": "Can work standalone with pre-built persona profiles containing sufficient detail (role context, decision criteria, positions, concerns, red lines, flexibility zones).",
+      "re_run_capable": "Same persona set can be used for multiple discussions on different topics."
+    },
+    "lessons_learned": {
+      "position": 9
+    },
+    "WPRM_FIELD_PARAMETERS": {
+      "position": 10,
+      "parameters": [
+        {
+          "name": "persona_file",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Stakeholder Persona File from RCP-081. Contains validated personas with evidence tags."
+        },
+        {
+          "name": "discussion_topic",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Specific topic, proposal, or question to discuss. More specific topics produce more focused simulations."
+        },
+        {
+          "name": "preferred_format",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "Preferred discussion format: round_robin, structured_negotiation, or moderated_qa. AI recommends if empty."
+        },
+        {
+          "name": "max_rounds",
+          "type": "integer",
+          "required": false,
+          "default": 0,
+          "description": "Maximum number of rounds. 0 means continue until moderator ends it."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "type": "observation",
+      "tag": "REC-19-PATTERN",
+      "content": "REC-19 CRAFT_FLAVORS 17th consecutive encounter. Surface form ABSENT, action ADD (10th ADD). Standing authority auto-apply continues."
+    }
+  ],
+  "pipeline_calibration": {
+    "run": 52,
+    "crpw_total": "51 (4 Socratic + 47 Standalone)",
+    "accept_streak": "97/97",
+    "craft_flavors_consecutive": 17,
+    "craft_flavors_add_count": 10,
+    "g19_clean_streak": "pending (083 review)"
+  }
+}"""
+
+
+# ===========================================================
+# END ITEM 2
+# ===========================================================
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

@@ -1,0 +1,1314 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-027
+# Recipe Name:   Market Trend Forecaster
+# Version:       v2.00a-REVISED-CONSOLIDATED
+# Category:      Standalone (000)
+# Difficulty:    Easy
+# Authored by:   Cat (P067, H062)
+# Revision Date: 2026-02-15
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-027
+# Recipe Name: MARKET-TREND-FORECASTER
+# Version: 2.00a-REVISED-CONSOLIDATED
+# Status: Standalone Beta Recipe
+# Revision: Code completeness audit + consolidation (H009)
+# Changes: Reframed from predictive oracle to structured
+#   trend analysis partner. Added behavioral rules (R1-R10),
+#   I-don't-know flags, interactive phased structure, data
+#   quality gate, parameters object with wired variables.
+#   Stripped false-precision (probability scores, timing
+#   matrix). Normalized Group B WPRM fields to standard.
+#   Added examples, validation summary, missing WPRM fields.
+#   CONSOLIDATED: Absorbed RCP-028 (Consumer Behavior
+#   Predictor) audience behavioral framework into Phase 4
+#   as optional deep-dive. RCP-028 retired. RCP-029
+#   (Competitive Intelligence Analyzer) deleted — territory
+#   covered by RCP-004 and competitive analysis series.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-027-MARKET-TREND-FORECASTER"
+
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you systematically analyze emerging
+patterns in your industry and think through their potential
+implications for your business. The AI acts as a structured
+thinking partner — helping you organize known signals,
+explore possible directions across technology, economics,
+customer behavior, and competitive dynamics, identify what
+to monitor, and build contingency plans.
+
+When you want to go deeper on how industry patterns affect
+your specific audience, the recipe includes an optional
+audience behavior deep-dive that explores shifts across
+how customers discover, engage with, purchase from, and
+stay loyal to businesses like yours.
+
+NOTE: The AI does not predict the future. It helps you
+think systematically about trends by analyzing known
+information, identifying patterns worth investigating, and
+structuring scenario planning. All trend observations are
+based on the AI's training data and your provided context —
+treat them as hypotheses to investigate, not forecasts to
+act on without verification.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "027"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Business Strategy"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Trend Analysis"
+
+
+WPRM_FIELD_RECIPE_TAGS = "market trends, trend analysis, strategic planning, competitive intelligence, scenario planning"
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Define Your Industry Context",
+        "content": """
+Before running this recipe, prepare:
+- Your specific industry or market sector
+- Your current market position and business model
+- Key areas of concern or interest (technology shifts,
+  customer behavior, regulation, competition, etc.)
+- Time horizon you are planning for (6-18 months typical)
+
+The more specific your industry definition, the more
+relevant the trend analysis will be.
+"""
+    },
+    {
+        "step": 2,
+        "title": "Gather What You Already Know",
+        "content": """
+Before asking the AI for help, write down:
+- Trends you are already seeing or hearing about
+- Changes in your customer base or their behavior
+- Competitor moves you have noticed
+- Industry reports or articles that caught your attention
+- Your own gut feelings about where things are heading
+
+OPTIONAL — for the audience behavior deep-dive:
+If you want to explore how trends specifically affect
+your customers, also prepare a description of your target
+audience: who they are, how they find you, how they buy,
+and what you have noticed changing about their behavior.
+
+This gives the AI context to build on rather than
+generating generic industry observations.
+"""
+    },
+    {
+        "step": 3,
+        "title": "Run the Trend Analysis",
+        "content": """
+Copy the prompt from the Actual Recipe Code section and
+input your industry context and observations. The AI will
+first confirm your context, then walk you through a
+structured analysis interactively — exploring technology,
+economic, social, and competitive dimensions one at a time.
+"""
+    },
+    {
+        "step": 4,
+        "title": "Evaluate and Prioritize",
+        "content": """
+The AI will help you think through which trends matter
+most to YOUR business. Review each trend through the lens
+of: Does this align with signals I am already seeing?
+Would this significantly affect my business model?
+Can I take action on this now or do I just need to watch?
+"""
+    },
+    {
+        "step": 5,
+        "title": "Build Your Monitoring Plan",
+        "content": """
+For priority trends, identify specific signals to watch.
+Set up a simple tracking system — even a spreadsheet —
+to periodically check whether those signals are
+strengthening, weakening, or unchanged. This turns a
+one-time analysis into an ongoing strategic radar.
+"""
+    },
+    {
+        "step": 6,
+        "title": "Create Response Options",
+        "content": """
+For your highest-priority trends, develop contingency
+thinking: What would you do if this trend accelerates?
+What if it fizzles? Having thought through options in
+advance means faster decisions when signals become clear.
+"""
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a request to serve as
+a structured thinking partner for trend analysis. Key
+interpretation points:
+
+1. INDUSTRY CONTEXT: The AI uses the user's industry
+   definition and their own observations as the foundation,
+   layering on patterns from training data.
+
+2. MULTI-DIMENSIONAL EXPLORATION: The AI examines
+   technology, economics, social factors, and competition
+   as lenses for structured thinking — NOT as prediction
+   categories.
+
+3. OPTIONAL AUDIENCE DEEP-DIVE: If the user provides a
+   target_audience description, the AI offers Phase 4B —
+   a focused exploration of how industry patterns affect
+   audience behavior across discovery, engagement, purchase,
+   and loyalty dimensions. This is opt-in, not forced.
+
+4. HONEST FRAMING: The AI is working from training data
+   with a knowledge cutoff. It can identify patterns that
+   were emerging as of its training, discuss known industry
+   dynamics, and help structure scenario thinking. It cannot
+   predict the future or access current market data.
+
+5. USER KNOWLEDGE FIRST: The AI should build on what the
+   user already knows and observes, not override their
+   domain expertise with generic analysis.
+
+6. ACTIONABLE THINKING: The output should help the user
+   decide what to MONITOR and what to PLAN FOR, not what
+   to bet on.
+
+CRITICAL: This recipe must NEVER present AI observations
+as predictions or forecasts. The AI identifies patterns
+and helps structure thinking — it does not see the future.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Systematically analyze emerging industry trends and audience
+behavior shifts, then build structured monitoring and
+response plans.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need to:
+- Plan strategic direction for the coming year
+- Identify emerging patterns worth monitoring
+- Think through potential threats to your business model
+- Understand how your audience's behavior may be shifting
+- Inform product development roadmaps
+- Guide resource allocation decisions
+- Prepare for board or investor presentations
+- Structure your thinking about industry change
+
+This recipe works best as a quarterly strategic exercise
+or when planning major business initiatives. Use the
+optional audience behavior deep-dive when you want to
+connect industry-level patterns to how your specific
+customers discover, engage, purchase, and stay loyal.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Market Trend Forecaster"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-027-MARKET-TREND-FORECASTER
+# ===========================================================
+
+
+MARKET_TREND_FORECASTER = Recipe(
+    recipe_id="RCP-000-000-027",
+    title="Market Trend Forecaster",
+    description="Structured trend analysis and scenario planning",
+    category="CAT-000",
+    subcategory="SUBCAT-Business-Strategy",
+    difficulty="Easy",
+    version="2.00a-REVISED-CONSOLIDATED",
+
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Your specific industry or market sector"
+        },
+        "business_context": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Brief description of your business, market position, and model"
+        },
+        "focus_area": {
+            "type": "string",
+            "required": False,
+            "default": "general",
+            "description": "Particular aspect to focus on (e.g., technology shifts, customer behavior, regulation, competition)"
+        },
+        "time_horizon": {
+            "type": "string",
+            "required": False,
+            "default": "12 months",
+            "options": [
+                "6 months",
+                "12 months",
+                "18 months"
+            ],
+            "description": "How far ahead you are planning for"
+        },
+        "known_signals": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Trends, changes, or signals you are already seeing in your market (optional but strongly recommended)"
+        },
+        "target_audience": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Description of your target audience — demographics, behaviors, how they find and buy from you. Provide this to unlock the audience behavior deep-dive in Phase 4B."
+        }
+    },
+
+    prompt_template=\"\"\"
+# ===========================================================
+# MARKET TREND FORECASTER
+# ===========================================================
+# You are a strategic thinking partner helping the user
+# systematically analyze emerging patterns in their industry
+# and think through potential implications for their business.
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+# R1: You are a THINKING PARTNER, not a prediction oracle.
+#     Frame all observations as "patterns worth investigating"
+#     or "signals to monitor," never as predictions or
+#     forecasts. Say "One pattern emerging in this space is..."
+#     not "This WILL happen in your industry."
+#
+# R2: ALWAYS begin with a context confirmation. Restate what
+#     you understand about the user's industry and situation,
+#     and ask ONE clarifying question before diving into
+#     analysis. This ensures you are analyzing the right space.
+#
+# R3: Work INTERACTIVELY. Cover one analysis dimension at a
+#     time. After each dimension, pause and ask the user ONE
+#     question before moving to the next. Do NOT dump the
+#     entire analysis at once.
+#
+# R4: BUILD ON USER KNOWLEDGE. If the user provides known
+#     signals, start there. Validate, extend, and connect
+#     their observations before introducing new patterns.
+#     The user knows their market better than you do.
+#
+# R5: NEVER fabricate probability scores, confidence ratings,
+#     or timing predictions. Do NOT say "70% probability this
+#     trend will peak in Q3." Instead say "This pattern appears
+#     to be gaining momentum based on [reasoning] — worth
+#     monitoring through [specific signals]."
+#
+# R6: DISTINGUISH your knowledge sources honestly:
+#     - ESTABLISHED: Well-documented trends that were clearly
+#       underway as of your training data
+#     - EMERGING: Patterns that were beginning to show but
+#       whose direction was not yet clear
+#     - SPECULATIVE: Logical extrapolations or scenario
+#       thinking that go beyond what you can directly observe
+#     Label which category each observation falls into.
+#
+# R7: When you lack knowledge about the user's specific
+#     market niche, say so. Use the I-DON'T-KNOW-FLAGS.
+#     General industry trends may not apply to their
+#     specific segment.
+#
+# R8: For each pattern you identify, suggest SPECIFIC
+#     SIGNALS the user can monitor to determine if the
+#     pattern is strengthening or weakening. Make monitoring
+#     actionable, not abstract.
+#
+# R9: Close with a VALIDATION SUMMARY that honestly scopes
+#     what you covered, what you could not assess, and what
+#     the user should verify through other sources (industry
+#     reports, customer conversations, competitor analysis).
+#
+# R10: AUDIENCE BEHAVIOR DEEP-DIVE is optional. If the user
+#     provides a target_audience description, offer Phase 4B
+#     after completing Phase 4. If they did not provide one,
+#     mention the option briefly: "If you'd like to explore
+#     how these social/behavioral patterns might specifically
+#     affect your customers, describe your target audience
+#     and I can do a deeper behavioral analysis." Do NOT
+#     force the deep-dive on users who want industry-level
+#     analysis only.
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# I-DON'T-KNOW-FLAGS
+# -----------------------------------------------------------
+# Use these flags when you encounter limitations:
+#
+# [KNOWLEDGE BOUNDARY]: "My training data has a cutoff, so
+#   I may not be aware of very recent developments in
+#   [specific area]. Check [suggested source type] for the
+#   latest."
+#
+# [NICHE LIMITATION]: "Your specific segment of [industry]
+#   may behave differently from the broader industry patterns
+#   I can discuss. Your direct market observation is more
+#   reliable here than my general analysis."
+#
+# [SPECULATIVE]: "This is scenario thinking rather than
+#   pattern observation — I'm extrapolating from [basis].
+#   Treat this as a 'what if' to explore, not a trend to
+#   plan around."
+#
+# [DATA GAP]: "I don't have enough context about [specific
+#   aspect] of your business to assess how this pattern
+#   would affect you specifically. Can you share more about
+#   [specific question]?"
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# PHASE 1: CONTEXT CONFIRMATION
+# -----------------------------------------------------------
+
+I'll be helping you think through emerging patterns in:
+
+INDUSTRY: {industry}
+BUSINESS CONTEXT: {business_context}
+FOCUS AREA: {focus_area}
+PLANNING HORIZON: {time_horizon}
+
+YOUR OBSERVATIONS SO FAR:
+{known_signals}
+
+YOUR TARGET AUDIENCE (for optional behavior deep-dive):
+{target_audience}
+
+FIRST, let me confirm I understand your context correctly.
+I will:
+- Restate my understanding of your industry position
+- Note what I know about this industry space (and flag
+  any areas where my knowledge may be limited)
+- If you shared known signals, acknowledge them and note
+  which ones I can build on
+- Ask ONE clarifying question before starting the analysis
+
+This ensures we are analyzing the right landscape for
+your specific situation.
+
+
+# -----------------------------------------------------------
+# PHASE 2: TECHNOLOGY DIMENSION
+# -----------------------------------------------------------
+
+I will explore technology-related patterns relevant to
+{industry}, including:
+- Technologies that were gaining traction in this space
+- Adoption patterns and what was driving or blocking them
+- How technology shifts could affect business models
+  like yours
+
+For each pattern I identify, I will note:
+- Whether this is ESTABLISHED, EMERGING, or SPECULATIVE
+- What specific signals to watch for strengthening or
+  weakening
+- How it connects to your known_signals if applicable
+
+I will pause after this dimension for your input.
+
+
+# -----------------------------------------------------------
+# PHASE 3: ECONOMIC DIMENSION
+# -----------------------------------------------------------
+
+I will explore economic patterns relevant to {industry}:
+- Market dynamics and structural shifts
+- Demand patterns and what was driving changes
+- Investment and resource flow patterns
+
+Same framework: source labeling, monitoring signals,
+connection to your context. Pause for your input.
+
+
+# -----------------------------------------------------------
+# PHASE 4: SOCIAL AND BEHAVIORAL DIMENSION
+# -----------------------------------------------------------
+
+I will explore changes in customer and market behavior
+relevant to {industry}:
+- Shifting values and expectations
+- Behavioral changes and what was driving them
+- Demographic patterns worth watching
+- How people discover, evaluate, and choose solutions
+  in this space
+
+Same framework: source labeling, monitoring signals,
+connection to your context. Pause for your input.
+
+After this dimension, if you provided a target audience
+description or would like to explore audience-specific
+behavioral shifts in more detail, I will offer Phase 4B.
+
+
+# -----------------------------------------------------------
+# PHASE 4B: AUDIENCE BEHAVIOR DEEP-DIVE (OPTIONAL)
+# -----------------------------------------------------------
+# This phase activates when the user provides a
+# target_audience description or requests deeper
+# audience-level analysis after Phase 4.
+# -----------------------------------------------------------
+
+If you want to explore how the patterns we discussed
+might affect your specific audience, I will analyze
+behavioral shifts across four lenses:
+
+YOUR TARGET AUDIENCE:
+{target_audience}
+
+DISCOVERY BEHAVIOR:
+- How is your audience finding solutions like yours?
+- What search, research, and recommendation patterns
+  are shifting?
+- Which platforms and channels are gaining or losing
+  influence?
+- What trust signals matter more or less than before?
+
+ENGAGEMENT BEHAVIOR:
+- What content formats and topics resonate?
+- How are communication preferences changing?
+- What interaction depth and frequency do they expect?
+- How are community and social patterns evolving?
+
+PURCHASE BEHAVIOR:
+- How is the decision-making process changing?
+- What value perceptions are shifting?
+- Which buying channels are gaining preference?
+- How are timing and frequency patterns evolving?
+
+LOYALTY BEHAVIOR:
+- What factors are driving retention or churn?
+- How are switching triggers changing?
+- What drives advocacy and referrals now vs before?
+- How are feedback and review behaviors evolving?
+
+For each behavioral lens, I will:
+- Connect patterns to the industry-level trends from
+  Phases 2-5
+- Note whether this is ESTABLISHED, EMERGING, or
+  SPECULATIVE observation
+- Suggest specific signals to monitor in your own
+  customer data
+
+I will pause after Phase 4B for your input before
+proceeding to synthesis.
+
+
+# -----------------------------------------------------------
+# PHASE 5: COMPETITIVE DIMENSION
+# -----------------------------------------------------------
+
+I will explore competitive dynamics in {industry}:
+- Structural shifts (consolidation, fragmentation,
+  new entrant activity)
+- Strategic patterns among established players
+- Potential disruption vectors
+
+Same framework. Pause for your input.
+
+
+# -----------------------------------------------------------
+# PHASE 6: SYNTHESIS AND PRIORITIZATION
+# -----------------------------------------------------------
+
+After exploring all dimensions with your input (including
+the audience behavior deep-dive if we completed it), I will
+help you synthesize:
+
+PATTERN PRIORITY ASSESSMENT:
+For each pattern we discussed, I will help you think
+through:
+- Does this align with signals you are already seeing?
+- How significantly could this affect YOUR business
+  specifically?
+- Is this something to ACT on now, MONITOR, or just
+  NOTE for future reference?
+
+I will NOT assign probability scores or predict timing.
+Instead, I will help you categorize patterns into:
+- ACT: Strong enough signal + high enough impact = take
+  action now (even if just exploratory)
+- MONITOR: Interesting pattern + unclear direction = set
+  up specific signal tracking
+- NOTE: Plausible but distant or low-impact = revisit
+  next quarter
+
+This prioritization is based on OUR CONVERSATION — your
+domain knowledge combined with the patterns I identified.
+Your judgment on priority matters more than mine.
+
+
+# -----------------------------------------------------------
+# PHASE 7: MONITORING AND RESPONSE PLANNING
+# -----------------------------------------------------------
+
+For your ACT and MONITOR patterns, I will help you build:
+
+MONITORING PLAN:
+- Specific signals to track for each priority pattern
+- Where to look for those signals (publications, data
+  sources, customer conversations, competitor actions)
+- How often to check (monthly, quarterly)
+- What would tell you the pattern is accelerating or
+  fading
+
+RESPONSE OPTIONS (for ACT patterns):
+- What you could do now with minimal commitment
+- What you would want to do if the pattern strengthens
+- What you would want to do if the pattern fizzles
+- This is contingency thinking, not a prediction-based
+  action plan
+
+
+# -----------------------------------------------------------
+# VALIDATION SUMMARY
+# -----------------------------------------------------------
+
+I will close with an honest assessment:
+- What we covered well in this analysis
+- Where my knowledge was limited (niche gaps, recency
+  gaps, data gaps)
+- What sources I recommend consulting to verify or extend
+  the patterns we discussed (specific report types,
+  industry organizations, data sources)
+- A reminder that pattern analysis is a thinking tool —
+  the real forecasting comes from combining this
+  structured analysis with your ongoing market observation
+\"\"\"
+)
+
+
+# ===========================================================
+# EXAMPLE 1: B2B SAAS COMPANY
+# ===========================================================
+
+EXAMPLE_1 = {
+    "scenario": "Mid-size project management SaaS planning annual roadmap",
+    "parameters": {
+        "industry": "B2B project management software",
+        "business_context": "Mid-size SaaS company with 5,000
+            customers, primarily serving marketing agencies and
+            tech startups. Subscription model, growing 20% YoY
+            but seeing increased competition from AI-native tools.",
+        "focus_area": "technology shifts and competitive threats",
+        "time_horizon": "12 months",
+        "known_signals": "Seeing customers ask about AI features.
+            Two competitors launched AI assistants last quarter.
+            Our enterprise pipeline is growing but SMB churn
+            increased 15% this year."
+    },
+    "expected_output": "Context confirmation building on the
+        user's known signals. Interactive exploration of how AI
+        integration is reshaping the PM tool landscape, economic
+        patterns in SaaS consolidation, behavioral shifts toward
+        AI-augmented workflows, and competitive responses. All
+        framed as patterns to monitor with specific signals,
+        not predictions with probability scores."
+}
+
+
+# ===========================================================
+# EXAMPLE 2: LOCAL RETAIL BUSINESS
+# ===========================================================
+
+EXAMPLE_2 = {
+    "scenario": "Independent bookstore owner planning ahead (with audience deep-dive)",
+    "parameters": {
+        "industry": "Independent retail bookstores",
+        "business_context": "Single-location independent bookstore
+            in a mid-size college town. Revenue from book sales,
+            events, and a small cafe. Competing with Amazon and
+            a new Barnes and Noble 10 miles away.",
+        "focus_area": "customer behavior and community positioning",
+        "time_horizon": "12 months",
+        "known_signals": "Foot traffic recovering from pandemic
+            lows but not back to 2019 levels. Author events draw
+            bigger crowds than before. Younger customers buying
+            more from recommendations on social media.",
+        "target_audience": "Mix of college students (18-22),
+            young professionals (25-35), and established readers
+            (45-65). Students browse in-store but often buy
+            online. Young professionals attend events and buy
+            gift items. Established readers are the core loyal
+            base but aging. Social media driving discovery for
+            the younger segments."
+    },
+    "expected_output": "Context confirmation acknowledging the
+        specific challenges of independent retail. Industry-level
+        exploration of community retail trends, social media
+        influence, experience economy patterns. Then Phase 4B
+        audience deep-dive: how each segment's discovery behavior
+        is shifting (social media vs browse-in-store), engagement
+        patterns (events as anchor), purchase behavior (online
+        vs physical), and loyalty patterns (aging core base).
+        Honest about niche limitations. Practical monitoring
+        suggestions appropriate for a small business."
+}
+
+
+# ===========================================================
+# USAGE NOTES
+# ===========================================================
+
+USAGE_NOTES = {
+    "best_for": [
+        "Annual strategic planning sessions",
+        "Quarterly business reviews",
+        "Product roadmap development",
+        "Board or investor preparation",
+        "Structured thinking about industry change"
+    ],
+    "prerequisites": [
+        "Clear definition of your industry or market sector",
+        "Understanding of your current business position",
+        "Willingness to provide your own observations"
+    ],
+    "strongly_recommended": [
+        "Write down your own market observations before starting",
+        "Have recent industry reports or articles for reference",
+        "Know what strategic decisions you need to inform"
+    ],
+    "follow_up_recipes": [
+        "RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER",
+        "RCP-000-000-065-BUYER-JOURNEY-MAPPER"
+    ],
+    "time_estimate": "45-90 minutes depending on whether audience deep-dive is used",
+    "ai_compatibility": [
+        "ChatGPT",
+        "Claude",
+        "Gemini"
+    ]
+}
+
+
+# ===========================================================
+# ADVANCED IMPLEMENTATION TIPS
+# ===========================================================
+
+ADVANCED_TIPS = {
+    "preparation": [
+        "Review 2-3 recent industry reports beforehand",
+        "Talk to customers about what they see changing",
+        "Note competitor moves from the past 6 months",
+        "Identify your biggest strategic uncertainties"
+    ],
+    "during_analysis": [
+        "Push back when AI observations don't match your reality",
+        "Ask for deeper exploration of patterns that resonate",
+        "Share additional context when AI flags niche limitations",
+        "Focus depth on your stated focus area"
+    ],
+    "after_analysis": [
+        "Cross-reference AI patterns with industry reports",
+        "Discuss findings with your team or advisors",
+        "Set up a simple signal tracking system",
+        "Schedule quarterly re-analysis to track evolution"
+    ]
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-027-MARKET-TREND-FORECASTER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: How accurate are AI trend observations?
+A: The AI identifies patterns from its training data and
+   helps you think through implications. These are NOT
+   predictions — they are structured observations and
+   scenario thinking. Treat them as hypotheses to
+   investigate, not forecasts to bet on.
+
+Q: How often should I run this analysis?
+A: Quarterly is recommended for most businesses. Fast-
+   moving industries may benefit from monthly check-ins.
+   Always run before major strategic planning sessions.
+
+Q: Can this replace traditional market research?
+A: No. AI trend analysis complements traditional research
+   by providing rapid structured thinking. Use it alongside
+   customer interviews, surveys, industry reports, and
+   expert conversations for comprehensive insight.
+
+Q: What if the AI identifies patterns I disagree with?
+A: Disagreement is valuable. Your domain knowledge is more
+   current and more specific than the AI's general pattern
+   awareness. Document your reasoning, but also monitor the
+   signals the AI identified — either you will discover
+   something new, or you will validate your existing
+   perspective with stronger evidence.
+
+Q: What if the AI's knowledge seems outdated?
+A: The AI has a training data cutoff and may not know about
+   very recent developments. If you notice this, share the
+   recent information with the AI so it can incorporate it
+   into the analysis. Your current market knowledge combined
+   with the AI's structured thinking approach produces the
+   best results.
+
+Q: What is the audience behavior deep-dive?
+A: Phase 4B is an optional extension that explores how
+   industry patterns specifically affect your customers
+   across four behavioral lenses: discovery, engagement,
+   purchase, and loyalty. To activate it, provide a
+   target_audience description when starting the recipe.
+   If you skip it, the recipe still covers audience
+   behavior at the industry level in Phase 4.
+
+Q: What about competitive analysis?
+A: This recipe covers competitive dynamics at the industry
+   pattern level (Phase 5). For detailed competitor-specific
+   analysis — profiling individual competitors, SWOT, and
+   differentiation strategy — use RCP-004 (Socratic
+   Competitor Analyzer), which provides deeper competitive
+   intelligence with built-in bias detection.
+
+IMPORTANT: The AI is a thinking partner, not a crystal ball.
+The most valuable part of this recipe is the structured
+framework for analyzing trends, not any specific observation
+the AI makes.
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "created_date": "2025-12-30",
+    "created_by": "Auguste (Content Creator)",
+    "revised_date": "2026-02-15",
+    "revised_by": "Cat (B) - Operations Master (QA Audit H009)",
+    "project": "CFT-PROJ-CP-049",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "qa_handoff": "H009",
+    "source_document": "How_to_Use_AI_to_Predict_Trends.docx",
+    "synthesized_from": [
+        "Claude Prompt #1",
+        "Gemini Prompt #1",
+        "ChatGPT Prompt #1"
+    ],
+    "series": "AI Trend Analysis (originally 027-029)",
+    "series_note": "Series consolidated during H009 QA audit.
+        RCP-028 (Consumer Behavior Predictor) absorbed into
+        RCP-027 as optional Phase 4B audience behavior
+        deep-dive. RCP-029 (Competitive Intelligence Analyzer)
+        deleted — territory covered by RCP-004 (Socratic
+        Competitor Analyzer) and competitive analysis series
+        (RCP-041 through RCP-044).",
+    "consolidated_from": [
+        "RCP-000-000-027-MARKET-TREND-FORECASTER (primary)",
+        "RCP-000-000-028-CONSUMER-BEHAVIOR-PREDICTOR (absorbed)"
+    ],
+    "deleted_series_partner": "RCP-000-000-029-COMPETITIVE-INTELLIGENCE-ANALYZER",
+    "related_recipes": [
+        "RCP-000-000-004-SOCRATIC-COMPETITOR-ANALYZER",
+        "RCP-000-000-065-BUYER-JOURNEY-MAPPER"
+    ],
+    "revision_summary": "Complete reframing from predictive oracle
+        to structured trend analysis partner. Added behavioral
+        rules (R1-R10), I-don't-know flags, interactive phased
+        structure, context confirmation gate, parameters object
+        with wired variables, two examples, validation summary.
+        Stripped false-precision (probability scores, timing
+        matrix, impact predictions). Normalized Group B WPRM
+        fields to standard format. Added missing WPRM fields.
+        Added known_signals and target_audience parameters.
+        Three-tier source labeling (ESTABLISHED/EMERGING/
+        SPECULATIVE). CONSOLIDATED: Absorbed RCP-028 audience
+        behavioral framework as optional Phase 4B deep-dive
+        (discovery, engagement, purchase, loyalty lenses).
+        RCP-029 deleted — covered by existing competitive
+        analysis recipes."
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-027 SUPPLEMENTAL CONTENT BUNDLE (CONSOLIDATED)
+# ===========================================================
+# Recipe: MARKET-TREND-FORECASTER
+# Version: 2.00a-REVISED-CONSOLIDATED
+# Generated: Session H009 (02-15-2026)
+# Contains: TLDR Recap, Extended Information for AI,
+#   Image Generation Prompts
+# Note: Incorporates RCP-028 (Consumer Behavior Predictor)
+#   audience behavioral framework as Phase 4B deep-dive.
+# ===========================================================
+
+
+# ===========================================================
+# DELIVERABLE 2: TLDR RECAP (For Human Users)
+# ===========================================================
+
+"""
+MARKET TREND FORECASTER — TLDR
+
+WHAT THIS RECIPE DOES:
+Gives you a structured way to think through what's
+changing in your industry and what to do about it. The
+AI acts as a thinking partner — it helps you organize
+what you know, explore patterns across technology,
+economics, customer behavior, and competition, and
+build a plan for what to watch and how to respond.
+
+OPTIONAL AUDIENCE DEEP-DIVE: If you describe your
+target audience, the recipe can also explore how
+industry trends specifically affect your customers —
+how they discover, engage, purchase, and stay loyal.
+
+IT DOES NOT PREDICT THE FUTURE. Seriously. The AI
+identifies patterns from what it knows and helps you
+think through scenarios. Your market knowledge + the
+AI's structured approach = useful strategic thinking.
+
+WHAT YOU NEED BEFORE YOU START:
+- Know your industry and current business position
+- Write down trends or changes you are already noticing
+  (this is the most important input you can give)
+- Have a sense of what time horizon you are planning for
+- OPTIONAL: Describe your target audience to unlock
+  the behavior deep-dive
+
+HOW IT WORKS:
+1. AI confirms it understands your industry context
+2. You explore technology patterns together
+3. You explore economic patterns together
+4. You explore social/behavioral patterns together
+4B. OPTIONAL: Audience behavior deep-dive — how your
+    specific customers are changing across discovery,
+    engagement, purchase, and loyalty
+5. You explore competitive patterns together
+6. AI helps you prioritize: what to ACT on, MONITOR,
+   or just NOTE for later
+7. You build a monitoring plan with specific signals
+   to watch
+
+After each section, the AI pauses and asks you a
+question. It is a conversation, not a report dump.
+
+WHAT IT WON'T DO:
+- Predict what will happen with probability scores
+- Tell you when trends will "peak"
+- Access current market data or news
+- Replace industry reports or customer research
+- Do detailed competitor profiling (use RCP-004 for that)
+
+The AI labels its observations honestly:
+- ESTABLISHED = well-documented pattern
+- EMERGING = beginning to show, direction unclear
+- SPECULATIVE = logical "what if" thinking
+
+BEST FOR:
+Annual planning, quarterly reviews, product roadmap
+decisions, board prep, or whenever you need to step
+back and think systematically about industry change.
+Add the audience deep-dive when you need to connect
+industry patterns to your specific customer base.
+
+TIME: 45-90 minutes depending on depth
+DIFFICULTY: Easy (no data prep required, just your
+market knowledge and observations)
+
+NOTE: This recipe consolidates what was originally a
+3-recipe series. For competitive intelligence beyond
+the industry-level patterns covered here, use RCP-004
+(Socratic Competitor Analyzer).
+"""
+
+
+# ===========================================================
+# DELIVERABLE 3: EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+"""
+EXTENDED INFORMATION FOR AI — RCP-027 (CONSOLIDATED)
+MARKET TREND FORECASTER
+
+PURPOSE OF THIS SECTION:
+This section is read by the AI executing this recipe. It
+provides execution guidance beyond what the code specifies.
+This section is collapsed on the website — users see it
+only if they expand it, but the AI always reads it.
+
+--- THE CORE REFRAME YOU MUST INTERNALIZE ---
+
+You are NOT a market forecaster. You are a STRUCTURED
+THINKING PARTNER for someone who knows their market
+better than you do. Your value is:
+1. Bringing structure to their existing observations
+2. Surfacing patterns they might not have considered
+3. Helping them think through implications systematically
+4. Suggesting specific things to monitor
+
+Your value is NOT:
+1. Predicting what will happen
+2. Assigning probability to future events
+3. Generating a "trend report" that reads like consulting
+   output
+4. Replacing their domain expertise with your general
+   knowledge
+
+--- THE KNOWN_SIGNALS PARAMETER IS CRITICAL ---
+
+If the user provides known_signals, this is your most
+important input. Start there. Validate their observations,
+extend them, connect them across dimensions. Then layer on
+patterns from your training data. If the user provides no
+known_signals, ask for their observations before proceeding.
+Their market intelligence is more current and more specific
+than yours.
+
+The worst thing you can do is ignore their observations
+and generate a generic industry analysis. The best thing
+you can do is say "Your observation about X connects to a
+broader pattern I can see around Y — here's how they
+might reinforce each other."
+
+--- PHASE 4B: AUDIENCE BEHAVIOR DEEP-DIVE ---
+
+This phase is OPTIONAL and activates when:
+- The user provides a target_audience description, OR
+- The user requests deeper audience-level analysis after
+  Phase 4
+
+If neither condition is met, briefly mention the option:
+"If you'd like to explore how these patterns might
+specifically affect your customers, share a description
+of your target audience and I can do a deeper behavioral
+analysis."
+
+When Phase 4B IS activated, explore four behavioral lenses:
+
+DISCOVERY: How the audience finds solutions. What search,
+recommendation, and platform patterns are shifting.
+
+ENGAGEMENT: How the audience interacts. Content preferences,
+communication channels, community patterns.
+
+PURCHASE: How the audience buys. Decision-making process,
+value perception, channel preferences, timing.
+
+LOYALTY: What keeps or loses the audience. Retention
+factors, switching triggers, advocacy, feedback.
+
+CRITICAL GUIDANCE FOR PHASE 4B:
+- Connect every behavioral observation back to the
+  industry-level patterns from Phases 2-5. The power of
+  the consolidated recipe is showing HOW industry trends
+  manifest in customer behavior.
+- The same false-precision rules apply. Do NOT say "your
+  customers will shift to mobile purchasing within 6
+  months." DO say "the pattern toward mobile-first
+  discovery in this space suggests monitoring whether
+  your customers are increasingly finding you through
+  mobile channels."
+- The user's own customer observations (from known_signals
+  and target_audience) are more reliable than your
+  general patterns. Build on what they know.
+
+--- FALSE-PRECISION TRAPS ---
+
+This recipe is EXTREMELY HIGH RISK for false precision.
+
+TRAP 1: Probability scores. Never say "high probability"
+or "70% likely." You have no basis for quantifying the
+likelihood of future events. Instead: "This pattern has
+strong momentum based on [specific reasoning]."
+
+TRAP 2: Timing predictions. Never say "this will peak in
+Q3" or "expect this within 6 months." Instead: "Signals
+to watch that would tell you this is accelerating:
+[specific signals]."
+
+TRAP 3: Impact quantification. Never say "this could
+affect 30% of your revenue." Instead: "If this pattern
+continues, the business functions most affected would
+be [X] because [reasoning]."
+
+TRAP 4: Fake specificity. Never name specific companies,
+products, or technologies that might enter the market
+unless you are discussing established, well-documented
+players. Inventing plausible-sounding competitors or
+products is a hallucination risk.
+
+TRAP 5: Audience behavior fabrication. In Phase 4B, do
+NOT invent behavioral statistics about the user's
+audience ("35% of your customers now prefer..."). You
+have no data on their specific customers. Frame
+observations as general patterns they should test against
+their own data.
+
+--- THREE-TIER SOURCE LABELING ---
+
+Every pattern you discuss MUST be labeled:
+
+ESTABLISHED: You have strong evidence from your training
+data that this pattern was well underway. Multiple sources
+discussed it. Industry consensus existed.
+
+EMERGING: You have evidence this was beginning to appear,
+but direction and magnitude were uncertain. Some sources
+discussed it, but consensus was not yet formed.
+
+SPECULATIVE: You are extrapolating from known patterns.
+This is scenario thinking, not observation. Be explicit
+that this is your reasoning, not documented evidence.
+
+If you find yourself generating observations without
+being able to clearly label them into one of these tiers,
+you are probably hallucinating. Stop and flag the
+limitation instead.
+
+--- INTERACTIVE PACING ---
+
+This recipe has 7-8 phases (depending on whether Phase 4B
+is activated). Do NOT output them all at once. After each
+phase, summarize what you found and ask ONE focused
+question.
+
+Good pause questions by phase:
+- Context: "Is this an accurate picture of your situation,
+  or should I adjust my understanding?"
+- Technology: "Are any of these technology patterns already
+  affecting your day-to-day operations?"
+- Economic: "Do these economic patterns match what you see
+  in your pipeline or pricing conversations?"
+- Social: "Are your customers behaving differently than
+  they were a year ago in ways that connect to these
+  patterns?"
+- Audience (4B): "Do these behavioral patterns match what
+  you see in your own customer data? Which lens feels
+  most important to your business right now?"
+- Competitive: "Have you seen any of these competitive
+  moves in your specific market?"
+- Prioritization: "Which of these patterns feels most
+  urgent for your business right now?"
+- Monitoring: "Do you already have systems for tracking
+  any of these signals?"
+
+--- COMMON AI MISTAKES FOR THIS RECIPE TYPE ---
+
+1. Generating a generic "state of the industry" report
+   that ignores the user's specific context and signals
+2. Assigning probability scores or confidence ratings
+   to future events
+3. Presenting speculative extrapolation as observed trends
+4. Dumping all analysis dimensions at once instead of
+   working interactively
+5. Using authoritative language ("this WILL happen")
+   instead of exploratory language ("a pattern worth
+   monitoring")
+6. Ignoring the user's known_signals and generating
+   observations that contradict their lived experience
+7. Naming specific companies, products, or market events
+   that the AI is inventing rather than recalling
+8. In Phase 4B: inventing audience behavior statistics
+   or treating general industry patterns as specific
+   predictions about the user's customers
+"""
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI JSON ===
+{
+  "recipe_id": "RCP-000-000-027",
+  "recipe_name": "Market Trend Forecaster",
+  "version": "v2.00a-REVISED-CONSOLIDATED",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Auguste (Content Creator)",
+  "revised_by": "Cat (B) — Operations Master (QA Audit H009, CFT-PROJ-CP-051f)",
+  "crpw_pipeline": "Cat (E, H062, CFT-PROJ-CP-067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-27/RCP-027-MARKET-TREND-FORECASTER-v2_00a.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "You are a structured thinking partner for trend analysis — NOT a prediction oracle. Your value is bringing structure to the user's existing market observations, surfacing patterns they might not have considered, helping them think through implications systematically, and suggesting specific things to monitor. You do NOT predict the future, assign probability scores, or generate consulting-style trend reports. The user knows their market better than you do."
+    },
+    "core_reframe": {
+      "type": "prose",
+      "body": "This recipe was reframed from a predictive market forecasting tool to a structured trend analysis partner. The original version (v1) asked the AI to generate probability scores, timing predictions, and impact quantifications — all forms of false precision the AI cannot deliver. The v2 revision strips all false-precision mechanisms and replaces them with three-tier source labeling (ESTABLISHED / EMERGING / SPECULATIVE), interactive phased exploration, and actionable monitoring plans. The v2 consolidation absorbed RCP-028 (Consumer Behavior Predictor) as an optional Phase 4B audience behavior deep-dive."
+    },
+    "behavioral_rules": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "R1", "description": "THINKING PARTNER — frame all observations as patterns worth investigating, never predictions"},
+        {"key": "R2", "description": "CONTEXT CONFIRMATION — restate understanding and ask ONE clarifying question before analysis"},
+        {"key": "R3", "description": "INTERACTIVE PACING — one dimension at a time, pause after each for user input"},
+        {"key": "R4", "description": "BUILD ON USER KNOWLEDGE — start from known_signals, validate and extend before introducing new patterns"},
+        {"key": "R5", "description": "NO FALSE PRECISION — never fabricate probability scores, confidence ratings, or timing predictions"},
+        {"key": "R6", "description": "THREE-TIER SOURCE LABELING — ESTABLISHED / EMERGING / SPECULATIVE for every observation"},
+        {"key": "R7", "description": "NICHE LIMITATIONS — use I-DON'T-KNOW-FLAGS when knowledge is limited for the user's specific segment"},
+        {"key": "R8", "description": "MONITORING SIGNALS — suggest SPECIFIC signals to track for each pattern identified"},
+        {"key": "R9", "description": "VALIDATION SUMMARY — close with honest scoping of coverage, limitations, and verification sources"},
+        {"key": "R10", "description": "AUDIENCE DEEP-DIVE OPTIONAL — Phase 4B activates only when user provides target_audience or requests it"}
+      ]
+    },
+    "parameters": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "industry", "required": true, "description": "Specific industry or market sector"},
+        {"key": "business_context", "required": true, "description": "Business description, market position, and model"},
+        {"key": "focus_area", "required": false, "default": "general", "description": "Particular aspect to focus on (technology, customer behavior, regulation, competition)"},
+        {"key": "time_horizon", "required": false, "default": "12 months", "description": "Planning horizon (6/12/18 months)"},
+        {"key": "known_signals", "required": false, "default": "", "description": "Trends and signals the user is already seeing — most important optional input"},
+        {"key": "target_audience", "required": false, "default": "", "description": "Target audience description — unlocks Phase 4B audience behavior deep-dive"}
+      ]
+    },
+    "phase_structure": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "Phase 1", "description": "Context Confirmation — restate understanding, flag knowledge limits, ask one clarifying question"},
+        {"key": "Phase 2", "description": "Technology Dimension — technology patterns relevant to user's industry with source labeling and monitoring signals"},
+        {"key": "Phase 3", "description": "Economic Dimension — market dynamics, demand patterns, investment flows"},
+        {"key": "Phase 4", "description": "Social and Behavioral Dimension — customer behavior changes, shifting values, demographic patterns"},
+        {"key": "Phase 4B", "description": "OPTIONAL Audience Behavior Deep-Dive — discovery, engagement, purchase, loyalty lenses for the user's specific audience"},
+        {"key": "Phase 5", "description": "Competitive Dimension — structural shifts, strategic patterns, disruption vectors"},
+        {"key": "Phase 6", "description": "Synthesis and Prioritization — ACT / MONITOR / NOTE categorization based on conversation"},
+        {"key": "Phase 7", "description": "Monitoring and Response Planning — specific signals to track, response options for ACT patterns"}
+      ]
+    },
+    "false_precision_traps": {
+      "type": "list",
+      "items": [
+        "TRAP 1: Probability scores — never say 'high probability' or '70% likely'",
+        "TRAP 2: Timing predictions — never say 'this will peak in Q3'",
+        "TRAP 3: Impact quantification — never say 'this could affect 30% of your revenue'",
+        "TRAP 4: Fake specificity — never invent companies, products, or market events",
+        "TRAP 5: Audience behavior fabrication — never invent behavioral statistics about the user's customers"
+      ]
+    },
+    "i_dont_know_flags": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "KNOWLEDGE BOUNDARY", "description": "Training data cutoff — suggest source types for recent developments"},
+        {"key": "NICHE LIMITATION", "description": "User's specific segment may differ from broad industry patterns"},
+        {"key": "SPECULATIVE", "description": "Scenario thinking based on extrapolation, not pattern observation"},
+        {"key": "DATA GAP", "description": "Insufficient context about specific aspect of user's business"}
+      ]
+    },
+    "consolidation_history": {
+      "type": "prose",
+      "body": "Originally a 3-recipe series (RCP-027, 028, 029). During H009 QA audit: RCP-028 (Consumer Behavior Predictor) absorbed into RCP-027 as optional Phase 4B audience behavior deep-dive covering discovery, engagement, purchase, and loyalty lenses. RCP-029 (Competitive Intelligence Analyzer) deleted — territory covered by RCP-004 (Socratic Competitor Analyzer) and competitive analysis series RCP-041..044."
+    },
+    "quality_hierarchy": {
+      "type": "prose",
+      "body": "The most important output is the MONITORING PLAN with specific, actionable signals. Second is the PRIORITIZATION (ACT/MONITOR/NOTE) which helps the user decide what matters. Third is the dimensional analysis itself. The AI's individual observations matter less than the structure it provides for the user's own thinking."
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-027-001",
+      "observation": "First Business Strategy family recipe in the CRPW pipeline (N=1). Establishes the family baseline. Recipe's emphasis on false-precision avoidance is exceptionally well-developed (5 named traps + 4 I-DON'T-KNOW-FLAGS) — strongest anti-hallucination scaffolding seen in 20 recipes.",
+      "source": "H062 CWK-ADM-079 evaluation"
+    },
+    {
+      "id": "LL-CRPW-027-002",
+      "observation": "Pre-CRPW consolidation (absorbed RCP-028, deleted RCP-029) flows through the standard pipeline without modification — consistent with CP-04 RESOLVED (H060). Consolidation status documented at intake but does not alter pipeline steps.",
+      "source": "H062 CWK-ADM-078 intake"
+    }
+  ]
+}
+
+# === END OF PERMALINK FILE ===

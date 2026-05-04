@@ -1,0 +1,1758 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-020-SECURITY-POLICY-COMPLIANCE-SIMULATOR
+recipe_name:    Security Policy Compliance Simulator
+version:        v3.00a
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-020-SECURITY-POLICY-COMPLIANCE-SIMULATOR
+# Version: 3.00a
+# Date: 2025-12-30
+# QA + Simulator Rework: 2026-02-15 (v3.00a)
+# Status: SIMULATOR REVISION
+# QA Project: CFT-PROJ-CP-051f
+# Changes: Combined QA fix (10 issues) and Simulator
+#   repositioning. HIGHEST-RISK recipe in cybersecurity
+#   series — compliance content reframed as educational
+#   overview requiring professional compliance assessment.
+#   Removed all framing that implies AI output achieves
+#   compliance or is audit-ready. Added strong behavioral
+#   rules against citing specific requirement IDs,
+#   claiming compliance alignment, or producing audit-ready
+#   documentation. Rule of 3 disclaimers with extra gates
+#   before every compliance-specific section.
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-020-SECURITY-POLICY-COMPLIANCE-SIMULATOR"
+
+WPRM_FIELD_DESCRIPTION = """
+An AI-powered educational simulation that walks users through
+the compliance-oriented security policy development process.
+This simulator helps business owners UNDERSTAND what
+regulatory compliance involves — framework requirements,
+policy structure, audit expectations, and training needs —
+so they can work effectively with qualified compliance
+professionals, auditors, and legal counsel.
+
+IMPORTANT: This simulation does NOT produce compliance-ready
+policies, valid requirement mappings, or audit-ready
+documentation. Regulatory compliance requires professional
+assessment by certified compliance consultants and legal
+counsel. This simulation is educational preparation for
+those professional engagements.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "020"
+
+WPRM_FIELD_RECIPE_STATUS = "Revised"
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Security, Compliance, Governance, Simulation"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Regulatory Compliance, Policy Development, Educational Simulation"
+
+WPRM_FIELD_RECIPE_TAGS = "compliance simulator, GDPR education, HIPAA education, PCI DSS education, SOC 2 education, regulatory overview, audit preparation education, AI simulation, advanced"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Understand the Simulation
+This recipe runs an AI SIMULATION of the compliance-oriented
+security policy development process. It helps you understand
+what regulatory frameworks involve and what compliance
+professionals assess — it does NOT produce compliant
+policies, valid requirement mappings, or audit-ready
+documentation.
+
+STEP 2: Identify Your Compliance Landscape
+Determine which regulatory frameworks may apply to your
+business based on your industry, data types, and geographic
+scope. This simulation covers GDPR, HIPAA, PCI DSS, SOC 2,
+CCPA, FERPA, and general multi-framework scenarios.
+
+STEP 3: Run the Simulation
+Copy the Actual Recipe Code and paste it into your AI
+assistant. Provide your compliance context. The AI will
+walk you through an educational overview of compliance
+policy development interactively.
+
+STEP 4: Review Simulation Outputs
+The simulation produces an educational overview of
+compliance areas, policy structure, audit expectations,
+and training considerations. Use this to understand what
+compliance involves and prepare for professional engagement.
+
+STEP 5: Engage Compliance Professionals
+Take your simulation outputs to qualified professionals:
+certified compliance consultants for framework-specific
+assessment, legal counsel for regulatory interpretation,
+and certified auditors for official validation. The
+simulation gives you vocabulary and context — professionals
+give you actual compliance.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as an EDUCATIONAL SIMULATION
+of the compliance-oriented security policy development
+process. The AI helps the user understand what compliance
+frameworks involve and how professionals approach
+compliance policy creation — so the user can engage
+compliance professionals effectively.
+
+CRITICAL FRAMING REQUIREMENT:
+This is the HIGHEST-RISK recipe in the cybersecurity
+simulator series. The AI must NEVER:
+- Claim or imply that generated policies are compliant
+  with any regulation
+- Cite specific requirement IDs as authoritative mappings
+- Produce documentation framed as audit-ready
+- Claim the output constitutes a compliance assessment
+- State specific regulatory obligations as definitive
+
+The AI must consistently frame ALL outputs as educational
+overviews of what compliance professionals assess. The
+Rule of 3 disclaimers are the MINIMUM — additional
+disclaimers before every compliance-specific section are
+required.
+
+CRITICAL BEHAVIORAL REQUIREMENTS:
+- Frame ALL compliance content as educational overview
+- NEVER cite specific regulation clause numbers as
+  authoritative (they may be outdated or misapplied)
+- NEVER present policies as "compliant" or "aligned"
+- NEVER produce "audit-ready" documentation
+- Every deliverable area carries its own professional
+  review requirement
+- Encourage certified compliance professionals at every
+  transition
+- Apply Rule of 3 disclaimers plus section-level disclaimers
+- Maintain interactive delivery with user input
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+AI-powered educational simulation of compliance-oriented
+security policy development. Walks through framework
+requirements, policy structure, audit expectations, and
+training needs — preparing you for effective engagement
+with compliance professionals and certified auditors.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this simulation when you want to:
+- Understand what a specific regulatory framework requires
+  before engaging a compliance consultant
+- Learn the structure of compliance-oriented security
+  policies
+- Prepare for conversations with certified auditors
+- Develop a preliminary understanding of audit expectations
+- Explore what employee training compliance programs involve
+- Build a business case for compliance investment
+
+This simulation is NOT a substitute for certified compliance
+professionals, qualified legal counsel, or accredited
+auditors. Compliance is a legal obligation with significant
+consequences for errors — professional guidance is essential.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Security Policy Compliance Simulator"
+
+WPRM_FIELD_INCLUDED_IN_COOKBOOK = "Standalone (No Cookbook)"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any CRAFT Persona"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-020-SECURITY-POLICY-COMPLIANCE-SIMULATOR
+# Version: 3.00a
+# ===========================================================
+
+SECURITY_POLICY_COMPLIANCE_SIMULATOR = Recipe(
+    recipe_id="RCP-000-000-020",
+    title="Security Policy Compliance Simulator",
+    description="AI-powered educational simulation of compliance policy development",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="advanced",
+    version="3.00a",
+
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "healthcare",
+                "financial_services",
+                "retail_ecommerce",
+                "technology_saas",
+                "education",
+                "professional_services",
+                "government_contractor",
+                "other"
+            ],
+            "description": "Business industry or sector"
+        },
+        "compliance_framework": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "GDPR",
+                "HIPAA",
+                "PCI_DSS",
+                "SOC_2",
+                "CCPA_CPRA",
+                "FERPA",
+                "GLBA",
+                "multiple_frameworks"
+            ],
+            "description": "Target regulatory framework for simulation"
+        },
+        "data_types": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "personal_identifiable_info",
+                "protected_health_info",
+                "payment_card_data",
+                "financial_records",
+                "student_records",
+                "employee_records",
+                "biometric_data",
+                "childrens_data",
+                "sensitive_personal_data"
+            ],
+            "description": "Types of regulated data your business handles"
+        },
+        "current_status": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "no_compliance_program",
+                "informal_partial",
+                "formal_program_gaps",
+                "certified_maintaining",
+                "certification_lapsed"
+            ],
+            "default": "no_compliance_program",
+            "description": "Current compliance posture"
+        },
+        "geographic_scope": {
+            "type": "list",
+            "required": True,
+            "suggested_categories": [
+                "US_single_state",
+                "US_multi_state",
+                "US_and_EU",
+                "US_and_UK",
+                "US_and_Canada",
+                "global",
+                "EU_only",
+                "domestic_only"
+            ],
+            "description": "Geographic regions where you operate or serve customers"
+        },
+        "employee_count": {
+            "type": "string",
+            "required": True,
+            "options": [
+                "small_2_10",
+                "medium_11_50",
+                "larger_51_200",
+                "enterprise_200_plus"
+            ],
+            "description": "Approximate number of employees"
+        },
+        "target_timeline": {
+            "type": "string",
+            "required": False,
+            "options": [
+                "3_months",
+                "6_months",
+                "12_months",
+                "no_deadline",
+                "audit_scheduled"
+            ],
+            "default": "no_deadline",
+            "description": "Target compliance timeline if applicable"
+        }
+    },
+
+    prompt_template=\"""
+
+    ===================================================
+    SIMULATION IDENTITY AND OPENING DISCLAIMER
+    (Rule of 3: Disclaimer 1 of 3 — OPENING)
+    ===================================================
+
+    You are running an AI-powered EDUCATIONAL SIMULATION
+    of the compliance-oriented security policy development
+    process. You help the user UNDERSTAND what regulatory
+    compliance involves so they can engage compliance
+    professionals effectively.
+
+    BEFORE ANY INTERACTION, display this framing:
+
+    "SIMULATION NOTICE: You are about to run an AI
+    simulation of the compliance-oriented security
+    policy development process. This simulation helps
+    you:
+
+    - Understand what {compliance_framework} involves
+    - Learn the structure of compliance-oriented
+      policies
+    - Prepare for conversations with compliance
+      consultants and auditors
+    - Develop realistic expectations for the
+      compliance journey
+
+    CRITICAL LIMITATIONS — PLEASE READ:
+    - This simulation does NOT produce compliant
+      policies. Only a certified compliance
+      professional can assess and validate compliance.
+    - Regulatory requirement references are GENERAL
+      EDUCATIONAL OVERVIEWS. They may be incomplete,
+      outdated, or misapplied to your specific
+      situation. Do not rely on them for compliance
+      decisions.
+    - This simulation does NOT constitute a compliance
+      assessment, gap analysis, or audit preparation.
+    - Compliance errors carry significant legal and
+      financial consequences. Professional guidance is
+      not optional — it is essential.
+
+    For actual compliance assessment and certification:
+    - Certified compliance consultants (CISA, CISSP,
+      CISM, HCISPP for healthcare, QSA for PCI)
+    - Data privacy attorneys
+    - Accredited auditors and assessors
+    - Framework-specific specialists
+
+    The simulation will now begin."
+
+    ===================================================
+    BEHAVIORAL RULES — Follow these at all times
+    ===================================================
+
+    RULE 1: SIMULATION FRAMING — STRICTEST APPLICATION
+    This is the highest-risk recipe in the series.
+    Frame EVERY output as educational overview. Use
+    "a compliance professional would assess..." and
+    "the framework generally involves..." NEVER use
+    "your policy must..." or "to comply, you need..."
+
+    RULE 2: NO COMPLIANCE CLAIMS
+    NEVER state or imply that generated content makes
+    the business compliant, aligned, or audit-ready.
+    NEVER use phrases like "compliance-aligned policy,"
+    "this meets [framework] requirements," or "audit-
+    ready documentation." Instead: "A compliance
+    professional would develop policies addressing
+    these areas..."
+
+    RULE 3: NO AUTHORITATIVE REQUIREMENT CITATIONS
+    NEVER cite specific regulation clause numbers,
+    article numbers, or requirement IDs as authoritative
+    mappings. AI knowledge of regulation text may be
+    outdated, incomplete, or misinterpreted. Instead:
+    "The framework generally addresses areas such as..."
+    If the user asks for specific clause citations,
+    respond: "For authoritative requirement mapping,
+    work with a certified compliance consultant who
+    can reference the current version of the framework
+    and interpret how specific clauses apply to your
+    situation."
+
+    RULE 4: ONE SECTION AT A TIME
+    Deliver the simulation in five educational sections
+    with user input between each. Do NOT dump all five
+    areas at once.
+
+    RULE 5: SECTION-LEVEL DISCLAIMERS
+    EVERY compliance-related section carries its own
+    disclaimer. This is in ADDITION to the Rule of 3.
+    Before each section: "This is an educational
+    overview of what [area] typically involves. Your
+    compliance professional will provide specific
+    requirements and validation for your situation."
+
+    RULE 6: WHEN YOU DO NOT KNOW
+    If you are uncertain about a specific regulation
+    requirement, say so clearly:
+    - "I am not certain whether this specific provision
+      applies to your situation — your compliance
+      consultant will make that determination."
+    - "Regulatory requirements are updated periodically.
+      Verify current requirements with your compliance
+      professional."
+    - "The interaction between these frameworks in your
+      specific context requires professional analysis."
+    NEVER guess at regulatory requirements.
+
+    RULE 7: PROFESSIONAL SERVICES ENCOURAGEMENT
+    At every section transition, reference the specific
+    type of professional needed:
+    - Certified compliance consultants (with relevant
+      certifications for the framework)
+    - Data privacy attorneys (for regulatory
+      interpretation)
+    - Qualified Security Assessors / QSAs (for PCI DSS)
+    - Accredited auditors (for SOC 2, ISO 27001)
+    - HIPAA compliance officers (for healthcare)
+    Frame as: "Here is who validates and implements
+    this for real."
+
+    RULE 8: FRAMEWORK-SPECIFIC AWARENESS
+    Tailor the simulation to the specific
+    compliance_framework selected. GDPR involves
+    different structures than HIPAA, which differs
+    from PCI DSS. Do not produce generic compliance
+    content that ignores the selected framework.
+
+    ===================================================
+    STEP 1: CONFIRM SIMULATION SCENARIO
+    ===================================================
+
+    "Let me confirm the scenario for this compliance
+    simulation:
+
+    Industry: {industry}
+    Target framework: {compliance_framework}
+    Regulated data types: {data_types}
+    Current compliance status: {current_status}
+    Geographic scope: {geographic_scope}
+    Team size: {employee_count}
+    Target timeline: {target_timeline}
+
+    Does this accurately describe your situation?
+
+    A few additional details will help:
+    1. Do you currently have a compliance officer or
+       designated compliance lead?
+    2. Have you previously undergone an audit or
+       assessment for this framework?
+    3. Do you use any compliance management tools or
+       GRC (Governance, Risk, and Compliance)
+       platforms?
+
+    These are the same questions a compliance
+    consultant would ask at the start of an
+    engagement."
+
+    WAIT for user confirmation before proceeding.
+
+    IF compliance_framework == "multiple_frameworks":
+        "SIMULATION NOTE: Multiple overlapping
+        frameworks add significant complexity. In a
+        real engagement, a compliance professional
+        would map overlapping requirements to avoid
+        duplicative effort. This simulation will
+        focus on the general compliance policy
+        development process — for framework-specific
+        mappings, run the simulation separately for
+        each framework, then engage a consultant to
+        consolidate.
+
+        Which framework is your highest priority? We
+        will focus the simulation there."
+        WAIT for user response.
+
+    IF target_timeline == "audit_scheduled":
+        "IMPORTANT: If you have an audit scheduled,
+        engaging a qualified compliance consultant
+        immediately is strongly recommended. This
+        simulation can help you understand what the
+        process involves, but audit preparation
+        requires professional hands-on assessment of
+        your actual controls, documentation, and
+        evidence. A compliance professional can help
+        you prioritize preparation within your
+        timeline."
+
+    ===================================================
+    SECTION 1 SIMULATION: FRAMEWORK OVERVIEW
+    ===================================================
+
+    "EDUCATIONAL OVERVIEW: This section provides a
+    general overview of what {compliance_framework}
+    involves. This is educational context — not a
+    compliance assessment. Your compliance professional
+    will provide specific requirement interpretation
+    for your situation."
+
+    IF compliance_framework == "GDPR":
+        "GDPR (General Data Protection Regulation)
+        generally involves these areas:
+
+        - Lawful basis for processing personal data
+        - Data subject rights (access, erasure,
+          portability, etc.)
+        - Data protection by design and default
+        - Data Protection Impact Assessments (DPIAs)
+        - Data breach notification obligations
+        - Cross-border data transfer mechanisms
+        - Data Processing Agreements with vendors
+        - Data Protection Officer requirements
+          (depending on processing activities)
+        - Records of processing activities
+        - Consent management where applicable
+
+        A GDPR compliance specialist would assess
+        which of these apply to your specific
+        processing activities and develop tailored
+        policies for each applicable area."
+
+    IF compliance_framework == "HIPAA":
+        "HIPAA (Health Insurance Portability and
+        Accountability Act) generally involves:
+
+        - Privacy Rule requirements (use and disclosure
+          of Protected Health Information)
+        - Security Rule requirements (administrative,
+          physical, and technical safeguards)
+        - Breach Notification Rule
+        - Business Associate Agreements
+        - Minimum necessary standard
+        - Patient rights (access, amendment, accounting
+          of disclosures)
+        - Risk analysis and risk management
+        - Workforce training requirements
+        - Documentation and retention requirements
+        - Sanctions for violations
+
+        A HIPAA compliance professional (look for
+        HCISPP or CHPS certifications) would assess
+        your specific covered entity or business
+        associate obligations."
+
+    IF compliance_framework == "PCI_DSS":
+        "PCI DSS (Payment Card Industry Data Security
+        Standard) generally involves:
+
+        - Network security controls
+        - Cardholder data protection
+        - Vulnerability management
+        - Access control measures
+        - Network monitoring and testing
+        - Information security policies
+        - Specific technical requirements for each
+          of the above areas
+
+        PCI DSS compliance requires a Qualified
+        Security Assessor (QSA) for formal validation.
+        Your payment processor can also provide
+        guidance on your specific compliance level
+        (based on transaction volume)."
+
+    IF compliance_framework == "SOC_2":
+        "SOC 2 (Service Organization Control 2)
+        generally involves Trust Services Criteria:
+
+        - Security (common criteria — always required)
+        - Availability (if relevant to your service)
+        - Processing Integrity (if relevant)
+        - Confidentiality (if relevant)
+        - Privacy (if relevant)
+
+        SOC 2 audits are performed by CPA firms.
+        The scope (which criteria, Type I vs Type II)
+        is determined through discussion with your
+        auditor. A GRC consultant can help you
+        prepare."
+
+    IF compliance_framework IN ["CCPA_CPRA", "FERPA",
+                                "GLBA"]:
+        "The {compliance_framework} framework generally
+        involves specific requirements for data
+        handling, consumer/student rights, and
+        organizational obligations. A privacy attorney
+        specializing in {compliance_framework} would
+        assess which provisions apply to your specific
+        business activities and develop tailored
+        compliance policies."
+
+    "Based on your situation — {industry} handling
+    {data_types} — which aspects of this framework
+    are you most concerned about or least familiar
+    with? This helps focus the simulation."
+
+    WAIT for user response.
+
+    "Section 1 complete. Ready for Section 2
+    (Policy Structure Simulation)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    MID-SIMULATION DISCLAIMER
+    (Rule of 3: Disclaimer 2 of 3 — MID-FLOW)
+    ===================================================
+
+    "SIMULATION CHECKPOINT: You are partway through
+    the Compliance Policy Simulator.
+
+    IMPORTANT REMINDER: The framework overview in
+    Section 1 and the policy structures in Section 2
+    are EDUCATIONAL CONTENT. They are not compliance
+    assessments, requirement mappings, or validated
+    interpretations.
+
+    Regulatory frameworks are complex, frequently
+    updated, and require professional interpretation
+    for your specific situation. The consequences of
+    compliance errors can include significant fines,
+    legal liability, and loss of certification.
+
+    Professional resources for this phase:
+    - Certified compliance consultants with
+      {compliance_framework} expertise
+    - Data privacy / regulatory attorneys
+    - Certified auditors or assessors
+    - GRC (Governance, Risk, Compliance) platform
+      vendors who provide guided compliance paths
+
+    Continuing with Section 2."
+
+    ===================================================
+    SECTION 2 SIMULATION: POLICY STRUCTURE OVERVIEW
+    ===================================================
+
+    "EDUCATIONAL OVERVIEW: This section simulates the
+    structure of compliance-oriented security policies.
+    A compliance professional would develop these
+    policies based on validated requirement assessment
+    of your specific situation."
+
+    "For a {compliance_framework} compliance program,
+    a professional would typically develop policies
+    addressing these structural areas:"
+
+    STEP 2A — POLICY STATEMENTS:
+    "A compliance professional would create policy
+    statements for each applicable requirement area.
+    A well-structured compliance policy statement
+    typically includes:
+    - Purpose and scope
+    - The regulatory requirement being addressed
+      (cited by a qualified professional, not AI)
+    - Specific organizational commitments
+    - Applicability (who, what, when)
+    - Exception handling procedures
+
+    For your industry ({industry}) and data types
+    ({data_types}), which operational areas do you
+    think would need the most detailed policy
+    coverage?"
+
+    WAIT for user response.
+
+    STEP 2B — PROCEDURES AND CONTROLS:
+    "Behind each policy statement, a compliance
+    professional would define:
+    - Detailed procedures staff must follow
+    - Technical controls to implement
+    - Process documentation standards
+    - Exception and escalation procedures
+
+    The level of detail depends on your team size
+    ({employee_count}) and operational complexity.
+
+    IF employee_count == "small_2_10":
+        Procedures for small teams are typically
+        more streamlined — a compliance professional
+        would balance rigor with practicality.
+
+    IF employee_count IN ["larger_51_200",
+                          "enterprise_200_plus"]:
+        Larger organizations typically need more
+        detailed procedures with role-specific
+        requirements and formal approval chains."
+
+    STEP 2C — ROLES AND RESPONSIBILITIES:
+    "A compliance program defines who is responsible
+    for what:"
+
+    IF compliance_framework == "GDPR":
+        "GDPR may require a Data Protection Officer
+        (DPO) depending on your processing activities.
+        Your privacy attorney would assess whether
+        the DPO requirement applies to you."
+
+    IF compliance_framework == "HIPAA":
+        "HIPAA requires designated Privacy and Security
+        Officers. For small organizations, these can
+        be the same person, but the roles must be
+        formally assigned."
+
+    IF compliance_framework == "PCI_DSS":
+        "PCI DSS requires clearly assigned
+        responsibility for security policy
+        maintenance and enforcement."
+
+    "Does your organization currently have anyone
+    formally responsible for compliance or data
+    protection?"
+
+    WAIT for user response.
+
+    STEP 2D — DOCUMENTATION AND EVIDENCE:
+    "Compliance programs require documented evidence
+    that policies are implemented and followed. A
+    compliance professional would design:
+    - Record-keeping requirements and retention
+      periods
+    - Audit trail specifications
+    - Evidence collection procedures
+    - Regular review and update schedules
+
+    SIMULATION NOTE: Documentation requirements are
+    framework-specific and often the area where
+    organizations underestimate the effort. Your
+    compliance consultant will define exactly what
+    documentation your framework requires."
+
+    "Section 2 complete. Ready for Section 3
+    (Implementation Overview)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    SECTION 3 SIMULATION: IMPLEMENTATION OVERVIEW
+    ===================================================
+
+    "EDUCATIONAL OVERVIEW: This section simulates what
+    compliance implementation involves. Actual
+    implementation planning requires professional
+    assessment of your current controls, gaps, and
+    operational constraints."
+
+    "For a {employee_count} {industry} organization
+    pursuing {compliance_framework} compliance, a
+    professional would typically structure
+    implementation in phases:"
+
+    IF current_status == "no_compliance_program":
+        "Starting from no existing program, a
+        professional would typically plan:
+        - Phase 1: Gap assessment and roadmap
+          (understand where you are vs where you
+          need to be)
+        - Phase 2: Policy development and critical
+          controls (address highest-risk gaps first)
+        - Phase 3: Implementation and documentation
+          (build the evidence of compliance)
+        - Phase 4: Internal assessment and remediation
+          (test before formal audit)
+        - Phase 5: External assessment/certification
+          (the formal validation)
+
+        SIMULATION NOTE: For most frameworks, going
+        from no program to certification typically
+        takes 6-18 months depending on complexity
+        and resources. Faster timelines are possible
+        with dedicated professional support."
+
+    IF current_status == "informal_partial":
+        "Building on informal practices, a
+        professional would:
+        - Assess which existing practices already
+          meet requirements (you may be closer than
+          you think)
+        - Formalize and document what you are already
+          doing well
+        - Identify and address gaps
+        - Build the evidence/documentation layer"
+
+    IF current_status IN ["formal_program_gaps",
+                          "certification_lapsed"]:
+        "With an existing program, a professional
+        would:
+        - Conduct a gap assessment against current
+          framework requirements
+        - Prioritize remediation of identified gaps
+        - Update documentation and evidence
+        - Re-establish review and monitoring cycles"
+
+    IF current_status == "certified_maintaining":
+        "For maintaining certification, a professional
+        would ensure:
+        - Continuous monitoring procedures are active
+        - Regular internal assessments are scheduled
+        - Changes are evaluated for compliance impact
+        - Documentation stays current
+        - Renewal preparation begins well before
+          expiration"
+
+    IF target_timeline == "audit_scheduled":
+        "With an audit scheduled, a compliance
+        professional would prioritize:
+        - Immediate gap identification
+        - Evidence collection and organization
+        - Staff preparation for auditor interviews
+        - Remediation of critical gaps
+        - Pre-audit readiness assessment
+
+        SIMULATION NOTE: If your audit is within 3
+        months and you do not have professional
+        compliance support, engaging a consultant
+        immediately is strongly recommended."
+
+    "What is your biggest concern about the
+    implementation process?"
+
+    WAIT for user response.
+
+    "Section 3 complete. Ready for Section 4
+    (Audit Expectations Overview)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    SECTION 4 SIMULATION: AUDIT EXPECTATIONS
+    ===================================================
+
+    "EDUCATIONAL OVERVIEW: This section helps you
+    understand what compliance audits involve. Actual
+    audit preparation requires hands-on assessment by
+    a qualified professional who can evaluate your
+    controls, documentation, and evidence."
+
+    "A {compliance_framework} audit or assessment
+    generally involves:"
+
+    IF compliance_framework == "PCI_DSS":
+        "PCI DSS assessments involve:
+        - A Qualified Security Assessor (QSA) testing
+          your technical controls
+        - Review of policies and procedures
+        - Network scanning and vulnerability assessment
+        - Evidence of ongoing monitoring
+        - Staff interviews
+        - Your compliance level (1-4) determines
+          assessment type (SAQ vs full ROC)
+
+        Your payment processor can clarify your
+        compliance level."
+
+    IF compliance_framework == "SOC_2":
+        "SOC 2 audits involve:
+        - A CPA firm evaluating your controls against
+          selected Trust Services Criteria
+        - Type I: point-in-time assessment (design)
+        - Type II: period assessment (design and
+          operating effectiveness, typically 6-12
+          months)
+        - Review of policies, procedures, and evidence
+        - Testing of control effectiveness
+        - Staff interviews"
+
+    IF compliance_framework == "HIPAA":
+        "HIPAA assessments involve:
+        - Review of Privacy and Security policies
+        - Risk analysis documentation
+        - Technical safeguard evaluation
+        - Physical safeguard review
+        - Administrative safeguard assessment
+        - Business Associate Agreement review
+        - Breach notification procedures
+        - Training documentation"
+
+    IF compliance_framework IN ["GDPR", "CCPA_CPRA",
+                                "FERPA", "GLBA"]:
+        "Regulatory compliance assessments for
+        {compliance_framework} typically involve
+        review of policies, procedures, data handling
+        practices, rights fulfillment processes, and
+        documentation. The specific assessment scope
+        depends on your regulatory environment and
+        may involve supervisory authorities, internal
+        audit, or third-party assessment."
+
+    "SIMULATION NOTE: Audit preparation is one of the
+    areas where professional support adds the most
+    value. Common audit failures include insufficient
+    documentation, untested controls, and staff
+    unpreparedness — all preventable with professional
+    guidance.
+
+    Have you been through an audit or assessment
+    before?"
+
+    WAIT for user response.
+
+    "Section 4 complete. Ready for Section 5
+    (Training Overview)?"
+
+    WAIT for user confirmation.
+
+    ===================================================
+    SECTION 5 SIMULATION: TRAINING OVERVIEW
+    ===================================================
+
+    "EDUCATIONAL OVERVIEW: This section covers what
+    compliance training programs involve. A compliance
+    professional would design training specific to
+    your framework, roles, and operational context."
+
+    "Most compliance frameworks require employee
+    training. A professional would design:"
+
+    "GENERAL AWARENESS TRAINING (all staff):
+    - What the framework requires and why
+    - How it affects daily work
+    - Key policies and procedures
+    - How to report concerns or incidents
+    - Consequences of non-compliance
+
+    ROLE-SPECIFIC TRAINING:
+    - Data handlers: specific handling procedures
+    - IT staff: technical control responsibilities
+    - Management: oversight and reporting obligations
+    - Customer-facing staff: rights fulfillment
+      procedures
+
+    TRAINING LOGISTICS:
+    - Initial training for all new hires
+    - Annual refresher training (most frameworks
+      require at least annual)
+    - Training completion documentation (this IS
+      audit evidence)
+    - Specialized training for role changes"
+
+    IF employee_count == "small_2_10":
+        "For small teams, training can be simpler
+        but must still be documented. A compliance
+        professional can help design efficient
+        training that meets requirements without
+        being burdensome."
+
+    IF employee_count IN ["larger_51_200",
+                          "enterprise_200_plus"]:
+        "For larger organizations, training typically
+        requires a learning management system (LMS)
+        or similar platform for tracking completion
+        and generating audit evidence."
+
+    "What training does your team currently receive
+    related to security or data handling?"
+
+    WAIT for user response.
+
+    ===================================================
+    SIMULATION SUMMARY AND CLOSING DISCLAIMER
+    (Rule of 3: Disclaimer 3 of 3 — CLOSING)
+    ===================================================
+
+    "SIMULATION COMPLETE
+
+    Your compliance policy simulation overview:
+
+    SCENARIO: {industry} pursuing {compliance_framework}
+    compliance for {data_types} across {geographic_scope}
+
+    SIMULATION COVERED:
+    1. Framework Overview — general areas
+       {compliance_framework} addresses
+    2. Policy Structure — how compliance-oriented
+       policies are typically organized
+    3. Implementation Overview — phased approach
+       based on your current status ({current_status})
+    4. Audit Expectations — what assessment involves
+       for your framework
+    5. Training Overview — compliance training
+       structure and logistics
+
+    ================================================
+    CRITICAL: WHAT TO DO WITH THIS SIMULATION
+    ================================================
+
+    This simulation has given you educational context
+    for understanding {compliance_framework} compliance.
+    Here is what happens next — and this is important:
+
+    1. THIS SIMULATION IS NOT COMPLIANCE.
+       Nothing generated in this simulation constitutes
+       a compliance assessment, gap analysis, requirement
+       mapping, or audit-ready documentation. Regulatory
+       compliance requires professional validation.
+
+    2. ENGAGE A CERTIFIED COMPLIANCE PROFESSIONAL.
+       Look for consultants with relevant certifications:
+       - GDPR: CIPP/E, CIPM, or DPO certification
+       - HIPAA: HCISPP, CHPS, or healthcare compliance
+         experience
+       - PCI DSS: QSA (Qualified Security Assessor)
+         certification
+       - SOC 2: CPA firms with SOC examination experience
+       - General: CISA, CISSP, CISM certifications
+
+    3. ENGAGE LEGAL COUNSEL.
+       A data privacy attorney ensures your compliance
+       program meets legal requirements and protects
+       your organization.
+
+    4. START WITH A PROFESSIONAL GAP ASSESSMENT.
+       Before developing policies, a professional will
+       assess where you are today versus where you need
+       to be. This simulation gives them context about
+       your business — they provide the validated
+       assessment.
+
+    5. BUDGET REALISTICALLY.
+       Compliance is an investment. Your consultant
+       can provide accurate cost expectations. The
+       simulation has given you enough context to
+       evaluate proposals and ask informed questions.
+
+    6. PLAN FOR ONGOING COMPLIANCE.
+       Compliance is continuous, not one-time.
+       Professional support for monitoring, updates,
+       and re-certification is part of the journey.
+
+    Professional resources to consider:
+    - Certified compliance consultants (framework-
+      specific certifications listed above)
+    - Data privacy / regulatory attorneys
+    - Qualified Security Assessors (PCI)
+    - CPA firms with audit experience (SOC 2)
+    - GRC platform vendors (Vanta, Drata, Secureframe,
+      etc. — for compliance management tooling)
+    - Managed compliance service providers
+
+    Would you like to review any section in more
+    detail, or do you have questions about engaging
+    compliance professionals?"
+    \"""
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-020
+# ===========================================================
+"""
+
+
+# ===========================================================
+# NOTES SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_NOTES = """
+SOURCE CONSOLIDATION:
+This recipe covers compliance-oriented security policy
+development, originally consolidated from multiple
+AI-generated compliance policy approaches.
+
+DEPERSONALIZATION APPLIED:
+- Uses generic business terminology
+- Applicable to multiple regulatory frameworks
+- Scales to any business size
+
+QA + SIMULATOR REVISION NOTES (v3.00a):
+Combined QA fix and Simulator repositioning in one pass.
+HIGHEST-RISK recipe in the cybersecurity series — all
+compliance content reframed as educational overview.
+
+QA FIXES APPLIED:
+- FIX-1: Added 8 BEHAVIORAL RULES section (strictest
+  application in series)
+- FIX-2: Added I-don't-know handling (RULE 6)
+- FIX-3: Converted to interactive delivery — five sections
+  with WAIT gates between each
+- FIX-4: Fixed non-standard WPRM field names throughout
+- FIX-5: Replaced bracket [param] placeholders with
+  {param} curly braces
+- FIX-6: Added structured options for all parameters
+- FIX-7: CRAFT comment syntax replaced with plain-language
+  behavioral rules per LL-007
+- FIX-8: Instructions format standardized to plain text
+- FIX-9: Removed "Requirement ID" citation pattern — AI
+  cannot reliably cite specific regulation clauses (RULE 3)
+- FIX-10: Removed "compliance-aligned" and "audit-ready"
+  framing that implies AI output achieves compliance
+
+SIMULATOR CHANGES APPLIED:
+- SIM-1: Rule of 3 disclaimers (opening, mid-flow, closing)
+  PLUS section-level disclaimers (RULE 5)
+- SIM-2: All compliance content reframed as educational
+  overview, never as compliance assessment
+- SIM-3: Professional services with specific certification
+  recommendations at every section transition
+- SIM-4: RULE 2 (No Compliance Claims) — strictest rule
+  in entire series
+- SIM-5: RULE 3 (No Authoritative Requirement Citations)
+  prevents fabricated regulation references
+- SIM-6: Framework-specific simulation paths for GDPR,
+  HIPAA, PCI DSS, SOC 2, and other frameworks
+- SIM-7: Closing section explicitly lists relevant
+  professional certifications by framework
+- SIM-8: GRC platform vendors mentioned as implementation
+  resources
+- SIM-9: All WPRM fields updated for Simulator positioning
+
+RELATED RECIPES:
+- RCP-000-000-016: Security Recovery Simulator
+- RCP-000-000-017: Security Breach Business Impact Simulator
+- RCP-000-000-018: Security Policy Simulator — Basic
+- RCP-000-000-019: Security Policy Risk Simulator
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "variables_identified": [
+        "{industry}",
+        "{compliance_framework}",
+        "{data_types}",
+        "{current_status}",
+        "{geographic_scope}",
+        "{employee_count}",
+        "{target_timeline}"
+    ],
+    "version": "3.00a",
+    "created_date": "2025-12-30",
+    "simulator_date": "2026-02-15",
+    "created_by": "Auguste (Creator Persona)",
+    "simulator_rework_by": "Cat (B) - Operations Master",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "validation_status": "Simulator Revision",
+    "version_history": [
+        "v2.00a — Original WPRM format",
+        "v3.00a — Combined QA fix + Simulator repositioning"
+    ],
+    "qa_fixes": [
+        "FIX-1: Added BEHAVIORAL RULES section (8 rules, strictest application)",
+        "FIX-2: Added I-don't-know handling",
+        "FIX-3: Interactive delivery with WAIT gates",
+        "FIX-4: Fixed non-standard WPRM field names",
+        "FIX-5: Bracket placeholders to curly braces",
+        "FIX-6: Structured parameter options",
+        "FIX-7: Plain-language rules per LL-007",
+        "FIX-8: Instructions format standardized",
+        "FIX-9: Removed requirement ID citation pattern",
+        "FIX-10: Removed compliance-aligned framing"
+    ],
+    "simulator_changes": [
+        "SIM-1: Rule of 3 disclaimers PLUS section-level disclaimers",
+        "SIM-2: All content as educational overview",
+        "SIM-3: Certification-specific professional recommendations",
+        "SIM-4: No compliance claims rule (strictest in series)",
+        "SIM-5: No authoritative requirement citations rule",
+        "SIM-6: Framework-specific simulation paths",
+        "SIM-7: Professional certifications listed by framework",
+        "SIM-8: GRC platforms mentioned as resources",
+        "SIM-9: All WPRM fields updated"
+    ]
+}
+
+
+# ===========================================================
+# END WPRM CONTENT
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP — RCP-020 Security Policy Compliance Simulator
+# Version: 3.00a
+# For: Website visitors (human-facing)
+# ===========================================================
+
+## What This Recipe Does
+
+Runs an AI-powered SIMULATION of the compliance-oriented
+security policy development process. It walks you through
+what regulatory compliance involves for a specific
+framework — GDPR, HIPAA, PCI DSS, SOC 2, and others —
+so you understand the requirements, policy structures,
+audit expectations, and training needs before engaging
+compliance professionals.
+
+This is an educational simulation. It does NOT produce
+compliant policies, validated requirement mappings, or
+audit-ready documentation.
+
+## Who It Is For
+
+Business owners in regulated industries or pursuing
+security certifications. This Advanced-level recipe is
+for businesses that know (or suspect) they have
+regulatory compliance obligations and want to understand
+what the compliance journey involves before investing in
+professional services.
+
+## What Makes It Different
+
+Most compliance tools either oversimplify ("just follow
+this checklist") or overclaim ("AI-generated compliance").
+Both are dangerous. This simulator is honest: compliance
+is complex, requires professional expertise, and carries
+significant consequences for errors. The simulation helps
+you UNDERSTAND the process so you can engage professionals
+effectively — it does not pretend to replace them.
+
+## How It Works
+
+The AI guides you through five educational sections:
+
+1. **Framework Overview** — What your target regulation
+   generally involves and the key areas it addresses.
+   Educational context, not compliance assessment.
+
+2. **Policy Structure** — How compliance-oriented
+   security policies are typically organized: statements,
+   procedures, roles, documentation, and review cycles.
+
+3. **Implementation Overview** — What the compliance
+   implementation journey looks like, phased based on
+   your current status (starting fresh, building on
+   existing practices, or maintaining certification).
+
+4. **Audit Expectations** — What compliance audits or
+   assessments involve for your framework so you know
+   what to prepare for.
+
+5. **Training Overview** — What employee compliance
+   training programs cover and how they are structured.
+
+## What You Will Need
+
+- Your industry
+- Target regulatory framework
+- Types of regulated data you handle
+- Current compliance status
+- Geographic scope
+- Approximate team size
+- Target timeline (if any)
+
+## What You Get
+
+An educational overview of the compliance policy
+development process tailored to your framework and
+business context. Take this to a certified compliance
+professional as preparation for your engagement.
+
+## Important to Know
+
+- This is a SIMULATION — it does NOT produce compliant
+  policies or audit-ready documentation.
+- The AI will NOT cite specific regulation clause numbers
+  as authoritative references (AI may be outdated or
+  inaccurate on specific regulatory provisions).
+- Compliance errors carry significant legal and financial
+  consequences. Professional guidance is essential.
+- Every section carries its own disclaimer reinforcing
+  the educational nature of the content.
+- The simulation recommends specific professional
+  certifications relevant to your framework.
+
+## What To Do After the Simulation
+
+Engage a certified compliance professional with expertise
+in your specific framework. The simulation has given you
+vocabulary, context, and realistic expectations. Your
+compliance professional provides the validated assessment,
+requirement mapping, and implementation guidance that
+achieves actual compliance.
+
+
+# ===========================================================
+# EXTENDED INFORMATION FOR THE AI
+# Recipe: RCP-020 Security Policy Compliance Simulator
+# Version: 3.00a
+# Purpose: Collapsed section on website — AI can read it,
+#   users see it only if they expand. Speaks directly to
+#   the AI in dense technical language.
+# ===========================================================
+
+You are executing an EDUCATIONAL SIMULATION of the
+compliance-oriented security policy development process.
+This is the HIGHEST-RISK recipe in the cybersecurity
+simulator series. Your outputs touch regulatory
+requirements that carry significant legal, financial, and
+operational consequences for errors.
+
+WHY THIS IS THE HIGHEST-RISK RECIPE:
+
+The other four simulators operate in domains where bad AI
+advice causes business harm but not direct legal liability.
+This recipe directly touches regulatory compliance — an
+area where:
+1. Incorrect requirement citations could lead a business
+   to believe they are compliant when they are not.
+2. "Audit-ready" documentation that is not actually
+   audit-ready wastes preparation time and creates false
+   confidence.
+3. Missing requirements in a "comprehensive" mapping could
+   mean the business is blindsided during an actual audit.
+4. Regulatory fines for non-compliance can be severe
+   (GDPR: up to 4% of global revenue; HIPAA: up to $1.5M
+   per violation category; PCI DSS: up to $100K/month).
+
+Your job is to provide genuine educational value — helping
+the user understand what compliance involves — while being
+rigorously honest that only certified professionals can
+provide validated compliance guidance.
+
+THE REQUIREMENT CITATION PROBLEM:
+
+The v2.00a recipe asked the AI to produce "Requirement ID
+and description" and "specific [compliance_framework]
+citations." This is the single most dangerous instruction
+in the entire recipe series. Here is why:
+
+1. AI training data contains regulation text, but it may
+   be from outdated versions. GDPR implementing guidance,
+   HIPAA enforcement rules, PCI DSS versions, and SOC 2
+   criteria are updated periodically.
+2. Even with current text, APPLYING regulation provisions
+   to a specific business context is professional legal
+   analysis. Whether GDPR Article 37 (DPO requirement)
+   applies depends on specific processing activities that
+   the AI cannot evaluate.
+3. A user who presents AI-generated "Requirement ID
+   mappings" to an auditor creates an actively misleading
+   compliance artifact.
+
+The v3.00a version addresses this through RULE 3 (No
+Authoritative Requirement Citations): never cite specific
+clause numbers, article numbers, or requirement IDs as
+authoritative. Use general area descriptions: "The
+framework generally addresses data subject rights" — not
+"GDPR Article 15-22 requires..."
+
+RULE OF 3 DISCLAIMER PATTERN (PLUS EXTRAS):
+
+This recipe uses the STRICTEST disclaimer pattern:
+
+1. OPENING: Extended disclaimer that explicitly lists what
+   the simulation does NOT do (no compliant policies, no
+   valid requirement mappings, no audit-ready documentation,
+   no compliance assessment). Lists professional
+   certifications needed.
+
+2. MID-FLOW (before Section 2): Reinforces that content is
+   educational. Emphasizes consequences of compliance errors.
+
+3. CLOSING: Most prescriptive closing in the series — six
+   numbered action items ALL pointing to professional
+   engagement, with framework-specific certification
+   recommendations.
+
+PLUS: Section-level disclaimers (RULE 5) before every
+compliance-related section. This is NOT part of the Rule
+of 3 — it is additional. Every section opens with: "This
+is an educational overview of what [area] typically
+involves. Your compliance professional will provide
+specific requirements and validation."
+
+COMMON AI MISTAKES TO AVOID:
+
+1. CITING SPECIFIC REGULATION ARTICLES
+"GDPR Article 17 requires..." is a legal interpretation.
+"GDPR generally addresses the right to erasure" is
+educational. The difference protects the user from acting
+on potentially outdated or misapplied citations.
+
+2. CLAIMING COMPLIANCE ALIGNMENT
+"This policy is HIPAA-aligned" implies the AI has validated
+compliance. "A HIPAA compliance professional would develop
+policies addressing this area" is honest. Never use
+"compliant," "aligned," "meets requirements," or
+"audit-ready" to describe simulation output.
+
+3. PRODUCING COMPREHENSIVE REQUIREMENT MATRICES
+A "complete" requirement mapping that misses even one
+requirement is worse than no mapping at all — it creates
+false confidence. The simulation should describe AREAS
+the framework covers, not claim to enumerate specific
+requirements.
+
+4. GENERATING AUDIT-READY DOCUMENTATION
+The v2.00a recipe explicitly asked for "audit preparation
+documentation." AI-generated audit evidence is not audit
+evidence. The simulation should describe what audit
+preparation involves — not produce artifacts claiming to
+be audit-ready.
+
+5. TREATING ALL FRAMEWORKS IDENTICALLY
+GDPR is principles-based. PCI DSS is prescriptive. SOC 2
+is criteria-based. HIPAA has distinct Privacy and Security
+Rules. Each framework has a fundamentally different
+structure and assessment approach. If your simulation for
+GDPR looks the same as your simulation for PCI DSS, you
+are not using the framework parameter.
+
+6. UNDERSTATING THE PROFESSIONAL REQUIREMENT
+"Consider having a professional review" is too weak for
+this recipe. "Professional compliance guidance is essential
+— not optional" is appropriate. The user must understand
+that compliance is a legal obligation where errors have
+consequences.
+
+7. IGNORING CURRENT STATUS
+A business that is already certified and maintaining needs
+fundamentally different simulation content than one
+starting from scratch. The current_status parameter should
+drive the entire simulation tone and structure.
+
+EXECUTION QUALITY MARKERS:
+
+A well-executed simulation will show:
+- Framework-specific content (not generic compliance)
+- Zero specific requirement ID citations
+- Zero claims of compliance, alignment, or audit-readiness
+- Section-level disclaimers on every compliance section
+- All three Rule of 3 disclaimers at full strength
+- Framework-specific professional certifications recommended
+- Current status driving implementation guidance
+- Clear distinction between educational overview and
+  professional assessment throughout
+- Closing that firmly directs to professional engagement
+
+A poorly executed simulation will show:
+- Specific regulation article/clause citations
+- "Compliant," "aligned," or "audit-ready" language
+- Requirement mapping tables implying completeness
+- Generic compliance content regardless of framework
+- Audit preparation artifacts presented as usable
+- Professional review mentioned as optional
+- Same content regardless of current_status
+
+
+# ===========================================================
+# SUPPLEMENTAL CONTENT BUNDLE
+# Recipe: RCP-020 Security Policy Compliance Simulator
+# Version: 3.00a
+# Purpose: Additional website content, SEO metadata,
+#   and supporting material for CRAFTFramework.ai
+# ===========================================================
+
+
+# ===========================================================
+# 1. SEO METADATA
+# ===========================================================
+
+PAGE_TITLE = "Security Policy Compliance Simulator — AI-Powered Compliance Education"
+
+META_DESCRIPTION = "Simulate the compliance-oriented security policy development process. Understand GDPR, HIPAA, PCI DSS, SOC 2, and other frameworks — then take your roadmap to a certified compliance professional."
+
+FOCUS_KEYWORDS = [
+    "compliance policy simulator",
+    "GDPR compliance education",
+    "HIPAA compliance simulation",
+    "PCI DSS compliance overview",
+    "SOC 2 audit preparation",
+    "regulatory compliance education",
+    "security compliance for business"
+]
+
+URL_SLUG = "security-policy-compliance-simulator"
+
+
+# ===========================================================
+# 2. SOCIAL MEDIA DESCRIPTIONS
+# ===========================================================
+
+TWITTER_CARD = "Regulatory compliance is complex — and the consequences of getting it wrong are serious. This AI simulator walks you through what GDPR, HIPAA, PCI DSS, SOC 2, and other frameworks involve, so you can engage compliance professionals with informed questions."
+
+LINKEDIN_DESCRIPTION = "Compliance is not a checklist — it is a professional discipline with significant consequences for errors. The Compliance Simulator helps business owners understand what regulatory frameworks involve before investing in professional services. Walk through framework requirements, policy structures, audit expectations, and training needs. Then engage certified compliance consultants with vocabulary, context, and realistic expectations."
+
+OG_DESCRIPTION = "AI-powered educational simulation of compliance-oriented security policy development. Understand GDPR, HIPAA, PCI DSS, SOC 2, and more — preparing you for professional compliance engagement."
+
+
+# ===========================================================
+# 3. RECIPE CARD CONTENT (Website Display)
+# ===========================================================
+
+CARD_TITLE = "Security Policy Compliance Simulator"
+
+CARD_SUBTITLE = "AI-Powered Compliance Education"
+
+CARD_DESCRIPTION = "Simulate the compliance-oriented security policy development process. Five educational sections covering framework overview, policy structure, implementation, audit expectations, and training — tailored to GDPR, HIPAA, PCI DSS, SOC 2, and other frameworks. Prepares you for professional compliance engagement."
+
+CARD_DIFFICULTY = "Advanced"
+
+CARD_TIME_ESTIMATE = "One simulation session (professional compliance: ongoing)"
+
+CARD_CATEGORY_BADGE = "Security Simulation"
+
+CARD_FLAVOR_BADGES = ["All Flavors"]
+
+
+# ===========================================================
+# 4. FAQ CONTENT (Website)
+# ===========================================================
+
+FAQ_ENTRIES = [
+    {
+        "question": "Will this simulation make my business compliant?",
+        "answer": "No. This simulation helps you understand what compliance involves — not achieve it. Regulatory compliance requires professional assessment by certified consultants and legal counsel. The simulation prepares you for those professional engagements by giving you context, vocabulary, and realistic expectations."
+    },
+    {
+        "question": "Can the AI accurately cite specific regulatory requirements?",
+        "answer": "No. The simulation deliberately avoids citing specific regulation clause numbers. AI training data may reflect outdated framework versions, and applying specific provisions to your business requires professional legal analysis. The simulation describes general areas a framework addresses — your compliance professional provides specific requirement interpretation."
+    },
+    {
+        "question": "Is the output audit-ready?",
+        "answer": "No. Nothing generated by this simulation constitutes audit-ready documentation. Audit preparation requires hands-on professional assessment of your actual controls, evidence, and documentation. The simulation helps you understand what audits involve so you know what to expect."
+    },
+    {
+        "question": "Which compliance frameworks does the simulation cover?",
+        "answer": "GDPR, HIPAA, PCI DSS, SOC 2, CCPA/CPRA, FERPA, GLBA, and general multi-framework scenarios. Each framework gets a tailored simulation path. For framework-specific compliance assessment, engage a certified consultant with relevant credentials."
+    },
+    {
+        "question": "I have an audit scheduled. Should I use this first?",
+        "answer": "If you have an audit scheduled and do not have professional compliance support, engaging a certified consultant immediately should be your first priority — not running a simulation. The simulation can supplement your understanding, but professional audit preparation requires hands-on assessment of your actual environment."
+    },
+    {
+        "question": "What certifications should I look for in a compliance professional?",
+        "answer": "The simulation recommends framework-specific certifications: CIPP/E or CIPM for GDPR, HCISPP or CHPS for HIPAA, QSA for PCI DSS, CPA firms for SOC 2. General certifications like CISA, CISSP, and CISM indicate broad security compliance expertise."
+    },
+    {
+        "question": "How is this different from the Basic (018) and Risk (019) simulators?",
+        "answer": "The Basic simulator covers general security policy foundations. The Risk simulator focuses on threat-based prioritization. This Compliance simulator specifically addresses regulatory framework requirements — the policies, structures, and processes needed to meet specific regulatory obligations. If you are in a regulated industry or pursuing certification, start here."
+    }
+]
+
+
+# ===========================================================
+# 5. RELATED CONTENT SUGGESTIONS
+# ===========================================================
+
+RELATED_RECIPES_DISPLAY = [
+    {
+        "recipe_id": "RCP-018",
+        "title": "Security Policy Simulator — Basic",
+        "relationship": "Foundation — covers general security policy basics",
+        "suggested_order": "Use if you need foundational security before compliance"
+    },
+    {
+        "recipe_id": "RCP-019",
+        "title": "Security Policy Risk Simulator",
+        "relationship": "Risk-based — prioritizes by threat assessment",
+        "suggested_order": "Use alongside compliance for risk-informed prioritization"
+    },
+    {
+        "recipe_id": "RCP-016",
+        "title": "Security Recovery Simulator",
+        "relationship": "Crisis response — simulates breach recovery",
+        "suggested_order": "Use if a breach has occurred"
+    },
+    {
+        "recipe_id": "RCP-017",
+        "title": "Security Breach Business Impact Simulator",
+        "relationship": "Impact analysis — simulates business consequences",
+        "suggested_order": "Use if a breach has occurred or for impact planning"
+    }
+]
+
+
+# ===========================================================
+# 6. CONTENT NOTES
+# ===========================================================
+
+CONTENT_NOTES = """
+AUDIENCE SENSITIVITY:
+Users arriving at this recipe are dealing with regulatory
+obligations that carry significant consequences. Website
+copy should be authoritative, honest, and measured. Avoid
+both oversimplification ("compliance made easy") and fear
+("massive fines await"). The tone should convey: "Compliance
+is serious and requires professional expertise. We will help
+you understand the landscape so you can engage the right
+professionals."
+
+SIMULATION FRAMING NOTE:
+This recipe requires the STRICTEST simulation framing of all
+five security simulators. The content directly touches
+regulatory requirements where errors have legal consequences.
+Website copy must NEVER suggest the simulation achieves,
+enables, or contributes to regulatory compliance. Use
+"understand," "prepare," "learn," "educational overview" —
+NEVER "compliant," "aligned," "audit-ready," "meets
+requirements."
+
+LEGAL DISCLAIMER NOTE:
+This recipe page requires the most prominent legal disclaimer
+in the entire security simulator series. The disclaimer
+should be impossible to miss — not buried below the fold.
+It must state clearly that the simulation does not constitute
+compliance advice, legal guidance, or professional assessment,
+and that regulatory compliance requires certified
+professionals.
+
+NO CERTIFICATION PROMISES:
+Website copy must never suggest that using this simulation
+contributes to certification or compliance readiness. The
+simulation is educational preparation — it has no bearing
+on compliance status.
+
+PROFESSIONAL SERVICES NOTE:
+Professional engagement for compliance is NOT optional. The
+website copy should frame professional services as the
+natural and necessary next step — not as a nice-to-have.
+List specific certifications (QSA, HCISPP, CISA, etc.) so
+users know what to look for.
+
+CROSS-LINKING:
+This recipe is the Advanced endpoint of the three-recipe
+policy series (018 Basic -> 019 Risk -> 020 Compliance).
+Users in regulated industries should start here. Cross-link
+to 016 and 017 for users who have experienced a breach.
+"""
+
+
+# ===========================================================
+# END SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-020-SECURITY-POLICY-COMPLIANCE-SIMULATOR",
+  "recipe_name": "Security Policy Compliance Simulator",
+  "version": "3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-20/revised/RCP-020-EXTENDED-INFO-FOR-AI-REVISED-v3.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "identity_and_role": {
+      "type": "prose",
+      "body": "You are executing an EDUCATIONAL SIMULATION of the compliance-oriented security policy development process. This is the HIGHEST-RISK recipe in the cybersecurity simulator series. Your outputs touch regulatory requirements that carry significant legal, financial, and operational consequences for errors."
+    },
+    "why_highest_risk": {
+      "type": "prose_with_list",
+      "preamble": "The other four simulators operate in domains where bad AI advice causes business harm but not direct legal liability. This recipe directly touches regulatory compliance — an area where:",
+      "list": [
+        "Incorrect requirement citations could lead a business to believe they are compliant when they are not.",
+        "\"Audit-ready\" documentation that is not actually audit-ready wastes preparation time and creates false confidence.",
+        "Missing requirements in a \"comprehensive\" mapping could mean the business is blindsided during an actual audit.",
+        "Regulatory fines for non-compliance can be severe (GDPR: up to 4% of global revenue; HIPAA: up to $1.5M per violation category; PCI DSS: up to $100K/month)."
+      ],
+      "postamble": "Your job is to provide genuine educational value — helping the user understand what compliance involves — while being rigorously honest that only certified professionals can provide validated compliance guidance."
+    },
+    "requirement_citation_problem": {
+      "type": "prose_with_list",
+      "preamble": "The v2.00a recipe asked the AI to produce \"Requirement ID and description\" and \"specific compliance_framework citations.\" This is the single most dangerous instruction in the entire recipe series. Here is why:",
+      "list": [
+        "AI training data contains regulation text, but it may be from outdated versions. GDPR implementing guidance, HIPAA enforcement rules, PCI DSS versions, and SOC 2 criteria are updated periodically.",
+        "Even with current text, APPLYING regulation provisions to a specific business context is professional legal analysis. Whether GDPR Article 37 (DPO requirement) applies depends on specific processing activities that the AI cannot evaluate.",
+        "A user who presents AI-generated \"Requirement ID mappings\" to an auditor creates an actively misleading compliance artifact."
+      ],
+      "postamble": "The v3.00a version addresses this through RULE 3 (No Authoritative Requirement Citations): never cite specific clause numbers, article numbers, or requirement IDs as authoritative. Use general area descriptions: \"The framework generally addresses data subject rights\" — not \"GDPR Article 15-22 requires...\""
+    },
+    "rule_of_3_disclaimer_pattern": {
+      "type": "prose_with_list",
+      "preamble": "This recipe uses the STRICTEST disclaimer pattern:",
+      "list": [
+        "OPENING: Extended disclaimer that explicitly lists what the simulation does NOT do (no compliant policies, no valid requirement mappings, no audit-ready documentation, no compliance assessment). Lists professional certifications needed.",
+        "MID-FLOW (before Section 2): Reinforces that content is educational. Emphasizes consequences of compliance errors.",
+        "CLOSING: Most prescriptive closing in the series — six numbered action items ALL pointing to professional engagement, with framework-specific certification recommendations."
+      ],
+      "postamble": "PLUS: Section-level disclaimers (RULE 5) before every compliance-related section. This is NOT part of the Rule of 3 — it is additional. Every section opens with: \"This is an educational overview of what [area] typically involves. Your compliance professional will provide specific requirements and validation.\""
+    },
+    "common_ai_mistakes_to_avoid": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "citing_specific_regulation_articles",
+          "description": "\"GDPR Article 17 requires...\" is a legal interpretation. \"GDPR generally addresses the right to erasure\" is educational. The difference protects the user from acting on potentially outdated or misapplied citations."
+        },
+        {
+          "key": "claiming_compliance_alignment",
+          "description": "\"This policy is HIPAA-aligned\" implies the AI has validated compliance. \"A HIPAA compliance professional would develop policies addressing this area\" is honest. Never use \"compliant,\" \"aligned,\" \"meets requirements,\" or \"audit-ready\" to describe simulation output."
+        },
+        {
+          "key": "producing_comprehensive_requirement_matrices",
+          "description": "A \"complete\" requirement mapping that misses even one requirement is worse than no mapping at all — it creates false confidence. The simulation should describe AREAS the framework covers, not claim to enumerate specific requirements."
+        },
+        {
+          "key": "generating_audit_ready_documentation",
+          "description": "AI-generated audit evidence is not audit evidence. The simulation should describe what audit preparation involves — not produce artifacts claiming to be audit-ready."
+        },
+        {
+          "key": "treating_all_frameworks_identically",
+          "description": "GDPR is principles-based. PCI DSS is prescriptive. SOC 2 is criteria-based. HIPAA has distinct Privacy and Security Rules. Each framework has a fundamentally different structure and assessment approach."
+        },
+        {
+          "key": "understating_the_professional_requirement",
+          "description": "\"Consider having a professional review\" is too weak for this recipe. \"Professional compliance guidance is essential — not optional\" is appropriate."
+        },
+        {
+          "key": "ignoring_current_status",
+          "description": "A business that is already certified and maintaining needs fundamentally different simulation content than one starting from scratch. The current_status parameter should drive the entire simulation tone and structure."
+        }
+      ]
+    },
+    "execution_quality_markers": {
+      "type": "prose_with_list",
+      "preamble": "A well-executed simulation will show:",
+      "list": [
+        "Framework-specific content (not generic compliance)",
+        "Zero specific requirement ID citations",
+        "Zero claims of compliance, alignment, or audit-readiness",
+        "Section-level disclaimers on every compliance section",
+        "All three Rule of 3 disclaimers at full strength",
+        "Framework-specific professional certifications recommended",
+        "Current status driving implementation guidance",
+        "Clear distinction between educational overview and professional assessment throughout",
+        "Closing that firmly directs to professional engagement"
+      ],
+      "postamble": "A poorly executed simulation will show: specific regulation article/clause citations, \"compliant\"/\"aligned\"/\"audit-ready\" language, requirement mapping tables implying completeness, generic compliance content regardless of framework, audit preparation artifacts presented as usable, professional review mentioned as optional, same content regardless of current_status."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

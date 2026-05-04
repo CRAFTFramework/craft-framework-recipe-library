@@ -1,0 +1,1384 @@
+# === RECIPE METADATA ===
+recipe_id:      RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+recipe_name:    Historical Innovation Tracker
+version:        v2.00b
+authored_by:    Cat (P067)
+revision_date:  2026-04-25
+permalink_url:  (pending — GitHub upload not yet completed)
+source_commit:  (pending — GitHub upload not yet completed)
+
+
+# === WPRM FIELDS ===
+
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+# Version: 2.00b
+# Date: 2025-12-29
+# Revised: 2026-02-14
+# Status: REVISED (QA Audit P051f-H005)
+# Cookbook: Standalone (No Cookbook)
+# ===========================================================
+
+
+# ===========================================================
+# LICENSE
+# ===========================================================
+# Licensed under the Business Source License 1.1 (BSL)
+# Copyright 2025 Ketelsen Digital Solutions LLC
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Type
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+# ===========================================================
+# WPRM FIELD: Name
+# ===========================================================
+
+WPRM_FIELD_NAME = "RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER"
+
+
+# ===========================================================
+# WPRM FIELD: Description
+# ===========================================================
+
+WPRM_FIELD_DESCRIPTION = """
+Analyze historical innovation patterns and market
+transformations to understand how industries evolve through
+disruption cycles. This recipe examines innovation cycles,
+market structure evolution, external influences, and resource
+allocation patterns within defined time boundaries. Ideal for
+strategic planning, innovation strategy, and understanding
+the rhythm of industry change.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Multi-Recipe Combo Stages
+# ===========================================================
+
+WPRM_FIELD_COMBO_STAGE = "Single Recipe"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Is Part Of This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Category ID Numbers
+# ===========================================================
+
+WPRM_FIELD_CATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategory ID Numbers
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORY_ID = "000"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe ID Numbers
+# ===========================================================
+
+WPRM_FIELD_RECIPE_ID = "011"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Status
+# ===========================================================
+
+WPRM_FIELD_STATUS = "Official"
+
+
+# ===========================================================
+# WPRM FIELD: CRAFT Flavors
+# ===========================================================
+
+WPRM_FIELD_FLAVORS = "Cowork"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Categories
+# ===========================================================
+
+WPRM_FIELD_CATEGORIES = "Research, Analysis, Strategy"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Subcategories
+# ===========================================================
+
+WPRM_FIELD_SUBCATEGORIES = "Innovation Analysis, Pattern Recognition"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Tags
+# ===========================================================
+
+WPRM_FIELD_TAGS = "innovation patterns, disruption cycles, market transformation, industry evolution, strategic planning, pattern recognition"
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Difficulty
+# ===========================================================
+
+WPRM_FIELD_DIFFICULTY = "Expert"
+
+
+# ===========================================================
+# WPRM FIELD: How A.I. Reads This Recipe
+# ===========================================================
+
+WPRM_FIELD_AI_READS = """
+This recipe instructs the AI to conduct a multi-dimensional
+analysis of how innovation and transformation have historically
+shaped an industry or sector. The AI examines four key
+dimensions: innovation cycles, market structure evolution,
+external influences, and resource allocation patterns. All
+analysis is constrained to verified historical events within
+the specified time boundary, with emphasis on identifying
+patterns that reveal the rhythm of industry change.
+
+I-DON'T-KNOW PROTOCOL: When knowledge is limited for an
+industry or era, the AI flags the gap, explains what is
+known versus what is not, scales analysis to match actual
+knowledge depth, and marks claims with confidence tiers
+(DOCUMENTED, ANALYTICAL, SPECULATIVE). Ambiguous cycle
+boundaries are presented with alternatives. Uncertain
+figures use hedging language rather than false precision.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Short Description
+# ===========================================================
+
+WPRM_FIELD_SHORT_DESC = """
+Analyze historical innovation cycles and market transformations
+to understand patterns of industry disruption and evolution.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: When To Use This Recipe
+# ===========================================================
+
+WPRM_FIELD_WHEN_TO_USE = """
+Use this recipe when you need:
+- Innovation strategy development
+- Understanding disruption patterns in an industry
+- Investment planning based on cycle analysis
+- Product development roadmapping
+- Market entry timing decisions
+- Competitive positioning strategy
+- Technology adoption forecasting research
+- Industry trend analysis for strategic planning
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Recipe Name (Display)
+# ===========================================================
+
+WPRM_FIELD_DISPLAY_NAME = "Historical Innovation Tracker"
+
+
+# ===========================================================
+# WPRM FIELD: This Recipe Is Included In This Cookbook
+# ===========================================================
+
+WPRM_FIELD_COOKBOOK_INCLUDE = "Standalone (No Cookbook)"
+
+
+# ===========================================================
+# WPRM FIELD: Instructions
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 0: Understand The Purpose
+
+    This recipe reveals deeper patterns in how industries
+    evolve through innovation and disruption. It examines:
+    
+    - INNOVATION CYCLES: The rhythm of breakthroughs
+    - MARKET STRUCTURE: How competitive dynamics shift
+    - EXTERNAL INFLUENCES: Context shaping innovation
+    - RESOURCE ALLOCATION: Where investments flowed
+    
+    This analysis helps identify patterns that may inform
+    strategic decisions while avoiding speculation.
+
+STEP 1: Define Your Industry And Time Boundary
+
+    Select an industry or sector to analyze.
+    Set a time period that captures multiple innovation
+    cycles (typically 10-30 years minimum).
+    
+    Example boundaries:
+    - Software industry: 1990 to 2015
+    - Automotive sector: 1980 to 2010
+    - Financial services: 1995 to 2018
+    - Healthcare technology: 2000 to 2020
+
+STEP 2: Identify Analysis Priorities
+
+    Select which dimensions to emphasize:
+    
+    INNOVATION CYCLES (Required):
+    - Technology breakthroughs
+    - Adoption patterns
+    - Resistance factors
+    - Cycle duration
+    
+    MARKET STRUCTURE (Recommended):
+    - Competitive dynamics
+    - Player emergence/decline
+    - Concentration patterns
+    
+    EXTERNAL INFLUENCES (Optional):
+    - Economic conditions
+    - Regulatory changes
+    - Social and cultural factors
+    
+    RESOURCE ALLOCATION (Optional):
+    - Investment trends
+    - R&D focus areas
+    - Human capital development
+
+STEP 3: Execute The Innovation Pattern Prompt
+
+    Use this template:
+    
+    "Conduct a detailed historical analysis of [industry]
+    focusing on innovation patterns and market transformations
+    from [start date] to [end date]. Structure the analysis
+    as follows:
+    
+    1. INNOVATION CYCLES
+       - Major technological breakthroughs and market impact
+       - Duration and characteristics of each cycle
+       - Adoption patterns and resistance factors
+    
+    2. MARKET STRUCTURE EVOLUTION
+       - Changes in competitive dynamics
+       - Emergence and decline of key players
+       - Market concentration or fragmentation patterns
+    
+    3. EXTERNAL INFLUENCE ANALYSIS
+       - Economic conditions during pivotal changes
+       - Regulatory influences on innovation
+       - Social and cultural factors affecting adoption
+    
+    4. RESOURCE ALLOCATION PATTERNS
+       - Capital investment trends
+       - Human capital development
+       - Research and development focus areas
+    
+    Present findings chronologically with empirical evidence
+    and documented outcomes only."
+
+STEP 4: Analyze Innovation Cycles
+
+    From the AI response, identify:
+    
+    CYCLE CHARACTERISTICS:
+    - How long did each innovation cycle last?
+    - What triggered the start of each cycle?
+    - What signaled the end or maturation?
+    - Were there predictable patterns?
+    
+    BREAKTHROUGH PATTERNS:
+    - Where did breakthroughs originate?
+    - Who were the innovators?
+    - How quickly did adoption occur?
+    - What resistance did they face?
+    
+    TRANSITION PERIODS:
+    - How did the industry move between cycles?
+    - What happened to incumbents?
+    - How did new entrants emerge?
+
+STEP 5: Map Market Structure Changes
+
+    Analyze how the competitive landscape evolved:
+    
+    PLAYER DYNAMICS:
+    - Which companies rose to prominence?
+    - Which declined or disappeared?
+    - What factors drove these changes?
+    
+    MARKET CONCENTRATION:
+    - Did the market consolidate or fragment?
+    - When did major shifts occur?
+    - What drove concentration changes?
+    
+    COMPETITIVE FACTORS:
+    - What separated winners from losers?
+    - How did competitive advantages shift?
+    - What barriers to entry existed?
+
+STEP 6: Document Pattern Insights
+
+    Create a structured summary:
+    
+    1. Identified innovation cycle patterns
+    2. Market structure evolution timeline
+    3. Key external factors and their impacts
+    4. Resource allocation trends
+    5. Success and failure patterns
+    6. Transferable insights for strategy
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Actual Recipe Code
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+# ===========================================================
+
+HISTORICAL_INNOVATION_TRACKER = Recipe(
+    recipe_id="RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER",
+    title="Historical Innovation Tracker",
+    description="Multi-dimensional analysis of innovation
+        patterns and market transformations over time",
+    category="CAT-000",
+    subcategory="Standalone",
+    difficulty="expert",
+    version="2.00b",
+    
+    parameters={
+        "industry": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Industry or sector to analyze"
+        },
+        "start_date": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Analysis start date"
+        },
+        "end_date": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Analysis end date"
+        },
+        "analysis_depth": {
+            "type": "string",
+            "required": False,
+            "default": "comprehensive",
+            "options": ["focused", "comprehensive"],
+            "description": "Scope: focused = priority dimensions only, comprehensive = all 4 dimensions"
+        },
+        "priority_dimensions": {
+            "type": "list",
+            "required": False,
+            "default": ["innovation_cycles", "market_structure"],
+            "options": ["innovation_cycles", "market_structure", "external_influences", "resource_allocation"],
+            "description": "Dimensions to emphasize (all analyzed in comprehensive mode, only these in focused mode)"
+        }
+    },
+    
+    prompt_template=\"\"\"
+    # ===========================================================
+    # HISTORICAL INNOVATION PATTERN ANALYSIS
+    # ===========================================================
+    
+    # -----------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -----------------------------------------------------------
+    
+    R1: NEVER include any event, date, statistic, or claim
+        that falls outside the user-specified time boundary.
+        If the end date is 2015, nothing from 2016 or later
+        may appear anywhere in the analysis, not even as
+        context for why something in 2014 mattered.
+    
+    R2: ALWAYS confirm analysis parameters with the user
+        before generating the full analysis. Show the
+        industry, time boundary, analysis depth, and which
+        dimensions will be covered. Assess whether the time
+        window is long enough to capture multiple innovation
+        cycles for this industry. If it is not, say so and
+        suggest a wider window. Do not proceed until the
+        user confirms.
+    
+    R3: NEVER present cycle boundaries as objective fact.
+        Innovation cycles are analytical constructs, not
+        natural phenomena with precise start and end dates.
+        Every cycle boundary you identify must include a
+        JUSTIFICATION explaining what event, shift, or
+        threshold you used to place the boundary there. If
+        industry historians would reasonably disagree about
+        where a cycle begins or ends, acknowledge that.
+    
+    R4: ALWAYS distinguish between three tiers of claims:
+        DOCUMENTED — specific event, named entity, published
+        figure, dated occurrence
+        ANALYTICAL — pattern identification, cycle framing,
+        causal interpretation, trend characterization
+        SPECULATIVE — inferences about why something happened,
+        connections between events that are interpretive
+        Tag each major claim. When in doubt, tag it
+        ANALYTICAL rather than DOCUMENTED.
+    
+    R5: NEVER fabricate specific dates, founding years,
+        market share figures, investment amounts, or
+        headcounts. If you know a company was founded in
+        the late 1990s but are uncertain whether it was
+        1997 or 1998, say "late 1990s" rather than picking
+        a year. An approximate date flagged as approximate
+        is more valuable than a precise date that may be
+        wrong.
+    
+    R6: ALWAYS flag when your knowledge of an industry or
+        era is thin. Some industries have extensive
+        documentation in your training data (US tech, global
+        finance). Others do not (niche manufacturing,
+        regional service industries). If the user asks about
+        an industry where your knowledge is limited, say so
+        before producing an analysis that looks authoritative
+        but is actually thin. Per R2, raise this during
+        parameter confirmation.
+    
+    R7: NEVER impose a cycle framework and then backfill
+        evidence to support it. Analyze the events first,
+        then identify patterns. If the events do not
+        naturally cluster into clean cycles, say that. An
+        honest "this industry shows overlapping waves of
+        innovation rather than distinct cycles" is more
+        useful than forcing 4 neat cycles onto messy history.
+    
+    R8: IF analysis_depth is "focused", analyze ONLY the
+        dimensions listed in priority_dimensions at full
+        depth. Mention the other dimensions briefly (2-3
+        sentences each) noting they exist but are outside
+        the focused scope. IF analysis_depth is
+        "comprehensive", analyze ALL four dimensions at
+        full depth regardless of priority_dimensions, but
+        give additional attention to the priority dimensions.
+    
+    R9: ALWAYS generate follow-up options that are specific
+        to the analysis you just produced. Reference actual
+        cycles you identified, specific companies you
+        mentioned, and dimensions where your confidence was
+        lowest. Do not use generic follow-up suggestions.
+    
+    # -----------------------------------------------------------
+    # I-DONT-KNOW HANDLING
+    # -----------------------------------------------------------
+    
+    This is a hallucination-critical recipe operating at
+    Expert difficulty. The AI must actively flag its own
+    knowledge limits and distinguish between documented
+    history and interpretive framing.
+    
+    KNOWLEDGE GAP PROTOCOL:
+    
+    IF you lack sufficient data for this industry:
+        STATE which aspects of the industry are affected
+        EXPLAIN what you do know vs. what you do not
+        SUGGEST the user verify with industry-specific sources
+        DO NOT produce a full 4-dimension analysis from
+        thin data — scale the analysis to match your
+        actual knowledge depth
+    
+    IF your knowledge of different eras within the time
+    window is uneven:
+        FLAG which eras are well-documented vs. thin
+        PROVIDE full analysis for well-documented eras
+        PROVIDE honest hedged analysis for thin eras
+        MARK claims in thin eras with confidence tags
+        DO NOT pad thin eras with generic observations
+    
+    IF cycle boundaries are genuinely ambiguous:
+        PRESENT the boundary you chose AND the alternative
+        EXPLAIN what evidence supports each option
+        LET the user decide which framing serves their needs
+        DO NOT present one framing as the only valid reading
+    
+    IF quantitative data (market sizes, investment figures,
+    adoption rates) is uncertain:
+        USE hedging language ("estimated at," "approximately,"
+            "industry reports suggest," "figures vary")
+        TAG the claim as ANALYTICAL or SPECULATIVE
+        DO NOT present uncertain figures as DOCUMENTED
+    
+    # -----------------------------------------------------------
+    # PARAMETER CONFIRMATION
+    # -----------------------------------------------------------
+    
+    Before generating the analysis, confirm these parameters
+    with the user:
+    
+    ANALYSIS PARAMETERS:
+        Industry: {industry}
+        Time Period: {start_date} to {end_date}
+        Analysis Depth: {analysis_depth}
+        Priority Dimensions: {dimensions_display}
+    
+    SCOPE ASSESSMENT (share with user):
+    - Time window adequacy: Does {start_date} to {end_date}
+      likely capture multiple innovation cycles for
+      {industry}? If the window is under 10 years, flag
+      that it may only capture one partial cycle.
+    - Knowledge self-check: How well-documented is
+      {industry} in my training data? Flag any concerns
+      per R6.
+    - Depth mode: In {analysis_depth} mode, the analysis
+      will cover [list which dimensions and at what depth].
+    
+    Ask: "Does this scope look right? Any adjustments to
+    the industry definition, time period, or analysis
+    depth before I proceed?"
+    
+    WAIT for user confirmation before generating analysis.
+    
+    # -----------------------------------------------------------
+    # INNOVATION PATTERN FRAMEWORK
+    # -----------------------------------------------------------
+    
+    After user confirms, conduct a detailed historical
+    analysis of {industry} focusing on innovation patterns
+    and market transformations from {start_date} to
+    {end_date}.
+    
+    DIMENSION 1: INNOVATION CYCLES
+    
+        Analyze the rhythm of innovation in {industry}:
+        
+        1.1 MAJOR BREAKTHROUGHS
+            For each significant innovation:
+            - What was the breakthrough?
+            - When did it occur? (specific date if DOCUMENTED,
+              approximate if ANALYTICAL — tag which)
+            - Who developed or introduced it?
+            - What market impact did it create?
+            - How was success measured?
+            - Confidence tag: DOCUMENTED / ANALYTICAL
+        
+        1.2 CYCLE CHARACTERISTICS
+            Identify distinct innovation cycles:
+            - Cycle name or description
+            - Proposed start and end dates
+            - JUSTIFICATION: What event or shift marks the
+              start of this cycle? What marks the end?
+              Would industry analysts agree on these
+              boundaries, or are they interpretive?
+            - Duration in years (approximate)
+            - Defining characteristics
+            - Triggering events
+            - Maturation signals
+            
+            NOTE per R7: If the history does not resolve
+            neatly into distinct cycles, say so. Overlapping
+            waves, continuous evolution, or contested
+            periodization are all valid findings.
+        
+        1.3 ADOPTION PATTERNS
+            For major innovations:
+            - Initial adoption rate
+            - Early adopter profile
+            - Mainstream adoption timeline
+            - Laggard behavior
+            - Final penetration level
+            Tag quantitative adoption claims with confidence.
+        
+        1.4 RESISTANCE FACTORS
+            What slowed or blocked adoption:
+            - Technical barriers
+            - Economic barriers
+            - Organizational resistance
+            - Regulatory obstacles
+            - Cultural factors
+    
+    DIMENSION 2: MARKET STRUCTURE EVOLUTION
+    
+        IF analysis_depth == "focused" AND "market_structure"
+        NOT IN priority_dimensions:
+            Provide 2-3 sentence summary noting this
+            dimension exists but is outside focused scope.
+            SKIP to next priority dimension.
+        
+        Analyze how {industry} competitive landscape changed:
+        
+        2.1 COMPETITIVE DYNAMICS
+            Track shifts over time:
+            - Dominant competitive factors each era
+            - How competition basis changed
+            - Price vs. innovation vs. service
+        
+        2.2 KEY PLAYER TRAJECTORY
+            For major companies:
+            - Company name and founding date (tag confidence)
+            - Rise to prominence (when and why)
+            - Peak market position
+            - Decline or exit (if applicable)
+            - Key strategic decisions
+        
+        2.3 MARKET CONCENTRATION
+            Track industry structure:
+            - Number of significant players each era
+            - Market share distribution (tag confidence
+              on specific percentages)
+            - Consolidation events (M&A)
+            - New entrant patterns
+            - Barriers to entry over time
+        
+        2.4 FRAGMENTATION VS CONSOLIDATION
+            Identify structural shifts:
+            - When did consolidation occur?
+            - When did fragmentation occur?
+            - What drove these changes?
+            - How did structure affect innovation?
+    
+    DIMENSION 3: EXTERNAL INFLUENCE ANALYSIS
+    
+        IF analysis_depth == "focused" AND
+        "external_influences" NOT IN priority_dimensions:
+            Provide 2-3 sentence summary noting this
+            dimension exists but is outside focused scope.
+            SKIP to next priority dimension.
+        
+        Examine contextual factors affecting {industry}:
+        
+        3.1 ECONOMIC CONDITIONS
+            During key innovation periods:
+            - Economic growth or recession
+            - Interest rate environment
+            - Capital availability
+            - Consumer spending patterns
+        
+        3.2 REGULATORY INFLUENCES
+            Track policy impacts:
+            - Major regulations and dates
+            - Regulatory bodies involved
+            - Compliance requirements
+            - Innovation-enabling policies
+            - Innovation-restricting policies
+        
+        3.3 SOCIAL AND CULTURAL FACTORS
+            Examine broader context:
+            - Workforce changes
+            - Consumer behavior shifts
+            - Cultural attitudes toward technology
+            - Demographic influences
+    
+    DIMENSION 4: RESOURCE ALLOCATION PATTERNS
+    
+        IF analysis_depth == "focused" AND
+        "resource_allocation" NOT IN priority_dimensions:
+            Provide 2-3 sentence summary noting this
+            dimension exists but is outside focused scope.
+            SKIP to next priority dimension.
+        
+        Analyze where resources flowed in {industry}:
+        
+        4.1 CAPITAL INVESTMENT
+            Track funding patterns:
+            - VC/PE investment levels by period
+              (tag specific dollar figures with confidence)
+            - Corporate investment trends
+            - Public market valuations
+            - Investment focus areas
+        
+        4.2 RESEARCH AND DEVELOPMENT
+            Track R&D priorities:
+            - Major R&D initiatives
+            - Corporate vs. academic research
+            - Government-funded research
+            - Technology focus areas
+        
+        4.3 HUMAN CAPITAL
+            Track talent patterns:
+            - Skill requirements evolution
+            - Talent concentration (geography)
+            - Key talent movements
+            - Education/training developments
+    
+    # -----------------------------------------------------------
+    # PATTERN SYNTHESIS
+    # -----------------------------------------------------------
+    
+    After completing dimensional analysis, synthesize:
+    
+    IDENTIFIED PATTERNS:
+        For each pattern, state whether it is DOCUMENTED
+        (multiple sources confirm this pattern) or
+        ANALYTICAL (your interpretive framework):
+        - Innovation cycle duration patterns
+        - Trigger and maturation signals
+        - Adoption velocity patterns
+        - Market structure correlation with innovation
+        - External factor correlation with cycles
+        - Resource allocation leading indicators
+    
+    SUCCESS FACTORS:
+        - What characterized successful innovators?
+        - What timing factors mattered?
+        - What resource configurations worked?
+        - What market positions enabled success?
+    
+    FAILURE PATTERNS:
+        - What characterized failed innovations?
+        - What timing mistakes were made?
+        - What resource gaps caused failure?
+        - What market misreadings occurred?
+        
+        Per R5, name specific organizations and specific
+        actions. "Several companies failed" is not a
+        failure pattern. Name them.
+    
+    # -----------------------------------------------------------
+    # VALIDATION SUMMARY
+    # -----------------------------------------------------------
+    
+    After completing the analysis, provide this self-check:
+    
+    VALIDATION SUMMARY:
+    
+    TIME BOUNDARY COMPLIANCE:
+        All events fall between {start_date} and {end_date}:
+        YES / NO (if NO, identify violations)
+    
+    ANALYSIS DEPTH COMPLIANCE:
+        Requested depth: {analysis_depth}
+        Dimensions fully analyzed: [list]
+        Dimensions summarized only: [list]
+    
+    CYCLE BOUNDARIES:
+        Number of cycles identified: [count]
+        All cycle boundaries justified: YES / NO
+        Contested boundaries flagged: YES / NO / NONE
+    
+    CONFIDENCE DISTRIBUTION:
+        DOCUMENTED claims: [count]
+        ANALYTICAL claims: [count]
+        SPECULATIVE claims: [count]
+    
+    KNOWLEDGE GAPS FLAGGED:
+        [List any industries, eras, or dimensions where
+        data was limited or absent]
+    
+    # -----------------------------------------------------------
+    # FOLLOW-UP OPTIONS
+    # -----------------------------------------------------------
+    
+    Based on THIS specific analysis, suggest 3-5 follow-up
+    questions that address:
+    - A specific innovation cycle that warrants deeper
+      exploration (reference it by name or era)
+    - The dimension where your confidence was lowest
+    - A specific company trajectory worth expanding
+    - A contested cycle boundary the user may want to
+      explore alternative framings for
+    - Any dimension that was summarized-only in focused
+      mode that the user might want expanded
+    
+    Frame each suggestion as a specific question the user
+    can ask, referencing actual content from the analysis.
+    
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: Notes
+# ===========================================================
+
+WPRM_FIELD_NOTES = """
+SOURCE: Ketelsen.ai Week 21 - Claude Variation 3:
+Innovation Pattern Historical Analysis Framework.
+
+This is the most comprehensive recipe in the Historical
+Context series, designed for deep strategic analysis. The
+four-dimension framework (Innovation Cycles, Market Structure,
+External Influences, Resource Allocation) provides a complete
+picture of industry evolution.
+
+BEST PRACTICES:
+- Allow sufficient time period to capture multiple cycles
+- Start with comprehensive analysis, then drill down
+- Use follow-up prompts for specific areas of interest
+- Cross-reference patterns across dimensions
+- Document patterns for strategic planning use
+
+TYPICAL TIME REQUIREMENTS:
+- Initial analysis: 20-30 minutes
+- Pattern identification: 1-2 hours
+- Deep dive on specific areas: Additional 2-3 hours
+- Full strategic synthesis: 6-8 hours total
+
+INDUSTRY APPLICATIONS:
+- Technology: Software, hardware, platforms
+- Financial Services: Banking, payments, fintech
+- Healthcare: Devices, pharmaceuticals, delivery
+- Manufacturing: Processes, automation, supply chain
+- Retail: Channels, formats, consumer behavior
+
+QA REVISION NOTES (P051f-H005):
+- Added BEHAVIORAL RULES section (R1-R9)
+- Added I-DONT-KNOW HANDLING with knowledge gap protocol
+- Made prompt interactive (parameter confirmation with scope
+  assessment before analysis, per R2)
+- analysis_depth now functional: focused mode limits to
+  priority dimensions only, comprehensive covers all four (R8)
+- priority_dimensions renders via {dimensions_display} with
+  explicit mapping to dimension names
+- Added cycle-boundary justification requirement (R3, R7)
+- Added three-tier confidence tagging (DOCUMENTED/ANALYTICAL/
+  SPECULATIVE) with per-claim application (R4)
+- Replaced passive output checkboxes with active VALIDATION
+  SUMMARY self-check
+- Made follow-up options dynamic based on actual analysis (R9)
+- Added scope assessment during parameter confirmation (time
+  window adequacy, knowledge self-check, depth mode preview)
+"""
+
+
+# ===========================================================
+# RECIPE METADATA
+# ===========================================================
+
+RECIPE_METADATA = {
+    "recipe_id": "RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER",
+    "version": "2.00b",
+    "created_date": "2025-12-29",
+    "last_updated": "2026-02-14",
+    "author": "CRAFT Framework",
+    "status": "revised_qa",
+    "character_count": "TBD",
+    "line_count": "TBD",
+    "validation_status": "revised_p051f_h005",
+    "qa_audit_verdict": "FAIL — 9 fixes applied",
+    "qa_fixes_applied": [
+        "FIX-1: Added BEHAVIORAL RULES section (R1-R9)",
+        "FIX-2: Added I-DONT-KNOW HANDLING with knowledge gap protocol",
+        "FIX-3: Made prompt interactive — parameter confirmation with scope assessment",
+        "FIX-4: analysis_depth now functional — focused limits to priority dimensions (R8)",
+        "FIX-5: priority_dimensions renders via {dimensions_display} with explicit mapping",
+        "FIX-6: Replaced passive checkboxes with active VALIDATION SUMMARY",
+        "FIX-7: Added three-tier confidence tagging (DOCUMENTED/ANALYTICAL/SPECULATIVE per R4)",
+        "FIX-8: Added cycle-boundary justification requirement (R3, R7)",
+        "FIX-9: Follow-up options now dynamic based on actual analysis (R9)"
+    ],
+    "lessons_learned_applied": [
+        "LL-004", "LL-005", "LL-007", "LL-008",
+        "LL-009", "LL-013", "LL-015", "LL-017",
+        "LL-024"
+    ],
+    "source_document": "Request_Historical_Context_Recipe.docx",
+    "source_prompts_consolidated": 1,
+    "platforms_synthesized": ["Claude"],
+    "related_recipes": [
+        "RCP-000-000-009-HISTORICAL-CONTEXT-ANALYZER",
+        "RCP-000-000-010-HISTORICAL-COMPARATIVE-ANALYZER",
+        "RCP-000-000-003-SOCRATIC-PROCESS-OPTIMIZER",
+        "RCP-000-000-007-FIRST-PRINCIPLES-PROCESS-OPTIMIZER"
+    ]
+}
+
+
+# ===========================================================
+# END OF RECIPE FILE
+# ===========================================================
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# ===========================================================
+# TLDR RECAP (Human-facing summary)
+# ===========================================================
+
+# ===========================================================
+# RCP-011 TLDR RECAP
+# Historical Innovation Tracker
+# ===========================================================
+# For: Website users (human-readable summary)
+# Recipe: RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+# Version: 2.00b
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+
+    It maps how an industry changed over time through
+    innovation and disruption. You pick an industry and
+    a time window, and the AI produces a structured
+    analysis across four dimensions: how breakthroughs
+    happened and spread (Innovation Cycles), how the
+    competitive landscape shifted (Market Structure), what
+    outside forces shaped the industry (External Influences),
+    and where money and talent flowed (Resource Allocation).
+    The result is a pattern-level view of how an industry
+    actually evolved — not just what happened, but the
+    rhythm and logic behind the changes.
+
+
+WHY IT EXISTS:
+
+    Most industry research tells you what happened. This
+    recipe tells you how it happened — the patterns,
+    the cycles, the recurring dynamics. When you are
+    planning an innovation strategy, timing a market
+    entry, or trying to understand where an industry is
+    headed based on where it has been, you need more than
+    a timeline. You need someone to identify the deeper
+    patterns: how long do cycles last in this industry,
+    what triggers them, what kills incumbents, what
+    resources flow in before a breakthrough versus after.
+    That is what this recipe does.
+
+
+WHAT YOU GIVE IT:
+
+    - An industry or sector to analyze
+    - A time window (start and end dates — typically
+      10 to 30 years to capture multiple cycles)
+    - Analysis depth: "focused" (only your priority
+      dimensions at full depth) or "comprehensive"
+      (all four dimensions at full depth)
+    - Optional: which dimensions to prioritize
+      (Innovation Cycles, Market Structure, External
+      Influences, Resource Allocation)
+
+
+WHAT YOU GET BACK:
+
+    A multi-dimensional analysis organized by dimension:
+
+    1. Innovation Cycles — major breakthroughs, when
+       they happened, who drove them, how fast they
+       spread, what resisted them, and how long each
+       cycle lasted. Each cycle boundary comes with an
+       explanation of why it is placed there.
+
+    2. Market Structure — how the competitive landscape
+       changed, which companies rose and fell, when
+       consolidation or fragmentation happened, and
+       what drove the shifts.
+
+    3. External Influences — economic conditions,
+       regulatory changes, and cultural factors that
+       shaped the industry during key periods.
+
+    4. Resource Allocation — where venture capital,
+       corporate investment, R&D spending, and talent
+       flowed over time.
+
+    Then a synthesis section that pulls patterns across
+    all four dimensions: what characterized successful
+    innovators, what timing factors mattered, what
+    failure patterns recurred.
+
+    Every major claim is tagged as Documented (verifiable
+    fact), Analytical (pattern interpretation), or
+    Speculative (inference), so you always know what is
+    history and what is the AI's read on the history.
+
+
+WHAT MAKES THIS RECIPE DIFFERENT:
+
+    - It checks its own scope before starting. The AI
+      tells you if your time window is too short to
+      capture meaningful cycles, or if it does not know
+      the industry well enough to produce a strong
+      analysis.
+
+    - It justifies every cycle boundary. Instead of
+      presenting "Cycle 1: 1995-2003" as fact, it
+      explains what event or shift marks the start and
+      end, and flags if industry analysts would disagree.
+
+    - It does not force neat patterns onto messy history.
+      If an industry evolved in overlapping waves rather
+      than clean cycles, the AI says so instead of
+      inventing artificial boundaries.
+
+    - It has two depth modes. Focused mode gives you
+      deep analysis on just the dimensions you care
+      about. Comprehensive mode covers everything.
+
+    - It separates facts from interpretation at every
+      step, so you know which parts to cite and which
+      parts to verify.
+
+
+BEST USED FOR:
+
+    - Innovation strategy (what patterns in this industry
+      should inform my approach?)
+    - Market entry timing (where are we in the current
+      cycle, based on historical patterns?)
+    - Investment planning (what resource flows preceded
+      past breakthroughs in this industry?)
+    - Competitive positioning (what killed incumbents
+      in past cycles, and am I vulnerable to the same?)
+    - Product roadmapping (how fast did adoption happen
+      in past cycles, and what drove it?)
+
+
+TIPS FOR BEST RESULTS:
+
+    - Give it enough time to work with. A 5-year window
+      might only capture one partial cycle. 15 to 25
+      years is the sweet spot for most industries.
+
+    - Be specific about the industry. "Technology" is
+      too broad. "Enterprise SaaS" or "consumer mobile
+      payments" gives the AI a focused target.
+
+    - Start with comprehensive mode if you are exploring.
+      Use focused mode once you know which dimensions
+      matter most for your decision.
+
+    - Use the follow-up prompts. The first pass gives
+      you the map. Follow-ups let you zoom in on the
+      cycles, companies, or dimensions that matter most
+      to your specific situation.
+
+    - Pay attention to the confidence tags. The parts
+      tagged Analytical and Speculative are where the
+      AI is interpreting rather than reporting. Those
+      are the parts worth questioning and cross-checking.
+
+
+# ===========================================================
+# END TLDR RECAP
+# ===========================================================
+
+
+# ===========================================================
+# EXTENDED AI INFORMATION (Not visible to users)
+# ===========================================================
+
+# ===========================================================
+# RCP-011 EXTENDED INFORMATION FOR THE AI
+# Historical Innovation Tracker
+# ===========================================================
+# For: AI consumption (collapsed section on website)
+# Recipe: RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER
+# Version: 2.00b
+# ===========================================================
+
+
+AI EXECUTION GUIDANCE:
+
+    You are executing the most complex recipe in the
+    Historical Context series. It combines the hallucination
+    risks of historical analysis (RCP-009, RCP-010) with
+    an additional layer of interpretive framing — you are
+    not just reporting what happened, you are identifying
+    patterns in what happened. This means every failure
+    mode from simpler historical recipes applies here, plus
+    a new one: imposing false structure on genuinely messy
+    history. Your primary enemies on this recipe are
+    fabricated specifics, false precision on cycle
+    boundaries, asymmetric era depth disguised as even
+    coverage, and pattern imposition masquerading as
+    pattern discovery.
+
+
+CYCLE BOUNDARIES ARE YOUR HIGHEST-RISK OUTPUT:
+
+    When the recipe asks you to identify "distinct
+    innovation cycles" with "start and end dates," you
+    are being asked to do something fundamentally
+    interpretive. There is no objective fact about when
+    "Cycle 2 of the software industry" began. Different
+    analysts, historians, and industry participants would
+    draw the lines differently.
+
+    Your job is not to pretend these boundaries are
+    objective. Your job is to propose boundaries, justify
+    them, and acknowledge alternatives. Specifically:
+
+    For every cycle you identify, answer these questions
+    in the output:
+    - What specific event or measurable shift marks the
+      start of this cycle?
+    - What specific event or measurable shift marks the
+      end?
+    - Is this a widely recognized periodization, or your
+      own analytical framing?
+    - Would a reasonable industry analyst draw the line
+      in a different place? If so, where and why?
+
+    If the history genuinely does not resolve into clean
+    cycles — if innovations overlapped, if transitions
+    were gradual rather than punctuated, if the industry
+    evolved continuously rather than in phases — then say
+    that. R7 exists specifically for this case. An honest
+    "this industry shows continuous evolution with
+    acceleration points rather than distinct cycles" is a
+    better analysis than four fabricated cycles with neat
+    date ranges.
+
+    Common mistakes to avoid:
+    - Picking round-number years (2000, 2005, 2010) as
+      cycle boundaries because they look clean
+    - Using product launch dates as cycle boundaries
+      when the actual market shift happened years later
+    - Creating cycles of suspiciously equal length
+    - Forcing exactly 3 or 4 cycles because the template
+      structure seems to expect it
+    - Presenting your cycle framework as the standard
+      industry view when it is your own construction
+
+
+THE THREE-TIER CONFIDENCE SYSTEM IS NOT DECORATIVE:
+
+    This recipe uses DOCUMENTED, ANALYTICAL, and
+    SPECULATIVE rather than the simpler VERIFIED, LIKELY,
+    UNCERTAIN system from RCP-010. The reason is that
+    innovation analysis involves a higher proportion of
+    interpretive claims.
+
+    DOCUMENTED means you are stating a verifiable fact:
+    a company was founded, a product launched, a
+    regulation passed, a merger closed. These are events
+    with dates and named entities that someone could
+    confirm with a primary source.
+
+    ANALYTICAL means you are identifying a pattern,
+    characterizing a period, proposing a causal
+    relationship, or grouping events into a framework.
+    "The industry consolidated between 2005 and 2010"
+    is ANALYTICAL — it is your characterization of
+    multiple documented events, not a single verifiable
+    fact. Most of your cycle analysis, pattern synthesis,
+    and structural observations will be ANALYTICAL.
+
+    SPECULATIVE means you are making an inference that
+    goes beyond the evidence. "Company X likely failed
+    because they underestimated market readiness" is
+    SPECULATIVE — you are proposing a causal explanation
+    that cannot be directly verified from the facts alone.
+
+    Apply these per-claim, not per-section. A single
+    paragraph about a company's trajectory might contain
+    all three tiers: "Company X was founded in 1998
+    [DOCUMENTED], grew rapidly during the first wave of
+    enterprise adoption [ANALYTICAL], likely benefiting
+    from its early partnership with Y [SPECULATIVE]."
+
+    The user needs this granularity to know which parts
+    of your analysis they can cite in a strategy document
+    versus which parts require their own validation.
+
+
+THE analysis_depth PARAMETER IS NOW FUNCTIONAL:
+
+    In the original recipe, "focused" and "comprehensive"
+    produced identical output. Now they branch:
+
+    FOCUSED MODE: Analyze only the dimensions listed in
+    priority_dimensions at full depth. For the remaining
+    dimensions, provide a 2-3 sentence acknowledgment
+    that the dimension exists and is relevant, but
+    explain it falls outside the focused scope. This is
+    not an excuse to skip dimensions — it is a deliberate
+    scope choice by the user. Respect it.
+
+    COMPREHENSIVE MODE: Analyze all four dimensions at
+    full depth. The priority_dimensions still matter —
+    give them additional attention, richer examples, and
+    more detailed pattern analysis than the non-priority
+    dimensions. But all four dimensions get substantive
+    coverage.
+
+    During parameter confirmation (R2), preview what the
+    user will get: "In focused mode, I will fully analyze
+    Innovation Cycles and Market Structure. External
+    Influences and Resource Allocation will receive brief
+    summaries only. Would you prefer comprehensive mode
+    to cover all four?"
+
+
+PATTERN SYNTHESIS IS WHERE YOU ADD REAL VALUE:
+
+    The dimensional analyses (Sections 1-4) are research.
+    The Pattern Synthesis is where you do actual strategic
+    thinking. This section should contain insights that
+    only emerge from looking across all the dimensions
+    together:
+
+    - Did resource allocation shifts PRECEDE or FOLLOW
+      innovation breakthroughs? (leading vs. lagging
+      indicator)
+    - Did regulatory changes ENABLE or RESPOND TO market
+      structure shifts?
+    - Were successful innovators concentrated in specific
+      market structures (fragmented vs. consolidated)?
+    - Did external economic conditions correlate with
+      cycle transitions?
+
+    If your Pattern Synthesis could have been written
+    without the dimensional analyses, it is restating
+    rather than synthesizing. The synthesis should
+    surprise the user with connections they would not
+    have seen from reading any single dimension alone.
+
+
+FAILURE PATTERNS DESERVE EQUAL RIGOR:
+
+    Innovation history has severe survivorship bias.
+    Your training data contains far more about companies
+    that succeeded than companies that failed. This means
+    your success analysis will naturally be richer and
+    more specific than your failure analysis.
+
+    Do not compensate by fabricating detailed failure
+    narratives. Instead:
+
+    - Name specific companies that failed, with whatever
+      detail you actually have
+    - Flag when your failure data is thinner than your
+      success data
+    - Explain the likely cause of the gap (survivorship
+      bias, limited documentation of failures, smaller
+      companies leaving less public record)
+    - Provide what you can and mark its confidence level
+
+    "Company X attempted to enter this market in
+    approximately 2003 but exited within two years
+    [DOCUMENTED]. Likely contributing factors include
+    poor timing relative to regulatory changes
+    [SPECULATIVE]" is honest and useful. "Multiple
+    companies failed due to strategic missteps in the
+    mid-2000s" is useless padding.
+
+
+ERA-DEPTH ASYMMETRY IS DIFFERENT FROM CONTEXT ASYMMETRY:
+
+    RCP-010 deals with asymmetry between two geographic
+    or industry contexts. This recipe deals with asymmetry
+    across time within a single industry. Your training
+    data almost certainly has more detail about recent
+    decades than older ones.
+
+    If the user asks for 1980 to 2020, your analysis of
+    the 2010s will likely be significantly richer than
+    your analysis of the 1980s. Flag this. The user needs
+    to know that the apparent acceleration of innovation
+    in later decades might partly reflect your data
+    density rather than actual industry dynamics.
+
+    Do not compensate by:
+    - Padding the 1980s with generic observations
+    - Reducing the 2010s to match the 1980s depth
+    - Pretending your coverage is even when it is not
+
+    Instead, be transparent: "My analysis of the
+    1980-1995 period draws on fewer documented sources
+    than the 2000-2020 period. The apparent increase in
+    innovation frequency in later decades may partly
+    reflect this data asymmetry rather than a genuine
+    acceleration."
+
+
+VALIDATION SUMMARY IS YOUR FINAL SELF-CHECK:
+
+    The VALIDATION SUMMARY is not a formality. Use it
+    to genuinely audit your own output:
+
+    - Count your cycle boundaries. Did you justify every
+      one? If you wrote "Cycle 2: 2003-2008" somewhere
+      without explaining what happened in 2003 and 2008
+      to mark those boundaries, fix it before finalizing.
+    - Count your confidence tags. If 90% of your claims
+      are tagged DOCUMENTED, you are probably under-
+      tagging your interpretive content. Pattern analysis
+      should produce a healthy proportion of ANALYTICAL
+      claims.
+    - Check your depth compliance. If the user asked for
+      focused mode and you wrote 500 words on a non-
+      priority dimension, you overscoped.
+    - List your knowledge gaps honestly. This is your
+      last chance to flag thin areas before the user
+      treats your analysis as comprehensive.
+
+
+# ===========================================================
+# END EXTENDED INFORMATION FOR THE AI
+# ===========================================================
+
+
+# ===========================================================
+# END RCP-011 SUPPLEMENTAL CONTENT
+# ===========================================================
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-011-HISTORICAL-INNOVATION-TRACKER",
+  "recipe_name": "Historical Innovation Tracker",
+  "version": "2.00b",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Cat (P067)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-11/RCP-011-EXTENDED-AI-INFO.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "ai_execution_guidance": {
+      "type": "prose",
+      "body": "You are executing the most complex recipe in the Historical Context series. It combines the hallucination risks of historical analysis (RCP-009, RCP-010) with an additional layer of interpretive framing — you are not just reporting what happened, you are identifying patterns in what happened. This means every failure mode from simpler historical recipes applies here, plus a new one: imposing false structure on genuinely messy history. Your primary enemies on this recipe are fabricated specifics, false precision on cycle boundaries, asymmetric era depth disguised as even coverage, and pattern imposition masquerading as pattern discovery."
+    },
+    "cycle_boundaries_highest_risk": {
+      "type": "prose",
+      "body": "When the recipe asks you to identify distinct innovation cycles with start and end dates, you are being asked to do something fundamentally interpretive. There is no objective fact about when Cycle 2 of the software industry began. Different analysts, historians, and industry participants would draw the lines differently. Your job is not to pretend these boundaries are objective. Your job is to propose boundaries, justify them, and acknowledge alternatives. For every cycle you identify, answer: What specific event or measurable shift marks the start? What marks the end? Is this a widely recognized periodization, or your own analytical framing? Would a reasonable industry analyst draw the line in a different place? If the history does not resolve into clean cycles, say that. Common mistakes to avoid: picking round-number years as boundaries because they look clean, using product launch dates when the actual market shift happened years later, creating cycles of suspiciously equal length, forcing exactly 3 or 4 cycles because the template seems to expect it, presenting your cycle framework as the standard industry view when it is your own construction."
+    },
+    "three_tier_confidence_system": {
+      "type": "prose",
+      "body": "This recipe uses DOCUMENTED, ANALYTICAL, and SPECULATIVE rather than the simpler VERIFIED, LIKELY, UNCERTAIN system from RCP-010. DOCUMENTED means you are stating a verifiable fact: a company was founded, a product launched, a regulation passed, a merger closed. ANALYTICAL means you are identifying a pattern, characterizing a period, proposing a causal relationship, or grouping events into a framework. Most of your cycle analysis, pattern synthesis, and structural observations will be ANALYTICAL. SPECULATIVE means you are making an inference that goes beyond the evidence. Apply these per-claim, not per-section. The user needs this granularity to know which parts of your analysis they can cite in a strategy document versus which parts require their own validation."
+    },
+    "analysis_depth_parameter": {
+      "type": "prose",
+      "body": "FOCUSED MODE: Analyze only the dimensions listed in priority_dimensions at full depth. For the remaining dimensions, provide a 2-3 sentence acknowledgment that the dimension exists and is relevant, but explain it falls outside the focused scope. COMPREHENSIVE MODE: Analyze all four dimensions at full depth. The priority_dimensions still matter — give them additional attention, richer examples, and more detailed pattern analysis than the non-priority dimensions. During parameter confirmation (R2), preview what the user will get."
+    },
+    "pattern_synthesis": {
+      "type": "prose",
+      "body": "The dimensional analyses (Sections 1-4) are research. The Pattern Synthesis is where you do actual strategic thinking. This section should contain insights that only emerge from looking across all the dimensions together: Did resource allocation shifts precede or follow innovation breakthroughs? Did regulatory changes enable or respond to market structure shifts? Were successful innovators concentrated in specific market structures? Did external economic conditions correlate with cycle transitions? If your Pattern Synthesis could have been written without the dimensional analyses, it is restating rather than synthesizing."
+    },
+    "failure_patterns": {
+      "type": "prose",
+      "body": "Innovation history has severe survivorship bias. Your training data contains far more about companies that succeeded than companies that failed. Do not compensate by fabricating detailed failure narratives. Instead: name specific companies that failed with whatever detail you actually have, flag when your failure data is thinner than your success data, explain the likely cause of the gap (survivorship bias, limited documentation, smaller companies leaving less public record), provide what you can and mark its confidence level."
+    },
+    "era_depth_asymmetry": {
+      "type": "prose",
+      "body": "This recipe deals with asymmetry across time within a single industry. Your training data almost certainly has more detail about recent decades than older ones. If the user asks for 1980 to 2020, your analysis of the 2010s will likely be significantly richer than your analysis of the 1980s. Flag this. Do not compensate by padding older eras with generic observations, reducing recent eras to match older era depth, or pretending your coverage is even when it is not. Be transparent about data density differences."
+    },
+    "validation_summary": {
+      "type": "prose",
+      "body": "The VALIDATION SUMMARY is not a formality. Use it to genuinely audit your own output: count your cycle boundaries and verify every one is justified, count your confidence tags and check the distribution (if 90% are DOCUMENTED you are probably under-tagging interpretive content), check your depth compliance against the requested mode, and list your knowledge gaps honestly."
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+
+# === END OF PERMALINK FILE ===

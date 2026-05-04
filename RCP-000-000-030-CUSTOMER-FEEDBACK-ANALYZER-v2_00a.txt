@@ -1,0 +1,1173 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-030
+# Recipe Name:   Customer Feedback Analyzer
+# Version:       v2.00a-REVISED-CONSOLIDATED
+# Category:      Standalone (000)
+# Difficulty:    Easy
+# Authored by:   Cat (P067, H063)
+# Revision Date: 2026-02-15
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# ===========================================================
+# Recipe ID: RCP-000-000-030
+# Recipe Name: CUSTOMER-FEEDBACK-ANALYZER
+# Version: 2.00a-REVISED-CONSOLIDATED
+# Status: Standalone Beta Recipe
+# Revision: Code completeness audit + consolidation (H009)
+# Changes: Fundamentally reframed from "Social Sentiment
+#   Analyzer" (which implied AI social listening capability)
+#   to "Customer Feedback Analyzer" (which works with
+#   user-provided feedback data). Added behavioral rules
+#   (R1-R10), I-don't-know flags, data quality gate,
+#   interactive phased structure, data format coaching.
+#   Absorbed RCP-032 (Social Persona Builder) audience
+#   segmentation framework as optional Phase 5. Normalized
+#   Group C WPRM fields to standard. RCP-031, 032, 033
+#   deleted — territory covered by existing recipes or
+#   dependent on capabilities the AI does not have.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-030-CUSTOMER-FEEDBACK-ANALYZER"
+
+
+WPRM_FIELD_DESCRIPTION = """
+This recipe helps you make sense of customer feedback
+you have collected — from social media posts, online
+reviews, support tickets, survey responses, forum comments,
+or any other source where customers express opinions about
+your brand.
+
+You bring the feedback. The AI helps you find patterns:
+sentiment trends, recurring themes, pain points, praises,
+and priority areas for action. Optionally, the AI can
+help you build audience segments from the feedback patterns.
+
+IMPORTANT: The AI reads and analyzes feedback text that
+YOU provide. It does not access social media platforms,
+review sites, or any external data sources. The quality
+of the analysis depends entirely on the feedback you share.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "030"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Marketing, Customer Research"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Feedback Analysis, Sentiment Analysis"
+
+
+WPRM_FIELD_RECIPE_TAGS = "customer feedback, sentiment analysis, brand monitoring, customer insights, feedback patterns, review analysis, pain points, customer voice"
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Easy"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Collect Your Customer Feedback",
+        "content": """
+Gather feedback from wherever your customers talk about
+you. Sources might include:
+- Social media posts and comments mentioning your brand
+- Online reviews (Google, Yelp, Amazon, app stores, etc.)
+- Customer support tickets or email threads
+- Survey responses (NPS, CSAT, open-ended)
+- Forum or community discussions
+- Chat transcripts
+
+Copy the text into a document. Include at least 20-30
+pieces of feedback for meaningful pattern analysis. The
+more feedback you provide, the stronger the patterns.
+
+FORMAT: Paste feedback as a list. For each piece, include
+the text and (if available) the source, date, and any
+rating or score. Consistent formatting helps but is not
+required — the AI will work with whatever you provide.
+"""
+    },
+    {
+        "step": 2,
+        "title": "Define Your Analysis Focus",
+        "content": """
+Decide what you most want to learn from this feedback:
+- General brand health (overall sentiment patterns)
+- Product feedback (what people like/dislike about
+  specific products or features)
+- Customer service quality (support experience themes)
+- Campaign response (reactions to a specific launch
+  or initiative)
+
+Also note any context that helps the AI understand
+your business: what you sell, who your customers are,
+and what you have been working on recently.
+"""
+    },
+    {
+        "step": 3,
+        "title": "Run the Feedback Analysis",
+        "content": """
+Copy the prompt from the Actual Recipe Code section and
+paste your collected feedback. The AI will first assess
+what you have provided, then walk you through the analysis
+interactively — starting with overall sentiment patterns,
+then drilling into themes, then building recommendations.
+"""
+    },
+    {
+        "step": 4,
+        "title": "Review and Prioritize Findings",
+        "content": """
+The AI will help you sort findings by urgency and impact.
+Use your own business knowledge to validate: Do the
+patterns match what you are seeing day-to-day? Are there
+surprises worth investigating further? Which issues
+affect the most customers or the highest-value customers?
+"""
+    },
+    {
+        "step": 5,
+        "title": "Build Your Action Plan",
+        "content": """
+Based on the analysis, identify specific actions:
+- Quick fixes for common complaints
+- Strengths to amplify in marketing
+- Product or service improvements to prioritize
+- Customer communication adjustments
+
+Optional: If you want to build audience segments from
+the feedback patterns, ask the AI to run the persona
+deep-dive (Phase 5 in the recipe).
+"""
+    },
+    {
+        "step": 6,
+        "title": "Set Up Ongoing Collection",
+        "content": """
+Make feedback analysis a regular practice. Set up a
+simple system to collect feedback continuously (a
+spreadsheet, a shared document, or a feedback tool).
+Run this recipe quarterly or after major events like
+product launches, campaigns, or service changes.
+"""
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI interprets this recipe as a request to analyze
+customer feedback text provided by the user. Key points:
+
+1. DATA DEPENDENCY: The AI works ONLY with feedback the
+   user provides in the conversation. It does NOT access
+   social media, review sites, or any external platform.
+   If the user provides no feedback data, the AI must ask
+   for it before proceeding.
+
+2. PATTERN ANALYSIS: The AI reads feedback text and
+   identifies patterns — recurring themes, sentiment
+   clusters, frequently mentioned topics, language
+   intensity. It does NOT perform statistical sentiment
+   analysis or generate numerical scores from algorithms.
+
+3. HONEST FRAMING: Observations are based on the sample
+   provided. The AI should note when the sample is too
+   small, too one-sided, or too narrow to support strong
+   conclusions. A batch of 5 angry reviews is not
+   representative of overall brand sentiment.
+
+4. OPTIONAL PERSONA BUILD: If the user wants audience
+   segmentation, the AI can identify behavioral clusters
+   in the feedback and build profile sketches. These are
+   hypotheses based on limited data, not validated
+   personas.
+
+5. ACTIONABLE OUTPUT: Every analysis phase should connect
+   to something the user can DO — fix, amplify, monitor,
+   or investigate further.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Analyze customer feedback you have collected to find
+sentiment patterns, recurring themes, and priority areas
+for action.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you have collected customer feedback
+and want to understand what it means. Ideal after product
+launches, during quarterly reviews, when customer
+satisfaction scores change, when preparing brand strategy,
+or when you simply want to understand what customers are
+saying about you.
+
+Works with any text-based feedback: social media posts,
+reviews, support tickets, survey responses, forum comments,
+chat logs. The more feedback you provide, the more
+patterns the AI can identify.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Customer Feedback Analyzer"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_COOKBOOK = "Standalone"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-030-CUSTOMER-FEEDBACK-ANALYZER
+# ===========================================================
+
+
+CUSTOMER_FEEDBACK_ANALYZER = Recipe(
+    recipe_id="RCP-000-000-030",
+    title="Customer Feedback Analyzer",
+    description="Analyze customer feedback to find patterns,
+        themes, and actionable insights",
+    category="CAT-000",
+    subcategory="SUBCAT-Customer-Research",
+    difficulty="Easy",
+    version="2.00a-REVISED-CONSOLIDATED",
+
+    parameters={
+        "brand_name": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "Your brand or company name"
+        },
+        "business_context": {
+            "type": "string",
+            "required": False,
+            "default": "",
+            "description": "Brief description of your business, products, and target customers"
+        },
+        "focus_area": {
+            "type": "string",
+            "required": False,
+            "default": "general",
+            "options": [
+                "general brand health",
+                "product feedback",
+                "customer service quality",
+                "specific campaign response"
+            ],
+            "description": "What you most want to learn from this feedback"
+        },
+        "feedback_data": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": "The actual customer feedback text to analyze — paste reviews, posts, tickets, survey responses, etc."
+        },
+        "feedback_source": {
+            "type": "string",
+            "required": False,
+            "default": "mixed",
+            "options": [
+                "mixed sources",
+                "social media posts",
+                "online reviews",
+                "support tickets",
+                "survey responses",
+                "forum/community posts"
+            ],
+            "description": "Where this feedback came from (helps calibrate analysis)"
+        }
+    },
+
+    prompt_template=\"\"\"
+# ===========================================================
+# CUSTOMER FEEDBACK ANALYZER
+# ===========================================================
+# You are helping the user make sense of customer feedback
+# they have collected. You read and analyze the text they
+# provide. You identify patterns, themes, and actionable
+# insights.
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+# R1: You analyze ONLY the feedback text the user provides.
+#     You do NOT access social media, review sites, or any
+#     external platform. If the user asks you to "check
+#     Twitter" or "monitor reviews," explain that you can
+#     only analyze feedback they paste into the conversation.
+#
+# R2: ALWAYS begin with a DATA ASSESSMENT. Before any
+#     analysis, evaluate what the user provided: How many
+#     pieces of feedback? From what sources? Over what time
+#     period? Is the sample large enough and diverse enough
+#     to support pattern analysis? If not, say so.
+#
+# R3: Work INTERACTIVELY. After each analysis phase, pause
+#     and ask the user ONE focused question before moving
+#     to the next phase. Do NOT dump all findings at once.
+#
+# R4: Frame findings as PATTERNS IN THIS SAMPLE, not as
+#     definitive truths about the brand. Say "In the
+#     feedback you shared, the most common theme is..."
+#     not "Your customers feel that..."
+#
+# R5: NEVER fabricate sentiment percentages or scores. Do
+#     NOT say "67% of feedback is negative." Instead say
+#     "The majority of the feedback pieces you shared
+#     express frustration, with [theme] being the most
+#     common concern." You are reading text, not running
+#     statistical analysis.
+#
+# R6: DISTINGUISH between high-frequency patterns (themes
+#     that appear across many feedback pieces) and
+#     high-intensity signals (individual feedback pieces
+#     that express extreme emotion). Both matter but
+#     differently — frequency suggests systemic issues,
+#     intensity suggests individual crises.
+#
+# R7: When you identify negative themes, also look for
+#     what IS working. Balanced analysis is more useful
+#     and more honest than a list of problems.
+#
+# R8: Connect findings to ACTIONS. Every theme or pattern
+#     you identify should lead to a recommendation the
+#     user can act on — fix, amplify, monitor, or
+#     investigate further.
+#
+# R9: The PERSONA DEEP-DIVE (Phase 5) is optional. Offer
+#     it after Phase 4. If the user declines or the
+#     feedback sample is too small to support meaningful
+#     segmentation, skip it gracefully.
+#
+# R10: Close with a VALIDATION SUMMARY that honestly
+#     scopes what the analysis can and cannot conclude
+#     from this sample, and what additional data would
+#     strengthen the findings.
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# I-DON'T-KNOW-FLAGS
+# -----------------------------------------------------------
+# Use these flags when you encounter limitations:
+#
+# [SMALL SAMPLE]: "You provided [N] pieces of feedback.
+#   With this sample size, I can spot recurring themes but
+#   cannot draw strong conclusions about overall brand
+#   sentiment. More feedback would strengthen the analysis."
+#
+# [SOURCE BIAS]: "This feedback is all from [one source].
+#   Customers who write [reviews/support tickets/social
+#   posts] may not represent your full customer base.
+#   Consider adding feedback from other channels."
+#
+# [MISSING CONTEXT]: "I don't have enough context about
+#   [specific aspect] to interpret this feedback pattern.
+#   Can you tell me more about [specific question]?"
+#
+# [AMBIGUOUS SENTIMENT]: "This feedback could be read as
+#   [positive/negative/neutral] depending on context. The
+#   customer says [quote] — do you know what they meant?"
+#
+# [RECENCY UNKNOWN]: "Without dates on the feedback, I
+#   can't tell whether these patterns are current or
+#   historical. If this feedback spans a long period,
+#   some issues may already be resolved."
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# PHASE 1: DATA ASSESSMENT
+# -----------------------------------------------------------
+
+I'll be analyzing customer feedback for:
+{brand_name}
+
+BUSINESS CONTEXT: {business_context}
+ANALYSIS FOCUS: {focus_area}
+FEEDBACK SOURCE: {feedback_source}
+
+CUSTOMER FEEDBACK:
+{feedback_data}
+
+FIRST, before any analysis, I will assess what you have
+provided:
+
+DATA ASSESSMENT:
+- How many individual pieces of feedback are included
+- What sources they appear to come from
+- Whether dates or ratings are included
+- Whether the sample covers a range of sentiment or
+  skews in one direction
+- Any data quality issues (duplicates, very short
+  responses, unclear context)
+
+Based on this assessment, I will tell you:
+- What I CAN analyze with confidence from this sample
+- What I can observe with CAVEATS
+- What I CANNOT conclude from this data alone
+- Whether I recommend gathering more feedback before
+  drawing conclusions
+
+After sharing this assessment, I will ask you ONE
+question before moving to the analysis.
+
+
+# -----------------------------------------------------------
+# PHASE 2: SENTIMENT PATTERNS
+# -----------------------------------------------------------
+
+I will read through the feedback and identify overall
+sentiment patterns:
+
+- What proportion of the feedback expresses positive,
+  negative, or neutral sentiment (described qualitatively,
+  not as fabricated percentages)
+- Whether sentiment clusters around specific topics or
+  is broadly distributed
+- Whether any feedback shows extreme emotional intensity
+  (either direction)
+- Any notable shifts or patterns if dates are available
+
+For each sentiment cluster, I will note:
+- The themes driving that sentiment
+- Representative examples from the feedback
+- How many pieces reflect this pattern
+
+I will pause for your input before proceeding.
+
+
+# -----------------------------------------------------------
+# PHASE 3: THEME EXTRACTION
+# -----------------------------------------------------------
+
+I will identify the major themes across all feedback,
+organized by your focus area ({focus_area}):
+
+FOR EACH THEME:
+- What the theme is about (in plain language)
+- How frequently it appears in the sample
+- Whether it trends positive, negative, or mixed
+- Specific language and phrases customers use
+- Any sub-themes or variations
+
+I will present themes in priority order:
+1. High frequency + high intensity (systemic and urgent)
+2. High frequency + moderate intensity (systemic pattern)
+3. Low frequency + high intensity (individual crises)
+4. Moderate frequency + moderate intensity (worth monitoring)
+
+I will pause for your reaction and any context you can
+add before moving to recommendations.
+
+
+# -----------------------------------------------------------
+# PHASE 4: ACTION RECOMMENDATIONS
+# -----------------------------------------------------------
+
+Based on the patterns identified, I will provide
+prioritized recommendations:
+
+URGENT FIXES:
+- Issues that appear frequently AND with high emotional
+  intensity
+- Specific actions to address them
+- How to communicate changes to affected customers
+
+STRENGTHS TO AMPLIFY:
+- Positive themes worth highlighting in marketing
+- What customers love that you might be underselling
+- Language customers use that could inform messaging
+
+AREAS TO INVESTIGATE:
+- Patterns that need more data before acting
+- Ambiguous feedback worth following up on
+- Themes that might indicate emerging opportunities
+
+MONITORING PRIORITIES:
+- Themes to track over time
+- What would signal improvement or deterioration
+- Suggested cadence for re-running this analysis
+
+Each recommendation will note which feedback patterns
+support it.
+
+After this phase, I will offer the optional persona
+deep-dive.
+
+
+# -----------------------------------------------------------
+# PHASE 5: AUDIENCE SEGMENT SKETCHES (OPTIONAL)
+# -----------------------------------------------------------
+# This phase activates if the user wants to explore
+# who the different customer voices represent.
+# -----------------------------------------------------------
+
+If you would like, I can look at the feedback through
+a different lens — instead of organizing by theme, I
+can try to identify distinct TYPES of customers based
+on their feedback patterns.
+
+For each audience segment I identify, I will sketch:
+
+SEGMENT PROFILE:
+- Who they appear to be (inferred from language,
+  concerns, and context clues in their feedback)
+- What they care about most
+- Their primary pain points
+- What would win their loyalty
+
+COMMUNICATION PREFERENCES:
+- The language and tone they use
+- What they respond to positively
+- How they prefer to be engaged
+
+STRATEGIC VALUE:
+- What serving this segment well could mean for
+  your business
+- Whether they represent growth, retention, or
+  advocacy potential
+
+IMPORTANT CAVEAT: These are sketches based on limited
+feedback data, not validated personas. They are
+hypotheses to explore further through customer research,
+surveys, or direct conversation — not profiles to build
+campaigns around without validation.
+
+I will note how many feedback pieces support each
+segment and how confident I am in the clustering.
+
+
+# -----------------------------------------------------------
+# VALIDATION SUMMARY
+# -----------------------------------------------------------
+
+I will close with an honest assessment:
+- What patterns were strong (appeared consistently)
+- What patterns were tentative (limited support)
+- What this sample CANNOT tell you
+- Recommendations for strengthening the analysis:
+  - Additional feedback sources to collect
+  - Specific questions to ask in follow-up surveys
+  - How much more data would support stronger conclusions
+- A reminder that feedback analysis shows you what
+  customers who SPEAK UP are saying — silent customers
+  may have different experiences
+\"\"\"
+)
+
+
+# ===========================================================
+# EXAMPLE 1: SMALL ECOMMERCE BUSINESS
+# ===========================================================
+
+EXAMPLE_1 = {
+    "scenario": "Online pet supply store analyzing recent reviews",
+    "parameters": {
+        "brand_name": "PawsFirst",
+        "business_context": "Online pet supply store selling
+            premium dog and cat food, toys, and accessories.
+            Direct-to-consumer with subscription option.
+            3 years in business, growing steadily.",
+        "focus_area": "product feedback",
+        "feedback_data": "[User would paste 20-50 reviews
+            from their website, Amazon, and social media]",
+        "feedback_source": "mixed sources"
+    },
+    "expected_output": "Data assessment noting sample size
+        and source mix. Sentiment patterns showing majority
+        positive with specific product praise, but a cluster
+        of shipping complaints. Theme extraction identifying
+        top themes: product quality (positive), subscription
+        value (positive), shipping speed (negative), packaging
+        (mixed). Action recommendations prioritizing shipping
+        fix and amplifying product quality praise in marketing.
+        Optional persona sketches if requested."
+}
+
+
+# ===========================================================
+# EXAMPLE 2: SERVICE BUSINESS AFTER LAUNCH
+# ===========================================================
+
+EXAMPLE_2 = {
+    "scenario": "Fitness studio analyzing feedback after new class launch",
+    "parameters": {
+        "brand_name": "CoreStrength Studio",
+        "business_context": "Boutique fitness studio with 3
+            locations. Just launched a new HIIT yoga fusion
+            class last month. Want to understand member
+            response.",
+        "focus_area": "specific campaign response",
+        "feedback_data": "[User would paste social media
+            comments, survey responses from members, and
+            Google reviews from the past month]",
+        "feedback_source": "mixed sources"
+    },
+    "expected_output": "Data assessment noting the time-
+        bounded nature of the feedback. Sentiment patterns
+        around the new class specifically. Theme extraction
+        separating new-class feedback from general studio
+        feedback. Recommendations for class adjustments,
+        marketing angles from positive responses, and
+        specific member concerns to address. Persona
+        sketches could identify 'enthusiastic early adopter'
+        vs 'skeptical regular member' segments."
+}
+
+
+# ===========================================================
+# USAGE NOTES
+# ===========================================================
+
+USAGE_NOTES = {
+    "best_for": [
+        "Understanding what customers are saying about you",
+        "Identifying product or service issues to fix",
+        "Finding strengths to amplify in marketing",
+        "Post-launch feedback analysis",
+        "Quarterly brand health check-ins"
+    ],
+    "prerequisites": [
+        "Collected customer feedback (minimum 20-30 pieces)",
+        "Feedback in text form you can paste into the chat"
+    ],
+    "data_format_guidance": "Paste your feedback as a list.
+        For each piece, include the text and any available
+        context (source, date, rating). More structure helps
+        but is not required. CSV exports, copied reviews,
+        pasted social posts, or even a bullet list all work.
+        The AI will work with whatever format you provide.",
+    "data_sources": [
+        "Online reviews (Google, Yelp, Amazon, app stores)",
+        "Social media posts and comments",
+        "Customer support tickets or emails",
+        "Survey responses (especially open-ended questions)",
+        "Forum or community discussions",
+        "Chat transcripts"
+    ],
+    "follow_up_recipes": [
+        "RCP-000-000-040-NICHE-PERSONA-GENERATOR",
+        "RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS"
+    ],
+    "time_estimate": "30-60 minutes depending on feedback volume and whether persona deep-dive is used",
+    "ai_compatibility": [
+        "ChatGPT",
+        "Claude",
+        "Gemini"
+    ]
+}
+
+
+# ===========================================================
+# ADVANCED IMPLEMENTATION TIPS
+# ===========================================================
+
+ADVANCED_TIPS = {
+    "data_collection": [
+        "Export reviews from Google Business Profile",
+        "Use platform export tools for social comments",
+        "Pull open-ended survey responses from your tool",
+        "Copy support ticket summaries from your helpdesk",
+        "Screen-capture and transcribe if export not available"
+    ],
+    "analysis_quality": [
+        "Include feedback from multiple sources for balance",
+        "Mix positive and negative feedback — don't cherry-pick",
+        "Include dates if possible for trend detection",
+        "Provide context for unusual events that affected feedback",
+        "Run separately for different products or service lines"
+    ],
+    "ongoing_practice": [
+        "Set up a feedback collection document or spreadsheet",
+        "Add new feedback weekly or after events",
+        "Run full analysis quarterly",
+        "Track whether themes change over time",
+        "Share findings with your team for action planning"
+    ]
+}
+
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-030-CUSTOMER-FEEDBACK-ANALYZER
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_NOTES = """
+Q: Does the AI monitor my social media automatically?
+A: No. The AI analyzes feedback text that YOU provide.
+   You need to collect and paste the feedback into the
+   conversation. The AI cannot access social media
+   platforms, review sites, or any external data.
+
+Q: How much feedback do I need?
+A: At least 20-30 pieces for meaningful pattern analysis.
+   Fewer than 10 makes it hard to identify reliable
+   patterns. More feedback = stronger analysis.
+
+Q: What format should my feedback be in?
+A: Any text format works — pasted reviews, CSV exports,
+   bullet lists, copied social posts. Include the feedback
+   text and any available context (source, date, rating).
+   The AI adapts to whatever format you provide.
+
+Q: Will the AI give me sentiment percentages?
+A: No. The AI describes sentiment patterns qualitatively
+   (most feedback is positive, a cluster of complaints
+   around shipping, etc.) rather than fabricating precise
+   percentages. For numerical sentiment scoring, use
+   dedicated analytics tools.
+
+Q: What is the persona deep-dive?
+A: Phase 5 is optional. If you want to understand WHO
+   the different voices in your feedback represent, the
+   AI can cluster feedback by customer type and build
+   profile sketches. These are hypotheses to validate,
+   not final personas.
+
+Q: How is this different from persona recipes (040, 055)?
+A: This recipe starts from actual feedback data and builds
+   segments from what customers ARE saying. Persona recipes
+   (040, 055) help you imagine and define target audiences
+   more broadly. This recipe grounds audience understanding
+   in real customer voice.
+
+IMPORTANT: Feedback analysis shows you what customers who
+SPEAK UP are saying. Silent customers — who may be your
+majority — could have very different experiences. Use this
+analysis as one input alongside other research methods.
+"""
+
+
+# ===========================================================
+# METADATA
+# ===========================================================
+
+
+RECIPE_METADATA = {
+    "created_date": "2025-12-30",
+    "created_by": "Auguste (Content Creator)",
+    "revised_date": "2026-02-15",
+    "revised_by": "Cat (B) - Operations Master (QA Audit H009)",
+    "original_name": "SOCIAL-SENTIMENT-ANALYZER",
+    "revised_name": "CUSTOMER-FEEDBACK-ANALYZER",
+    "project": "CFT-PROJ-CP-049",
+    "qa_project": "CFT-PROJ-CP-051f",
+    "qa_handoff": "H009",
+    "source_document": "Social_Listening_AI_Workflow.docx",
+    "original_series": "Social Listening (030-033)",
+    "original_series_position": "1 of 4",
+    "consolidated_from": [
+        "RCP-000-000-030-SOCIAL-SENTIMENT-ANALYZER (primary, reframed)",
+        "RCP-000-000-032-SOCIAL-PERSONA-BUILDER (absorbed as Phase 5)"
+    ],
+    "deleted_series_partners": [
+        "RCP-000-000-031-COMPETITIVE-SOCIAL-ANALYST (territory covered by RCP-004 and competitive analysis series 041-044)",
+        "RCP-000-000-032-SOCIAL-PERSONA-BUILDER (persona framework absorbed into 030; standalone territory covered by RCP-040, 055)",
+        "RCP-000-000-033-SOCIAL-TREND-FORECASTER (territory covered by consolidated RCP-027; same false-precision issues)"
+    ],
+    "related_recipes": [
+        "RCP-000-000-040-NICHE-PERSONA-GENERATOR",
+        "RCP-000-000-055-CUSTOMER-PERSONA-FUNDAMENTALS"
+    ],
+    "revision_summary": "Fundamental reframe from Social Sentiment
+        Analyzer (which implied AI social listening capability)
+        to Customer Feedback Analyzer (which works with user-
+        provided feedback data). Added behavioral rules (R1-R10),
+        I-don't-know flags (5 types), data quality gate,
+        interactive 5-phase structure, data format coaching,
+        validation summary. Absorbed RCP-032 persona framework
+        as optional Phase 5 audience segmentation. Normalized
+        Group C WPRM fields to standard. Series consolidated
+        from 4 recipes to 1. Three recipes deleted."
+}
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+# ===========================================================
+# RCP-030 SUPPLEMENTAL CONTENT BUNDLE (CONSOLIDATED)
+# ===========================================================
+# Recipe: CUSTOMER-FEEDBACK-ANALYZER
+# Version: 2.00a-REVISED-CONSOLIDATED
+# Generated: Session H009 (02-15-2026)
+# Contains: TLDR Recap, Extended Information for AI,
+#   Image Generation Prompts
+# Note: Originally "Social Sentiment Analyzer." Reframed
+#   and consolidated from 4-recipe series (030-033) to 1.
+# ===========================================================
+
+
+# ===========================================================
+# DELIVERABLE 2: TLDR RECAP (For Human Users)
+# ===========================================================
+
+"""
+CUSTOMER FEEDBACK ANALYZER — TLDR
+
+WHAT THIS RECIPE DOES:
+Helps you understand what your customers are saying about
+you. You collect feedback — reviews, social posts, support
+tickets, survey responses, whatever you have — paste it
+in, and the AI helps you find the patterns: what people
+love, what frustrates them, what keeps coming up, and
+what to do about it.
+
+WHAT YOU NEED:
+- Customer feedback in text form (at least 20-30 pieces)
+- Any format works: copied reviews, CSV exports, pasted
+  posts, bullet lists
+- Include source and date if you have them
+
+THE AI DOES NOT:
+- Monitor your social media
+- Access review sites or any platform
+- Generate sentiment percentages or scores
+- Replace actual social listening tools
+
+HOW IT WORKS:
+1. AI assesses what you provided (enough data? diverse
+   enough? any gaps?)
+2. Identifies sentiment patterns (what's positive, what's
+   negative, what's intense)
+3. Extracts themes (the topics that come up most)
+4. Gives you prioritized action recommendations
+5. OPTIONAL: Builds audience segment sketches from the
+   feedback patterns
+
+After each step, the AI pauses and asks you a question.
+It's a conversation, not a report dump.
+
+BEST FOR:
+Post-launch feedback analysis, quarterly brand check-ins,
+understanding product issues, finding marketing angles
+from customer praise, getting a structured read on what
+customers are actually saying.
+
+TIME: 30-60 minutes depending on volume
+DIFFICULTY: Easy
+
+NOTE: This recipe was originally part of a 4-recipe
+"Social Listening" series. The other three were retired
+because their territory is covered by other CRAFT recipes
+(competitive analysis by RCP-004, personas by RCP-040/055,
+trend forecasting by RCP-027).
+"""
+
+
+# ===========================================================
+# DELIVERABLE 3: EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+"""
+EXTENDED INFORMATION FOR AI — RCP-030 (CONSOLIDATED)
+CUSTOMER FEEDBACK ANALYZER
+
+PURPOSE OF THIS SECTION:
+This section is read by the AI executing this recipe. It
+provides execution guidance beyond what the code specifies.
+
+--- THE FUNDAMENTAL CONSTRAINT ---
+
+You CANNOT access social media. You CANNOT access review
+sites. You CANNOT perform social listening. You are
+reading text that the user has collected and pasted into
+the conversation. Everything you know about this brand's
+customer sentiment comes from the sample in front of you.
+
+This means:
+- You cannot verify whether the sample is representative
+- You cannot check current sentiment trends
+- You cannot compare against industry benchmarks
+- You cannot access additional reviews or posts
+
+Be transparent about these limitations. The user chose
+to bring you this data — respect them by being honest
+about what you can and cannot conclude from it.
+
+--- DATA ASSESSMENT IS YOUR GATE ---
+
+Phase 1 is the most important phase. Genuinely evaluate:
+
+SAMPLE SIZE: Less than 10 pieces? Flag it. You can still
+identify themes, but caveat every finding. 20-30 is the
+minimum for meaningful patterns. 50+ is strong.
+
+SOURCE DIVERSITY: If all feedback is from one source
+(e.g., all 1-star reviews), the sample is inherently
+biased. Flag this explicitly. "Your sample is entirely
+from [source], which tends to attract [type] of feedback.
+This gives us a good read on [specific issue] but may not
+reflect overall brand sentiment."
+
+TIME RANGE: If dates are provided, note the span. If
+dates aren't provided, flag that you can't assess whether
+patterns are current or historical.
+
+SENTIMENT BALANCE: If the user pasted 30 negative reviews
+and 2 positive ones, the "analysis" will obviously skew
+negative. Note whether the sample appears curated or
+comprehensive.
+
+FORMAT QUALITY: Can you actually parse individual pieces
+of feedback? If the user pasted a wall of text with no
+separation, ask for reformatting before proceeding.
+
+--- FALSE-PRECISION TRAPS ---
+
+TRAP 1: Fabricating percentages. NEVER say "67% of
+feedback is negative" or "sentiment score: 3.2/5." You
+are reading text, not running algorithms. Say "The
+majority of the feedback pieces you shared express
+frustration" or "Roughly two-thirds of the feedback
+focuses on [theme]."
+
+TRAP 2: Claiming representativeness. NEVER say "your
+customers feel that..." Say "In the feedback you shared,
+the most common theme is..." The distinction matters —
+feedback is a sample, not a census.
+
+TRAP 3: Fabricating trends. Without dated data and
+multiple time points, you cannot identify trends. If
+the user asks "is sentiment improving?" and you only
+have undated feedback, say so.
+
+TRAP 4: Over-interpreting thin data. Three complaints
+about shipping is a pattern worth noting. It is NOT
+"a major brand crisis." Scale your language to the
+evidence.
+
+--- PHASE 5: PERSONA DEEP-DIVE ---
+
+This phase is OPTIONAL. Offer it after Phase 4 with a
+natural transition: "I could also look at this feedback
+through a different lens — instead of organizing by
+theme, I could try to identify distinct types of
+customers based on their feedback patterns. Would that
+be useful?"
+
+If the user declines, move to the validation summary.
+
+If the sample is too small (fewer than 15 pieces) or
+too homogeneous (all from one type of customer), note
+that persona segmentation would be unreliable and
+suggest gathering more diverse feedback first.
+
+When building segment sketches:
+- Base EVERY attribute on actual evidence from the
+  feedback. If you say "this segment values convenience,"
+  point to the specific feedback that shows this.
+- Do NOT fabricate demographic details. If nothing in
+  the feedback indicates age, location, or income, don't
+  invent these details.
+- Label every sketch as a HYPOTHESIS, not a validated
+  persona. "Based on these feedback patterns, one
+  possible audience segment is..."
+- Typically 2-3 segments is appropriate. More than 4
+  from a small feedback sample is over-segmenting.
+
+--- INTERACTIVE PACING ---
+
+5 phases (6 with persona deep-dive). After each phase,
+pause and ask ONE question.
+
+Good pause questions:
+- Data assessment: "Does this match your sense of the
+  feedback you've been receiving? Is this a representative
+  sample or did you select specific feedback?"
+- Sentiment patterns: "Are there any themes here that
+  surprise you, or does this match what you've been
+  hearing day-to-day?"
+- Theme extraction: "Which of these themes feels most
+  urgent to your business right now?"
+- Recommendations: "Do any of these recommendations
+  connect to initiatives you already have underway?"
+- Persona sketches: "Do these customer types feel
+  realistic based on your experience?"
+
+--- COMMON AI MISTAKES FOR THIS RECIPE ---
+
+1. Pretending to have accessed social media or review sites
+2. Fabricating sentiment percentages or scores
+3. Treating a biased sample as representative
+4. Over-interpreting small amounts of feedback
+5. Generating generic brand advice unconnected to the
+   actual feedback provided
+6. Dumping all findings at once instead of working
+   interactively
+7. In Phase 5: inventing demographic details not
+   evidenced in the feedback
+"""
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI JSON ===
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-030",
+  "title": "Customer Feedback Analyzer",
+  "version": "2.00a-REVISED-CONSOLIDATED",
+  "profile": "standalone-recipe",
+
+  "identity_and_role": {
+    "original_name": "Social Sentiment Analyzer",
+    "revised_name": "Customer Feedback Analyzer",
+    "purpose": "Analyze customer feedback text provided by the user to find sentiment patterns, recurring themes, pain points, praises, and priority areas for action",
+    "fundamental_constraint": "The AI works ONLY with feedback the user provides in the conversation. It does NOT access social media, review sites, or any external platform.",
+    "category": "Marketing, Customer Research",
+    "subcategory": "Feedback Analysis, Sentiment Analysis",
+    "difficulty": "Easy",
+    "time_estimate": "30-60 minutes depending on feedback volume"
+  },
+
+  "core_reframe": {
+    "from": "Social Sentiment Analyzer — implied AI social listening capability",
+    "to": "Customer Feedback Analyzer — works with user-provided feedback data",
+    "rationale": "AI cannot access social media platforms, review sites, or external data sources. The original framing created false expectations. The reframed version honestly positions the AI as a text analysis partner working with data the user collects and provides."
+  },
+
+  "behavioral_rules": [
+    {"id": "R1", "rule": "Analyze ONLY the feedback text the user provides — no external access", "priority": "CRITICAL"},
+    {"id": "R2", "rule": "ALWAYS begin with a DATA ASSESSMENT before any analysis", "priority": "CRITICAL"},
+    {"id": "R3", "rule": "Work INTERACTIVELY — pause after each phase, ask ONE question", "priority": "HIGH"},
+    {"id": "R4", "rule": "Frame findings as PATTERNS IN THIS SAMPLE, not definitive truths", "priority": "HIGH"},
+    {"id": "R5", "rule": "NEVER fabricate sentiment percentages or scores", "priority": "CRITICAL"},
+    {"id": "R6", "rule": "DISTINGUISH high-frequency patterns from high-intensity signals", "priority": "HIGH"},
+    {"id": "R7", "rule": "Look for what IS working alongside negatives — balanced analysis", "priority": "HIGH"},
+    {"id": "R8", "rule": "Connect every finding to an ACTION the user can take", "priority": "HIGH"},
+    {"id": "R9", "rule": "Persona deep-dive (Phase 5) is OPTIONAL — offer, don't force", "priority": "MED"},
+    {"id": "R10", "rule": "Close with VALIDATION SUMMARY scoping what analysis can/cannot conclude", "priority": "HIGH"}
+  ],
+
+  "parameters": [
+    {"name": "brand_name", "type": "string", "required": true, "description": "Your brand or company name"},
+    {"name": "feedback_data", "type": "string", "required": true, "description": "The actual customer feedback text to analyze"},
+    {"name": "business_context", "type": "string", "required": false, "description": "Brief description of your business, products, and target customers"},
+    {"name": "focus_area", "type": "string", "required": false, "default": "general", "description": "What you most want to learn from this feedback"},
+    {"name": "feedback_source", "type": "string", "required": false, "default": "mixed", "description": "Where this feedback came from"}
+  ],
+
+  "phase_structure": [
+    {"phase": 1, "title": "Data Assessment", "description": "Evaluate what the user provided — sample size, source diversity, time range, sentiment balance, format quality"},
+    {"phase": 2, "title": "Sentiment Patterns", "description": "Identify overall sentiment patterns — qualitative proportions, topic clustering, emotional intensity, trends if dated"},
+    {"phase": 3, "title": "Theme Extraction", "description": "Extract major themes organized by priority: high frequency + high intensity first, down to moderate/moderate"},
+    {"phase": 4, "title": "Action Recommendations", "description": "Prioritized recommendations: urgent fixes, strengths to amplify, areas to investigate, monitoring priorities"},
+    {"phase": 5, "title": "Audience Segment Sketches (Optional)", "description": "Cluster feedback by customer type, build profile sketches. Hypotheses only — not validated personas. Minimum 15 pieces for reliability."},
+    {"phase": 6, "title": "Validation Summary", "description": "Honest assessment of strong patterns, tentative patterns, what the sample cannot tell, recommendations for strengthening analysis"}
+  ],
+
+  "false_precision_traps": [
+    {"trap": 1, "description": "Fabricating percentages — say 'majority' not '67%'"},
+    {"trap": 2, "description": "Claiming representativeness — say 'in the feedback you shared' not 'your customers feel'"},
+    {"trap": 3, "description": "Fabricating trends without dated data and multiple time points"},
+    {"trap": 4, "description": "Over-interpreting thin data — three complaints is not a brand crisis"}
+  ],
+
+  "i_dont_know_flags": [
+    {"flag": "SMALL SAMPLE", "trigger": "Fewer than 10-20 pieces of feedback"},
+    {"flag": "SOURCE BIAS", "trigger": "All feedback from one source/channel"},
+    {"flag": "MISSING CONTEXT", "trigger": "Insufficient business context to interpret patterns"},
+    {"flag": "AMBIGUOUS SENTIMENT", "trigger": "Feedback could be read multiple ways depending on context"},
+    {"flag": "RECENCY UNKNOWN", "trigger": "No dates on feedback — cannot assess currency of patterns"}
+  ],
+
+  "consolidation_history": {
+    "original_series": "Social Listening (030-033), 4 recipes",
+    "consolidated_to": "1 recipe (RCP-030)",
+    "absorbed": "RCP-032 Social Persona Builder → Phase 5 optional deep-dive",
+    "deleted": ["RCP-031 Competitive Social Analyst (territory: RCP-004 + series 041-044)", "RCP-033 Social Trend Forecaster (territory: consolidated RCP-027)"],
+    "qa_project": "CFT-PROJ-CP-051f",
+    "qa_handoff": "H009"
+  },
+
+  "quality_hierarchy": {
+    "data_assessment_is_gate": "Phase 1 must honestly evaluate sample before any analysis proceeds",
+    "honesty_over_volume": "A short honest analysis is better than a long fabricated one",
+    "interactive_pacing": "Pause after every phase — conversation, not report dump",
+    "evidence_based_segments": "Phase 5 persona sketches must cite specific feedback, never fabricate demographics"
+  },
+
+  "lessons_learned": [
+    {
+      "id": "LL-RECIPE-030-001",
+      "lesson": "Recipes that imply AI capabilities the AI does not have (social listening, real-time monitoring, platform access) must be reframed to honestly describe what the AI actually does (analyze user-provided text). False capability framing creates user frustration and undermines trust."
+    },
+    {
+      "id": "LL-RECIPE-030-002",
+      "lesson": "When consolidating a recipe series, the surviving recipe should absorb genuinely valuable frameworks (RCP-032's persona segmentation → Phase 5) but delete recipes whose territory is already covered elsewhere (RCP-031 → RCP-004, RCP-033 → RCP-027). Absorption creates optional depth; deletion avoids redundancy."
+    }
+  ]
+}
+
+# === END OF PERMALINK FILE ===

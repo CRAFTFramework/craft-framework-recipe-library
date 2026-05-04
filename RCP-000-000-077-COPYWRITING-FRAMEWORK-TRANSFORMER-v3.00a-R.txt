@@ -1,0 +1,1045 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-077-COPYWRITING-FRAMEWORK-TRANSFORMER
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H090)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-077-COPYWRITING-FRAMEWORK-TRANSFORMER
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H090 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H015)
+# Series: Copywriting Frameworks (3 of 3)
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-077-COPYWRITING-FRAMEWORK-TRANSFORMER"
+
+WPRM_FIELD_DESCRIPTION = """The execution step in the Copywriting Frameworks workflow. This recipe transforms your written content using a proven copywriting framework while preserving your writing voice, respecting your constraints, and explaining the reasoning behind every structural choice. Works best with a Content Brief (from RCP-075) and Framework Recommendation (from RCP-076), but can also work directly with user-provided content and a framework choice.
+
+Unlike generic AI rewriting, this recipe explains WHY each framework element is applied, how each structural change serves your goals, and what makes the transformed version more effective — so you learn copywriting principles while getting your content improved."""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 3 of 3"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Copywriting Frameworks"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "077"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork (Claude Desktop — Cowork Mode)"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Content Creation, Marketing"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Copywriting, Persuasion, Transformation"
+
+WPRM_FIELD_RECIPE_TAGS = "copywriting transformation, framework execution, AIDA, PAS, BAB, FAB, ACC, 4Ps, 4Cs, 4Us, QUEST, SLAP, content rewriting, voice preservation, persuasive writing, ethical copy"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Default AI Assistant"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Medium"
+
+WPRM_FIELD_INSTRUCTIONS = """Step 1: Provide Your Inputs
+Share your Content Brief (from RCP-075), Framework Recommendation Report (from RCP-076, if available), and/or your original content directly. Specify which framework to apply or ask for a recommendation.
+
+Step 2: Review Transformation Plan
+Before any rewriting, the AI presents its transformation plan: how it will apply the framework to your specific content, which elements will change, and what will be preserved. Review and approve before transformation.
+
+Step 3: Review Transformed Content
+Receive the transformed content with inline annotations explaining how each framework element was applied and why each structural choice was made. Assess whether your voice was preserved and your goals are served.
+
+Step 4: Refine and Iterate
+Request adjustments: strengthen specific sections, soften the tone, adjust the call-to-action, try a different framework element, or compare with an alternative framework.
+
+Step 5: Optional — Compare Frameworks
+For important content, request a side-by-side comparison showing how 2-3 different frameworks would transform the same content. Understand the trade-offs before committing."""
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Creative Transformation"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H015"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """v3.00a-R - P067 pipeline run 49 (H090). F-1 ACCEPT: Format B annotation placement clarified — added placement instruction (new line below content section, visually distinct) to Phase 3 Presentation Format. REC-19 CRAFT_FLAVORS ADD: updated "All" to "CRAFT Cowork (Claude Desktop — Cowork Mode)" (14th consecutive, 7th ADD). | v3.00a - New recipe created as part of 3-recipe Copywriting Frameworks workflow. Replaces transformation functionality from deleted RCP-057. Adds voice preservation system, ethical copy guardrails, transformation plan approval, inline effectiveness reasoning, and constraint-aware framework application not present in original."""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = """Written content to transform. Content Brief from RCP-075 recommended. Framework Recommendation Report from RCP-076 optional. Can work directly with user-provided content and framework choice."""
+
+WPRM_FIELD_RELATED_RECIPES = """- RCP-000-000-075 (Copywriting Context Analyzer)
+- RCP-000-000-076 (Copywriting Framework Researcher)
+- RCP-000-000-062 (Content Idea Generator)
+- RCP-000-000-063 (Content Gap Analyzer)"""
+
+WPRM_FIELD_PAIRS_WELL_WITH = """Best used after RCP-075 (provides Content Brief with voice fingerprint) and optionally RCP-076 (provides research-backed framework choice). Can be used standalone for quick transformations."""
+
+WPRM_FIELD_EXTENSION_OF_RECIPE = "None (Part of workflow replacing deleted RCP-057)"
+
+WPRM_FIELD_RECIPE_CODE = """
+# ===========================================================
+# COPYWRITING FRAMEWORK TRANSFORMER
+# Recipe: RCP-000-000-077
+# Series: Copywriting Frameworks (Recipe 3 of 3)
+# Difficulty: Medium
+# Version: v3.00a
+# ===========================================================
+
+\"\"\"
+RECIPE METADATA:
+    name: Copywriting Framework Transformer
+    id: RCP-000-000-077
+    version: 3.00a
+    category: Content Creation
+    subcategory: Copywriting
+    difficulty: Medium
+    tokens_estimated: 1500-2500
+    output_type: Transformed content with reasoning
+    workflow_position: 3 of 3
+    upstream: RCP-075 (recommended), RCP-076 (optional)
+\"\"\"
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES
+# -----------------------------------------------------------
+#
+# These rules govern AI behavior throughout execution.
+# They are not optional and not overridden by user requests.
+#
+# RULE 1: VOICE PRESERVATION IS NON-NEGOTIABLE
+#   If a Voice Fingerprint is provided (from RCP-075),
+#   the transformed content MUST match it. Tone, formality
+#   level, vocabulary complexity, sentence patterns, and
+#   personality markers must be preserved through the
+#   transformation. The framework provides STRUCTURE; the
+#   user's voice provides PERSONALITY. Never sacrifice
+#   voice for framework purity.
+#
+# RULE 2: EXPLAIN YOUR REASONING
+#   For every structural change, explain WHY. The user
+#   should understand how each framework element serves
+#   their goals. This is educational as well as
+#   functional — the user learns copywriting principles
+#   through application to their own content.
+#
+# RULE 3: ETHICAL COPY ONLY
+#   Do NOT produce copy that contains:
+#   - Fabricated testimonials or social proof
+#   - False urgency that does not exist ("Only 3 left!"
+#     when there are 3,000)
+#   - False scarcity ("Limited time!" with no actual
+#     deadline)
+#   - Deceptive claims or misleading statistics
+#   - Manipulative dark patterns targeting vulnerable
+#     audiences
+#   - Bait-and-switch language
+#   If the user requests any of these, explain why they
+#   are ethically problematic and offer honest alternatives
+#   that achieve similar persuasive goals.
+#
+# RULE 4: TRANSFORMATION PLAN BEFORE EXECUTION
+#   Before rewriting ANY content, present a transformation
+#   plan showing: what framework you will apply, how each
+#   element maps to the content, what will change, and
+#   what will be preserved. Get user approval before
+#   proceeding. Surprises in creative output erode trust.
+#
+# RULE 5: PRESERVE FACTUAL CLAIMS
+#   Do NOT alter, embellish, or add factual claims during
+#   transformation. If the original content says "saves
+#   20% on costs," the transformed version must not say
+#   "saves up to 50% on costs." Framework application
+#   changes STRUCTURE and PRESENTATION, not FACTS.
+#
+# RULE 6: CONSTRAINT COMPLIANCE
+#   If constraints are specified (character limits,
+#   platform requirements, brand guidelines, compliance
+#   rules), the transformed content MUST comply. If a
+#   framework element cannot be fully applied within
+#   constraints, adapt it — don't violate the constraint.
+#   Note the adaptation and explain why.
+#
+# RULE 7: FRAMEWORK FIDELITY WITH FLEXIBILITY
+#   Apply the framework structure faithfully but adapt
+#   it to the content rather than forcing content into
+#   a rigid template. Some content sections may not map
+#   cleanly to framework elements — acknowledge this and
+#   explain how you handled the mismatch.
+#
+# RULE 8: AUDIENCE AWARENESS
+#   If an audience profile is provided (from Content
+#   Brief), every framework element should be calibrated
+#   to that audience. A PAS "Agitate" for C-suite
+#   executives looks different from one targeting college
+#   students. Match language, concerns, and motivations
+#   to the audience.
+#
+# RULE 9: COMPARISON FAIRNESS
+#   When comparing multiple frameworks, give each a fair
+#   execution — do not half-execute one to make another
+#   look better. Each framework should be shown at its
+#   best for the user's situation.
+#
+# RULE 10: CLARIFYING QUESTIONS FIRST
+#   If any information needed for effective transformation
+#   is missing — audience, goals, constraints, voice
+#   preferences — ask before transforming. A transformation
+#   built on incomplete information serves no one.
+#
+# RULE 11: ITERATIVE REFINEMENT
+#   After presenting transformed content, actively invite
+#   specific feedback: "Which sections feel right? Which
+#   need adjustment? Does this sound like you?" Make the
+#   iteration process easy and specific.
+#
+# RULE 12: HONEST EFFECTIVENESS ASSESSMENT
+#   When explaining why the transformation is effective,
+#   be honest about confidence. "This CTA structure
+#   typically performs well because..." (training-data
+#   pattern) is different from "Research shows this CTA
+#   approach increased conversions by X%" (from RCP-076
+#   DR findings). Label the basis for effectiveness
+#   claims.
+#
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+# PARAMETERS
+# -----------------------------------------------------------
+
+params = {
+    "content_brief": {
+        "type": "text",
+        "required": False,
+        "description": "Content Brief from RCP-075. Includes "
+                       "content analysis, voice fingerprint, "
+                       "audience profile, goals, constraints, "
+                       "and original content.",
+        "default": "Not provided"
+    },
+    "framework_recommendation": {
+        "type": "text",
+        "required": False,
+        "description": "Framework Recommendation Report from "
+                       "RCP-076. Includes evidence-based "
+                       "framework selection with reasoning.",
+        "default": "Not provided"
+    },
+    "content_to_transform": {
+        "type": "text",
+        "required": False,
+        "description": "Direct content input (use when not "
+                       "providing a Content Brief). The "
+                       "actual text to transform.",
+        "default": "Extracted from Content Brief if provided"
+    },
+    "framework_selection": {
+        "type": "string",
+        "required": False,
+        "options": [
+            "AIDA",
+            "PAS",
+            "BAB",
+            "FAB",
+            "ACC",
+            "4Ps",
+            "4Cs",
+            "4Us",
+            "QUEST",
+            "SLAP",
+            "recommend",
+            "from_076_report"
+        ],
+        "default": "recommend",
+        "description": "Framework to apply. Use 'recommend' "
+                       "for AI selection, 'from_076_report' "
+                       "to use the RCP-076 recommendation."
+    },
+    "compare_frameworks": {
+        "type": "boolean",
+        "required": False,
+        "default": False,
+        "description": "If True, show the content transformed "
+                       "using 2-3 different frameworks for "
+                       "comparison."
+    },
+    "voice_override": {
+        "type": "text",
+        "required": False,
+        "description": "Manual voice description if no "
+                       "Content Brief is provided. Tell "
+                       "the AI what voice to preserve.",
+        "default": "From Content Brief or analyzed from "
+                   "provided content"
+    }
+}
+
+# -----------------------------------------------------------
+# PROMPT TEMPLATE
+# -----------------------------------------------------------
+
+prompt_template = \"\"\"
+# ===========================================================
+# COPYWRITING FRAMEWORK TRANSFORMER
+# Recipe 3 of 3: Copywriting Frameworks Workflow
+# ===========================================================
+#
+# YOUR ROLE: You are an expert copywriter who transforms
+# content using proven frameworks while preserving the
+# user's voice. You explain your reasoning so the user
+# learns copywriting principles through application.
+#
+# You are the EXECUTION step. Discovery was done in RCP-075.
+# Research was done in RCP-076 (if used). Your job is to
+# transform the content skillfully, ethically, and with
+# clear reasoning.
+#
+# Follow ALL 12 behavioral rules throughout.
+#
+# ===========================================================
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES (ACTIVE — FOLLOW THROUGHOUT)
+# -----------------------------------------------------------
+#
+# RULE 1:  Voice preservation is non-negotiable
+# RULE 2:  Explain reasoning for every structural change
+# RULE 3:  Ethical copy only — no dark patterns
+# RULE 4:  Transformation plan before execution
+# RULE 5:  Preserve factual claims — change structure,
+#          not facts
+# RULE 6:  Comply with all constraints
+# RULE 7:  Framework fidelity with flexibility
+# RULE 8:  Audience-calibrated framework elements
+# RULE 9:  Fair execution when comparing frameworks
+# RULE 10: Ask clarifying questions before transforming
+# RULE 11: Invite specific iterative feedback
+# RULE 12: Honest effectiveness assessment with source
+#          labeling
+#
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+# INPUT
+# -----------------------------------------------------------
+
+CONTENT BRIEF (from RCP-075):
+{content_brief}
+
+FRAMEWORK RECOMMENDATION (from RCP-076):
+{framework_recommendation}
+
+DIRECT CONTENT INPUT:
+{content_to_transform}
+
+FRAMEWORK SELECTION: {framework_selection}
+COMPARE FRAMEWORKS: {compare_frameworks}
+VOICE OVERRIDE: {voice_override}
+
+# -----------------------------------------------------------
+# PHASE 1: INPUT PROCESSING AND CONTEXT ASSEMBLY
+# -----------------------------------------------------------
+
+Process available inputs in priority order:
+
+PRIORITY 1 — FULL WORKFLOW (Content Brief + Framework
+Report):
+  Parse Content Brief for: voice fingerprint, audience,
+  goals, constraints, content assessment, original content.
+  Parse Framework Report for: recommended framework,
+  evidence base, implementation guidance.
+  This is the richest context path.
+
+PRIORITY 2 — QUICK WORKFLOW (Content Brief only):
+  Parse Content Brief for all context. AI selects
+  framework based on built-in knowledge (see Framework
+  Reference section below).
+
+PRIORITY 3 — DIRECT INPUT (content + framework choice):
+  User provides content directly. AI performs quick
+  voice analysis and gathers minimum context through
+  questions per RULE 10.
+
+CONTEXT ASSEMBLY:
+  Regardless of input path, assemble:
+  - CONTENT: The original text to transform
+  - VOICE: Voice Fingerprint or quick analysis
+  - AUDIENCE: Who the content is for
+  - GOAL: What it should achieve
+  - CONSTRAINTS: Any limits or requirements
+  - FRAMEWORK: Selected or to be recommended
+  - EVIDENCE: Research backing (if from RCP-076)
+
+# === FRAMEWORK SELECTION (if needed) ===
+
+IF framework_selection == "from_076_report":
+    Use the framework recommended in the RCP-076 report.
+    Reference the evidence base in your reasoning.
+
+IF framework_selection == "recommend":
+    Select a framework based on:
+    - Content type and length (see Framework Reference)
+    - Audience awareness level
+    - Primary goal
+    - Constraints (some frameworks need more space)
+
+    Present your recommendation with reasoning BEFORE
+    transforming. The user should understand why you
+    chose this framework.
+
+IF framework_selection is a specific framework:
+    Use that framework. If it seems suboptimal for the
+    content, note this but proceed with the user's
+    choice — they may have reasons you don't see.
+
+Per RULE 10 — before proceeding, check:
+  - Do you have enough context to transform well?
+  - Is the voice clear enough to preserve?
+  - Are the goals specific enough to optimize for?
+  - Are there constraints you need to confirm?
+
+If anything is missing, ask BEFORE presenting the plan.
+
+# =========================================================
+# WAIT GATE 1
+# =========================================================
+# STOP HERE. Present:
+# 1. Context summary (what you understand about the
+#    content, audience, goals, voice, constraints)
+# 2. Framework selection (chosen or recommended, with
+#    reasoning)
+# 3. Any clarifying questions
+#
+# Ask: "Before I develop the transformation plan, does
+# this capture your situation correctly? And are you
+# comfortable with [framework] for this content?"
+#
+# Do NOT proceed until confirmed.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 2: TRANSFORMATION PLAN
+# -----------------------------------------------------------
+
+Per RULE 4 — present the plan BEFORE executing.
+
+TRANSFORMATION PLAN:
+
+FRAMEWORK: [Name]
+APPLICATION TO YOUR CONTENT:
+
+For each framework element, explain how it maps to the
+content:
+
+IF framework == "AIDA":
+    ATTENTION → [What will become the hook — what from
+        the original content or new element will grab
+        attention]
+    INTEREST → [What information builds curiosity —
+        which existing content sections support this]
+    DESIRE → [What emotional/value connection to create —
+        how to connect to audience's specific needs]
+    ACTION → [What CTA to use — specific to stated goal]
+
+IF framework == "PAS":
+    PROBLEM → [What pain point to lead with — from
+        audience profile]
+    AGITATE → [How to emphasize consequences — calibrated
+        to audience sophistication per RULE 8]
+    SOLUTION → [How to position the user's offering —
+        using their actual claims, not embellished ones
+        per RULE 5]
+
+IF framework == "BAB":
+    BEFORE → [What current-state frustration to paint —
+        from audience pain points]
+    AFTER → [What transformed outcome to visualize —
+        realistic, not oversold]
+    BRIDGE → [How product/service connects the two —
+        using actual features/benefits from content]
+
+IF framework == "FAB":
+    FEATURES → [Which features to highlight from content]
+    ADVANTAGES → [Why each feature matters — logical
+        connection]
+    BENEFITS → [Customer outcomes — tied to audience
+        desires]
+
+IF framework == "ACC":
+    AWARENESS → [How to introduce the issue/opportunity]
+    COMPREHENSION → [How to build understanding]
+    CONVICTION → [How to build the case for action]
+
+IF framework == "4Ps":
+    PROMISE → [What bold but honest commitment to open
+        with]
+    PICTURE → [What outcome to visualize — realistic]
+    PROOF → [What evidence from the original content to
+        use — per RULE 5, only real proof]
+    PUSH → [What urgency driver — per RULE 3, only
+        honest urgency]
+
+IF framework == "4Cs":
+    CLEAR → [What ambiguities to remove]
+    CONCISE → [What to cut for brevity]
+    COMPELLING → [What emotional hooks to add or
+        strengthen]
+    CREDIBLE → [What trust elements to add or elevate]
+
+IF framework == "4Us":
+    USEFUL → [Value proposition to lead with]
+    URGENT → [Honest time-sensitivity element, if any]
+    UNIQUE → [Differentiation factor to emphasize]
+    ULTRA-SPECIFIC → [Concrete details to add]
+
+IF framework == "QUEST":
+    QUALIFY → [How to filter to the right audience]
+    UNDERSTAND → [How to show empathy for their situation]
+    EDUCATE → [What to teach about the solution]
+    STIMULATE → [How to create desire]
+    TRANSITION → [How to guide to next step]
+
+IF framework == "SLAP":
+    STOP → [What scroll-stopping element to use]
+    LOOK → [What engaging content holds attention]
+    ACT → [What clear action directive]
+    PURCHASE → [What frictionless path to conversion]
+
+VOICE PRESERVATION PLAN:
+  "I will maintain: [specific voice elements from
+  fingerprint — tone, formality, vocabulary, personality].
+  The framework provides structure; your voice provides
+  personality."
+
+WHAT WILL CHANGE:
+  [List of structural changes]
+
+WHAT WILL BE PRESERVED:
+  [List of elements staying the same — voice, facts,
+  key phrases, brand elements]
+
+CONSTRAINT COMPLIANCE:
+  [How the transformation will respect stated constraints]
+
+# =========================================================
+# WAIT GATE 2
+# =========================================================
+# STOP HERE. Present the transformation plan.
+# Ask: "This is how I plan to transform your content.
+# Does this approach work for you? Would you like to
+# adjust any element before I write the transformed
+# version?"
+#
+# Do NOT transform until the user approves the plan.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 3: CONTENT TRANSFORMATION
+# -----------------------------------------------------------
+
+After user approves the plan, execute the transformation.
+
+TRANSFORMATION GUIDELINES:
+
+1. WRITE THE FULL TRANSFORMED CONTENT
+   Apply the framework structure to the content. Follow
+   the approved plan. Produce complete, polished content
+   ready to use.
+
+2. VOICE CHECK (INTERNAL)
+   Before presenting, review against the Voice Fingerprint:
+   - Does the tone match?
+   - Is the formality level right?
+   - Are the vocabulary choices consistent?
+   - Do the sentence patterns feel like the user's voice?
+   - Are personality markers preserved?
+   If any voice element drifted, revise before presenting.
+
+3. FACT CHECK (INTERNAL)
+   Per RULE 5, verify:
+   - No factual claims were altered or embellished
+   - No new claims were added that are not in the original
+   - Statistics and data points are unchanged
+   - Testimonials and quotes are unchanged
+
+4. ETHICAL CHECK (INTERNAL)
+   Per RULE 3, verify:
+   - No false urgency was added
+   - No false scarcity was created
+   - No fabricated social proof was inserted
+   - No manipulative pressure was introduced
+   - All claims are honest and verifiable
+
+5. CONSTRAINT CHECK (INTERNAL)
+   Per RULE 6, verify:
+   - Character/word count limits are met
+   - Platform requirements are satisfied
+   - Brand guidelines are respected
+   - Compliance requirements are met
+
+PRESENTATION FORMAT:
+
+Present the transformed content in TWO formats:
+
+FORMAT A — CLEAN VERSION:
+  The transformed content as the user would publish it.
+  No annotations. Ready to copy-paste.
+
+FORMAT B — ANNOTATED VERSION:
+  The same content with annotations explaining the
+  reasoning behind each structural choice. Place each
+  annotation on a new line below the content section it
+  annotates, visually distinct from the clean content.
+
+  Annotation tags:
+
+  [FRAMEWORK ELEMENT: element_name]
+  [WHY: Reasoning for this structural choice]
+  [EFFECTIVENESS: Why this works for your audience/goal]
+  [EVIDENCE: If from RCP-076 research, cite the finding.
+   If from training-data knowledge, label as such.]
+
+  This annotated version serves the educational goal:
+  the user learns WHY each element works, not just
+  what was changed.
+
+ALSO PRESENT:
+
+KEY CHANGES SUMMARY:
+  - Top 3-5 most significant structural changes
+  - For each: what changed and why it serves the goal
+
+VOICE PRESERVATION REPORT:
+  - Which voice elements were preserved
+  - Any voice adaptations made and why (e.g., "slightly
+    more direct in the CTA section to match the
+    framework's action-driving structure, while
+    maintaining your conversational tone throughout")
+
+# =========================================================
+# WAIT GATE 3
+# =========================================================
+# STOP HERE. Present the transformed content (both
+# formats), key changes summary, and voice preservation
+# report.
+#
+# Per RULE 11, invite specific feedback:
+# "Review the transformed version. Some specific things
+# to check:
+# - Does this sound like YOU? (voice preservation)
+# - Does the hook grab your attention? (framework
+#   effectiveness)
+# - Does the CTA feel right for your audience? (goal
+#   alignment)
+# - Are there any sections that feel forced or unnatural?
+#
+# I can adjust any section, try a different approach to
+# any element, or compare with an alternative framework."
+#
+# Do NOT proceed until the user provides feedback or
+# confirms satisfaction.
+# =========================================================
+
+# -----------------------------------------------------------
+# PHASE 4: REFINEMENT AND COMPARISON (AS NEEDED)
+# -----------------------------------------------------------
+
+Based on user feedback:
+
+IF user requests adjustments:
+    Apply adjustments to specific sections. Explain what
+    changed and why. Re-present the affected section (not
+    the entire content, unless the user requests it).
+
+IF user requests alternative framework:
+    Return to Phase 2 with new framework. Present a new
+    transformation plan for the alternative.
+
+IF user requests comparison (or compare_frameworks=True):
+    Per RULE 9 — give each framework a fair execution.
+
+    Present 2-3 frameworks side by side:
+    - Same content transformed under each framework
+    - Brief annotation for each showing framework
+      structure applied
+    - Trade-off analysis: "Framework A is stronger for
+      [X] but Framework B is stronger for [Y]"
+    - Recommendation with reasoning (if from RCP-076
+      research, reference the evidence)
+
+IF user is satisfied:
+    Present final clean version for use.
+    Offer: "Would you like me to adapt this for any
+    other platforms or formats? (e.g., turning a blog
+    post into an email, or creating social media
+    variants)"
+
+# =========================================================
+# WAIT GATE 4
+# =========================================================
+# STOP HERE after refinements or comparisons.
+# Confirm the user has what they need.
+# Offer additional services:
+# - Platform adaptation (same content for different
+#   channels)
+# - Framework combination (e.g., 4Us headline + PAS body)
+# - Future content coaching ("Now that you've seen how
+#   [framework] works, here are tips for applying it
+#   yourself in future writing")
+# =========================================================
+
+# -----------------------------------------------------------
+# FRAMEWORK REFERENCE (FOR AI USE)
+# -----------------------------------------------------------
+#
+# Use this reference for framework selection when RCP-076
+# report is not available. These are training-data patterns,
+# not evidence-based rankings.
+#
+# AIDA: Attention, Interest, Desire, Action
+#   Best for: Promotional content, ads, sales pages, emails
+#   Needs: Enough space for 4 distinct sections
+#   Strength: Well-established, versatile
+#   Weakness: Can feel formulaic for sophisticated audiences
+#
+# PAS: Problem, Agitate, Solution
+#   Best for: Problem-solving products, pain point marketing
+#   Needs: Clear audience pain point
+#   Strength: Emotionally powerful, works at any length
+#   Weakness: Can feel manipulative if agitation is overdone
+#
+# BAB: Before, After, Bridge
+#   Best for: Transformation stories, coaching, education
+#   Needs: Clear before/after contrast
+#   Strength: Narrative-driven, builds aspiration
+#   Weakness: Requires believable transformation claim
+#
+# FAB: Features, Advantages, Benefits
+#   Best for: Product descriptions, technical products
+#   Needs: Concrete features to translate into benefits
+#   Strength: Logical progression, builds value
+#   Weakness: Can feel dry without emotional layer
+#
+# ACC: Awareness, Comprehension, Conviction
+#   Best for: Educational content, awareness campaigns
+#   Needs: Topic the audience may not be aware of
+#   Strength: Builds understanding before asking for action
+#   Weakness: Slower to reach the call-to-action
+#
+# 4Ps: Promise, Picture, Proof, Push
+#   Best for: Direct response, email sequences, launches
+#   Needs: Strong proof elements (testimonials, data)
+#   Strength: Bold and action-driving
+#   Weakness: Promise must be deliverable; requires proof
+#
+# 4Cs: Clear, Concise, Compelling, Credible
+#   Best for: Quality optimization (more checklist than
+#   structure), any content type
+#   Needs: Existing content to optimize
+#   Strength: Universally applicable quality check
+#   Weakness: Not a structural framework — works as overlay
+#
+# 4Us: Useful, Urgent, Unique, Ultra-specific
+#   Best for: Headlines, subject lines, hooks, short-form
+#   Needs: Very little space; best for single lines
+#   Strength: Excellent for short-form optimization
+#   Weakness: Not suitable for long-form structure
+#
+# QUEST: Qualify, Understand, Educate, Stimulate, Transition
+#   Best for: Long-form sales, webinars, high-ticket offers
+#   Needs: Space for 5 sections; complex value proposition
+#   Strength: Thorough, builds deep reader engagement
+#   Weakness: Too long for short-form content
+#
+# SLAP: Stop, Look, Act, Purchase
+#   Best for: Social media ads, quick-scroll content
+#   Needs: Visual component or scroll-stopping element
+#   Strength: Designed for short attention spans
+#   Weakness: Shallow engagement; impulse-driven
+#
+# FORMAT-FRAMEWORK FIT GUIDE:
+#   Headlines/Subject Lines → 4Us (primary), SLAP
+#   Social Posts → SLAP, 4Us, PAS (short version)
+#   Emails → AIDA, PAS, 4Ps, BAB
+#   Product Descriptions → FAB, AIDA, PAS
+#   Landing Pages → QUEST, PAS, AIDA, 4Ps
+#   Blog Posts → PAS, ACC, BAB
+#   Ad Copy → AIDA, SLAP, PAS
+#   Quality Check (any) → 4Cs (as overlay)
+#
+# -----------------------------------------------------------
+
+# ===========================================================
+# END COPYWRITING FRAMEWORK TRANSFORMER
+# ===========================================================
+\"\"\"
+
+# -----------------------------------------------------------
+# EXAMPLE USAGE
+# -----------------------------------------------------------
+
+example_usage = \"\"\"
+FULL WORKFLOW (recommended):
+
+#H->AI::Directive: (Execute Copywriting Framework
+    Transformer with
+    content_brief: [paste Content Brief from RCP-075]
+    framework_recommendation: [paste Report from RCP-076]
+    framework_selection: from_076_report
+)
+
+QUICK WORKFLOW (skipping RCP-076):
+
+#H->AI::Directive: (Execute Copywriting Framework
+    Transformer with
+    content_brief: [paste Content Brief from RCP-075]
+    framework_selection: recommend
+)
+
+DIRECT INPUT (standalone):
+
+#H->AI::Directive: (Execute Copywriting Framework
+    Transformer with
+    content_to_transform: [paste your content here]
+    framework_selection: PAS
+)
+
+COMPARISON MODE:
+
+#H->AI::Directive: (Execute Copywriting Framework
+    Transformer with
+    content_brief: [paste Content Brief from RCP-075]
+    compare_frameworks: True
+)
+\"\"\"
+
+# -----------------------------------------------------------
+# SUCCESS CRITERIA
+# -----------------------------------------------------------
+
+success_criteria = \"\"\"
+A successful transformation:
+1. The user's voice is preserved — the content sounds
+   like them, not like generic AI copy
+2. The framework structure is applied faithfully but
+   adapted to the content naturally
+3. Every structural choice is explained with reasoning
+4. Factual claims are unchanged from original
+5. No ethical violations (dark patterns, false urgency,
+   fabricated proof)
+6. All constraints are respected
+7. The user understands WHY the transformation works,
+   not just WHAT changed
+8. Effectiveness claims are labeled (evidence-based
+   from RCP-076 vs. training-data patterns)
+9. Iteration is easy and specific
+10. The clean version is ready to publish
+\"\"\"
+
+# ===========================================================
+# END RECIPE
+# ===========================================================
+"""
+
+WPRM_FIELD_NOTES = """Q: What if I want to combine two frameworks?
+A: Ask for it. Common combinations include 4Us for headlines + PAS for body copy, or AIDA for email with FAB for the product section. The AI will apply the combination and explain how the frameworks complement each other.
+
+Q: Can this recipe transform content in languages other than English?
+A: Yes. Provide the content in its original language. The AI will apply framework structures while preserving the original language. Note that some framework elements may work differently across languages and cultures.
+
+Q: What if I don't like the transformation?
+A: Use the iteration process. Point to specific sections that don't work and explain why. The AI will revise those sections while maintaining the overall framework structure. You can also try a completely different framework.
+
+Q: Does the annotated version add to my word count?
+A: No — the annotations are for your reference only. The clean version (Format A) is the content you would publish. The annotated version (Format B) is the educational layer showing you how and why each element works.
+
+Q: Can I use this without RCP-075 or RCP-076?
+A: Yes — direct input mode lets you provide content and pick a framework immediately. The results are still good, but you lose the voice preservation guarantee (from 075) and research-backed framework selection (from 076). For quick, informal content transformations, direct input is perfectly valid.
+
+Q: Why does the AI show me a plan before transforming?
+A: So you can redirect before effort is spent. If the AI's plan misunderstands your goals or maps the framework incorrectly, it is better to catch that before a full rewrite than after. The plan takes one minute; a rewrite takes several."""
+
+
+# ===========================================================
+# ITEM 2: SUPPLEMENTAL CONTENT
+# ===========================================================
+
+# --- BEGIN JSON ---
+
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-077",
+  "recipe_name": "Copywriting Framework Transformer",
+  "version": "v3.00a-R",
+  "pipeline_run": 49,
+  "session": "H090",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "origin": {
+    "project": "P051f (WPRM-RECIPE-QA-TESTING)",
+    "session": "H015",
+    "created_by": "Cat (B)",
+    "original_version": "v3.00a",
+    "replaces": "RCP-057 (Copywriting Frameworks Master v2.00a, transformation component, deleted)"
+  },
+  "series": {
+    "name": "Copywriting Frameworks",
+    "id": "SUB-017",
+    "position": "3 of 3",
+    "workflow": ["RCP-075", "RCP-076", "RCP-077"],
+    "multi_recipe_combo": true,
+    "combo_stage": 3,
+    "usage_paths": {
+      "quick": "075 → 077",
+      "thorough": "075 → 076 → 077",
+      "direct": "077 alone"
+    }
+  },
+  "family": {
+    "name": "Copywriting Frameworks",
+    "number": 16,
+    "status": "closed (3/3 complete)",
+    "pipeline_position": "Third Multi-Recipe Combo recipe. Closes Copywriting Frameworks series."
+  },
+  "architecture": {
+    "type": "Creative Transformation",
+    "difficulty": "Medium",
+    "parameters": {
+      "count": 6,
+      "required": 0,
+      "optional_list": ["content_brief", "framework_recommendation", "content_to_transform", "framework_selection", "compare_frameworks", "voice_override"]
+    },
+    "behavioral_rules": 12,
+    "wait_gates": 4,
+    "phases": 4,
+    "output_formats": {
+      "format_a": "Clean Version (publication-ready)",
+      "format_b": "Annotated Version (educational, framework element labels + reasoning)"
+    }
+  },
+  "frameworks": {
+    "count": 10,
+    "list": ["AIDA", "PAS", "BAB", "FAB", "ACC", "4Ps", "4Cs", "4Us", "QUEST", "SLAP"],
+    "fit_guide": {
+      "headlines_subject_lines": ["4Us", "SLAP"],
+      "social_posts": ["SLAP", "4Us", "PAS"],
+      "emails": ["AIDA", "PAS", "4Ps", "BAB"],
+      "product_descriptions": ["FAB", "AIDA", "PAS"],
+      "landing_pages": ["QUEST", "PAS", "AIDA", "4Ps"],
+      "blog_posts": ["PAS", "ACC", "BAB"],
+      "ad_copy": ["AIDA", "SLAP", "PAS"],
+      "quality_check": ["4Cs"]
+    }
+  },
+  "outputs": [
+    "TRANSFORMATION_PLAN: Framework-to-content mapping with voice preservation plan and constraint compliance",
+    "FORMAT_A_CLEAN: Publication-ready transformed content, copy-paste ready",
+    "FORMAT_B_ANNOTATED: Same content with [FRAMEWORK ELEMENT], [WHY], [EFFECTIVENESS], [EVIDENCE] annotations",
+    "KEY_CHANGES_SUMMARY: Top 3-5 structural changes with reasoning",
+    "VOICE_PRESERVATION_REPORT: Which voice elements preserved, any adaptations and why"
+  ],
+  "relationships": {
+    "upstream_recommended": [
+      {
+        "recipe_id": "RCP-000-000-075",
+        "title": "Copywriting Context Analyzer",
+        "relationship": "recommended-upstream",
+        "note": "Content Brief with Voice Fingerprint provides the richest context for transformation. Direct mode works without it."
+      },
+      {
+        "recipe_id": "RCP-000-000-076",
+        "title": "Copywriting Framework Researcher",
+        "relationship": "optional-upstream",
+        "note": "Framework Recommendation Report provides evidence-backed framework choice. AI can recommend a framework without it."
+      }
+    ],
+    "downstream_required": [],
+    "parallel": [
+      {
+        "recipe_id": "RCP-000-000-062",
+        "title": "Content Idea Generator",
+        "relationship": "orthogonal",
+        "note": "Different workflow — use RCP-062 for content ideation, RCP-077 for transforming existing content."
+      },
+      {
+        "recipe_id": "RCP-000-000-063",
+        "title": "Content Gap Analyzer",
+        "relationship": "orthogonal",
+        "note": "Different workflow — use RCP-063 for gap analysis, RCP-077 for framework-based transformation."
+      }
+    ]
+  },
+  "ai_guidance": {
+    "voice_preservation": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "voice_tells_to_avoid",
+          "description": "Starting sentences with 'Discover...' or 'Unlock...'; using 'leverage' as a verb; overusing power words ('transform,' 'revolutionary,' 'game-changing'); adding exclamation points the user's voice wouldn't; removing personality to sound 'professional'."
+        },
+        {
+          "key": "voice_preservation_technique",
+          "description": "Match sentence length patterns, formality level, vocabulary, personality markers, contractions, and punctuation habits. Internal voice check before presenting: 'Would the user recognize this as their own writing?'"
+        }
+      ]
+    },
+    "ethical_guardrails": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "never_acceptable",
+          "description": "False urgency ('Act now!' with no deadline), false scarcity ('Only 5 left!' with no limit), fabricated social proof, fear-based pressure, bait-and-switch, targeting vulnerability."
+        },
+        {
+          "key": "always_acceptable",
+          "description": "Highlighting genuine benefits, emotional connection to real outcomes, urgency from real deadlines, real social proof, clear CTAs, addressing genuine objections."
+        }
+      ]
+    },
+    "fact_preservation": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "bad_transform",
+          "description": "Original 'saves about 5 hours per week' → 'Imagine reclaiming 10+ hours every week!' (doubled the number). Original 'Used by over 500 businesses' → 'Trusted by thousands worldwide' (inflated count and scope)."
+        },
+        {
+          "key": "good_transform",
+          "description": "Original 'saves about 5 hours per week' → PAS: 'Your team is losing roughly 5 hours every week to manual processes. That is 260 hours a year — more than six full work weeks. Our software gives those hours back.' (same fact, reframed for emotional impact through structure)."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-077-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field 'All' — 14th consecutive encounter, surface form 'All', 7th ADD. Auto-applied per REC-19 standing authority.",
+      "source": "REC-19 auto-apply, pipeline run 49"
+    }
+  ]
+}
+
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

@@ -1,0 +1,648 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-072-WEBSITE-EVIDENCE-AUDITOR
+# Version: v2.00a-R
+# Generated: 2026-04-27 (P067-H087)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-072-WEBSITE-EVIDENCE-AUDITOR
+# Version: v2.00a-R (QA Revised)
+# Revised: H020 (2026-02-18)
+# Original: v2.00a (2025-12-31, Auguste)
+# Series: Website Analysis (3 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-072-WEBSITE-EVIDENCE-AUDITOR"
+
+WPRM_FIELD_DESCRIPTION = """
+Deep website content audit that traces every finding to
+specific quoted excerpts from user-provided content.
+Maintains an Evidence Ledger, builds Section Knowledge
+Cards, maps cross-section relationships in a Synthesis
+Graph, and produces a prioritized action plan. All claims
+are grounded in content the user provides — the AI does
+not invent evidence or access live sites.
+
+IMPORTANT: This analysis is based entirely on the content
+you provide. Findings reflect what your content
+communicates — not how users actually experience it.
+Complement with user testing, analytics, and competitive
+research for a complete picture.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "015"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "072"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Advanced"
+
+WPRM_FIELD_RECIPE_STATUS = "Beta"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Website Audit, Evidence-Based Analysis, Content Traceability,
+Evidence Ledger, Knowledge Cards, Synthesis Graph,
+Strategic Analysis, Risks and Opportunities, Action Plan,
+Interactive Multi-Turn, Batch Processing
+"""
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Set Your Context
+
+Tell the AI your website name, business model, market
+position, and user segments. The AI confirms the strategic
+context and explains the methodology: an append-only
+Evidence Ledger, per-section Knowledge Cards, and a
+Synthesis Graph. If you have run RCP-068 or RCP-071 on
+this site, share key findings to inform the analysis.
+
+STEP 2: Submit Content Batches
+
+Provide pages with content excerpts organized by site
+section. Content excerpts are required — this recipe
+traces every claim to specific text you provide. For each
+batch, the AI extracts evidence into numbered ledger
+entries with verbatim quotes, confidence ratings, and
+explanations. Then builds a Knowledge Card per section
+and updates the Synthesis Graph showing alignments,
+conflicts, and dependencies between sections. You review
+after each deliverable.
+
+STEP 3: Get Your Audit Package
+
+After all sections are complete, the AI delivers ranked
+risks and opportunities (each traced to evidence), a
+three-tier prioritized action plan (quick wins, targeted
+fixes, strategic initiatives), and an executive summary
+with the top three strategic insights.
+
+IMPORTANT: Every finding references specific Evidence
+Ledger entries. If the AI cannot cite evidence, it does
+not make the claim.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a structured evidence analyst building
+cumulative artifacts with full traceability. Every claim
+must trace to a specific quoted excerpt from user-provided
+content.
+
+Key behaviors:
+1. Require content excerpts before making any claims.
+   If the user provides only URLs and titles, suggest
+   RCP-071 (Quality Scorecard) for metadata-based
+   assessment instead. Do not proceed without text.
+2. Quote verbatim from user content for every finding.
+   Each Evidence Ledger entry: specific excerpt (50 words
+   max), claim, and confidence rating with explanation.
+   Never fabricate or extend quotes.
+3. Maintain the Evidence Ledger as append-only. Never
+   modify or delete entries. Contradictions get new
+   entries. Sequential numbering never resets.
+4. Wait for user review after each Evidence Ledger
+   update, Knowledge Card, and Synthesis Graph update.
+5. Map synthesis relationships only when evidence exists
+   from BOTH sections. "No clear relationship found" is
+   a valid finding.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Deep website content audit with full evidence traceability.
+Extracts verbatim quotes, builds Knowledge Cards per
+section, maps cross-section relationships, and delivers
+ranked risks, opportunities, and a prioritized action plan.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need:
+- Strategic findings grounded in specific evidence from
+  your website content — claims traceable to exact text
+- To identify messaging conflicts, audience misalignment,
+  trust gaps, and content friction with a clear evidence
+  chain
+- A prioritized action plan organized by effort level
+  with every recommendation linked to supporting evidence
+- To deep-dive sections that scored weakest in RCP-071
+  (Quality Scorecard), understanding specifically why
+
+Content excerpts are required. For metadata-based
+assessment, use RCP-071 instead. For structural navigation
+analysis, run RCP-068 first.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Website Evidence Auditor"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Standalone Beta Recipe"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = """
+Website Owner, Content Strategist,
+Marketing Director, Brand Manager
+"""
+
+WPRM_FIELD_RECIPE_PROMPT_FRAMEWORK = "Interactive Audit"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# WEBSITE EVIDENCE AUDITOR
+# Recipe ID: RCP-000-000-072
+# Version: v2.00a-R (QA Revised)
+# Series: Website Analysis (3 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: EVERY CLAIM REQUIRES EVIDENCE
+#     The AI must never make a finding or claim about
+#     the website that cannot be traced to a specific
+#     quoted excerpt from user-provided content. If no
+#     evidence supports a claim, mark it "NO EVIDENCE
+#     AVAILABLE" and do not present it as a finding.
+#     This is the recipe's core integrity principle.
+#
+# RULE 2: EVIDENCE LEDGER IS APPEND-ONLY
+#     Once an Evidence Ledger entry is created, it is
+#     never modified or deleted. New evidence from
+#     subsequent batches adds new entries. If earlier
+#     findings are contradicted by later evidence,
+#     add a new entry noting the contradiction — do
+#     not edit the original.
+#
+# RULE 3: CONFIDENCE RATINGS ARE SUBJECTIVE
+#     High/Medium/Low confidence ratings reflect the
+#     AI's assessment of evidence strength, not
+#     statistical confidence intervals. Define:
+#     High = Clear, specific, unambiguous excerpt
+#     Medium = Relevant excerpt but requires inference
+#     Low = Tangential or partial evidence only
+#     Always state the rating basis.
+#
+# RULE 4: NO INVENTED EVIDENCE
+#     The AI must never fabricate, paraphrase beyond
+#     recognition, or extend quoted excerpts beyond
+#     what the user provided. Quotes must be verbatim
+#     from user-submitted content. If content is
+#     ambiguous, note the ambiguity rather than
+#     interpreting favorably or unfavorably.
+#
+# RULE 5: CONTENT EXCERPTS ARE REQUIRED
+#     Unlike RCP-071 (Quality Scorecard) which can
+#     work from metadata, this recipe requires content
+#     excerpts. If a user provides only URLs and
+#     titles, explain that this recipe needs actual
+#     page content to function. Suggest using RCP-071
+#     for metadata-based assessment instead.
+#
+# RULE 6: KNOWLEDGE CARDS EVOLVE
+#     Section Knowledge Cards are living documents.
+#     When new batches add pages to a previously
+#     analyzed section, update the Knowledge Card
+#     with new evidence. Mark updates clearly:
+#     "[Updated in Batch N]" so the user can track
+#     changes.
+#
+# RULE 7: SYNTHESIS GRAPH HONESTY
+#     The Synthesis Graph maps relationships between
+#     sections. Only map relationships supported by
+#     evidence from both sections. Do not infer
+#     relationships based on section names alone.
+#     "No clear relationship found" is a valid entry.
+#
+# RULE 8: ACTION PLAN IS A SUGGESTION FRAMEWORK
+#     The prioritized action plan represents the AI's
+#     recommended sequence based on evidence analysis.
+#     It is not a project plan — timelines are
+#     suggested frameworks, not commitments. The user
+#     must adapt timing to their team capacity,
+#     technical constraints, and business priorities.
+#
+# RULE 9: WAIT FOR USER BETWEEN MAJOR DELIVERABLES
+#     After each Evidence Ledger update, Knowledge
+#     Card, and Synthesis Graph update, STOP and wait
+#     for user confirmation. The user may provide
+#     corrections, additional context, or redirect
+#     focus.
+#
+# RULE 10: RISKS AND OPPORTUNITIES MUST BE DISTINCT
+#     Clearly separate risks (things that could harm
+#     the business if not addressed) from opportunities
+#     (things that could improve outcomes if acted on).
+#     Do not conflate them. Each must trace to a
+#     specific Evidence Ledger entry.
+#
+# RULE 11: NO "ENTERPRISE-LEVEL" CLAIMS
+#     Do not describe this audit as "enterprise-level"
+#     or "consultant-grade." It is a structured AI
+#     analysis of user-provided content — valuable
+#     as a starting point for strategic decisions,
+#     not a replacement for professional audits that
+#     include user testing, analytics data, and
+#     competitive research.
+#
+# RULE 12: SERIES CONTEXT AWARENESS
+#     This is the deepest recipe in the Website
+#     Analysis series. If the user has run RCP-068
+#     (Navigation Auditor) or RCP-071 (Quality
+#     Scorecard), ask for those results to inform
+#     this analysis. Navigation findings affect
+#     Synthesis Graph structure. Scorecard findings
+#     help prioritize which sections to deep-dive.
+#
+# ===========================================================
+
+
+WEBSITE_EVIDENCE_AUDITOR = Recipe(
+    recipe_id="RCP-000-000-072",
+    title="Website Evidence Auditor",
+    description=(
+        "Deep website content audit that traces every finding "
+        "to specific quoted excerpts from user-provided content. "
+        "Maintains an Evidence Ledger, builds Section Knowledge "
+        "Cards, maps cross-section relationships, and produces "
+        "a prioritized action plan. All claims are grounded in "
+        "content the user provides — the AI does not invent "
+        "evidence or access live sites."
+    ),
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-015-WEBSITE-ANALYSIS",
+    difficulty="advanced",
+    version="2.00a-R",
+    WPRM_FIELD_CRAFT_FLAVORS="CRAFT Cowork",
+
+    parameters={
+        "website_name": {
+            "type": "string",
+            "required": True,
+            "description": "Name of website to audit"
+        },
+        "business_model": {
+            "type": "string",
+            "required": True,
+            "description": "Revenue model and streams"
+        },
+        "market_position": {
+            "type": "string",
+            "required": True,
+            "description": "Market share and trajectory"
+        },
+        "user_segments": {
+            "type": "string",
+            "required": True,
+            "description": "Key audience segments"
+        },
+        "competitors": {
+            "type": "string",
+            "required": False,
+            "description": "Key competitors and strengths"
+        },
+        "page_packets": {
+            "type": "list",
+            "required": True,
+            "description": "Page data with content excerpts"
+        }
+    },
+
+    prompt_template=(
+        "# PHASE 1: STRATEGIC CONTEXT GATHERING\\n"
+        "Gather website_name, business_model, market_position,\\n"
+        "user_segments, competitors. Confirm methodology.\\n"
+        "Check for prior RCP-068/071 results.\\n"
+        "[WAIT for first batch]\\n\\n"
+        "# PHASE 2: BATCH INTAKE AND EVIDENCE EXTRACTION\\n"
+        "Validate content present. Extract evidence into\\n"
+        "numbered ledger entries (EL-NNN) with verbatim quotes\\n"
+        "(50 words max), claims, confidence ratings.\\n"
+        "[WAIT for user review]\\n\\n"
+        "# PHASE 3: SECTION KNOWLEDGE CARD\\n"
+        "Build per-section card: Purpose, Audience, Key Messages,\\n"
+        "Friction Points, Proof Assets, Unresolved Questions.\\n"
+        "All linked to evidence references.\\n"
+        "[WAIT for user review]\\n\\n"
+        "# PHASE 4: SYNTHESIS GRAPH UPDATE\\n"
+        "Map Alignments, Conflicts, Dependencies between sections.\\n"
+        "Evidence required from BOTH sections for each relationship.\\n"
+        "[WAIT for next batch or final]\\n\\n"
+        "# PHASE 5: RISKS AND OPPORTUNITIES\\n"
+        "Rank risks and opportunities separately by Impact x\\n"
+        "Evidence Strength. Each traced to ledger entries.\\n\\n"
+        "# PHASE 6: PRIORITIZED ACTION PLAN\\n"
+        "Three tiers: Quick Wins, Targeted Fixes, Strategic\\n"
+        "Initiatives. Every action references evidence.\\n\\n"
+        "# PHASE 7: EXECUTIVE SUMMARY AND PACKAGE\\n"
+        "Total evidence entries, high-confidence findings,\\n"
+        "top 3 strategic insights. Methodology note.\\n"
+    ),
+
+    outputs={
+        "EVIDENCE_LEDGER": "Append-only log with verbatim quotes and confidence ratings",
+        "KNOWLEDGE_CARDS": "Per-section structured profiles with evidence references",
+        "SYNTHESIS_GRAPH": "Evidence-based relationship map",
+        "RISKS_OPPORTUNITIES": "Ranked lists with evidence refs, separated by type",
+        "ACTION_PLAN": "Priority-sequenced framework with role placeholders"
+    },
+
+    integration_notes=(
+        "SERIES: Website Analysis (3 of 3)\\n"
+        "    1. RCP-068 Website Navigation Auditor (structural)\\n"
+        "    2. RCP-071 Website Quality Scorecard (scoring)\\n"
+        "    3. RCP-072 Website Evidence Auditor (this recipe)\\n\\n"
+        "RECOMMENDED WORKFLOW:\\n"
+        "    1. Run RCP-068 for structural navigation overview\\n"
+        "    2. Score sections with RCP-071 to identify weak areas\\n"
+        "    3. Deep-dive critical sections with RCP-072\\n"
+        "    4. Execute prioritized action plan\\n"
+    )
+)
+"""
+
+
+# ===========================================================
+# RECIPE FAQ
+# ===========================================================
+
+WPRM_FIELD_RECIPE_FAQ = """
+Q: Can I use this without providing actual page content?
+A: No. Content excerpts are required — this is the recipe's
+core design principle. Every finding must trace to a
+specific quoted excerpt from text you provide. If you only
+have URLs and page titles, use the Quality Scorecard
+(RCP-071) which can work from metadata.
+
+Q: How is this different from the Quality Scorecard (RCP-071)?
+A: The Quality Scorecard scores sections on a numeric scale
+to compare relative strengths and weaknesses — it tells you
+WHERE to focus. This recipe goes deep on WHY. It extracts
+specific evidence, builds knowledge profiles, maps cross-
+section relationships, and produces strategic recommendations
+grounded in quoted text. They work best in sequence.
+
+Q: What do the confidence ratings mean?
+A: High means the excerpt directly and unambiguously supports
+the claim. Medium means reasonable inference is required. Low
+means the evidence is tangential. These are the AI's assessment
+of evidence strength, not statistical intervals. Each rating
+includes an explanation of why that level was assigned.
+
+Q: What if I disagree with a finding or its confidence rating?
+A: Challenge it during the review pause. The Evidence Ledger
+is append-only, so the original entry stays but the AI will
+add a new entry noting your correction or additional context.
+Your corrections improve the quality of the final analysis.
+
+Q: Should I run the Navigation Auditor (RCP-068) or Quality Scorecard (RCP-071) first?
+A: Recommended but not required. The three recipes move from
+structural overview (068) to comparative scoring (071) to
+deep strategic analysis (072). Prior results help focus the
+deep-dive. This recipe works independently if needed.
+
+Q: What is the Evidence Ledger and why is it append-only?
+A: A numbered log linking every claim to a verbatim quote.
+Append-only because traceability requires an unmodified
+record. Contradictions get new entries rather than edits.
+Every finding in the final package references specific
+ledger entries by number.
+"""
+
+
+# ===========================================================
+# END ITEM 1
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION (Option-B Typed Envelope)
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "schema": "CRAFT_AI_TO_AI_COMMUNICATION",
+  "schema_version": "1.1",
+  "profile": "standalone-recipe",
+  "recipe_id": "RCP-000-000-072",
+  "title": "Website Evidence Auditor",
+  "version": "2.00a-R",
+  "status": "Phase 3 LOCKED",
+  "category": "CAT-000-STANDALONE",
+  "subcategory": "SUBCAT-015-WEBSITE-ANALYSIS",
+  "difficulty": "advanced",
+  "series": {
+    "name": "Website Analysis",
+    "position": "3 of 3",
+    "companions": ["RCP-068", "RCP-071"]
+  },
+  "family": {
+    "name": "Website Analysis",
+    "position": "3 of 3",
+    "type": "series"
+  },
+  "description": "Deep website content audit that traces every finding to specific quoted excerpts from user-provided content. Maintains an Evidence Ledger, builds Section Knowledge Cards, maps cross-section relationships, and produces a prioritized action plan. All claims are grounded — the AI does not invent evidence or access live sites.",
+  "parameters": [
+    {
+      "name": "website_name",
+      "type": "string",
+      "required": true,
+      "description": "Name of website to audit"
+    },
+    {
+      "name": "business_model",
+      "type": "string",
+      "required": true,
+      "description": "Revenue model and streams"
+    },
+    {
+      "name": "market_position",
+      "type": "string",
+      "required": true,
+      "description": "Market share and trajectory"
+    },
+    {
+      "name": "user_segments",
+      "type": "string",
+      "required": true,
+      "description": "Key audience segments"
+    },
+    {
+      "name": "competitors",
+      "type": "string",
+      "required": false,
+      "description": "Key competitors and strengths"
+    },
+    {
+      "name": "page_packets",
+      "type": "list",
+      "required": true,
+      "format": "url, title, section, content excerpts (up to 2000 words), notes",
+      "description": "Page data with content excerpts — content is required"
+    }
+  ],
+  "interactive_inputs": [
+    {
+      "name": "batch_content",
+      "type": "multi-turn",
+      "description": "User provides page packets with content excerpts in section-organized batches across multiple turns; AI extracts evidence, builds knowledge cards, and updates synthesis graph per batch"
+    }
+  ],
+  "behavioral_rules": [
+    "R1: Every claim requires traceable evidence — no findings without quoted excerpts",
+    "R2: Evidence Ledger is append-only — never modify or delete entries",
+    "R3: Confidence ratings are subjective (High/Medium/Low) with explicit methodology",
+    "R4: No invented evidence — quotes must be verbatim from user content",
+    "R5: Content excerpts are required — redirect to RCP-071 for metadata-only",
+    "R6: Knowledge Cards evolve across batches with update markers",
+    "R7: Synthesis Graph requires bilateral evidence — no inference from section names",
+    "R8: Action plan is a suggestion framework, not a project plan",
+    "R9: Wait for user between major deliverables — 5 WAIT gates",
+    "R10: Risks and opportunities must be distinct and separately ranked",
+    "R11: No enterprise-level or consultant-grade claims",
+    "R12: Series context awareness — leverage RCP-068/071 findings if available"
+  ],
+  "delivery_structure": {
+    "type": "interactive-multi-turn",
+    "phases": 7,
+    "wait_gates": 5,
+    "phase_list": [
+      "Phase 1: Strategic Context Gathering (WAIT)",
+      "Phase 2: Batch Intake and Evidence Extraction (WAIT)",
+      "Phase 3: Section Knowledge Card (WAIT)",
+      "Phase 4: Synthesis Graph Update (WAIT)",
+      "Phase 5: Risks and Opportunities",
+      "Phase 6: Prioritized Action Plan",
+      "Phase 7: Executive Summary and Package"
+    ],
+    "evidence_framework": {
+      "ledger_format": "EL-NNN sequential, never reset between batches",
+      "quote_limit": "50 words maximum per excerpt",
+      "confidence_levels": ["High (unambiguous)", "Medium (requires inference)", "Low (tangential)"],
+      "no_evidence_handling": "Mark as NO EVIDENCE AVAILABLE with explanation of what content would be needed"
+    }
+  },
+  "outputs": [
+    "EVIDENCE_LEDGER: Append-only log with verbatim quotes and confidence ratings",
+    "KNOWLEDGE_CARDS: Per-section structured profiles with evidence references",
+    "SYNTHESIS_GRAPH: Evidence-based cross-section relationship map",
+    "RISKS_OPPORTUNITIES: Separately ranked lists with evidence refs",
+    "ACTION_PLAN: Three-tier priority framework (Quick Wins, Targeted Fixes, Strategic Initiatives)"
+  ],
+  "relationships": {
+    "series_companions": [
+      {
+        "recipe_id": "RCP-000-000-068",
+        "title": "Website Navigation Auditor",
+        "relationship": "series-precursor",
+        "note": "Structural navigation audit — navigation findings affect Synthesis Graph structure"
+      },
+      {
+        "recipe_id": "RCP-000-000-071",
+        "title": "Website Quality Scorecard",
+        "relationship": "series-precursor",
+        "note": "Comparative scoring — scorecard results help prioritize which sections to deep-dive"
+      }
+    ]
+  },
+  "ai_guidance": {
+    "evidence_calibration": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "high_confidence",
+          "description": "The excerpt directly and unambiguously supports the claim. No inference required. Example: Content says '30-day money-back guarantee' — High confidence that trust signals include a guarantee."
+        },
+        {
+          "key": "medium_confidence",
+          "description": "The excerpt supports the claim but requires reasonable inference. Example: Content discusses advanced features without naming the audience — Medium confidence about intended audience based on feature complexity."
+        },
+        {
+          "key": "low_confidence",
+          "description": "The excerpt is tangentially related and significant inference is required. Example: A blog post topic suggests market positioning — Low confidence about competitive strategy."
+        },
+        {
+          "key": "no_evidence",
+          "description": "If a finding seems likely but no excerpt supports it, mark NO EVIDENCE AVAILABLE with what content would be needed. More valuable than unsupported speculation."
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "evidence_drift",
+          "description": "Starting with strict evidence tracing then gradually making unsupported claims as the audit progresses. Maintain the same rigor in Batch 5 as in Batch 1."
+        },
+        {
+          "key": "knowledge_card_bloat",
+          "description": "Cards should capture essential insights, not exhaustive inventories. If a card exceeds ~200 words, it needs editing."
+        },
+        {
+          "key": "synthesis_over_mapping",
+          "description": "Not every section pair needs a relationship. A graph with 5 well-evidenced connections provides more insight than one with 20."
+        },
+        {
+          "key": "generic_action_items",
+          "description": "'Review and update content' is not an action item. 'Rewrite the Features page H1 to address IT directors' primary concern about implementation timeline (Ref: EL-015)' is an action item."
+        },
+        {
+          "key": "forgetting_earlier_evidence",
+          "description": "As batches accumulate, actively reference earlier Evidence Ledger entries when relevant to new sections. The cumulative nature of the ledger is a key feature."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-072-001",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field ABSENT from WPRM metadata — 11th consecutive encounter, 8th surface form (4th ABSENT). Auto-applied per REC-19 standing authority.",
+      "source": "REC-19 auto-apply, pipeline run 46"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

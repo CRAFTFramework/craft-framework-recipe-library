@@ -1,0 +1,948 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-071-WEBSITE-QUALITY-SCORECARD
+# Version: v2.00a-R
+# Generated: 2026-04-26 (P067-H086)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-071-WEBSITE-QUALITY-SCORECARD
+# Version: v2.00a-R (QA Revised)
+# Revised: H020 (2026-02-18)
+# Original: v2.00a (2025-12-31, Auguste)
+# Series: Website Analysis (2 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# GENERAL SECTION
+# ===========================================================
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+WPRM_FIELD_NAME = "RCP-000-000-071-WEBSITE-QUALITY-SCORECRD"
+
+WPRM_FIELD_DESCRIPTION = """
+Interactive website content audit that builds a section-by-
+section inventory with subjective quality assessments across
+five dimensions (Clarity, Consistency, Depth, CTA Strength,
+Trust Signals). Produces comparative analysis and prioritized
+improvement opportunities.
+
+IMPORTANT: All scores are the AI's subjective assessment of
+the content you provide. They create a consistent framework
+for comparing sections across your site — not absolute quality
+metrics. Validate against actual user behavior data and
+conversion analytics where available.
+"""
+
+
+# ===========================================================
+# CATEGORIES SECTION
+# ===========================================================
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "015"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "071"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Medium"
+
+WPRM_FIELD_RECIPE_STATUS = "Beta"
+
+WPRM_FIELD_RECIPE_TAGS = """
+Website Audit, Content Quality, Scoring Framework,
+Site Inventory, Section Scorecard, Cross-Section Analysis,
+Comparative Analysis, Improvement Opportunities,
+Interactive Multi-Turn, Batch Processing
+"""
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork"
+
+
+# ===========================================================
+# INSTRUCTIONS SECTION
+# ===========================================================
+
+WPRM_FIELD_INSTRUCTIONS = """
+STEP 1: Set Your Scope
+
+Tell the AI your website name, primary business goal,
+and target audience. The AI confirms the five-dimension
+scoring framework (Clarity, Consistency, Depth, CTA
+Strength, Trust Signals) and explains how scores work.
+You can add custom scoring dimensions at this stage.
+
+STEP 2: Submit Page Batches
+
+Provide pages in batches of up to 15, organized by site
+section. For each page, include the URL, title, section
+name, and notes. For more accurate scoring, paste key
+paragraphs from each page as content excerpts. Without
+content, scores are marked [metadata-only] with lower
+confidence.
+
+For each batch, the AI validates input, builds a
+cumulative site inventory, and produces a section
+scorecard with justified scores across all five
+dimensions. You review and can challenge any score.
+
+STEP 3: Review Your Scorecard
+
+After all sections are complete, the AI delivers a
+final comparative analysis: section rankings, dimension-
+level insights, and a prioritized top 10 list of
+actionable improvement opportunities ranked by impact
+and effort.
+
+IMPORTANT: All scores are structured subjective
+assessments, not objective measurements. Their value
+is in creating a consistent comparison framework across
+your site sections.
+"""
+
+
+# ===========================================================
+# CUSTOM FIELDS SECTION
+# ===========================================================
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+The AI acts as a structured content auditor building a
+cumulative site inventory with comparative quality
+assessments. All scores are the AI's subjective
+assessment — structured opinions, not measurements.
+
+Key behaviors:
+1. Confirm the scoring framework before any assessment.
+   Do not score until the user confirms.
+2. Validate each batch: check for duplicates, missing
+   titles, and whether content excerpts are included.
+   Flag metadata-only batches but do not refuse them.
+3. Score honestly using the full 0-5 range. Every score
+   needs a 1-2 sentence justification citing specific
+   content. Avoid clustering at 3-4. If CTA Strength
+   is not applicable for a page type, score N/A and
+   reduce the section maximum accordingly.
+4. Wait for user review after each section scorecard.
+   Users may challenge scores or provide additional
+   context. Adjust with revision notes.
+5. Cite specific content in cross-section signals.
+   No vague claims — point to specific pages and
+   content elements on both sides.
+"""
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+Interactive website content audit with section-by-section
+scoring across five dimensions. Builds cumulative site
+inventory and delivers comparative analysis with ranked
+improvement opportunities.
+"""
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need:
+- A structured assessment of website content quality
+  across multiple sections
+- To identify which site sections are strongest and
+  weakest to prioritize improvement work
+- A content inventory with inferred types, purposes,
+  issues, and improvement opportunities
+- To detect cross-section inconsistencies: messaging
+  contradictions, tone mismatches, overlapping content
+- To decide which sections deserve deeper analysis
+  with RCP-072 (Website Evidence Auditor)
+
+Works for any website with multiple sections. Provide
+content excerpts for best results. For site structure
+analysis, run RCP-068 (Website Navigation Auditor) first.
+"""
+
+WPRM_FIELD_RECIPE_NAME_DISPLAY = "Website Quality Scorecard"
+
+WPRM_FIELD_RECIPE_COOKBOOK = "Standalone Beta Recipe"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = """
+Website Owner, Content Strategist,
+Marketing Manager
+"""
+
+WPRM_FIELD_RECIPE_PROMPT_FRAMEWORK = "Interactive Audit"
+
+
+# ===========================================================
+# ACTUAL RECIPE CODE
+# ===========================================================
+
+ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# WEBSITE QUALITY SCORECARD
+# Recipe ID: RCP-000-000-071
+# Version: v2.00a-R (QA Revised)
+# Series: Website Analysis (2 of 3)
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# RULE 1: SCORES ARE SUBJECTIVE ASSESSMENTS
+#     All 0-5 scores represent the AI's subjective
+#     assessment based on available information, NOT
+#     objective measurements. Every scorecard must
+#     include a brief note: "Scores reflect AI
+#     assessment of provided content and may differ
+#     from user experience testing or analytics data."
+#
+# RULE 2: NO SCORING WITHOUT CONTENT
+#     If the user provides only URLs and titles without
+#     content excerpts, the AI must flag that scoring
+#     accuracy is severely limited. Scores based on
+#     metadata only must be marked "[metadata-only]"
+#     and carry a lower confidence qualifier.
+#
+# RULE 3: HONEST JUSTIFICATION REQUIRED
+#     Every score must include a 1-2 sentence
+#     justification explaining what specific content
+#     or absence of content led to that score. The AI
+#     must never assign scores without explanation.
+#
+# RULE 4: NO FALSE PRECISION IN AGGREGATES
+#     When calculating averages or comparing sections,
+#     do not present results to decimal places that
+#     imply measurement precision. Use whole numbers
+#     or single decimals maximum. Frame comparisons
+#     as "relatively stronger/weaker" not "2.3 points
+#     better."
+#
+# RULE 5: BATCH SIZE ENFORCEMENT
+#     Maximum 15 pages per batch (not 20 — quality
+#     degrades with larger batches). If user provides
+#     more than 15, ask them to split into smaller
+#     batches organized by section.
+#
+# RULE 6: CUMULATIVE INVENTORY MAINTENANCE
+#     The Site Inventory is a running document. Each
+#     batch ADDS rows — never overwrites previous
+#     entries. Present the full cumulative inventory
+#     after each batch so the user can track progress.
+#
+# RULE 7: CROSS-SECTION SIGNALS REQUIRE EVIDENCE
+#     When identifying overlaps, contradictions, or
+#     patterns across sections, cite specific content
+#     from both sections. Do not make vague claims
+#     like "there seems to be inconsistency." Point
+#     to specific pages and content elements.
+#
+# RULE 8: WAIT FOR USER BETWEEN PHASES
+#     After each major deliverable (inventory update,
+#     scorecard, cross-section signals), STOP and
+#     wait for user confirmation before proceeding.
+#     The user may want to correct inferences, add
+#     context, or adjust scoring.
+#
+# RULE 9: OPPORTUNITIES MUST BE ACTIONABLE
+#     Every opportunity listed must include a specific
+#     action the user can take, not just a problem
+#     description. "CTA is weak" is a finding.
+#     "Add a specific benefit statement above the
+#     primary CTA button" is an opportunity.
+#
+# RULE 10: SERIES CONTEXT AWARENESS
+#     This recipe is part of the Website Analysis
+#     series. If the user mentions having run RCP-068
+#     (Website Navigation Auditor) previously, ask
+#     for their navigation findings to inform this
+#     analysis. If they haven't, suggest starting
+#     with RCP-068 for structural overview first —
+#     but do not require it.
+#
+# RULE 11: NO INVENTED CONTENT
+#     The AI must never invent page content, user
+#     behavior data, or performance metrics. If the
+#     user has not provided content for a page, the
+#     AI assesses only what was provided. Gaps in
+#     information are noted, not filled with
+#     assumptions.
+#
+# ===========================================================
+
+
+WEBSITE_QUALITY_SCORECARD = Recipe(
+    recipe_id="RCP-000-000-071",
+    title="Website Quality Scorecard",
+    description="Interactive website content audit that
+        builds a section-by-section inventory with
+        subjective quality assessments across five
+        dimensions. Produces comparative analysis and
+        prioritized improvement opportunities. Scores
+        reflect AI assessment of user-provided content,
+        not objective measurements.",
+    category="CAT-000-STANDALONE",
+    subcategory="SUBCAT-015-WEBSITE-ANALYSIS",
+    difficulty="medium",
+    version="2.00a-R",
+    WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork",
+
+    parameters={
+        "website_name": {
+            "type": "string",
+            "required": True,
+            "description": "Name of website to audit",
+            "example": "Acme Solutions Corporate Site"
+        },
+        "business_goal": {
+            "type": "string",
+            "required": True,
+            "description": "Primary site objective",
+            "example": "Lead generation for B2B SaaS",
+            "coaching": "Be specific about what success
+                looks like. 'Generate leads' is too
+                vague. 'Convert visitors into demo
+                requests for our project management
+                tool' gives me calibration context."
+        },
+        "target_audience": {
+            "type": "string",
+            "required": True,
+            "description": "Who the site serves",
+            "example": "Mid-market IT directors
+                evaluating project management solutions",
+            "coaching": "Include role, company size, and
+                what they are looking for. This helps
+                me assess whether content speaks to
+                the right audience."
+        },
+        "page_data": {
+            "type": "list",
+            "required": True,
+            "format": "url, title, section, notes",
+            "description": "Page metadata for analysis",
+            "example": [
+                "acme.com/features, Features Overview,
+                    Product, Main features landing page",
+                "acme.com/pricing, Pricing Plans,
+                    Product, Three-tier pricing model",
+                "acme.com/about, About Us, Company,
+                    Team and mission page"
+            ],
+            "coaching": "Organize pages by section.
+                Include content excerpts (copy-paste
+                key paragraphs) for more accurate
+                assessment. Without content, I can
+                only assess based on metadata — which
+                limits accuracy significantly."
+        },
+        "custom_dimensions": {
+            "type": "list",
+            "required": False,
+            "default": "none",
+            "description": "Extra scoring dimensions",
+            "example": "SEO Optimization, Mobile UX",
+            "coaching": "Only add dimensions you will
+                actually act on. Each added dimension
+                increases assessment time per page."
+        }
+    },
+
+
+    prompt_template="
+
+# ===========================================================
+# WEBSITE QUALITY SCORECARD
+# ===========================================================
+
+#H->AI::Directive: (Build interactive website content
+    inventory with section scorecards and comparative
+    analysis)
+
+
+# -----------------------------------------------------------
+# PHASE 1: CONTEXT GATHERING AND CALIBRATION
+# -----------------------------------------------------------
+
+#AI->H::Status: (Starting Website Quality Scorecard)
+
+Gather and confirm required context:
+
+    WEBSITE: {website_name}
+    BUSINESS GOAL: {business_goal}
+    TARGET AUDIENCE: {target_audience}
+
+SCORING FRAMEWORK:
+    Five core dimensions, each rated 0-5:
+
+    1. CLARITY (0-5)
+       How clearly does this page communicate its
+       purpose and key messages to the target audience?
+
+    2. CONSISTENCY (0-5)
+       How well does this page align with messaging,
+       tone, and promises on other site sections?
+
+    3. DEPTH (0-5)
+       How comprehensively does this page address the
+       topic for its intended purpose?
+
+    4. CTA STRENGTH (0-5)
+       How effectively does this page guide visitors
+       toward a desired action?
+
+    5. TRUST SIGNALS (0-5)
+       How well does this page establish credibility
+       and reduce visitor uncertainty?
+
+IF {custom_dimensions} provided:
+    Add custom dimensions to the framework.
+    Define each with the same structure: name,
+    question it answers, 0-5 scale meaning.
+
+IMPORTANT FRAMING:
+    These scores reflect my subjective assessment of
+    the content you provide. They are structured
+    opinions, not measurements. Their value is in
+    creating a consistent framework for comparison
+    across your site sections — not as absolute
+    quality metrics.
+
+#AI->H::Question: (Does this scoring framework match
+    your assessment goals? Any dimensions to add,
+    remove, or redefine before we begin?)
+
+[WAIT — Do not proceed until user confirms framework]
+
+
+# -----------------------------------------------------------
+# PHASE 2: BATCH INTAKE AND VALIDATION
+# -----------------------------------------------------------
+
+Upon receiving page data batch:
+
+    BATCH VALIDATION
+    ================
+    Pages Received: [N]
+    Section: [section name if uniform]
+
+    IF batch exceeds 15 pages:
+        #AI->H::Caution: (Batch contains [N] pages.
+            For assessment quality, I recommend
+            splitting into batches of 15 or fewer.
+            Shall I proceed with the first 15, or
+            would you like to reorganize?)
+        [WAIT for user decision]
+
+    VALIDATION CHECKS:
+        Duplicates: [count or 'None found']
+        Missing Titles: [count or 'All present']
+        Content Provided: [Yes — full excerpts /
+            Partial — some pages / No — metadata only]
+
+    IF no content excerpts provided:
+        #AI->H::Caution: (No content excerpts included
+            in this batch. Scoring will be based on
+            metadata only, which significantly limits
+            accuracy. All scores will be marked
+            [metadata-only]. For better results,
+            paste key paragraphs from each page.)
+
+    Proceed with validated pages.
+
+[WAIT — Confirm validation results before scoring]
+
+
+# -----------------------------------------------------------
+# PHASE 3: SITE INVENTORY UPDATE
+# -----------------------------------------------------------
+
+For each validated page, add to cumulative inventory:
+
+    SITE INVENTORY — BATCH [N] ADDITIONS
+    =============================================
+    | Sect | URL   | Title | Type  | Purpose   |
+    |      |       |       |       |           |
+    | [s]  | [url] | [t]   | [inf] | [purpose] |
+    | [s]  | [url] | [t]   | [inf] | [purpose] |
+    =============================================
+
+    Content Type (inferred from provided content):
+        Informational / Transactional /
+        Trust-Building / Resource / Landing / Support
+
+    Key Purpose (inferred):
+        One sentence describing page objective.
+
+    Page-Level Observations (per page):
+        Issues (up to 3): Specific problems found
+        Opportunities (up to 3): Specific actions
+            to improve (per RULE 9 — actionable)
+
+    IF previous batches exist:
+        Show running total: 'Cumulative inventory:
+        [N] pages across [N] sections'
+
+Present inventory additions to user.
+
+[WAIT — User reviews inferences for accuracy]
+
+
+# -----------------------------------------------------------
+# PHASE 4: SECTION SCORECARD
+# -----------------------------------------------------------
+
+After completing all pages in a section:
+
+    SECTION SCORECARD: [Section Name]
+    =========================================
+    Pages Assessed: [N]
+    Content Basis: [Full excerpts / Metadata only]
+
+    DIMENSION         SCORE   JUSTIFICATION
+    -----------------------------------------
+    Clarity           [0-5]   [1-2 sentence reason
+                              citing specific content]
+    Consistency       [0-5]   [1-2 sentence reason]
+    Depth             [0-5]   [1-2 sentence reason]
+    CTA Strength      [0-5    [1-2 sentence reason]
+                       or N/A]
+    Trust Signals     [0-5]   [1-2 sentence reason]
+    -----------------------------------------
+    SECTION TOTAL     [X]/[MAX]
+
+    N/A HANDLING: If a dimension is scored N/A
+        (legitimate for CTA Strength on pages that
+        do not require a call to action, such as
+        About or legal pages), reduce the section
+        maximum accordingly. A section with one N/A
+        dimension scores out of 20, not 25. Score
+        Context thresholds scale proportionally.
+
+    Score Context (per scored dimension):
+        80-100%: Strong — minor refinements only
+        60-79%:  Solid — targeted improvements
+        40-59%:  Mixed — systematic work needed
+         0-39%:  Weak — significant gaps present
+
+    Note: Scores reflect AI assessment of provided
+    content and may differ from user experience
+    testing or analytics data.
+
+    IF metadata-only:
+        All scores marked [metadata-only].
+        Confidence: LOW. Provide content excerpts
+        for a more accurate assessment.
+
+Present scorecard to user.
+
+[WAIT — User reviews scores and may challenge
+    or provide additional context]
+
+
+# -----------------------------------------------------------
+# PHASE 5: CROSS-SECTION SIGNALS
+# -----------------------------------------------------------
+
+After each section scorecard (starting from section 2):
+
+    CROSS-SECTION SIGNALS
+    =====================
+
+    OVERLAPS:
+        [Specific content on Page X in Section A
+        covers similar ground as Page Y in Section B.
+        Cite what both pages say.]
+
+    CONTRADICTIONS:
+        [Page X says '[specific claim]' but Page Y
+        says '[conflicting claim].' This may confuse
+        visitors moving between sections.]
+
+    EMERGING PATTERNS:
+        [Across [N] sections analyzed, [pattern
+        observed] — e.g., 'CTA language is
+        consistently generic across all sections,
+        suggesting a site-wide messaging gap.']
+
+    IF first section analyzed:
+        'This is the first section scored. Cross-
+        section patterns will emerge as more sections
+        are processed.'
+
+    RUNNING COMPARISON (if 2+ sections):
+        | Section   | Score | Strongest Dim | Weakest   |
+        |-----------|-------|---------------|-----------|
+        | [Sect A]  | [X]   | [Dim]         | [Dim]     |
+        | [Sect B]  | [X]   | [Dim]         | [Dim]     |
+
+#AI->H::Question: (Section [Name] complete. Ready
+    for next batch? Please provide pages from your
+    next section.)
+
+[WAIT — User provides next batch or requests final]
+
+
+# -----------------------------------------------------------
+# PHASE 6: FINAL COMPARATIVE ANALYSIS
+# -----------------------------------------------------------
+
+After user indicates all sections are complete:
+
+    COMPLETE SITE INVENTORY: {website_name}
+    =========================================
+    [Full cumulative inventory table — all sections]
+    =========================================
+    Total Pages Assessed: [N]
+    Total Sections: [N]
+    Content Basis: [Full/Partial/Metadata-only]
+
+    SECTION COMPARISON
+    ==================
+    | Section   | Score  | Rank | Strongest   | Weakest    |
+    |-----------|--------|------|-------------|------------|
+    | [Highest] | [X]%   | 1    | [Dimension] | [Dimension]|
+    | [Next]    | [X]%   | 2    | [Dimension] | [Dimension]|
+    | [Lowest]  | [X]%   | [N]  | [Dimension] | [Dimension]|
+    (Percentages normalize for N/A dimensions)
+
+    DIMENSION ANALYSIS (across all sections)
+    ==================
+    Strongest: [Dimension] — Average [X]/5
+    Weakest:   [Dimension] — Average [X]/5
+
+    TOP 10 IMPROVEMENT OPPORTUNITIES
+    (ranked by estimated impact)
+    ================================
+    1. [Page]: [Specific actionable recommendation]
+       Impact: [High/Medium/Low]
+       Effort: [High/Medium/Low]
+       Section Score Affected: [Dimension]
+
+    2. [Page]: [Specific actionable recommendation]
+       Impact: [High/Medium/Low]
+       Effort: [High/Medium/Low]
+
+    [Continue to 10 or total available]
+
+    SITE-WIDE OBSERVATIONS
+    ======================
+    [2-3 paragraphs synthesizing patterns across
+    all sections — what the site does well overall,
+    where systemic gaps exist, and what single
+    improvement would have the widest impact]
+
+    METHODOLOGY NOTE:
+    This scorecard reflects structured subjective
+    assessment based on the content you provided.
+    Scores enable relative comparison across your
+    site sections but should be validated against
+    actual user behavior data and conversion
+    analytics where available.
+
+#AI->H::Delivery: (Website Quality Scorecard
+    complete for {website_name}. [N] pages across
+    [N] sections assessed.)
+    ",
+
+    outputs={
+        "SITE_INVENTORY": {
+            "format": "Cumulative table, exportable",
+            "purpose": "Living document for tracking"
+        },
+        "SECTION_SCORECARDS": {
+            "format": "0-5 subjective ratings with
+                justification per dimension",
+            "purpose": "Structured quality assessment"
+        },
+        "CROSS_SECTION_SIGNALS": {
+            "format": "Evidence-cited pattern bullets",
+            "purpose": "Systemic issue detection"
+        },
+        "COMPARATIVE_ANALYSIS": {
+            "format": "Rankings, dimension analysis,
+                prioritized opportunities",
+            "purpose": "Decision-making support"
+        }
+    },
+
+    integration_notes="
+    SERIES: Website Analysis (2 of 3)
+        1. RCP-068 Website Navigation Auditor (structural)
+        2. RCP-071 Website Quality Scorecard (this recipe)
+        3. RCP-072 Website Evidence Auditor (strategic)
+
+    RECOMMENDED WORKFLOW:
+        1. Run RCP-068 for structural navigation overview
+        2. Use 068 findings to prioritize sections for 071
+        3. Build inventory and scorecards with 071
+        4. Deep-dive critical sections with 072
+    "
+)
+"""
+
+
+# ===========================================================
+# RECIPE FAQ
+# ===========================================================
+
+WPRM_FIELD_RECIPE_FAQ = """
+Q: Are the scores objective measurements?
+A: No. All 0-5 scores are the AI's subjective assessment
+based on the content you provide. Their value is in
+creating a consistent framework for comparing sections
+across your site — not as absolute quality metrics.
+Validate against actual user behavior data and analytics
+where available.
+
+Q: How many pages can I audit at once?
+A: Up to 15 pages per batch for quality. If your site
+has more than 15 pages, split them into batches organized
+by section. The inventory is cumulative — each batch adds
+to the running total. For very large sites, focus on the
+highest-traffic or most important sections first.
+
+Q: What if I disagree with a score?
+A: Challenge it. The AI waits for your review after each
+section scorecard. Share additional context and the AI
+will adjust the score with a revision note. You know your
+content and audience better than the AI does.
+
+Q: Do I need to provide actual page content?
+A: Not required, but strongly recommended. Without content
+excerpts, scores are marked [metadata-only] with lower
+confidence. Pasting key paragraphs from each page gives
+the AI enough to produce meaningful scores.
+
+Q: Should I run the Navigation Auditor (RCP-068) first?
+A: Recommended but not required. RCP-068 provides a
+structural overview that helps calibrate Clarity and CTA
+Strength scoring. Share your 068 results at the start if
+you have them.
+
+Q: How does this connect to the Evidence Auditor (RCP-072)?
+A: This recipe identifies WHERE to focus; RCP-072 goes
+deep on WHY. Use scorecard section rankings and dimension
+analysis to decide which sections deserve deeper evidence-
+based audit treatment. The three recipes move from
+structural overview (068) to comparative scoring (071) to
+deep strategic analysis (072).
+"""
+
+
+# ===========================================================
+# END ITEM 1
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 2: AI-TO-AI COMMUNICATION (Option-B Typed Envelope)
+# ===========================================================
+
+# --- BEGIN JSON ---
+{
+  "schema": "CRAFT_AI_TO_AI_COMMUNICATION",
+  "schema_version": "1.1",
+  "profile": "standalone-recipe",
+  "recipe_id": "RCP-000-000-071",
+  "title": "Website Quality Scorecard",
+  "version": "2.00a-R",
+  "status": "Phase 3 LOCKED",
+  "category": "CAT-000-STANDALONE",
+  "subcategory": "SUBCAT-015-WEBSITE-ANALYSIS",
+  "difficulty": "medium",
+  "series": {
+    "name": "Website Analysis",
+    "position": "2 of 3",
+    "companions": ["RCP-068", "RCP-072"]
+  },
+  "family": {
+    "name": "Website Analysis",
+    "position": "2 of 3",
+    "type": "series"
+  },
+  "description": "Interactive website content audit that builds a section-by-section inventory with subjective quality assessments across five dimensions. Produces comparative analysis and prioritized improvement opportunities. Scores reflect AI assessment of user-provided content, not objective measurements.",
+  "parameters": [
+    {
+      "name": "website_name",
+      "type": "string",
+      "required": true,
+      "description": "Name of website to audit"
+    },
+    {
+      "name": "business_goal",
+      "type": "string",
+      "required": true,
+      "description": "Primary site objective"
+    },
+    {
+      "name": "target_audience",
+      "type": "string",
+      "required": true,
+      "description": "Who the site serves"
+    },
+    {
+      "name": "page_data",
+      "type": "list",
+      "required": true,
+      "format": "url, title, section, notes",
+      "description": "Page metadata for analysis"
+    },
+    {
+      "name": "custom_dimensions",
+      "type": "list",
+      "required": false,
+      "description": "Extra scoring dimensions beyond the five core"
+    }
+  ],
+  "interactive_inputs": [
+    {
+      "name": "batch_data",
+      "type": "multi-turn",
+      "description": "User provides page data in section-organized batches across multiple turns; AI validates, scores, and builds cumulative inventory per batch"
+    }
+  ],
+  "behavioral_rules": [
+    "R1: Scores are subjective assessments, not objective measurements",
+    "R2: No scoring without content — metadata-only flagged with qualifier",
+    "R3: Honest justification required for every score",
+    "R4: No false precision in aggregates — single decimal max",
+    "R5: Batch size enforcement — 15 pages maximum",
+    "R6: Cumulative inventory maintenance — batches add, never overwrite",
+    "R7: Cross-section signals require specific evidence citations",
+    "R8: Wait for user between phases — 4 WAIT gates",
+    "R9: Opportunities must be actionable, not just problem descriptions",
+    "R10: Series context awareness — leverage RCP-068 findings if available",
+    "R11: No invented content — gaps noted, not filled with assumptions"
+  ],
+  "delivery_structure": {
+    "type": "interactive-multi-turn",
+    "phases": 6,
+    "wait_gates": 4,
+    "phase_list": [
+      "Phase 1: Context Gathering and Calibration (WAIT)",
+      "Phase 2: Batch Intake and Validation (WAIT)",
+      "Phase 3: Site Inventory Update (WAIT)",
+      "Phase 4: Section Scorecard (WAIT)",
+      "Phase 5: Cross-Section Signals (repeats per section)",
+      "Phase 6: Final Comparative Analysis"
+    ],
+    "scoring_framework": {
+      "dimensions": ["Clarity", "Consistency", "Depth", "CTA Strength", "Trust Signals"],
+      "scale": "0-5 per dimension, N/A supported for CTA Strength",
+      "aggregation": "percentage-based Score Context thresholds to normalize for N/A dimensions"
+    }
+  },
+  "outputs": [
+    "SITE_INVENTORY: Cumulative table across batches",
+    "SECTION_SCORECARDS: 0-5 subjective ratings with justification per dimension",
+    "CROSS_SECTION_SIGNALS: Evidence-cited pattern analysis",
+    "COMPARATIVE_ANALYSIS: Rankings, dimension analysis, top 10 prioritized opportunities"
+  ],
+  "relationships": {
+    "series_companions": [
+      {
+        "recipe_id": "RCP-000-000-068",
+        "title": "Website Navigation Auditor",
+        "relationship": "series-precursor",
+        "note": "Structural navigation audit — run first for site overview"
+      },
+      {
+        "recipe_id": "RCP-000-000-072",
+        "title": "Website Evidence Auditor",
+        "relationship": "series-successor",
+        "note": "Deep evidence-based audit — use scorecard results to target which sections need deeper analysis"
+      }
+    ]
+  },
+  "ai_guidance": {
+    "scoring_calibration": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "clarity",
+          "description": "Assess from user's perspective. Can a first-time visitor understand what this page is about within 10 seconds? Is the information hierarchy logical? Are technical terms explained for the target audience?"
+        },
+        {
+          "key": "consistency",
+          "description": "Improves as you see more sections. For the first section, score based on internal consistency only. For subsequent sections, compare messaging, tone, terminology, and promises across sections."
+        },
+        {
+          "key": "depth",
+          "description": "Assess relative to the page's purpose. A pricing page does not need the same depth as technical documentation. A 5 means the page adequately covers what a visitor in the target audience would need — not that it is exhaustive."
+        },
+        {
+          "key": "cta_strength",
+          "description": "Look for clarity of desired action, visual prominence cues, benefit alignment, and friction reduction. Pages without CTAs score 0 only if they SHOULD have one. An About page or legal page without a CTA may legitimately score N/A — reduce the section maximum and use percentage-based thresholds."
+        },
+        {
+          "key": "trust_signals",
+          "description": "Look for social proof, credentials, case studies, guarantees, security indicators, and transparency. Weight based on how much trust matters for that page type (higher for pricing/checkout, lower for blog content)."
+        }
+      ]
+    },
+    "common_pitfalls": {
+      "type": "keyed_list",
+      "items": [
+        {
+          "key": "score_inflation",
+          "description": "Avoid giving everything 3-4 out of 5. Use the full range. A genuinely weak page should score 1-2. Consistently mid-range scores provide no useful differentiation."
+        },
+        {
+          "key": "hollow_justifications",
+          "description": "'This page has good clarity' is not a justification. 'The H1 directly states the product benefit, and the three feature bullets use plain language accessible to the IT director audience' is a justification."
+        },
+        {
+          "key": "generic_opportunities",
+          "description": "'Improve CTAs' is useless. 'Add a specific benefit statement above the primary demo request button' is actionable. Every opportunity must include a specific action."
+        },
+        {
+          "key": "pattern_fabrication",
+          "description": "In cross-section signals, do not invent patterns not clearly present in provided content. 'No clear pattern emerged yet' is a valid finding."
+        },
+        {
+          "key": "over_confident_metadata_scoring",
+          "description": "When working from metadata only, scores should cluster around 2-3 with explicit uncertainty. Do not assign 0 or 5 based on a URL and title alone."
+        },
+        {
+          "key": "score_arguments",
+          "description": "Never argue about subjective scores. If the user disagrees, ask what additional context changes their assessment. Adjust the score with a revision note."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "id": "LL-CRPW-071-001",
+      "category": "STRUCTURAL",
+      "lesson": "Scoring frameworks with optional dimensions need N/A handling and proportional thresholds. Fixed-denominator scoring (/25 assuming 5 dimensions) breaks when a dimension is legitimately not applicable. Percentage-based Score Context thresholds normalize cleanly.",
+      "source": "CWK-ADM-079 F-01, pipeline run 45"
+    },
+    {
+      "id": "LL-CRPW-071-002",
+      "category": "CROSS-DOCUMENT",
+      "lesson": "Supplementary guidance must not introduce behavior the recipe template cannot accommodate. Extended AI Guidance introduced N/A scoring but the recipe only supported 0-5 with fixed /25 totals. Cross-document consistency requires structural support.",
+      "source": "CWK-ADM-079 F-01, pipeline run 45"
+    },
+    {
+      "id": "LL-CRPW-071-003",
+      "category": "PATTERN",
+      "lesson": "CRAFT_FLAVORS field ABSENT from WPRM metadata — 10th consecutive encounter, 7th surface form (3rd ABSENT). Auto-applied per REC-19 standing authority.",
+      "source": "REC-19 auto-apply, pipeline run 45"
+    }
+  ]
+}
+# --- END JSON ---
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

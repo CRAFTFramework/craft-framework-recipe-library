@@ -1,0 +1,989 @@
+# ===========================================================
+# CRAFT FRAMEWORK — RECIPE PERMALINK FILE
+# ===========================================================
+# Recipe: RCP-000-000-080-STAKEHOLDER-DISCOVERY-ENGINE
+# Version: v3.00a-R
+# Generated: 2026-04-27 (P067-H091)
+# Generator: CWK-ADM-085 PERMALINK PUBLISH
+# Schema: Canonical 2-ITEM layout (per H039-006 ruling)
+# ===========================================================
+
+
+# ===========================================================
+# ITEM 1: RECIPE SOURCE
+# ===========================================================
+
+# ===========================================================
+# WPRM RECIPE FILE
+# Recipe: RCP-000-000-080-STAKEHOLDER-DISCOVERY-ENGINE
+# Version: v3.00a-R (Phase 3 Revised)
+# Revised: H091 (2026-04-27)
+# Original: v3.00a (2026-02-17, Cat (B), P051f H017)
+# Series: Stakeholder Analysis Workflow (1 of 4)
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "Interactive Discovery Workflow"
+
+WPRM_FIELD_NAME = "RCP-000-000-080-STAKEHOLDER-DISCOVERY-ENGINE"
+
+WPRM_FIELD_DESCRIPTION = """The Stakeholder Discovery Engine is the first recipe in the 4-recipe Stakeholder Analysis Workflow. It guides you through identifying WHO matters for your decision, initiative, or topic — and WHAT you need to learn about them before engaging.
+
+This recipe helps you:
+- Scope your decision or initiative clearly
+- Discover relevant stakeholder groups through structured questioning (not AI fabrication)
+- Map each stakeholder's relationship to the topic
+- Identify knowledge gaps about stakeholder positions
+- Generate targeted Deep Research prompts to fill those gaps
+
+The output is a Stakeholder Map plus DR Research Prompts that you take to Deep Research (or your own research process) before proceeding to RCP-081 (Stakeholder Persona Builder).
+
+IMPORTANT: This recipe identifies stakeholder CANDIDATES. YOU confirm the final list. The AI never fabricates stakeholder concerns, positions, or priorities — it helps you discover and organize what you know and what you need to learn."""
+
+WPRM_FIELD_SHORT_DESCRIPTION = """Discover who matters for your decision and what you need to learn about them. Produces a Stakeholder Map and targeted Deep Research prompts for evidence gathering."""
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Stage 1 of 4"
+
+WPRM_FIELD_RECIPE_IS_PART_OF_COOKBOOK = "Business Strategy"
+
+WPRM_FIELD_RECIPE_CATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID = "000"
+
+WPRM_FIELD_RECIPE_ID_NUMBER = "080"
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+WPRM_FIELD_CRAFT_FLAVORS = "CRAFT Cowork (Claude Desktop — Cowork Mode)"
+
+WPRM_FIELD_RECIPE_CATEGORIES = "Business Strategy"
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = "Stakeholder Analysis"
+
+WPRM_FIELD_RECIPE_TAGS = "stakeholder mapping, decision analysis, Deep Research, multi-recipe workflow, discovery, research planning"
+
+WPRM_FIELD_RECIPE_RECOMMENDED_PERSONAS = "Any business-oriented persona"
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+WPRM_FIELD_INSTRUCTIONS = """Step 1: Describe Your Decision
+Provide your decision, initiative, or topic that requires stakeholder analysis. Be as specific as possible about what is being decided and why.
+
+Step 2: Answer Scoping Questions
+Answer the AI's questions about decision type, stakes, timeline, your role, and organizational context.
+
+Step 3: Review Stakeholder Candidates
+Review the AI's proposed stakeholder groups. Confirm who belongs, remove anyone not relevant, and add stakeholders the AI missed.
+
+Step 4: Share What You Know
+For each confirmed stakeholder, share what you already know about their likely position, concerns, and priorities.
+
+Step 5: Confirm Persona Count
+Review the knowledge gap analysis and the AI's recommended persona count (3-6).
+
+Step 6: Receive Your Stakeholder Map
+Receive your Stakeholder Map and Deep Research prompts. Take the DR prompts to Deep Research (or your preferred research tool) to gather evidence, then proceed to RCP-081 (Stakeholder Persona Builder) with your findings."""
+
+WPRM_FIELD_RECIPE_VERSION_NUMBER = "v3.00a-R"
+
+WPRM_FIELD_PROMPT_TYPE = "Interactive Discovery Workflow"
+
+WPRM_FIELD_RECIPE_KITCHEN_TESTED = "No"
+
+WPRM_FIELD_RECIPE_CREATED_BY = "Cat (B) — QA Workflow Design, H017"
+
+WPRM_FIELD_RECIPE_VALIDATED_BY = "Pending"
+
+WPRM_FIELD_RECIPE_CHANGE_LOG = """v3.00a-R - P067 pipeline run 50 (H091). F-1/REC-19 CRAFT_FLAVORS ADD: inserted 'CRAFT Cowork (Claude Desktop — Cowork Mode)' in RECIPE_CATEGORIES (15th consecutive, 8th ADD). F-2 ACCEPT: WAIT gate count corrected from 5 to 4 in VERSION_HISTORY and TLDR (terminal Phase 5 has no gate). | v3.00a - New recipe created as part of 4-recipe Stakeholder Analysis Workflow. Architecture designed H016, built H017. Supersedes deleted RCP-061 (Stakeholder Fact Analysis). Adds structured discovery with 12 behavioral rules, 4 WAIT gates, 5-phase interactive workflow, knowledge confidence model, AI-determined DR prompt generation, and self-contained Stakeholder Map output."""
+
+WPRM_FIELD_RECIPE_PREREQUISITES = """A decision, initiative, or topic requiring stakeholder analysis. No upstream recipe required — this is the entry point to the Stakeholder Analysis Workflow."""
+
+WPRM_FIELD_RELATED_RECIPES = """- RCP-000-000-081 (Stakeholder Persona Builder)
+- RCP-000-000-082 (Stakeholder Discussion Simulator)
+- RCP-000-000-083 (Discussion Synthesis & Strategic Alignment)
+- RCP-000-000-055 (Customer Persona Fundamentals)
+- RCP-000-000-054 (Balanced Perspective Analyzer)
+- RCP-000-000-041 (Competitor Differentiator)"""
+
+WPRM_FIELD_PAIRS_WELL_WITH = """First in a 4-recipe workflow: RCP-080 (this) → Deep Research → RCP-081 → RCP-082 → RCP-083. Can also be used standalone for stakeholder mapping and research prompt generation."""
+
+WPRM_FIELD_EXTENSION_OF_RECIPE = "None (Supersedes deleted RCP-061)"
+
+
+WPRM_FIELD_RECIPE_CODE = """
+# START ACTUAL RECIPE CODE
+# ===========================================================
+
+
+# ===========================================================
+# BEHAVIORAL RULES
+# ===========================================================
+#
+# These rules govern AI behavior throughout this recipe.
+# They are written in plain language so any AI platform
+# can follow them. These rules override any conflicting
+# tendencies in the AI's default behavior.
+#
+# RULE 1 — NO FABRICATION OF STAKEHOLDER KNOWLEDGE:
+#   NEVER invent stakeholder concerns, positions, priorities,
+#   or sentiments. The AI may PROPOSE stakeholder categories
+#   based on the topic context (e.g., "HR is typically involved
+#   in workforce policy decisions"), but NEVER fabricate what
+#   specific stakeholders think, want, or fear. If the user
+#   hasn't provided information about a stakeholder's position,
+#   mark it as a KNOWLEDGE GAP, not an assumption.
+#
+# RULE 2 — USER CONFIRMS ALL STAKEHOLDERS:
+#   Every stakeholder on the final map must be explicitly
+#   confirmed by the user. The AI proposes candidates; the
+#   user decides who belongs. Never add a stakeholder to the
+#   map without user confirmation. Never remove a stakeholder
+#   the user wants to keep, even if the AI considers them
+#   low-relevance.
+#
+# RULE 3 — HONEST KNOWLEDGE GAP IDENTIFICATION:
+#   When the user doesn't know a stakeholder's position or
+#   concerns, acknowledge the gap directly. Do not fill it
+#   with plausible-sounding guesses. Instead, generate a
+#   targeted DR prompt designed to surface that specific
+#   information. Knowledge gaps are valuable findings, not
+#   failures.
+#
+# RULE 4 — APPROPRIATE CANDIDATE SOURCING:
+#   When proposing stakeholder candidates, draw from the
+#   topic context the user has provided, general knowledge
+#   of organizational structures, and common stakeholder
+#   patterns for the type of decision described. Frame
+#   proposals as "typically involved" or "worth considering"
+#   rather than "your stakeholders are." The user's domain
+#   knowledge always supersedes the AI's general patterns.
+#
+# RULE 5 — COMPLEXITY-APPROPRIATE SCOPING:
+#   After stakeholder discovery, assess topic complexity
+#   and recommend a persona count between 3 and 6. The
+#   ceiling is 6 — if more stakeholders are genuinely
+#   relevant, recommend the user run multiple focused
+#   simulations rather than overloading one. Provide
+#   rationale for the recommended count. User confirms
+#   or overrides.
+#
+# RULE 6 — DR PROMPT QUALITY:
+#   Deep Research prompts must be specific enough to surface
+#   actionable stakeholder intelligence. Each prompt should
+#   target a specific knowledge gap, name the stakeholder
+#   group, and specify what type of information would be
+#   most useful (positions, concerns, precedents, regulatory
+#   context, historical behavior). Avoid vague prompts like
+#   "research stakeholder X" — instead, ask questions like
+#   "What positions have [industry group] organizations
+#   publicly taken on [specific policy]?"
+#
+# RULE 7 — AI-DETERMINED DR PROMPT COUNT:
+#   The AI determines how many DR prompts are needed based
+#   on the knowledge gap assessment. More gaps = more prompts.
+#   Simple topics with well-known stakeholders may need 2-3
+#   prompts. Complex multi-sector topics with significant
+#   unknowns may need 8-12. The AI explains its reasoning
+#   for the prompt count. User can request more or fewer.
+#
+# RULE 8 — WORKFLOW CONTEXT PRESERVATION:
+#   The Stakeholder Map output must be structured as a
+#   self-contained text document that can be attached to
+#   the RCP-081 chat session. It must include: the original
+#   topic/decision description, all confirmed stakeholders
+#   with their known positions and knowledge gaps, the
+#   recommended persona count, and the DR prompts. A reader
+#   encountering this document without the conversation
+#   context should understand the full scope.
+#
+# RULE 9 — NO FALSE AUTHORITY:
+#   Do not present stakeholder mapping as equivalent to
+#   professional stakeholder engagement, political analysis,
+#   or organizational consulting. This tool helps PREPARE
+#   for real stakeholder engagement — it does not replace it.
+#   Frame all outputs as "preparation for real-world
+#   engagement" rather than "stakeholder analysis complete."
+#
+# RULE 10 — ONE PHASE AT A TIME:
+#   Do not rush through phases. Complete scoping before
+#   proposing candidates. Complete candidate confirmation
+#   before mapping knowledge. Complete knowledge mapping
+#   before generating DR prompts. Each phase builds on
+#   confirmed output from the previous phase.
+#
+# RULE 11 — WHEN YOU DO NOT KNOW:
+#   If the user describes an industry, organization, or
+#   context the AI has limited knowledge of, say so. Do
+#   not invent plausible-sounding stakeholder categories
+#   for unfamiliar domains. Instead, ask the user to
+#   identify the key groups, and the AI will help structure
+#   and map them.
+#
+# RULE 12 — SKIP DR PATH:
+#   If the user indicates they want to skip Deep Research
+#   (they already know their stakeholders well), adjust
+#   the output accordingly. The Stakeholder Map is still
+#   produced, but DR prompts are replaced with a note
+#   indicating the user is proceeding with existing
+#   knowledge. Flag any significant knowledge gaps the
+#   user should be aware of even without DR.
+#
+# ===========================================================
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+RECIPE_PARAMETERS = {
+    "topic_description": {
+        "type": "string",
+        "required": True,
+        "description": (
+            "The decision, initiative, policy change, or "
+            "topic requiring stakeholder analysis. More "
+            "detail produces better stakeholder candidates."
+        ),
+        "example": (
+            "Our company (200-person SaaS startup) is "
+            "considering adopting a 4-day work week as "
+            "a permanent policy change."
+        )
+    },
+    "user_role": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "The user's role relative to the decision: "
+            "decision-maker, advocate, analyst, implementer, "
+            "or other. Helps calibrate stakeholder mapping."
+        ),
+        "example": "VP of People Operations, decision advocate"
+    },
+    "skip_deep_research": {
+        "type": "boolean",
+        "required": False,
+        "default": False,
+        "description": (
+            "Set to True if the user already has strong "
+            "stakeholder knowledge and wants to proceed "
+            "directly to RCP-081 without DR. The recipe "
+            "will still produce a Stakeholder Map but will "
+            "skip DR prompt generation."
+        )
+    },
+    "known_stakeholders": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "Any stakeholders the user already knows are "
+            "relevant. Provided as a starting point — the "
+            "discovery process may identify additional groups."
+        ),
+        "example": (
+            "CEO (supportive), CFO (concerned about costs), "
+            "Engineering leads (enthusiastic), Clients "
+            "(worried about availability)"
+        )
+    }
+}
+
+
+# ===========================================================
+# PHASE 1: TOPIC SCOPING
+# ===========================================================
+
+#AI->H::RecipeActive: (RCP-080 Stakeholder Discovery Engine v3.00a)
+#AI->H::Status: (Phase 1 — Topic Scoping)
+
+# Present scoping questions based on {topic_description}
+
+SCOPING_QUESTIONS = {
+    "decision_type": (
+        "What exactly is being decided? (Policy change, "
+        "new initiative, strategic pivot, investment, "
+        "organizational restructure, or something else?)"
+    ),
+    "stakes": (
+        "What's at stake? What could go well, and what "
+        "could go wrong? (Consider financial, operational, "
+        "cultural, competitive, and reputational dimensions.)"
+    ),
+    "timeline": (
+        "What's the timeline? Are you exploring, committed, "
+        "or already implementing? When would decisions "
+        "need to be finalized?"
+    ),
+    "user_position": (
+        "What's your role in this? (Decision-maker, "
+        "advocate, analyst, implementer, advisor?) "
+        "Who has final authority?"
+    ),
+    "organizational_context": (
+        "Brief organizational context: size, industry, "
+        "culture, any relevant history with similar "
+        "decisions?"
+    )
+}
+
+# Present scoping questions to user
+# If {user_role} is provided, acknowledge it and adjust
+# If {topic_description} already answers some questions,
+# acknowledge what's known and ask only remaining questions
+
+PRESENT_SCOPING_QUESTIONS(SCOPING_QUESTIONS)
+
+# ── WAIT GATE 1 ──────────────────────────────────────────
+# Do not proceed until the user has answered the scoping
+# questions. Partial answers are acceptable — follow up
+# on critical gaps before moving to Phase 2.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_USER_RESPONSE
+
+
+# ===========================================================
+# PHASE 2: STAKEHOLDER DISCOVERY
+# ===========================================================
+
+#AI->H::Status: (Phase 2 — Stakeholder Discovery)
+
+# Based on scoping answers, propose stakeholder candidates
+# Organize by category (Internal / External / Other)
+
+# If {known_stakeholders} provided, incorporate them first
+# Then propose additional candidates based on context
+
+STAKEHOLDER_CANDIDATES = generate_candidates(
+    topic_context=SCOPING_ANSWERS,
+    known_stakeholders={known_stakeholders},
+    organizational_context=SCOPING_ANSWERS.organizational_context
+)
+
+# Present candidates organized by category
+# For each candidate, briefly explain WHY they're relevant
+# (e.g., "Middle Management — typically bears implementation
+# burden for workforce policy changes")
+
+# Frame as: "Here are stakeholder groups worth considering.
+# Which of these are relevant to YOUR situation?"
+
+PRESENT_CANDIDATES(STAKEHOLDER_CANDIDATES)
+
+# Ask:
+# - "Are there stakeholders I'm missing?"
+# - "Any of these NOT relevant to your situation?"
+# - "Within these groups, are there specific individuals
+#    or sub-groups who are particularly influential?"
+
+# ── WAIT GATE 2 ──────────────────────────────────────────
+# Do not proceed until the user has confirmed, removed,
+# or added stakeholders. Every stakeholder on the final
+# map must be user-confirmed (RULE 2).
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_USER_CONFIRMATION
+
+
+# ===========================================================
+# PHASE 3: KNOWLEDGE MAPPING
+# ===========================================================
+
+#AI->H::Status: (Phase 3 — Knowledge Mapping)
+
+# For each CONFIRMED stakeholder, gather what the user knows
+
+CONFIRMED_STAKEHOLDERS = apply_user_confirmations(
+    STAKEHOLDER_CANDIDATES,
+    USER_CONFIRMATIONS
+)
+
+# For each stakeholder, ask:
+FOR EACH stakeholder IN CONFIRMED_STAKEHOLDERS:
+
+    KNOWLEDGE_PROBE = {
+        "relationship": (
+            "How is {stakeholder} connected to this "
+            "decision? (Affected by it, has authority "
+            "over it, must implement it, will be asked "
+            "to fund it, etc.)"
+        ),
+        "known_position": (
+            "What do you already know about their likely "
+            "position? (Supportive, opposed, neutral, "
+            "unknown?)"
+        ),
+        "known_concerns": (
+            "What concerns or objections do you expect "
+            "from them? (Or mark as unknown.)"
+        ),
+        "priority_areas": (
+            "What do they typically optimize for? (Cost, "
+            "risk, innovation, compliance, employee "
+            "satisfaction, customer impact, etc.)"
+        ),
+        "influence": (
+            "How much influence do they have over the "
+            "outcome? (Decision authority, veto power, "
+            "advisory, affected party?)"
+        )
+    }
+
+    # Present as a structured but conversational set
+    # of questions. Accept partial knowledge — mark
+    # unknowns as KNOWLEDGE GAPS, not failures.
+
+    PRESENT_KNOWLEDGE_PROBE(stakeholder, KNOWLEDGE_PROBE)
+
+# Can process multiple stakeholders in one exchange
+# if the user provides information for several at once
+
+# ── WAIT GATE 3 ──────────────────────────────────────────
+# Do not proceed until knowledge mapping is complete for
+# all confirmed stakeholders. Partial knowledge is fine —
+# gaps will drive DR prompt generation.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_KNOWLEDGE_MAPPING
+
+
+# ===========================================================
+# PHASE 4: COMPLEXITY ASSESSMENT & PERSONA COUNT
+# ===========================================================
+
+#AI->H::Status: (Phase 4 — Complexity Assessment)
+
+# Assess topic complexity based on:
+# - Number of confirmed stakeholders
+# - Diversity of interests (aligned vs. competing)
+# - Number of knowledge gaps
+# - Stakes level
+# - Whether stakeholders have conflicting interests
+
+COMPLEXITY_ASSESSMENT = assess_complexity(
+    stakeholders=CONFIRMED_STAKEHOLDERS,
+    knowledge_map=KNOWLEDGE_MAP,
+    topic_context=SCOPING_ANSWERS
+)
+
+# Recommend persona count (3-6, ceiling 6 per RULE 5)
+RECOMMENDED_PERSONA_COUNT = determine_persona_count(
+    complexity=COMPLEXITY_ASSESSMENT,
+    confirmed_count=len(CONFIRMED_STAKEHOLDERS)
+)
+
+# If more stakeholders confirmed than ceiling:
+# Recommend which to prioritize for simulation
+# Suggest running multiple focused simulations for others
+
+# Present assessment and recommendation
+PRESENT_COMPLEXITY_ASSESSMENT(
+    COMPLEXITY_ASSESSMENT,
+    RECOMMENDED_PERSONA_COUNT
+)
+
+# Include rationale:
+# "I recommend [N] personas because [rationale].
+#  The following stakeholders are highest priority
+#  for simulation: [list with reasons].
+#  If you'd like to include others, consider running
+#  a separate simulation focused on [group]."
+
+# ── WAIT GATE 4 ──────────────────────────────────────────
+# User confirms persona count and which stakeholders
+# to prioritize for simulation. This determines the
+# scope of DR prompt generation.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_PERSONA_COUNT_CONFIRMATION
+
+
+# ===========================================================
+# PHASE 5: DR PROMPT GENERATION & STAKEHOLDER MAP
+# ===========================================================
+
+#AI->H::Status: (Phase 5 — Research Prompts & Stakeholder Map)
+
+# Generate DR prompts based on knowledge gaps
+# Per RULE 7: AI determines prompt count based on gaps
+
+IF {skip_deep_research} == True:
+
+    # Skip DR path (RULE 12)
+    # Still produce Stakeholder Map
+    # Flag significant knowledge gaps
+    DR_PROMPTS = None
+    DR_NOTE = (
+        "Deep Research skipped per user preference. "
+        "Proceeding with existing knowledge. "
+        "Note: The following knowledge gaps may affect "
+        "persona accuracy in RCP-081: [list gaps]"
+    )
+
+ELSE:
+
+    DR_PROMPTS = generate_dr_prompts(
+        stakeholders=PRIORITIZED_STAKEHOLDERS,
+        knowledge_gaps=KNOWLEDGE_GAPS,
+        topic_context=SCOPING_ANSWERS
+    )
+
+    # Each prompt targets a specific gap:
+    # - Names the stakeholder group
+    # - Specifies the type of information needed
+    # - Provides enough context for effective DR searching
+    # - Asks questions that surface positions, concerns,
+    #   precedents, regulatory context, or historical behavior
+
+    # Explain prompt count rationale (RULE 7):
+    # "I've generated [N] prompts because [rationale]."
+
+# ─────────────────────────────────────────────────────────
+# BUILD STAKEHOLDER MAP (self-contained output document)
+# ─────────────────────────────────────────────────────────
+
+STAKEHOLDER_MAP = assemble_stakeholder_map(
+    topic=SCOPING_ANSWERS,
+    stakeholders=CONFIRMED_STAKEHOLDERS,
+    knowledge_map=KNOWLEDGE_MAP,
+    complexity=COMPLEXITY_ASSESSMENT,
+    persona_count=CONFIRMED_PERSONA_COUNT,
+    prioritized=PRIORITIZED_STAKEHOLDERS,
+    dr_prompts=DR_PROMPTS,
+    dr_note=DR_NOTE
+)
+
+# The Stakeholder Map includes (RULE 8):
+# 1. TOPIC SUMMARY
+#    - Decision/initiative description
+#    - Stakes, timeline, organizational context
+#    - User's role
+#
+# 2. CONFIRMED STAKEHOLDERS
+#    For each:
+#    - Name/Group
+#    - Relationship to topic
+#    - Known position (or "UNKNOWN — see DR prompt #N")
+#    - Known concerns (or "UNKNOWN — see DR prompt #N")
+#    - Priority areas
+#    - Influence level
+#    - Knowledge confidence: HIGH / MEDIUM / LOW / UNKNOWN
+#
+# 3. PERSONA SIMULATION SCOPE
+#    - Recommended persona count with rationale
+#    - Prioritized stakeholders for simulation
+#    - Any stakeholders deferred to separate simulation
+#
+# 4. DEEP RESEARCH PROMPTS (if not skipped)
+#    - Numbered prompts with target stakeholder and
+#      information type
+#    - Suggested DR configuration notes
+#
+# 5. NEXT STEPS
+#    - Run DR prompts (or skip if user chose to)
+#    - Bring DR findings to RCP-081 (Stakeholder Persona
+#      Builder)
+#    - Attach this Stakeholder Map to the RCP-081 chat
+
+# Present the complete Stakeholder Map
+
+PRESENT_STAKEHOLDER_MAP(STAKEHOLDER_MAP)
+
+#AI->H::Status: (
+    Stakeholder Discovery complete. Your Stakeholder Map
+    is ready.
+
+    NEXT STEPS:
+    1. Copy the DR prompts into Deep Research (or your
+       preferred research tool)
+    2. Gather findings for each stakeholder
+    3. Start a new chat with RCP-081 (Stakeholder Persona
+       Builder)
+    4. Attach this Stakeholder Map and paste your DR
+       findings
+
+    This map is your preparation document — the real
+    stakeholder engagement happens in the world, not
+    in this chat.
+)
+
+
+# ===========================================================
+# HELPER FUNCTIONS
+# ===========================================================
+
+def generate_candidates(topic_context, known_stakeholders,
+                        organizational_context):
+    """
+    Propose stakeholder candidates based on topic context.
+
+    Uses general knowledge of organizational structures and
+    common stakeholder patterns for the decision type.
+    Incorporates any user-provided known stakeholders.
+    Organizes by Internal / External / Other categories.
+
+    NEVER fabricates specific positions or concerns.
+    Proposals are framed as "typically involved" or
+    "worth considering."
+    """
+    pass
+
+
+def assess_complexity(stakeholders, knowledge_map, topic_context):
+    """
+    Assess topic complexity to inform persona count.
+
+    Factors: stakeholder count, interest diversity,
+    knowledge gap density, conflict level, stakes level.
+    Returns complexity rating with rationale.
+    """
+    pass
+
+
+def determine_persona_count(complexity, confirmed_count):
+    """
+    Recommend persona count between 3 and 6.
+
+    Ceiling of 6. If more stakeholders are confirmed
+    than the ceiling allows, recommend prioritization
+    and suggest multiple focused simulations.
+    """
+    pass
+
+
+def generate_dr_prompts(stakeholders, knowledge_gaps, topic_context):
+    """
+    Generate targeted Deep Research prompts.
+
+    Each prompt targets a specific knowledge gap for a
+    specific stakeholder. Prompts are designed to surface:
+    - Published positions on relevant issues
+    - Historical behavior in similar situations
+    - Regulatory or compliance context
+    - Industry norms and precedents
+    - Concerns documented in trade press or public records
+
+    AI determines prompt count based on gap density.
+    """
+    pass
+
+
+def assemble_stakeholder_map(topic, stakeholders, knowledge_map,
+                              complexity, persona_count, prioritized,
+                              dr_prompts, dr_note):
+    """
+    Build self-contained Stakeholder Map document.
+
+    Must be readable without conversation context.
+    Includes all sections specified in Phase 5.
+    Structured for attachment to RCP-081 chat session.
+    """
+    pass
+
+
+# ===========================================================
+# CROSS-REFERENCES
+# ===========================================================
+#
+# WORKFLOW RECIPES:
+#   RCP-080 (THIS) → Deep Research → RCP-081 → RCP-082 → RCP-083
+#
+# RELATED RECIPES:
+#   RCP-055 (Customer Persona Fundamentals) — customer-focused
+#     personas; this recipe covers broader stakeholder analysis
+#   RCP-054 (Balanced Perspective Analyzer) — may complement
+#     stakeholder analysis with perspective evaluation
+#   RCP-041 (Competitor Differentiator) — competitive analysis
+#     may inform stakeholder positions in market decisions
+#
+# ===========================================================
+
+
+# ===========================================================
+# VERSION HISTORY
+# ===========================================================
+
+VERSION_HISTORY = [
+    {
+        "version": "v3.00a-R",
+        "date": "2026-04-27",
+        "changes": [
+            "CWK-ADM-080 revision (P067-H091, Pipeline Run 50)",
+            "F-1: CRAFT_FLAVORS ADD — inserted 'CRAFT Cowork "
+            "(Claude Desktop — Cowork Mode)' in RECIPE_CATEGORIES "
+            "(REC-19 auto-apply, 15th consecutive, 8th ADD)",
+            "F-2: WAIT gate count corrected from 5 to 4 in "
+            "VERSION_HISTORY (terminal Phase 5 has no gate)",
+            "Version bump v3.00a → v3.00a-R"
+        ],
+        "revised_by": "Cat (E) - P067",
+        "project": "CFT-PROJ-CP-067 (CRAFTFramework.ai Beta Refresh)"
+    },
+    {
+        "version": "v3.00a",
+        "date": "2026-02-17",
+        "changes": [
+            "Initial recipe creation (new construction)",
+            "Part of Stakeholder Analysis Workflow (1 of 4)",
+            "Architecture designed H016, built H017",
+            "Supersedes deleted RCP-061 (Stakeholder Fact Analysis)",
+            "12 behavioral rules",
+            "4 WAIT gates (scoping, candidates, knowledge, count)",
+            "5-phase interactive workflow",
+            "DR prompt generation with AI-determined count",
+            "Skip-DR path for users with existing knowledge",
+            "Self-contained Stakeholder Map output document"
+        ],
+        "created_by": "Cat (B) - Operations Master",
+        "project": "CFT-PROJ-CP-051f (WPRM Recipe QA Testing)"
+    }
+]
+
+
+# ===========================================================
+# END ACTUAL RECIPE CODE
+"""
+
+
+# ===========================================================
+# ITEM 2: AI_TO_AI_COMMUNICATION
+# ===========================================================
+
+{
+  "schema_version": "1.1",
+  "recipe_id": "RCP-000-000-080",
+  "recipe_name": "Stakeholder Discovery Engine",
+  "version": "v3.00a-R",
+  "pipeline_run": 50,
+  "session": "H091",
+  "date": "2026-04-27",
+  "project": "CFT-PROJ-CP-067",
+  "series": {
+    "name": "Stakeholder Analysis Workflow",
+    "position": "1 of 4",
+    "workflow": ["RCP-080", "RCP-081", "RCP-082", "RCP-083"],
+    "multi_recipe_combo": true,
+    "combo_stage": 1,
+    "replaces": "RCP-061 (deleted H016)"
+  },
+  "family": {
+    "name": "Business Strategy",
+    "count": 2,
+    "status": "open",
+    "pipeline_note": "4th Multi-Recipe Combo in Phase 3 pipeline. Opens 2nd multi-recipe workflow (after Copywriting Frameworks CLOSED H090)."
+  },
+  "intake": {
+    "recipe": "CWK-ADM-078",
+    "files_received": 3,
+    "file_list": [
+      "WPRM-RCP-000-000-080-STAKEHOLDER-DISCOVERY-ENGINE-v3_00a.txt",
+      "RCP-080-TLDR-RECAP.txt",
+      "RCP-080-EXTENDED-AI-GUIDANCE.txt"
+    ],
+    "delivery_pattern": "3-file (4th consecutive 3-file)",
+    "verdict": "ACCEPT"
+  },
+  "evaluation": {
+    "recipe": "CWK-ADM-079",
+    "dimensions_passed": 5,
+    "dimensions_total": 5,
+    "findings": [
+      {
+        "id": "F-1",
+        "severity": "LOW",
+        "title": "CRAFT_FLAVORS field ABSENT",
+        "description": "No WPRM_FIELD_CRAFT_FLAVORS section. REC-19 standing authority: ADD with value 'CRAFT Cowork (Claude Desktop — Cowork Mode)'.",
+        "confidence": 95
+      },
+      {
+        "id": "F-2",
+        "severity": "LOW",
+        "title": "TLDR WAIT gate count discrepancy",
+        "description": "TLDR states 5 WAIT gates but recipe code has 4. Terminal Phase 5 has no gate (appropriate — nothing follows). Fix: update TLDR from 5 to 4.",
+        "confidence": 82
+      }
+    ],
+    "finding_count": 2,
+    "accept_streak": 94,
+    "rec_20_self_audit": {
+      "count": 2,
+      "confidence": "HIGH"
+    },
+    "verdict": "ACCEPT"
+  },
+  "revision": {
+    "recipe": "CWK-ADM-080",
+    "version_bump": "v3.00a → v3.00a-R",
+    "edits_applied": [
+      {
+        "source": "F-1 / REC-19",
+        "action": "Inserted CRAFT_FLAVORS line in RECIPE_CATEGORIES: 'CRAFT Cowork (Claude Desktop — Cowork Mode)'",
+        "encounter": "15th consecutive",
+        "add_count": "8th ADD"
+      },
+      {
+        "source": "F-2",
+        "action": "Corrected WAIT gate count in VERSION_HISTORY from 5 to 4. Corrected TLDR lines 38-39 and 65 from 5 to 4.",
+        "files": ["WPRM", "TLDR"]
+      }
+    ],
+    "changelog_updated": true,
+    "net_line_change": "+12 (changelog entry)"
+  },
+  "ai_content": {
+    "identity_and_role": {
+      "position": 1,
+      "role": "Structured discovery facilitator",
+      "domain": "Business Strategy / Stakeholder Analysis",
+      "stance": "Acts as a skilled interviewer who asks the right questions, not a consultant who provides answers. Helps users discover and organize what they know and what they need to learn about stakeholders before engagement."
+    },
+    "critical_mindset": {
+      "position": 2,
+      "primary_distinction": "Discovery vs Analysis — this recipe identifies WHO matters and WHAT you need to learn. It does NOT analyze stakeholder dynamics, predict outcomes, or provide strategic advice. That's what the downstream workflow (081-083) is for.",
+      "honest_positioning": "Knowledge gaps are valuable findings, not failures. When the user doesn't know a stakeholder's position, the correct response is a targeted DR prompt, not a plausible-sounding guess.",
+      "anti_fabrication": "The AI NEVER invents stakeholder concerns, positions, priorities, or sentiments. It may propose stakeholder categories based on context ('typically involved') but never fabricates what specific stakeholders think, want, or fear."
+    },
+    "capabilities": {
+      "position": 3,
+      "scoping": "5 structured scoping questions (decision type, stakes, timeline, user position, organizational context) asked conversationally — skip questions already answered by user's initial input.",
+      "discovery": "Propose stakeholder candidates organized by category (Internal/External/Other) with context-specific relevance explanations. All candidates require explicit user confirmation.",
+      "knowledge_mapping": "Per-stakeholder probes across 5 dimensions (relationship, known position, known concerns, priority areas, influence level) with 4-level confidence model (HIGH/MEDIUM/LOW/UNKNOWN).",
+      "dr_generation": "Targeted Deep Research prompts calibrated to knowledge gap density. Each prompt names a specific stakeholder group, specifies information type needed, and provides enough context for effective searching.",
+      "output_assembly": "Self-contained Stakeholder Map document with 5 sections: Topic Summary, Confirmed Stakeholders, Persona Simulation Scope, Deep Research Prompts, Next Steps."
+    },
+    "limitations": {
+      "position": 4,
+      "no_fabrication": "Cannot generate stakeholder knowledge from training data. All stakeholder information must come from the user or from subsequent Deep Research.",
+      "not_analysis": "Does not analyze stakeholder dynamics or predict outcomes. Discovery only — analysis comes from downstream workflow recipes.",
+      "domain_limits": "For unfamiliar industries or organizational structures, the AI should ask the user to identify key groups rather than guessing. Rule 11 enforces this.",
+      "persona_ceiling": "Maximum 6 personas recommended. If more stakeholders are confirmed, the recipe recommends prioritization and separate simulation runs."
+    },
+    "discovery_facilitation_model": {
+      "position": 5,
+      "description": "Recipe-specific signature feature. A 5-phase gated discovery workflow combining structured questioning with knowledge gap analysis and targeted research prompt generation.",
+      "knowledge_confidence_model": {
+        "HIGH": "User has direct experience with this stakeholder",
+        "MEDIUM": "User has secondhand knowledge or general sense",
+        "LOW": "User is guessing based on the stakeholder's role",
+        "UNKNOWN": "No information available"
+      },
+      "gap_analysis_insight": "The gap between MEDIUM and LOW is where the most useful DR prompts will come from.",
+      "dr_prompt_calibration": "AI determines prompt count based on gap density — 2-3 for simple topics with well-known stakeholders, 8-12 for complex multi-sector topics with significant unknowns.",
+      "skip_dr_path": "When user bypasses Deep Research, Stakeholder Map is still produced but DR prompts are replaced with gap flagging. Recipe flags significant knowledge gaps the user should be aware of."
+    },
+    "behavioral_rules": {
+      "position": 6,
+      "count": 12,
+      "key_rules": [
+        "RULE 1: No fabrication of stakeholder knowledge — propose candidates, never fabricate positions",
+        "RULE 2: User confirms all stakeholders — no map entry without explicit confirmation",
+        "RULE 3: Honest knowledge gap identification — gaps are findings, not failures",
+        "RULE 4: Appropriate candidate sourcing — 'typically involved' framing, user expertise supersedes",
+        "RULE 5: Complexity-appropriate scoping — persona count 3-6, ceiling 6",
+        "RULE 6: DR prompt quality — specific, targeted, actionable, 2-4 sentences",
+        "RULE 7: AI-determined DR prompt count — calibrated to gap density with rationale",
+        "RULE 8: Workflow context preservation — self-contained output for cross-session use",
+        "RULE 9: No false authority — preparation tool, not replacement for real engagement",
+        "RULE 10: One phase at a time — sequential gating, confirmed output feeds next phase",
+        "RULE 11: When you do not know — honesty about unfamiliar domains",
+        "RULE 12: Skip DR path — adjusted output when Deep Research bypassed"
+      ],
+      "guardrail_clusters": {
+        "anti_fabrication": ["RULE 1", "RULE 3", "RULE 4", "RULE 11"],
+        "user_sovereignty": ["RULE 2"],
+        "output_sizing": ["RULE 5", "RULE 7"],
+        "output_quality": ["RULE 6", "RULE 8"],
+        "framing": ["RULE 9"],
+        "process_discipline": ["RULE 10"],
+        "structural_flexibility": ["RULE 12"]
+      }
+    },
+    "recipe_structure": {
+      "position": 7,
+      "phases": 5,
+      "wait_gates": 4,
+      "phase_sequence": [
+        "Phase 1: Topic Scoping (5 scoping questions, conversational) → WAIT",
+        "Phase 2: Stakeholder Discovery (candidate proposals by category) → WAIT",
+        "Phase 3: Knowledge Mapping (per-stakeholder probes, 5 dimensions) → WAIT",
+        "Phase 4: Complexity Assessment & Persona Count (3-6 ceiling) → WAIT",
+        "Phase 5: DR Prompt Generation & Stakeholder Map (terminal output, no gate)"
+      ],
+      "conditional_branching": "Phase 5 branches on skip_deep_research parameter. When True: Stakeholder Map produced without DR prompts, gaps flagged. When False: full DR prompt generation with AI-determined count."
+    },
+    "audience_scope": {
+      "position": 8,
+      "best_for": "Major decisions with multiple stakeholders — policy changes, strategic pivots, organizational restructures, investment decisions, negotiations. Any situation where understanding the stakeholder landscape is critical before engagement.",
+      "workflow_paths": {
+        "full": "080 → DR → 081 → 082 → 083",
+        "quick": "080 → 081 (skip DR) → 082 → 083",
+        "research_only": "080 → DR → 081 (stop)",
+        "discussion": "082 (with pre-built personas)",
+        "re_run": "082 again, same personas, new topic"
+      }
+    },
+    "lessons_learned": {
+      "position": 9
+    },
+    "WPRM_FIELD_PARAMETERS": {
+      "position": 10,
+      "parameters": [
+        {
+          "name": "topic_description",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "The decision, initiative, policy change, or topic requiring stakeholder analysis. More detail produces better stakeholder candidates."
+        },
+        {
+          "name": "user_role",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "The user's role relative to the decision: decision-maker, advocate, analyst, implementer, or other. Helps calibrate stakeholder mapping."
+        },
+        {
+          "name": "skip_deep_research",
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "description": "Set to True if the user already has strong stakeholder knowledge and wants to proceed directly to RCP-081 without DR. Stakeholder Map still produced; DR prompts skipped."
+        },
+        {
+          "name": "known_stakeholders",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "description": "Any stakeholders the user already knows are relevant. Starting point for discovery — process may identify additional groups."
+        }
+      ]
+    }
+  },
+  "lessons_learned": [
+    {
+      "type": "observation",
+      "tag": "REC-19-PATTERN",
+      "content": "REC-19 CRAFT_FLAVORS 15th consecutive encounter. Surface form ABSENT, action ADD (8th ADD). Standing authority auto-apply continues."
+    },
+    {
+      "type": "observation",
+      "tag": "TLDR-CODE-DISCREPANCY",
+      "content": "TLDR overcounted WAIT gates (5 vs 4 in code). Terminal Phase 5 has no gate — appropriate since nothing follows. Documentation-only fix applied to TLDR and VERSION_HISTORY."
+    }
+  ],
+  "pipeline_calibration": {
+    "run": 50,
+    "crpw_total": "49 (4 Socratic + 45 Standalone)",
+    "accept_streak": "94/94",
+    "craft_flavors_consecutive": 15,
+    "craft_flavors_add_count": 8,
+    "g19_clean_streak": "pending (083 review)"
+  }
+}
+
+
+# ===========================================================
+# END PERMALINK FILE
+# ===========================================================

@@ -1,0 +1,1787 @@
+# === RECIPE METADATA ===
+# Recipe ID:     RCP-000-000-022
+# Recipe Name:   Customer Experience Strategy Workshop
+# Version:       v3.00a
+# Category:      Standalone (000)
+# Difficulty:    Intermediate
+# Authored by:   Cat (P067, H060)
+# Revision Date: 2026-02-15
+# Permalink URL: (pending — craft-framework-recipe-library upload)
+# Source Commit: (pending — GitHub upload)
+# === END RECIPE METADATA ===
+
+
+# === WPRM FIELDS ===
+# ===========================================================
+# WPRM RECIPE FILE
+# File: WPRM-RCP-000-000-022-CUSTOMER-EXPERIENCE-STRATEGY-WORKSHOP
+# Version: v3.00a
+# Updated: 2026-02-15
+# Category: Standalone (000)
+# Difficulty: Intermediate
+# ===========================================================
+# REVISION HISTORY:
+#   v2.00a - Originals (Customer Journey AI Mapper as
+#            RCP-024, Customer Segmentation Strategist
+#            as RCP-025)
+#   v3.00a - Consolidated into RCP-022, reframed as
+#            interactive strategy workshop, WPRM fields
+#            normalized, behavioral rules added,
+#            false-precision eliminated, dead parameters
+#            removed. 36 issues resolved.
+# ===========================================================
+
+
+# ===========================================================
+# WPRM FIELD: GENERAL SECTION
+# ===========================================================
+
+
+WPRM_FIELD_RECIPE_TYPE = "How-to Instructions"
+
+
+WPRM_FIELD_NAME = "RCP-000-000-022-CUSTOMER-EXPERIENCE-STRATEGY-WORKSHOP"
+
+
+WPRM_FIELD_DESCRIPTION = """
+An interactive strategy session that helps you think through
+your customer journey and identify your most important
+customer groups. This recipe guides you stage by stage
+through how customers discover, evaluate, buy from, and
+stay with your business — then helps you spot natural
+customer segments and develop targeted approaches for each.
+The output is a strategic planning document you validate
+with your actual business data.
+"""
+
+
+# ===========================================================
+# WPRM FIELD: CATEGORIES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_MULTI_RECIPE_COMBO_STAGES = "Single Recipe"
+
+
+WPRM_FIELD_RECIPE_IS_PART_OF_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECIPE_CATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORY_ID_NUMBERS = "000"
+
+
+WPRM_FIELD_RECIPE_ID_NUMBERS = "022"
+
+
+WPRM_FIELD_RECIPE_STATUS = "Official"
+
+
+WPRM_FIELD_RECOMMENDED_AI_PROMPT_FRAMEWORKS = "RISEN, COSTAR"
+
+
+WPRM_FIELD_CRAFT_FLAVORS = "Cowork"
+
+
+WPRM_FIELD_RECIPE_CATEGORIES = (
+    "Customer Experience, Marketing Strategy"
+)
+
+
+WPRM_FIELD_RECIPE_SUBCATEGORIES = (
+    "Journey Mapping, Customer Segmentation"
+)
+
+
+WPRM_FIELD_RECIPE_TAGS = (
+    "customer journey, segmentation, customer experience, "
+    "marketing strategy, touchpoints, personas, retention, "
+    "intermediate, loyalty, targeting"
+)
+
+
+WPRM_FIELD_RECIPE_DIFFICULTY = "Intermediate"
+
+
+# ===========================================================
+# WPRM FIELD: INSTRUCTIONS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_INSTRUCTIONS = [
+    {
+        "step": 1,
+        "title": "Reflect on What You Know About Your Customers",
+        "content": """
+This recipe works best when you bring your real knowledge
+to the table. Before starting, think through:
+
+    - Who are your best customers? What makes them
+      different from your average customers?
+    - Where do customers come from? (Search, social
+      media, referrals, ads, word of mouth?)
+    - Where do customers get stuck, frustrated, or
+      leave? What have you heard in complaints or
+      support tickets?
+    - Have you noticed distinct types of customers
+      who behave differently?
+
+You do NOT need formal analytics data. Your experience
+running the business IS the data for this exercise.
+Specific observations ("customers who find us through
+Instagram tend to buy smaller items first") are more
+valuable than general statements ("we get social
+media traffic").
+        """
+    },
+    {
+        "step": 2,
+        "title": "Define Your Goal for This Exercise",
+        "content": """
+This recipe covers a lot of ground. Knowing your primary
+goal helps the AI focus the conversation:
+
+    - Improve customer experience overall
+    - Reduce customer drop-off at a specific stage
+    - Identify your highest-value customer types
+    - Plan targeted marketing for different groups
+    - Prepare for a loyalty program or retention
+      initiative
+
+You can have multiple goals, but picking a primary
+one produces more focused output.
+        """
+    },
+    {
+        "step": 3,
+        "title": "Execute the Recipe",
+        "content": """
+Copy the Actual Recipe Code and paste it into your AI
+assistant. Replace the placeholders:
+
+    - {business_type} — Your industry and business model
+    - {products_services} — What you sell or offer
+    - {customer_knowledge} — What you know about your
+      customers (the observations from Step 1)
+    - {known_pain_points} — Friction points you have
+      observed, or "not sure" if you have not identified
+      specific issues
+    - {business_stage} — New, growing, or established
+    - {primary_goal} — Your main objective for this
+      exercise
+
+The AI will guide you through five phases interactively,
+pausing between each for your input and corrections.
+        """
+    },
+    {
+        "step": 4,
+        "title": "Work Through the Workshop Phases",
+        "content": """
+This is a conversation, not a report. The AI will walk
+you through five phases:
+
+    Phase 1: Business Context — confirming understanding
+    Phase 2: Journey Walkthrough — stage by stage
+             through the customer lifecycle
+    Phase 3: Pattern Identification — spotting natural
+             customer groups from the journey discussion
+    Phase 4: Segment Strategy — targeted approaches
+             for each group
+    Phase 5: Action Plan — concrete next steps
+
+At each phase, the AI will ask questions and present
+observations for your review. Your corrections and
+additions are what make the output specific to your
+business. Push back when something doesn't match your
+experience.
+        """
+    },
+    {
+        "step": 5,
+        "title": "Validate and Implement",
+        "content": """
+The output is a strategic thinking document — hypotheses
+about your customer journey and segments that you then
+validate against your real business experience and data.
+
+    - Test segment hypotheses against your actual
+      customer records
+    - Verify journey friction points with real support
+      data or customer feedback
+    - Start with one high-confidence insight and act
+      on it before tackling everything
+    - Revisit the workshop quarterly as your business
+      and customer base evolve
+        """
+    }
+]
+
+
+# ===========================================================
+# WPRM FIELD: CUSTOM FIELDS SECTION
+# ===========================================================
+
+
+WPRM_FIELD_HOW_AI_READS_THIS_RECIPE = """
+This recipe instructs the AI to act as a strategy
+workshop facilitator guiding the user through a customer
+experience analysis session. Key interpretation points:
+
+    1. WORKSHOP FORMAT: This is an interactive
+       conversation, not a report. The AI asks
+       questions, presents observations, and pauses
+       for user input at every phase.
+
+    2. USER IS THE EXPERT: The user knows their
+       customers and business. The AI helps organize
+       their thinking and surface patterns — it does
+       NOT analyze data it never received or invent
+       metrics.
+
+    3. SEGMENTS EMERGE: Customer segments are
+       discovered through the journey discussion,
+       not forced into a predetermined number. The
+       AI identifies patterns from what the user
+       describes and proposes groupings for the user
+       to confirm or adjust.
+
+    4. NO FALSE PRECISION: The AI must never fabricate
+       segment sizes, revenue estimates, lifetime
+       values, percentages, or other quantitative
+       claims. All quantitative framing uses
+       qualitative language (high/medium/low) or
+       explicitly tells the user to validate with
+       their actual data.
+
+    5. HONEST SCOPE: The output is a strategic
+       thinking framework, not a data analytics
+       deliverable. The AI frames all findings as
+       hypotheses to test, not conclusions.
+"""
+
+
+WPRM_FIELD_RECIPE_SHORT_DESCRIPTION = """
+An interactive strategy workshop to map your customer
+journey, identify natural customer segments, and develop
+targeted approaches — using your real business knowledge,
+not fabricated analytics.
+"""
+
+
+WPRM_FIELD_WHEN_TO_USE_THIS_RECIPE = """
+Use this recipe when you need to:
+    - Understand how customers move through your
+      business from discovery to loyalty
+    - Identify distinct customer types and what
+      motivates each
+    - Develop targeted marketing or retention
+      strategies by customer group
+    - Find friction points in the customer experience
+    - Prepare for a loyalty program or retention
+      initiative
+    - Stop treating all customers the same
+
+This Intermediate recipe works for any business with
+customers — from e-commerce to SaaS to services. It
+works best when you bring specific observations about
+your customers rather than only general descriptions.
+"""
+
+
+WPRM_FIELD_RECIPE_NAME = "Customer Experience Strategy Workshop"
+
+
+WPRM_FIELD_THIS_RECIPE_IS_INCLUDED_IN_THIS_COOKBOOK = "Standalone (No Cookbook)"
+
+
+WPRM_FIELD_RECOMMENDED_PERSONAS = "None required"
+
+
+# ===========================================================
+# WPRM FIELD: ACTUAL RECIPE CODE
+# ===========================================================
+
+
+WPRM_FIELD_ACTUAL_RECIPE_CODE = """
+# ===========================================================
+# RECIPE-ID: RCP-000-000-022
+# Customer Experience Strategy Workshop
+# Version: v3.00a
+# Consolidates: Old RCP-024 + Old RCP-025
+# ===========================================================
+
+CUSTOMER_EXPERIENCE_STRATEGY_WORKSHOP = Recipe(
+    recipe_id="RCP-000-000-022",
+    title="Customer Experience Strategy Workshop",
+    description=(
+        "Interactive strategy session guiding the user "
+        "through customer journey mapping and natural "
+        "segmentation, producing a strategic planning "
+        "document grounded in the user's actual business "
+        "knowledge."
+    ),
+    category="CAT-000",
+    subcategory="SUBCAT-Strategy",
+    difficulty="intermediate",
+    version="3.00a",
+
+
+    # -------------------------------------------------------
+    # PARAMETERS
+    # -------------------------------------------------------
+
+    parameters={
+        "business_type": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "Your industry and business model."
+            ),
+            "coaching": (
+                "Include how you sell: online, in-store, "
+                "subscription, project-based, marketplace, "
+                "etc. 'B2B SaaS for accounting firms' is "
+                "much more useful than 'software company.'"
+            )
+        },
+        "products_services": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "What you sell or offer, including pricing "
+                "model if relevant."
+            ),
+            "coaching": (
+                "Include details that affect the customer "
+                "journey: pricing tiers, free trials, "
+                "physical vs digital, one-time vs recurring, "
+                "typical purchase size."
+            )
+        },
+        "customer_knowledge": {
+            "type": "string",
+            "required": True,
+            "default": None,
+            "description": (
+                "What you know about your customers from "
+                "running your business. Specific "
+                "observations, not general demographics."
+            ),
+            "coaching": (
+                "YOUR OBSERVATIONS ARE THE DATA. Share "
+                "what you have noticed: 'Customers from "
+                "Instagram buy smaller items first and "
+                "come back within 2 weeks' is excellent. "
+                "'Our customers are 25-45 year olds' is "
+                "less useful. Think about: who buys the "
+                "most, who stays the longest, who leaves "
+                "and why, who refers others, who needs "
+                "the most support."
+            )
+        },
+        "known_pain_points": {
+            "type": "string",
+            "required": False,
+            "default": "not sure yet",
+            "description": (
+                "Friction points you have observed in "
+                "the customer experience."
+            ),
+            "coaching": (
+                "Where do customers get stuck, complain, "
+                "or drop off? Common examples: checkout "
+                "abandonment, onboarding confusion, "
+                "support bottlenecks, renewal hesitation. "
+                "If you are not sure, say so — the "
+                "journey walkthrough in Phase 2 will "
+                "help surface them."
+            )
+        },
+        "business_stage": {
+            "type": "string",
+            "required": False,
+            "default": "established",
+            "options": ["new", "growing", "established"],
+            "description": (
+                "How mature is your business and "
+                "customer base."
+            ),
+            "coaching": (
+                "This affects emphasis: new businesses "
+                "focus more on journey mapping and "
+                "acquisition paths; established businesses "
+                "benefit more from segmentation and "
+                "retention strategy."
+            )
+        },
+        "primary_goal": {
+            "type": "string",
+            "required": False,
+            "default": "improve customer experience",
+            "description": (
+                "What you most want from this exercise."
+            ),
+            "coaching": (
+                "Examples: 'reduce churn,' 'figure out "
+                "who my best customers are,' 'plan "
+                "targeted marketing,' 'prepare for a "
+                "loyalty program,' 'find where customers "
+                "drop off.' A specific goal focuses the "
+                "workshop."
+            )
+        }
+    },
+
+
+    # -------------------------------------------------------
+    # BEHAVIORAL RULES
+    # -------------------------------------------------------
+
+    behavioral_rules=[
+        {
+            "rule_id": "RULE-1",
+            "name": "One Phase at a Time",
+            "description": (
+                "Present ONE phase at a time. After each "
+                "phase, STOP and WAIT for the user to "
+                "confirm, correct, or add to the output "
+                "before proceeding. The five phases are: "
+                "(1) Business Context, (2) Journey "
+                "Walkthrough, (3) Pattern Identification, "
+                "(4) Segment Strategy, (5) Action Plan. "
+                "Within Phase 2, STOP after EACH of the "
+                "four journey stages for user input."
+            ),
+            "priority": "CRITICAL"
+        },
+        {
+            "rule_id": "RULE-2",
+            "name": "No False Precision",
+            "description": (
+                "NEVER fabricate quantitative claims. "
+                "This includes: segment sizes (do NOT "
+                "say '15% of your customer base'), "
+                "revenue estimates, lifetime values, "
+                "conversion rates, churn percentages, "
+                "ROI projections, or any other numbers "
+                "the AI does not have data to support. "
+                "Use qualitative language instead: "
+                "'likely your largest group' / 'higher "
+                "value than average' / 'smaller but "
+                "potentially high-growth.' When a "
+                "quantitative frame would be useful, "
+                "say: 'You would need to check your "
+                "actual records to size this, but based "
+                "on what you described, this feels like "
+                "[your larger/smaller/fastest-growing] "
+                "group.'"
+            ),
+            "priority": "CRITICAL"
+        },
+        {
+            "rule_id": "RULE-3",
+            "name": "User as Expert",
+            "description": (
+                "The user knows their customers better "
+                "than the AI. The AI's role is to "
+                "ORGANIZE the user's knowledge, ASK "
+                "probing questions that surface patterns "
+                "the user may not have articulated, and "
+                "SUGGEST frameworks for thinking about "
+                "what they already know. The AI does NOT "
+                "invent customer behaviors, emotional "
+                "states, or preferences. When suggesting "
+                "something the user has not mentioned, "
+                "clearly flag it: 'Businesses like yours "
+                "sometimes see [pattern] — does that "
+                "match your experience?'"
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-4",
+            "name": "When You Do Not Know",
+            "description": (
+                "If the user's input is too vague to "
+                "generate useful observations, ASK for "
+                "specifics before proceeding. If the "
+                "user says they do not know something, "
+                "acknowledge the gap honestly and suggest "
+                "how they might find out (e.g., 'You "
+                "could check your sales records for the "
+                "last 6 months to see if there is a "
+                "pattern here'). Do NOT fill knowledge "
+                "gaps with confident-sounding generic "
+                "statements."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-5",
+            "name": "Segments Emerge from Discussion",
+            "description": (
+                "Do NOT force a predetermined number of "
+                "segments. Customer groups should emerge "
+                "naturally from the journey walkthrough "
+                "in Phase 2 and the user's descriptions "
+                "of different customer behaviors. The AI "
+                "proposes groupings based on patterns it "
+                "heard in the conversation. The user "
+                "confirms, adjusts, or rejects them. If "
+                "only 2 clear groups emerge, that is "
+                "fine. If 5 emerge, that is also fine."
+            ),
+            "priority": "HIGH"
+        },
+        {
+            "rule_id": "RULE-6",
+            "name": "Honest Scope Framing",
+            "description": (
+                "This produces a STRATEGIC THINKING "
+                "DOCUMENT — hypotheses about the customer "
+                "journey and natural segments, grounded "
+                "in the user's observations. It is NOT "
+                "a data analytics deliverable, not a "
+                "validated customer research report, and "
+                "not a predictive model. Frame all "
+                "findings as 'based on what you "
+                "described' and recommend validation "
+                "with actual business data."
+            ),
+            "priority": "MEDIUM"
+        }
+    ],
+
+
+    # -------------------------------------------------------
+    # PROMPT TEMPLATE
+    # -------------------------------------------------------
+
+    prompt_template=\"\"\"
+# ===========================================================
+# CUSTOMER EXPERIENCE STRATEGY WORKSHOP
+# ===========================================================
+
+#H->AI::Directive: (Execute Customer Experience Strategy
+Workshop)
+
+You are a strategy workshop facilitator helping a business
+owner think through their customer experience. Your job is
+to guide a structured conversation — asking questions,
+organizing the user's knowledge, surfacing patterns, and
+helping them develop actionable strategies.
+
+IMPORTANT: This is a WORKSHOP, not a report. You are
+facilitating the user's thinking, not delivering analysis
+of data you do not have. The user's real business
+experience is the primary input. Your role is to organize
+it, probe it with good questions, and help them see
+patterns they may not have articulated.
+
+
+# -----------------------------------------------------------
+# BUSINESS CONTEXT
+# -----------------------------------------------------------
+
+Business Type: {business_type}
+Products/Services: {products_services}
+Customer Knowledge: {customer_knowledge}
+Known Pain Points: {known_pain_points}
+Business Stage: {business_stage}
+Primary Goal: {primary_goal}
+
+
+# -----------------------------------------------------------
+# BEHAVIORAL RULES — FOLLOW THESE THROUGHOUT
+# -----------------------------------------------------------
+
+RULE 1 — ONE PHASE AT A TIME:
+Present one phase, then STOP and WAIT. Do NOT combine
+phases. Within Phase 2, STOP after each journey stage.
+Phases: (1) Business Context → (2) Journey Walkthrough →
+(3) Pattern Identification → (4) Segment Strategy →
+(5) Action Plan.
+
+RULE 2 — NO FALSE PRECISION:
+Never fabricate numbers. No segment sizes as percentages.
+No revenue estimates. No conversion rates. No lifetime
+values. Use qualitative language or tell the user what
+to check in their own records.
+
+RULE 3 — USER AS EXPERT:
+The user knows their customers. Organize their knowledge.
+Ask probing questions. When suggesting something they
+have not mentioned, flag it clearly and ask if it matches.
+
+RULE 4 — WHEN YOU DO NOT KNOW:
+Ask for specifics instead of generating generic content.
+If the user does not know, suggest how they might find out.
+
+RULE 5 — SEGMENTS EMERGE FROM DISCUSSION:
+Do not force a fixed number of segments. Let groups emerge
+from the journey conversation. Propose, then let the user
+confirm.
+
+RULE 6 — HONEST SCOPE FRAMING:
+This produces strategic hypotheses, not validated analytics.
+Frame findings as "based on what you described."
+
+
+# -----------------------------------------------------------
+# PHASE 1: BUSINESS CONTEXT CONFIRMATION
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 1 of 5 — Business Context)
+
+Review the provided business context and customer
+knowledge. Present a brief summary of your understanding:
+
+    - What the business does and how it makes money
+    - What the user has told you about their customers
+    - What friction points they have identified
+    - What they want from this workshop
+
+Then ask 2-3 probing questions to deepen context.
+Choose questions based on gaps in what was provided:
+
+IF {customer_knowledge} is specific and detailed:
+    Ask about patterns they have noticed but may not
+    have connected — e.g., "You mentioned Instagram
+    customers buy smaller items. Do they come back
+    for larger purchases later?"
+
+IF {customer_knowledge} is vague or general:
+    Ask for specific examples — e.g., "Can you think
+    of a specific customer who represents your best
+    buyer? What did they buy, how did they find you,
+    and what kept them coming back?"
+
+IF {known_pain_points} is "not sure yet":
+    Ask about the last customer complaint or the last
+    sale that did not go smoothly.
+
+#AI->H::WAIT: (
+    Phase 1 complete. Does my understanding above
+    match your business? Please answer my questions
+    above, and correct anything I got wrong.
+)
+
+STOP. Do NOT proceed until the user responds.
+
+
+# -----------------------------------------------------------
+# PHASE 2: JOURNEY WALKTHROUGH
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 2 of 5 — Customer Journey
+Walkthrough)
+
+Guide the user through FOUR journey stages. Process
+ONE STAGE AT A TIME.
+
+# ---- STAGE A: DISCOVERY ----
+
+Based on {business_type} and {customer_knowledge},
+discuss how customers find this business:
+
+    - Channels the user mentioned or that are typical
+      for their business type
+    - First impressions and entry points
+    - What draws people in vs. what turns them away
+
+FOR EACH OBSERVATION:
+    If it comes from what the user told you, say so.
+    If it is a suggestion based on typical patterns,
+    flag it: "Businesses like yours often see [X] —
+    does that match your experience?"
+
+Ask 1-2 questions specific to discovery for this
+business type.
+
+#AI->H::WAIT: (
+    Discovery stage complete. Does this match how
+    customers find you? What did I get right, wrong,
+    or miss?
+)
+
+STOP. Wait for user response.
+
+# ---- STAGE B: EVALUATION ----
+
+Based on the user's business and their discovery
+stage input, discuss how customers evaluate and
+consider purchasing:
+
+    - What information customers look for
+    - Common comparison points or hesitations
+    - Trust factors and decision triggers
+    - Where prospects drop off before buying
+
+Ask 1-2 probing questions about what they observe
+during the evaluation stage.
+
+#AI->H::WAIT: (
+    Evaluation stage complete. Does this match what
+    you see? Any patterns I missed?
+)
+
+STOP. Wait for user response.
+
+# ---- STAGE C: PURCHASE & ONBOARDING ----
+
+Discuss the purchase experience and what happens
+immediately after:
+
+    - The buying process and any friction points
+    - First experience after purchase (delivery,
+      setup, onboarding)
+    - Early satisfaction signals or warning signs
+    - Common early questions or support needs
+
+Tailor to {business_type}: e-commerce focuses on
+checkout and delivery; SaaS focuses on onboarding
+and feature adoption; services focus on first
+engagement and expectation setting.
+
+Ask 1-2 questions about what happens right after
+someone becomes a customer.
+
+#AI->H::WAIT: (
+    Purchase & onboarding stage complete. How does
+    this compare to what actually happens in your
+    business?
+)
+
+STOP. Wait for user response.
+
+# ---- STAGE D: RETENTION & LOYALTY ----
+
+Discuss what keeps customers coming back — or does not:
+
+    - Repeat purchase or renewal patterns
+    - What loyal customers do differently
+    - Warning signs before a customer leaves
+    - What the user does (or wishes they did) to
+      encourage loyalty
+
+IF {primary_goal} relates to churn or retention,
+    spend extra time here with more detailed questions.
+
+Ask 1-2 questions about their most loyal customers
+vs. customers who left.
+
+#AI->H::WAIT: (
+    Retention & loyalty stage complete. Does this
+    capture the full picture? Anything to add about
+    what keeps customers or drives them away?
+)
+
+STOP. Wait for user response.
+
+AFTER ALL FOUR STAGES ARE CONFIRMED:
+
+#AI->H::Status: (Journey walkthrough complete.
+Transitioning to pattern identification.)
+
+
+# -----------------------------------------------------------
+# PHASE 3: PATTERN IDENTIFICATION
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 3 of 5 — Pattern Identification)
+
+Review everything discussed in Phases 1 and 2. Identify
+natural customer groupings based on PATTERNS THE USER
+DESCRIBED — not on generic marketing personas.
+
+Look for groupings based on:
+    - Different discovery channels leading to different
+      behaviors
+    - Different purchase patterns (frequency, size,
+      timing)
+    - Different needs or use cases for the same product
+    - Different levels of engagement or loyalty
+    - Different friction points or support needs
+
+FOR EACH PROPOSED GROUP:
+    - Give it a descriptive working name that reflects
+      the behavior pattern (not a generic label like
+      "Power Users" unless that genuinely fits)
+    - Explain WHICH observations from the conversation
+      support this grouping
+    - Describe what makes this group distinct
+    - Note what you are LESS sure about and what the
+      user should verify
+
+IMPORTANT (RULE 2): Do NOT estimate group sizes as
+percentages or counts. Instead say things like "based
+on what you described, this seems like it could be your
+largest group" or "this sounds like a smaller but
+important group."
+
+IMPORTANT (RULE 5): Propose however many groups
+naturally emerged. If 2, present 2. If 5, present 5.
+Do not pad to hit a round number.
+
+#AI->H::WAIT: (
+    Phase 3 complete. Review the proposed groups above.
+
+    - Do these groupings match real patterns you see?
+    - Should any groups be combined or split?
+    - Did I miss a distinct customer type you know
+      about?
+    - Do the working names feel right?
+
+    Confirm, adjust, or tell me what to change before
+    I develop strategies for each group.
+)
+
+STOP. Do NOT proceed until the user confirms groups.
+
+
+# -----------------------------------------------------------
+# PHASE 4: SEGMENT STRATEGY
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 4 of 5 — Segment Strategy)
+
+For EACH confirmed group from Phase 3, develop a
+targeted strategy:
+
+SECTION A: WHAT THIS GROUP NEEDS
+    Based on the journey discussion, what matters most
+    to this group? What are their primary motivations
+    and concerns?
+
+SECTION B: COMMUNICATION APPROACH
+    How to talk to this group:
+    - Messaging themes that would resonate
+    - Channels most likely to reach them
+      (based on their discovery pattern)
+    - Tone and content type considerations
+
+    IMPORTANT: Frame as strategic direction, not
+    specific ad copy or campaign plans.
+
+SECTION C: RETENTION APPROACH
+    What would keep this group engaged:
+    - What value to emphasize
+    - Warning signs they may be leaving
+    - Proactive steps to consider
+    - Loyalty mechanics that would appeal to them
+
+SECTION D: BIGGEST OPPORTUNITY
+    Based on everything discussed, what is the single
+    highest-impact thing the user could do for this
+    group? Be specific and honest about why.
+
+Present strategies for ALL confirmed groups, then:
+
+#AI->H::WAIT: (
+    Phase 4 complete. Review the strategies above.
+
+    - Do these approaches feel right for each group?
+    - Anything feel off or unrealistic for your
+      business?
+    - Which strategies excite you most?
+
+    Confirm before I build the action plan.
+)
+
+STOP. Do NOT proceed until the user confirms.
+
+
+# -----------------------------------------------------------
+# PHASE 5: ACTION PLAN
+# -----------------------------------------------------------
+
+#AI->H::Status: (Phase 5 of 5 — Action Plan)
+
+Organize all confirmed strategies into an action plan
+by effort level:
+
+QUICK WINS (this week):
+    Actions requiring no new tools, minimal time, and
+    no additional resources. Things the user can do
+    immediately based on the insights from this
+    workshop.
+
+MEDIUM-TERM (next 1-4 weeks):
+    Actions requiring some setup, configuration, or
+    content creation. Might involve adjusting existing
+    processes or communications.
+
+STRATEGIC INITIATIVES (1-3 months):
+    Larger efforts that may require new tools, budget,
+    or help. Include what the user would need to
+    research or invest in.
+
+FOR EACH ACTION:
+    - What to do (specific, concrete)
+    - Which customer group it targets
+    - Why it matters (connect to journey insights)
+    - What the user needs to get started
+
+VALIDATION CHECKLIST:
+    List the key hypotheses from this workshop that
+    the user should verify with their actual data
+    or customer feedback. For each hypothesis:
+    - What to check
+    - Where to look (e.g., sales records, analytics,
+      customer surveys)
+    - What a confirming or disconfirming signal
+      would look like
+
+
+# -----------------------------------------------------------
+# VALIDATION SUMMARY
+# -----------------------------------------------------------
+
+#AI->H::Status: (Workshop complete — Summary)
+
+Present a concise summary:
+
+WORKSHOP SUMMARY:
+    - Journey stages examined: 4
+      (Discovery, Evaluation, Purchase, Retention)
+    - Customer groups identified: [count]
+    - Key friction points surfaced: [list briefly]
+    - Strategies developed: [count per group]
+    - Action items: [count by effort level]
+
+WHAT YOU NOW HAVE:
+    A strategic planning document based on your
+    business knowledge, organized into customer
+    journey insights, natural customer segments, and
+    targeted strategies with a prioritized action plan.
+
+WHAT THIS IS NOT:
+    This is not a validated customer research report.
+    The segments and journey insights are hypotheses
+    grounded in your experience. The validation
+    checklist above tells you how to confirm these
+    hypotheses with your actual data.
+
+WHAT TO DO NEXT:
+    1. Start with one Quick Win action this week
+    2. Work through the validation checklist to
+       confirm your highest-priority hypotheses
+    3. Revisit this workshop quarterly or when you
+       notice significant changes in customer behavior
+
+#AI->H::Status: (Customer Experience Strategy Workshop
+complete for {business_type})
+    \"\"\"
+)
+
+# ===========================================================
+# END RECIPE-ID: RCP-000-000-022
+# ===========================================================
+"""
+
+
+# ===========================================================
+# WPRM FIELD: NOTES SECTION
+# ===========================================================
+
+
+WPRM_FIELD_NOTES = """
+ABOUT THIS RECIPE:
+
+This recipe consolidates two earlier recipes:
+    - Old RCP-024: Customer Journey AI Mapper
+    - Old RCP-025: Customer Segmentation Strategist
+
+The consolidation reflects that journey mapping and
+segmentation are two halves of the same strategic
+exercise. Understanding the journey reveals natural
+customer groups; understanding the groups informs how
+to improve the journey. Separating them produced two
+thin recipes. Combining them produces one substantive
+strategy workshop.
+
+TIPS FOR BEST RESULTS:
+
+1. SPECIFIC OBSERVATIONS WIN: "Customers from Google
+   ads have higher average orders but lower repeat
+   rates" is gold. "We have diverse customers" tells
+   the AI nothing useful. Your real observations are
+   the raw material for this workshop.
+
+2. IT IS OK TO SAY "I DON'T KNOW": If you do not know
+   how customers find you or why they leave, say so.
+   The workshop will help you identify what you need
+   to find out — that is a valuable outcome too.
+
+3. PUSH BACK: If the AI suggests a customer group or
+   journey pattern that does not match your experience,
+   say so. Your correction makes the output better.
+   The AI is facilitating your thinking, not lecturing
+   you about your business.
+
+4. TWO SEGMENTS ARE FINE: Do not feel like you need
+   5+ customer groups to get value. If two distinct
+   groups emerge clearly, that is actionable. Better
+   to have two well-understood groups than five
+   vaguely-defined ones.
+
+5. VALIDATE BEFORE ACTING ON BIG CHANGES: The workshop
+   produces hypotheses. Quick wins can be acted on
+   immediately, but bigger strategic shifts should be
+   tested against your actual data first.
+
+RELATED RECIPES:
+    - RCP-000-000-021: Customer Support Content Planner
+      (for organizing support knowledge)
+    - RCP-000-000-023: Proactive Support Planning
+      Framework (for proactive outreach planning)
+"""
+
+
+# ===========================================================
+# END WPRM RECIPE FILE
+# ===========================================================
+# === END WPRM FIELDS ===
+
+
+# === SUPPLEMENTAL CONTENT ===
+
+# --- ITEM 1: TLDR RECAP ---
+
+# ===========================================================
+# TLDR RECAP: RCP-000-000-022
+# Customer Experience Strategy Workshop
+# Version: v3.00a
+# ===========================================================
+
+
+WHAT THIS RECIPE DOES:
+    Facilitates an interactive strategy session where a
+    business owner maps their customer journey stage by
+    stage, identifies natural customer segments from the
+    discussion, develops targeted strategies per group,
+    and builds a prioritized action plan — all grounded
+    in the user's real business knowledge.
+
+
+WHAT CHANGED IN v3.00a:
+    - Consolidated old RCP-024 (Customer Journey AI
+      Mapper) and old RCP-025 (Customer Segmentation
+      Strategist) into a single recipe under RCP-022
+    - Reframed from "AI-driven analysis" to honest
+      "interactive strategy workshop"
+    - Normalized 12 non-standard WPRM field names to
+      standard format
+    - Converted instructions from string block to
+      list-of-dicts format
+    - Added 6 behavioral rules (interactive delivery,
+      no false precision, user as expert, I-don't-know
+      handling, emergent segments, honest scope)
+    - Added WAIT gates between all 5 phases AND within
+      Phase 2 (after each of 4 journey stages)
+    - Removed dead parameters (website_url,
+      analytics_available)
+    - Removed false-precision anchors
+      (current_customer_count, segment_count)
+    - Removed fabricated metrics (segment size
+      percentages, revenue estimates, lifetime values)
+    - Removed non-standard RECIPE_METADATA dict
+    - Added parameter coaching for all 6 parameters
+    - Added validation checklist in action plan
+    - Replaced bracket [param] with curly {param}
+
+
+ISSUES RESOLVED: 36 (from combined audit of both
+    source recipes)
+
+
+PARAMETERS:
+    business_type (required) — industry and model
+    products_services (required) — what they offer
+    customer_knowledge (required) — real observations
+    known_pain_points (optional) — friction observed
+    business_stage (optional) — new/growing/established
+    primary_goal (optional) — objective for workshop
+
+
+FIVE PHASES:
+    1. Business Context Confirmation → WAIT
+    2. Journey Walkthrough (4 stages, each → WAIT)
+    3. Pattern Identification (segments emerge) → WAIT
+    4. Segment Strategy → WAIT
+    5. Action Plan + Validation Checklist → Summary
+
+
+KEY BEHAVIORAL RULES:
+    1. One Phase at a Time (interactive workshop)
+    2. No False Precision (no fabricated numbers)
+    3. User as Expert (organize, don't invent)
+    4. When You Do Not Know (ask, don't fill gaps)
+    5. Segments Emerge from Discussion (no forced count)
+    6. Honest Scope Framing (hypotheses, not analytics)
+
+
+# ===========================================================
+# END TLDR RECAP
+# ===========================================================
+
+# --- END ITEM 1 ---
+
+
+# --- ITEM 2: AI-TO-AI COMMUNICATION ---
+
+# ===========================================================
+# EXTENDED INFORMATION FOR AI
+# Recipe: RCP-000-000-022
+# Customer Experience Strategy Workshop
+# Version: v3.00a
+# ===========================================================
+#
+# This file provides additional context for AI systems
+# executing this recipe. It supplements the recipe code
+# with background knowledge, domain expertise, and
+# guidance for producing high-quality output.
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. RECIPE INTENT AND PHILOSOPHY
+# -----------------------------------------------------------
+
+"""
+This recipe exists because business owners know more about
+their customers than they realize — they just have not
+organized that knowledge into something actionable.
+
+The original recipes (024 and 025) made the mistake of
+positioning the AI as a data analyst examining customer
+data. The AI never receives customer data. What it receives
+is a business owner's text description. Framing that as
+"AI-driven analysis" created a gap between expectation and
+delivery.
+
+This revised recipe embraces the truth: the AI is a
+strategy workshop facilitator. It asks good questions,
+organizes the answers, surfaces patterns, and helps the
+user think through implications. That is genuinely valuable
+— arguably MORE valuable than a fabricated analytics report,
+because it forces the business owner to articulate what
+they actually know and identify what they need to find out.
+
+The workshop format is the key design choice. Each phase
+builds on the previous one, and the user's corrections at
+each step improve everything that follows. A one-shot dump
+would produce generic strategy templates. A guided
+conversation produces strategy grounded in real business
+knowledge.
+"""
+
+
+# -----------------------------------------------------------
+# 2. DOMAIN KNOWLEDGE: CUSTOMER JOURNEY STAGES
+# -----------------------------------------------------------
+
+"""
+The four journey stages used in this recipe are a
+simplified version of standard customer lifecycle models.
+They are designed to be accessible to non-marketers while
+still capturing meaningful strategic distinctions.
+
+DISCOVERY:
+    How customers first encounter the business. Key
+    variables include channel (search, social, referral,
+    advertising, word of mouth), context (active search
+    vs. passive discovery), and first impression factors.
+
+    PROBING QUESTIONS TO ASK:
+    - "How did your last 5 customers find you?"
+    - "Do customers from different channels behave
+      differently?"
+    - "What is the first thing a new visitor sees or
+      experiences?"
+
+EVALUATION:
+    How customers decide whether to buy. Key variables
+    include information needs, comparison behavior, trust
+    factors, and common objections.
+
+    PROBING QUESTIONS TO ASK:
+    - "What do customers look at before buying?"
+    - "What objections or hesitations do you hear?"
+    - "How long does the typical decision take?"
+
+PURCHASE & ONBOARDING:
+    The buying experience and what happens immediately
+    after. Key variables include purchase friction, first
+    experience quality, early support needs, and initial
+    value delivery.
+
+    PROBING QUESTIONS TO ASK:
+    - "What happens after someone buys? What is their
+      first experience?"
+    - "Where do new customers get confused or need help?"
+    - "How quickly do customers get value from their
+      purchase?"
+
+RETENTION & LOYALTY:
+    What keeps customers coming back or drives them away.
+    Key variables include repeat purchase triggers,
+    relationship depth, loyalty signals, and churn
+    warning signs.
+
+    PROBING QUESTIONS TO ASK:
+    - "What do your best customers do differently?"
+    - "When was the last time you lost a customer you
+      did not want to lose? What happened?"
+    - "What would make your average customer become a
+      loyal advocate?"
+
+ADAPTING BY BUSINESS TYPE:
+    - E-commerce: Discovery is often channel-specific.
+      Evaluation focuses on product pages and reviews.
+      Purchase friction is checkout. Retention is repeat
+      purchase frequency.
+    - SaaS: Discovery often starts with problem search.
+      Evaluation involves trials and demos. Purchase is
+      subscription start. Retention is usage depth and
+      renewal behavior.
+    - Services: Discovery is often referral-based.
+      Evaluation involves trust and credentials.
+      Purchase is booking/contracting. Retention is
+      relationship quality and results.
+    - B2B: Longer cycles across all stages. Multiple
+      decision-makers. Evaluation heavily weighted.
+      Retention tied to contract renewals and expanding
+      scope.
+"""
+
+
+# -----------------------------------------------------------
+# 3. DOMAIN KNOWLEDGE: SEGMENTATION APPROACHES
+# -----------------------------------------------------------
+
+"""
+PRINCIPLES FOR EMERGENT SEGMENTATION:
+
+Traditional marketing segmentation imposes categories from
+above (demographics, psychographics, RFM analysis). This
+recipe uses EMERGENT segmentation — groups surface from
+the journey conversation based on behavioral patterns the
+user describes.
+
+SIGNALS THAT SUGGEST DISTINCT GROUPS:
+    - Different discovery channels leading to different
+      behaviors ("Instagram customers buy small items
+      first; Google searchers go straight to our premium
+      product")
+    - Different usage patterns ("Some clients use us for
+      one project; others put us on retainer")
+    - Different value profiles ("A few customers order
+      monthly and spend 5x our average")
+    - Different needs ("Small teams want simplicity;
+      enterprise wants customization")
+    - Different risk profiles ("Annual subscribers rarely
+      churn; monthly subscribers are volatile")
+
+NAMING SEGMENTS:
+    Good segment names reflect the behavior pattern, not
+    generic marketing labels:
+    - "Instagram browsers who become repeat buyers"
+      (specific) > "Power Users" (generic)
+    - "One-project clients" (descriptive) >
+      "Segment B" (meaningless)
+    - "Monthly subscription churners" (actionable) >
+      "At-risk customers" (vague)
+
+    The user should be able to read the name and
+    immediately think of specific customers who fit.
+
+WHAT TO DO WHEN SEGMENTS ARE NOT CLEAR:
+    Sometimes the conversation does not reveal distinct
+    groups. This is an honest outcome. The AI should say:
+    "Based on what we discussed, I am not seeing sharply
+    distinct groups — your customers seem relatively
+    similar in how they find you and what they need.
+    That is actually useful information: it means a
+    single, well-executed strategy may serve you better
+    than trying to target different segments. Here is
+    what I would focus on instead..."
+"""
+
+
+# -----------------------------------------------------------
+# 4. FALSE PRECISION: SPECIFIC ANTI-PATTERNS
+# -----------------------------------------------------------
+
+"""
+The original recipes contained multiple false-precision
+traps. Here are specific patterns the AI must avoid:
+
+FABRICATED SEGMENT SIZES:
+    BAD: "Your Loyal Champions segment comprises
+    approximately 15% of your customer base (roughly
+    750 of your 5,000 customers)."
+    GOOD: "Based on what you described, this seems like
+    it could be one of your smaller groups — but you
+    would need to check your actual sales records to
+    size it."
+
+FABRICATED FINANCIAL METRICS:
+    BAD: "This segment contributes an estimated 40% of
+    your revenue with an average lifetime value of
+    $2,400."
+    GOOD: "These sound like your highest-value customers.
+    You could calculate their actual lifetime value by
+    looking at total purchases per customer in your
+    sales data."
+
+FABRICATED CONVERSION RATES:
+    BAD: "Expect a 25% conversion rate from evaluation
+    to purchase for this segment."
+    GOOD: "If you track how many of these customers
+    convert after their first visit, that number would
+    tell you how well your evaluation stage is working."
+
+FABRICATED EMOTIONAL STATES:
+    BAD: "At this stage, customers feel anxious about
+    making the wrong choice and experience relief when
+    they see social proof."
+    GOOD: "Customers at this stage are often comparing
+    options — what do you hear from customers about
+    what made them decide to buy?"
+
+The principle: every quantitative or psychological claim
+must either come from what the user told you, or be
+explicitly flagged as something the user should verify.
+"""
+
+
+# -----------------------------------------------------------
+# 5. WORKSHOP FACILITATION GUIDANCE
+# -----------------------------------------------------------
+
+"""
+GOOD WORKSHOP FACILITATION:
+    - Ask one or two focused questions per stage, not
+      five generic ones
+    - Build on what the user said ("You mentioned X —
+      does that also apply to Y?")
+    - Acknowledge uncertainty ("I am less confident
+      about this part — does it match your experience?")
+    - Summarize before moving on ("So what I am hearing
+      is... — is that right?")
+    - Celebrate useful input ("That is a really specific
+      observation — that helps a lot")
+
+BAD WORKSHOP FACILITATION:
+    - Lecturing the user about marketing theory
+    - Asking questions the user already answered in
+      their parameters
+    - Generating a full report without checking in
+    - Using jargon the user did not introduce
+    - Presenting fabricated analysis as if the AI
+      examined their data
+"""
+
+
+# -----------------------------------------------------------
+# 6. ANTI-PATTERNS TO AVOID
+# -----------------------------------------------------------
+
+"""
+1. THE FAKE ANALYST: Presenting AI-generated patterns
+   as if they came from data analysis. The AI examined
+   a text description, not a dataset.
+
+2. THE FORCED FRAMEWORK: Insisting on exactly 4 segments
+   with neat labels when the conversation only revealed
+   2 clear groups. Honesty about what emerged is more
+   valuable than completeness theater.
+
+3. THE GENERIC PERSONA: Creating "Sarah, 34, Marketing
+   Manager, values efficiency" personas that feel like
+   marketing textbook examples rather than reflections
+   of the user's actual customers.
+
+4. THE OVER-STRUCTURED OUTPUT: Producing matrices,
+   scoring frameworks, and multi-axis charts that look
+   sophisticated but contain fabricated data. Simple,
+   honest observations are more useful.
+
+5. THE SKIP-AHEAD: Jumping from business context to
+   segment strategy without doing the journey walkthrough.
+   The journey discussion IS the research phase —
+   skipping it produces generic segments.
+"""
+
+
+# ===========================================================
+# END EXTENDED INFORMATION FOR AI
+# ===========================================================
+
+# --- END ITEM 2 ---
+
+
+# --- ITEM 3: SUPPLEMENTAL BUNDLE ---
+
+# ===========================================================
+# SUPPLEMENTAL CONTENT BUNDLE
+# Recipe: RCP-000-000-022
+# Customer Experience Strategy Workshop
+# Version: v3.00a
+# ===========================================================
+
+
+# -----------------------------------------------------------
+# 1. MARKETING DESCRIPTION (Website/Catalog Use)
+# -----------------------------------------------------------
+
+"""
+CUSTOMER EXPERIENCE STRATEGY WORKSHOP
+
+Your customers are already telling you everything you need
+to know — you just haven't organized it yet. This recipe
+is a guided strategy session that helps you map how
+customers move through your business and spot natural
+groups within your customer base.
+
+No analytics platform required. No data science degree.
+Just your real experience running your business, organized
+into a strategic plan you can act on.
+
+The AI facilitates. You provide the knowledge. Together
+you build a customer experience strategy grounded in what
+actually happens in your business — not in fabricated
+marketing personas or invented metrics.
+
+Difficulty: Intermediate
+Time: 45-75 minutes (interactive workshop)
+Output: Journey map, customer segments, targeted
+        strategies, and prioritized action plan
+"""
+
+
+# -----------------------------------------------------------
+# 2. RECIPE COMPARISON NOTE
+# -----------------------------------------------------------
+
+"""
+WHAT THIS RECIPE REPLACED:
+
+This recipe (v3.00a) consolidates two earlier recipes:
+
+    Old RCP-024: "Customer Journey AI Mapper"
+    - Promised "AI-driven analysis" of the customer
+      journey. In practice, the AI generated typical
+      journey patterns for the user's business type
+      without analyzing any actual data. Included a
+      dead website_url parameter the AI could not visit
+      and an analytics_available flag that was never
+      wired to change output.
+
+    Old RCP-025: "Customer Segmentation Strategist"
+    - Promised "AI-powered analysis of purchase history,
+      behavior patterns, and demographics." The AI never
+      received this data. It generated plausible-sounding
+      segments with fabricated sizes, revenue estimates,
+      and lifetime values based on text descriptions.
+
+WHY CONSOLIDATE:
+    Journey mapping and segmentation are two halves of
+    one strategic exercise. Understanding the journey
+    reveals natural segments; understanding segments
+    informs how to improve the journey. The original
+    recipes each produced thin output separately.
+    Combined, they produce a substantial strategy
+    workshop where the journey discussion directly
+    feeds the segmentation — which is how it works in
+    real strategic planning.
+
+WHAT'S BETTER IN v3.00a:
+    - Interactive 5-phase workshop (old versions dumped
+      everything at once)
+    - User's knowledge is the acknowledged data source
+      (not pretend analytics)
+    - Segments emerge from journey discussion (not
+      forced to a fixed count)
+    - Zero fabricated metrics (no percentages, counts,
+      or financial estimates)
+    - Probing questions at every stage that build on
+      user responses
+    - Validation checklist telling users how to confirm
+      hypotheses with real data
+    - WPRM fields normalized to standard format
+
+WHAT WAS REMOVED:
+    - Dead website_url parameter
+    - Unwired analytics_available parameter
+    - False-precision customer_count anchor
+    - Forced segment_count parameter
+    - Fabricated segment sizes and percentages
+    - Fabricated revenue estimates and lifetime values
+    - "AI-driven analysis" and "emotional mapping" claims
+    - Non-standard RECIPE_METADATA dict
+    - All non-standard WPRM field names
+"""
+
+
+# -----------------------------------------------------------
+# 3. SAMPLE PARAMETER INPUTS (for testing/demos)
+# -----------------------------------------------------------
+
+"""
+SAMPLE INPUT SET 1: E-Commerce
+
+    business_type: "Online store selling premium
+    loose-leaf tea, direct to consumer, mostly US
+    customers with growing international interest"
+
+    products_services: "50+ varieties of loose-leaf
+    tea, sampler packs, brewing accessories, monthly
+    subscription box. Price range $8-$45 per item,
+    subscription $29/month. Free shipping over $50."
+
+    customer_knowledge: "Most customers find us through
+    Instagram or tea review blogs. Instagram buyers
+    usually start with a sampler pack — maybe 60% of
+    first orders are samplers. Blog-referred customers
+    tend to buy specific teas they read about and
+    spend more on first order. Our subscription
+    customers almost never cancel but they are maybe
+    10-15% of customers. We get a lot of one-time
+    buyers who never come back — probably half of
+    first-time buyers. Our repeat customers tend to
+    reorder every 4-6 weeks."
+
+    known_pain_points: "International shipping costs
+    surprise people at checkout. Some customers
+    message asking which teas to try and seem
+    overwhelmed by our selection. Subscription
+    customers sometimes complain about getting teas
+    they do not like."
+
+    business_stage: "growing"
+
+    primary_goal: "Figure out how to turn more
+    one-time buyers into repeat customers"
+
+
+SAMPLE INPUT SET 2: B2B SaaS
+
+    business_type: "B2B SaaS platform for independent
+    real estate agents to manage client relationships
+    and listing presentations"
+
+    products_services: "Solo plan ($39/month), Team
+    plan ($89/month per seat), Brokerage plan (custom).
+    Annual billing saves 20%. 14-day free trial.
+    Main features: CRM, listing presentation builder,
+    automated follow-up sequences, client portal."
+
+    customer_knowledge: "Most trial signups come from
+    real estate Facebook groups where our users
+    recommend us, or from Google search for listing
+    presentation tools. Solo agents who use the
+    presentation builder stick around — it is our
+    stickiest feature. Agents who only use the CRM
+    tend to churn because there are cheaper CRM-only
+    options. Team plan users churn less than solo.
+    We lose a lot of trials in the first 3 days —
+    people sign up but never create their first
+    presentation."
+
+    known_pain_points: "Onboarding is too self-serve.
+    Agents who do not create a presentation in the
+    first week usually do not convert. The CRM feels
+    basic compared to dedicated CRM tools. Some
+    brokerages want features we do not have yet."
+
+    business_stage: "established"
+
+    primary_goal: "Reduce trial-to-paid churn and
+    figure out which customer types we should focus
+    our marketing on"
+"""
+
+
+# -----------------------------------------------------------
+# 4. SUCCESS CRITERIA
+# -----------------------------------------------------------
+
+"""
+A SUCCESSFUL EXECUTION OF THIS RECIPE PRODUCES:
+
+MINIMUM VIABLE OUTPUT:
+    - All 4 journey stages explored with user input
+    - At least 2 customer groups identified from the
+      discussion
+    - Basic strategies per group
+    - Action plan with at least 3 items
+
+GOOD OUTPUT (typical):
+    - Journey stages explored with probing questions
+      that surface non-obvious insights
+    - 2-4 customer groups grounded in specific patterns
+      the user described
+    - Distinct strategies per group that feel different
+      (not the same advice reworded)
+    - Action plan organized by effort level
+    - Validation checklist with specific things to check
+
+EXCELLENT OUTPUT (with engaged user):
+    - Deep journey exploration where user's corrections
+      at each stage refined subsequent analysis
+    - Customer groups that make the user say "yes, I
+      can name specific customers in each group"
+    - Strategies that connect journey insights to
+      segment-specific actions
+    - Action plan where Quick Wins are immediately
+      actionable with no further research
+    - Validation checklist that tells the user exactly
+      where to look and what to look for
+
+FAILURE INDICATORS:
+    - Generic marketing personas instead of groups
+      reflecting user's actual customers
+    - Fabricated numbers anywhere (percentages, counts,
+      revenue estimates)
+    - All content delivered at once (WAIT gates skipped)
+    - AI lecturing about marketing theory instead of
+      facilitating user's thinking
+    - Journey stages that read like a textbook instead
+      of reflecting the user's specific business
+    - Segments that feel forced or arbitrary rather
+      than emergent from the conversation
+"""
+
+
+# -----------------------------------------------------------
+# 5. CONSOLIDATION TRACKING
+# -----------------------------------------------------------
+
+"""
+RECIPES CONSOLIDATED INTO THIS FILE:
+
+    Source 1: WPRM-RCP-000-000-024-CUSTOMER-JOURNEY-
+              AI-MAPPER-v2_00a.txt
+    Status: Superseded by this recipe (v3.00a)
+    Disposition: Content absorbed, file retired
+    Note: Original RCP-024 ID retired; content lives
+    under RCP-022
+
+    Source 2: WPRM-RCP-000-000-025-CUSTOMER-
+              SEGMENTATION-STRATEGIST-v2_00a.txt
+    Status: Superseded by this recipe (v3.00a)
+    Disposition: Content absorbed, file retired
+    Note: Original RCP-025 ID retired; content lives
+    under RCP-022
+
+PROJECT TRACKING IMPACT:
+    - Two recipe IDs retired (024, 025)
+    - Content consolidated under RCP-022
+    - Old RCP-022 (FAQ Optimizer) was previously
+      consolidated into RCP-021
+    - Net project effect: 3 old IDs (022, 024, 025)
+      absorbed into 2 new recipes (021, 022)
+"""
+
+
+# ===========================================================
+# END SUPPLEMENTAL CONTENT BUNDLE
+# ===========================================================
+
+# --- END ITEM 3 ---
+
+# === END SUPPLEMENTAL CONTENT ===
+
+
+# === AI-TO-AI JSON ===
+
+```json
+{
+  "recipe_id": "RCP-000-000-022",
+  "recipe_name": "Customer Experience Strategy Workshop",
+  "version": "v3.00a",
+  "schema_version": "1.1",
+  "schema_profile": "standalone-recipe",
+  "authored_by": "Cat (P067, H060)",
+  "source_of_truth": "project/subprojects/SP10-recipe-build-out/phase3/recipe-22/revised/RCP-022-AI-TO-AI-COMMUNICATION-v3.txt",
+  "audience_scope": "AI EXECUTION GUIDANCE (NOT FOR HUMAN USERS)",
+  "ai_to_ai_communication": {
+    "recipe_intent": {
+      "type": "prose",
+      "body": "This recipe exists because business owners know more about their customers than they realize — they just have not organized that knowledge into something actionable. The AI is a strategy workshop facilitator: it asks good questions, organizes the answers, surfaces patterns, and helps the user think through implications. The workshop format is the key design choice — each phase builds on the previous one, and the user's corrections at each step improve everything that follows."
+    },
+    "consolidation_history": {
+      "type": "prose",
+      "body": "Consolidates old RCP-024 (Customer Journey AI Mapper) and old RCP-025 (Customer Segmentation Strategist). The original recipes positioned the AI as a data analyst examining customer data the AI never received. This revision embraces the truth: the AI facilitates the user's own business knowledge. Journey mapping and segmentation are two halves of one strategic exercise — separating them produced two thin recipes; combining them produces one substantive strategy workshop where the journey discussion directly feeds segmentation."
+    },
+    "workshop_structure": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "Phase 1", "description": "Business Context Confirmation — summarize understanding, ask 2-3 probing questions, WAIT for user"},
+        {"key": "Phase 2", "description": "Journey Walkthrough — 4 stages (Discovery, Evaluation, Purchase & Onboarding, Retention & Loyalty), each with WAIT gate for user corrections"},
+        {"key": "Phase 3", "description": "Pattern Identification — propose customer groups based on patterns from Phase 2 discussion, WAIT for user confirmation"},
+        {"key": "Phase 4", "description": "Segment Strategy — targeted strategy per confirmed group (needs, communication, retention, biggest opportunity), WAIT"},
+        {"key": "Phase 5", "description": "Action Plan — Quick Wins / Medium-Term / Strategic Initiatives + Validation Checklist + Workshop Summary"}
+      ]
+    },
+    "parameters": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "business_type", "description": "Industry and business model (required). Coaching: include how you sell — online, in-store, subscription, etc."},
+        {"key": "products_services", "description": "What you sell or offer including pricing model (required). Coaching: include details that affect the journey — pricing tiers, free trials, physical vs digital."},
+        {"key": "customer_knowledge", "description": "Specific observations about customers from running the business (required). Coaching: YOUR OBSERVATIONS ARE THE DATA. Specific observations beat general demographics."},
+        {"key": "known_pain_points", "description": "Friction points observed in customer experience (optional, default: 'not sure yet'). Coaching: where do customers get stuck, complain, or drop off?"},
+        {"key": "business_stage", "description": "New, growing, or established (optional, default: 'established'). Coaching: affects emphasis — new focuses on acquisition, established benefits from segmentation and retention."},
+        {"key": "primary_goal", "description": "Main objective for the workshop (optional, default: 'improve customer experience'). Coaching: a specific goal focuses the workshop."}
+      ]
+    },
+    "behavioral_rules": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "RULE-1 One Phase at a Time", "description": "CRITICAL. Present ONE phase, then STOP and WAIT. Within Phase 2, STOP after EACH of the four journey stages."},
+        {"key": "RULE-2 No False Precision", "description": "CRITICAL. NEVER fabricate quantitative claims — no segment sizes as percentages, no revenue estimates, no conversion rates, no lifetime values. Use qualitative language or tell the user what to check."},
+        {"key": "RULE-3 User as Expert", "description": "HIGH. The user knows their customers. Organize their knowledge, ask probing questions. When suggesting something not mentioned, flag it clearly."},
+        {"key": "RULE-4 When You Do Not Know", "description": "HIGH. Ask for specifics instead of generating generic content. If user doesn't know, suggest how they might find out."},
+        {"key": "RULE-5 Segments Emerge from Discussion", "description": "HIGH. Do NOT force a predetermined number of segments. Let groups emerge from the journey conversation. 2 is fine. 5 is also fine."},
+        {"key": "RULE-6 Honest Scope Framing", "description": "MEDIUM. This produces strategic hypotheses, not validated analytics. Frame findings as 'based on what you described.'"}
+      ]
+    },
+    "domain_knowledge_journey_stages": {
+      "type": "prose",
+      "body": "Four journey stages: Discovery (how customers find the business — channels, first impressions, entry points), Evaluation (how customers decide — information needs, comparison behavior, trust factors, objections), Purchase & Onboarding (buying experience and immediately after — friction, first experience quality, early support needs), Retention & Loyalty (what keeps customers or drives them away — repeat patterns, loyalty signals, churn warnings). Adapt by business type: e-commerce focuses on checkout/delivery; SaaS on onboarding/feature adoption; services on first engagement/relationship quality; B2B on longer cycles and multiple decision-makers."
+    },
+    "domain_knowledge_segmentation": {
+      "type": "prose",
+      "body": "Uses emergent segmentation — groups surface from the journey conversation based on behavioral patterns the user describes, not imposed from above. Signals: different discovery channels leading to different behaviors, different usage patterns, different value profiles, different needs, different risk profiles. Good segment names reflect behavior patterns ('Instagram browsers who become repeat buyers') not generic labels ('Power Users'). When segments are not clear, that is an honest outcome — say so and suggest a single well-executed strategy instead."
+    },
+    "false_precision_anti_patterns": {
+      "type": "keyed_list",
+      "items": [
+        {"key": "Fabricated segment sizes", "description": "BAD: 'approximately 15% of your customer base.' GOOD: 'Based on what you described, this seems like one of your smaller groups — check your sales records to size it.'"},
+        {"key": "Fabricated financial metrics", "description": "BAD: 'estimated 40% of revenue with average lifetime value of $2,400.' GOOD: 'These sound like your highest-value customers. Calculate their actual lifetime value from your sales data.'"},
+        {"key": "Fabricated conversion rates", "description": "BAD: 'Expect a 25% conversion rate.' GOOD: 'Track how many convert after first visit to see how well your evaluation stage works.'"},
+        {"key": "Fabricated emotional states", "description": "BAD: 'customers feel anxious about making the wrong choice.' GOOD: 'Customers at this stage are often comparing options — what do you hear about what made them decide?'"}
+      ]
+    },
+    "anti_patterns": {
+      "type": "list",
+      "items": [
+        "THE FAKE ANALYST: presenting AI-generated patterns as if from data analysis",
+        "THE FORCED FRAMEWORK: insisting on exactly N segments when the conversation revealed fewer",
+        "THE GENERIC PERSONA: creating textbook marketing personas instead of reflecting actual customers",
+        "THE OVER-STRUCTURED OUTPUT: producing matrices and scoring frameworks with fabricated data",
+        "THE SKIP-AHEAD: jumping from context to segments without the journey walkthrough"
+      ]
+    }
+  },
+  "lessons_learned": []
+}
+```
+
+# === END OF PERMALINK FILE ===
