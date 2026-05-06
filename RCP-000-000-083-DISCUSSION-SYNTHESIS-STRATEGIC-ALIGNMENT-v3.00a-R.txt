@@ -483,6 +483,393 @@ RULE 12 — SURPRISE FINDINGS:
 
 
 # ===========================================================
+# RECIPE EXECUTION CODE (Parameters + Phases)
+# Source: revised/WPRM-RCP-000-000-083-...-v3_00a.txt
+#         lines 352-728 (verbatim copy)
+# Added to permalink: P067-H131 (2026-05-06) — closes
+#         "actual recipe code missing from permalink"
+#         finding raised by Richard at H131.
+# ===========================================================
+
+
+# ===========================================================
+# RECIPE PARAMETERS
+# ===========================================================
+
+RECIPE_PARAMETERS = {
+    "discussion_transcript": {
+        "type": "string",
+        "required": True,
+        "description": (
+            "The Discussion Transcript from RCP-082, "
+            "attached or pasted. Contains full discussion "
+            "record with position evolution and moderator "
+            "summaries."
+        )
+    },
+    "real_world_constraints": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "Any real-world constraints the synthesis "
+            "should account for: organizational politics, "
+            "budget cycles, upcoming events, relationship "
+            "dynamics not captured in personas."
+        ),
+        "example": (
+            "Board meeting is in 6 weeks; CFO and VP HR "
+            "have a good working relationship; Engineering "
+            "Director just started 3 months ago."
+        )
+    },
+    "focus_areas": {
+        "type": "string",
+        "required": False,
+        "default": "",
+        "description": (
+            "Specific areas the user wants the synthesis "
+            "to focus on. If not provided, the AI covers "
+            "all standard analysis dimensions."
+        ),
+        "example": (
+            "Focus on the engagement sequence and the "
+            "Finance stakeholder's conditions."
+        )
+    }
+}
+
+
+# ===========================================================
+# PHASE 1: TRANSCRIPT ANALYSIS
+# ===========================================================
+
+#AI->H::RecipeActive: (RCP-083 Discussion Synthesis & Strategic Alignment v3.00a)
+#AI->H::Status: (Phase 1 — Analyzing Discussion)
+
+# Load and parse Discussion Transcript
+TRANSCRIPT = parse_discussion_transcript({discussion_transcript})
+
+# Extract analysis dimensions
+ANALYSIS = {
+    "alignment_points": identify_alignment(TRANSCRIPT),
+    "blocking_issues": identify_blocking_issues(TRANSCRIPT),
+    "negotiation_opportunities": identify_flexibility(TRANSCRIPT),
+    "information_gaps": identify_unresolved(TRANSCRIPT),
+    "surprise_findings": identify_surprises(TRANSCRIPT),
+    "alliance_patterns": map_alliances(TRANSCRIPT),
+    "opposition_patterns": map_opposition(TRANSCRIPT),
+    "position_evolution": track_position_changes(TRANSCRIPT)
+}
+
+# Incorporate real-world constraints
+IF {real_world_constraints} != "":
+    ANALYSIS["real_world_factors"] = parse_constraints(
+        {real_world_constraints}
+    )
+
+# Incorporate focus areas
+IF {focus_areas} != "":
+    ANALYSIS["focus_priority"] = parse_focus({focus_areas})
+
+# Present analysis summary for user review
+PRESENT_ANALYSIS_SUMMARY(ANALYSIS)
+
+# ── WAIT GATE 1 ──────────────────────────────────────────
+# User reviews analysis summary. Opportunity to correct
+# misinterpretations or add context before the full
+# report is generated.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_ANALYSIS_CONFIRMATION
+
+
+# ===========================================================
+# PHASE 2: STRATEGIC ALIGNMENT REPORT
+# ===========================================================
+
+#AI->H::Status: (Phase 2 — Building Strategic Alignment Report)
+
+REPORT = build_strategic_alignment_report(
+    analysis=ANALYSIS,
+    transcript=TRANSCRIPT,
+    constraints={real_world_constraints}
+)
+
+# The Strategic Alignment Report includes:
+#
+# 1. EXECUTIVE SUMMARY
+#    - Topic and simulation scope
+#    - Number of stakeholders, rounds, format used
+#    - High-level finding (1-2 sentences)
+#
+# 2. STAKEHOLDER LANDSCAPE POST-DISCUSSION
+#    For each stakeholder:
+#    - Final position (from simulation end)
+#    - Shift from opening position (if any, with trigger)
+#    - Unresolved concerns
+#    - Communication approach that worked in simulation
+#
+# 3. ALIGNMENT MAP
+#    - Points of strong alignment (who agrees on what)
+#    - Points of conditional alignment (support with conditions)
+#    - Points of opposition (who disagrees on what)
+#    - Surprise alignments or oppositions
+#
+# 4. BLOCKING ISSUES (prioritized)
+#    For each:
+#    - What's blocked and by whom
+#    - Influence level of the blocker
+#    - Resolution path suggested by simulation
+#    - What happens if unresolved
+#
+# 5. NEGOTIATION OPPORTUNITIES
+#    - Flexibility zones that emerged during simulation
+#    - Trade-offs that personas found acceptable
+#    - Conditional support patterns ("I'll support if...")
+#
+# 6. ALLIANCE MAP
+#    - Natural alliances (shared interests)
+#    - Tactical alliances (temporary alignment)
+#    - Which alliances to leverage in engagement
+#
+# 7. RECOMMENDED ENGAGEMENT SEQUENCE
+#    - Ordered list with rationale for each position
+#    - First-mover advantage (why start with this stakeholder)
+#    - Dependencies (what must happen before engaging X)
+#    - Estimated preparation needed per stakeholder
+#
+# 8. COMMUNICATION STRATEGY PER STAKEHOLDER
+#    - Lead with (data / narrative / proposal / question)
+#    - Frame the topic as (opportunity / risk / investment)
+#    - Address their primary concern first
+#    - Avoid (triggers, framings, or comparisons that
+#      caused resistance in simulation)
+#
+# 9. RISK MAP
+#    - Who could block, what triggers the block
+#    - Mitigation strategies from simulation evidence
+#    - Contingency if mitigation fails
+#
+# 10. UNRESOLVED QUESTIONS
+#     - What the simulation couldn't resolve
+#     - Questions to ask real stakeholders
+#     - Areas where more research might help
+#
+# 11. SURPRISE FINDINGS (RULE 12)
+#     - Unexpected positions or flexibility
+#     - Mental model updates suggested
+#
+# 12. REAL-WORLD ACTION STEPS (RULE 9)
+#     For each stakeholder:
+#     - Specific conversation to have
+#     - Specific question to ask
+#     - Specific proposal to test
+#     - What to listen for in their response
+#     - How their response updates the strategy
+#
+# 13. SIMULATION LIMITATIONS (RULE 4)
+#     - What the simulation could not capture
+#     - Factors that may change outcomes in reality
+#     - "Be prepared to adjust after first conversations"
+
+PRESENT_REPORT(REPORT)
+
+# ── WAIT GATE 2 ──────────────────────────────────────────
+# User reviews full report. Opportunity to request
+# adjustments, deeper analysis on specific sections,
+# or additional action steps.
+# ─────────────────────────────────────────────────────────
+
+WAIT_FOR_REPORT_FEEDBACK
+
+# Apply any adjustments
+IF USER_FEEDBACK.has_adjustments:
+    REPORT = apply_report_adjustments(REPORT, USER_FEEDBACK)
+    PRESENT_REVISED_SECTIONS(REPORT)
+
+# Closing frame (RULE 10)
+REPORT_CLOSING = (
+    "This Strategic Alignment Report gives you a map and "
+    "a starting plan based on simulation findings. The "
+    "first real stakeholder conversation will update that "
+    "map. Be prepared to adjust your approach as you "
+    "learn what the simulation couldn't capture.\n\n"
+    "Key principle: every recommendation in this report "
+    "is a HYPOTHESIS to test, not a conclusion to "
+    "implement. Real stakeholder engagement is where "
+    "strategy becomes real."
+)
+
+PRESENT_REPORT_CLOSING(REPORT_CLOSING)
+
+#AI->H::Status: (
+    Strategic Alignment Report complete.
+
+    ANALYSIS COVERAGE:
+      Alignment points identified: {count_alignment}
+      Blocking issues identified: {count_blocking}
+      Negotiation opportunities: {count_negotiation}
+      Unresolved questions: {count_unresolved}
+      Surprise findings: {count_surprises}
+      Action steps generated: {count_actions}
+
+    This completes the Stakeholder Analysis Workflow.
+
+    WHAT YOU HAVE NOW:
+    - Stakeholder Map (from RCP-080)
+    - Stakeholder Persona File (from RCP-081)
+    - Discussion Transcript (from RCP-082)
+    - Strategic Alignment Report (this recipe)
+
+    WHAT TO DO NEXT:
+    - Begin real stakeholder conversations using the
+      engagement sequence and action steps
+    - Update your strategy after each conversation
+    - Consider re-running RCP-082 with updated personas
+      if new information significantly changes the
+      landscape
+)
+
+
+# ===========================================================
+# HELPER FUNCTIONS
+# ===========================================================
+
+def parse_discussion_transcript(transcript_content):
+    """
+    Parse Discussion Transcript from RCP-082.
+
+    Extracts: metadata, per-round data, position evolution,
+    moderator summaries, and key moments.
+    """
+    pass
+
+
+def identify_alignment(transcript):
+    """
+    Identify points where stakeholders aligned.
+
+    Distinguishes strong alignment (shared position) from
+    conditional alignment (support with conditions).
+    """
+    pass
+
+
+def identify_blocking_issues(transcript):
+    """
+    Identify issues where influential stakeholders hold
+    unresolved objections that could halt progress.
+
+    Prioritized by blocker influence level.
+    """
+    pass
+
+
+def identify_flexibility(transcript):
+    """
+    Map flexibility zones that emerged during discussion.
+
+    Includes trade-offs accepted, conditional support
+    patterns, and compromise proposals.
+    """
+    pass
+
+
+def identify_surprises(transcript):
+    """
+    Find unexpected positions or shifts (RULE 12).
+
+    Compares persona definitions with simulation behavior
+    to identify where assumptions may need updating.
+    """
+    pass
+
+
+def map_alliances(transcript):
+    """
+    Map alliance patterns between stakeholders.
+
+    Distinguishes natural alliances (shared interests)
+    from tactical alliances (temporary alignment).
+    """
+    pass
+
+
+def build_strategic_alignment_report(analysis, transcript,
+                                       constraints):
+    """
+    Build the complete Strategic Alignment Report.
+
+    13 sections covering all analysis dimensions.
+    All recommendations grounded in simulation evidence.
+    All outcomes framed as hypotheses (RULE 2).
+    """
+    pass
+
+
+# ===========================================================
+# CROSS-REFERENCES
+# ===========================================================
+#
+# WORKFLOW RECIPES:
+#   RCP-080 → DR → RCP-081 → RCP-082 → RCP-083 (THIS)
+#
+# INPUT:
+#   Discussion Transcript from RCP-082
+#   Real-world constraints from user
+#
+# OUTPUT:
+#   Strategic Alignment Report (final deliverable)
+#
+# RELATED RECIPES:
+#   RCP-004 (Socratic Competitor Analyzer) — may complement
+#     stakeholder strategy with competitive framing
+#   RCP-054 (Balanced Perspective Analyzer) — could validate
+#     whether the report fairly represents all positions
+#
+# ===========================================================
+
+
+# ===========================================================
+# VERSION HISTORY
+# ===========================================================
+
+VERSION_HISTORY = [
+    {
+        "version": "v3.00a-R",
+        "date": "2026-04-27",
+        "changes": [
+            "Pipeline revision (P067-H094, run 53)",
+            "Added WPRM_FIELD_CRAFT_FLAVORS (REC-19 auto-apply, ABSENT→ADD)",
+            "Version suffix -R denotes pipeline revision"
+        ],
+        "created_by": "P067-Cat (E) — CWK-ADM-080",
+        "project": "CFT-PROJ-CP-067 (CRAFTFramework.ai Beta Refresh)"
+    },
+    {
+        "version": "v3.00a",
+        "date": "2026-02-17",
+        "changes": [
+            "Initial recipe creation (new construction)",
+            "Part of Stakeholder Analysis Workflow (4 of 4)",
+            "Architecture designed H016, built H017",
+            "12 behavioral rules",
+            "2 WAIT gates (analysis confirmation, report feedback)",
+            "13-section Strategic Alignment Report",
+            "Hypothesis framing throughout (RULE 2)",
+            "Simulation-grounded recommendations only (RULE 1)",
+            "Surprise findings identification (RULE 12)",
+            "Real-world action steps with testable specifics",
+            "Explicit simulation limitation acknowledgment"
+        ],
+        "created_by": "Cat (B) - Operations Master",
+        "project": "CFT-PROJ-CP-051f (WPRM Recipe QA Testing)"
+    }
+]
+
+
+# ===========================================================
 # JSON SERIALIZATION
 # ===========================================================
 
